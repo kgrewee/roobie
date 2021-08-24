@@ -4,9 +4,21 @@
     flex-wrap: wrap;
 }
 
+.flex-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
 .flex-column {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.flex-column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
 }
 
@@ -34,7 +46,7 @@
     justify-content: stretch;
 }
 
-.justify-between {
+.align-between {
     align-items: space-between;
 }
 

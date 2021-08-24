@@ -1,25 +1,33 @@
 .flex-row {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
 }
 
 .flex-row-reverse {
     display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
 }
 
 .flex-column {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
 }
 
 .flex-column-reverse {
     display: flex;
-    flex-direction: column-reverse;
+    flex-flow: column wrap;
+}
+
+.wrap {
     flex-wrap: wrap;
+}
+
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.no-wrap {
+    flex-wrap: nowrap;
 }
 
 .justify-between {
@@ -46,6 +54,12 @@
     justify-content: stretch;
 }
 
+
+/* 
+Item alignment
+How items are aligned within the container 
+*/
+
 .align-between {
     align-items: space-between;
 }
@@ -70,6 +84,12 @@
     align-items: stretch;
 }
 
+
+/* 
+Self alignment 
+How a single element is aligned within the container
+*/
+
 .align-self-between {
     align-self: space-between;
 }
@@ -92,6 +112,36 @@
 
 .align-self-stretch {
     align-self: stretch;
+}
+
+
+/* 
+Content alignment 
+How lines are spaced.  No effect if content is only 1 line.
+*/
+
+.align-content-between {
+    align-content: space-between;
+}
+
+.align-content-around {
+    align-content: space-around;
+}
+
+.align-content-start {
+    align-content: flex-start;
+}
+
+.align-content-end {
+    align-content: flex-end;
+}
+
+.align-content-baseline {
+    align-content: baseline;
+}
+
+.align-content-stretch {
+    align-content: stretch;
 }
 
 .order-first {

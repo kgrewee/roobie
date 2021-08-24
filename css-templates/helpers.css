@@ -10,25 +10,50 @@
     flex-wrap: wrap;
 }
 
-.space-between {
+.justify-between {
     justify-content: space-between;
 }
 
-.space-around {
+.justify-around {
     justify-content: space-around;
 }
 
-.flex-start {
+.justify-start {
     justify-content: flex-start;
 }
 
-.flex-end {
+.justify-end {
     justify-content: flex-end;
 }
 
-.center {
-    justify-content: center;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+.justify-baseline {
+    justify-content: baseline;
+}
+
+.justify-stretch {
+    justify-content: stretch;
+}
+
+.justify-between {
+    align-items: space-between;
+}
+
+.align-around {
+    align-items: space-around;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.align-baseline {
+    align-items: baseline;
+}
+
+.align-stretch {
+    align-items: stretch;
 }

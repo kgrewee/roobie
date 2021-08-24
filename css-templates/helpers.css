@@ -70,6 +70,30 @@
     align-items: stretch;
 }
 
+.align-self-between {
+    align-self: space-between;
+}
+
+.align-self-around {
+    align-self: space-around;
+}
+
+.align-self-start {
+    align-self: flex-start;
+}
+
+.align-self-end {
+    align-self: flex-end;
+}
+
+.align-self-baseline {
+    align-self: baseline;
+}
+
+.align-self-stretch {
+    align-self: stretch;
+}
+
 .order-first {
     order: -1;
 }

@@ -1,3 +1,7 @@
+/*
+Adds flex display and direction
+*/
+
 .flex-row {
     display: flex;
     flex-flow: row wrap;
@@ -5,7 +9,7 @@
 
 .flex-row-reverse {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row-reverse wrap;
 }
 
 .flex-column {
@@ -15,8 +19,35 @@
 
 .flex-column-reverse {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column-reverse wrap;
 }
+
+.flex-row-nowrap {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.flex-row-reverse-nowrap {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+}
+
+.flex-column-nowrap {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.flex-column-reverse-nowrap {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+}
+
+
+/* 
+Wrap
+Nowrap aligns items on a single line
+Wrap will push items to the next line
+*/
 
 .wrap {
     flex-wrap: wrap;
@@ -29,6 +60,12 @@
 .no-wrap {
     flex-wrap: nowrap;
 }
+
+
+/*
+Alignment on the main axis
+Horizontal for row, vertical for column
+*/
 
 .justify-between {
     justify-content: space-between;
@@ -57,7 +94,7 @@
 
 /* 
 Item alignment
-How items are aligned within the container 
+How items are aligned within a single line
 */
 
 .align-between {
@@ -87,7 +124,7 @@ How items are aligned within the container
 
 /* 
 Self alignment 
-How a single element is aligned within the container
+How a single item is aligned within a single line
 */
 
 .align-self-between {
@@ -143,6 +180,12 @@ How lines are spaced.  No effect if content is only 1 line.
 .align-content-stretch {
     align-content: stretch;
 }
+
+
+/* 
+Order
+How items are ordered
+*/
 
 .order-first {
     order: -1;

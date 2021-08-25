@@ -62,19 +62,19 @@ Text
     text-align: right;
 }
 
-._100em {
+.text-100em {
     font-size: 1em;
 }
 
-._150em {
+.text-150em {
     font-size: 1.5em;
 }
 
-._200em {
+.text-200em {
     font-size: 2em;
 }
 
-._300em {
+.text-300em {
     font-size: 3em;
 }
 

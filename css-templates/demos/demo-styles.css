@@ -2,6 +2,15 @@ a {
     color: #bcbcbc;
 }
 
-.nav {
-    background-color: black;
+a:hover {
+    cursor: pointer;
+    color: rgb(0, 89, 255);
+}
+
+.nav-background {
+    background-color: #333333;
+}
+
+body {
+    background-color: #111111;
 }

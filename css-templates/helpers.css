@@ -2,7 +2,7 @@
 Nav bar
 */
 
-.nav {
+.horizontal-nav {
     position: sticky;
     z-index: 100;
     top: 0;
@@ -11,9 +11,18 @@ Nav bar
     height: 60px;
 }
 
+.vertical-nav {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+}
+
 .nav-item {
     padding: 10px;
-    margin: 10px;
+    margin: 5px;
 }
 
 

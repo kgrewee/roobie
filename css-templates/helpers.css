@@ -2,10 +2,19 @@
 Nav bar
 */
 
-.horizontal-nav {
+.top-nav {
     position: sticky;
     z-index: 100;
     top: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+}
+
+.bottom-nav {
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
     left: 0;
     right: 0;
     height: auto;

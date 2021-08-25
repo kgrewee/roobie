@@ -7,7 +7,7 @@ a:hover {
     color: rgb(24, 196, 96);
 }
 
-.nav-background {
+nav {
     background-color: #333333;
 }
 
@@ -28,6 +28,7 @@ xmp {
 
 h2 {
     color: rgb(24, 196, 96);
+    text-align: center;
 }
 
 .content {

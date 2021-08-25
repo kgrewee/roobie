@@ -12,17 +12,37 @@ Nav bar
 }
 
 .vertical-nav {
-    position: absolute;
     z-index: 100;
-    top: 0;
-    bottom: 0;
-    left: 0;
+    height: 100%;
     width: auto;
 }
 
 .nav-item {
     padding: 10px;
     margin: 10px;
+}
+
+
+/*
+Float
+*/
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+
+/* 
+Spacing
+*/
+
+.zero-space {
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -42,19 +62,19 @@ Text
     text-align: right;
 }
 
-._1em {
+._100em {
     font-size: 1em;
 }
 
-._1-5em {
+._150em {
     font-size: 1.5em;
 }
 
-._2em {
+._200em {
     font-size: 2em;
 }
 
-._3em {
+._300em {
     font-size: 3em;
 }
 

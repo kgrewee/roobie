@@ -8,7 +8,7 @@ Nav bar
     top: 0;
     left: 0;
     right: 0;
-    height: 60px;
+    height: auto;
 }
 
 .vertical-nav {
@@ -17,7 +17,7 @@ Nav bar
     top: 0;
     bottom: 0;
     left: 0;
-    width: 60px;
+    width: auto;
 }
 
 .nav-container {
@@ -26,7 +26,7 @@ Nav bar
 
 .nav-item {
     padding: 10px;
-    margin: 5px;
+    margin: 10px;
 }
 
 

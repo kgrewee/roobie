@@ -20,10 +20,6 @@ Nav bar
     width: auto;
 }
 
-.nav-container {
-    height: 100%;
-}
-
 .nav-item {
     padding: 10px;
     margin: 10px;

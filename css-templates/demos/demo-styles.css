@@ -25,3 +25,11 @@ xmp {
     overflow: auto;
     background-color: #222222;
 }
+
+h2 {
+    color: rgb(24, 196, 96);
+}
+
+.content {
+    padding: 35px;
+}

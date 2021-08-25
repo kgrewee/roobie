@@ -1,5 +1,29 @@
 /*
-Adds flex display and direction
+Nav bar
+*/
+
+.nav {
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    justify-content: space-between;
+}
+
+
+/*
+Box shadow
+*/
+
+.box-shadow {
+    box-shadow: 2px 2px 6px rgb(34, 34, 34, .6);
+}
+
+
+/*
+Flex display and direction
 */
 
 .flex-row {
@@ -96,6 +120,10 @@ Horizontal for row, vertical for column
 Item alignment
 How items are aligned within a single line
 */
+
+.align-center {
+    align-items: center;
+}
 
 .align-between {
     align-items: space-between;

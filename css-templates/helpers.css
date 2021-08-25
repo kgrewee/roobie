@@ -42,6 +42,22 @@ Text
     text-align: right;
 }
 
+._1em {
+    font-size: 1em;
+}
+
+._1-5em {
+    font-size: 1.5em;
+}
+
+._2em {
+    font-size: 2em;
+}
+
+._3em {
+    font-size: 3em;
+}
+
 
 /*
 Box shadow

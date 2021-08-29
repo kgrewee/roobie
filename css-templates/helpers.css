@@ -80,31 +80,31 @@ Spacing
 Text
 */
 
-.text-center {
+.txt-center {
     text-align: center;
 }
 
-.text-left {
+.txt-left {
     text-align: left;
 }
 
-.text-right {
+.txt-right {
     text-align: right;
 }
 
-.text-100em {
+.txt-100em {
     font-size: 1em;
 }
 
-.text-150em {
+.txt-150em {
     font-size: 1.5em;
 }
 
-.text-200em {
+.txt-200em {
     font-size: 2em;
 }
 
-.text-300em {
+.txt-300em {
     font-size: 3em;
 }
 

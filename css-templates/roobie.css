@@ -1,0 +1,346 @@
+/*
+Nav bar
+*/
+
+.top-nav {
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+}
+
+.bottom-nav {
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+}
+
+.horiz-nav {
+    z-index: 100;
+    height: auto;
+    width: 100%;
+}
+
+.vert-nav {
+    z-index: 100;
+    height: 100%;
+    width: auto;
+}
+
+.nav-item {
+    padding: 10px;
+    margin: 10px;
+}
+
+.sticky {
+    position: sticky;
+}
+
+
+/*
+Height 
+*/
+
+.ht-25 {
+    height: 25%;
+}
+
+.ht-50 {
+    height: 50%;
+}
+
+.ht-75 {
+    height: 75%;
+}
+
+.ht-100 {
+    height: 100%;
+}
+
+
+/* 
+Opacity
+*/
+
+.op-25 {
+    opacity: 25%;
+}
+
+.op-50 {
+    opacity: 50%;
+}
+
+.op-75 {
+    opacity: 75%
+}
+
+.op-100 {
+    opacity: 100%;
+}
+
+
+/*
+Float
+*/
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+
+/* 
+Spacing
+*/
+
+.zero-space {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*
+Text
+*/
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-left {
+    text-align: left;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+.txt-100em {
+    font-size: 1em;
+}
+
+.txt-150em {
+    font-size: 1.5em;
+}
+
+.txt-200em {
+    font-size: 2em;
+}
+
+.txt-300em {
+    font-size: 3em;
+}
+
+
+/*
+Box shadow
+*/
+
+.box-shadow {
+    box-shadow: 2px 2px 6px rgb(34, 34, 34, .6);
+}
+
+
+/*
+Flex display and direction
+*/
+
+.flx-row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flx-row-rev {
+    display: flex;
+    flex-flow: row-reverse wrap;
+}
+
+.flx-col {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.flx-col-rev {
+    display: flex;
+    flex-flow: column-reverse wrap;
+}
+
+.flx-row-nowrap {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.flx-row-rev-nowrap {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+}
+
+.flx-col-nowrap {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.flx-col-rev-nowrap {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+}
+
+
+/* 
+Wrap
+Nowrap aligns items on a single line
+Wrap will push items to the next line
+*/
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.wrap-rev {
+    flex-wrap: wrap-reverse;
+}
+
+.no-wrap {
+    flex-wrap: nowrap;
+}
+
+
+/*
+Alignment on the main axis
+Horizontal for row, vertical for column
+*/
+
+.just-between {
+    justify-content: space-between;
+}
+
+.just-around {
+    justify-content: space-around;
+}
+
+.just-start {
+    justify-content: flex-start;
+}
+
+.just-end {
+    justify-content: flex-end;
+}
+
+.just-baseline {
+    justify-content: baseline;
+}
+
+.just-stretch {
+    justify-content: stretch;
+}
+
+
+/* 
+Item alignment
+How items are aligned within a single line
+*/
+
+.align-center {
+    align-items: center;
+}
+
+.align-between {
+    align-items: space-between;
+}
+
+.align-around {
+    align-items: space-around;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.align-baseline {
+    align-items: baseline;
+}
+
+.align-stretch {
+    align-items: stretch;
+}
+
+
+/* 
+Self alignment 
+How a single item is aligned within a single line
+*/
+
+.align-self-between {
+    align-self: space-between;
+}
+
+.align-self-around {
+    align-self: space-around;
+}
+
+.align-self-start {
+    align-self: flex-start;
+}
+
+.align-self-end {
+    align-self: flex-end;
+}
+
+.align-self-baseline {
+    align-self: baseline;
+}
+
+.align-self-stretch {
+    align-self: stretch;
+}
+
+
+/* 
+Content alignment 
+How lines are spaced.  No effect if content is only 1 line.
+*/
+
+.align-content-between {
+    align-content: space-between;
+}
+
+.align-content-around {
+    align-content: space-around;
+}
+
+.align-content-start {
+    align-content: flex-start;
+}
+
+.align-content-end {
+    align-content: flex-end;
+}
+
+.align-content-baseline {
+    align-content: baseline;
+}
+
+.align-content-stretch {
+    align-content: stretch;
+}
+
+
+/* 
+Order
+How items are ordered
+*/
+
+.order-first {
+    order: -1;
+}

@@ -3,7 +3,6 @@ Nav bar
 */
 
 .top-nav {
-    position: sticky;
     z-index: 100;
     top: 0;
     left: 0;
@@ -20,7 +19,13 @@ Nav bar
     height: auto;
 }
 
-.vertical-nav {
+.horiz-nav {
+    z-index: 100;
+    height: auto;
+    width: 100%;
+}
+
+.vert-nav {
     z-index: 100;
     height: 100%;
     width: auto;
@@ -29,6 +34,10 @@ Nav bar
 .nav-item {
     padding: 10px;
     margin: 10px;
+}
+
+.sticky {
+    position: sticky;
 }
 
 
@@ -50,6 +59,27 @@ Height
 
 .ht-100 {
     height: 100%;
+}
+
+
+/* 
+Opacity
+*/
+
+.op-25 {
+    opacity: 25%;
+}
+
+.op-50 {
+    opacity: 50%;
+}
+
+.op-75 {
+    opacity: 75%
+}
+
+.op-100 {
+    opacity: 100%;
 }
 
 
@@ -122,42 +152,42 @@ Box shadow
 Flex display and direction
 */
 
-.flex-row {
+.flx-row {
     display: flex;
     flex-flow: row wrap;
 }
 
-.flex-row-reverse {
+.flx-row-rev {
     display: flex;
     flex-flow: row-reverse wrap;
 }
 
-.flex-column {
+.flx-col {
     display: flex;
     flex-flow: column wrap;
 }
 
-.flex-column-reverse {
+.flx-col-rev {
     display: flex;
     flex-flow: column-reverse wrap;
 }
 
-.flex-row-nowrap {
+.flx-row-nowrap {
     display: flex;
     flex-flow: row nowrap;
 }
 
-.flex-row-reverse-nowrap {
+.flx-row-rev-nowrap {
     display: flex;
     flex-flow: row-reverse nowrap;
 }
 
-.flex-column-nowrap {
+.flx-col-nowrap {
     display: flex;
     flex-flow: column nowrap;
 }
 
-.flex-column-reverse-nowrap {
+.flx-col-rev-nowrap {
     display: flex;
     flex-flow: column-reverse nowrap;
 }
@@ -173,7 +203,7 @@ Wrap will push items to the next line
     flex-wrap: wrap;
 }
 
-.wrap-reverse {
+.wrap-rev {
     flex-wrap: wrap-reverse;
 }
 
@@ -187,27 +217,27 @@ Alignment on the main axis
 Horizontal for row, vertical for column
 */
 
-.justify-between {
+.just-between {
     justify-content: space-between;
 }
 
-.justify-around {
+.just-around {
     justify-content: space-around;
 }
 
-.justify-start {
+.just-start {
     justify-content: flex-start;
 }
 
-.justify-end {
+.just-end {
     justify-content: flex-end;
 }
 
-.justify-baseline {
+.just-baseline {
     justify-content: baseline;
 }
 
-.justify-stretch {
+.just-stretch {
     justify-content: stretch;
 }
 

@@ -11,6 +11,10 @@ nav {
     background-color: #333333;
 }
 
+nav a {
+    text-decoration: none;
+}
+
 body {
     background-color: #111111;
 }
@@ -29,8 +33,20 @@ xmp {
 h2 {
     color: rgb(24, 196, 96);
     text-align: center;
+    margin-top: 0;
 }
 
 .content {
-    padding: 35px;
+    text-align: center;
+    padding: 10px;
+}
+
+.row-divider {
+    height: 30px;
+    width: 100%;
+}
+
+.col-divider {
+    height: 100%;
+    width: 30px;
 }

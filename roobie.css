@@ -41,6 +41,27 @@ Nav bar
 }
 
 
+/* 
+Outline
+*/
+
+.out {
+    border: 1px solid rgb(255, 255, 255, .6);
+}
+
+.out:hover {
+    border: 1px solid rgb(255, 255, 255, .8);
+}
+
+.in {
+    box-shadow: inset 0px 0px 5px 2px rgb(34, 34, 34, .3);
+}
+
+.in:hover {
+    box-shadow: inset 0px 0px 5px 5px rgb(34, 34, 34, .5) !important;
+}
+
+
 /*
 Height 
 */
@@ -97,6 +118,31 @@ Float
 
 
 /*
+Border Radius
+*/
+
+.br-2 {
+    border-radius: 2px;
+}
+
+.br-4 {
+    border-radius: 4px;
+}
+
+.br-6 {
+    border-radius: 6px;
+}
+
+.br-8 {
+    border-radius: 8px;
+}
+
+.br-10 {
+    border-radius: 10px;
+}
+
+
+/*
 Buttons
 */
 
@@ -104,7 +150,7 @@ Buttons
     width: auto;
     padding: 15px;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 6px;
     margin: 5px;
 }
 
@@ -127,6 +173,23 @@ Buttons
 
 .btn-in:hover {
     box-shadow: inset 0px 0px 5px 5px rgb(34, 34, 34, .8) !important;
+}
+
+
+/*
+Inputs 
+*/
+
+.inp {
+    width: auto;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.inp:hover {
+    box-shadow: 1px 3px 3px rgb(17, 17, 17, .4);
+    cursor: pointer;
 }
 
 
@@ -170,20 +233,32 @@ Text
     text-align: right;
 }
 
-.txt-100em {
+.txt-1 {
     font-size: 1em;
 }
 
-.txt-150em {
+.txt-15 {
     font-size: 1.5em;
 }
 
-.txt-200em {
+.txt-2 {
     font-size: 2em;
 }
 
-.txt-300em {
+.txt-25 {
+    font-size: 2.5em;
+}
+
+.txt-3 {
     font-size: 3em;
+}
+
+.txt-35 {
+    font-size: 3.5em;
+}
+
+.txt-4 {
+    font-size: 4em;
 }
 
 
@@ -200,44 +275,24 @@ Box shadow
 Flex display and direction
 */
 
+.flx-col {
+    display: flex;
+    flex-direction: column;
+}
+
 .flx-row {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
 }
 
 .flx-row-rev {
     display: flex;
-    flex-flow: row-reverse wrap;
-}
-
-.flx-col {
-    display: flex;
-    flex-flow: column wrap;
+    flex-direction: row-reverse;
 }
 
 .flx-col-rev {
     display: flex;
-    flex-flow: column-reverse wrap;
-}
-
-.flx-row-nowrap {
-    display: flex;
-    flex-flow: row nowrap;
-}
-
-.flx-row-rev-nowrap {
-    display: flex;
-    flex-flow: row-reverse nowrap;
-}
-
-.flx-col-nowrap {
-    display: flex;
-    flex-flow: column nowrap;
-}
-
-.flx-col-rev-nowrap {
-    display: flex;
-    flex-flow: column-reverse nowrap;
+    flex-direction: column-reverse;
 }
 
 
@@ -285,7 +340,7 @@ Horizontal for row, vertical for column
     justify-content: flex-end;
 }
 
-.jst-baseline {
+.jst-base {
     justify-content: baseline;
 }
 
@@ -319,7 +374,7 @@ How items are aligned within a single line
     align-items: flex-end;
 }
 
-.aln-baseline {
+.aln-base {
     align-items: baseline;
 }
 
@@ -349,7 +404,7 @@ How a single item is aligned within a single line
     align-self: flex-end;
 }
 
-.aln-self-baseline {
+.aln-self-base {
     align-self: baseline;
 }
 
@@ -379,7 +434,7 @@ How lines are spaced.  No effect if content is only 1 line.
     align-content: flex-end;
 }
 
-.aln-content-baseline {
+.aln-content-base {
     align-content: baseline;
 }
 

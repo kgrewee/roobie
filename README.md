@@ -6,6 +6,9 @@ Interactive templates for all platforms.  Simple but robust UI components with m
 
 - Navbar
 - Button
+- Grid
+- Input
+- Container
 
 ## Intro
 
@@ -17,7 +20,7 @@ Welcome to roobie!  We're so glad you're here.  Let's get started.
 
 ## Syntax
 
-We pride ourselves in our easy-to-use syntax.  Here's the basics.
+We basically have our own mini language.  This simplifies naming and reduces code.  Here's the basics.
 
 1. Class names are prefixed pertaining to their function
     - ht - Height
@@ -32,7 +35,13 @@ We pride ourselves in our easy-to-use syntax.  Here's the basics.
     - jst - Justify
     - spc - Space
     - bg - Background
+    - inp - Input
+    - br - Border Radius
 
 2. Class names are suffixed when functionality is added to the prefix
     - in - Inset
     - out - Outline
+
+3. Parameters, such as text size, and units are specific to the property being set
+    - Text - em
+    - Height - %

@@ -114,11 +114,19 @@ Buttons
 }
 
 .btn-outline {
-    border: 1px solid rgb(255, 255, 255, .5);
+    border: 1px solid rgb(255, 255, 255, .6);
+}
+
+.btn-outline:hover {
+    border: 1px solid rgb(255, 255, 255, .8);
 }
 
 .btn-inset {
     box-shadow: inset 0px 0px 5px 2px rgb(34, 34, 34, .6);
+}
+
+.btn-inset:hover {
+    box-shadow: inset 0px 0px 5px 5px rgb(34, 34, 34, .8) !important;
 }
 
 

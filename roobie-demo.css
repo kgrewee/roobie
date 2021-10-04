@@ -36,6 +36,11 @@ body {
 Headings
 */
 
+h1 {
+    color: white;
+    text-align: center;
+}
+
 h2 {
     color: rgb(24, 196, 96);
     text-align: center;

@@ -233,20 +233,32 @@ Text
     text-align: right;
 }
 
-.txt-100em {
+.txt-1 {
     font-size: 1em;
 }
 
-.txt-150em {
+.txt-15 {
     font-size: 1.5em;
 }
 
-.txt-200em {
+.txt-2 {
     font-size: 2em;
 }
 
-.txt-300em {
+.txt-25 {
+    font-size: 2.5em;
+}
+
+.txt-3 {
     font-size: 3em;
+}
+
+.txt-35 {
+    font-size: 3.5em;
+}
+
+.txt-4 {
+    font-size: 4em;
 }
 
 

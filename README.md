@@ -42,4 +42,4 @@ We basically have our own mini language.  This simplifies naming and reduces cod
     - in - Inset
     - out - Outline
 
-3. Parameters/Units
+3. Parameters, such as text size, and units are declared specifically

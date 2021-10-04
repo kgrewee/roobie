@@ -117,6 +117,10 @@ Buttons
     border: 1px solid rgb(255, 255, 255, .5);
 }
 
+.btn-inset {
+    box-shadow: inset 0px 0px 5px 2px rgb(34, 34, 34, .6);
+}
+
 
 /*
 Containers
@@ -180,7 +184,7 @@ Box shadow
 */
 
 .box-shadow {
-    box-shadow: 2px 2px 6px rgb(34, 34, 34, .6);
+    box-shadow: 0px 0px 5px 5px rgb(34, 34, 34, .6);
 }
 
 

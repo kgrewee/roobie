@@ -31,8 +31,18 @@ body {
     padding: 10px;
 }
 
+
+/*
+Headings
+*/
+
 h2 {
     color: rgb(24, 196, 96);
     text-align: center;
     margin-top: 0;
+}
+
+h3 {
+    color: #bcbcbc;
+    text-align: center;
 }

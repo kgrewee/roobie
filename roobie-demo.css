@@ -51,3 +51,18 @@ h3 {
     color: #bcbcbc;
     text-align: center;
 }
+
+.return {
+    color: rgb(24, 196, 96);
+    margin: 20px;
+    border-radius: 0px;
+    border-left: 2px solid rgb(24, 196, 96);
+}
+
+.return:hover {
+    color: white;
+}
+
+.components a {
+    color: rgb(24, 196, 96);
+}

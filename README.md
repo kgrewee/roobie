@@ -6,6 +6,9 @@ Interactive templates for all platforms.  Simple but robust UI components with m
 
 - Navbar
 - Button
+- Grid
+- Input
+- Container
 
 ## Intro
 

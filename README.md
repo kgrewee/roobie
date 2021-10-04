@@ -4,6 +4,6 @@ Interactive templates for all platforms.  Simple but robust UI components with m
 
 ## Components
 
-- Navigation Bar
+- Navbar
 
 

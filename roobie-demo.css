@@ -1,0 +1,27 @@
+/*
+Dividers
+*/
+
+.row-divider {
+    height: 30px;
+    width: 100%;
+}
+
+.col-divider {
+    height: 100%;
+    width: 30px;
+}
+
+
+/*
+Body styles
+*/
+
+body {
+    background-color: #111111;
+}
+
+html,
+body {
+    height: 100%;
+}

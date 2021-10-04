@@ -32,6 +32,7 @@ We pride ourselves in our easy-to-use syntax.  Here's the basics.
     - jst - Justify
     - spc - Space
     - bg - Background
+    - inp - Input
 
 2. Class names are suffixed when functionality is added to the prefix
     - in - Inset

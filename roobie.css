@@ -131,6 +131,39 @@ Buttons
 
 
 /*
+Inputs 
+*/
+
+.inp {
+    width: auto;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.inp:hover {
+    box-shadow: 1px 3px 3px rgb(17, 17, 17, .4);
+    cursor: pointer;
+}
+
+.inp-out {
+    border: 1px solid rgb(255, 255, 255, .6);
+}
+
+.inp-out:hover {
+    border: 1px solid rgb(255, 255, 255, .8);
+}
+
+.inp-in {
+    box-shadow: inset 0px 0px 5px 2px rgb(34, 34, 34, .3);
+}
+
+.inp-in:hover {
+    box-shadow: inset 0px 0px 5px 5px rgb(34, 34, 34, .5) !important;
+}
+
+
+/*
 Containers
 */
 

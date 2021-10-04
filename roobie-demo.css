@@ -1,3 +1,11 @@
+.roobie {
+    height: 100%;
+    font-size: 1.5em;
+    color: rgb(24, 196, 96);
+    padding: 0 10px;
+}
+
+
 /*
 Dividers
 */
@@ -52,17 +60,26 @@ h3 {
     text-align: center;
 }
 
-.return {
-    color: rgb(24, 196, 96);
-    margin: 20px;
-    border-radius: 0px;
-    border-left: 2px solid rgb(24, 196, 96);
-}
 
-.return:hover {
-    color: white;
-}
+/* Component buttons */
 
 .components a {
+    color: rgb(24, 196, 96);
+}
+
+
+/*Navbar*/
+
+nav {
+    background-color: #333333;
+}
+
+nav a {
+    text-decoration: none;
+    color: #bcbcbc;
+}
+
+nav a:hover {
+    cursor: pointer;
     color: rgb(24, 196, 96);
 }

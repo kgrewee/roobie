@@ -1,5 +1,5 @@
-.flx-row div,
-.flx-col div {
+.grid div,
+.grid div {
     width: 30%;
     height: 50px;
     color: white;

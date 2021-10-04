@@ -25,8 +25,6 @@ We pride ourselves in our easy-to-use syntax.  Here's the basics.
     - flt - Float
     - op - Opacity
     - btn - Button
-    - in - Inset
-    - out - Outline
     - cont - Container
     - txt - Text
     - wrp - Wrap
@@ -35,8 +33,6 @@ We pride ourselves in our easy-to-use syntax.  Here's the basics.
     - spc - Space
     - bg - Background
 
-## Terminology
-
-Terms to help you navigate and use the roobie library.
-
-- 
+2. Class names are suffixed when functionality is added to the prefix
+    - in - Inset
+    - out - Outline

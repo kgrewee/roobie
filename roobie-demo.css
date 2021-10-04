@@ -25,3 +25,14 @@ html,
 body {
     height: 100%;
 }
+
+.content {
+    text-align: center;
+    padding: 10px;
+}
+
+h2 {
+    color: rgb(24, 196, 96);
+    text-align: center;
+    margin-top: 0;
+}

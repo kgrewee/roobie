@@ -87,12 +87,34 @@ Opacity
 Float
 */
 
-.float-left {
+.flt-left {
     float: left;
 }
 
-.float-right {
+.flt-right {
     float: right;
+}
+
+
+/*
+Buttons
+*/
+
+.btn {
+    width: auto;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.btn:hover {
+    box-shadow: 1px 3px 3px rgb(17, 17, 17, .4);
+    cursor: pointer;
+}
+
+.btn-outline {
+    border: 1px solid rgb(255, 255, 255, .5);
 }
 
 
@@ -100,11 +122,11 @@ Float
 Containers
 */
 
-.contain-mr {
+.cont-mr {
     width: 1000px;
 }
 
-.contain {
+.cont {
     width: 100%;
     padding: 5px;
 }
@@ -237,6 +259,10 @@ Horizontal for row, vertical for column
 
 .just-around {
     justify-content: space-around;
+}
+
+.just-center {
+    justify-content: center;
 }
 
 .just-start {

@@ -3,6 +3,12 @@
     font-size: 1.5em;
     color: rgb(24, 196, 96);
     padding: 0 10px;
+    font-weight: bolder;
+}
+
+.active {
+    color: rgb(24, 196, 96);
+    border-bottom: 2px solid rgb(24, 196, 96);
 }
 
 

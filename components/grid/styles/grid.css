@@ -1,6 +1,7 @@
 .flx-row div,
 .flx-col div {
-    width: 33%;
+    width: 30%;
     height: 50px;
     color: white;
+    margin: 5px;
 }

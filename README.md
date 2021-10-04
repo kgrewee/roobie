@@ -33,9 +33,10 @@ We basically have our own mini language.  This simplifies naming and reduces cod
     - spc - Space
     - bg - Background
     - inp - Input
+    - br - Border Radius
 
 2. Class names are suffixed when functionality is added to the prefix
     - in - Inset
     - out - Outline
 
-3. 
+3. Parameters/Units

@@ -233,44 +233,24 @@ Box shadow
 Flex display and direction
 */
 
+.flx-col {
+    display: flex;
+    flex-direction: column;
+}
+
 .flx-row {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
 }
 
 .flx-row-rev {
     display: flex;
-    flex-flow: row-reverse wrap;
-}
-
-.flx-col {
-    display: flex;
-    flex-flow: column wrap;
+    flex-direction: row-reverse;
 }
 
 .flx-col-rev {
     display: flex;
-    flex-flow: column-reverse wrap;
-}
-
-.flx-row-nowrap {
-    display: flex;
-    flex-flow: row nowrap;
-}
-
-.flx-row-rev-nowrap {
-    display: flex;
-    flex-flow: row-reverse nowrap;
-}
-
-.flx-col-nowrap {
-    display: flex;
-    flex-flow: column nowrap;
-}
-
-.flx-col-rev-nowrap {
-    display: flex;
-    flex-flow: column-reverse nowrap;
+    flex-direction: column-reverse;
 }
 
 
@@ -318,7 +298,7 @@ Horizontal for row, vertical for column
     justify-content: flex-end;
 }
 
-.jst-baseline {
+.jst-base {
     justify-content: baseline;
 }
 
@@ -352,7 +332,7 @@ How items are aligned within a single line
     align-items: flex-end;
 }
 
-.aln-baseline {
+.aln-base {
     align-items: baseline;
 }
 
@@ -382,7 +362,7 @@ How a single item is aligned within a single line
     align-self: flex-end;
 }
 
-.aln-self-baseline {
+.aln-self-base {
     align-self: baseline;
 }
 
@@ -412,7 +392,7 @@ How lines are spaced.  No effect if content is only 1 line.
     align-content: flex-end;
 }
 
-.aln-content-baseline {
+.aln-content-base {
     align-content: baseline;
 }
 

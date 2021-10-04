@@ -1,0 +1,48 @@
+/*
+Dividers
+*/
+
+.row-divider {
+    height: 30px;
+    width: 100%;
+}
+
+.col-divider {
+    height: 100%;
+    width: 30px;
+}
+
+
+/*
+Body styles
+*/
+
+body {
+    background-color: #111111;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.content {
+    text-align: center;
+    padding: 10px;
+}
+
+
+/*
+Headings
+*/
+
+h2 {
+    color: rgb(24, 196, 96);
+    text-align: center;
+    margin-top: 0;
+}
+
+h3 {
+    color: #bcbcbc;
+    text-align: center;
+}

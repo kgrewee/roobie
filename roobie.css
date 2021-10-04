@@ -2,7 +2,7 @@
 Nav bar
 */
 
-.top-nav {
+.nav-top {
     z-index: 100;
     top: 0;
     left: 0;
@@ -10,7 +10,7 @@ Nav bar
     height: auto;
 }
 
-.bottom-nav {
+.nav-bottom {
     position: absolute;
     z-index: 100;
     bottom: 0;
@@ -19,13 +19,13 @@ Nav bar
     height: auto;
 }
 
-.horiz-nav {
+.nav-horiz {
     z-index: 100;
     height: auto;
     width: 100%;
 }
 
-.vert-nav {
+.nav-vert {
     z-index: 100;
     height: 100%;
     width: auto;
@@ -87,12 +87,60 @@ Opacity
 Float
 */
 
-.float-left {
+.flt-left {
     float: left;
 }
 
-.float-right {
+.flt-right {
     float: right;
+}
+
+
+/*
+Buttons
+*/
+
+.btn {
+    width: auto;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.btn:hover {
+    box-shadow: 1px 3px 3px rgb(17, 17, 17, .4);
+    cursor: pointer;
+}
+
+.btn-out {
+    border: 1px solid rgb(255, 255, 255, .6);
+}
+
+.btn-out:hover {
+    border: 1px solid rgb(255, 255, 255, .8);
+}
+
+.btn-in {
+    box-shadow: inset 0px 0px 5px 2px rgb(34, 34, 34, .6);
+}
+
+.btn-in:hover {
+    box-shadow: inset 0px 0px 5px 5px rgb(34, 34, 34, .8) !important;
+}
+
+
+/*
+Containers
+*/
+
+.cont-mr {
+    width: 1000px;
+}
+
+.cont {
+    width: 100%;
+    padding: 5px;
 }
 
 
@@ -100,7 +148,7 @@ Float
 Spacing
 */
 
-.zero-space {
+.spc-none {
     padding: 0;
     margin: 0;
 }
@@ -144,7 +192,7 @@ Box shadow
 */
 
 .box-shadow {
-    box-shadow: 2px 2px 6px rgb(34, 34, 34, .6);
+    box-shadow: 0px 0px 5px 5px rgb(34, 34, 34, .6);
 }
 
 
@@ -199,15 +247,15 @@ Nowrap aligns items on a single line
 Wrap will push items to the next line
 */
 
-.wrap {
+.wrp {
     flex-wrap: wrap;
 }
 
-.wrap-rev {
+.wrp-rev {
     flex-wrap: wrap-reverse;
 }
 
-.no-wrap {
+.wrp-none {
     flex-wrap: nowrap;
 }
 
@@ -217,27 +265,31 @@ Alignment on the main axis
 Horizontal for row, vertical for column
 */
 
-.just-between {
+.jst-between {
     justify-content: space-between;
 }
 
-.just-around {
+.jst-around {
     justify-content: space-around;
 }
 
-.just-start {
+.jst-center {
+    justify-content: center;
+}
+
+.jst-start {
     justify-content: flex-start;
 }
 
-.just-end {
+.jst-end {
     justify-content: flex-end;
 }
 
-.just-baseline {
+.jst-baseline {
     justify-content: baseline;
 }
 
-.just-stretch {
+.jst-stretch {
     justify-content: stretch;
 }
 
@@ -247,31 +299,31 @@ Item alignment
 How items are aligned within a single line
 */
 
-.align-center {
+.aln-center {
     align-items: center;
 }
 
-.align-between {
+.aln-between {
     align-items: space-between;
 }
 
-.align-around {
+.aln-around {
     align-items: space-around;
 }
 
-.align-start {
+.aln-start {
     align-items: flex-start;
 }
 
-.align-end {
+.aln-end {
     align-items: flex-end;
 }
 
-.align-baseline {
+.aln-baseline {
     align-items: baseline;
 }
 
-.align-stretch {
+.aln-stretch {
     align-items: stretch;
 }
 
@@ -281,27 +333,27 @@ Self alignment
 How a single item is aligned within a single line
 */
 
-.align-self-between {
+.aln-self-between {
     align-self: space-between;
 }
 
-.align-self-around {
+.aln-self-around {
     align-self: space-around;
 }
 
-.align-self-start {
+.aln-self-start {
     align-self: flex-start;
 }
 
-.align-self-end {
+.aln-self-end {
     align-self: flex-end;
 }
 
-.align-self-baseline {
+.aln-self-baseline {
     align-self: baseline;
 }
 
-.align-self-stretch {
+.aln-self-stretch {
     align-self: stretch;
 }
 
@@ -311,27 +363,27 @@ Content alignment
 How lines are spaced.  No effect if content is only 1 line.
 */
 
-.align-content-between {
+.aln-content-between {
     align-content: space-between;
 }
 
-.align-content-around {
+.aln-content-around {
     align-content: space-around;
 }
 
-.align-content-start {
+.aln-content-start {
     align-content: flex-start;
 }
 
-.align-content-end {
+.aln-content-end {
     align-content: flex-end;
 }
 
-.align-content-baseline {
+.aln-content-baseline {
     align-content: baseline;
 }
 
-.align-content-stretch {
+.aln-content-stretch {
     align-content: stretch;
 }
 

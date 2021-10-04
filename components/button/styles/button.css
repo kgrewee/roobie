@@ -1,0 +1,16 @@
+.btn {
+    color: rgb(255, 255, 255, .75);
+}
+
+.btn:hover {
+    color: white;
+}
+
+.colored .btn {
+    color: rgb(0, 0, 0, .75);
+    background-color: rgb(24, 196, 96);
+}
+
+.colored .btn:hover {
+    color: black;
+}

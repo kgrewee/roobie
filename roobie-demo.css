@@ -1,7 +1,7 @@
 .roobie {
     font-size: 1.5em;
     color: var(--roobie-green);
-    padding: 10px;
+    padding: var(--pad-m);
     font-weight: bolder;
 }
 
@@ -20,8 +20,6 @@
 
 .content {
     height: 100%;
-    text-align: center;
-    padding: 10px;
     overflow: auto;
 }
 
@@ -60,6 +58,10 @@ body {
     font-family: var(--font-family);
 }
 
+xmp {
+    background-color: var(--roobie-grey);
+}
+
 
 /*
 Headings
@@ -79,7 +81,7 @@ h2 {
 h3 {
     color: var(--roobie-white);
     text-align: left;
-    margin-bottom: 5px;
+    margin-bottom: var(--margin-s);
 }
 
 

@@ -6,9 +6,9 @@ Simple & Robust UI components with mobile-first design.  Easy-to-use roobie css 
 
 Let's get started.
 
-1. ```roobie.css``` contains all of the roobie styles
-2. Components are found in ```components/```
-3. Demo-specific styles will be found in ```styles/``` within the component folder
+- ```roobie.css``` contains all of the roobie styles
+- Components are found in ```components/```
+- Demo-specific styles will be found in ```styles/``` within the component folder
 
 ## Components
 

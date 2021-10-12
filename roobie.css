@@ -54,7 +54,7 @@ Outline
 }
 
 .out:hover {
-    border: 1px solid rgb(255, 255, 255, .8);
+    border-color: rgb(255, 255, 255, .8);
 }
 
 .in {
@@ -62,7 +62,7 @@ Outline
 }
 
 .in:hover {
-    box-shadow: inset 0px 0px 5px 5px rgb(34, 34, 34, .5) !important;
+    box-shadow: inset 0px 0px 5px 3px rgb(34, 34, 34, .5) !important;
 }
 
 
@@ -152,10 +152,12 @@ Buttons
 
 .btn {
     width: auto;
+    height: auto;
     padding: var(--pad-l);
     text-decoration: none;
     border-radius: 6px;
     margin: 5px;
+    cursor: pointer;
 }
 
 
@@ -166,8 +168,11 @@ Inputs
 .inp {
     width: auto;
     padding: var(--pad-l);
+    color: var(--roobie-grey);
     border-radius: 8px;
     margin: 5px;
+    border: none;
+    font-size: .7em;
 }
 
 .inp:hover {

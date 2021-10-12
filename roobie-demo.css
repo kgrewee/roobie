@@ -12,6 +12,9 @@
 }
 
 .content {
+    height: 100%;
+    text-align: center;
+    padding: 10px;
     overflow: auto;
 }
 
@@ -46,11 +49,7 @@ body {
 html,
 body {
     height: 100%;
-}
-
-.content {
-    text-align: center;
-    padding: 10px;
+    overflow: hidden;
 }
 
 
@@ -70,7 +69,7 @@ h2 {
 }
 
 h3 {
-    color: #bcbcbc;
+    color: var(--roobie-white);
     text-align: center;
 }
 

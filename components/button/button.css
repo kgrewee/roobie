@@ -1,16 +1,16 @@
 .btn {
-    color: rgb(255, 255, 255, .75);
+    color: rgb(255, 255, 255, .7);
 }
 
 .btn:hover {
     color: white;
 }
 
-.colored .btn {
-    color: rgb(0, 0, 0, .75);
+.colored {
+    color: rgb(0, 0, 0, .7);
     background-color: var(--roobie-green);
 }
 
-.colored .btn:hover {
+.colored:hover {
     color: var(--roobie-black);
 }

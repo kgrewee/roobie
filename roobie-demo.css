@@ -92,17 +92,10 @@ nav {
 }
 
 nav a {
-    text-decoration: none;
     color: var(--roobie-black);
-    width: 100%;
-}
-
-nav a:hover {
-    cursor: pointer;
-    color: var(--roobie-green);
 }
 
 .active {
-    color: var(--roobie-green);
-    background-color: var(--roobie-white);
+    border-left: 3px solid var(--roobie-black);
+    opacity: 100% !important;
 }

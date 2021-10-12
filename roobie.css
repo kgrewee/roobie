@@ -61,8 +61,16 @@ Nav bar
 }
 
 .nav-item {
-    padding: var(--pad-m);
+    padding: var(--pad-s);
     margin: var(--margin-m) 0;
+    width: auto;
+    opacity: 75%;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    opacity: 100%;
+    cursor: pointer;
 }
 
 .sticky {

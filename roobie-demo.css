@@ -8,7 +8,11 @@
 
 .active {
     color: var(--roobie-green);
-    border-bottom: 2px solid var(--roobie-green);
+    background-color: var(--roobie-black);
+}
+
+.content {
+    overflow: auto;
 }
 
 
@@ -70,7 +74,7 @@ h3 {
 /* Component buttons */
 
 .components a {
-    color: rgb(24, 196, 96);
+    color: var(--roobie-green);
 }
 
 

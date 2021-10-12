@@ -215,6 +215,19 @@ Containers
     width: 1000px;
 }
 
+@media screen and (max-width: 800px) {
+    .div,
+    .div-s,
+    .div-m,
+    .div-l,
+    .div-xl,
+    .div,
+    .div-mr {
+        width: 100%;
+        display: inline;
+    }
+}
+
 
 /* 
 Spacing

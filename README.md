@@ -17,7 +17,13 @@ A collection of styles to help you build web applications.
 
 ## Syntax
 
-We basically have our own mini-language to simplify naming and reduce code.  Here's the basics.
+We basically have our own mini-language to simplify naming and reduce code.
+
+### Basics
+
+Roobie is made up of css classes and themes.  You can take the themes found in ```roobie.css``` and change the variables to your liking.  The css classes depend directly on the theme variables.
+
+The power of Roobie is in the css classes.  You can use these to generate many different styles, all using the same css.  What!  Thats insane.  No, thats smart.  This reduces spammed css styles that make your UI impossible to maintain.  Focus on content and colors, not basic styles.  We will handle that for you.  Checkout the ```components/``` folder for pre-built components using our styles.
 
 ### Naming
 

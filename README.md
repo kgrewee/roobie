@@ -23,7 +23,7 @@ We basically have our own mini-language to simplify naming and reduce code.
 
 ***Here's the basics***
 
-1. Naming
+### Naming
 
 Class names are prefixed pertaining to their function
 
@@ -45,7 +45,7 @@ Class names are prefixed pertaining to their function
 - in - Inset
 - ord - Order
 
-2. Sizing
+### Sizing
 
 When a class, such as containers or text need to have different sizes, we use this convention. 
 

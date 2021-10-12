@@ -62,7 +62,7 @@ Nav bar
 
 .nav-item {
     padding: var(--pad-s);
-    margin: var(--margin-m) 0;
+    margin: var(--margin-m);
     width: auto;
     opacity: 75%;
     text-decoration: none;

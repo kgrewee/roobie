@@ -238,6 +238,16 @@ Containers
     width: 1000px;
 }
 
+.div,
+.div-s,
+.div-m,
+.div-l,
+.div-xl,
+.div,
+.div-mr {
+    overflow: auto;
+}
+
 @media screen and (max-width: 800px) {
     .div,
     .div-s,

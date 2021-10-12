@@ -28,6 +28,7 @@ Class names are prefixed pertaining to their function
 - ht - Height
 - flx - Flex
 - flt - Float
+- mrg - Margin
 - op - Opacity
 - btn - Button
 - txt - Text

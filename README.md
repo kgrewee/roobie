@@ -1,11 +1,10 @@
 # roobie
 
-Simple & Robust UI components with mobile-first design.  Easy-to-use roobie css to assist you in building web applications.
+A collection of stylesheets to help you build web applications.
 
-***This whole repo is a demo.  Pull using git and open ```index.html``` in a browser***
+***This whole repo is a demo.  Pull using git and open ```index.html``` in a browser.***
 
 - ```roobie.css``` - All of the roobie styles.  Our bread and butter.
-- ```themes/``` - Pre-built themes.
 - ```components/``` - Pre-built components using roobie css & demo-specific styles.  Use these as a starting point.
 - ```community/``` - Demos built by the roobie community.  Make a branch and create a demo using roobie.
 
@@ -29,6 +28,7 @@ Class names are prefixed pertaining to their function
 - ht - Height
 - flx - Flex
 - flt - Float
+- mrg - Margin
 - op - Opacity
 - btn - Button
 - txt - Text
@@ -53,4 +53,4 @@ When a class needs to have different sizes, we use this convention.
 - l - Large
 - xl - Extra large
 
-Some classes, such as txt, offer more extreme values.
+Some classes, such as txt, offer more extreme sizes.

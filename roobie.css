@@ -1,6 +1,30 @@
-@import "themes/roobie-dark.css";
-@import "themes/roobie-light.css";
-@import "themes/roobie-var.css";
+/* Themes */
+
+:root {
+    --font-family: "fantasy", sans-serif;
+    --pad-s: 5px;
+    --pad-m: 10px;
+    --pad-l: 15px;
+    --pad-xl: 20px;
+    --margin-s: 5px;
+    --margin-m: 10px;
+    --margin-l: 15px;
+    --margin-xl: 20px;
+    --box-shadow: 1px 3px 3px rgb(17, 17, 17, .4);
+    --roobie-white: rgb(240, 240, 240);
+    --roobie-off-white: rgb(218, 218, 218);
+    --roobie-black: rgb(19, 19, 19);
+    --roobie-red: rgb(245, 9, 9);
+    --roobie-orange: rgb(243, 162, 11);
+    --roobie-purple: rgb(122, 10, 122);
+    --roobie-green: rgb(24, 196, 96);
+    --roobie-yellow: rgb(230, 230, 16);
+    --roobie-blue: rgb(13, 13, 226);
+    --roobie-grey: rgb(88, 87, 87);
+    --roobie-violet: rgb(226, 108, 226);
+    --roobie-pink: rgb(219, 163, 173);
+}
+
 
 /*
 Nav bar
@@ -208,11 +232,20 @@ Containers
 
 .div {
     width: 100%;
-    padding: var(--pad-s);
 }
 
 .div-mr {
     width: 1000px;
+}
+
+.div,
+.div-s,
+.div-m,
+.div-l,
+.div-xl,
+.div,
+.div-mr {
+    overflow: auto;
 }
 
 @media screen and (max-width: 800px) {

@@ -154,27 +154,6 @@ Buttons
     margin: 5px;
 }
 
-.btn:hover {
-    box-shadow: 1px 3px 3px rgb(17, 17, 17, .4);
-    cursor: pointer;
-}
-
-.btn-out {
-    border: 1px solid rgb(255, 255, 255, .6);
-}
-
-.btn-out:hover {
-    border: 1px solid rgb(255, 255, 255, .8);
-}
-
-.btn-in {
-    box-shadow: inset 0px 0px 5px 2px rgb(34, 34, 34, .6);
-}
-
-.btn-in:hover {
-    box-shadow: inset 0px 0px 5px 5px rgb(34, 34, 34, .8) !important;
-}
-
 
 /*
 Inputs 
@@ -197,13 +176,33 @@ Inputs
 Containers
 */
 
-.cont-mr {
-    width: 1000px;
+.c-xxxs {
+    width: 20%;
+    padding: 5px;
 }
 
-.cont {
+.c-xxs {
+    width: 40%;
+    padding: 5px;
+}
+
+.c-xs {
+    width: 60%;
+    padding: 5px;
+}
+
+.c-s {
+    width: 80%;
+    padding: 5px;
+}
+
+.c {
     width: 100%;
     padding: 5px;
+}
+
+.c-mr {
+    width: 1000px;
 }
 
 
@@ -307,7 +306,7 @@ Flex display and direction
 /* 
 Wrap
 Nowrap aligns items on a single line
-Wrap will push items to the next line
+Wrap will push items to the next line if needed
 */
 
 .wrp {
@@ -456,6 +455,6 @@ Order
 How items are ordered
 */
 
-.order-first {
+.ord-first {
     order: -1;
 }

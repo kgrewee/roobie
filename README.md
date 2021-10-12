@@ -2,13 +2,13 @@
 
 Simple & Robust UI components with mobile-first design.  Easy-to-use roobie css to assist you in building web applications.
 
-***This whole repo is a demo.  Pull it and open ```index.html``` in a browser.***
+***This whole repo is a demo.  Pull using git and open ```index.html``` in a browser.***
 
-Let's get started.
+Let's get started.  Here's the repo breakdown:
 
-- ```roobie.css``` contains all of the roobie styles
-- Components are found in ```components/```
-- Demo-specific styles will be found in ```styles/``` within the component folder
+- ```roobie.css``` - All of the roobie styles.  Our bread and butter.
+- ```themes/``` - Themes provided by the roobie team
+- ```components/``` - Pre-built components using roobie css & demo-specific styles.  Use these as a starting point.
 
 ## Components
 
@@ -24,20 +24,37 @@ We basically have our own mini-language to simplify naming and reduce code.
 
 ***Here's the basics***
 
-1. Class names are prefixed pertaining to their function
-    - ht - Height
-    - flx - Flex
-    - flt - Float
-    - op - Opacity
-    - btn - Button
-    - cont - Container
-    - txt - Text
-    - wrp - Wrap
-    - aln - Align
-    - jst - Justify
-    - spc - Space
-    - bg - Background
-    - inp - Input
-    - br - Border Radius
-    - out - Outline
-    - in - Inset
+1. Naming
+
+Class names are prefixed pertaining to their function
+
+- c - Container
+- ht - Height
+- flx - Flex
+- flt - Float
+- op - Opacity
+- btn - Button
+- txt - Text
+- wrp - Wrap
+- aln - Align
+- jst - Justify
+- spc - Space
+- bg - Background
+- inp - Input
+- br - Border Radius
+- out - Outline
+- in - Inset
+- ord - Order
+
+2. Sizing
+
+When a class, such as containers or text need to have different sizes, we use this convention. 
+
+- xxxs - Extra extra extra small
+- xxs - Extra extra small
+- xs - Small
+- xl - Large
+- xxl - Extra extra large
+- xxxl - Extra extra extra large
+
+***Some classes, such as containers, only contain small sizes.***

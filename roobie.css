@@ -10,9 +10,9 @@
     --margin-m: 10px;
     --margin-l: 15px;
     --margin-xl: 20px;
-    --box-shadow: 1px 3px 3px rgb(17, 17, 17, .4);
     --roobie-white: rgb(240, 240, 240);
     --roobie-off-white: rgb(218, 218, 218);
+    --roobie-smooth-white: rgb(241, 241, 241);
     --roobie-black: rgb(19, 19, 19);
     --roobie-red: rgb(245, 9, 9);
     --roobie-orange: rgb(243, 162, 11);
@@ -25,6 +25,10 @@
     --roobie-pink: rgb(219, 163, 173);
     --roobie-inset: inset 0px 0px 5px 2px rgb(34, 34, 34, .3);
     --roobie-border: 1px solid var(--roobie-black);
+    --roobie-box-shadow-s: 1px 1px 1px rgb(17, 17, 17, .1);
+    --roobie-box-shadow-m: 2px 2px 2px rgb(17, 17, 17, .2);
+    --roobie-box-shadow-l: 3px 3px 3px rgb(17, 17, 17, .4);
+    --roobie-box-shadow-xl: 4px 4px 4px rgb(17, 17, 17, .6);
 }
 
 
@@ -87,15 +91,25 @@ Outline
     border: var(--roobie-border) !important;
 }
 
-.box {
-    box-shadow: var(--box-shadow);
+.box-s {
+    box-shadow: var(--roobie-box-shadow-s);
+}
+
+.box-m {
+    box-shadow: var(--roobie-box-shadow-m);
+}
+
+.box-l {
+    box-shadow: var(--roobie-box-shadow-l);
+}
+
+.box-xl {
+    box-shadow: var(--roobie-box-shadow-xl);
 }
 
 .in {
     box-shadow: var(--roobie-inset);
 }
-
-.in:hover {}
 
 
 /*
@@ -197,11 +211,17 @@ Buttons
 Inputs 
 */
 
+input:focus,
+textarea:focus,
+select:focus {
+    outline-offset: 0px !important;
+    outline: none !important;
+}
+
 .inp {
     width: auto;
     padding: var(--pad-l);
     background-color: var(--roobie-off-white);
-    color: var(--roobie-black);
     border-radius: 8px;
     margin: 5px;
     border: none;
@@ -211,7 +231,7 @@ Inputs
 
 .inp:focus,
 .inp:active {
-    border-color: inherit;
+    border-width: 2px !important;
 }
 
 
@@ -335,15 +355,6 @@ Text
 
 .txt-xxl {
     font-size: 2.5em;
-}
-
-
-/*
-Box shadow
-*/
-
-.box-shadow {
-    box-shadow: var(--box-shadow);
 }
 
 

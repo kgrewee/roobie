@@ -4,3 +4,7 @@
     color: var(--roobie-black);
     margin: 5px;
 }
+
+.v-wrp {
+    max-height: 200px;
+}

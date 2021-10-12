@@ -1,3 +1,3 @@
-.colored .inp {
-    color: rgb(0, 0, 0, .75);
+.colored {
+    background-color: var(--roobie-smooth-white);
 }

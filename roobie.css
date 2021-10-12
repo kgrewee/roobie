@@ -204,6 +204,23 @@ Inputs
 
 
 /*
+Scroll
+*/
+
+.scr {
+    overflow: auto;
+}
+
+.scr-y {
+    overflow-y: auto;
+}
+
+.scr-x {
+    overflow-x: auto;
+}
+
+
+/*
 Containers
 */
 

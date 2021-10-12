@@ -1,6 +1,14 @@
 # roobie
 
-Interactive templates for all platforms.  Simple but robust UI components with mobile-first design.  Easy-to-use roobie css to assist you in building web applications.
+Simple & Robust UI components with mobile-first design.  Easy-to-use roobie css to assist you in building web applications.
+
+***This whole repo is a demo.  Pull it and open ```index.html``` in a browser.***
+
+Let's get started.
+
+1. ```roobie.css``` contains all of the roobie styles
+2. Components are found in ```components/```
+3. Demo-specific styles will be found in ```styles/``` within the component folder
 
 ## Components
 
@@ -10,17 +18,9 @@ Interactive templates for all platforms.  Simple but robust UI components with m
 - Input
 - Container
 
-## Intro
-
-Welcome to roobie!  We're so glad you're here.  Let's get started.
-
-1. ```roobie.css``` contains all of the roobie styles
-2. Components are found in ```components/```
-3. Styles used for component demos will be found in ```styles/``` within the component folder
-
 ## Syntax
 
-We basically have our own mini language.  This simplifies naming and reduces code.  Here's the basics.
+We basically have our own mini-language to simplify naming and reduce code.  Here's the basics.
 
 1. Class names are prefixed pertaining to their function
     - ht - Height
@@ -37,10 +37,6 @@ We basically have our own mini language.  This simplifies naming and reduces cod
     - bg - Background
     - inp - Input
     - br - Border Radius
-
-2. Class names are suffixed when functionality is added to the prefix
-    - in - Inset
-    - out - Outline
 
 3. Parameters, such as text size, and units are specific to the property being set
     - Text - em

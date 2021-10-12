@@ -20,7 +20,9 @@ Let's get started.
 
 ## Syntax
 
-We basically have our own mini-language to simplify naming and reduce code.  Here's the basics.
+We basically have our own mini-language to simplify naming and reduce code.
+
+***Here's the basics***
 
 1. Class names are prefixed pertaining to their function
     - ht - Height
@@ -37,7 +39,5 @@ We basically have our own mini-language to simplify naming and reduce code.  Her
     - bg - Background
     - inp - Input
     - br - Border Radius
-
-3. Parameters, such as text size, and units are specific to the property being set
-    - Text - em
-    - Height - %
+    - out - Outline
+    - in - Inset

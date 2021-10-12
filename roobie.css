@@ -233,32 +233,40 @@ Text
     text-align: right;
 }
 
-.txt-1 {
+.txt-xxxs {
+    font-size: .2em;
+}
+
+.txt-xxs {
+    font-size: .4em;
+}
+
+.txt-xs {
+    font-size: .6em;
+}
+
+.txt-s {
+    font-size: .8em;
+}
+
+.txt {
     font-size: 1em;
 }
 
-.txt-15 {
+.txt-l {
     font-size: 1.5em;
 }
 
-.txt-2 {
+.txt-xl {
     font-size: 2em;
 }
 
-.txt-25 {
+.txt-xxl {
     font-size: 2.5em;
 }
 
-.txt-3 {
+.txt-xxxl {
     font-size: 3em;
-}
-
-.txt-35 {
-    font-size: 3.5em;
-}
-
-.txt-4 {
-    font-size: 4em;
 }
 
 

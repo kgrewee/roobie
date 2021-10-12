@@ -1,15 +1,6 @@
-:root {
-    --pad-s: 5px;
-    --pad-m: 10px;
-    --pad-l: 15px;
-    --pad-xl: 20px;
-    --margin-s: 5px;
-    --margin-m: 10px;
-    --margin-l: 15px;
-    --margin-xl: 20px;
-    --box-shadow: 1px 3px 3px rgb(17, 17, 17, .4);
-}
-
+@import "themes/roobie-dark.css";
+@import "themes/roobie-light.css";
+@import "themes/roobie-var.css";
 
 /*
 Nav bar

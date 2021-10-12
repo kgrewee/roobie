@@ -1,14 +1,14 @@
 .roobie {
     height: 100%;
     font-size: 1.5em;
-    color: rgb(24, 196, 96);
+    color: var(--roobie-green);
     padding: 0 10px;
     font-weight: bolder;
 }
 
 .active {
-    color: rgb(24, 196, 96);
-    border-bottom: 2px solid rgb(24, 196, 96);
+    color: var(--roobie-green);
+    border-bottom: 2px solid var(--roobie-green);
 }
 
 
@@ -32,7 +32,7 @@ Body styles
 */
 
 body {
-    background-color: #111111;
+    background-color: var(--roobie-black);
 }
 
 html,
@@ -51,12 +51,12 @@ Headings
 */
 
 h1 {
-    color: white;
+    color: var(--roobie-white);
     text-align: center;
 }
 
 h2 {
-    color: rgb(24, 196, 96);
+    color: var(--roobie-green);
     text-align: center;
     margin-top: 0;
 }
@@ -87,5 +87,5 @@ nav a {
 
 nav a:hover {
     cursor: pointer;
-    color: rgb(24, 196, 96);
+    color: var(--roobie-green);
 }

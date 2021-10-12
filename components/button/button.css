@@ -8,9 +8,9 @@
 
 .colored .btn {
     color: rgb(0, 0, 0, .75);
-    background-color: rgb(24, 196, 96);
+    background-color: var(--roobie-green);
 }
 
 .colored .btn:hover {
-    color: black;
+    color: var(--roobie-black);
 }

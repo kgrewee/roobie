@@ -24,6 +24,7 @@
     --roobie-violet: rgb(226, 108, 226);
     --roobie-pink: rgb(219, 163, 173);
     --roobie-inset: inset 0px 0px 5px 2px rgb(34, 34, 34, .3);
+    --roobie-border: 1px solid var(--roobie-black);
 }
 
 
@@ -83,10 +84,12 @@ Outline
 */
 
 .out {
-    border: 1px solid var(--roobie-black);
+    border: var(--roobie-border) !important;
 }
 
-.out:hover {}
+.box {
+    box-shadow: var(--box-shadow);
+}
 
 .in {
     box-shadow: var(--roobie-inset);
@@ -197,17 +200,13 @@ Inputs
 .inp {
     width: auto;
     padding: var(--pad-l);
-    color: var(--roobie-grey);
+    background-color: var(--roobie-off-white);
+    color: var(--roobie-black);
     border-radius: 8px;
     margin: 5px;
     border: none;
     font-size: .7em;
     font: 500 15px var(--font-family);
-}
-
-.inp:hover {
-    cursor: pointer;
-    box-shadow: var(--box-shadow);
 }
 
 

@@ -1,3 +1,5 @@
-div {
+.div-demo div {
     height: 50px;
+    background-color: var(--roobie-grey);
+    margin-bottom: var(--margin-l);
 }

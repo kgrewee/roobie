@@ -1,6 +1,6 @@
 # roobie
 
-A collection of stylesheets to help you build web applications.
+A collection of styles to help you build web applications.
 
 ***This whole repo is a demo.  Pull using git and open ```index.html``` in a browser.***
 

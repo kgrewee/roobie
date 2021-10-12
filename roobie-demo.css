@@ -77,11 +77,11 @@ h3 {
 }
 
 .mrg-h {
-    margin: 0 var(--margin-m);
+    margin: 0 var(--margin-l);
 }
 
 .mrg-v {
-    margin: var(--margin-m) 0;
+    margin: var(--margin-l) 0;
 }
 
 

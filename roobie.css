@@ -10,9 +10,9 @@
     --margin-m: 10px;
     --margin-l: 15px;
     --margin-xl: 20px;
-    --box-shadow: 1px 3px 3px rgb(17, 17, 17, .4);
     --roobie-white: rgb(240, 240, 240);
     --roobie-off-white: rgb(218, 218, 218);
+    --roobie-smooth-white: rgb(241, 241, 241);
     --roobie-black: rgb(19, 19, 19);
     --roobie-red: rgb(245, 9, 9);
     --roobie-orange: rgb(243, 162, 11);
@@ -23,7 +23,18 @@
     --roobie-grey: rgb(88, 87, 87);
     --roobie-violet: rgb(226, 108, 226);
     --roobie-pink: rgb(219, 163, 173);
-    --roobie-inset: inset 0px 0px 5px 2px rgb(34, 34, 34, .3);
+    --roobie-inset-s: inset 0px 0px 1px 1px rgb(17, 17, 17, .1);
+    --roobie-inset-m: inset 0px 0px 2px 2px rgb(17, 17, 17, .2);
+    --roobie-inset-l: inset 0px 0px 3px 3px rgb(17, 17, 17, .4);
+    --roobie-inset-xl: inset 0px 0px 5px 4px rgb(17, 17, 17, .6);
+    --roobie-border-s: .5px solid var(--roobie-black);
+    --roobie-border-m: 1px solid var(--roobie-black);
+    --roobie-border-l: 2px solid var(--roobie-black);
+    --roobie-border-xl: 4px solid var(--roobie-black);
+    --roobie-box-shadow-s: 1px 1px 1px rgb(17, 17, 17, .1);
+    --roobie-box-shadow-m: 2px 2px 2px rgb(17, 17, 17, .2);
+    --roobie-box-shadow-l: 3px 3px 3px rgb(17, 17, 17, .4);
+    --roobie-box-shadow-xl: 4px 4px 4px rgb(17, 17, 17, .6);
 }
 
 
@@ -82,17 +93,66 @@ Nav bar
 Outline
 */
 
+.out-s {
+    border: var(--roobie-border-s) !important;
+}
+
+.out-m,
 .out {
-    border: 1px solid var(--roobie-black);
+    border: var(--roobie-border-m) !important;
 }
 
-.out:hover {}
+.out-l {
+    border: var(--roobie-border-l) !important;
+}
 
+.out-xl {
+    border: var(--roobie-border-l) !important;
+}
+
+
+/*
+Box shadow
+*/
+
+.box-s {
+    box-shadow: var(--roobie-box-shadow-s);
+}
+
+.box-m,
+.box {
+    box-shadow: var(--roobie-box-shadow-m);
+}
+
+.box-l {
+    box-shadow: var(--roobie-box-shadow-l);
+}
+
+.box-xl {
+    box-shadow: var(--roobie-box-shadow-xl);
+}
+
+
+/*
+Inset
+*/
+
+.in-s {
+    box-shadow: var(--roobie-inset-s);
+}
+
+.in-m,
 .in {
-    box-shadow: var(--roobie-inset);
+    box-shadow: var(--roobie-inset-m);
 }
 
-.in:hover {}
+.in-l {
+    box-shadow: var(--roobie-inset-l);
+}
+
+.in-xl {
+    box-shadow: var(--roobie-inset-xl);
+}
 
 
 /*
@@ -194,10 +254,17 @@ Buttons
 Inputs 
 */
 
+input:focus,
+textarea:focus,
+select:focus {
+    outline-offset: 0px !important;
+    outline: none !important;
+}
+
 .inp {
     width: auto;
     padding: var(--pad-l);
-    color: var(--roobie-grey);
+    background-color: var(--roobie-off-white);
     border-radius: 8px;
     margin: 5px;
     border: none;
@@ -205,9 +272,9 @@ Inputs
     font: 500 15px var(--font-family);
 }
 
-.inp:hover {
-    cursor: pointer;
-    box-shadow: var(--box-shadow);
+.inp:focus,
+.inp:active {
+    border-width: 2px !important;
 }
 
 
@@ -331,15 +398,6 @@ Text
 
 .txt-xxl {
     font-size: 2.5em;
-}
-
-
-/*
-Box shadow
-*/
-
-.box-shadow {
-    box-shadow: var(--box-shadow);
 }
 
 

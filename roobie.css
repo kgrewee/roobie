@@ -209,6 +209,11 @@ Inputs
     font: 500 15px var(--font-family);
 }
 
+.inp:focus,
+.inp:active {
+    border-color: inherit;
+}
+
 
 /*
 Scroll

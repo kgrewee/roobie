@@ -23,8 +23,14 @@
     --roobie-grey: rgb(88, 87, 87);
     --roobie-violet: rgb(226, 108, 226);
     --roobie-pink: rgb(219, 163, 173);
-    --roobie-inset: inset 0px 0px 5px 2px rgb(34, 34, 34, .3);
-    --roobie-border: 1px solid var(--roobie-black);
+    --roobie-inset-s: inset 0px 0px 1px 1px rgb(17, 17, 17, .1);
+    --roobie-inset-m: inset 0px 0px 2px 2px rgb(17, 17, 17, .2);
+    --roobie-inset-l: inset 0px 0px 3px 3px rgb(17, 17, 17, .4);
+    --roobie-inset-xl: inset 0px 0px 5px 4px rgb(17, 17, 17, .6);
+    --roobie-border-s: .5px solid var(--roobie-black);
+    --roobie-border-m: 1px solid var(--roobie-black);
+    --roobie-border-l: 2px solid var(--roobie-black);
+    --roobie-border-xl: 4px solid var(--roobie-black);
     --roobie-box-shadow-s: 1px 1px 1px rgb(17, 17, 17, .1);
     --roobie-box-shadow-m: 2px 2px 2px rgb(17, 17, 17, .2);
     --roobie-box-shadow-l: 3px 3px 3px rgb(17, 17, 17, .4);
@@ -87,15 +93,34 @@ Nav bar
 Outline
 */
 
-.out {
-    border: var(--roobie-border) !important;
+.out-s {
+    border: var(--roobie-border-s) !important;
 }
+
+.out-m,
+.out {
+    border: var(--roobie-border-m) !important;
+}
+
+.out-l {
+    border: var(--roobie-border-l) !important;
+}
+
+.out-xl {
+    border: var(--roobie-border-l) !important;
+}
+
+
+/*
+Box shadow
+*/
 
 .box-s {
     box-shadow: var(--roobie-box-shadow-s);
 }
 
-.box-m {
+.box-m,
+.box {
     box-shadow: var(--roobie-box-shadow-m);
 }
 
@@ -107,8 +132,26 @@ Outline
     box-shadow: var(--roobie-box-shadow-xl);
 }
 
+
+/*
+Inset
+*/
+
+.in-s {
+    box-shadow: var(--roobie-inset-s);
+}
+
+.in-m,
 .in {
-    box-shadow: var(--roobie-inset);
+    box-shadow: var(--roobie-inset-m);
+}
+
+.in-l {
+    box-shadow: var(--roobie-inset-l);
+}
+
+.in-xl {
+    box-shadow: var(--roobie-inset-xl);
 }
 
 

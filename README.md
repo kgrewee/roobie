@@ -5,7 +5,6 @@ Simple & Robust UI components with mobile-first design.  Easy-to-use roobie css 
 ***This whole repo is a demo.  Pull using git and open ```index.html``` in a browser***
 
 - ```roobie.css``` - All of the roobie styles.  Our bread and butter.
-- ```themes/``` - Pre-built themes.
 - ```components/``` - Pre-built components using roobie css & demo-specific styles.  Use these as a starting point.
 - ```community/``` - Demos built by the roobie community.  Make a branch and create a demo using roobie.
 

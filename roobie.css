@@ -173,6 +173,7 @@ Inputs
     margin: 5px;
     border: none;
     font-size: .7em;
+    font: 500 15px var(--font-family);
 }
 
 .inp:hover {

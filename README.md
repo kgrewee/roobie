@@ -53,4 +53,4 @@ When a class needs to have different sizes, we use this convention.
 - l - Large
 - xl - Extra large
 
-Some classes, such as txt, offer more extreme values.
+Some classes, such as txt, offer more extreme sizes.

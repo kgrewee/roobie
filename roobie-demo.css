@@ -1,9 +1,16 @@
 .roobie {
-    height: 100%;
     font-size: 1.5em;
     color: var(--roobie-green);
     padding: 10px;
     font-weight: bolder;
+}
+
+.title {
+    font-size: 2em;
+}
+
+.roobie span {
+    color: var(--roobie-white);
 }
 
 .active {
@@ -72,13 +79,6 @@ h2 {
 h3 {
     color: var(--roobie-white);
     text-align: center;
-}
-
-
-/* Component buttons */
-
-.components a {
-    color: var(--roobie-green);
 }
 
 

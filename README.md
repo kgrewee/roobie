@@ -27,7 +27,7 @@ We basically have our own mini-language to simplify naming and reduce code.
 
 Class names are prefixed pertaining to their function
 
-- c - Container
+- div - Container
 - ht - Height
 - flx - Flex
 - flt - Float
@@ -47,15 +47,12 @@ Class names are prefixed pertaining to their function
 
 ### Sizing
 
-When a class, such as containers or text need to have different sizes, we use this convention. 
+When a class, such as containers or text, needs to have different sizes, we use this convention. 
 
-- xxxs - Extra extra extra small
-- xxs - Extra extra small
 - xs - Extra small
 - s - Small
+- m - Medium
 - l - Large
 - xl - Extra large
-- xxl - Extra extra large
-- xxxl - Extra extra extra large
 
-***Some classes, such as containers, only contain small sizes.***
+Some classes, such as txt, offer more extreme values.

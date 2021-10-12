@@ -1,3 +1,16 @@
+:root {
+    --pad-s: 5px;
+    --pad-m: 10px;
+    --pad-l: 15px;
+    --pad-xl: 20px;
+    --margin-s: 5px;
+    --margin-m: 10px;
+    --margin-l: 15px;
+    --margin-xl: 20px;
+    --box-shadow: 1px 3px 3px rgb(17, 17, 17, .4);
+}
+
+
 /*
 Nav bar
 */
@@ -32,7 +45,7 @@ Nav bar
 }
 
 .nav-item {
-    padding: 10px;
+    padding: var(--pad-m);
     margin: 10px;
 }
 
@@ -148,7 +161,7 @@ Buttons
 
 .btn {
     width: auto;
-    padding: 15px;
+    padding: var(--pad-l);
     text-decoration: none;
     border-radius: 6px;
     margin: 5px;
@@ -161,14 +174,14 @@ Inputs
 
 .inp {
     width: auto;
-    padding: 15px;
+    padding: var(--pad-l);
     border-radius: 8px;
     margin: 5px;
 }
 
 .inp:hover {
-    box-shadow: 1px 3px 3px rgb(17, 17, 17, .4);
     cursor: pointer;
+    box-shadow: var(--box-shadow);
 }
 
 
@@ -176,32 +189,32 @@ Inputs
 Containers
 */
 
-.c-xxxs {
+.div-s {
     width: 20%;
-    padding: 5px;
+    padding: var(--pad-s);
 }
 
-.c-xxs {
+.div-m {
     width: 40%;
-    padding: 5px;
+    padding: var(--pad-s);
 }
 
-.c-xs {
+.div-l {
     width: 60%;
-    padding: 5px;
+    padding: var(--pad-s);
 }
 
-.c-s {
+.div-xl {
     width: 80%;
-    padding: 5px;
+    padding: var(--pad-s);
 }
 
-.c {
+.div {
     width: 100%;
-    padding: 5px;
+    padding: var(--pad-s);
 }
 
-.c-mr {
+.div-mr {
     width: 1000px;
 }
 
@@ -248,6 +261,7 @@ Text
     font-size: .8em;
 }
 
+.txt-m,
 .txt {
     font-size: 1em;
 }
@@ -262,10 +276,6 @@ Text
 
 .txt-xxl {
     font-size: 2.5em;
-}
-
-.txt-xxxl {
-    font-size: 3em;
 }
 
 

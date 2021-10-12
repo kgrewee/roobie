@@ -79,6 +79,7 @@ h2 {
 h3 {
     color: var(--roobie-white);
     text-align: left;
+    margin-bottom: 5px;
 }
 
 

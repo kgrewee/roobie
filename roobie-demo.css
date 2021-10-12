@@ -15,6 +15,10 @@
     overflow: auto;
 }
 
+p {
+    color: var(--roobie-off-white);
+}
+
 
 /*
 Dividers

@@ -1,8 +1,8 @@
 .div-demo div {
     height: 50px;
-    background-color: var(--roobie-grey);
+    background-color: var(--roobie-off-white);
     margin-bottom: var(--margin-l);
-    color: var(--roobie-white);
+    color: var(--roobie-black);
     display: flex;
     flex-flow: column wrap;
     justify-content: center;

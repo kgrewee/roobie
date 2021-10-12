@@ -47,7 +47,7 @@ Class names are prefixed pertaining to their function
 
 ### Sizing
 
-When a class, such as containers or text, needs to have different sizes, we use this convention. 
+When a class needs to have different sizes, we use this convention. 
 
 - xs - Extra small
 - s - Small

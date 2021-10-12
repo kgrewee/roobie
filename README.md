@@ -6,7 +6,6 @@ A collection of stylesheets to help you build web applications.
 
 - ```roobie.css``` - All of the roobie styles.  Our bread and butter.
 - ```components/``` - Pre-built components using roobie css & demo-specific styles.  Use these as a starting point.
-- ```community/``` - Demos built by the roobie community.  Make a branch and create a demo using roobie.
 
 ## Components
 

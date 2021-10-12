@@ -23,6 +23,7 @@
     --roobie-grey: rgb(88, 87, 87);
     --roobie-violet: rgb(226, 108, 226);
     --roobie-pink: rgb(219, 163, 173);
+    --roobie-inset: inset 0px 0px 5px 2px rgb(34, 34, 34, .3);
 }
 
 
@@ -61,7 +62,7 @@ Nav bar
 
 .nav-item {
     padding: var(--pad-m);
-    margin: 10px;
+    margin: var(--margin-m) 0;
 }
 
 .sticky {
@@ -74,20 +75,16 @@ Outline
 */
 
 .out {
-    border: 1px solid rgb(255, 255, 255, .6);
+    border: 1px solid var(--roobie-black);
 }
 
-.out:hover {
-    border-color: rgb(255, 255, 255, .8);
-}
+.out:hover {}
 
 .in {
-    box-shadow: inset 0px 0px 5px 2px rgb(34, 34, 34, .3);
+    box-shadow: var(--roobie-inset);
 }
 
-.in:hover {
-    box-shadow: inset 0px 0px 5px 3px rgb(34, 34, 34, .5) !important;
-}
+.in:hover {}
 
 
 /*
@@ -207,6 +204,23 @@ Inputs
 
 
 /*
+Scroll
+*/
+
+.scr {
+    overflow: auto;
+}
+
+.scr-y {
+    overflow-y: auto;
+}
+
+.scr-x {
+    overflow-x: auto;
+}
+
+
+/*
 Containers
 */
 
@@ -236,16 +250,6 @@ Containers
 
 .div-mr {
     width: 1000px;
-}
-
-.div,
-.div-s,
-.div-m,
-.div-l,
-.div-xl,
-.div,
-.div-mr {
-    overflow: auto;
 }
 
 @media screen and (max-width: 800px) {
@@ -327,7 +331,7 @@ Box shadow
 */
 
 .box-shadow {
-    box-shadow: 0px 0px 5px 5px rgb(34, 34, 34, .6);
+    box-shadow: var(--box-shadow);
 }
 
 

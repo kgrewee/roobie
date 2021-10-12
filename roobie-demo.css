@@ -6,12 +6,7 @@
 }
 
 .roobie span {
-    color: var(--roobie-white);
-}
-
-.active {
-    color: var(--roobie-green);
-    background-color: var(--roobie-black);
+    color: var(--roobie-black);
 }
 
 .content {
@@ -20,7 +15,7 @@
 }
 
 p {
-    color: var(--roobie-off-white);
+    color: var(--roobie-grey);
 }
 
 
@@ -44,7 +39,7 @@ Body styles
 */
 
 body {
-    background-color: var(--roobie-black);
+    background-color: var(--roobie-white);
 }
 
 html,
@@ -55,7 +50,8 @@ body {
 }
 
 xmp {
-    background-color: var(--roobie-grey);
+    background-color: var(--roobie-off-white);
+    color: var(--roobie-black);
 }
 
 
@@ -64,7 +60,7 @@ Headings
 */
 
 h1 {
-    color: var(--roobie-white);
+    color: var(--roobie-black);
     margin: var(--margin-s) 0;
     margin-bottom: 0;
     font-size: 2em !important;
@@ -75,7 +71,7 @@ h2 {
 }
 
 h3 {
-    color: var(--roobie-white);
+    color: var(--roobie-grey);
     margin-top: 0;
     margin-bottom: var(--margin-m);
 }
@@ -92,15 +88,21 @@ h3 {
 /*Navbar*/
 
 nav {
-    background-color: #333333;
+    background-color: var(--roobie-off-white);
 }
 
 nav a {
     text-decoration: none;
-    color: #bcbcbc;
+    color: var(--roobie-black);
+    width: 100%;
 }
 
 nav a:hover {
     cursor: pointer;
     color: var(--roobie-green);
+}
+
+.active {
+    color: var(--roobie-green);
+    background-color: var(--roobie-white);
 }

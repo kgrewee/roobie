@@ -26,6 +26,7 @@ Class names are prefixed pertaining to their function
 
 - div - Container
 - ht - Height
+- scr - Scroll
 - flx - Flex
 - flt - Float
 - mrg - Margin

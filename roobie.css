@@ -341,6 +341,21 @@ Containers
 }
 
 
+/*
+List
+*/
+
+.ul {}
+
+.ul li {
+    color: var(--roobie-grey)
+}
+
+.ol {}
+
+.ol li {}
+
+
 /* 
 Spacing
 */

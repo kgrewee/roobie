@@ -43,6 +43,8 @@ Class names are prefixed pertaining to their function
 - out - Outline
 - in - Inset
 - ord - Order
+- ul - Unordered list
+- ol - Ordered list
 
 ### Sizing
 

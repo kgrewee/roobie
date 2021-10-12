@@ -52,8 +52,10 @@ When a class, such as containers or text need to have different sizes, we use th
 
 - xxxs - Extra extra extra small
 - xxs - Extra extra small
-- xs - Small
-- xl - Large
+- xs - Extra small
+- s - Small
+- l - Large
+- xl - Extra large
 - xxl - Extra extra large
 - xxxl - Extra extra extra large
 

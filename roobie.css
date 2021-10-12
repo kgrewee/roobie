@@ -1,3 +1,7 @@
+@import "themes/roobie-dark.css";
+@import "themes/roobie-light.css";
+@import "themes/roobie-var.css";
+
 /*
 Nav bar
 */
@@ -32,7 +36,7 @@ Nav bar
 }
 
 .nav-item {
-    padding: 10px;
+    padding: var(--pad-m);
     margin: 10px;
 }
 
@@ -50,7 +54,7 @@ Outline
 }
 
 .out:hover {
-    border: 1px solid rgb(255, 255, 255, .8);
+    border-color: rgb(255, 255, 255, .8);
 }
 
 .in {
@@ -58,7 +62,7 @@ Outline
 }
 
 .in:hover {
-    box-shadow: inset 0px 0px 5px 5px rgb(34, 34, 34, .5) !important;
+    box-shadow: inset 0px 0px 5px 3px rgb(34, 34, 34, .5) !important;
 }
 
 
@@ -148,31 +152,12 @@ Buttons
 
 .btn {
     width: auto;
-    padding: 15px;
+    height: auto;
+    padding: var(--pad-l);
     text-decoration: none;
     border-radius: 6px;
     margin: 5px;
-}
-
-.btn:hover {
-    box-shadow: 1px 3px 3px rgb(17, 17, 17, .4);
     cursor: pointer;
-}
-
-.btn-out {
-    border: 1px solid rgb(255, 255, 255, .6);
-}
-
-.btn-out:hover {
-    border: 1px solid rgb(255, 255, 255, .8);
-}
-
-.btn-in {
-    box-shadow: inset 0px 0px 5px 2px rgb(34, 34, 34, .6);
-}
-
-.btn-in:hover {
-    box-shadow: inset 0px 0px 5px 5px rgb(34, 34, 34, .8) !important;
 }
 
 
@@ -182,14 +167,18 @@ Inputs
 
 .inp {
     width: auto;
-    padding: 15px;
+    padding: var(--pad-l);
+    color: var(--roobie-grey);
     border-radius: 8px;
     margin: 5px;
+    border: none;
+    font-size: .7em;
+    font: 500 15px var(--font-family);
 }
 
 .inp:hover {
-    box-shadow: 1px 3px 3px rgb(17, 17, 17, .4);
     cursor: pointer;
+    box-shadow: var(--box-shadow);
 }
 
 
@@ -197,13 +186,46 @@ Inputs
 Containers
 */
 
-.cont-mr {
+.div-s {
+    width: 20%;
+    padding: var(--pad-s);
+}
+
+.div-m {
+    width: 40%;
+    padding: var(--pad-s);
+}
+
+.div-l {
+    width: 60%;
+    padding: var(--pad-s);
+}
+
+.div-xl {
+    width: 80%;
+    padding: var(--pad-s);
+}
+
+.div {
+    width: 100%;
+    padding: var(--pad-s);
+}
+
+.div-mr {
     width: 1000px;
 }
 
-.cont {
-    width: 100%;
-    padding: 5px;
+@media screen and (max-width: 800px) {
+    .div,
+    .div-s,
+    .div-m,
+    .div-l,
+    .div-xl,
+    .div,
+    .div-mr {
+        width: 100%;
+        display: inline;
+    }
 }
 
 
@@ -233,32 +255,37 @@ Text
     text-align: right;
 }
 
-.txt-1 {
+.txt-xxxs {
+    font-size: .2em;
+}
+
+.txt-xxs {
+    font-size: .4em;
+}
+
+.txt-xs {
+    font-size: .6em;
+}
+
+.txt-s {
+    font-size: .8em;
+}
+
+.txt-m,
+.txt {
     font-size: 1em;
 }
 
-.txt-15 {
+.txt-l {
     font-size: 1.5em;
 }
 
-.txt-2 {
+.txt-xl {
     font-size: 2em;
 }
 
-.txt-25 {
+.txt-xxl {
     font-size: 2.5em;
-}
-
-.txt-3 {
-    font-size: 3em;
-}
-
-.txt-35 {
-    font-size: 3.5em;
-}
-
-.txt-4 {
-    font-size: 4em;
 }
 
 
@@ -299,7 +326,7 @@ Flex display and direction
 /* 
 Wrap
 Nowrap aligns items on a single line
-Wrap will push items to the next line
+Wrap will push items to the next line if needed
 */
 
 .wrp {
@@ -448,6 +475,6 @@ Order
 How items are ordered
 */
 
-.order-first {
+.ord-first {
     order: -1;
 }

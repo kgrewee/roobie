@@ -1,6 +1,13 @@
 # roobie
 
-Interactive templates for all platforms.  Simple but robust UI components with mobile-first design.  Easy-to-use roobie css to assist you in building web applications.
+Simple & Robust UI components with mobile-first design.  Easy-to-use roobie css to assist you in building web applications.
+
+***This whole repo is a demo.  Pull using git and open ```index.html``` in a browser***
+
+- ```roobie.css``` - All of the roobie styles.  Our bread and butter.
+- ```themes/``` - Pre-built themes.
+- ```components/``` - Pre-built components using roobie css & demo-specific styles.  Use these as a starting point.
+- ```community/``` - Demos built by the roobie community.  Make a branch and create a demo using roobie.
 
 ## Components
 
@@ -10,38 +17,40 @@ Interactive templates for all platforms.  Simple but robust UI components with m
 - Input
 - Container
 
-## Intro
-
-Welcome to roobie!  We're so glad you're here.  Let's get started.
-
-1. ```roobie.css``` contains all of the roobie styles
-2. Components are found in ```components/```
-3. Styles used for component demos will be found in ```styles/``` within the component folder
-
 ## Syntax
 
-We basically have our own mini language.  This simplifies naming and reduces code.  Here's the basics.
+We basically have our own mini-language to simplify naming and reduce code.  Here's the basics.
 
-1. Class names are prefixed pertaining to their function
-    - ht - Height
-    - flx - Flex
-    - flt - Float
-    - op - Opacity
-    - btn - Button
-    - cont - Container
-    - txt - Text
-    - wrp - Wrap
-    - aln - Align
-    - jst - Justify
-    - spc - Space
-    - bg - Background
-    - inp - Input
-    - br - Border Radius
+### Naming
 
-2. Class names are suffixed when functionality is added to the prefix
-    - in - Inset
-    - out - Outline
+Class names are prefixed pertaining to their function
 
-3. Parameters, such as text size, and units are specific to the property being set
-    - Text - em
-    - Height - %
+- div - Container
+- ht - Height
+- flx - Flex
+- flt - Float
+- op - Opacity
+- btn - Button
+- txt - Text
+- wrp - Wrap
+- aln - Align
+- jst - Justify
+- spc - Space
+- bg - Background
+- inp - Input
+- br - Border Radius
+- out - Outline
+- in - Inset
+- ord - Order
+
+### Sizing
+
+When a class needs to have different sizes, we use this convention. 
+
+- xs - Extra small
+- s - Small
+- m - Medium
+- l - Large
+- xl - Extra large
+
+Some classes, such as txt, offer more extreme values.

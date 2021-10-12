@@ -2,6 +2,6 @@
 .grid div {
     width: 30%;
     height: 50px;
-    color: white;
+    color: var(--roobie-white);
     margin: 5px;
 }

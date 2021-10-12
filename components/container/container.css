@@ -1,0 +1,9 @@
+.div-demo div {
+    height: 50px;
+    background-color: var(--roobie-grey);
+    margin-bottom: var(--margin-l);
+    color: var(--roobie-white);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}

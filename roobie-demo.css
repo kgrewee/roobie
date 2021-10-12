@@ -1,14 +1,25 @@
 .roobie {
     height: 100%;
     font-size: 1.5em;
-    color: rgb(24, 196, 96);
-    padding: 0 10px;
+    color: var(--roobie-green);
+    padding: 10px;
     font-weight: bolder;
 }
 
 .active {
-    color: rgb(24, 196, 96);
-    border-bottom: 2px solid rgb(24, 196, 96);
+    color: var(--roobie-green);
+    background-color: var(--roobie-black);
+}
+
+.content {
+    height: 100%;
+    text-align: center;
+    padding: 10px;
+    overflow: auto;
+}
+
+p {
+    color: var(--roobie-off-white);
 }
 
 
@@ -32,17 +43,14 @@ Body styles
 */
 
 body {
-    background-color: #111111;
+    background-color: var(--roobie-black);
 }
 
 html,
 body {
     height: 100%;
-}
-
-.content {
-    text-align: center;
-    padding: 10px;
+    overflow: hidden;
+    font-family: var(--font-family);
 }
 
 
@@ -51,18 +59,18 @@ Headings
 */
 
 h1 {
-    color: white;
+    color: var(--roobie-white);
     text-align: center;
 }
 
 h2 {
-    color: rgb(24, 196, 96);
+    color: var(--roobie-green);
     text-align: center;
     margin-top: 0;
 }
 
 h3 {
-    color: #bcbcbc;
+    color: var(--roobie-white);
     text-align: center;
 }
 
@@ -70,7 +78,7 @@ h3 {
 /* Component buttons */
 
 .components a {
-    color: rgb(24, 196, 96);
+    color: var(--roobie-green);
 }
 
 
@@ -87,5 +95,5 @@ nav a {
 
 nav a:hover {
     cursor: pointer;
-    color: rgb(24, 196, 96);
+    color: var(--roobie-green);
 }

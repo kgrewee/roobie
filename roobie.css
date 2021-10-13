@@ -11,7 +11,7 @@
     --margin-l: 15px;
     --margin-xl: 20px;
     --roobie-white: rgb(240, 240, 240);
-    --roobie-off-white: rgb(218, 218, 218);
+    --roobie-off-white: rgb(228, 228, 228);
     --roobie-smooth-white: rgb(241, 241, 241);
     --roobie-black: rgb(19, 19, 19);
     --roobie-red: rgb(245, 9, 9);
@@ -253,7 +253,8 @@ Border Radius
     border-radius: 2px;
 }
 
-.br-m {
+.br-m,
+.br {
     border-radius: 4px;
 }
 
@@ -379,7 +380,9 @@ Containers
 @media screen and (max-width: 800px) {
     .div,
     .div-s,
+    .div-33,
     .div-m,
+    .div-50,
     .div-l,
     .div-xl,
     .div,

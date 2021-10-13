@@ -71,6 +71,12 @@ Nav bar
     width: auto;
 }
 
+.nav-title {
+    margin: 0 var(--margin-xl);
+    font-size: 1.25em;
+    color: var(--roobie-black);
+}
+
 .nav-item {
     padding: var(--pad-s);
     margin: var(--margin-m);
@@ -86,6 +92,26 @@ Nav bar
 
 .sticky {
     position: sticky;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.rel {
+    position: relative;
+}
+
+.inl {
+    display: inline;
+}
+
+.inl-blk {
+    display: inline-block;
+}
+
+.inl-flx {
+    display: inline-flex;
 }
 
 

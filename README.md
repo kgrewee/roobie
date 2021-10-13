@@ -50,6 +50,9 @@ Class names are prefixed pertaining to their function
 - ord - Order
 - ul - Unordered list
 - ol - Ordered list
+- rel - Relative
+- blk - Block
+- inl - Inline
 
 ### Sizing
 

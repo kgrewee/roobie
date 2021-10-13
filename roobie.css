@@ -39,6 +39,11 @@
 
 
 /*
+Colors
+*/
+
+
+/*
 Nav bar
 */
 
@@ -72,7 +77,7 @@ Nav bar
 }
 
 .nav-title {
-    margin: 0 var(--margin-xl);
+    margin: var(--margin-xl);
     font-size: 1.25em;
     color: var(--roobie-black);
 }

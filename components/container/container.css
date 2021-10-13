@@ -9,13 +9,10 @@
 }
 
 .nested-div {
-    background-color: rgb(114, 114, 114, .2);
+    height: 300px;
+    padding: var(--pad-m);
 }
 
 .nested-div div {
-    background-color: rgb(114, 114, 114, .2);
-}
-
-.div-m+.div-m {
-    height: 300px;
+    margin: var(--margin-m);
 }

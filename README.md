@@ -23,7 +23,7 @@ We basically have our own mini-language to simplify naming and reduce code.
 
 Roobie is made up of css classes and themes.  You can take the themes found in ```roobie.css``` and change the variables to your liking.  The css classes depend directly on the theme variables.
 
-The power of Roobie is in the css classes.  You can use these to generate many different styles, all using the same css.  What!  Thats insane.  No, thats smart.  This reduces spammed css styles that make your UI impossible to maintain.  Focus on content and colors, not basic styles.  We will handle that for you.  Checkout the ```components/``` folder for pre-built components using our styles.
+The power of Roobie is in the css classes.  You can use these to generate many different styles, all using the same css.  What!  Thats insane.  No, thats smart.  This reduces spammed css styles that make your UI impossible to maintain.  Focus on content and colors, not basic styles.  We will handle that for you.  Checkbrd the ```components/``` folder for pre-built components using our styles.
 
 ### Naming
 
@@ -35,6 +35,7 @@ Class names are prefixed pertaining to their function
 - flx - Flex
 - flt - Float
 - mrg - Margin
+- pad - Padding
 - op - Opacity
 - btn - Button
 - txt - Text
@@ -45,7 +46,7 @@ Class names are prefixed pertaining to their function
 - bg - Background
 - inp - Input
 - br - Border Radius
-- out - Outline
+- brd - Border
 - in - Inset
 - ord - Order
 - ul - Unordered list
@@ -53,6 +54,7 @@ Class names are prefixed pertaining to their function
 - rel - Relative
 - blk - Block
 - inl - Inline
+- cnt - Content
 
 ### Sizing
 

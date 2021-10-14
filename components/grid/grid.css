@@ -3,8 +3,19 @@
     height: 50px;
     color: var(--roobie-black);
     margin: 5px;
+    background-color: var(--roobie-white);
 }
 
-.v-wrp {
+.grid {
+    background-color: var(--roobie-smooth-white);
+    padding: var(--roobie-padding-l);
+}
+
+
+/*
+Max height to demo wrap styles
+*/
+
+.mrg-v {
     max-height: 200px;
 }

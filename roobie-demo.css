@@ -1,6 +1,6 @@
 .roobie {
     color: var(--roobie-green);
-    padding: var(--pad-s) 0;
+    padding: var(--roobie-padding-s) 0;
     font-weight: bolder;
     font-size: 1.5em;
 }
@@ -16,6 +16,10 @@
 
 p {
     color: var(--roobie-grey);
+}
+
+em {
+    border-bottom: var(--roobie-border-s);
 }
 
 
@@ -66,17 +70,17 @@ h1 {
 }
 
 h2 {
-    color: var(--roobie-green);
-    margin: var(--margin-m) 0;
-}
-
-h3 {
     color: var(--roobie-grey);
     margin: var(--margin-m) 0;
 }
 
-p {
+h3 {
+    color: var(--roobie-green);
     margin: var(--margin-m) 0;
+}
+
+p {
+    margin: var(--margin-l) 0;
 }
 
 .mrg-h {
@@ -85,6 +89,17 @@ p {
 
 .mrg-v {
     margin: var(--margin-l) 0;
+}
+
+.ul {
+    margin: var(--margin-m) 0;
+}
+
+b {
+    border-radius: 8px;
+    background-color: var(--roobie-white);
+    padding: var(--roobie-padding-s);
+    color: var(--roobie-green);
 }
 
 

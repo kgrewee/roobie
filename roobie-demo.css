@@ -82,6 +82,7 @@ h3 {
 
 p {
     margin: var(--margin-l) 0;
+    margin-top: var(--margin-s);
 }
 
 .mrg-h {

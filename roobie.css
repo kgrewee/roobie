@@ -118,6 +118,22 @@ Colors
     background-color: var(--roobie-yellow);
 }
 
+.orange {
+    color: var(--roobie-orange);
+}
+
+.bg-orange {
+    background-color: var(--roobie-orange);
+}
+
+.green {
+    color: var(--roobie-green);
+}
+
+.bg-green {
+    background-color: var(--roobie-green);
+}
+
 
 /*
 Nav bar

@@ -544,6 +544,62 @@ Margin
 
 
 /*
+Padding
+*/
+
+.pad-s {
+    padding: var(--pad-s);
+}
+
+.pad-m,
+.pad {
+    padding: var(--pad-m);
+}
+
+.pad-l {
+    padding: var(--pad-l);
+}
+
+.pad-xl {
+    padding: var(--pad-xl);
+}
+
+.pad-l-s {
+    padding-left: var(--pad-s);
+}
+
+.pad-l-m,
+.pad-l {
+    padding-left: var(--pad-m);
+}
+
+.pad-l-l {
+    padding-left: var(--pad-l);
+}
+
+.pad-l-xl {
+    padding-left: var(--pad-xl);
+}
+
+.pad-r-s {
+    padding-right: var(--pad-s);
+}
+
+.pad-r-m,
+.pad-r {
+    padding-right: var(--pad-m);
+}
+
+.pad-r-l {
+    padding-right: var(--pad-l);
+}
+
+.pad-r-xl {
+    padding-right: var(--pad-xl);
+}
+
+
+/*
 Containers
 */
 

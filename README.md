@@ -35,6 +35,7 @@ Class names are prefixed pertaining to their function
 - flx - Flex
 - flt - Float
 - mrg - Margin
+- pad - Padding
 - op - Opacity
 - btn - Button
 - txt - Text

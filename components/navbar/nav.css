@@ -5,3 +5,7 @@
 .nav-subtitle {
     min-width: 200px;
 }
+
+.nav-vert {
+    margin-bottom: var(--margin-xxl);
+}

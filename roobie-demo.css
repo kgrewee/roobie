@@ -80,7 +80,7 @@ h3 {
 }
 
 p {
-    margin: var(--margin-m) 0;
+    margin: var(--margin-l) 0;
 }
 
 .mrg-h {
@@ -93,6 +93,13 @@ p {
 
 .ul {
     margin: var(--margin-m) 0;
+}
+
+b {
+    border-radius: 8px;
+    background-color: var(--roobie-white);
+    padding: var(--roobie-padding-s);
+    color: var(--roobie-green);
 }
 
 

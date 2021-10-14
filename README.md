@@ -46,7 +46,7 @@ Class names are prefixed pertaining to their function
 - bg - Background
 - inp - Input
 - br - Border Radius
-- brd - brdline
+- brd - Border
 - in - Inset
 - ord - Order
 - ul - Unordered list

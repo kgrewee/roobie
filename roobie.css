@@ -20,6 +20,7 @@
     --roobie-div-m: 40%;
     --roobie-div-l: 60%;
     --roobie-div-xl: 80%;
+    --roobie-div-xxl: 90%;
     --roobie-white: rgb(240, 240, 240);
     --roobie-off-white: rgb(228, 228, 228);
     --roobie-smooth-white: rgb(241, 241, 241);
@@ -704,6 +705,11 @@ Containers
 
 .div-xl {
     width: var(--roobie-div-xl);
+    padding: var(--roobie-padding-s);
+}
+
+.div-xxl {
+    width: var(--roobie-div-xxl);
     padding: var(--roobie-padding-s);
 }
 

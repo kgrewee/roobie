@@ -56,12 +56,60 @@
 Colors
 */
 
+.black {
+    color: var(--roobie-black);
+}
+
+.bg-black {
+    background-color: var(--roobie-black);
+}
+
+.white {
+    color: var(--roobie-white);
+}
+
+.bg-white {
+    background-color: var(--roobie-white);
+}
+
+.grey {
+    color: var(--roobie-grey);
+}
+
+.bg-grey {
+    background-color: var(--roobie-grey);
+}
+
 .off-white {
     color: var(--roobie-off-white);
 }
 
 .bg-off-white {
     background-color: var(--roobie-off-white);
+}
+
+.red {
+    color: var(--roobie-red);
+}
+
+.bg-red {
+    background-color: var(--roobie-red);
+}
+
+.blue {
+    color: var(--roobie-blue);
+}
+
+.bg-blue {
+    background-color: var(--roobie-blue);
+}
+
+.yellow {
+    color: var(--roobie-yellow);
+}
+
+.bg-yellow {
+    background-color: var(--roobie-yellow);
 }
 
 

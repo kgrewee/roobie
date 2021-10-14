@@ -10,8 +10,9 @@
 
 .nested-div {
     height: 300px;
-    padding: var(--pad-m);
+    padding: var(--pad-l);
     margin-right: var(--margin-xl);
+    background-color: var(--roobie-off-white);
 }
 
 .nested-div div {
@@ -20,5 +21,5 @@
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    background-color: var(--roobie-off-white);
+    background-color: var(--roobie-white);
 }

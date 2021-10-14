@@ -61,18 +61,22 @@ Headings
 
 h1 {
     color: var(--roobie-black);
-    margin: var(--margin-s) 0;
-    margin-bottom: 0;
+    margin: var(--margin-m) 0;
     font-size: 2em !important;
 }
 
 h2 {
     color: var(--roobie-green);
+    margin: var(--margin-m) 0;
 }
 
 h3 {
     color: var(--roobie-grey);
-    margin: 0;
+    margin: var(--margin-m) 0;
+}
+
+p {
+    margin: var(--margin-m) 0;
 }
 
 .mrg-h {

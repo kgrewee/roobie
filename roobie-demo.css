@@ -14,14 +14,6 @@
     overflow: auto;
 }
 
-p {
-    color: var(--roobie-grey);
-}
-
-em {
-    border-bottom: var(--roobie-border-s);
-}
-
 
 /*
 Dividers

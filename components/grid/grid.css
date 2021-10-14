@@ -5,6 +5,16 @@
     margin: 5px;
 }
 
-.v-wrp {
+.grid {
+    background-color: var(--roobie-off-white);
+    padding: var(--pad-l);
+}
+
+
+/*
+Max height to demo wrap styles
+*/
+
+.mrg-v {
     max-height: 200px;
 }

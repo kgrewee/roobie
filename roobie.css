@@ -120,6 +120,28 @@ Nav bar
 }
 
 
+/*
+Underline
+*/
+
+.und-s {
+    border-bottom: var(--roobie-border-s);
+}
+
+.und-m,
+.und {
+    border-bottom: var(--roobie-border-m);
+}
+
+.und-l {
+    border-bottom: var(--roobie-border-l);
+}
+
+.und-xl {
+    border-bottom: var(--roobie-border-xl);
+}
+
+
 /* 
 Outline
 */

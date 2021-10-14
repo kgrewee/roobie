@@ -18,6 +18,10 @@ p {
     color: var(--roobie-grey);
 }
 
+em {
+    border-bottom: var(--roobie-border-s);
+}
+
 
 /*
 Dividers
@@ -66,12 +70,12 @@ h1 {
 }
 
 h2 {
-    color: var(--roobie-green);
+    color: var(--roobie-grey);
     margin: var(--margin-m) 0;
 }
 
 h3 {
-    color: var(--roobie-grey);
+    color: var(--roobie-green);
     margin: var(--margin-m) 0;
 }
 

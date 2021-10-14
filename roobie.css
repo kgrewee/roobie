@@ -16,6 +16,10 @@
     --margin-xxl: 30px;
     --margin-xxxl: 40px;
     --margin-xxxxl: 50px;
+    --roobie-div-s: 20%;
+    --roobie-div-m: 40%;
+    --roobie-div-l: 60%;
+    --roobie-div-xl: 80%;
     --roobie-white: rgb(240, 240, 240);
     --roobie-off-white: rgb(228, 228, 228);
     --roobie-smooth-white: rgb(241, 241, 241);
@@ -30,17 +34,17 @@
     --roobie-violet: rgb(226, 108, 226);
     --roobie-pink: rgb(219, 163, 173);
     --roobie-inset-s: inset 0px 0px 1px 1px rgb(17, 17, 17, .1);
-    --roobie-inset-m: inset 0px 0px 2px 1px rgb(17, 17, 17, .2);
-    --roobie-inset-l: inset 0px 0px 2px 2px rgb(17, 17, 17, .4);
-    --roobie-inset-xl: inset 0px 0px 3px 2px rgb(17, 17, 17, .6);
+    --roobie-inset-m: inset 0px 0px 2px 2px rgb(17, 17, 17, .2);
+    --roobie-inset-l: inset 0px 0px 2px 2px rgb(17, 17, 17, .2);
+    --roobie-inset-xl: inset 0px 0px 3px 3px rgb(17, 17, 17, .3);
     --roobie-border-s: .5px solid var(--roobie-black);
     --roobie-border-m: 1px solid var(--roobie-black);
     --roobie-border-l: 2px solid var(--roobie-black);
     --roobie-border-xl: 3px solid var(--roobie-black);
-    --roobie-box-shadow-s: 1px 1px 1px rgb(17, 17, 17, .1);
-    --roobie-box-shadow-m: 1px 2px 2px rgb(17, 17, 17, .2);
-    --roobie-box-shadow-l: 1px 3px 3px rgb(17, 17, 17, .4);
-    --roobie-box-shadow-xl: 1px 4px 4px rgb(17, 17, 17, .6);
+    --roobie-box-shadow-s: 0 0 1px 1px rgb(17, 17, 17, .1);
+    --roobie-box-shadow-m: 0 0 2px 2px rgb(17, 17, 17, .2);
+    --roobie-box-shadow-l: 0 0 2px 2px rgb(17, 17, 17, .2);
+    --roobie-box-shadow-xl: 0 0 3px 3px rgb(17, 17, 17, .3);
     --roobie-padding-s: var(--padding-s);
     --roobie-padding-m: var(--padding-m);
     --roobie-padding-l: var(--padding-l);
@@ -220,64 +224,68 @@ Underline
 
 
 /* 
-Outline
+Border
 */
 
-.out-s {
+.brd-none {
+    border: none !important;
+}
+
+.brd-s {
     border: var(--roobie-border-s) !important;
 }
 
-.out-m,
-.out {
+.brd-m,
+.brd {
     border: var(--roobie-border-m) !important;
 }
 
-.out-l {
+.brd-l {
     border: var(--roobie-border-l) !important;
 }
 
-.out-xl {
+.brd-xl {
     border: var(--roobie-border-xl) !important;
 }
 
-.out-s-h {
+.brd-s-h {
     border: var(--roobie-border-s) !important;
 }
 
-.out-m-h,
-.out-h {
+.brd-m-h,
+.brd-h {
     border: var(--roobie-border-m) !important;
 }
 
-.out-l-h {
+.brd-l-h {
     border: var(--roobie-border-l) !important;
 }
 
-.out-xl-h {
+.brd-xl-h {
     border: var(--roobie-border-xl) !important;
 }
 
-.out-s-h:hover,
-.out-m-h:hover,
-.out-l-h:hover,
-.out-xl-h:hover,
-.out-h:hover {
+.brd-s-h:hover,
+.brd-m-h:hover,
+.brd-l-h:hover,
+.brd-xl-h:hover,
+.brd-h:hover {
     border: var(--roobie-border-l) !important;
 }
 
-.out-s-h:active,
-.out-m-h:active,
-.out-l-h:active,
-.out-xl-h:active,
-.out-h:active {
+.brd-s-h:active,
+.brd-m-h:active,
+.brd-l-h:active,
+.brd-xl-h:active,
+.brd-h:active {
     border: var(--roobie-border-l) !important;
 }
 
-.out-s-h:focus,
-.out-m-h:focus,
-.out-l-h:focus,
-.out-xl-h:focus,
-.out-h:focus {
+.brd-s-h:focus,
+.brd-m-h:focus,
+.brd-l-h:focus,
+.brd-xl-h:focus,
+.brd-h:focus {
     border: var(--roobie-border-xl) !important;
 }
 
@@ -509,6 +517,7 @@ Buttons
     border-radius: 6px;
     margin: 5px;
     cursor: pointer;
+    border: var(--roobie-border-s);
 }
 
 
@@ -529,14 +538,9 @@ select:focus {
     background-color: var(--roobie-off-white);
     border-radius: 8px;
     margin: 5px;
-    border: none;
     font-size: .7em;
     font: 500 15px var(--font-family);
-}
-
-.inp:focus,
-.inp:active {
-    border-width: 2px !important;
+    border: var(--roobie-border-s);
 }
 
 
@@ -674,7 +678,7 @@ Containers
 */
 
 .div-s {
-    width: 20%;
+    width: var(--roobie-div-s);
     padding: var(--roobie-padding-s);
 }
 
@@ -684,7 +688,7 @@ Containers
 }
 
 .div-m {
-    width: 40%;
+    width: var(--roobie-div-m);
     padding: var(--roobie-padding-s);
 }
 
@@ -694,12 +698,12 @@ Containers
 }
 
 .div-l {
-    width: 60%;
+    width: var(--roobie-div-l);
     padding: var(--roobie-padding-s);
 }
 
 .div-xl {
-    width: 80%;
+    width: var(--roobie-div-xl);
     padding: var(--roobie-padding-s);
 }
 

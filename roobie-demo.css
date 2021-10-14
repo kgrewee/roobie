@@ -81,7 +81,7 @@ h3 {
 }
 
 p {
-    margin: var(--margin-s) 0;
+    margin: var(--margin-l) 0;
 }
 
 .mrg-h {
@@ -98,9 +98,9 @@ p {
 
 b {
     border-radius: 8px;
-    background-color: var(--roobie-white);
+    background-color: var(--roobie-off-white);
     padding: var(--roobie-padding-s);
-    color: var(--roobie-green);
+    color: var(--roobie-soft-blue);
 }
 
 

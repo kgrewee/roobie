@@ -171,7 +171,7 @@ Outline
 .out-l-h:active,
 .out-xl-h:active,
 .out-h:active {
-    border: var(--roobie-border-xl) !important;
+    border: var(--roobie-border-l) !important;
 }
 
 .out-s-h:focus,
@@ -234,7 +234,7 @@ Box shadow
 .box-l-h:active,
 .box-xl-h:active,
 .box-h:active {
-    box-shadow: var(--roobie-box-shadow-xl);
+    box-shadow: var(--roobie-box-shadow-l);
 }
 
 .box-s-h:focus,
@@ -297,7 +297,7 @@ Inset
 .in-l-h:active,
 .in-xl-h:active,
 .in-h:active {
-    box-shadow: var(--roobie-inset-xl);
+    box-shadow: var(--roobie-inset-l);
 }
 
 .in-s-h:focus,

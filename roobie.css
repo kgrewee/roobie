@@ -24,17 +24,17 @@
     --roobie-violet: rgb(226, 108, 226);
     --roobie-pink: rgb(219, 163, 173);
     --roobie-inset-s: inset 0px 0px 1px 1px rgb(17, 17, 17, .1);
-    --roobie-inset-m: inset 0px 0px 2px 2px rgb(17, 17, 17, .2);
-    --roobie-inset-l: inset 0px 0px 3px 3px rgb(17, 17, 17, .4);
-    --roobie-inset-xl: inset 0px 0px 5px 4px rgb(17, 17, 17, .6);
+    --roobie-inset-m: inset 0px 0px 2px 1px rgb(17, 17, 17, .2);
+    --roobie-inset-l: inset 0px 0px 2px 2px rgb(17, 17, 17, .4);
+    --roobie-inset-xl: inset 0px 0px 3px 2px rgb(17, 17, 17, .6);
     --roobie-border-s: .5px solid var(--roobie-black);
     --roobie-border-m: 1px solid var(--roobie-black);
     --roobie-border-l: 2px solid var(--roobie-black);
-    --roobie-border-xl: 4px solid var(--roobie-black);
+    --roobie-border-xl: 3px solid var(--roobie-black);
     --roobie-box-shadow-s: 1px 1px 1px rgb(17, 17, 17, .1);
-    --roobie-box-shadow-m: 2px 2px 2px rgb(17, 17, 17, .2);
-    --roobie-box-shadow-l: 3px 3px 3px rgb(17, 17, 17, .4);
-    --roobie-box-shadow-xl: 4px 4px 4px rgb(17, 17, 17, .6);
+    --roobie-box-shadow-m: 1px 2px 2px rgb(17, 17, 17, .2);
+    --roobie-box-shadow-l: 1px 3px 3px rgb(17, 17, 17, .4);
+    --roobie-box-shadow-xl: 1px 4px 4px rgb(17, 17, 17, .6);
 }
 
 
@@ -138,7 +138,31 @@ Outline
 }
 
 .out-xl {
+    border: var(--roobie-border-xl) !important;
+}
+
+.out-s:hover,
+.out-m:hover,
+.out-l:hover,
+.out-xl:hover,
+.out:hover {
     border: var(--roobie-border-l) !important;
+}
+
+.out-s:active,
+.out-m:active,
+.out-l:active,
+.out-xl:active,
+.out:active {
+    border: var(--roobie-border-xl) !important;
+}
+
+.out-s:focus,
+.out-m:focus,
+.out-l:focus,
+.out-xl:focus,
+.out:focus {
+    border: var(--roobie-border-xl) !important;
 }
 
 
@@ -163,6 +187,34 @@ Box shadow
     box-shadow: var(--roobie-box-shadow-xl);
 }
 
+.box:hover {
+    box-shadow: var(--roobie-box-shadow-l);
+}
+
+.box-s:hover,
+.box-m:hover,
+.box-l:hover,
+.box-xl:hover,
+.box:hover {
+    box-shadow: var(--roobie-box-shadow-l);
+}
+
+.box-s:active,
+.box-m:active,
+.box-l:active,
+.box-xl:active,
+.box:active {
+    box-shadow: var(--roobie-box-shadow-xl);
+}
+
+.box-s:focus,
+.box-m:focus,
+.box-l:focus,
+.box-xl:focus,
+.box:focus {
+    box-shadow: var(--roobie-box-shadow-xl);
+}
+
 
 /*
 Inset
@@ -182,6 +234,30 @@ Inset
 }
 
 .in-xl {
+    box-shadow: var(--roobie-inset-xl);
+}
+
+.in-s:hover,
+.in-m:hover,
+.in-l:hover,
+.in-xl:hover,
+.in:hover {
+    box-shadow: var(--roobie-inset-l);
+}
+
+.in-s:active,
+.in-m:active,
+.in-l:active,
+.in-xl:active,
+.in:active {
+    box-shadow: var(--roobie-inset-xl);
+}
+
+.in-s:focus,
+.in-m:focus,
+.in-l:focus,
+.in-xl:focus,
+.in:focus {
     box-shadow: var(--roobie-inset-xl);
 }
 

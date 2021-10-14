@@ -82,6 +82,13 @@ Nav bar
     color: var(--roobie-black);
 }
 
+.nav-subtitle {
+    margin: var(--margin-m);
+    margin-top: var(--margin-xl);
+    font-size: 1em;
+    color: var(--roobie-black);
+}
+
 .nav-item {
     padding: var(--pad-s);
     margin: var(--margin-m);
@@ -477,6 +484,62 @@ Scroll
 
 .scr-x {
     overflow-x: auto;
+}
+
+
+/*
+Margin
+*/
+
+.mrg-s {
+    margin: var(--margin-s);
+}
+
+.mrg-m,
+.mrg {
+    margin: var(--margin-m);
+}
+
+.mrg-l {
+    margin: var(--margin-l);
+}
+
+.mrg-xl {
+    margin: var(--margin-xl);
+}
+
+.mrg-l-s {
+    margin-left: var(--margin-s);
+}
+
+.mrg-l-m,
+.mrg-l {
+    margin-left: var(--margin-m);
+}
+
+.mrg-l-l {
+    margin-left: var(--margin-l);
+}
+
+.mrg-l-xl {
+    margin-left: var(--margin-xl);
+}
+
+.mrg-r-s {
+    margin-right: var(--margin-s);
+}
+
+.mrg-r-m,
+.mrg-r {
+    margin-right: var(--margin-m);
+}
+
+.mrg-r-l {
+    margin-right: var(--margin-l);
+}
+
+.mrg-r-xl {
+    margin-right: var(--margin-xl);
 }
 
 

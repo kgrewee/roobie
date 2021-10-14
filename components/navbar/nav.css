@@ -1,3 +1,7 @@
 .nav-div {
     height: 800px;
 }
+
+.nav-subtitle {
+    min-width: 200px;
+}

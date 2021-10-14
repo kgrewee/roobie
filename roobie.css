@@ -141,27 +141,44 @@ Outline
     border: var(--roobie-border-xl) !important;
 }
 
-.out-s:hover,
-.out-m:hover,
-.out-l:hover,
-.out-xl:hover,
-.out:hover {
+.out-s-h {
+    border: var(--roobie-border-s) !important;
+}
+
+.out-m-h,
+.out-h {
+    border: var(--roobie-border-m) !important;
+}
+
+.out-l-h {
     border: var(--roobie-border-l) !important;
 }
 
-.out-s:active,
-.out-m:active,
-.out-l:active,
-.out-xl:active,
-.out:active {
+.out-xl-h {
     border: var(--roobie-border-xl) !important;
 }
 
-.out-s:focus,
-.out-m:focus,
-.out-l:focus,
-.out-xl:focus,
-.out:focus {
+.out-s-h:hover,
+.out-m-h:hover,
+.out-l-h:hover,
+.out-xl-h:hover,
+.out-h:hover {
+    border: var(--roobie-border-l) !important;
+}
+
+.out-s-h:active,
+.out-m-h:active,
+.out-l-h:active,
+.out-xl-h:active,
+.out-h:active {
+    border: var(--roobie-border-xl) !important;
+}
+
+.out-s-h:focus,
+.out-m-h:focus,
+.out-l-h:focus,
+.out-xl-h:focus,
+.out-h:focus {
     border: var(--roobie-border-xl) !important;
 }
 
@@ -187,31 +204,44 @@ Box shadow
     box-shadow: var(--roobie-box-shadow-xl);
 }
 
-.box:hover {
+.box-s-h {
+    box-shadow: var(--roobie-box-shadow-s);
+}
+
+.box-m-h,
+.box-h {
+    box-shadow: var(--roobie-box-shadow-m);
+}
+
+.box-l-h {
     box-shadow: var(--roobie-box-shadow-l);
 }
 
-.box-s:hover,
-.box-m:hover,
-.box-l:hover,
-.box-xl:hover,
-.box:hover {
-    box-shadow: var(--roobie-box-shadow-l);
-}
-
-.box-s:active,
-.box-m:active,
-.box-l:active,
-.box-xl:active,
-.box:active {
+.box-xl-h {
     box-shadow: var(--roobie-box-shadow-xl);
 }
 
-.box-s:focus,
-.box-m:focus,
-.box-l:focus,
-.box-xl:focus,
-.box:focus {
+.box-s-h:hover,
+.box-m-h:hover,
+.box-l-h:hover,
+.box-xl-h:hover,
+.box-h:hover {
+    box-shadow: var(--roobie-box-shadow-l);
+}
+
+.box-s-h:active,
+.box-m-h:active,
+.box-l-h:active,
+.box-xl-h:active,
+.box-h:active {
+    box-shadow: var(--roobie-box-shadow-xl);
+}
+
+.box-s-h:focus,
+.box-m-h:focus,
+.box-l-h:focus,
+.box-xl-h:focus,
+.box-h:focus {
     box-shadow: var(--roobie-box-shadow-xl);
 }
 
@@ -237,27 +267,44 @@ Inset
     box-shadow: var(--roobie-inset-xl);
 }
 
-.in-s:hover,
-.in-m:hover,
-.in-l:hover,
-.in-xl:hover,
-.in:hover {
+.in-s-h {
+    box-shadow: var(--roobie-inset-s);
+}
+
+.in-m-h,
+.in-h {
+    box-shadow: var(--roobie-inset-m);
+}
+
+.in-l-h {
     box-shadow: var(--roobie-inset-l);
 }
 
-.in-s:active,
-.in-m:active,
-.in-l:active,
-.in-xl:active,
-.in:active {
+.in-xl-h {
     box-shadow: var(--roobie-inset-xl);
 }
 
-.in-s:focus,
-.in-m:focus,
-.in-l:focus,
-.in-xl:focus,
-.in:focus {
+.in-s-h:hover,
+.in-m-h:hover,
+.in-l-h:hover,
+.in-xl-h:hover,
+.in-h:hover {
+    box-shadow: var(--roobie-inset-l);
+}
+
+.in-s-h:active,
+.in-m-h:active,
+.in-l-h:active,
+.in-xl-h:active,
+.in-h:active {
+    box-shadow: var(--roobie-inset-xl);
+}
+
+.in-s-h:focus,
+.in-m-h:focus,
+.in-l-h:focus,
+.in-xl-h:focus,
+.in-h:focus {
     box-shadow: var(--roobie-inset-xl);
 }
 

@@ -1,6 +1,6 @@
 .roobie {
     color: var(--roobie-green);
-    padding: var(--pad-s) 0;
+    padding: var(--roobie-padding-s) 0;
     font-weight: bolder;
     font-size: 1.5em;
 }

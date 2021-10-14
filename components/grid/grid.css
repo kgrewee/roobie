@@ -8,7 +8,7 @@
 
 .grid {
     background-color: var(--roobie-off-white);
-    padding: var(--pad-l);
+    padding: var(--roobie-padding-l);
 }
 
 

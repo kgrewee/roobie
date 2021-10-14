@@ -2,14 +2,20 @@
 
 :root {
     --font-family: "fantasy", sans-serif;
-    --pad-s: 5px;
-    --pad-m: 10px;
-    --pad-l: 15px;
-    --pad-xl: 20px;
+    --padding-s: 5px;
+    --padding-m: 10px;
+    --padding-l: 15px;
+    --padding-xl: 20px;
+    --padding-xxl: 30px;
+    --padding-xxxl: 40px;
+    --padding-xxxxl: 50px;
     --margin-s: 5px;
     --margin-m: 10px;
     --margin-l: 15px;
     --margin-xl: 20px;
+    --margin-xxl: 30px;
+    --margin-xxxl: 40px;
+    --margin-xxxxl: 50px;
     --roobie-white: rgb(240, 240, 240);
     --roobie-off-white: rgb(228, 228, 228);
     --roobie-smooth-white: rgb(241, 241, 241);
@@ -35,6 +41,14 @@
     --roobie-box-shadow-m: 1px 2px 2px rgb(17, 17, 17, .2);
     --roobie-box-shadow-l: 1px 3px 3px rgb(17, 17, 17, .4);
     --roobie-box-shadow-xl: 1px 4px 4px rgb(17, 17, 17, .6);
+    --roobie-padding-s: var(--padding-s);
+    --roobie-padding-m: var(--padding-m);
+    --roobie-padding-l: var(--padding-l);
+    --roobie-padding-xl: var(--padding-xl);
+    --roobie-margin-s: var(--padding-s);
+    --roobie-margin-m: var(--padding-m);
+    --roobie-margin-l: var(--padding-l);
+    --roobie-margin-xl: var(--padding-xl);
 }
 
 
@@ -90,7 +104,7 @@ Nav bar
 }
 
 .nav-item {
-    padding: var(--pad-s);
+    padding: var(--roobie-padding-s);
     margin: var(--margin-m);
     width: auto;
     opacity: 75%;
@@ -434,7 +448,7 @@ Buttons
 .btn {
     width: auto;
     height: auto;
-    padding: var(--pad-l);
+    padding: var(--roobie-padding-l);
     text-decoration: none;
     border-radius: 6px;
     margin: 5px;
@@ -455,7 +469,7 @@ select:focus {
 
 .inp {
     width: auto;
-    padding: var(--pad-l);
+    padding: var(--roobie-padding-l);
     background-color: var(--roobie-off-white);
     border-radius: 8px;
     margin: 5px;
@@ -548,54 +562,54 @@ Padding
 */
 
 .pad-s {
-    padding: var(--pad-s);
+    padding: var(--roobie-padding-s);
 }
 
 .pad-m,
 .pad {
-    padding: var(--pad-m);
+    padding: var(--roobie-padding-m);
 }
 
 .pad-l {
-    padding: var(--pad-l);
+    padding: var(--roobie-padding-l);
 }
 
 .pad-xl {
-    padding: var(--pad-xl);
+    padding: var(--roobie-padding-xl);
 }
 
 .pad-l-s {
-    padding-left: var(--pad-s);
+    padding-left: var(--roobie-padding-s);
 }
 
 .pad-l-m,
 .pad-l {
-    padding-left: var(--pad-m);
+    padding-left: var(--roobie-padding-m);
 }
 
 .pad-l-l {
-    padding-left: var(--pad-l);
+    padding-left: var(--roobie-padding-l);
 }
 
 .pad-l-xl {
-    padding-left: var(--pad-xl);
+    padding-left: var(--roobie-padding-xl);
 }
 
 .pad-r-s {
-    padding-right: var(--pad-s);
+    padding-right: var(--roobie-padding-s);
 }
 
 .pad-r-m,
 .pad-r {
-    padding-right: var(--pad-m);
+    padding-right: var(--roobie-padding-m);
 }
 
 .pad-r-l {
-    padding-right: var(--pad-l);
+    padding-right: var(--roobie-padding-l);
 }
 
 .pad-r-xl {
-    padding-right: var(--pad-xl);
+    padding-right: var(--roobie-padding-xl);
 }
 
 
@@ -605,32 +619,32 @@ Containers
 
 .div-s {
     width: 20%;
-    padding: var(--pad-s);
+    padding: var(--roobie-padding-s);
 }
 
 .div-33 {
     width: 33%;
-    padding: var(--pad-s);
+    padding: var(--roobie-padding-s);
 }
 
 .div-m {
     width: 40%;
-    padding: var(--pad-s);
+    padding: var(--roobie-padding-s);
 }
 
 .div-50 {
     width: 50%;
-    padding: var(--pad-s);
+    padding: var(--roobie-padding-s);
 }
 
 .div-l {
     width: 60%;
-    padding: var(--pad-s);
+    padding: var(--roobie-padding-s);
 }
 
 .div-xl {
     width: 80%;
-    padding: var(--pad-s);
+    padding: var(--roobie-padding-s);
 }
 
 .div {

@@ -10,7 +10,7 @@
 
 .nested-div {
     height: 300px;
-    padding: var(--pad-l);
+    padding: var(--roobie-padding-l);
     margin-right: var(--margin-xl);
     background-color: var(--roobie-off-white);
 }

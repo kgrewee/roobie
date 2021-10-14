@@ -91,6 +91,10 @@ p {
     margin: var(--margin-l) 0;
 }
 
+.ul {
+    margin: var(--margin-m) 0;
+}
+
 
 /*Navbar*/
 

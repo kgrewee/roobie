@@ -53,6 +53,7 @@ Class names are prefixed pertaining to their function
 - rel - Relative
 - blk - Block
 - inl - Inline
+- cnt - Content
 
 ### Sizing
 

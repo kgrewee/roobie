@@ -3,6 +3,7 @@
     height: 50px;
     color: var(--roobie-black);
     margin: 5px;
+    background-color: var(--roobie-white);
 }
 
 .grid {

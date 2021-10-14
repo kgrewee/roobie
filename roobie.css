@@ -760,27 +760,27 @@ Content alignment
 How lines are spaced.  No effect if content is only 1 line.
 */
 
-.aln-content-between {
+.aln-cnt-between {
     align-content: space-between;
 }
 
-.aln-content-around {
+.aln-cnt-around {
     align-content: space-around;
 }
 
-.aln-content-start {
+.aln-cnt-start {
     align-content: flex-start;
 }
 
-.aln-content-end {
+.aln-cnt-end {
     align-content: flex-end;
 }
 
-.aln-content-base {
+.aln-cnt-base {
     align-content: baseline;
 }
 
-.aln-content-stretch {
+.aln-cnt-stretch {
     align-content: stretch;
 }
 

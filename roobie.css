@@ -56,6 +56,14 @@
 Colors
 */
 
+.off-white {
+    color: var(--roobie-off-white);
+}
+
+.bg-off-white {
+    background-color: var(--roobie-off-white);
+}
+
 
 /*
 Nav bar
@@ -645,6 +653,11 @@ Containers
 .div-xl {
     width: 80%;
     padding: var(--roobie-padding-s);
+}
+
+.div-auto {
+    width: auto;
+    height: auto;
 }
 
 .div {

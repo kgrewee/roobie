@@ -716,6 +716,7 @@ Containers
 .div-auto {
     width: auto;
     height: auto;
+    padding: var(--roobie-padding-s);
 }
 
 .div {

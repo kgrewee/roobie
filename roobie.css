@@ -771,13 +771,13 @@ Dropdown
 .drp {}
 
 .drp:hover .drp-cnt {
-    display: flex !important;
+    display: block;
 }
 
 .drp-btn {}
 
 .drp-cnt {
-    display: none !important;
+    display: none;
     position: absolute;
     background-color: var(--roobie-white);
     min-width: 160px;
@@ -788,8 +788,9 @@ Dropdown
 .drp-cnt a {
     padding: var(--roobie-padding-m);
     color: var(--roobie-grey);
-    width: 100%;
+    display: block;
     margin: 0;
+    text-align: center;
 }
 
 .drp-cnt a:hover {

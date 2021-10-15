@@ -37,16 +37,16 @@
     --roobie-pink: rgb(219, 163, 173);
     --roobie-inset-s: inset 0px 0px 1px 1px rgb(17, 17, 17, .1);
     --roobie-inset-m: inset 0px 0px 2px 2px rgb(17, 17, 17, .2);
-    --roobie-inset-l: inset 0px 0px 3px 4px rgb(17, 17, 17, .2);
-    --roobie-inset-xl: inset 0px 0px 3px 4px rgb(17, 17, 17, .3);
+    --roobie-inset-l: inset 0px 0px 3px 3px rgb(17, 17, 17, .2);
+    --roobie-inset-xl: inset 0px 0px 3px 3px rgb(17, 17, 17, .3);
     --roobie-border-s: .5px solid var(--roobie-black);
     --roobie-border-m: 1px solid var(--roobie-black);
     --roobie-border-l: 2px solid var(--roobie-black);
     --roobie-border-xl: 3px solid var(--roobie-black);
     --roobie-box-shadow-s: 0 0 1px 1px rgb(17, 17, 17, .1);
     --roobie-box-shadow-m: 0 0 2px 2px rgb(17, 17, 17, .2);
-    --roobie-box-shadow-l: 0 0 3px 4px rgb(17, 17, 17, .2);
-    --roobie-box-shadow-xl: 0 0 3px 4px rgb(17, 17, 17, .3);
+    --roobie-box-shadow-l: 0 0 3px 3px rgb(17, 17, 17, .2);
+    --roobie-box-shadow-xl: 0 0 3px 3px rgb(17, 17, 17, .3);
     --roobie-padding-s: var(--padding-s);
     --roobie-padding-m: var(--padding-m);
     --roobie-padding-l: var(--padding-l);
@@ -305,6 +305,10 @@ Border
 .brd-xl-h:focus,
 .brd-h:focus {
     border: var(--roobie-border-xl) !important;
+}
+
+.brd-b-h:hover {
+    border-bottom: var(--roobie-border-m) !important;
 }
 
 
@@ -765,21 +769,42 @@ List
 */
 
 .ul,
-.ul-brd {
+.ul-brd,
+.ul-action {
     list-style-type: none;
     width: auto;
     padding-inline-start: 0;
+    margin: var(--roobie-margin-l) 0;
+    padding: 0;
 }
 
 .ul li,
 .ul-brd li {
-    color: var(--roobie-black);
+    color: var(--roobie-grey);
     text-decoration: none;
     height: auto;
     padding: var(--roobie-padding-m);
     background-color: var(--roobie-smooth-white);
     display: flex;
     flex-flow: column nowrap;
+    cursor: pointer;
+}
+
+.ul-action li {
+    color: var(--roobie-grey);
+    text-decoration: none;
+    height: auto;
+    padding: var(--roobie-padding-l);
+    background-color: var(--roobie-smooth-white);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ul-action li a {
+    margin-left: var(--roobie-margin-xl);
 }
 
 .ul li span,
@@ -791,6 +816,15 @@ List
 
 .ul-brd li+li {
     border-top: var(--roobie-border-m);
+}
+
+.ul li:hover {
+    color: var(--roobie-black);
+}
+
+.ul-brd li:hover,
+.ul-action li:hover {
+    color: var(--roobie-black);
 }
 
 .ol {}

@@ -1,0 +1,13 @@
+.ul-brd li {
+    min-width: 250px;
+}
+
+.btn {
+    padding: 5px;
+    margin: 0;
+    border: none;
+}
+
+.ul-action li {
+    min-width: 400px;
+}

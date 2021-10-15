@@ -30,7 +30,7 @@
                 <h1>Grid</h1>
                 <p>Simple, responsive grids with flexbox.</p>
                 <h3>Horizontal</h3>
-                <div class="div box br pad">
+                <div class="div">
                     <p><b>flx-row</b> <em>display: flex;</em> <em> flex-flow: row nowrap;</em></p>
                     <p> <b>  jst-center</b> <em> justify-content: center;</em></p>
                     <div class="flx-row grid mrg-v br jst-center">
@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <h3>Vertical</h3>
-                <div class="div box br pad">
+                <div class="div">
                     <p><b>flx-col</b> <em>display: flex;</em> <em> flex-flow: column nowrap;</em></p>
                     <p><b>  aln-center</b> <em> align-items: center;</em></p>
                     <div class="flx-col grid mrg-v br aln-center">
@@ -51,7 +51,7 @@
                 </div>
                 <h3>Nowrap is the Default</h3>
                 <p>When there isn't enough space in a container for the sub-containers, the wrap property decides what to do. The default flex style is nowrap, so the sub-containers are squished to fit on one row. </p>
-                <div class="div box br pad">
+                <div class="div">
                     <p>Outer container <em>max-height: 200px;</em> </p>
                     <p>Sub-containers <em>width: 30%;</em> <em>height: 50px;</em></p>
                     <div class="flx-row grid mrg-v br">
@@ -72,7 +72,7 @@
 
                 <h3>Wrap</h3>
                 <p>Use wrap to keep sub-containers the same size & move items to the next line.</p>
-                <div class="div box br pad">
+                <div class="div br">
                     <p><b>wrp</b> <em>flex-wrap: wrap;</em> </p>
                     <p><b>jst-end</b> <em>justify-content: flex-end;</em> to align items at the end of the row.</p>
                     <div class="flx-row grid wrp mrg-v br jst-end">

@@ -764,10 +764,24 @@ Containers
 List
 */
 
-.ul {}
+.ul {
+    list-style-type: none;
+    width: auto;
+    border-radius: 6px;
+    padding-inline-start: 0;
+    border: var(--roobie-border-m);
+}
 
 .ul li {
-    color: var(--roobie-grey)
+    color: var(--roobie-grey);
+    text-decoration: none;
+    height: 30px;
+    padding: var(--roobie-padding-m);
+    background-color: var(--roobie-smooth-white);
+}
+
+.ul li+li {
+    border-top: var(--roobie-border-m);
 }
 
 .ol {}

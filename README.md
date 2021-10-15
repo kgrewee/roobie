@@ -55,6 +55,7 @@ Class names are prefixed pertaining to their function
 - blk - Block
 - inl - Inline
 - cnt - Content
+- drp - Dropdown
 
 ### Sizing
 

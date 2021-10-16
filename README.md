@@ -27,7 +27,7 @@ The power of Roobie is in the css classes.  You can use these to generate many d
 
 ### Naming
 
-Class names are prefixed pertaining to their function
+Class names are named according to their function.  Here's some common abbreviations found in class names.
 
 - div - Container
 - ht - Height
@@ -56,6 +56,7 @@ Class names are prefixed pertaining to their function
 - inl - Inline
 - cnt - Content
 - drp - Dropdown
+- fnt - Font
 
 ### Sizing
 

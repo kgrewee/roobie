@@ -16,6 +16,15 @@
     --margin-xxl: 30px;
     --margin-xxxl: 40px;
     --margin-xxxxl: 50px;
+    --font-size-xxxs: .1em;
+    --font-size-xxs: .2em;
+    --font-size-xs: .3em;
+    --font-size-s: .6em;
+    --font-size-m: .8em;
+    --font-size-l: 1em;
+    --font-size-xl: 1.25em;
+    --font-size-xxl: 1.5em;
+    --font-size-xxxl: 2em;
     --roobie-div-s: 20%;
     --roobie-div-m: 40%;
     --roobie-div-l: 60%;
@@ -55,6 +64,10 @@
     --roobie-margin-m: var(--padding-m);
     --roobie-margin-l: var(--padding-l);
     --roobie-margin-xl: var(--padding-xl);
+    --roobie-font-size-s: var(--font-size-s);
+    --roobie-font-size-m: var(--font-size-m);
+    --roobie-font-size-l: var(--font-size-l);
+    --roobie-font-size-xl: var(--font-size-xl);
 }
 
 
@@ -108,6 +121,14 @@ Colors
 
 .bg-blue {
     background-color: var(--roobie-blue);
+}
+
+.soft-blue {
+    color: var(--roobie-soft-blue);
+}
+
+.bg-soft-blue {
+    background-color: var(--roobie-soft-blue);
 }
 
 .yellow {

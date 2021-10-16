@@ -173,13 +173,13 @@ Nav bar
         height: auto;
     }
     
-    .nav-horiz {
+    .nav-row {
         z-index: 100;
         height: auto;
         width: 100%;
     }
     
-    .nav-vert {
+    .nav-col {
         z-index: 100;
         height: 100%;
         width: auto;

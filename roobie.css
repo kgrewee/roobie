@@ -40,7 +40,7 @@
     --roobie-green: rgb(24, 196, 96);
     --roobie-yellow: rgb(230, 230, 16);
     --roobie-blue: rgb(13, 13, 226);
-    --roobie-soft-blue: rgb(67, 67, 221);
+    --roobie-soft-blue: rgb(67, 67, 221, .9);
     --roobie-grey: rgb(88, 87, 87);
     --roobie-violet: rgb(226, 108, 226);
     --roobie-pink: rgb(219, 163, 173);
@@ -716,6 +716,40 @@ Padding
     padding-right: var(--roobie-padding-xl);
 }
 
+.pad-v-s {
+    padding: var(--roobie-padding-s) 0;
+}
+
+.pad-v-m,
+.pad-v {
+    padding: var(--roobie-padding-m) 0;
+}
+
+.pad-v-l {
+    padding: var(--roobie-padding-l) 0;
+}
+
+.pad-v-xl {
+    padding: var(--roobie-padding-xl) 0;
+}
+
+.pad-h-s {
+    padding: 0 var(--roobie-padding-s);
+}
+
+.pad-h-m,
+.pad-h {
+    padding: 0 var(--roobie-padding-m);
+}
+
+.pad-h-l {
+    padding: 0 var(--roobie-padding-l);
+}
+
+.pad-h-xl {
+    padding: 0 var(--roobie-padding-xl);
+}
+
 
 /*
 Containers
@@ -790,14 +824,18 @@ Containers
 Dropdown
 */
 
-.drp {}
+.drp {
+    font-size: var(--roobie-font-size-m);
+}
 
 .drp-c:focus .drp-cnt,
 .drp:hover .drp-cnt {
     display: block;
 }
 
-.drp-btn {}
+.drp-btn {
+    font-size: var(--roobie-font-size-l);
+}
 
 .drp-cnt {
     line-height: 1em;
@@ -807,31 +845,31 @@ Dropdown
     min-width: 160px;
     width: auto;
     box-shadow: var(--roobie-box-shadow-m);
+    font-size: var(--roobie-font-size-l);
     z-index: 1;
 }
 
 .drp-title {
     margin: 0;
     padding: var(--roobie-padding-s);
-    font-size: .9em;
     color: var(--roobie-black);
 }
 
 .drp-cnt p {
     margin-top: 0;
-    font-size: .75em;
+    font-size: var(--roobie-font-size-m);
+    color: var(--roobie-grey);
 }
 
 .drp-cnt a {
-    padding: var(--roobie-padding-s);
-    color: var(--roobie-grey);
+    padding: var(--roobie-padding-m);
+    color: var(--roobie-black);
     display: block;
     margin: 0;
-    font-size: .8em;
 }
 
 .drp-cnt a:hover {
-    color: var(--roobie-black);
+    background-color: var(--roobie-off-white);
     cursor: pointer;
 }
 
@@ -931,36 +969,36 @@ Text
     text-align: right;
 }
 
-.txt-xxxs {
+.fnt-xxxs {
     font-size: .2em;
 }
 
-.txt-xxs {
+.fnt-xxs {
     font-size: .4em;
 }
 
-.txt-xs {
+.fnt-xs {
     font-size: .6em;
 }
 
-.txt-s {
+.fnt-s {
     font-size: .8em;
 }
 
-.txt-m,
-.txt {
+.fnt-m,
+.fnt {
     font-size: 1em;
 }
 
-.txt-l {
+.fnt-l {
     font-size: 1.5em;
 }
 
-.txt-xl {
+.fnt-xl {
     font-size: 2em;
 }
 
-.txt-xxl {
+.fnt-xxl {
     font-size: 2.5em;
 }
 

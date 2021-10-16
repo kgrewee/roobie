@@ -1,12 +1,16 @@
 .roobie {
     color: var(--roobie-green);
-    padding: var(--roobie-padding-s) 0;
     font-weight: bolder;
     font-size: 1.5em;
+    margin: var(--roobie-margin-m) 0;
 }
 
 .roobie span {
     color: var(--roobie-black);
+}
+
+.title span {
+    color: var(--roobie-white);
 }
 
 .content {
@@ -57,9 +61,13 @@ Headings
 */
 
 h1 {
-    color: var(--roobie-black);
+    color: var(--roobie-white);
     margin: var(--margin-m) 0;
     font-size: 2em !important;
+}
+
+h1+p {
+    color: var(--roobie-smooth-white);
 }
 
 h2 {
@@ -108,6 +116,6 @@ nav a {
 }
 
 .active {
-    border-left: 3px solid var(--roobie-black);
+    border-left: 4px solid var(--roobie-soft-blue);
     opacity: 100% !important;
 }

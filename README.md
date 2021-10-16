@@ -58,7 +58,7 @@ Class names are named according to their function.  Here's some common abbreviat
 
 ## Sizing
 
-When a class needs to have different sizes, we use this convention.  Values for these sizes are configurable at the top of `roobie.css`. 
+When a class needs to have different sizes, we use this convention.  Values for sizes are configurable at the top of `roobie.css`. 
 
 - xs - Extra small
 - s - Small

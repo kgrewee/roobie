@@ -92,7 +92,7 @@ p {
 b {
     border-radius: 8px;
     background-color: var(--roobie-off-white);
-    padding: var(--roobie-padding-s);
+    padding: 3px;
     color: var(--roobie-soft-blue);
 }
 

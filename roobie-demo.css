@@ -43,7 +43,7 @@ body {
     height: 100%;
     overflow: hidden;
     font-family: var(--font-family);
-    line-height: 1.5em;
+    line-height: 1.25em;
 }
 
 xmp {

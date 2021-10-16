@@ -770,6 +770,7 @@ Dropdown
 
 .drp {}
 
+.drp-c:focus .drp-cnt,
 .drp:hover .drp-cnt {
     display: block;
 }
@@ -781,8 +782,14 @@ Dropdown
     position: absolute;
     background-color: var(--roobie-white);
     min-width: 160px;
+    width: auto;
     box-shadow: var(--roobie-box-shadow-m);
     z-index: 1;
+}
+
+.drp-cnt p {
+    margin-top: 0;
+    font-size: .75em;
 }
 
 .drp-cnt a {
@@ -790,12 +797,13 @@ Dropdown
     color: var(--roobie-grey);
     display: block;
     margin: 0;
-    text-align: center;
+    font-size: .9em;
 }
 
 .drp-cnt a:hover {
     background-color: var(--roobie-off-white);
     color: var(--roobie-black);
+    cursor: pointer;
 }
 
 

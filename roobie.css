@@ -790,7 +790,9 @@ Containers
 Dropdown
 */
 
-.drp {}
+.drp {
+    font-size: var(--roobie-font-size-m);
+}
 
 .drp-c:focus .drp-cnt,
 .drp:hover .drp-cnt {
@@ -807,19 +809,19 @@ Dropdown
     min-width: 160px;
     width: auto;
     box-shadow: var(--roobie-box-shadow-m);
+    font-size: var(--roobie-font-size-l);
     z-index: 1;
 }
 
 .drp-title {
     margin: 0;
     padding: var(--roobie-padding-s);
-    font-size: .9em;
     color: var(--roobie-black);
 }
 
 .drp-cnt p {
     margin-top: 0;
-    font-size: .75em;
+    font-size: var(--roobie-font-size-m);
 }
 
 .drp-cnt a {
@@ -827,7 +829,6 @@ Dropdown
     color: var(--roobie-grey);
     display: block;
     margin: 0;
-    font-size: .8em;
 }
 
 .drp-cnt a:hover {

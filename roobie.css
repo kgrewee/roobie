@@ -40,7 +40,7 @@
     --roobie-green: rgb(24, 196, 96);
     --roobie-yellow: rgb(230, 230, 16);
     --roobie-blue: rgb(13, 13, 226);
-    --roobie-soft-blue: rgb(67, 67, 221);
+    --roobie-soft-blue: rgb(67, 67, 221, .9);
     --roobie-grey: rgb(88, 87, 87);
     --roobie-violet: rgb(226, 108, 226);
     --roobie-pink: rgb(219, 163, 173);
@@ -714,6 +714,40 @@ Padding
 
 .pad-r-xl {
     padding-right: var(--roobie-padding-xl);
+}
+
+.pad-v-s {
+    padding: var(--roobie-padding-s) 0;
+}
+
+.pad-v-m,
+.pad-v {
+    padding: var(--roobie-padding-m) 0;
+}
+
+.pad-v-l {
+    padding: var(--roobie-padding-l) 0;
+}
+
+.pad-v-xl {
+    padding: var(--roobie-padding-xl) 0;
+}
+
+.pad-h-s {
+    padding: 0 var(--roobie-padding-s);
+}
+
+.pad-h-m,
+.pad-h {
+    padding: 0 var(--roobie-padding-m);
+}
+
+.pad-h-l {
+    padding: 0 var(--roobie-padding-l);
+}
+
+.pad-h-xl {
+    padding: 0 var(--roobie-padding-xl);
 }
 
 

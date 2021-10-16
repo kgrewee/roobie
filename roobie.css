@@ -563,6 +563,19 @@ Input
         border: var(--roobie-border-s);
     }
     /*
+Tag
+*/
+    
+    .tag {
+        padding: 0 var(--roobie-padding-s);
+        box-shadow: var(--roobie-box-shadow-m);
+        border-radius: 8px;
+        margin: var(--roobie-margin-s);
+        font-size: var(--font-size-m);
+    }
+    
+    .tag:hover {}
+    /*
 Scroll
 */
     

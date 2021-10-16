@@ -186,6 +186,7 @@ Nav bar
     margin: var(--margin-m);
     width: auto;
     opacity: 75%;
+    height: 100%;
     text-decoration: none;
 }
 
@@ -778,6 +779,7 @@ Dropdown
 .drp-btn {}
 
 .drp-cnt {
+    line-height: 1em;
     display: none;
     position: absolute;
     background-color: var(--roobie-white);
@@ -787,21 +789,27 @@ Dropdown
     z-index: 1;
 }
 
+.drp-title {
+    margin: 0;
+    padding: var(--roobie-padding-s);
+    font-size: .9em;
+    color: var(--roobie-black);
+}
+
 .drp-cnt p {
     margin-top: 0;
     font-size: .75em;
 }
 
 .drp-cnt a {
-    padding: var(--roobie-padding-m);
+    padding: var(--roobie-padding-s);
     color: var(--roobie-grey);
     display: block;
     margin: 0;
-    font-size: .9em;
+    font-size: .8em;
 }
 
 .drp-cnt a:hover {
-    background-color: var(--roobie-off-white);
     color: var(--roobie-black);
     cursor: pointer;
 }

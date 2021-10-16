@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="grid.css">
 </head>
 
-<body class="txt-l spc-none">
-    <nav class="nav-vert flx-col flt-left flx-col-nowrap jst-between aln-center box-m txt-center">
+<body class="fnt-l spc-none">
+    <nav class="nav-vert flx-col flt-left jst-between aln-center box txt-center">
         <div class="div-xl flx-col aln-start jst-center">
             <div class="roobie"><span>Roo</span>bie</div>
             <a class="nav-item" href="../../index.html">Home</a>
@@ -19,61 +19,85 @@
             <a class="nav-item" href="../../components/button/button.html">Button</a>
             <a class="nav-item" href="../../components/input/input.html">Input</a>
             <a class="nav-item active" href="../../components/grid/grid.html">Grid</a>
+            <a class="nav-item" href="../../components/list/list.html">List</a>
+            <a class="nav-item" href="../../components/dropdown/dropdown.html">Dropdown</a>
         </div>
-        <div class="flx-col aln-center">
+        <div class="flx-col aln-center center">
             <a class="nav-item">&copy; Roobie 2021</a>
         </div>
     </nav>
     <div class="content">
         <div class="div flx-col aln-center">
-            <div class="div-xl flx-col aln-start jst-start txt-left">
-                <h1>Grid</h1>
-                <p>Simple, responsive grids with flexbox.</p>
-                <h3>Horizontal</h3>
-                <div class="div flx-row grid mrg-v">
-                    <div class="out br-xl flx-row aln-center jst-center">One</div>
-                    <div class="out br-xl flx-row aln-center jst-center">Two</div>
-                    <div class="out br-xl flx-row aln-center jst-center">Three</div>
-                </div>
-                <h3>Vertical</h3>
-                <div class="div flx-col grid mrg-v">
-                    <div class="out br-xl flx-col aln-center jst-center">One</div>
-                    <div class="out br-xl flx-row aln-center jst-center">Two</div>
-                    <div class="out br-xl flx-row aln-center jst-center">Three</div>
-                </div>
-                <h3>Horizontal Nowrap</h3>
-                <div class="div flx-row grid mrg-v">
-                    <div class="out br-xl flx-row aln-center jst-center">One</div>
-                    <div class="out br-xl flx-row aln-center jst-center">Two</div>
-                    <div class="out br-xl flx-row aln-center jst-center">Three</div>
-                    <div class="out br-xl flx-row aln-center jst-center">Four</div>
-                    <div class="out br-xl flx-row aln-center jst-center">Five</div>
-                </div>
-                <h3>Vertical Nowrap</h3>
-                <div class="div flx-col grid mrg-v v-wrp">
-                    <div class="out br-xl flx-col aln-center jst-center">One</div>
-                    <div class="out br-xl flx-row aln-center jst-center">Two</div>
-                    <div class="out br-xl flx-row aln-center jst-center">Three</div>
-                    <div class="out br-xl flx-row aln-center jst-center">Four</div>
-                    <div class="out br-xl flx-row aln-center jst-center">Five</div>
-                </div>
-                <h3>Horizontal Wrap</h3>
-                <div class="div flx-row grid wrp mrg-v">
-                    <div class="out br-xl flx-row aln-center jst-center">One</div>
-                    <div class="out br-xl flx-row aln-center jst-center">Two</div>
-                    <div class="out br-xl flx-row aln-center jst-center">Three</div>
-                    <div class="out br-xl flx-row aln-center jst-center">Four</div>
-                    <div class="out br-xl flx-row aln-center jst-center">Five</div>
-                </div>
-                <h3>Vertical Wrap</h3>
-                <div class="div flx-col grid mrg-v wrp v-wrp aln-content-start">
-                    <div class="out br-xl flx-col aln-center jst-center">One</div>
-                    <div class="out br-xl flx-row aln-center jst-center">Two</div>
-                    <div class="out br-xl flx-row aln-center jst-center">Three</div>
-                    <div class="out br-xl flx-row aln-center jst-center">Four</div>
-                    <div class="out br-xl flx-row aln-center jst-center">Five</div>
+            <div class="div bg-soft-blue pad-v-xl flx-col aln-center box">
+                <div class="div-xl">
+                    <h1>Grid</h1>
+                    <p>Simple, responsive grids with flexbox.</p>
                 </div>
             </div>
+            <div class="div-xl flx-col aln-start jst-start txt-left">
+                <h3>Horizontal</h3>
+                <div class="div">
+                    <p><b>flx-row</b> Adds flex row properties, defaults to nowrap.</p>
+                    <p> <b>  jst-center</b> Justify content in the center of the row.</p>
+                    <div class="flx-row grid mrg-v br jst-center">
+                        <div class="box br-xl flx-row aln-center jst-center">1</div>
+                        <div class="box br-xl flx-row aln-center jst-center">2</div>
+                        <div class="box br-xl flx-row aln-center jst-center">3</div>
+                    </div>
+                </div>
+                <h3>Vertical</h3>
+                <div class="div">
+                    <p><b>flx-col</b>Adds flex column properties, defaults to nowrap. </p>
+                    <p><b>  aln-center</b> Align content in the center of the column.</p>
+                    <div class="flx-col grid mrg-v br aln-center">
+                        <div class="box br-xl flx-col aln-center jst-center">1</div>
+                        <div class="box br-xl flx-row aln-center jst-center">2</div>
+                        <div class="box br-xl flx-row aln-center jst-center">3</div>
+                    </div>
+                </div>
+                <h3>Nowrap is the Default</h3>
+                <p>For this demo, the max height of the grids is 225px. The sub-containers are 30% width & 50px height. There isn't enough space in the container for the sub-containers, so the wrap property decides what to do. The default flex style is nowrap,
+                    so the sub-containers are squished to fit on one line for both <b>flx-row</b> & <b>flx-col</b>. </p>
+                <div class="div">
+                    <div class="flx-row grid mrg-v br">
+                        <div class="box br-xl flx-row aln-center jst-center">1</div>
+                        <div class="box br-xl flx-row aln-center jst-center">2</div>
+                        <div class="box br-xl flx-row aln-center jst-center">3</div>
+                        <div class="box br-xl flx-row aln-center jst-center">4</div>
+                        <div class="box br-xl flx-row aln-center jst-center">5</div>
+                    </div>
+                    <div class="flx-col grid mrg-v br">
+                        <div class="box br-xl flx-col aln-center jst-center">1</div>
+                        <div class="box br-xl flx-row aln-center jst-center">2</div>
+                        <div class="box br-xl flx-row aln-center jst-center">3</div>
+                        <div class="box br-xl flx-row aln-center jst-center">4</div>
+                        <div class="box br-xl flx-row aln-center jst-center">5</div>
+                    </div>
+                </div>
+
+                <h3>Wrap</h3>
+                <p>Use wrap to keep sub-containers the same size & move items to the next line. Flex align is demoed in different ways.</p>
+                <div class="div br">
+                    <p><b>wrp</b> Wrap content to the next line when width exceeds the current line.</p>
+                    <p><b>jst-end</b>Justify content at the end of the row.</p>
+                    <div class="flx-row grid wrp mrg-v br jst-end">
+                        <div class="box br-xl flx-row aln-center jst-center">1</div>
+                        <div class="box br-xl flx-row aln-center jst-center">2</div>
+                        <div class="box br-xl flx-row aln-center jst-center">3</div>
+                        <div class="box br-xl flx-row aln-center jst-center">4</div>
+                        <div class="box br-xl flx-row aln-center jst-center">5</div>
+                    </div>
+                    <p><b>aln-cnt-start</b>Align content at the start of the next line when wrapping.</p>
+                    <div class="flx-col grid mrg-v wrp aln-cnt-start br">
+                        <div class="box br-xl flx-col aln-center jst-center">1</div>
+                        <div class="box br-xl flx-row aln-center jst-center">2</div>
+                        <div class="box br-xl flx-row aln-center jst-center">3</div>
+                        <div class="box br-xl flx-row aln-center jst-center">4</div>
+                        <div class="box br-xl flx-row aln-center jst-center">5</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-divider"></div>
         </div>
     </div>
 </body>

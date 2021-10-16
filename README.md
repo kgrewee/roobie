@@ -1,6 +1,6 @@
 # Roobie
 
-A collection of styles to help you build web applications.
+A collection of styles to help you build web applications.  Link `roobie.css` to your html to get started.
 
 ***This whole repo is a demo.  Pull using git and open ```index.html``` in a browser.***
 
@@ -14,20 +14,18 @@ A collection of styles to help you build web applications.
 - Grid
 - Input
 - Container
+- Dropdown
+- List
 
-## Syntax
+## Basics
 
-We basically have our own mini-language to simplify naming and reduce code.
+Roobie is made up of css classes and themes.  You can take the themes found in ```roobie.css``` and change the variables to your liking.  The css classes depend directly on the theme variables.  Change those, you change the whole theme.  You can build your whole web-app with Roobie and not write any CSS except for custom colors.
 
-### Basics
+The power of Roobie is in the css classes.  You can use these to generate many different styles, using the same css.  Roobie centralizes styles to reduce spammed CSS and to make your UI easier to maintain.  Focus on content and colors, not basic styles.  We will handle that for you.  Checkout the ```components/``` folder for pre-built components using our CSS classes.
 
-Roobie is made up of css classes and themes.  You can take the themes found in ```roobie.css``` and change the variables to your liking.  The css classes depend directly on the theme variables.
+## Naming
 
-The power of Roobie is in the css classes.  You can use these to generate many different styles, all using the same css.  What!  Thats insane.  No, thats smart.  This reduces spammed css styles that make your UI impossible to maintain.  Focus on content and colors, not basic styles.  We will handle that for you.  Checkout the ```components/``` folder for pre-built components using our styles.
-
-### Naming
-
-Class names are prefixed pertaining to their function
+Class names are named according to their function.  Here's some common abbreviations found in class names.
 
 - div - Container
 - ht - Height
@@ -35,6 +33,7 @@ Class names are prefixed pertaining to their function
 - flx - Flex
 - flt - Float
 - mrg - Margin
+- pad - Padding
 - op - Opacity
 - btn - Button
 - txt - Text
@@ -45,7 +44,7 @@ Class names are prefixed pertaining to their function
 - bg - Background
 - inp - Input
 - br - Border Radius
-- out - Outline
+- brd - Border
 - in - Inset
 - ord - Order
 - ul - Unordered list
@@ -53,10 +52,13 @@ Class names are prefixed pertaining to their function
 - rel - Relative
 - blk - Block
 - inl - Inline
+- cnt - Content
+- drp - Dropdown
+- fnt - Font
 
-### Sizing
+## Sizing
 
-When a class needs to have different sizes, we use this convention. 
+When a class needs to have different sizes, we use this convention.  Values for these sizes are configurable at the top of `roobie.css`. 
 
 - xs - Extra small
 - s - Small

@@ -7,7 +7,7 @@
 }
 
 .grid {
-    background-color: var(--roobie-smooth-white);
+    background-color: var(--roobie-off-white);
     padding: var(--roobie-padding-l);
 }
 
@@ -17,5 +17,5 @@ Max height to demo wrap styles
 */
 
 .mrg-v {
-    max-height: 200px;
+    max-height: 225px;
 }

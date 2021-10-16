@@ -14,14 +14,6 @@
     overflow: auto;
 }
 
-p {
-    color: var(--roobie-grey);
-}
-
-em {
-    border-bottom: var(--roobie-border-s);
-}
-
 
 /*
 Dividers
@@ -51,6 +43,7 @@ body {
     height: 100%;
     overflow: hidden;
     font-family: var(--font-family);
+    line-height: 1.25em;
 }
 
 xmp {
@@ -76,11 +69,12 @@ h2 {
 
 h3 {
     color: var(--roobie-green);
-    margin: var(--margin-m) 0;
+    margin: var(--margin-s) 0;
+    margin-top: var(--margin-xxl);
 }
 
 p {
-    margin: var(--margin-l) 0;
+    margin: var(--margin-s) 0;
 }
 
 .mrg-h {
@@ -97,9 +91,9 @@ p {
 
 b {
     border-radius: 8px;
-    background-color: var(--roobie-white);
-    padding: var(--roobie-padding-s);
-    color: var(--roobie-green);
+    background-color: var(--roobie-off-white);
+    padding: 3px;
+    color: var(--roobie-soft-blue);
 }
 
 

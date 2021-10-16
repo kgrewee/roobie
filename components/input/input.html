@@ -10,7 +10,7 @@
 </head>
 
 <body class="txt-l spc-none">
-    <nav class="nav-vert flx-col flt-left flx-col-nowrap jst-between aln-center box-m txt-center">
+    <nav class="nav-vert flx-col flt-left jst-between aln-center box txt-center">
         <div class="div-xl flx-col aln-start jst-center">
             <div class="roobie"><span>Roo</span>bie</div>
             <a class="nav-item" href="../../index.html">Home</a>
@@ -19,8 +19,10 @@
             <a class="nav-item" href="../../components/button/button.html">Button</a>
             <a class="nav-item active" href="../../components/input/input.html">Input</a>
             <a class="nav-item" href="../../components/grid/grid.html">Grid</a>
+            <a class="nav-item" href="../../components/list/list.html">List</a>
+            <a class="nav-item" href="../../components/dropdown/dropdown.html">Dropdown</a>
         </div>
-        <div class="flx-col aln-center">
+        <div class="flx-col aln-center center">
             <a class="nav-item">&copy; Roobie 2021</a>
         </div>
     </nav>
@@ -30,39 +32,39 @@
                 <h1>Input</h1>
                 <p>Improved input styles from browser defaults.</p>
                 <h3>Basic</h3>
-                <div class="div bg-off-white br pad">
+                <div class="div">
                     <div class="div">
                         <p><b>inp</b> Basic input styles</p>
                         <p><b>brd-none</b> No border</p>
                     </div>
-                    <div class="mrg-v flx-row jst-start wrp">
+                    <div class="mrg-v flx-row jst-start wrp bg-off-white pad-xl br">
+                        <input class="inp brd-none" placeholder="Name"></input>
                         <input class="inp" placeholder="Input"></input>
-                        <input class="inp colored brd-none" placeholder="Name"></input>
                     </div>
                 </div>
 
                 <h3>Raised</h3>
-                <div class="div bg-off-white br pad">
+                <div class="div">
                     <div class="div">
                         <p><b>box</b> Box shadow</p>
                         <p><b>box-h</b> Box shadow with hover</p>
                     </div>
-                    <div class="mrg-v flx-row jst-start wrp">
-                        <input class="inp box brd-none bg-white" placeholder="Enter your email"></input>
-                        <input class="inp box-h" placeholder="Enter password"></input>
-                        <input class="inp brd-none box-h bg-grey" placeholder="Type response"></input>
+                    <div class="mrg-v flx-row jst-start wrp bg-off-white pad-xl br">
+                        <input class="inp box brd-none" placeholder="Enter your email"></input>
+                        <input class="inp brd-none box-h" placeholder="Enter password"></input>
+                        <input class="inp box-h" placeholder="Type response"></input>
                     </div>
                 </div>
                 <h3>Inset</h3>
-                <div class="div bg-off-white br pad">
+                <div class="div">
                     <div class="div">
                         <p><b>in</b> Inset</p>
                         <p><b>in-h</b> Inset with hover</p>
                     </div>
-                    <div class="mrg-v flx-row jst-start wrp">
-                        <input class="inp in bg-white brd-none" placeholder="What's your question?"></input>
-                        <input class="inp in-h" placeholder="Enter something"></input>
-                        <input class="inp brd-none in-h bg-grey" placeholder="Why is the sky blue?"></input>
+                    <div class="mrg-v flx-row jst-start wrp bg-off-white pad-xl br">
+                        <input class="inp in brd-none" placeholder="What's your question?"></input>
+                        <input class="inp brd-none in-h" placeholder="Enter something"></input>
+                        <input class="inp in-h" placeholder="Why is the sky blue?"></input>
                     </div>
                 </div>
             </div>

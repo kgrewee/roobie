@@ -822,17 +822,18 @@ Dropdown
 .drp-cnt p {
     margin-top: 0;
     font-size: var(--roobie-font-size-m);
+    color: var(--roobie-grey);
 }
 
 .drp-cnt a {
-    padding: var(--roobie-padding-s);
-    color: var(--roobie-grey);
+    padding: var(--roobie-padding-m);
+    color: var(--roobie-black);
     display: block;
     margin: 0;
 }
 
 .drp-cnt a:hover {
-    color: var(--roobie-black);
+    background-color: var(--roobie-off-white);
     cursor: pointer;
 }
 

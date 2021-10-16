@@ -799,7 +799,9 @@ Dropdown
     display: block;
 }
 
-.drp-btn {}
+.drp-btn {
+    font-size: var(--roobie-font-size-l);
+}
 
 .drp-cnt {
     line-height: 1em;

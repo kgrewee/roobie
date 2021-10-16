@@ -116,6 +116,6 @@ nav a {
 }
 
 .active {
-    border-left: 3px solid var(--roobie-black);
+    border-left: 4px solid var(--roobie-soft-blue);
     opacity: 100% !important;
 }

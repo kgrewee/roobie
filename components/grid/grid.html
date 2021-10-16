@@ -3,7 +3,7 @@
 
 <head>
     <title>Roobie | Grid</title>
-    <meta></meta>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="../../roobie.css">
     <link rel="stylesheet" href="../../roobie-demo.css">
     <link rel="stylesheet" href="grid.css">
@@ -56,8 +56,8 @@
                     </div>
                 </div>
                 <h3>Nowrap is the Default</h3>
-                <p>For this demo, the max height of the grids is 225px. The sub-containers are 30% width & 50px height. There isn't enough space in the container for the sub-containers, so the wrap property decides what to do. The default flex style is nowrap,
-                    so the sub-containers are squished to fit on one line for both <b>flx-row</b> & <b>flx-col</b>. </p>
+                <p>For this demo, the max-height of the grids is 225px. The sub-containers are 30% width & 50px height. There isn't enough space in the container for the sub-containers, so the flex-wrap property decides what to do. The default Roobie flex-wrap
+                    value is nowrap, so the sub-containers are squished to fit on one line for both <b>flx-row</b> & <b>flx-col</b>.</p>
                 <div class="div">
                     <div class="flx-row grid mrg-v br">
                         <div class="box br-xl flx-row aln-center jst-center">1</div>
@@ -76,9 +76,8 @@
                 </div>
 
                 <h3>Wrap</h3>
-                <p>Use wrap to keep sub-containers the same size & move items to the next line. Flex align is demoed in different ways.</p>
+                <p>Nowrap is useful, but in this case, we want to wrap our items to keep them the same size. Simply add the <b>wrp</b> class to add wrap to the Grid. Use flex classes to align grid content.</p>
                 <div class="div br">
-                    <p><b>wrp</b> Wrap content to the next line when width exceeds the current line.</p>
                     <p><b>jst-end</b>Justify content at the end of the row.</p>
                     <div class="flx-row grid wrp mrg-v br jst-end">
                         <div class="box br-xl flx-row aln-center jst-center">1</div>

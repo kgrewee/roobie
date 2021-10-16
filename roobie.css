@@ -566,7 +566,8 @@ Input
 Tag
 */
     
-    .tag {
+    .tag,
+    .tag-h {
         padding: 0 var(--roobie-padding-s);
         box-shadow: var(--roobie-box-shadow-m);
         border-radius: 8px;
@@ -574,7 +575,12 @@ Tag
         font-size: var(--font-size-m);
     }
     
-    .tag:hover {}
+    .tag-h:hover {
+        background-color: var(--roobie-soft-blue);
+        box-shadow: var(--roobie-box-shadow-l);
+        color: var(--roobie-white);
+        cursor: default;
+    }
     /*
 Scroll
 */

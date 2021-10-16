@@ -51,8 +51,8 @@ body {
 }
 
 xmp {
-    background-color: var(--roobie-off-white);
-    color: var(--roobie-black);
+    color: var(--roobie-soft-blue);
+    white-space: normal;
 }
 
 
@@ -77,8 +77,7 @@ h2 {
 
 h3 {
     color: var(--roobie-green);
-    margin: var(--margin-s) 0;
-    margin-top: var(--margin-xxl);
+    margin: var(--margin-l) 0;
 }
 
 p {
@@ -102,6 +101,7 @@ b {
     background-color: var(--roobie-off-white);
     padding: 3px;
     color: var(--roobie-soft-blue);
+    margin: 0 var(--roobie-margin-s);
 }
 
 

@@ -2,12 +2,6 @@
     min-width: 200px;
 }
 
-.btn {
-    padding: 5px;
-    margin: 0;
-    border: none;
-}
-
 .ul-cnt li,
 .ul-cnt-brd li {
     min-width: 300px;

@@ -935,36 +935,36 @@ Text
     text-align: right;
 }
 
-.txt-xxxs {
+.fnt-xxxs {
     font-size: .2em;
 }
 
-.txt-xxs {
+.fnt-xxs {
     font-size: .4em;
 }
 
-.txt-xs {
+.fnt-xs {
     font-size: .6em;
 }
 
-.txt-s {
+.fnt-s {
     font-size: .8em;
 }
 
-.txt-m,
-.txt {
+.fnt-m,
+.fnt {
     font-size: 1em;
 }
 
-.txt-l {
+.fnt-l {
     font-size: 1.5em;
 }
 
-.txt-xl {
+.fnt-xl {
     font-size: 2em;
 }
 
-.txt-xxl {
+.fnt-xxl {
     font-size: 2.5em;
 }
 

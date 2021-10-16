@@ -1,5 +1,5 @@
 .ul-brd li {
-    min-width: 250px;
+    min-width: 200px;
 }
 
 .btn {
@@ -8,6 +8,7 @@
     border: none;
 }
 
-.ul-action li {
-    min-width: 400px;
+.ul-cnt li,
+.ul-cnt-brd li {
+    min-width: 300px;
 }

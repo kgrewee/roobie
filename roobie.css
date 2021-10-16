@@ -821,7 +821,8 @@ List
 
 .ul,
 .ul-brd,
-.ul-action {
+.ul-cnt,
+.ul-cnt-brd {
     list-style-type: none;
     width: auto;
     padding-inline-start: 0;
@@ -841,7 +842,8 @@ List
     cursor: pointer;
 }
 
-.ul-action li {
+.ul-cnt li,
+.ul-cnt-brd li {
     color: var(--roobie-grey);
     text-decoration: none;
     height: auto;
@@ -854,8 +856,9 @@ List
     cursor: pointer;
 }
 
-.ul-action li a {
-    margin-left: var(--roobie-margin-xl);
+.ul-cnt li a,
+.ul-cnt-brd li a {
+    margin: var(--roobie-margin-m) 0;
 }
 
 .ul li span,
@@ -865,7 +868,8 @@ List
     line-height: 1em;
 }
 
-.ul-brd li+li {
+.ul-brd li+li,
+.ul-cnt-brd li+li {
     border-top: var(--roobie-border-m);
 }
 
@@ -874,7 +878,8 @@ List
 }
 
 .ul-brd li:hover,
-.ul-action li:hover {
+.ul-cnt li:hover,
+.ul-cnt-brd li:hover {
     color: var(--roobie-black);
 }
 

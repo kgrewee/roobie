@@ -914,7 +914,6 @@ Dropdown
 }
 
 .drp-cnt {
-    line-height: 1em;
     display: none;
     position: absolute;
     background-color: var(--white);
@@ -1000,7 +999,6 @@ List
 .ul-bdr li span {
     font-size: var(--font-size-s);
     color: var(--grey);
-    line-height: 1em;
 }
 
 .ul-bdr li+li,

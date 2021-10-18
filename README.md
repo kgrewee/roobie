@@ -66,12 +66,10 @@ Common abbreviations found in class names. They don't exceed 3 characters to kee
 
 Classes need to have different sizes, they are also abbreviated.  We use a basic and very relatable convention, much like the one you'd see at a store.  Small, Medium, Large & Extra Large are offered for most classes.  Extreme value are offered for some classes, such as txt, like Extra Extra Small & Extra Extra Large.  Values for sizes are configurable at the top of `roobie.css`. 
 
-...
 - s - Small
 - m - Medium
 - l - Large
 - xl - Extra large
-...
 
 More extreme sizes follow the same convention.
 
@@ -79,6 +77,7 @@ More extreme sizes follow the same convention.
 
 A few examples to get you started. No content, just classes to demonstrate. Link `roobie.css` to your html and try them out.
 
+<xmp>
 Container with 100% width
 <div class="div"></div>
 
@@ -99,3 +98,5 @@ Small block of content
 
 Styled list
 <ul class="ul"></ul>
+</xmp>
+

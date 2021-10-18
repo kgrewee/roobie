@@ -730,6 +730,46 @@ Margin
 }
 
 
+/* Margin Vertical*/
+
+.mrgv-s {
+    margin: var(--margin-s) 0;
+}
+
+.mrgv-m,
+.mrgv {
+    margin: var(--margin-m) 0;
+}
+
+.mrgv-l {
+    margin: var(--margin-l) 0;
+}
+
+.mrgv-xl {
+    margin: var(--margin-xl) 0;
+}
+
+
+/* Margin Horizontal */
+
+.mrgh-s {
+    margin: 0 var(--margin-s);
+}
+
+.mrgh-m,
+.mrgh {
+    margin: 0 var(--margin-m);
+}
+
+.mrgh-l {
+    margin: 0 var(--margin-l);
+}
+
+.mrgh-xl {
+    margin: 0 var(--margin-xl);
+}
+
+
 /*
 Padding
 */

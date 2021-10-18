@@ -62,7 +62,7 @@ Headings
 h1 {
     color: var(--white);
     margin: var(--margin-m) 0;
-    font-size: 2em !important;
+    font-size: var(--font-size-xxxl) !important;
 }
 
 h1+p {
@@ -88,22 +88,14 @@ p {
     margin: var(--margin-s) 0;
 }
 
-.mrg_ {
-    margin: 0 var(--margin-l);
-}
-
-.mrg-v {
-    margin: var(--margin-l) 0;
-}
-
 .ul {
-    margin: var(--margin-m) 0;
+    margin: 0;
 }
 
 b {
-    border-radius: 8px;
+    border-radius: var(--border-radius-xl);
     background-color: var(--off-white);
-    padding: 3px;
+    padding: 0 3px;
     color: var(--soft-blue);
     margin: 0 var(--margin-s);
 }

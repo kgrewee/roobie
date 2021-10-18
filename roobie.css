@@ -827,7 +827,7 @@ Dropdown
 }
 
 .drp-btn {
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-m);
 }
 
 .drp-btn:hover {

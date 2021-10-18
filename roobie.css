@@ -157,7 +157,7 @@ Colors
         border-color: var(--roobie-green) !important;
     }
     /*
-Nav bar
+Navbar
 */
     
     .nav-top {
@@ -267,36 +267,24 @@ Border
         border: none !important;
     }
     
-    .brd-s {
-        border: var(--roobie-border-s) !important;
-    }
-    
-    .brd-m,
-    .brd {
-        border: var(--roobie-border-m) !important;
-    }
-    
-    .brd-l {
-        border: var(--roobie-border-l) !important;
-    }
-    
-    .brd-xl {
-        border: var(--roobie-border-xl) !important;
-    }
-    
+    .brd-s,
     .brd-s-h {
         border: var(--roobie-border-s) !important;
     }
     
+    .brd-m,
+    .brd,
     .brd-m-h,
     .brd-h {
         border: var(--roobie-border-m) !important;
     }
     
+    .brd-l,
     .brd-l-h {
         border: var(--roobie-border-l) !important;
     }
     
+    .brd-xl,
     .brd-xl-h {
         border: var(--roobie-border-xl) !important;
     }
@@ -332,36 +320,24 @@ Border
 Box shadow
 */
     
-    .box-s {
-        box-shadow: var(--roobie-box-shadow-s);
-    }
-    
-    .box-m,
-    .box {
-        box-shadow: var(--roobie-box-shadow-m);
-    }
-    
-    .box-l {
-        box-shadow: var(--roobie-box-shadow-l);
-    }
-    
-    .box-xl {
-        box-shadow: var(--roobie-box-shadow-xl);
-    }
-    
+    .box-s,
     .box-s-h {
         box-shadow: var(--roobie-box-shadow-s);
     }
     
+    .box-m,
+    .box,
     .box-m-h,
     .box-h {
         box-shadow: var(--roobie-box-shadow-m);
     }
     
+    .box-l,
     .box-l-h {
         box-shadow: var(--roobie-box-shadow-l);
     }
     
+    .box-xl,
     .box-xl-h {
         box-shadow: var(--roobie-box-shadow-xl);
     }
@@ -393,36 +369,24 @@ Box shadow
 Inset
 */
     
-    .in-s {
-        box-shadow: var(--roobie-inset-s);
-    }
-    
-    .in-m,
-    .in {
-        box-shadow: var(--roobie-inset-m);
-    }
-    
-    .in-l {
-        box-shadow: var(--roobie-inset-l);
-    }
-    
-    .in-xl {
-        box-shadow: var(--roobie-inset-xl);
-    }
-    
+    .in-s,
     .in-s-h {
         box-shadow: var(--roobie-inset-s);
     }
     
+    .in-m,
+    .in,
     .in-m-h,
     .in-h {
         box-shadow: var(--roobie-inset-m);
     }
     
+    .in-l,
     .in-l-h {
         box-shadow: var(--roobie-inset-l);
     }
     
+    .in-xl,
     .in-xl-h {
         box-shadow: var(--roobie-inset-xl);
     }

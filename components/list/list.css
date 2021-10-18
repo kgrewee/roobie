@@ -1,8 +1,8 @@
-.ul-brd li {
+.ul-bdr li {
     min-width: 200px;
 }
 
 .ul-cnt li,
-.ul-cnt-brd li {
+.ul-cnt-bdr li {
     min-width: 300px;
 }

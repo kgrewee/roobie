@@ -1,14 +1,14 @@
 .grid div {
     width: 30%;
     height: 50px;
-    color: var(--roobie-black);
+    color: var(--black);
     margin: 5px;
-    background-color: var(--roobie-white);
+    background-color: var(--white);
 }
 
 .grid {
-    background-color: var(--roobie-off-white);
-    padding: var(--roobie-padding-l);
+    background-color: var(--off-white);
+    padding: var(--padding-l);
 }
 
 
@@ -16,6 +16,6 @@
 Max height to demo wrap styles
 */
 
-.mrg-v {
-    max-height: 225px;
+.mrgv {
+    max_eight: 225px;
 }

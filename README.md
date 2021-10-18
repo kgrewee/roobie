@@ -41,21 +41,22 @@ Class names are named according to their function.  Here's some common abbreviat
 - wrp - Wrap
 - aln - Align
 - jst - Justify
-- spc - Space
 - bg - Background
 - inp - Input
 - br - Border Radius
-- brd - Border
+- bdr - Border
 - in - Inset
 - ord - Order
 - ul - Unordered list
 - ol - Ordered list
+- abs - Absolute
 - rel - Relative
 - blk - Block
 - inl - Inline
 - cnt - Content
 - drp - Dropdown
 - fnt - Font
+- csr - Cursor
 
 ## Sizing
 

@@ -185,7 +185,7 @@
 }
 
 .bdr-green {
-    border-color: var(--green) !important;
+    border: 1px solid var(--green) !important
 }
 
 
@@ -583,7 +583,7 @@ Button
     height: auto;
     padding: var(--padding-m);
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: var(--border-radius-l);
     margin: var(--margin-s);
     cursor: pointer;
     border: var(--border-s);
@@ -605,7 +605,7 @@ select:focus {
     width: auto;
     padding: var(--padding-l);
     background-color: var(--off-white);
-    border-radius: 8px;
+    border-radius: var(--border-radius-xl);
     margin: var(--margin-s);
     font-size: var(--font-size-s);
     font: 500 15px var(--font-family);
@@ -622,7 +622,7 @@ Tag
     border: 1px solid transparent;
     padding: 0 var(--padding-s);
     box-shadow: var(--box-shadow-m);
-    border-radius: 8px;
+    border-radius: var(--border-radius-xl);
     margin: var(--margin-s);
     font-size: var(--font-size-m);
 }

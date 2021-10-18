@@ -46,6 +46,7 @@
     --border-radius-xl: 8px;
     --border-radius-xxl: 10px;
     --border-radius-xxxl: 12px;
+    --dropdown-min-width: 160px;
     --inset-s: inset 0px 0px 1px 1px rgb(17, 17, 17, .1);
     --inset-m: inset 0px 0px 2px 2px rgb(17, 17, 17, .2);
     --inset-l: inset 0px 0px 3px 3px rgb(17, 17, 17, .2);
@@ -348,6 +349,18 @@ Border
 
 .bdr-b_:hover {
     border-bottom: var(--border-m) !important;
+}
+
+
+/* Cursor */
+
+.csr-pointer {
+    cursor: pointer;
+}
+
+.csr,
+.csr-default {
+    cursor: default;
 }
 
 
@@ -917,7 +930,7 @@ Dropdown
     display: none;
     position: absolute;
     background-color: var(--white);
-    min-width: 160px;
+    min-width: var(--dropdown-min-width);
     width: auto;
     box-shadow: var(--box-shadow-m);
     font-size: var(--font-size-m);

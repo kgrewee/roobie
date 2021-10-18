@@ -56,6 +56,7 @@ Class names are named according to their function.  Here's some common abbreviat
 - cnt - Content
 - drp - Dropdown
 - fnt - Font
+- csr - Cursor
 
 ## Sizing
 

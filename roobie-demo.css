@@ -76,7 +76,7 @@ h2 {
 
 h3 {
     color: var(--green);
-    margin: var(--margin-l) 0;
+    margin: var(--margin-m) 0;
 }
 
 h4 {
@@ -95,7 +95,7 @@ p {
 b {
     border-radius: var(--border-radius-xl);
     background-color: var(--off-white);
-    padding: var(--padding-m);
+    padding: var(--padding-s);
     color: var(--soft-blue);
     margin: var(--margin-s);
 }

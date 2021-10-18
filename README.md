@@ -78,7 +78,7 @@ More extreme sizes follow the same convention.
 A few examples to get you started. No content, just classes to demonstrate. Link `roobie.css` to your html and try them out.
 
 
-**Container with 100% width**\n
+**Container with 100% width**<br />
 &lt;div class="div">&lt;/div>
 
 **Container with padding**&nbsp;

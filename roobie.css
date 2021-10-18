@@ -193,7 +193,7 @@ Navbar
     color: var(--black);
 }
 
-.nav-subtitle {
+.nav-head {
     margin: var(--margin-m);
     margin-top: var(--margin-xl);
     font-size: 1em;

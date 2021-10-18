@@ -594,7 +594,7 @@ Button
 .btn {
     width: auto;
     height: auto;
-    padding: var(--padding-m);
+    padding: var(--padding-s);
     text-decoration: none;
     border-radius: var(--border-radius-l);
     margin: var(--margin-s);

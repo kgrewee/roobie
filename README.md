@@ -78,17 +78,24 @@ More extreme sizes follow the same convention.
 A few examples to get you started. No content, just classes to demonstrate. Link `roobie.css` to your html and try them out.
 
 
-&lt;div class="div">&lt;/div>**Container with 100% width**
+**Container with 100% width**&nbsp;
+&lt;div class="div">&lt;/div>
 
-&lt;div class="pad">&lt;/div>**Container with padding**
+**Container with padding**&nbsp;
+&lt;div class="pad">&lt;/div>
 
-&lt;div class="flx-row">&lt;/div>**Container with flex row**
+**Container with flex row**&nbsp;
+&lt;div class="flx-row">&lt;/div>
 
-&lt;a class="btn">&lt;/a>**Link styled as a Button**
+**Link styled as a Button**&nbsp;
+&lt;a class="btn">&lt;/a>
 
-&lt;input class="inp">&lt;/input>**Styled input box**
+**Styled input box**&nbsp;
+&lt;input class="inp">&lt;/input>
 
-&lt;span class="tag">&lt;/span>**Small block of content**
+**Small block of content**&nbsp;
+&lt;span class="tag">&lt;/span>
 
-&lt;ul class="ul">&lt;/ul>**Styled list**
+**Styled list**&nbsp;
+&lt;ul class="ul">&lt;/ul>
 

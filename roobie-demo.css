@@ -80,6 +80,11 @@ h3 {
     margin: var(--margin-l) 0;
 }
 
+h4 {
+    color: var(--roobie-black);
+    margin: var(--margin-s) 0;
+}
+
 p {
     margin: var(--margin-s) 0;
 }

@@ -30,6 +30,11 @@
     --div-l: 60%;
     --div-xl: 80%;
     --div-xxl: 90%;
+    --ht-s: 20%;
+    --ht-m: 40%;
+    --ht-l: 60%;
+    --ht-xl: 80%;
+    --ht-xxl: 90%;
     --border-radius-s: 2px;
     --border-radius-m: 4px;
     --border-radius-l: 6px;
@@ -447,24 +452,40 @@ Inset
 Height 
 */
 
-.ht-25 {
-    height: 25%;
+.ht-s {
+    width: var(--ht-s);
 }
 
 .ht-33 {
-    height: 33%;
+    width: 33%;
+}
+
+.ht-m {
+    width: var(--ht-m);
 }
 
 .ht-50 {
-    height: 50%;
+    width: 50%;
 }
 
-.ht-75 {
-    height: 75%;
+.ht-l {
+    width: var(--ht-l);
 }
 
-.ht-100 {
-    height: 100%;
+.ht-xl {
+    width: var(--ht-xl);
+}
+
+.ht-xxl {
+    width: var(--ht-xxl);
+}
+
+.ht-auto {
+    height: auto;
+}
+
+.ht {
+    width: 100%;
 }
 
 

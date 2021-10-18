@@ -45,7 +45,7 @@ Class names are named according to their function.  Here's some common abbreviat
 - bg - Background
 - inp - Input
 - br - Border Radius
-- brd - Border
+- bdr - Border
 - in - Inset
 - ord - Order
 - ul - Unordered list

@@ -155,7 +155,7 @@ Colors
     background-color: var(--roobie-green);
 }
 
-.brd-green {
+.bdr-green {
     border-color: var(--roobie-green) !important;
 }
 
@@ -249,57 +249,57 @@ Navbar
 Border
 */
 
-.brd-none {
+.bdr-none {
     border: none !important;
 }
 
-.brd-s,
-.brd-s-h {
+.bdr-s,
+.bdr-s-h {
     border: var(--roobie-border-s) !important;
 }
 
-.brd-m,
-.brd,
-.brd-m-h,
-.brd-h {
+.bdr-m,
+.bdr,
+.bdr-m-h,
+.bdr-h {
     border: var(--roobie-border-m) !important;
 }
 
-.brd-l,
-.brd-l-h {
+.bdr-l,
+.bdr-l-h {
     border: var(--roobie-border-l) !important;
 }
 
-.brd-xl,
-.brd-xl-h {
+.bdr-xl,
+.bdr-xl-h {
     border: var(--roobie-border-xl) !important;
 }
 
-.brd-s-h:hover,
-.brd-m-h:hover,
-.brd-l-h:hover,
-.brd-xl-h:hover,
-.brd-h:hover {
+.bdr-s-h:hover,
+.bdr-m-h:hover,
+.bdr-l-h:hover,
+.bdr-xl-h:hover,
+.bdr-h:hover {
     border: var(--roobie-border-l) !important;
 }
 
-.brd-s-h:active,
-.brd-m-h:active,
-.brd-l-h:active,
-.brd-xl-h:active,
-.brd-h:active {
+.bdr-s-h:active,
+.bdr-m-h:active,
+.bdr-l-h:active,
+.bdr-xl-h:active,
+.bdr-h:active {
     border: var(--roobie-border-l) !important;
 }
 
-.brd-s-h:focus,
-.brd-m-h:focus,
-.brd-l-h:focus,
-.brd-xl-h:focus,
-.brd-h:focus {
+.bdr-s-h:focus,
+.bdr-m-h:focus,
+.bdr-l-h:focus,
+.bdr-xl-h:focus,
+.bdr-h:focus {
     border: var(--roobie-border-xl) !important;
 }
 
-.brd-b-h:hover {
+.bdr-b-h:hover {
     border-bottom: var(--roobie-border-m) !important;
 }
 
@@ -868,9 +868,9 @@ List
 */
 
 .ul,
-.ul-brd,
+.ul-bdr,
 .ul-cnt,
-.ul-cnt-brd {
+.ul-cnt-bdr {
     list-style-type: none;
     width: auto;
     padding-inline-start: 0;
@@ -879,7 +879,7 @@ List
 }
 
 .ul li,
-.ul-brd li {
+.ul-bdr li {
     color: var(--roobie-grey);
     text-decoration: none;
     height: auto;
@@ -891,7 +891,7 @@ List
 }
 
 .ul-cnt li,
-.ul-cnt-brd li {
+.ul-cnt-bdr li {
     color: var(--roobie-grey);
     text-decoration: none;
     height: auto;
@@ -905,19 +905,19 @@ List
 }
 
 .ul-cnt li a,
-.ul-cnt-brd li a {
+.ul-cnt-bdr li a {
     margin: var(--roobie-margin-m) 0;
 }
 
 .ul li span,
-.ul-brd li span {
+.ul-bdr li span {
     font-size: .7em;
     color: var(--roobie-grey);
     line-height: 1em;
 }
 
-.ul-brd li+li,
-.ul-cnt-brd li+li {
+.ul-bdr li+li,
+.ul-cnt-bdr li+li {
     border-top: var(--roobie-border-m);
 }
 
@@ -925,9 +925,9 @@ List
     color: var(--roobie-black);
 }
 
-.ul-brd li:hover,
+.ul-bdr li:hover,
 .ul-cnt li:hover,
-.ul-cnt-brd li:hover {
+.ul-cnt-bdr li:hover {
     color: var(--roobie-black);
 }
 

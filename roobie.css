@@ -202,19 +202,10 @@ Navbar
     height: auto;
 }
 
-.nav-bottom {
-    position: absolute;
-    z-index: 100;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: auto;
-}
-
 .nav-row {
     z-index: 100;
-    height: auto;
     width: 100%;
+    height: auto;
 }
 
 .nav-col {
@@ -225,14 +216,14 @@ Navbar
 
 .nav-title {
     margin: var(--margin-xl);
-    font-size: 1.25em;
+    font-size: var(--font-size-xl);
     color: var(--black);
 }
 
 .nav-head {
     margin: var(--margin-m);
     margin-top: var(--margin-xl);
-    font-size: 1em;
+    font-size: var(--font-size-l);
     color: var(--black);
 }
 
@@ -471,31 +462,31 @@ Height
 */
 
 .ht-s {
-    width: var(--height-s);
+    height: var(--height-s);
 }
 
 .ht-33 {
-    width: 33%;
+    height: 33%;
 }
 
 .ht-m {
-    width: var(--height-m);
+    height: var(--height-m);
 }
 
 .ht-50 {
-    width: 50%;
+    height: 50%;
 }
 
 .ht-l {
-    width: var(--height-l);
+    height: var(--height-l);
 }
 
 .ht-xl {
-    width: var(--height-xl);
+    height: var(--height-xl);
 }
 
 .ht-xxl {
-    width: var(--height-xxl);
+    height: var(--height-xxl);
 }
 
 .ht-auto {
@@ -503,7 +494,7 @@ Height
 }
 
 .ht {
-    width: 100%;
+    height: 100%;
 }
 
 

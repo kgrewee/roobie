@@ -5,7 +5,7 @@ A collection of styles to help you build web applications.  Link `roobie.css` to
 ***This whole repo is a demo.  Pull using git and open ```index.html``` in a browser.***
 
 - ```roobie.css``` - All of the roobie styles.  Our bread and butter.
-- ```components/``` - Pre-built components using roobie css & demo-specific styles.  Use these as a starting point.
+- ```components/``` - Pre-built components using roobie css & demo-specific styles.  Use these as building blocks.
 
 ## Components
 
@@ -16,6 +16,7 @@ A collection of styles to help you build web applications.  Link `roobie.css` to
 - Container
 - Dropdown
 - List
+- Tag
 
 ## Basics
 
@@ -58,7 +59,7 @@ Class names are named according to their function.  Here's some common abbreviat
 
 ## Sizing
 
-When a class needs to have different sizes, we use this convention.  Values for these sizes are configurable at the top of `roobie.css`. 
+When a class needs to have different sizes, we use this convention.  Values for sizes are configurable at the top of `roobie.css`. 
 
 - xs - Extra small
 - s - Small

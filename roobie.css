@@ -152,6 +152,10 @@ Colors
     .bg-green {
         background-color: var(--roobie-green);
     }
+    
+    .brd-green {
+        border-color: var(--roobie-green) !important;
+    }
     /*
 Nav bar
 */
@@ -568,6 +572,7 @@ Tag
     
     .tag,
     .tag-h {
+        border: 1px solid transparent;
         padding: 0 var(--roobie-padding-s);
         box-shadow: var(--roobie-box-shadow-m);
         border-radius: 8px;
@@ -576,9 +581,8 @@ Tag
     }
     
     .tag-h:hover {
-        background-color: var(--roobie-soft-blue);
+        border: 1px solid var(--roobie-black);
         box-shadow: var(--roobie-box-shadow-l);
-        color: var(--roobie-white);
         cursor: default;
     }
     /*

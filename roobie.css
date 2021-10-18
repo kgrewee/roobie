@@ -229,8 +229,20 @@ Navbar
     position: relative;
 }
 
+.abs {
+    position: absolute;
+}
+
+.static {
+    position: static;
+}
+
 
 /* Display */
+
+.flx {
+    display: flex;
+}
 
 .inl {
     display: inline;

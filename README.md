@@ -49,6 +49,7 @@ Class names are named according to their function.  Here's some common abbreviat
 - ord - Order
 - ul - Unordered list
 - ol - Ordered list
+- abs - Absolute
 - rel - Relative
 - blk - Block
 - inl - Inline

@@ -36,7 +36,13 @@
                     <p>Simple, responsive grids with flexbox.</p>
                 </div>
             </div>
-            <div class="div-xl flx-col aln-start jst-start txt-left">
+            <div class="div-xl flx-col aln-start jst-start txt-left mrgv">
+                <div class="div flx-row">
+                    <b>flx-row</b>
+                    <b>jst-center</b>
+                    <b>jst-end</b>
+                    <b>aln-cnt-start</b>
+                </div>
                 <h3>Horizontal</h3>
                 <div class="div flx-col">
                     <p><b>flx-row</b> Adds flex row properties, defaults to nowrap.</p>
@@ -49,8 +55,6 @@
                 </div>
                 <h3>Vertical</h3>
                 <div class="div flx-col">
-                    <p><b>flx-col</b>Adds flex column properties, defaults to nowrap. </p>
-                    <p><b>  aln-center</b> Align content in the center of the column.</p>
                     <div class="flx-col grid mrgv br aln-center">
                         <div class="box br-xl flx-col aln-center jst-center">1</div>
                         <div class="box br-xl flx-row aln-center jst-center">2</div>
@@ -80,7 +84,6 @@
                 <h3>Wrap</h3>
                 <p>Nowrap is useful, but in this case, we want to wrap our items to keep them the same size. Simply add the <b>wrp</b> class to add wrap to the Grid. Use flex classes to align grid content.</p>
                 <div class="div br">
-                    <p><b>jst-end</b>Justify content at the end of the row.</p>
                     <div class="flx-row grid wrp mrgv br jst-end">
                         <div class="box br-xl flx-row aln-center jst-center">1</div>
                         <div class="box br-xl flx-row aln-center jst-center">2</div>
@@ -88,7 +91,6 @@
                         <div class="box br-xl flx-row aln-center jst-center">4</div>
                         <div class="box br-xl flx-row aln-center jst-center">5</div>
                     </div>
-                    <p><b>aln-cnt-start</b>Align content at the start of the next line when wrapping.</p>
                     <div class="flx-col grid mrgv wrp aln-cnt-start br">
                         <div class="box br-xl flx-col aln-center jst-center">1</div>
                         <div class="box br-xl flx-row aln-center jst-center">2</div>
@@ -98,7 +100,6 @@
                     </div>
                 </div>
             </div>
-            <div class="row-divider"></div>
         </div>
     </div>
 </body>

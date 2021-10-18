@@ -95,9 +95,9 @@ p {
 b {
     border-radius: var(--border-radius-xl);
     background-color: var(--off-white);
-    padding: 0 3px;
+    padding: var(--padding-m);
     color: var(--soft-blue);
-    margin: 0 var(--margin-s);
+    margin: var(--margin-s);
 }
 
 

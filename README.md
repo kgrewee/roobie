@@ -41,7 +41,6 @@ Class names are named according to their function.  Here's some common abbreviat
 - wrp - Wrap
 - aln - Align
 - jst - Justify
-- spc - Space
 - bg - Background
 - inp - Input
 - br - Border Radius

@@ -30,11 +30,16 @@
     --div-l: 60%;
     --div-xl: 80%;
     --div-xxl: 90%;
-    --ht-s: 20%;
-    --ht-m: 40%;
-    --ht-l: 60%;
-    --ht-xl: 80%;
-    --ht-xxl: 90%;
+    --height-s: 20%;
+    --height-m: 40%;
+    --height-l: 60%;
+    --height-xl: 80%;
+    --height-xxl: 90%;
+    --opacity-s: 20%;
+    --opacity-m: 40%;
+    --opacity-l: 60%;
+    --opacity-xl: 80%;
+    --opacity-xxl: 90%;
     --border-radius-s: 2px;
     --border-radius-m: 4px;
     --border-radius-l: 6px;
@@ -453,7 +458,7 @@ Height
 */
 
 .ht-s {
-    width: var(--ht-s);
+    width: var(--height-s);
 }
 
 .ht-33 {
@@ -461,7 +466,7 @@ Height
 }
 
 .ht-m {
-    width: var(--ht-m);
+    width: var(--height-m);
 }
 
 .ht-50 {
@@ -469,15 +474,15 @@ Height
 }
 
 .ht-l {
-    width: var(--ht-l);
+    width: var(--height-l);
 }
 
 .ht-xl {
-    width: var(--ht-xl);
+    width: var(--height-xl);
 }
 
 .ht-xxl {
-    width: var(--ht-xxl);
+    width: var(--height-xxl);
 }
 
 .ht-auto {
@@ -493,19 +498,35 @@ Height
 Opacity
 */
 
-.op-25 {
-    opacity: 25%;
+.op-s {
+    opacity: var(--opacity-s);
+}
+
+.op-33 {
+    opacity: 33%;
+}
+
+.op-m {
+    opacity: var(--opacity-m);
 }
 
 .op-50 {
     opacity: 50%;
 }
 
-.op-75 {
-    opacity: 75%
+.op-l {
+    opacity: var(--opacity-l);
 }
 
-.op-100 {
+.op-xl {
+    opacity: var(--opacity-xl);
+}
+
+.op-xxl {
+    opacity: var(--opacity-xxl);
+}
+
+.op {
     opacity: 100%;
 }
 

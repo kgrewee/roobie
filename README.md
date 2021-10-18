@@ -1,11 +1,11 @@
 # Roobie
 
-A collection of styles to help you build web applications.  Link `roobie.css` to your html to get started.
+CSS made easy. A collection of styles to help you build web applications.  Link `roobie.css` to your html to get started.
 
-***This whole repo is a demo.  Pull using git and open ```index.html``` in a browser.***
+***This whole repo is a demo.  Pull using git and open `index.html` in a browser.***
 
-- ```roobie.css``` - All of the roobie styles.  Our bread and butter.
-- ```components/``` - Pre-built components using roobie css & demo-specific styles.  Use these as building blocks.
+- `roobie.css` - All of the roobie styles.  Take a look, its well commented.
+- `components/` - Pre-built components using Roobie CSS & demo-specific styles.  Use these as building blocks.
 
 ## Components
 
@@ -20,13 +20,17 @@ A collection of styles to help you build web applications.  Link `roobie.css` to
 
 ## Basics
 
-Roobie is made up of css classes and themes.  You can take the themes found in ```roobie.css``` and change the variables to your liking.  The css classes depend directly on the theme variables.  Change those, you change the whole theme.  You can build your whole web-app with Roobie and not write any CSS except for custom colors.
+Roobie is made up of CSS Classes & Themes.  Change variables in `roobie.css` to your liking.  The CSS Classes depend directly on the theme variables.  Change those, you change the whole theme.  You can build your whole web-app with Roobie and not write any CSS except for custom colors.  This repo is a website built entirely with Roobie CSS.
 
-The power of Roobie is in the css classes.  You can use these to generate many different styles, using the same css.  Roobie centralizes styles to reduce spammed CSS and to make your UI easier to maintain.  Focus on content and colors, not basic styles.  We will handle that for you.  Checkout the ```components/``` folder for pre-built components using our CSS classes.
+The power of Roobie is in the CSS Classes.  These can generate many different styles, using the same CSS.  Roobie centralizes styles to reduce spammed CSS and to make your UI easier to maintain.  Use Roobie for your core styles, and focus on content and colors instead. Checkout the `components/` folder for pre-built components using our CSS classes.
 
-## Naming
+## Classes
 
-Class names are named according to their function.  Here's some common abbreviations found in class names.
+Roobie is all about CSS Classes.  Class names will resemble their function.
+
+### Abbreviations
+
+Common abbreviations found in class names. They don't exceed 3 characters to keep class names short and sweet. There's really not that many, and they are easy to figure out.  Once you can remember the abbreviations, it'll make it easier to develop efficiently with Roobie.
 
 - div - Container
 - ht - Height
@@ -58,14 +62,40 @@ Class names are named according to their function.  Here's some common abbreviat
 - fnt - Font
 - csr - Cursor
 
-## Sizing
+### Sizes
 
-When a class needs to have different sizes, we use this convention.  Values for sizes are configurable at the top of `roobie.css`. 
+Classes need to have different sizes, they are also abbreviated.  We use a basic and very relatable convention, much like the one you'd see at a store.  Small, Medium, Large & Extra Large are offered for most classes.  Extreme value are offered for some classes, such as txt, like Extra Extra Small & Extra Extra Large.  Values for sizes are configurable at the top of `roobie.css`. 
 
-- xs - Extra small
+...
 - s - Small
 - m - Medium
 - l - Large
 - xl - Extra large
+...
 
-Some classes, such as txt, offer more extreme sizes.
+More extreme sizes follow the same convention.
+
+### Examples
+
+A few examples to get you started. No content, just classes to demonstrate. Link `roobie.css` to your html and try them out.
+
+Container with 100% width
+<div class="div"></div>
+
+Container with padding
+<div class="pad"></div>
+
+Container with flex row
+<div class="flx-row"></div>
+
+Link styled as a Button
+<a class="btn"></a>
+
+Styled input box
+<input class="inp"></input>
+
+Small block of content
+<span class="tag"></span>
+
+Styled list
+<ul class="ul"></ul>

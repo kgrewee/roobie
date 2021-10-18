@@ -81,21 +81,21 @@ A few examples to get you started. No content, just classes to demonstrate. Link
 **Container with 100% width**<br />
 &lt;div class="div">&lt;/div>
 
-**Container with padding**&nbsp;
+**Container with padding**<br />
 &lt;div class="pad">&lt;/div>
 
-**Container with flex row**&nbsp;
+**Container with flex row**<br />
 &lt;div class="flx-row">&lt;/div>
 
-**Link styled as a Button**&nbsp;
+**Link styled as a Button**<br />
 &lt;a class="btn">&lt;/a>
 
-**Styled input box**&nbsp;
+**Styled input box**<br />
 &lt;input class="inp">&lt;/input>
 
-**Small block of content**&nbsp;
+**Small block of content**<br />
 &lt;span class="tag">&lt;/span>
 
-**Styled list**&nbsp;
+**Styled list**<br />
 &lt;ul class="ul">&lt;/ul>
 

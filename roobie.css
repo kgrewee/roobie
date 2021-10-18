@@ -25,49 +25,37 @@
     --font-size-xl: 1.25em;
     --font-size-xxl: 1.5em;
     --font-size-xxxl: 2em;
-    --roobie-div-s: 20%;
-    --roobie-div-m: 40%;
-    --roobie-div-l: 60%;
-    --roobie-div-xl: 80%;
-    --roobie-div-xxl: 90%;
-    --roobie-white: rgb(240, 240, 240);
-    --roobie-off-white: rgb(228, 228, 228);
-    --roobie-smooth-white: rgb(241, 241, 241);
-    --roobie-black: rgb(19, 19, 19);
-    --roobie-red: rgb(245, 9, 9);
-    --roobie-orange: rgb(243, 162, 11);
-    --roobie-purple: rgb(122, 10, 122);
-    --roobie-green: rgb(24, 196, 96);
-    --roobie-yellow: rgb(230, 230, 16);
-    --roobie-blue: rgb(13, 13, 226);
-    --roobie-soft-blue: rgb(67, 67, 221, .9);
-    --roobie-grey: rgb(88, 87, 87);
-    --roobie-violet: rgb(226, 108, 226);
-    --roobie-pink: rgb(219, 163, 173);
-    --roobie-inset-s: inset 0px 0px 1px 1px rgb(17, 17, 17, .1);
-    --roobie-inset-m: inset 0px 0px 2px 2px rgb(17, 17, 17, .2);
-    --roobie-inset-l: inset 0px 0px 3px 3px rgb(17, 17, 17, .2);
-    --roobie-inset-xl: inset 0px 0px 3px 3px rgb(17, 17, 17, .3);
-    --roobie-border-s: .5px solid var(--roobie-black);
-    --roobie-border-m: 1px solid var(--roobie-black);
-    --roobie-border-l: 2px solid var(--roobie-black);
-    --roobie-border-xl: 3px solid var(--roobie-black);
-    --roobie-box-shadow-s: 0 0 1px 1px rgb(17, 17, 17, .1);
-    --roobie-box-shadow-m: 0 0 2px 2px rgb(17, 17, 17, .2);
-    --roobie-box-shadow-l: 0 0 3px 3px rgb(17, 17, 17, .2);
-    --roobie-box-shadow-xl: 0 0 3px 3px rgb(17, 17, 17, .3);
-    --roobie-padding-s: var(--padding-s);
-    --roobie-padding-m: var(--padding-m);
-    --roobie-padding-l: var(--padding-l);
-    --roobie-padding-xl: var(--padding-xl);
-    --roobie-margin-s: var(--padding-s);
-    --roobie-margin-m: var(--padding-m);
-    --roobie-margin-l: var(--padding-l);
-    --roobie-margin-xl: var(--padding-xl);
-    --roobie-font-size-s: var(--font-size-s);
-    --roobie-font-size-m: var(--font-size-m);
-    --roobie-font-size-l: var(--font-size-l);
-    --roobie-font-size-xl: var(--font-size-xl);
+    --div-s: 20%;
+    --div-m: 40%;
+    --div-l: 60%;
+    --div-xl: 80%;
+    --div-xxl: 90%;
+    --inset-s: inset 0px 0px 1px 1px rgb(17, 17, 17, .1);
+    --inset-m: inset 0px 0px 2px 2px rgb(17, 17, 17, .2);
+    --inset-l: inset 0px 0px 3px 3px rgb(17, 17, 17, .2);
+    --inset-xl: inset 0px 0px 3px 3px rgb(17, 17, 17, .3);
+    --border-s: .5px solid var(--black);
+    --border-m: 1px solid var(--black);
+    --border-l: 2px solid var(--black);
+    --border-xl: 3px solid var(--black);
+    --box-shadow-s: 0 0 1px 1px rgb(17, 17, 17, .1);
+    --box-shadow-m: 0 0 2px 2px rgb(17, 17, 17, .2);
+    --box-shadow-l: 0 0 3px 3px rgb(17, 17, 17, .2);
+    --box-shadow-xl: 0 0 3px 3px rgb(17, 17, 17, .3);
+    --white: rgb(240, 240, 240);
+    --off-white: rgb(228, 228, 228);
+    --smooth-white: rgb(241, 241, 241);
+    --black: rgb(19, 19, 19);
+    --red: rgb(245, 9, 9);
+    --orange: rgb(243, 162, 11);
+    --purple: rgb(122, 10, 122);
+    --green: rgb(24, 196, 96);
+    --yellow: rgb(230, 230, 16);
+    --blue: rgb(13, 13, 226);
+    --soft-blue: rgb(67, 67, 221, .9);
+    --grey: rgb(88, 87, 87);
+    --violet: rgb(226, 108, 226);
+    --pink: rgb(219, 163, 173);
 }
 
 
@@ -76,87 +64,87 @@ Colors
 */
 
 .black {
-    color: var(--roobie-black);
+    color: var(--black);
 }
 
 .bg-black {
-    background-color: var(--roobie-black);
+    background-color: var(--black);
 }
 
 .white {
-    color: var(--roobie-white);
+    color: var(--white);
 }
 
 .bg-white {
-    background-color: var(--roobie-white);
+    background-color: var(--white);
 }
 
 .grey {
-    color: var(--roobie-grey);
+    color: var(--grey);
 }
 
 .bg-grey {
-    background-color: var(--roobie-grey);
+    background-color: var(--grey);
 }
 
 .off-white {
-    color: var(--roobie-off-white);
+    color: var(--off-white);
 }
 
 .bg-off-white {
-    background-color: var(--roobie-off-white);
+    background-color: var(--off-white);
 }
 
 .red {
-    color: var(--roobie-red);
+    color: var(--red);
 }
 
 .bg-red {
-    background-color: var(--roobie-red);
+    background-color: var(--red);
 }
 
 .blue {
-    color: var(--roobie-blue);
+    color: var(--blue);
 }
 
 .bg-blue {
-    background-color: var(--roobie-blue);
+    background-color: var(--blue);
 }
 
 .soft-blue {
-    color: var(--roobie-soft-blue);
+    color: var(--soft-blue);
 }
 
 .bg-soft-blue {
-    background-color: var(--roobie-soft-blue);
+    background-color: var(--soft-blue);
 }
 
 .yellow {
-    color: var(--roobie-yellow);
+    color: var(--yellow);
 }
 
 .bg-yellow {
-    background-color: var(--roobie-yellow);
+    background-color: var(--yellow);
 }
 
 .orange {
-    color: var(--roobie-orange);
+    color: var(--orange);
 }
 
 .bg-orange {
-    background-color: var(--roobie-orange);
+    background-color: var(--orange);
 }
 
 .green {
-    color: var(--roobie-green);
+    color: var(--green);
 }
 
 .bg-green {
-    background-color: var(--roobie-green);
+    background-color: var(--green);
 }
 
 .bdr-green {
-    border-color: var(--roobie-green) !important;
+    border-color: var(--green) !important;
 }
 
 
@@ -196,18 +184,18 @@ Navbar
 .nav-title {
     margin: var(--margin-xl);
     font-size: 1.25em;
-    color: var(--roobie-black);
+    color: var(--black);
 }
 
 .nav-subtitle {
     margin: var(--margin-m);
     margin-top: var(--margin-xl);
     font-size: 1em;
-    color: var(--roobie-black);
+    color: var(--black);
 }
 
 .nav-item {
-    padding: var(--roobie-padding-s);
+    padding: var(--padding-s);
     margin: var(--margin-m);
     width: auto;
     opacity: 75%;
@@ -255,24 +243,24 @@ Border
 
 .bdr-s,
 .bdr-s-h {
-    border: var(--roobie-border-s) !important;
+    border: var(--border-s) !important;
 }
 
 .bdr-m,
 .bdr,
 .bdr-m-h,
 .bdr-h {
-    border: var(--roobie-border-m) !important;
+    border: var(--border-m) !important;
 }
 
 .bdr-l,
 .bdr-l-h {
-    border: var(--roobie-border-l) !important;
+    border: var(--border-l) !important;
 }
 
 .bdr-xl,
 .bdr-xl-h {
-    border: var(--roobie-border-xl) !important;
+    border: var(--border-xl) !important;
 }
 
 .bdr-s-h:hover,
@@ -280,7 +268,7 @@ Border
 .bdr-l-h:hover,
 .bdr-xl-h:hover,
 .bdr-h:hover {
-    border: var(--roobie-border-l) !important;
+    border: var(--border-l) !important;
 }
 
 .bdr-s-h:active,
@@ -288,7 +276,7 @@ Border
 .bdr-l-h:active,
 .bdr-xl-h:active,
 .bdr-h:active {
-    border: var(--roobie-border-l) !important;
+    border: var(--border-l) !important;
 }
 
 .bdr-s-h:focus,
@@ -296,11 +284,11 @@ Border
 .bdr-l-h:focus,
 .bdr-xl-h:focus,
 .bdr-h:focus {
-    border: var(--roobie-border-xl) !important;
+    border: var(--border-xl) !important;
 }
 
 .bdr-b-h:hover {
-    border-bottom: var(--roobie-border-m) !important;
+    border-bottom: var(--border-m) !important;
 }
 
 
@@ -310,24 +298,24 @@ Box shadow
 
 .box-s,
 .box-s-h {
-    box-shadow: var(--roobie-box-shadow-s);
+    box-shadow: var(--box-shadow-s);
 }
 
 .box-m,
 .box,
 .box-m-h,
 .box-h {
-    box-shadow: var(--roobie-box-shadow-m);
+    box-shadow: var(--box-shadow-m);
 }
 
 .box-l,
 .box-l-h {
-    box-shadow: var(--roobie-box-shadow-l);
+    box-shadow: var(--box-shadow-l);
 }
 
 .box-xl,
 .box-xl-h {
-    box-shadow: var(--roobie-box-shadow-xl);
+    box-shadow: var(--box-shadow-xl);
 }
 
 .box-s-h:hover,
@@ -335,7 +323,7 @@ Box shadow
 .box-l-h:hover,
 .box-xl-h:hover,
 .box-h:hover {
-    box-shadow: var(--roobie-box-shadow-l);
+    box-shadow: var(--box-shadow-l);
 }
 
 .box-s-h:active,
@@ -343,7 +331,7 @@ Box shadow
 .box-l-h:active,
 .box-xl-h:active,
 .box-h:active {
-    box-shadow: var(--roobie-box-shadow-l);
+    box-shadow: var(--box-shadow-l);
 }
 
 .box-s-h:focus,
@@ -351,7 +339,7 @@ Box shadow
 .box-l-h:focus,
 .box-xl-h:focus,
 .box-h:focus {
-    box-shadow: var(--roobie-box-shadow-xl);
+    box-shadow: var(--box-shadow-xl);
 }
 
 
@@ -361,24 +349,24 @@ Inset
 
 .in-s,
 .in-s-h {
-    box-shadow: var(--roobie-inset-s);
+    box-shadow: var(--inset-s);
 }
 
 .in-m,
 .in,
 .in-m-h,
 .in-h {
-    box-shadow: var(--roobie-inset-m);
+    box-shadow: var(--inset-m);
 }
 
 .in-l,
 .in-l-h {
-    box-shadow: var(--roobie-inset-l);
+    box-shadow: var(--inset-l);
 }
 
 .in-xl,
 .in-xl-h {
-    box-shadow: var(--roobie-inset-xl);
+    box-shadow: var(--inset-xl);
 }
 
 .in-s-h:hover,
@@ -386,7 +374,7 @@ Inset
 .in-l-h:hover,
 .in-xl-h:hover,
 .in-h:hover {
-    box-shadow: var(--roobie-inset-l);
+    box-shadow: var(--inset-l);
 }
 
 .in-s-h:active,
@@ -394,7 +382,7 @@ Inset
 .in-l-h:active,
 .in-xl-h:active,
 .in-h:active {
-    box-shadow: var(--roobie-inset-l);
+    box-shadow: var(--inset-l);
 }
 
 .in-s-h:focus,
@@ -402,7 +390,7 @@ Inset
 .in-l-h:focus,
 .in-xl-h:focus,
 .in-h:focus {
-    box-shadow: var(--roobie-inset-xl);
+    box-shadow: var(--inset-xl);
 }
 
 
@@ -502,12 +490,12 @@ Button
 .btn {
     width: auto;
     height: auto;
-    padding: var(--roobie-padding-m);
+    padding: var(--padding-m);
     text-decoration: none;
     border-radius: 6px;
     margin: 5px;
     cursor: pointer;
-    border: var(--roobie-border-s);
+    border: var(--border-s);
 }
 
 
@@ -524,13 +512,13 @@ select:focus {
 
 .inp {
     width: auto;
-    padding: var(--roobie-padding-l);
-    background-color: var(--roobie-off-white);
+    padding: var(--padding-l);
+    background-color: var(--off-white);
     border-radius: 8px;
     margin: 5px;
     font-size: .7em;
     font: 500 15px var(--font-family);
-    border: var(--roobie-border-s);
+    border: var(--border-s);
 }
 
 
@@ -541,16 +529,16 @@ Tag
 .tag,
 .tag-h {
     border: 1px solid transparent;
-    padding: 0 var(--roobie-padding-s);
-    box-shadow: var(--roobie-box-shadow-m);
+    padding: 0 var(--padding-s);
+    box-shadow: var(--box-shadow-m);
     border-radius: 8px;
-    margin: var(--roobie-margin-s);
+    margin: var(--margin-s);
     font-size: var(--font-size-m);
 }
 
 .tag-h:hover {
-    border: 1px solid var(--roobie-black);
-    box-shadow: var(--roobie-box-shadow-l);
+    border: 1px solid var(--black);
+    box-shadow: var(--box-shadow-l);
     cursor: default;
 }
 
@@ -639,100 +627,100 @@ Padding
 */
 
 .pad-s {
-    padding: var(--roobie-padding-s);
+    padding: var(--padding-s);
 }
 
 .pad-m,
 .pad {
-    padding: var(--roobie-padding-m);
+    padding: var(--padding-m);
 }
 
 .pad-l {
-    padding: var(--roobie-padding-l);
+    padding: var(--padding-l);
 }
 
 .pad-xl {
-    padding: var(--roobie-padding-xl);
+    padding: var(--padding-xl);
 }
 
 
 /* Padding Left */
 
 .padl-s {
-    padding-left: var(--roobie-padding-s);
+    padding-left: var(--padding-s);
 }
 
 .padl-m,
 .padl {
-    padding-left: var(--roobie-padding-m);
+    padding-left: var(--padding-m);
 }
 
 .padl-l {
-    padding-left: var(--roobie-padding-l);
+    padding-left: var(--padding-l);
 }
 
 .padl-xl {
-    padding-left: var(--roobie-padding-xl);
+    padding-left: var(--padding-xl);
 }
 
 
 /* Padding Right */
 
 .padr-s {
-    padding-right: var(--roobie-padding-s);
+    padding-right: var(--padding-s);
 }
 
 .padr-m,
 .padr {
-    padding-right: var(--roobie-padding-m);
+    padding-right: var(--padding-m);
 }
 
 .padr-l {
-    padding-right: var(--roobie-padding-l);
+    padding-right: var(--padding-l);
 }
 
 .padr-xl {
-    padding-right: var(--roobie-padding-xl);
+    padding-right: var(--padding-xl);
 }
 
 
 /* Padding Vertical*/
 
 .padv-s {
-    padding: var(--roobie-padding-s) 0;
+    padding: var(--padding-s) 0;
 }
 
 .padv-m,
 .padv {
-    padding: var(--roobie-padding-m) 0;
+    padding: var(--padding-m) 0;
 }
 
 .padv-l {
-    padding: var(--roobie-padding-l) 0;
+    padding: var(--padding-l) 0;
 }
 
 .padv-xl {
-    padding: var(--roobie-padding-xl) 0;
+    padding: var(--padding-xl) 0;
 }
 
 
 /* Padding Horizontal */
 
 .padh-s {
-    padding: 0 var(--roobie-padding-s);
+    padding: 0 var(--padding-s);
 }
 
 .padh-m,
 .padh {
-    padding: 0 var(--roobie-padding-m);
+    padding: 0 var(--padding-m);
 }
 
 .padh-l {
-    padding: 0 var(--roobie-padding-l);
+    padding: 0 var(--padding-l);
 }
 
 .padh-xl {
-    padding: 0 var(--roobie-padding-xl);
+    padding: 0 var(--padding-xl);
 }
 
 
@@ -741,44 +729,44 @@ Containers
 */
 
 .div-s {
-    width: var(--roobie-div-s);
-    padding: var(--roobie-padding-s);
+    width: var(--div-s);
+    padding: var(--padding-s);
 }
 
 .div-33 {
     width: 33%;
-    padding: var(--roobie-padding-s);
+    padding: var(--padding-s);
 }
 
 .div-m {
-    width: var(--roobie-div-m);
-    padding: var(--roobie-padding-s);
+    width: var(--div-m);
+    padding: var(--padding-s);
 }
 
 .div-50 {
     width: 50%;
-    padding: var(--roobie-padding-s);
+    padding: var(--padding-s);
 }
 
 .div-l {
-    width: var(--roobie-div-l);
-    padding: var(--roobie-padding-s);
+    width: var(--div-l);
+    padding: var(--padding-s);
 }
 
 .div-xl {
-    width: var(--roobie-div-xl);
-    padding: var(--roobie-padding-s);
+    width: var(--div-xl);
+    padding: var(--padding-s);
 }
 
 .div-xxl {
-    width: var(--roobie-div-xxl);
-    padding: var(--roobie-padding-s);
+    width: var(--div-xxl);
+    padding: var(--padding-s);
 }
 
 .div-auto {
     width: auto;
     height: auto;
-    padding: var(--roobie-padding-s);
+    padding: var(--padding-s);
 }
 
 .div {
@@ -810,7 +798,7 @@ Dropdown
 */
 
 .drp {
-    font-size: var(--roobie-font-size-m);
+    font-size: var(--font-size-m);
 }
 
 .drp-c:focus .drp-cnt,
@@ -819,7 +807,7 @@ Dropdown
 }
 
 .drp-btn {
-    font-size: var(--roobie-font-size-l);
+    font-size: var(--font-size-l);
 }
 
 .drp-btn:hover {
@@ -830,35 +818,35 @@ Dropdown
     line-height: 1em;
     display: none;
     position: absolute;
-    background-color: var(--roobie-white);
+    background-color: var(--white);
     min-width: 160px;
     width: auto;
-    box-shadow: var(--roobie-box-shadow-m);
-    font-size: var(--roobie-font-size-l);
+    box-shadow: var(--box-shadow-m);
+    font-size: var(--font-size-l);
     z-index: 1;
 }
 
 .drp-title {
     margin: 0;
-    padding: var(--roobie-padding-s);
-    color: var(--roobie-black);
+    padding: var(--padding-s);
+    color: var(--black);
 }
 
 .drp-cnt p {
     margin-top: 0;
-    font-size: var(--roobie-font-size-m);
-    color: var(--roobie-grey);
+    font-size: var(--font-size-m);
+    color: var(--grey);
 }
 
 .drp-cnt a {
-    padding: var(--roobie-padding-m);
-    color: var(--roobie-black);
+    padding: var(--padding-m);
+    color: var(--black);
     display: block;
     margin: 0;
 }
 
 .drp-cnt a:hover {
-    background-color: var(--roobie-off-white);
+    background-color: var(--off-white);
     cursor: pointer;
 }
 
@@ -874,17 +862,17 @@ List
     list-style-type: none;
     width: auto;
     padding-inline-start: 0;
-    margin: var(--roobie-margin-l) 0;
+    margin: var(--margin-l) 0;
     padding: 0;
 }
 
 .ul li,
 .ul-bdr li {
-    color: var(--roobie-grey);
+    color: var(--grey);
     text-decoration: none;
     height: auto;
-    padding: var(--roobie-padding-m);
-    background-color: var(--roobie-smooth-white);
+    padding: var(--padding-m);
+    background-color: var(--smooth-white);
     display: flex;
     flex-flow: column nowrap;
     cursor: pointer;
@@ -892,11 +880,11 @@ List
 
 .ul-cnt li,
 .ul-cnt-bdr li {
-    color: var(--roobie-grey);
+    color: var(--grey);
     text-decoration: none;
     height: auto;
-    padding: var(--roobie-padding-l);
-    background-color: var(--roobie-smooth-white);
+    padding: var(--padding-l);
+    background-color: var(--smooth-white);
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -906,29 +894,29 @@ List
 
 .ul-cnt li a,
 .ul-cnt-bdr li a {
-    margin: var(--roobie-margin-m) 0;
+    margin: var(--margin-m) 0;
 }
 
 .ul li span,
 .ul-bdr li span {
     font-size: .7em;
-    color: var(--roobie-grey);
+    color: var(--grey);
     line-height: 1em;
 }
 
 .ul-bdr li+li,
 .ul-cnt-bdr li+li {
-    border-top: var(--roobie-border-m);
+    border-top: var(--border-m);
 }
 
 .ul li:hover {
-    color: var(--roobie-black);
+    color: var(--black);
 }
 
 .ul-bdr li:hover,
 .ul-cnt li:hover,
 .ul-cnt-bdr li:hover {
-    color: var(--roobie-black);
+    color: var(--black);
 }
 
 

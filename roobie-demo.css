@@ -1,16 +1,16 @@
 .roobie {
-    color: var(--roobie-green);
+    color: var(--green);
     font-weight: bolder;
     font-size: 1.5em;
-    margin: var(--roobie-margin-m) 0;
+    margin: var(--margin-m) 0;
 }
 
 .roobie span {
-    color: var(--roobie-black);
+    color: var(--black);
 }
 
 .title span {
-    color: var(--roobie-white);
+    color: var(--white);
 }
 
 .content {
@@ -39,7 +39,7 @@ Body styles
 */
 
 body {
-    background-color: var(--roobie-white);
+    background-color: var(--white);
 }
 
 html,
@@ -51,7 +51,7 @@ body {
 }
 
 xmp {
-    color: var(--roobie-soft-blue);
+    color: var(--soft-blue);
     white-space: normal;
 }
 
@@ -61,27 +61,27 @@ Headings
 */
 
 h1 {
-    color: var(--roobie-white);
+    color: var(--white);
     margin: var(--margin-m) 0;
     font-size: 2em !important;
 }
 
 h1+p {
-    color: var(--roobie-smooth-white);
+    color: var(--smooth-white);
 }
 
 h2 {
-    color: var(--roobie-grey);
+    color: var(--grey);
     margin: var(--margin-m) 0;
 }
 
 h3 {
-    color: var(--roobie-green);
+    color: var(--green);
     margin: var(--margin-l) 0;
 }
 
 h4 {
-    color: var(--roobie-black);
+    color: var(--black);
     margin: var(--margin-s) 0;
 }
 
@@ -103,24 +103,24 @@ p {
 
 b {
     border-radius: 8px;
-    background-color: var(--roobie-off-white);
+    background-color: var(--off-white);
     padding: 3px;
-    color: var(--roobie-soft-blue);
-    margin: 0 var(--roobie-margin-s);
+    color: var(--soft-blue);
+    margin: 0 var(--margin-s);
 }
 
 
 /*Navbar*/
 
 nav {
-    background-color: var(--roobie-off-white);
+    background-color: var(--off-white);
 }
 
 nav a {
-    color: var(--roobie-black);
+    color: var(--black);
 }
 
 .active {
-    border-left: 4px solid var(--roobie-soft-blue);
+    border-left: 4px solid var(--soft-blue);
     opacity: 100% !important;
 }

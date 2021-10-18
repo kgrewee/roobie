@@ -1,8 +1,8 @@
 .div-demo div {
     height: 50px;
-    background-color: var(--roobie-off-white);
+    background-color: var(--off-white);
     margin-bottom: var(--margin-l);
-    color: var(--roobie-soft-blue);
+    color: var(--soft-blue);
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -10,9 +10,9 @@
 
 .nested-div {
     height: 300px;
-    padding: var(--roobie-padding-l);
+    padding: var(--padding-l);
     margin-right: var(--margin-xl);
-    background-color: var(--roobie-off-white);
+    background-color: var(--off-white);
 }
 
 .nested-div div {
@@ -21,6 +21,6 @@
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    background-color: var(--roobie-white);
-    color: var(--roobie-soft-blue);
+    background-color: var(--white);
+    color: var(--soft-blue);
 }

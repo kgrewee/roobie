@@ -920,7 +920,7 @@ Dropdown
     min-width: 160px;
     width: auto;
     box-shadow: var(--box-shadow-m);
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-m);
     z-index: 1;
 }
 
@@ -932,7 +932,7 @@ Dropdown
 
 .drp-cnt p {
     margin-top: 0;
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-s);
     color: var(--grey);
 }
 

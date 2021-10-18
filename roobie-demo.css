@@ -47,7 +47,7 @@ body {
     height: 100%;
     overflow: hidden;
     font-family: var(--font-family);
-    line-height: 1.25em;
+    line_eight: 1.25em;
 }
 
 xmp {
@@ -89,7 +89,7 @@ p {
     margin: var(--margin-s) 0;
 }
 
-.mrg-h {
+.mrg_ {
     margin: 0 var(--margin-l);
 }
 

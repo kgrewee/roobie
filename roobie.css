@@ -242,52 +242,52 @@ Border
 }
 
 .bdr-s,
-.bdr-s-h {
+.bdr-s_ {
     border: var(--border-s) !important;
 }
 
 .bdr-m,
 .bdr,
-.bdr-m-h,
-.bdr-h {
+.bdr-m_,
+.bdr_ {
     border: var(--border-m) !important;
 }
 
 .bdr-l,
-.bdr-l-h {
+.bdr-l_ {
     border: var(--border-l) !important;
 }
 
 .bdr-xl,
-.bdr-xl-h {
+.bdr-xl_ {
     border: var(--border-xl) !important;
 }
 
-.bdr-s-h:hover,
-.bdr-m-h:hover,
-.bdr-l-h:hover,
-.bdr-xl-h:hover,
-.bdr-h:hover {
+.bdr-s_:hover,
+.bdr-m_:hover,
+.bdr-l_:hover,
+.bdr-xl_:hover,
+.bdr_:hover {
     border: var(--border-l) !important;
 }
 
-.bdr-s-h:active,
-.bdr-m-h:active,
-.bdr-l-h:active,
-.bdr-xl-h:active,
-.bdr-h:active {
+.bdr-s_:active,
+.bdr-m_:active,
+.bdr-l_:active,
+.bdr-xl_:active,
+.bdr_:active {
     border: var(--border-l) !important;
 }
 
-.bdr-s-h:focus,
-.bdr-m-h:focus,
-.bdr-l-h:focus,
-.bdr-xl-h:focus,
-.bdr-h:focus {
+.bdr-s_:focus,
+.bdr-m_:focus,
+.bdr-l_:focus,
+.bdr-xl_:focus,
+.bdr_:focus {
     border: var(--border-xl) !important;
 }
 
-.bdr-b-h:hover {
+.bdr-b_:hover {
     border-bottom: var(--border-m) !important;
 }
 
@@ -297,48 +297,48 @@ Box shadow
 */
 
 .box-s,
-.box-s-h {
+.box-s_ {
     box-shadow: var(--box-shadow-s);
 }
 
 .box-m,
 .box,
-.box-m-h,
-.box-h {
+.box-m_,
+.box_ {
     box-shadow: var(--box-shadow-m);
 }
 
 .box-l,
-.box-l-h {
+.box-l_ {
     box-shadow: var(--box-shadow-l);
 }
 
 .box-xl,
-.box-xl-h {
+.box-xl_ {
     box-shadow: var(--box-shadow-xl);
 }
 
-.box-s-h:hover,
-.box-m-h:hover,
-.box-l-h:hover,
-.box-xl-h:hover,
-.box-h:hover {
+.box-s_:hover,
+.box-m_:hover,
+.box-l_:hover,
+.box-xl_:hover,
+.box_:hover {
     box-shadow: var(--box-shadow-l);
 }
 
-.box-s-h:active,
-.box-m-h:active,
-.box-l-h:active,
-.box-xl-h:active,
-.box-h:active {
+.box-s_:active,
+.box-m_:active,
+.box-l_:active,
+.box-xl_:active,
+.box_:active {
     box-shadow: var(--box-shadow-l);
 }
 
-.box-s-h:focus,
-.box-m-h:focus,
-.box-l-h:focus,
-.box-xl-h:focus,
-.box-h:focus {
+.box-s_:focus,
+.box-m_:focus,
+.box-l_:focus,
+.box-xl_:focus,
+.box_:focus {
     box-shadow: var(--box-shadow-xl);
 }
 
@@ -348,48 +348,48 @@ Inset
 */
 
 .in-s,
-.in-s-h {
+.in-s_ {
     box-shadow: var(--inset-s);
 }
 
 .in-m,
 .in,
-.in-m-h,
-.in-h {
+.in-m_,
+.in_ {
     box-shadow: var(--inset-m);
 }
 
 .in-l,
-.in-l-h {
+.in-l_ {
     box-shadow: var(--inset-l);
 }
 
 .in-xl,
-.in-xl-h {
+.in-xl_ {
     box-shadow: var(--inset-xl);
 }
 
-.in-s-h:hover,
-.in-m-h:hover,
-.in-l-h:hover,
-.in-xl-h:hover,
-.in-h:hover {
+.in-s_:hover,
+.in-m_:hover,
+.in-l_:hover,
+.in-xl_:hover,
+.in_:hover {
     box-shadow: var(--inset-l);
 }
 
-.in-s-h:active,
-.in-m-h:active,
-.in-l-h:active,
-.in-xl-h:active,
-.in-h:active {
+.in-s_:active,
+.in-m_:active,
+.in-l_:active,
+.in-xl_:active,
+.in_:active {
     box-shadow: var(--inset-l);
 }
 
-.in-s-h:focus,
-.in-m-h:focus,
-.in-l-h:focus,
-.in-xl-h:focus,
-.in-h:focus {
+.in-s_:focus,
+.in-m_:focus,
+.in-l_:focus,
+.in-xl_:focus,
+.in_:focus {
     box-shadow: var(--inset-xl);
 }
 
@@ -527,7 +527,7 @@ Tag
 */
 
 .tag,
-.tag-h {
+.tag_ {
     border: 1px solid transparent;
     padding: 0 var(--padding-s);
     box-shadow: var(--box-shadow-m);
@@ -536,7 +536,7 @@ Tag
     font-size: var(--font-size-m);
 }
 
-.tag-h:hover {
+.tag_:hover {
     border: 1px solid var(--black);
     box-shadow: var(--box-shadow-l);
     cursor: default;
@@ -815,7 +815,7 @@ Dropdown
 }
 
 .drp-cnt {
-    line-height: 1em;
+    line_eight: 1em;
     display: none;
     position: absolute;
     background-color: var(--white);
@@ -901,7 +901,7 @@ List
 .ul-bdr li span {
     font-size: .7em;
     color: var(--grey);
-    line-height: 1em;
+    line_eight: 1em;
 }
 
 .ul-bdr li+li,

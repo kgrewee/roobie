@@ -571,29 +571,54 @@ Float
 Border Radius
 */
 
-.br-s {
+.br-none {
+    border-radius: none;
+}
+
+.br-s,
+.br-s_ {
     border-radius: var(--border-radius-s);
 }
 
 .br-m,
-.br {
+.br,
+.br-m_,
+.br_ {
     border-radius: var(--border-radius-m);
 }
 
-.br-l {
+.br-l,
+.br-l_ {
     border-radius: var(--border-radius-l);
 }
 
-.br-xl {
+.br-xl,
+.br-xl_ {
     border-radius: var(--border-radius-xl);
 }
 
-.br-xxl {
-    border-radius: var(--border-radius-xxl);
+.br-s_:hover,
+.br-m_:hover,
+.br-l_:hover,
+.br-xl_:hover,
+.br_:hover {
+    border-radius: var(--border-radius-l);
 }
 
-.br-xxxl {
-    border-radius: var(--border-radius-xxxl);
+.br-s_:active,
+.br-m_:active,
+.br-l_:active,
+.br-xl_:active,
+.br_:active {
+    border-radius: var(--border-radius-l);
+}
+
+.br-s_:focus,
+.br-m_:focus,
+.br-l_:focus,
+.br-xl_:focus,
+.br_:focus {
+    border-radius: var(--border-radius-xl);
 }
 
 

@@ -84,17 +84,17 @@ h3 {
 }
 
 h4 {
-    color: var(--black);
+    color: var(--soft-blue);
     margin: var(--margin-s) 0;
 }
 
 .docs h4 {
     margin-right: var(--margin-xxxxl);
-    width: 15%;
+    width: 200px;
 }
 
 .docs p {
-    width: 85%;
+    width: 400px
 }
 
 p {

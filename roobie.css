@@ -425,6 +425,10 @@ Box shadow
 Inset
 */
 
+.in-none {
+    box-shadow: none;
+}
+
 .in-s,
 .in-s_ {
     box-shadow: var(--inset-s);

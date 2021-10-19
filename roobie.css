@@ -221,14 +221,14 @@ Navbar
 }
 
 .nav-head {
-    margin: var(--margin-m);
+    margin: var(--margin-s);
     font-size: var(--font-size-m);
     color: var(--black);
 }
 
 .nav-item {
     padding: var(--padding-s);
-    margin: var(--margin-m);
+    margin: var(--margin-s);
     width: auto;
     opacity: 75%;
     height: 100%;

@@ -222,8 +222,7 @@ Navbar
 
 .nav-head {
     margin: var(--margin-m);
-    margin-top: var(--margin-xl);
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-m);
     color: var(--black);
 }
 

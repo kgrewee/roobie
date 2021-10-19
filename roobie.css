@@ -1,4 +1,4 @@
-/* Variables */
+/* Welcome to Roobie CSS.   */
 
  :root {
     --font-family: "Arial", sans-serif;
@@ -64,6 +64,7 @@
     --smooth-white: rgb(241, 241, 241);
     --black: rgb(19, 19, 19);
     --red: rgb(245, 9, 9);
+    --soft-red: rgba(170, 31, 31, 0.9);
     --orange: rgb(243, 162, 11);
     --purple: rgb(122, 10, 122);
     --green: rgb(24, 196, 96);
@@ -128,6 +129,17 @@
 
 .bg-red {
     background-color: var(--red);
+}
+
+
+/* Soft Red */
+
+.soft-red {
+    color: var(--soft-red);
+}
+
+.bg-soft-red {
+    background-color: var(--soft-red);
 }
 
 

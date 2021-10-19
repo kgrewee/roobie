@@ -18,6 +18,10 @@
     overflow: auto;
 }
 
+.nav-head {
+    color: var(--soft-blue);
+}
+
 
 /*
 Dividers

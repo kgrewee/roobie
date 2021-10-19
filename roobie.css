@@ -370,6 +370,10 @@ Border
 Box shadow
 */
 
+.box-none {
+    box-shadow: none;
+}
+
 .box-s,
 .box-s_ {
     box-shadow: var(--box-shadow-s);

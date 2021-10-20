@@ -54,7 +54,8 @@ body {
 }
 
 xmp {
-    color: var(--soft-blue);
+    color: var(--black);
+    font-weight: bold;
     white-space: normal;
 }
 

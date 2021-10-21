@@ -5,7 +5,8 @@ A collection of CSS Classes & Themes to help you build web applications.  Link `
 ***This whole repo is a demo.  Pull using git and open `index.html` in a browser.***
 
 - `roobie.css` - All of the roobie styles.  Take a look, its well commented.
-- `components/` - Pre-built components using Roobie CSS & demo-specific styles.  Use these as building blocks.
+- `roobie-demo.css` Styles used alongside Roobie.  Expect your main stylesheet to look similar.
+- `components/` - Pre-built components using Roobie CSS.  Use these as building blocks. 
 - `classes/` - Documentation for our CSS classes.
 
 ## Components

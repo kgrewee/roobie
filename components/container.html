@@ -8,6 +8,34 @@
     <link rel="stylesheet" href="../roobie.css">
     <link rel="stylesheet" href="../roobie-demo.css">
 </head>
+<style>
+    .div-demo div {
+        height: 50px;
+        background-color: var(--off-white);
+        margin-bottom: var(--margin-l);
+        color: var(--soft-blue);
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    
+    .nested-div {
+        height: 300px;
+        padding: var(--padding-l);
+        margin-right: var(--margin-xl);
+        background-color: var(--off-white);
+    }
+    
+    .nested-div div {
+        margin: var(--margin-s);
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--white);
+        color: var(--soft-blue);
+    }
+</style>
 
 <body class="fnt-l pad-none mrg-none">
     <nav class="nav-col flx-col flt-left aln-left box">
@@ -94,7 +122,7 @@
                     </div>
                 </div>
                 <h2>Nested Containers</h2>
-                <p>Containers inside other containers, styled with flex. For more advanced container demos, see <a href="./../grid/grid.html">Grid</a>.</p>
+                <p>Containers inside other containers, styled with flex. For more advanced container demos, see <a href="./../components/grid.html">Grid</a>.</p>
                 <h3>Row</h3>
                 <div class="div flx-col wrp jst-start">
                     <div class="nested-div div flx-row jst-around br mrgv">

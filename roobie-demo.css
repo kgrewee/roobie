@@ -89,15 +89,6 @@ h4 {
     margin: var(--margin-s) 0;
 }
 
-.docs h4 {
-    margin-right: var(--margin-xxxxl);
-    width: 200px;
-}
-
-.docs p {
-    width: 400px
-}
-
 p {
     margin: var(--margin-s) 0;
 }
@@ -128,85 +119,4 @@ nav a {
 .active {
     border-left: 4px solid var(--soft-blue);
     opacity: 100% !important;
-}
-
-
-/* Tag */
-
-.category .tag_ {
-    background-color: var(--white);
-}
-
-
-/* Container */
-
-.div-demo div {
-    height: 50px;
-    background-color: var(--off-white);
-    margin-bottom: var(--margin-l);
-    color: var(--soft-blue);
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-}
-
-.nested-div {
-    height: 300px;
-    padding: var(--padding-l);
-    margin-right: var(--margin-xl);
-    background-color: var(--off-white);
-}
-
-.nested-div div {
-    margin: var(--margin-s);
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--white);
-    color: var(--soft-blue);
-}
-
-
-/* Grid */
-
-.grid div {
-    width: 30%;
-    height: 50px;
-    color: var(--black);
-    margin: 5px;
-    background-color: var(--white);
-}
-
-.grid {
-    background-color: var(--off-white);
-    padding: var(--padding-l);
-}
-
-
-/*
-Max height to demo wrap styles
-*/
-
-.grid.mrgv {
-    max-height: 225px;
-}
-
-
-/* Input */
-
-.inp {
-    background-color: var(--white);
-}
-
-
-/* List */
-
-.ul-bdr li {
-    min-width: 200px;
-}
-
-.ul-cnt li,
-.ul-cnt-bdr li {
-    min-width: 300px;
 }

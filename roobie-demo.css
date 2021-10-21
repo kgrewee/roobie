@@ -89,6 +89,15 @@ h4 {
     margin: var(--margin-s) 0;
 }
 
+.docs h4 {
+    margin-right: var(--margin-xxxxl);
+    width: 200px;
+}
+
+.docs p {
+    width: 400px
+}
+
 p {
     margin: var(--margin-s) 0;
 }

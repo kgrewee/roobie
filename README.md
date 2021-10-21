@@ -1,11 +1,13 @@
 # Roobie
 
-CSS made easy. A collection of styles to help you build web applications.  Link `roobie.css` to your html to get started.
+A collection of CSS Classes & Themes to help you build web applications.  Link `roobie.css` to your html to get started.
 
 ***This whole repo is a demo.  Pull using git and open `index.html` in a browser.***
 
 - `roobie.css` - All of the roobie styles.  Take a look, its well commented.
-- `components/` - Pre-built components using Roobie CSS & demo-specific styles.  Use these as building blocks.
+- `roobie-demo.css` Styles used alongside Roobie.  Expect your main stylesheet to look similar.
+- `components/` - Pre-built components using Roobie CSS.  Use these as building blocks. 
+- `classes/` - Documentation for our CSS classes.
 
 ## Components
 
@@ -64,7 +66,7 @@ Common abbreviations found in class names. They don't exceed 3 characters to kee
 
 ### Sizes
 
-Classes need to have different sizes, they are also abbreviated.  We use a basic and very relatable convention, much like the one you'd see at a store.  Small, Medium, Large & Extra Large are offered for most classes.  Extreme value are offered for some classes, such as txt, like Extra Extra Small & Extra Extra Large.  Values for sizes are configurable at the top of `roobie.css`. 
+Classes are suffixed with a size, if applicable. We use a basic and very relatable convention, much like the one you'd see at a local store.  Small, Medium, Large & Extra Large are offered for most classes.  Extreme value are offered for some classes, such as txt, like Extra Extra Small(xxs) & Extra Extra Large(xxl).  Values for sizes are configurable at the top of `roobie.css`. 
 
 - s - Small
 - m - Medium
@@ -73,29 +75,33 @@ Classes need to have different sizes, they are also abbreviated.  We use a basic
 
 More extreme sizes follow the same convention.
 
+### Hover States
+
+Some classes offer hover states that are signified by a trailing underscore.  `box_` or `in_` are the box shadow and inset hover state classes.  They feature the same default styles as `box` and `in`, but have a hover state with different styles.
+
 ### Examples
 
 A few examples to get you started. No content, just classes to demonstrate. Link `roobie.css` to your html and try them out.
-
+Combine Roobie's classes together to make complex, responsive components.
 
 **Container with 100% width**<br />
-&lt;div class="div">&lt;/div>
+&lt;div class="`div`">&lt;/div>
 
 **Container with padding**<br />
-&lt;div class="pad">&lt;/div>
+&lt;div class="`pad`">&lt;/div>
 
 **Container with flex row**<br />
-&lt;div class="flx-row">&lt;/div>
+&lt;div class="`flx-row`">&lt;/div>
 
 **Link styled as a Button**<br />
-&lt;a class="btn">&lt;/a>
+&lt;a class="`btn`">&lt;/a>
 
 **Styled input box**<br />
-&lt;input class="inp">&lt;/input>
+&lt;input class="`inp`">&lt;/input>
 
 **Small block of content**<br />
-&lt;span class="tag">&lt;/span>
+&lt;span class="`tag`">&lt;/span>
 
 **Styled list**<br />
-&lt;ul class="ul">&lt;/ul>
+&lt;ul class="`ul`">&lt;/ul>
 

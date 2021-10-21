@@ -2,10 +2,6 @@
     height: 800px;
 }
 
-.nav-head {
-    min-width: 200px;
-}
-
 .nav-col {
     margin-bottom: var(--margin-xxl);
 }

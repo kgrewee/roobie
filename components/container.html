@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Roobie | Dropdown CSS Classes</title>
+    <title>Roobie | Container</title>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="./../images/icons/gem-stone-1.svg">
     <link rel="stylesheet" href="../roobie.css">
@@ -20,7 +20,7 @@
                 <h4 class="nav-head mrgl">Components</h4>
                 <div class="flx-col bg-white aln-start jst-start scr mrgv-m padl">
                     <a class="nav-item" href="../components/button.html">Button</a>
-                    <a class="nav-item" href="../components/container.html">Container</a>
+                    <a class="nav-item active" href="../components/container.html">Container</a>
                     <a class="nav-item" href="../components/dropdown.html">Dropdown</a>
                     <a class="nav-item" href="../components/grid.html">Grid</a>
                     <a class="nav-item" href="../components/input.html">Input</a>
@@ -38,7 +38,7 @@
                     <a class="nav-item" href="../classes/container.html">Container</a>
                     <a class="nav-item" href="../classes/cursor.html">Cursor</a>
                     <a class="nav-item" href="../classes/display.html">Display</a>
-                    <a class="nav-item active" href="../classes/dropdown.html">Dropdown</a>
+                    <a class="nav-item" href="../classes/dropdown.html">Dropdown</a>
                     <a class="nav-item" href="../classes/flex.html">Flex</a>
                     <a class="nav-item" href="../classes/float.html">Float</a>
                     <a class="nav-item" href="../classes/font.html">Font</a>
@@ -58,30 +58,66 @@
             </div>
         </div>
     </nav>
-    <div class="content docs">
+    <div class="content">
         <div class="div bg-soft-blue padv-xl flx-col aln-center box">
             <div class="div-xl">
-                <h1>Dropdown</h1>
+                <h1>Container</h1>
+                <p>Containers to hold other elements.</p>
             </div>
         </div>
         <div class="div flx-col aln-center">
-            <div class="div-xl flx-col aln-start jst-start txt-left mrgv">
-                <h3>Dropdown</h3>
+            <div class="div-xl flx-col aln-start txt-left mrgv">
                 <div class="div flx-row">
-                    <h4>drp</h4>
-                    <p>Dropdown container</p>
+                    <b>div</b>
+                    <b>div-auto</b>
+                    <b>div-s</b>
+                    <b>div-33</b>
+                    <b>div-m</b>
+                    <b>div-50</b>
+                    <b>div-l</b>
+                    <b>div-xl</b>
+                    <b>ht-33</b>
+                    <b>ht-50</b>
                 </div>
-                <div class="div flx-row">
-                    <h4>drp-btn</h4>
-                    <p>Button that triggers dropdown content</p>
+                <h3>Basic</h3>
+                <p>Proper use of contianers is crucial for clean, responsive styles. These are basic containers classes.</p>
+                <div class="div mrgv txt-center">
+                    <div class="div-demo flx-col jst-center aln-start">
+                        <div class="div-auto">div-auto</div>
+                        <div class="div-s">div-s</div>
+                        <div class="div-33">div-33</div>
+                        <div class="div-m">div-m</div>
+                        <div class="div-50">div-50</div>
+                        <div class="div-l">div-l</div>
+                        <div class="div-xl">div-xl</div>
+                        <div class="div">div</div>
+                    </div>
                 </div>
-                <div class="div flx-row">
-                    <h4>drp-cnt</h4>
-                    <p>Hidden content that is triggered on hover</p>
+                <h2>Nested Containers</h2>
+                <p>Containers inside other containers, styled with flex. For more advanced container demos, see <a href="./../grid/grid.html">Grid</a>.</p>
+                <h3>Row</h3>
+                <div class="div flx-col wrp jst-start">
+                    <div class="nested-div div flx-row jst-around br mrgv">
+                        <div class="div-50 box br">div-50</div>
+                        <div class="div-50 box br">div-50</div>
+                    </div>
+                    <div class="nested-div div flx-row jst-around br mrgv">
+                        <div class="div-33 box br">div-33</div>
+                        <div class="div-33 box br">div-33</div>
+                        <div class="div-33 box br">div-33</div>
+                    </div>
                 </div>
-                <div class="div flx-row">
-                    <h4>drp-title</h4>
-                    <p>Title for links within a dropdown</p>
+                <h3>Column</h3>
+                <div class="div flx-col wrp jst-start">
+                    <div class="nested-div div flx-col jst-center aln-center br mrgv">
+                        <div class="div ht-50 box br">div ht-50</div>
+                        <div class="div ht-50 box br">div ht-50</div>
+                    </div>
+                    <div class="nested-div div flx-col jst-center aln-center br mrgv">
+                        <div class="div ht-33 box br">div ht-33</div>
+                        <div class="div ht-33 box br">div ht-33</div>
+                        <div class="div ht-33 box br">div ht-33</div>
+                    </div>
                 </div>
             </div>
         </div>

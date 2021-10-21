@@ -1,4 +1,4 @@
-/* Variables */
+/* Welcome to Roobie CSS.   */
 
  :root {
     --font-family: "Arial", sans-serif;
@@ -64,6 +64,7 @@
     --smooth-white: rgb(241, 241, 241);
     --black: rgb(19, 19, 19);
     --red: rgb(245, 9, 9);
+    --soft-red: rgba(170, 31, 31, 0.9);
     --orange: rgb(243, 162, 11);
     --purple: rgb(122, 10, 122);
     --green: rgb(24, 196, 96);
@@ -128,6 +129,17 @@
 
 .bg-red {
     background-color: var(--red);
+}
+
+
+/* Soft Red */
+
+.soft-red {
+    color: var(--soft-red);
+}
+
+.bg-soft-red {
+    background-color: var(--soft-red);
 }
 
 
@@ -221,15 +233,14 @@ Navbar
 }
 
 .nav-head {
-    margin: var(--margin-m);
-    margin-top: var(--margin-xl);
-    font-size: var(--font-size-l);
+    margin: var(--margin-s);
+    font-size: var(--font-size-m);
     color: var(--black);
 }
 
 .nav-item {
     padding: var(--padding-s);
-    margin: var(--margin-m);
+    margin: var(--margin-s);
     width: auto;
     opacity: 75%;
     height: 100%;
@@ -359,6 +370,10 @@ Border
 Box shadow
 */
 
+.box-none {
+    box-shadow: none;
+}
+
 .box-s,
 .box-s_ {
     box-shadow: var(--box-shadow-s);
@@ -409,6 +424,10 @@ Box shadow
 /*
 Inset
 */
+
+.in-none {
+    box-shadow: none;
+}
 
 .in-s,
 .in-s_ {
@@ -552,29 +571,54 @@ Float
 Border Radius
 */
 
-.br-s {
+.br-none {
+    border-radius: none;
+}
+
+.br-s,
+.br-s_ {
     border-radius: var(--border-radius-s);
 }
 
 .br-m,
-.br {
+.br,
+.br-m_,
+.br_ {
     border-radius: var(--border-radius-m);
 }
 
-.br-l {
+.br-l,
+.br-l_ {
     border-radius: var(--border-radius-l);
 }
 
-.br-xl {
+.br-xl,
+.br-xl_ {
     border-radius: var(--border-radius-xl);
 }
 
-.br-xxl {
-    border-radius: var(--border-radius-xxl);
+.br-s_:hover,
+.br-m_:hover,
+.br-l_:hover,
+.br-xl_:hover,
+.br_:hover {
+    border-radius: var(--border-radius-l);
 }
 
-.br-xxxl {
-    border-radius: var(--border-radius-xxxl);
+.br-s_:active,
+.br-m_:active,
+.br-l_:active,
+.br-xl_:active,
+.br_:active {
+    border-radius: var(--border-radius-l);
+}
+
+.br-s_:focus,
+.br-m_:focus,
+.br-l_:focus,
+.br-xl_:focus,
+.br_:focus {
+    border-radius: var(--border-radius-xl);
 }
 
 
@@ -944,7 +988,7 @@ Dropdown
     font-size: var(--font-size-m);
 }
 
-.drp-c:focus .drp-cnt,
+.drp:focus .drp-cnt,
 .drp:hover .drp-cnt {
     display: block;
 }
@@ -1153,6 +1197,7 @@ Wrap will push items to the next line if needed
     flex-wrap: wrap-reverse;
 }
 
+.nowrp,
 .wrp-none {
     flex-wrap: nowrap;
 }

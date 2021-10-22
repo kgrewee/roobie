@@ -11,7 +11,7 @@ function index() {
 }
 
 /*
-Loads html from a file
+Loads html from a file into an element with provided id
 */
 function load(filename, id) {
     console.log("Loading " + filename);
@@ -23,12 +23,12 @@ Adds the active class to a clicked link
 */
 function active(elem) {
     console.log("Setting active link");
-    // Get all links
     var links = document.getElementsByTagName("a");
+
     // Remove active classes
     for (i = 0; i < links.length; i++) {
         links[i].classList.remove('active')
     }
-    // Add 'active' class to clicked element
+
     elem.classList.add('active');
 }

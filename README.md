@@ -8,19 +8,19 @@ This repo is a demo.  It is found at http://roobie.net and can also be run local
 
 1. Install Python3
 
-https://www.python.org/downloads/
+    https://www.python.org/downloads/
 
 2. Start web server
 
-We suggest a simple web server using Python.  Any web server pointing to the roobie/ folder will do the trick.
+    We suggest a simple web server using Python.  Any web server pointing to the roobie/ folder will do the trick.
 
-***Linux***
+    ***Linux***
 
-Run `./run.sh` to start a python web server on port 8000.  Visit http://localhost:8000.
+    Run `./run.sh` to start a python web server on port 8000.  Visit http://localhost:8000.
 
-***Windows***
+    ***Windows***
 
-Run `python3 -m http.server` in a terminal.  ***Not tested***
+    Run `python3 -m http.server` in a terminal.  ***Not tested***
 
 
 ## Files

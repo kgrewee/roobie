@@ -15,6 +15,7 @@ Loads html from a file into an element with provided id
 */
 function load(filename, id) {
     console.log("Loading " + filename);
+    $('#' + id).empty();
     $('#' + id).load(filename);
 }
 

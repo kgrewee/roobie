@@ -13,11 +13,6 @@
     color: var(--white);
 }
 
-.content {
-    height: 100%;
-    overflow: auto;
-}
-
 .nav-head {
     color: var(--soft-blue);
 }
@@ -89,13 +84,19 @@ h4 {
     margin: var(--margin-s) 0;
 }
 
+.docs h3 {
+    width: 200px;
+    color: var(--black);
+    font-weight: 500;
+}
+
 .docs h4 {
     margin-right: var(--margin-xxxxl);
     width: 200px;
 }
 
 .docs p {
-    width: 400px
+    width: 400px;
 }
 
 p {
@@ -128,4 +129,8 @@ nav a {
 .active {
     border-left: 4px solid var(--soft-blue);
     opacity: 100% !important;
+}
+
+#nav {
+    width: 200px;
 }

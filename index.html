@@ -7,104 +7,13 @@
     <link rel="shortcut icon" href="images/icons/gem-stone-1.svg">
     <link rel="stylesheet" href="roobie.css">
     <link rel="stylesheet" href="roobie-demo.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="roobie.js"></script>
 </head>
 
 <body class="fnt-l pad-none mrg-none">
-    <nav class="nav-col flx-col flt-left aln-left box">
-        <div class="roobie padl"><span>Roo</span>bie</div>
-        <div class="div ht flx-col aln-start jst-center scr">
-            <div class="div ht flx-col jst-start">
-                <div class="flx-col aln-start padl">
-                    <a class="nav-item active" href="">Home</a>
-                </div>
-                <h4 class="nav-head mrgl">Components</h4>
-                <div class="flx-col bg-white aln-start jst-start scr mrgv-m padl">
-                    <a class="nav-item" href="components/button.html">Button</a>
-                    <a class="nav-item" href="components/container.html">Container</a>
-                    <a class="nav-item" href="components/dropdown.html">Dropdown</a>
-                    <a class="nav-item" href="components/grid.html">Grid</a>
-                    <a class="nav-item" href="components/input.html">Input</a>
-                    <a class="nav-item" href="components/list.html">List</a>
-                    <a class="nav-item" href="components/navbar.html">Navbar</a>
-                    <a class="nav-item" href="components/tag.html">Tag</a>
-                </div>
-                <h4 class="nav-head mrgl">Classes</h4>
-                <div class="flx-col bg-white aln-start jst-start scr mrgv-m padl">
-                    <a class="nav-item" href="classes/all.html">All</a>
-                    <a class="nav-item" href="classes/border.html">Border</a>
-                    <a class="nav-item" href="classes/box-shadow.html">Box Shadow</a>
-                    <a class="nav-item" href="classes/button.html">Button</a>
-                    <a class="nav-item" href="classes/colors.html">Colors</a>
-                    <a class="nav-item" href="classes/container.html">Container</a>
-                    <a class="nav-item" href="classes/cursor.html">Cursor</a>
-                    <a class="nav-item" href="classes/display.html">Display</a>
-                    <a class="nav-item" href="classes/dropdown.html">Dropdown</a>
-                    <a class="nav-item" href="classes/flex.html">Flex</a>
-                    <a class="nav-item" href="classes/float.html">Float</a>
-                    <a class="nav-item" href="classes/font.html">Font</a>
-                    <a class="nav-item" href="classes/height.html">Height</a>
-                    <a class="nav-item" href="classes/input.html">Input</a>
-                    <a class="nav-item" href="classes/inset.html">Inset</a>
-                    <a class="nav-item" href="classes/list.html">List</a>
-                    <a class="nav-item" href="classes/margin.html">Margin</a>
-                    <a class="nav-item" href="classes/navbar.html">Navbar</a>
-                    <a class="nav-item" href="classes/opacity.html">Opacity</a>
-                    <a class="nav-item" href="classes/padding.html">Padding</a>
-                    <a class="nav-item" href="classes/position.html">Position</a>
-                    <a class="nav-item" href="classes/scroll.html">Scroll</a>
-                    <a class="nav-item" href="classes/tag.html">Tag</a>
-                    <a class="nav-item" href="classes/text.html">Text</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <div class="content">
-        <div class="div flx-col aln-center">
-            <div class="div bg-soft-blue flx-col aln-center box padv-xl">
-                <a class="div-xl txtd-none" href="https://github.com/kgrewee/roobie" target="_black">
-                    <h1 class="roobie title"><span>Roo</span>bie</h1>
-                    <p class="white">Start every Web project with CSS Classes & Themes</p>
-                </a>
-            </div>
-            <div class="div-xl flx-col aln-start jst-center txt-left">
-                <h3>Interactive Demo</h3>
-                <p>Click the banner above to open our GitHub. It is recommended to pull the repo and follow along locally in a code editor for the best experience. Make sure to open your local file in the browser if you want to see your changes.</p>
-                <h3>Install</h3>
-                <p>Roobie is simply a stylesheet. Download <b>roobie.css</b> or retrieve it from our GitHub.</p>
-                <a class="btn box-h pad mrgv" href="roobie.css" download="roobie.css">Download roobie.css</a>
-
-
-                <h4>Link to HTML</h4>
-                <xmp class="br bg-off-white pad-xl">
-                    <link rel="stylesheet" href="roobie.css">
-                </xmp>
-
-                <h4>Import in CSS</b4>
-                    <xmp class="br bg-off-white pad-xl">
-                        @import "roobie.css";
-                    </xmp>
-
-                    <h3>Centralized Styles</h3>
-                    <p>
-                        More content, less redundant styles. Roobie focuses on centralizing styles in pre-defined CSS classes to reduce code and improve development speed. Build full websites solely with Roobie CSS. Change the variables and use it as a main stylesheet or plugin
-                        for your Web application.
-                    </p>
-                    <h3>Components</h3>
-                    <p>
-                        We offer a variety of pre-built components styled with our CSS classes. Check them out and use them as building blocks.
-                    </p>
-                    <h3>Advantages</h3>
-                    <ul class="ul">
-                        <li>Pure CSS</li>
-                        <li>Less clutter</li>
-                        <li>Less cleanup</li>
-                        <li>Consistency</li>
-                        <li>Pre-built components</li>
-                        <li>Mobile-responsive</li>
-                    </ul>
-            </div>
-        </div>
-    </div>
+    <div id="nav" class="ht flt-left"></div>
+    <div id="main" class="flx-col aln-center ht scr"></div>
 </body>
 
 </html>

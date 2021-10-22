@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Roobie | Grid</title>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" href="./../images/icons/gem-stone-1.svg">
-    <link rel="stylesheet" href="../roobie.css">
-    <link rel="stylesheet" href="../roobie-demo.css">
-</head>
 <style>
     .grid div {
         width: 30%;
@@ -29,129 +19,72 @@ Max height to demo wrap styles
         max-height: 225px;
     }
 </style>
-
-<body class="fnt-l pad-none mrg-none">
-    <nav class="nav-col flx-col flt-left aln-left box">
-        <div class="roobie padl"><span>Roo</span>bie</div>
-        <div class="div ht flx-col aln-start jst-center scr">
-            <div class="div ht flx-col jst-start">
-                <div class="flx-col aln-start padl">
-                    <a class="nav-item" href="../index.html">Home</a>
-                </div>
-                <h4 class="nav-head mrgl">Components</h4>
-                <div class="flx-col bg-white aln-start jst-start scr mrgv-m padl">
-                    <a class="nav-item" href="../components/button.html">Button</a>
-                    <a class="nav-item" href="../components/container.html">Container</a>
-                    <a class="nav-item" href="../components/dropdown.html">Dropdown</a>
-                    <a class="nav-item active" href="../components/grid.html">Grid</a>
-                    <a class="nav-item" href="../components/input.html">Input</a>
-                    <a class="nav-item" href="../components/list.html">List</a>
-                    <a class="nav-item" href="../components/navbar.html">Navbar</a>
-                    <a class="nav-item" href="../components/tag.html">Tag</a>
-                </div>
-                <h4 class="nav-head mrgl">Classes</h4>
-                <div class="flx-col bg-white aln-start jst-start scr mrgv-m padl">
-                    <a class="nav-item" href="../classes/all.html">All</a>
-                    <a class="nav-item" href="../classes/border.html">Border</a>
-                    <a class="nav-item" href="../classes/box-shadow.html">Box Shadow</a>
-                    <a class="nav-item" href="../classes/button.html">Button</a>
-                    <a class="nav-item" href="../classes/colors.html">Colors</a>
-                    <a class="nav-item" href="../classes/container.html">Container</a>
-                    <a class="nav-item" href="../classes/cursor.html">Cursor</a>
-                    <a class="nav-item" href="../classes/display.html">Display</a>
-                    <a class="nav-item" href="../classes/dropdown.html">Dropdown</a>
-                    <a class="nav-item" href="../classes/flex.html">Flex</a>
-                    <a class="nav-item" href="../classes/float.html">Float</a>
-                    <a class="nav-item" href="../classes/font.html">Font</a>
-                    <a class="nav-item" href="../classes/height.html">Height</a>
-                    <a class="nav-item" href="../classes/input.html">Input</a>
-                    <a class="nav-item" href="../classes/inset.html">Inset</a>
-                    <a class="nav-item" href="../classes/list.html">List</a>
-                    <a class="nav-item" href="../classes/margin.html">Margin</a>
-                    <a class="nav-item" href="../classes/navbar.html">Navbar</a>
-                    <a class="nav-item" href="../classes/opacity.html">Opacity</a>
-                    <a class="nav-item" href="../classes/padding.html">Padding</a>
-                    <a class="nav-item" href="../classes/position.html">Position</a>
-                    <a class="nav-item" href="../classes/scroll.html">Scroll</a>
-                    <a class="nav-item" href="../classes/tag.html">Tag</a>
-                    <a class="nav-item" href="../classes/text.html">Text</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <div class="content">
-        <div class="div flx-col aln-center">
-            <div class="div bg-soft-blue padv-xl flx-col aln-center box">
-                <div class="div-xl">
-                    <h1>Grid</h1>
-                    <p>Simple, responsive grids with flexbox.</p>
-                </div>
-            </div>
-            <div class="div-xl flx-col aln-start jst-start txt-left mrgv">
-                <div class="div flx-row">
-                    <b>flx-row</b>
-                    <b>jst-center</b>
-                    <b>jst-end</b>
-                    <b>aln-cnt-start</b>
-                    <b>wrp</b>
-                </div>
-                <h3>Horizontal</h3>
-                <div class="div flx-col">
-                    <div class="flx-row grid mrgv br jst-center">
-                        <div class="box br-xl flx-row aln-center jst-center">1</div>
-                        <div class="box br-xl flx-row aln-center jst-center">2</div>
-                        <div class="box br-xl flx-row aln-center jst-center">3</div>
-                    </div>
-                </div>
-                <h3>Vertical</h3>
-                <div class="div flx-col">
-                    <div class="flx-col grid mrgv br aln-center">
-                        <div class="box br-xl flx-col aln-center jst-center">1</div>
-                        <div class="box br-xl flx-row aln-center jst-center">2</div>
-                        <div class="box br-xl flx-row aln-center jst-center">3</div>
-                    </div>
-                </div>
-                <h3>Nowrap is the Default</h3>
-                <p>For this demo, the max_eight of the grids is 225px. The sub-containers are 30% width & 50px height. There isn't enough space in the container for the sub-containers, so the flex-wrap property decides what to do. The default Roobie flex-wrap
-                    value is nowrap, so the sub-containers are squished to fit on one line.</p>
-                <div class="div">
-                    <div class="flx-row grid mrgv br">
-                        <div class="box br-xl flx-row aln-center jst-center">1</div>
-                        <div class="box br-xl flx-row aln-center jst-center">2</div>
-                        <div class="box br-xl flx-row aln-center jst-center">3</div>
-                        <div class="box br-xl flx-row aln-center jst-center">4</div>
-                        <div class="box br-xl flx-row aln-center jst-center">5</div>
-                    </div>
-                    <div class="flx-col grid mrgv br">
-                        <div class="box br-xl flx-col aln-center jst-center">1</div>
-                        <div class="box br-xl flx-row aln-center jst-center">2</div>
-                        <div class="box br-xl flx-row aln-center jst-center">3</div>
-                        <div class="box br-xl flx-row aln-center jst-center">4</div>
-                        <div class="box br-xl flx-row aln-center jst-center">5</div>
-                    </div>
-                </div>
-
-                <h3>Wrap</h3>
-                <p>Nowrap is useful, but in this case, we want to wrap our items to keep them the same size. Simply add the <b>wrp</b> class to add wrap to the Grid. Use flex classes to align grid content.</p>
-                <div class="div br">
-                    <div class="flx-row grid wrp mrgv br jst-end">
-                        <div class="box br-xl flx-row aln-center jst-center">1</div>
-                        <div class="box br-xl flx-row aln-center jst-center">2</div>
-                        <div class="box br-xl flx-row aln-center jst-center">3</div>
-                        <div class="box br-xl flx-row aln-center jst-center">4</div>
-                        <div class="box br-xl flx-row aln-center jst-center">5</div>
-                    </div>
-                    <div class="flx-col grid mrgv wrp aln-cnt-start br">
-                        <div class="box br-xl flx-col aln-center jst-center">1</div>
-                        <div class="box br-xl flx-row aln-center jst-center">2</div>
-                        <div class="box br-xl flx-row aln-center jst-center">3</div>
-                        <div class="box br-xl flx-row aln-center jst-center">4</div>
-                        <div class="box br-xl flx-row aln-center jst-center">5</div>
-                    </div>
-                </div>
-            </div>
+<div class="div bg-soft-blue padv-xl flx-col aln-center box">
+    <div class="div-xl">
+        <h1>Grid</h1>
+        <p>Simple, responsive grids with flexbox.</p>
+    </div>
+</div>
+<div class="div-xl flx-col aln-start jst-start txt-left mrgv">
+    <div class="div flx-row">
+        <b>flx-row</b>
+        <b>jst-center</b>
+        <b>jst-end</b>
+        <b>aln-cnt-start</b>
+        <b>wrp</b>
+    </div>
+    <h3>Horizontal</h3>
+    <div class="div flx-col">
+        <div class="flx-row grid mrgv br jst-center">
+            <div class="box br-xl flx-row aln-center jst-center">1</div>
+            <div class="box br-xl flx-row aln-center jst-center">2</div>
+            <div class="box br-xl flx-row aln-center jst-center">3</div>
         </div>
     </div>
-</body>
+    <h3>Vertical</h3>
+    <div class="div flx-col">
+        <div class="flx-col grid mrgv br aln-center">
+            <div class="box br-xl flx-col aln-center jst-center">1</div>
+            <div class="box br-xl flx-row aln-center jst-center">2</div>
+            <div class="box br-xl flx-row aln-center jst-center">3</div>
+        </div>
+    </div>
+    <h3>Nowrap is the Default</h3>
+    <p>For this demo, the max_eight of the grids is 225px. The sub-containers are 30% width & 50px height. There isn't enough space in the container for the sub-containers, so the flex-wrap property decides what to do. The default Roobie flex-wrap value
+        is nowrap, so the sub-containers are squished to fit on one line.</p>
+    <div class="div">
+        <div class="flx-row grid mrgv br">
+            <div class="box br-xl flx-row aln-center jst-center">1</div>
+            <div class="box br-xl flx-row aln-center jst-center">2</div>
+            <div class="box br-xl flx-row aln-center jst-center">3</div>
+            <div class="box br-xl flx-row aln-center jst-center">4</div>
+            <div class="box br-xl flx-row aln-center jst-center">5</div>
+        </div>
+        <div class="flx-col grid mrgv br">
+            <div class="box br-xl flx-col aln-center jst-center">1</div>
+            <div class="box br-xl flx-row aln-center jst-center">2</div>
+            <div class="box br-xl flx-row aln-center jst-center">3</div>
+            <div class="box br-xl flx-row aln-center jst-center">4</div>
+            <div class="box br-xl flx-row aln-center jst-center">5</div>
+        </div>
+    </div>
 
-</html>
+    <h3>Wrap</h3>
+    <p>Nowrap is useful, but in this case, we want to wrap our items to keep them the same size. Simply add the <b>wrp</b> class to add wrap to the Grid. Use flex classes to align grid content.</p>
+    <div class="div br">
+        <div class="flx-row grid wrp mrgv br jst-end">
+            <div class="box br-xl flx-row aln-center jst-center">1</div>
+            <div class="box br-xl flx-row aln-center jst-center">2</div>
+            <div class="box br-xl flx-row aln-center jst-center">3</div>
+            <div class="box br-xl flx-row aln-center jst-center">4</div>
+            <div class="box br-xl flx-row aln-center jst-center">5</div>
+        </div>
+        <div class="flx-col grid mrgv wrp aln-cnt-start br">
+            <div class="box br-xl flx-col aln-center jst-center">1</div>
+            <div class="box br-xl flx-row aln-center jst-center">2</div>
+            <div class="box br-xl flx-row aln-center jst-center">3</div>
+            <div class="box br-xl flx-row aln-center jst-center">4</div>
+            <div class="box br-xl flx-row aln-center jst-center">5</div>
+        </div>
+    </div>
+</div>

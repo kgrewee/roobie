@@ -1,30 +1,49 @@
 # Roobie
 
-A collection of CSS Classes & Themes to help you build web applications.  Link `roobie.css` to your html to get started.
+A collection of CSS classes & themes to help you build web applications.  Make CSS easy with helper methods and pre-built components to kickstart your web project.  Light-weight, fast & easy to use.
 
-***This whole repo is a demo.  Pull using git and open `index.html` in a browser.***
+## Setup
+
+This repo is a demo that requires a web server for dynamic content.  It also found at http://roobie.net.  We suggest a simple web server using Python.  Any web server pointing to the `roobie/` folder will do the trick.
+
+1. Install Python3
+
+    https://www.python.org/downloads/
+
+2. Start web server
+
+    ***Linux***
+
+    Run `./run.sh` to start a python web server on port 8000.  Visit http://localhost:8000.
+
+    ***Windows***
+
+    Run `python3 -m http.server` in a terminal.  ***Not tested***
+
+## Files
 
 - `roobie.css` - All of the roobie styles.  Take a look, its well commented.
+- `roobie.js` -  JavaScript helpers for dynamic content.
 - `roobie-demo.css` Styles used alongside Roobie.  Expect your main stylesheet to look similar.
 - `components/` - Pre-built components using Roobie CSS.  Use these as building blocks. 
 - `classes/` - Documentation for our CSS classes.
 
 ## Components
 
-- Navbar
 - Button
-- Grid
-- Input
 - Container
 - Dropdown
+- Grid
+- Input
 - List
+- Navbar
 - Tag
 
 ## Basics
 
-Roobie is made up of CSS Classes & Themes.  Change variables in `roobie.css` to your liking.  The CSS Classes depend directly on the theme variables.  Change those, you change the whole theme.  You can build your whole web-app with Roobie and not write any CSS except for custom colors.  This repo is a website built entirely with Roobie CSS.
+Roobie is made up of CSS classes & themes.  Change variables in `roobie.css` to your liking.  The CSS Classes depend directly on the theme variables.  Change those, you change the whole theme.  You can build your whole web-app with Roobie and not write any CSS except for custom colors.  This repo is a website built entirely with Roobie CSS.
 
-The power of Roobie is in the CSS Classes.  These can generate many different styles, using the same CSS.  Roobie centralizes styles to reduce spammed CSS and to make your UI easier to maintain.  Use Roobie for your core styles, and focus on content and colors instead. Checkout the `components/` folder for pre-built components using our CSS classes.
+The power of Roobie is in the CSS classes.  These can generate many different styles, using the same CSS.  Roobie centralizes styles to reduce spammed CSS and to make your UI easier to maintain.  Use Roobie for your core styles, and focus on content and colors instead. Checkout the `components/` folder for pre-built components using our CSS classes.
 
 ## Classes
 

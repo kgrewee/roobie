@@ -4,15 +4,13 @@ A collection of CSS classes & themes to help you build web applications.  Make C
 
 ## Setup
 
-This repo is a demo.  It is found at http://roobie.net and can also be run locally with a web server.
+This repo is a demo that requires a web server for dynamic content.  It also found at http://roobie.net.  We suggest a simple web server using Python.  Any web server pointing to the `roobie/` folder will do the trick.
 
 1. Install Python3
 
     https://www.python.org/downloads/
 
 2. Start web server
-
-    We suggest a simple web server using Python.  Any web server pointing to the roobie/ folder will do the trick.
 
     ***Linux***
 
@@ -21,7 +19,6 @@ This repo is a demo.  It is found at http://roobie.net and can also be run local
     ***Windows***
 
     Run `python3 -m http.server` in a terminal.  ***Not tested***
-
 
 ## Files
 

@@ -1,12 +1,12 @@
 $(document).ready(function() {
-    loadHtml("nav.html", "nav");
-    loadHtml("home.html", "main");
+    load("nav.html", "nav");
+    load("home.html", "main");
 });
 
 /*
 Loads html from a file
 */
-function loadHtml(filename, id) {
+function load(filename, id) {
     console.log("Loading " + filename);
     $('#' + id).load(filename);
 }

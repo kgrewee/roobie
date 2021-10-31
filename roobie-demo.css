@@ -127,8 +127,8 @@ nav a {
 }
 
 .active {
-    border-left: 4px solid var(--soft-blue);
-    background: linear-gradient(90deg, rgba(67, 67, 221, .15) 50%, rgba(255, 255, 255, 0.01) 100%);
+    border-left: 3px solid var(--soft-blue);
+    background: linear-gradient(90deg, rgba(67, 67, 221, .15) 30%, rgba(255, 255, 255, 0.01) 100%);
     color: var(--black);
     opacity: 100% !important;
 }
@@ -160,4 +160,13 @@ li:hover span {
 .nav-container {
     border-left: 1px solid var(--soft-blue);
     margin-left: var(--margin-m);
+}
+
+.nav-item {
+    padding: var(--padding-m);
+    margin: 0;
+}
+
+.nav-container .nav-item:not(:first-child) {
+    margin-top: var(--margin-m);
 }

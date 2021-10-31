@@ -6,7 +6,7 @@
     <div class="div flx-col scr">
         <a class="nav-item active" onclick="index()">Home</a>
         <a class="nav-item" onclick="toggleById('components');">Components</a>
-        <div id="components" class="flx-col mrg padl">
+        <div id="components" class="nav-container flx-col mrgl">
             <a class="nav-item" onclick="load('components/button.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Button</a>
             <a class="nav-item" onclick="load('components/container.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Container</a>
             <a class="nav-item" onclick="load('components/dropdown.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Dropdown</a>
@@ -17,7 +17,7 @@
             <a class="nav-item" onclick="load('components/tag.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Tag</a>
         </div>
         <a class="nav-item" onclick="toggleById('classes');">Classes</a>
-        <div id="classes" class="flx-col mrg padl-l">
+        <div id="classes" class="nav-container flx-col mrgl">
             <a class="nav-item" onclick="load('classes/all.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">All</a>
             <a class="nav-item" onclick="load('classes/border.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Border</a>
             <a class="nav-item" onclick="load('classes/box-shadow.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Box Shadow</a>

@@ -128,6 +128,8 @@ nav a {
 
 .active {
     border-left: 4px solid var(--soft-blue);
+    background: linear-gradient(90deg, rgba(67, 67, 221, .15) 50%, rgba(255, 255, 255, 0.01) 100%);
+    color: var(--black);
     opacity: 100% !important;
 }
 
@@ -153,4 +155,9 @@ li:hover {
 li:hover span {
     color: var(--white) !important;
     transition: .3s ease;
+}
+
+.nav-container {
+    border-left: 1px solid var(--soft-blue);
+    margin-left: var(--margin-m);
 }

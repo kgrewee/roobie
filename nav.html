@@ -3,49 +3,45 @@
         <img class="gem" src="images/icons/gem-stone-1.svg">
         <a class="roobie padl"><span>Roo</span>bie</a>
     </div>
-    <div class="div ht flx-col aln-start jst-center scr">
-        <div class="div ht flx-col jst-start">
-            <div class="flx-col aln-start padl">
-                <a class="nav-item active" onclick="index()">Home</a>
-            </div>
-            <h4 class="nav-head mrgl">Components</h4>
-            <div class="flx-col aln-start jst-start mrgv-m padl">
-                <a class="nav-item" onclick="load('components/button.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Button</a>
-                <a class="nav-item" onclick="load('components/container.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Container</a>
-                <a class="nav-item" onclick="load('components/dropdown.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Dropdown</a>
-                <a class="nav-item" onclick="load('components/grid.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Grid</a>
-                <a class="nav-item" onclick="load('components/input.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Input</a>
-                <a class="nav-item" onclick="load('components/list.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">List</a>
-                <a class="nav-item" onclick="load('components/navbar.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Navbar</a>
-                <a class="nav-item" onclick="load('components/tag.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Tag</a>
-            </div>
-            <h4 class="nav-head mrgl">Classes</h4>
-            <div class="flx-col aln-start jst-start mrgv-m padl-l">
-                <a class="nav-item" onclick="load('classes/all.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">All</a>
-                <a class="nav-item" onclick="load('classes/border.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Border</a>
-                <a class="nav-item" onclick="load('classes/box-shadow.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Box Shadow</a>
-                <a class="nav-item" onclick="load('classes/button.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Button</a>
-                <a class="nav-item" onclick="load('classes/colors.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Colors</a>
-                <a class="nav-item" onclick="load('classes/container.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Container</a>
-                <a class="nav-item" onclick="load('classes/cursor.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Cursor</a>
-                <a class="nav-item" onclick="load('classes/display.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Display</a>
-                <a class="nav-item" onclick="load('classes/dropdown.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Dropdown</a>
-                <a class="nav-item" onclick="load('classes/flex.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Flex</a>
-                <a class="nav-item" onclick="load('classes/float.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Float</a>
-                <a class="nav-item" onclick="load('classes/font.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Font</a>
-                <a class="nav-item" onclick="load('classes/height.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Height</a>
-                <a class="nav-item" onclick="load('classes/input.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Input</a>
-                <a class="nav-item" onclick="load('classes/inset.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Inset</a>
-                <a class="nav-item" onclick="load('classes/list.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">List</a>
-                <a class="nav-item" onclick="load('classes/margin.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Margin</a>
-                <a class="nav-item" onclick="load('classes/navbar.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Navbar</a>
-                <a class="nav-item" onclick="load('classes/opacity.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Opacity</a>
-                <a class="nav-item" onclick="load('classes/padding.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Padding</a>
-                <a class="nav-item" onclick="load('classes/position.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Position</a>
-                <a class="nav-item" onclick="load('classes/scroll.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Scroll</a>
-                <a class="nav-item" onclick="load('classes/tag.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Tag</a>
-                <a class="nav-item" onclick="load('classes/text.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Text</a>
-            </div>
+    <div class="div flx-col scr">
+        <a class="nav-item active" onclick="index()">Home</a>
+        <a class="nav-item" onclick="toggleById('components');">Components</a>
+        <div id="components" class="flx-col mrg padl">
+            <a class="nav-item" onclick="load('components/button.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Button</a>
+            <a class="nav-item" onclick="load('components/container.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Container</a>
+            <a class="nav-item" onclick="load('components/dropdown.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Dropdown</a>
+            <a class="nav-item" onclick="load('components/grid.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Grid</a>
+            <a class="nav-item" onclick="load('components/input.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Input</a>
+            <a class="nav-item" onclick="load('components/list.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">List</a>
+            <a class="nav-item" onclick="load('components/navbar.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Navbar</a>
+            <a class="nav-item" onclick="load('components/tag.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Tag</a>
+        </div>
+        <a class="nav-item" onclick="toggleById('classes');">Classes</a>
+        <div id="classes" class="flx-col mrg padl-l">
+            <a class="nav-item" onclick="load('classes/all.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">All</a>
+            <a class="nav-item" onclick="load('classes/border.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Border</a>
+            <a class="nav-item" onclick="load('classes/box-shadow.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Box Shadow</a>
+            <a class="nav-item" onclick="load('classes/button.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Button</a>
+            <a class="nav-item" onclick="load('classes/colors.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Colors</a>
+            <a class="nav-item" onclick="load('classes/container.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Container</a>
+            <a class="nav-item" onclick="load('classes/cursor.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Cursor</a>
+            <a class="nav-item" onclick="load('classes/display.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Display</a>
+            <a class="nav-item" onclick="load('classes/dropdown.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Dropdown</a>
+            <a class="nav-item" onclick="load('classes/flex.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Flex</a>
+            <a class="nav-item" onclick="load('classes/float.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Float</a>
+            <a class="nav-item" onclick="load('classes/font.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Font</a>
+            <a class="nav-item" onclick="load('classes/height.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Height</a>
+            <a class="nav-item" onclick="load('classes/input.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Input</a>
+            <a class="nav-item" onclick="load('classes/inset.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Inset</a>
+            <a class="nav-item" onclick="load('classes/list.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">List</a>
+            <a class="nav-item" onclick="load('classes/margin.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Margin</a>
+            <a class="nav-item" onclick="load('classes/navbar.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Navbar</a>
+            <a class="nav-item" onclick="load('classes/opacity.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Opacity</a>
+            <a class="nav-item" onclick="load('classes/padding.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Padding</a>
+            <a class="nav-item" onclick="load('classes/position.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Position</a>
+            <a class="nav-item" onclick="load('classes/scroll.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Scroll</a>
+            <a class="nav-item" onclick="load('classes/tag.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Tag</a>
+            <a class="nav-item" onclick="load('classes/text.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Text</a>
         </div>
     </div>
 </nav>

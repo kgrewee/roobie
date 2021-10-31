@@ -1,4 +1,17 @@
-$(document).ready(function() {
+/*
+Prints debug messages when true.
+*/
+var debug = true;
+
+/* 
+Load basic content on browser refresh
+*/
+ready(function() {
+    if (debug) {
+        console.log("Debug ON");
+    } else {
+        console.log("Debug OFF");
+    }
     index();
 });
 
@@ -10,25 +23,52 @@ function index() {
     load("home.html", "main");
 }
 
-/*
-Loads html from a file
+/* 
+Executes a function when the document is ready
 */
-function load(filename, id) {
-    console.log("Loading " + filename);
-    $('#' + id).load(filename);
+function ready(fn) {
+    if (debug) {
+        console.log("Executing function on document ready");
+    }
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+        setTimeout(fn, 1);
+    } else {
+        document.addEventListener("DOMContentLoaded", fn);
+    }
 }
 
 /*
-Adds the active class to a clicked link
+Load html to id.
 */
-function active(elem) {
-    console.log("Setting active link");
-    // Get all links
-    var links = document.getElementsByTagName("a");
-    // Remove active classes
-    for (i = 0; i < links.length; i++) {
-        links[i].classList.remove('active')
+function load(filename, id) {
+    if (debug) {
+        console.log("Loading " + filename + " into element with id " + id);
     }
-    // Add 'active' class to clicked element
-    elem.classList.add('active');
+    var element = document.getElementById(id);
+    $(element).empty();
+    $(element).load(filename);
+}
+
+/*
+Add class to an element.
+*/
+function addClass(element, className) {
+    if (debug) {
+        console.log("Adding class " + className + " to element " + element);
+    }
+    element.classList.add(className);
+}
+
+/*
+Removes a class from elements with specified tag name.
+*/
+function removeClassByTagName(tagName, className) {
+    if (debug) {
+        console.log("Removing class " + className + " by tag name " + tagName);
+    }
+    var elements = document.getElementsByTagName(tagName);
+
+    for (i = 0; i < elements.length; i++) {
+        elements[i].classList.remove(className);
+    }
 }

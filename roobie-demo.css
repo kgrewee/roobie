@@ -139,3 +139,18 @@ nav a {
     width: 35px;
     height: 35px;
 }
+
+li {
+    box-shadow: 0 0 1px 2px rgb(67, 67, 221, .2) !important;
+}
+
+li:hover {
+    color: var(--white) !important;
+    background-color: var(--soft-blue);
+    transition: .3s ease;
+}
+
+li:hover span {
+    color: var(--white) !important;
+    transition: .3s ease;
+}

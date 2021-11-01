@@ -20,7 +20,7 @@ This repo is a demo that requires a web server for dynamic content.   It can be 
 
     Run `python3 -m http.server` ***Not tested***
 
-## Repo Structure
+## Structure
 
 - `roobie.css` - All of the roobie styles.  Take a look, its well commented.
 - `roobie.js` -  JavaScript helpers for dynamic content.

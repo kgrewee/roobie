@@ -1,6 +1,6 @@
 # Roobie
 
-A collection of CSS classes & themes to help you build web applications.  Make CSS easy with helper methods and pre-built components to kickstart your web project.  Light-weight, fast & easy to use.
+Powerful Web Framework to help you build web applications. Light-weight, fast & easy to use.
 
 ## Setup
 
@@ -10,15 +10,15 @@ This repo is a demo that requires a web server for dynamic content.   It can be 
 
     https://www.python.org/downloads/
 
-2. Start web server
+2. Start web server. Visit http://localhost:8000.
 
     ***Linux***
 
-    Run `./run.sh` to start a python web server on port 8000.  Visit http://localhost:8000.
+    Run `./run.sh`
 
     ***Windows***
 
-    Run `python3 -m http.server` in a terminal.  ***Not tested***
+    Run `python3 -m http.server` ***Not tested***
 
 ## Files
 

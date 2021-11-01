@@ -145,6 +145,7 @@ nav a {
 li {
     box-shadow: 0 0 1px 2px rgb(67, 67, 221, .2) !important;
     color: var(--soft-blue) !important;
+    font-weight: 800;
 }
 
 li:hover {
@@ -167,8 +168,4 @@ li:hover span {
 .nav-item {
     padding: var(--padding-m);
     margin: 0;
-}
-
-.nav-container .nav-item:not(:first-child) {
-    margin-top: var(--margin-m);
 }

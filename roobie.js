@@ -9,11 +9,12 @@ ready(function() {
 });
 
 /* 
-Loads index and navbar
+Loads all content
 */
 function index() {
     load("nav.html", "nav");
     load("home.html", "main");
+    load("footer.html", "footer");
 }
 
 /* 
@@ -138,4 +139,26 @@ function showByTagName(tagName) {
     for (i = 0; i < elements.length; i++) {
         elements[i].style.display = "flex";
     }
+}
+
+/** 
+ * Rotate element by x amount of degrees.  If the previous rotation is positive,
+ * it will reset the rotation to 0.
+ */
+function rotateById(degrees, id) {
+    var element = document.getElementById(id);
+    var transform = element.style.transform;
+    debug('Previous rotation before cut ' + transform);
+
+    var previous = transform.match(/-?[\d\.]+/);
+    debug('Previous rotation after cut ' + previous);
+
+    if (previous > 0) {
+        debug("Rotating " + 0 + " degrees by id " + id);
+        element.style.transform = "rotate(" + 0 + "deg)";
+    } else {
+        debug("Rotating " + degrees + " degrees by id " + id);
+        element.style.transform = "rotate(" + degrees + "deg)";
+    }
+
 }

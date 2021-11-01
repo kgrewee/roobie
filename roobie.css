@@ -40,6 +40,12 @@
     --opacity-l: 60%;
     --opacity-xl: 80%;
     --opacity-xxl: 90%;
+    --icon-s: 10px;
+    --icon-m: 15px;
+    --icon-l: 20px;
+    --icon-xl: 25px;
+    --icon-xxl: 35px;
+    --icon-xxxl: 45px;
     --border-radius-s: 2px;
     --border-radius-m: 4px;
     --border-radius-l: 6px;
@@ -239,10 +245,9 @@ Navbar
 }
 
 .nav-item {
-    padding: var(--padding-s);
-    margin: var(--margin-s);
-    width: auto;
-    opacity: 75%;
+    padding: var(--padding-m);
+    margin: 0;
+    opacity: 80%;
     height: 100%;
     text-decoration: none;
 }
@@ -250,6 +255,48 @@ Navbar
 .nav-item:hover {
     opacity: 100%;
     cursor: pointer;
+}
+
+
+/*
+Icon
+*/
+
+.icon-s {
+    width: var(--icon-s);
+    height: var(--icon-s);
+    font-size: var(--icon-s);
+}
+
+.icon-m,
+.icon {
+    width: var(--icon-m);
+    height: var(--icon-m);
+    font-size: var(--icon-m);
+}
+
+.icon-l {
+    width: var(--icon-l);
+    height: var(--icon-l);
+    font-size: var(--icon-l);
+}
+
+.icon-xl {
+    width: var(--icon-xl);
+    height: var(--icon-xl);
+    font-size: var(--icon-xl);
+}
+
+.icon-xxl {
+    width: var(--icon-xxl);
+    height: var(--icon-xxl);
+    font-size: var(--icon-xxl);
+}
+
+.icon-xxxl {
+    width: var(--icon-xxxl);
+    height: var(--icon-xxxl);
+    font-size: var(--icon-xxxl);
 }
 
 

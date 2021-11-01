@@ -4,7 +4,7 @@
         <a class="roobie padl"><span>Roo</span>bie</a>
     </div>
     <div class="div flx-col scr">
-        <a class="nav-item active" onclick="index()">Home</a>
+        <a class="nav-item active" onclick="load('home.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Home</a>
         <a class="nav-item soft-blue" onclick="toggleById('components');">Components</a>
         <div id="components" class="nav-container flx-col mrgl">
             <a class="nav-item" onclick="load('components/button.html', 'main'); removeClassByTagName('a', 'active');addClass(this,'active');">Button</a>

@@ -239,10 +239,9 @@ Navbar
 }
 
 .nav-item {
-    padding: var(--padding-s);
-    margin: var(--margin-s);
-    width: auto;
-    opacity: 75%;
+    padding: var(--padding-m);
+    margin: 0;
+    opacity: 80%;
     height: 100%;
     text-decoration: none;
 }

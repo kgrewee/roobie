@@ -9,11 +9,12 @@ ready(function() {
 });
 
 /* 
-Loads index and navbar
+Loads all content
 */
 function index() {
     load("nav.html", "nav");
     load("home.html", "main");
+    load("footer.html", "footer");
 }
 
 /* 

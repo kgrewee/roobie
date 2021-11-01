@@ -54,35 +54,35 @@ CSS Classes can generate many different styles, using the same CSS.  Roobie cent
 
 Common abbreviations found in class names. They don't exceed 3 characters to keep class names short and sweet. There's really not that many, and they're easy to figure out.  Once you can remember the abbreviations, it'll make it easier to develop efficiently with Roobie.
 
-- div - Container
-- ht - Height
-- scr - Scroll
-- flx - Flex
-- flt - Float
-- mrg - Margin
-- pad - Padding
-- op - Opacity
-- btn - Button
-- txt - Text
-- wrp - Wrap
-- aln - Align
-- jst - Justify
-- bg - Background
-- inp - Input
-- br - Border Radius
-- bdr - Border
-- in - Inset
-- ord - Order
-- ul - Unordered list
-- ol - Ordered list
 - abs - Absolute
-- rel - Relative
+- aln - Align
+- bdr - Border
+- bg - Background
 - blk - Block
-- inl - Inline
+- br - Border Radius
+- btn - Button
 - cnt - Content
-- drp - Dropdown
-- fnt - Font
 - csr - Cursor
+- div - Container
+- drp - Dropdown
+- flt - Float
+- flx - Flex
+- fnt - Font
+- ht - Height
+- in - Inset
+- inl - Inline
+- inp - Input
+- jst - Justify
+- mrg - Margin
+- ol - Ordered list
+- op - Opacity
+- ord - Order
+- pad - Padding
+- rel - Relative
+- scr - Scroll
+- txt - Text
+- ul - Unordered list
+- wrp - Wrap
 
 ### Sizes
 

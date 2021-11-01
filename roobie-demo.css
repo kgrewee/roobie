@@ -127,10 +127,45 @@ nav a {
 }
 
 .active {
-    border-left: 4px solid var(--soft-blue);
+    border-left: 3px solid var(--soft-blue);
+    background: linear-gradient(90deg, rgba(67, 67, 221, .15) 30%, rgba(255, 255, 255, 0.01) 100%);
+    color: var(--black);
     opacity: 100% !important;
 }
 
 #nav {
     width: 200px;
+}
+
+.gem {
+    width: 35px;
+    height: 35px;
+}
+
+li {
+    box-shadow: 0 0 1px 2px rgb(67, 67, 221, .2) !important;
+    color: var(--soft-blue) !important;
+    font-weight: 800;
+}
+
+li:hover {
+    color: var(--white) !important;
+    background-color: var(--soft-blue);
+    box-shadow: var(--box-shadow-l);
+    transition: .3s ease;
+}
+
+li:hover span {
+    color: var(--white) !important;
+    transition: .3s ease;
+}
+
+.nav-container {
+    border-left: 1px solid var(--soft-blue);
+    margin-left: var(--margin-m);
+}
+
+.nav-item {
+    padding: var(--padding-m);
+    margin: 0;
 }

@@ -1,6 +1,6 @@
 # Roobie
 
-A collection of CSS classes & themes to help you build web applications.  Make CSS easy with helper methods and pre-built components to kickstart your web project.  Light-weight, fast & easy to use.
+Powerful Web Framework to help you build web applications. Light-weight, fast & easy to use.
 
 ## Setup
 
@@ -10,23 +10,24 @@ This repo is a demo that requires a web server for dynamic content.   It can be 
 
     https://www.python.org/downloads/
 
-2. Start web server
+2. Start web server. Visit http://localhost:8000.
 
     ***Linux***
 
-    Run `./run.sh` to start a python web server on port 8000.  Visit http://localhost:8000.
+    Run `./run.sh`
 
     ***Windows***
 
-    Run `python3 -m http.server` in a terminal.  ***Not tested***
+    Run `python3 -m http.server` ***Not tested***
 
-## Files
+## Structure
 
 - `roobie.css` - All of the roobie styles.  Take a look, its well commented.
 - `roobie.js` -  JavaScript helpers for dynamic content.
 - `roobie-demo.css` Styles used alongside Roobie.  Expect your main stylesheet to look similar.
 - `components/` - Pre-built components using Roobie CSS.  Use these as building blocks. 
 - `classes/` - Documentation for our CSS classes.
+- `icons/` - Open-Source icons found on the internet.
 
 ## Components
 
@@ -39,19 +40,19 @@ This repo is a demo that requires a web server for dynamic content.   It can be 
 - Navbar
 - Tag
 
-## Basics
+## JavaScript Basics
 
-Roobie is made up of CSS classes & themes.  Change variables in `roobie.css` to your liking.  The CSS Classes depend directly on the theme variables.  Change those, you change the whole theme.  You can build your whole web-app with Roobie and not write any CSS except for custom colors.  This repo is a website built entirely with Roobie CSS.
+Roobie contains generic JavaScript functions to assist you with dynamic content.  Manipulate DOM without writing any JS, add & remove CSS classes, and much more.
 
-The power of Roobie is in the CSS classes.  These can generate many different styles, using the same CSS.  Roobie centralizes styles to reduce spammed CSS and to make your UI easier to maintain.  Use Roobie for your core styles, and focus on content and colors instead. Checkout the `components/` folder for pre-built components using our CSS classes.
+## CSS Basics
 
-## Classes
+Roobie in itself is a theme and a basic set of CSS classes.  Change variables in `roobie.css` to your liking, the CSS Classes depend directly on the theme variables.  Change those, you change the whole theme.  You can build your whole Web-App with Roobie and not write any CSS.  This repo is a website built entirely with Roobie CSS.
 
-Roobie is all about CSS Classes.  Class names will resemble their function.
+CSS Classes can generate many different styles, using the same CSS.  Roobie centralizes styles to reduce CSS and make your code easier to maintain.  Use Roobie for your core styles, focus on content and colors instead. Checkout the `components/` folder for pre-built components using our CSS classes.
 
 ### Abbreviations
 
-Common abbreviations found in class names. They don't exceed 3 characters to keep class names short and sweet. There's really not that many, and they are easy to figure out.  Once you can remember the abbreviations, it'll make it easier to develop efficiently with Roobie.
+Common abbreviations found in class names. They don't exceed 3 characters to keep class names short and sweet. There's really not that many, and they're easy to figure out.  Once you can remember the abbreviations, it'll make it easier to develop efficiently with Roobie.
 
 - div - Container
 - ht - Height
@@ -85,7 +86,7 @@ Common abbreviations found in class names. They don't exceed 3 characters to kee
 
 ### Sizes
 
-Classes are suffixed with a size, if applicable. We use a basic and very relatable convention, much like the one you'd see at a local store.  Small, Medium, Large & Extra Large are offered for most classes.  Extreme value are offered for some classes, such as txt, like Extra Extra Small(xxs) & Extra Extra Large(xxl).  Values for sizes are configurable at the top of `roobie.css`. 
+Classes are suffixed with a size, if applicable. We use a basic and very relatable convention, much like the one you'd see at a local store.  Small, Medium, Large & Extra Large sizes are offered for most classes.  Extreme sizes are offered for some classes, such as txt, like Extra Extra Small(xxs) & Extra Extra Large(xxl).  Size values are configurable at the top of `roobie.css`. 
 
 - s - Small
 - m - Medium

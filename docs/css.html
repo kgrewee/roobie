@@ -1,13 +1,10 @@
 <div class="ht div">
-    <div class="div bg-soft-blue padv-xl flx-col aln-center box">
-        <div class="div-xl">
-            <h1>CSS Docs</h1>
-        </div>
+    <div class="div bg-soft-blue flx-col padv-m aln-start box">
+        <h1 class="mrgl">CSS Docs</h1>
     </div>
     <div class="div ht flx-row">
-        <div class="nav-col flx-col ht box scr">
-            <a class="nav-item docs-a active" onclick="loadById('css-docs', 'docs/css/all.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">All</a>
-            <a class="nav-item docs-a" onclick="loadById('css-docs','docs/css/border.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Border</a>
+        <div class="nav-col flx-col box scr">
+            <a class="nav-item docs-a active" onclick="loadById('css-docs','docs/css/border.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Border</a>
             <a class="nav-item docs-a" onclick="loadById('css-docs','docs/css/box-shadow.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Box Shadow</a>
             <a class="nav-item docs-a" onclick="loadById('css-docs','docs/css/button.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Button</a>
             <a class="nav-item docs-a" onclick="loadById('css-docs','docs/css/colors.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Colors</a>
@@ -36,6 +33,6 @@
 </div>
 <script>
     ready(function() {
-        loadById('css-docs', 'docs/css/all.html');
+        loadById('css-docs', 'docs/css/border.html');
     });
 </script>

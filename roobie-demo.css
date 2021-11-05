@@ -1,3 +1,7 @@
+/*
+Roobie logo
+*/
+
 .roobie {
     color: var(--green);
     font-weight: bolder;
@@ -12,6 +16,11 @@
 .title span {
     color: var(--white);
 }
+
+
+/*
+Nav headings
+*/
 
 .nav-head {
     color: var(--soft-blue);
@@ -47,6 +56,11 @@ body {
     overflow: hidden;
     font-family: var(--font-family);
 }
+
+
+/*
+HTML element that doesn't render HTML inside.  Used for code demos.
+*/
 
 xmp {
     color: var(--black);
@@ -84,6 +98,11 @@ h4 {
     margin: var(--margin-s) 0;
 }
 
+
+/*
+Documentation
+*/
+
 .docs h3 {
     width: 200px;
     color: var(--black);
@@ -107,6 +126,11 @@ p {
     margin: 0;
 }
 
+
+/*
+Bold element used to highlight important Roobie terms.
+*/
+
 b {
     border-radius: var(--border-radius-xl);
     background-color: var(--off-white);
@@ -124,6 +148,11 @@ nav {
 
 nav a {
     color: var(--black);
+}
+
+.nav-container {
+    border-left: 2px solid var(--soft-blue);
+    margin-left: var(--margin-m);
 }
 
 .active {
@@ -159,9 +188,4 @@ nav a {
 .adv li:hover span {
     color: var(--white) !important;
     transition: .3s ease;
-}
-
-.nav-container {
-    border-left: 2px solid var(--soft-blue);
-    margin-left: var(--margin-m);
 }

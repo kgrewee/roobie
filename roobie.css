@@ -933,7 +933,7 @@ Padding
     padding: var(--padding-l) 0;
 }
 
-.padv-xl {
+.padv {
     padding: var(--padding-xl) 0;
 }
 
@@ -1122,7 +1122,6 @@ List
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    cursor: pointer;
 }
 
 .ul-cnt li a,

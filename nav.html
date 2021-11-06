@@ -5,7 +5,7 @@
     </div>
     <div class="div flx-col scr">
         <a class="nav-item nav-a active" onclick="loadById('main', 'home.html'); removeClassByClass('nav-a', 'active');addClassByElement(this,'active');">Home</a>
-        <a class="nav-item nav-a soft-blue flx-row jst-start aln-center" onclick="toggleById('components'); rotateById('component-toggle', 270);"><img id="component-toggle" width="15" height="15" src="icons/mfglabs-down-open-black.svg"><span class="mrgl">Components</span></a>
+        <a class="nav-item nav-a soft-blue flx-row jst-start aln-center" onclick="toggleById('components'); rotateById('component-toggle', 270, true);"><img id="component-toggle" width="15" height="15" src="icons/mfglabs-down-open-black.svg"><span class="mrgl">Components</span></a>
         <div id="components" class="nav-container flx-col mrgl">
             <a class="nav-item nav-a" onclick="loadById('main', 'components/button.html'); removeClassByClass('nav-a', 'active');addClassByElement(this,'active');">Button</a>
             <a class="nav-item nav-a" onclick="loadById('main', 'components/container.html'); removeClassByClass('nav-a', 'active');addClassByElement(this,'active');">Container</a>
@@ -16,7 +16,7 @@
             <a class="nav-item nav-a" onclick="loadById('main', 'components/navbar.html'); removeClassByClass('nav-a', 'active');addClassByElement(this,'active');">Navbar</a>
             <a class="nav-item nav-a" onclick="loadById('main', 'components/tag.html'); removeClassByClass('nav-a', 'active');addClassByElement(this,'active');">Tag</a>
         </div>
-        <a class="nav-item nav-a soft-blue flx-row jst-start aln-center" onclick="toggleById('docs'); rotateById('docs-toggle', 270);"><img id="docs-toggle" width="15" height="15" src="icons/mfglabs-down-open-black.svg"><span class="mrgl">Docs</span></a>
+        <a class="nav-item nav-a soft-blue flx-row jst-start aln-center" onclick="toggleById('docs'); rotateById('docs-toggle', 270, true);"><img id="docs-toggle" width="15" height="15" src="icons/mfglabs-down-open-black.svg"><span class="mrgl">Docs</span></a>
         <div id="docs" class="nav-container flx-col mrgl">
             <a class="nav-item nav-a" onclick="loadById('main', 'docs/css.html'); removeClassByClass('nav-a', 'active');addClassByElement(this,'active');">CSS</a>
             <!--<a class="nav-item nav-a" onclick="loadById('main', 'docs/js.html'); removeClassByClass('nav-a', 'active');addClassByElement(this,'active');">JavaScript</a>-->

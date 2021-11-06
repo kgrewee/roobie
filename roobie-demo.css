@@ -170,22 +170,8 @@ nav a {
     box-shadow: 0 0 1px 2px rgb(67, 67, 221, .2) !important;
     color: var(--soft-blue) !important;
     font-weight: 800;
-    height: 75px;
-    margin-bottom: var(--margin-m);
+    margin: var(--margin-l) 0;
+    padding: var(--padding-l);
     border-radius: var(--border-radius-m);
-}
-
-.adv li:hover {
-    color: var(--white) !important;
-    background-color: var(--soft-blue);
-    box-shadow: var(--box-shadow-l);
-    height: 100px;
-    font-weight: 900;
-    border-radius: var(--border-radius-xxxl);
-    transition: .5s ease;
-}
-
-.adv li:hover span {
-    color: var(--white) !important;
-    transition: .3s ease;
+    justify-content: center;
 }

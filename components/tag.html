@@ -2,8 +2,13 @@
     .category .tag_ {
         background-color: var(--white);
     }
+    
+    .cat-active {
+        color: var(--white);
+        background-color: var(--soft-blue);
+    }
 </style>
-<div class="div bg-soft-blue padv flx-col aln-center box">
+<div class="div cat-active padv flx-col aln-center box">
     <div class="div-xl">
         <h1>Tag</h1>
         <p>Short blocks of content.</p>
@@ -40,7 +45,7 @@
                 <div class="flx-row">
                     <div class="tag">25 min</div>
                     <div class="tag">Favorite</div>
-                    <div class="tag_ bg-soft-blue white">New!</div>
+                    <div class="tag_ cat-active white">New!</div>
                 </div>
                 <div class="grey pad-s">
                     Cookies that will knock your socks off.
@@ -94,27 +99,27 @@
                 <div class="div mrgh">
                     <h4>Cheese</h4>
                     <div class="flx-row wrp">
-                        <div class="tag_">Light</div>
-                        <div class="tag_">Normal</div>
-                        <div class="tag_ bg-soft-blue white">Extra</div>
-                        <div class="tag_">No Cheese</div>
+                        <div class="tag_ cheese" onclick="removeClassByClass('cheese', 'cat-active'); addClassByElement(this, 'cat-active');">Light</div>
+                        <div class="tag_ cheese" onclick="removeClassByClass('cheese', 'cat-active'); addClassByElement(this, 'cat-active');">Normal</div>
+                        <div class="tag_ cheese cat-active" onclick="removeClassByClass('cheese', 'cat-active'); addClassByElement(this, 'cat-active');">Extra</div>
+                        <div class="tag_ cheese" onclick="removeClassByClass('cheese', 'cat-active'); addClassByElement(this, 'cat-active');">No Cheese</div>
                     </div>
                 </div>
                 <div class="div mrgh">
                     <h4>Meat</h4>
                     <div class="flx-row wrp">
-                        <div class="tag_ bg-soft-blue white">Chicken</div>
-                        <div class="tag_">Beef</div>
-                        <div class="tag_">Pork</div>
-                        <div class="tag_">None</div>
+                        <div class="tag_ cat-active meat" onclick="removeClassByClass('meat', 'cat-active'); addClassByElement(this, 'cat-active');">Chicken</div>
+                        <div class="tag_ meat" onclick="removeClassByClass('meat', 'cat-active'); addClassByElement(this, 'cat-active');">Beef</div>
+                        <div class="tag_ meat" onclick="removeClassByClass('meat', 'cat-active'); addClassByElement(this, 'cat-active');">Pork</div>
+                        <div class="tag_ meat" onclick="removeClassByClass('meat', 'cat-active'); addClassByElement(this, 'cat-active');">None</div>
                     </div>
                 </div>
                 <div class="div mrgh">
                     <h4>Vegetables</h4>
                     <div class="flx-row wrp">
-                        <div class="tag_">Broccoli</div>
-                        <div class="tag_">Carrots</div>
-                        <div class="tag_ bg-soft-blue white">None</div>
+                        <div class="tag_ veggies" onclick="removeClassByClass('veggies', 'cat-active'); addClassByElement(this, 'cat-active');">Broccoli</div>
+                        <div class="tag_ veggies" onclick="removeClassByClass('veggies', 'cat-active'); addClassByElement(this, 'cat-active');">Carrots</div>
+                        <div class="tag_ cat-active veggies" onclick="removeClassByClass('veggies', 'cat-active'); addClassByElement(this, 'cat-active');">None</div>
                     </div>
                 </div>
                 <div class="flx-row jst-end ">

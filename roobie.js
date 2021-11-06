@@ -4,6 +4,32 @@
 var appName = "Roobie";
 var debugMode = true;
 
+ready(function() {
+    const mediaS = window.matchMedia('(min-width: 567px)');
+    const mediaM = window.matchMedia('(max-width: 768px)');
+    const mediaL = window.matchMedia('(min-width: 850px)');
+    const mediaXL = window.matchMedia('(min-width: 1000px)');
+    //mediaS.addEventListener("change", mediaChange);
+    mediaM.addEventListener("change", mediaChange);
+    //mediaL.addEventListener("change", mediaChange);
+    //mediaXL.addEventListener("change", mediaChange);
+})
+
+/**
+ * Handles media query change event.
+ * @param {Event} e Change event
+ */
+function mediaChange(e) {
+    if (e.matches) {
+        console.log('Media Query [Event] ' + e);
+        var responsiveMenus = getClass('rsp-menu');
+        for (i = 0; i < responsiveMenus.length; i++) {
+            previousHtml = responsiveMenus[i].innerHTML;
+            responsiveMenus[i].innerHTML = '<div class="drp"> <button class="drp-btn btn"> Toggle </button> <div class = "drp-cnt pad br z">' + previousHtml + '</div> </div>';
+        }
+    }
+}
+
 /**
  * Get HTML element with id.
  * 
@@ -170,17 +196,16 @@ function toggleByTag(tagName) {
  * 
  * @param {string} id Id to select
  * @param {number} degrees Number of degress to rotate
- * @param {boolean} reset Whether to reset the rotation if current rotation > 0.  Useful for toggles.
+ * @param {boolean} reset Reset the rotation if current rotation > 0.  Useful for toggles.
  */
 function rotateById(id, degrees, reset) {
     var element = getId(id);
     var transform = element.style.transform;
     debug('Before cut ' + transform);
+    var previousDegrees = transform.match(/-?[\d\.]+/);
+    debug('After cut ' + previousDegrees);
 
-    var previous = transform.match(/-?[\d\.]+/);
-    debug('After cut ' + previous);
-
-    if (previous > 0 && reset) {
+    if (previousDegrees > 0 && reset) {
         debug("Reset rotation [Id] id " + id);
         element.style.transform = "rotate(" + 0 + "deg)";
     } else {

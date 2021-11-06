@@ -1,31 +1,90 @@
 /**
  * Global variables.
  */
-var appName = "Roobie";
-var debugMode = true;
+const appName = "Roobie";
+const debugMode = true;
+
+// Media Queries
+const MEDIA_EXPAND_S = window.matchMedia('(max-width: 600px)');
+const MEDIA_COLLAPSE_S = window.matchMedia('(min-width: 600px)');
+const MEDIA_EXPAND_M = window.matchMedia('(max-width: 1000px)');
+const MEDIA_COLLAPSE_M = window.matchMedia('(min-width: 1000px)');
+const MEDIA_COLLAPSE_L = window.matchMedia('(max-width: 1200px)');
+const MEDIA_EXPAND_L = window.matchMedia('(min-width: 1200px)');
+const MEDIA_COLLAPSE_XL = window.matchMedia('(max-width: 1400px)');
+const MEDIA_EXPAND_XL = window.matchMedia('(min-width: 1400px)');
 
 ready(function() {
-    const mediaS = window.matchMedia('(min-width: 567px)');
-    const mediaM = window.matchMedia('(max-width: 768px)');
-    const mediaL = window.matchMedia('(min-width: 850px)');
-    const mediaXL = window.matchMedia('(min-width: 1000px)');
-    //mediaS.addEventListener("change", mediaChange);
-    mediaM.addEventListener("change", mediaChange);
-    //mediaL.addEventListener("change", mediaChange);
-    //mediaXL.addEventListener("change", mediaChange);
+    MEDIA_EXPAND_S.addEventListener("change", collapseMenu);
+    MEDIA_COLLAPSE_S.addEventListener("change", expandMenu);
+    MEDIA_EXPAND_M.addEventListener("change", collapseMenu);
+    MEDIA_COLLAPSE_M.addEventListener("change", expandMenu);
+    MEDIA_COLLAPSE_L.addEventListener("change", collapseMenu);
+    MEDIA_EXPAND_L.addEventListener("change", expandMenu);
+    MEDIA_COLLAPSE_XL.addEventListener("change", collapseMenu);
+    MEDIA_EXPAND_XL.addEventListener("change", expandMenu);
+    MEDIA_EXPAND_S.menuClass = 'rsp-menu-s';
+    MEDIA_COLLAPSE_S.menuClass = 'rsp-menu-s';
+    MEDIA_EXPAND_M.menuClass = 'rsp-menu';
+    MEDIA_COLLAPSE_M.menuClass = 'rsp-menu';
+    MEDIA_EXPAND_L.menuClass = 'rsp-menu-l';
+    MEDIA_COLLAPSE_L.menuClass = 'rsp-menu-l';
+    MEDIA_EXPAND_XL.menuClass = 'rsp-menu-xl';
+    MEDIA_COLLAPSE_XL.menuClass = 'rsp-menu-xl';
+    checkMedia();
 })
 
 /**
- * Handles media query change event.
- * @param {Event} e Change event
+ * Check all media queries.
  */
-function mediaChange(e) {
-    if (e.matches) {
-        console.log('Media Query [Event] ' + e);
-        var responsiveMenus = getClass('rsp-menu');
-        for (i = 0; i < responsiveMenus.length; i++) {
-            previousHtml = responsiveMenus[i].innerHTML;
-            responsiveMenus[i].innerHTML = '<div class="drp"> <button class="drp-btn btn"> Toggle </button> <div class = "drp-cnt pad br z">' + previousHtml + '</div> </div>';
+function checkMedia() {
+    debug("Checking media queries");
+    collapseMenu(MEDIA_EXPAND_S);
+    expandMenu(MEDIA_COLLAPSE_S);
+    collapseMenu(MEDIA_EXPAND_M);
+    expandMenu(MEDIA_COLLAPSE_M);
+    collapseMenu(MEDIA_EXPAND_M);
+    expandMenu(MEDIA_COLLAPSE_M);
+    collapseMenu(MEDIA_COLLAPSE_L);
+    expandMenu(MEDIA_EXPAND_L);
+    collapseMenu(MEDIA_COLLAPSE_XL);
+    expandMenu(MEDIA_EXPAND_XL);
+}
+
+/**
+ * Collapse responsive menus.
+ * 
+ * @param {Event} event Change event
+ */
+function collapseMenu(event) {
+    debug('Collapse Menu Event');
+    if (event.matches) {
+        debug('Collapse Menu [Class] ' + event.currentTarget.menuClass);
+        var menus = getClass(event.currentTarget.menuClass);
+        for (i = 0; i < menus.length; i++) {
+            items = menus[i].innerHTML;
+            if (!$(menus[i]).find(".rsp-cnt").hasClass("rsp-cnt")) {
+                menus[i].innerHTML = '<div class="drp"> <button class="drp-btn"> <img width="25" height="25" src="icons/fontawesome-menu-black.svg"> </button> <div class = "drp-cnt pad br rsp-cnt">' + items + '</div> </div>';
+            }
+        }
+    }
+}
+
+/**
+ * Expand responsive menus.
+ * 
+ * @param {Event} event Change event
+ */
+function expandMenu(event) {
+    debug('Expand Menu Event');
+    if (event.matches) {
+        debug('Expand Menu [Class] ' + event.currentTarget.menuClass);
+        var menus = getClass(event.currentTarget.menuClass);
+        for (i = 0; i < menus.length; i++) {
+            previousHtml = menus[i].innerHTML;
+            if ($(menus[i]).find(".rsp-cnt").hasClass("rsp-cnt")) {
+                menus[i].innerHTML = $(menus[i]).find(".rsp-cnt").html();
+            }
         }
     }
 }

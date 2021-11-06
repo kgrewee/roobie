@@ -218,7 +218,7 @@ Z Index
 
 .z,
 .z-m {
-    z-index: 100;
+    z-index: 3;
 }
 
 .z-l {
@@ -235,7 +235,6 @@ Navbar
 */
 
 .nav-top {
-    z-index: 1;
     top: 0;
     left: 0;
     right: 0;
@@ -243,13 +242,11 @@ Navbar
 }
 
 .nav-row {
-    z-index: 1;
     width: 100%;
     height: auto;
 }
 
 .nav-col {
-    z-index: 1;
     height: 100%;
     width: auto;
 }

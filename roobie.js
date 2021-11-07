@@ -1,8 +1,85 @@
 /**
  * Global variables.
  */
-var appName = "Roobie";
-var debugMode = true;
+const appName = "Roobie";
+const debugMode = true;
+
+// Media Queries
+const MEDIA_EXPAND_S = window.matchMedia('(min-width: 600px)');
+const MEDIA_COLLAPSE_S = window.matchMedia('(max-width: 600px)');
+const MEDIA_EXPAND_M = window.matchMedia('(min-width: 1000px)');
+const MEDIA_COLLAPSE_M = window.matchMedia('(max-width: 1000px)');
+const MEDIA_EXPAND_L = window.matchMedia('(min-width: 1200px)');
+const MEDIA_COLLAPSE_L = window.matchMedia('(max-width: 1200px)');
+const MEDIA_EXPAND_XL = window.matchMedia('(min-width: 1400px)');
+const MEDIA_COLLAPSE_XL = window.matchMedia('(max-width: 1400px)');
+
+ready(function() {
+    MEDIA_EXPAND_S.addEventListener("change", (event) => expandMenu(event, 'rsp-menu-s'));
+    MEDIA_COLLAPSE_S.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-s'));
+    MEDIA_EXPAND_M.addEventListener("change", (event) => expandMenu(event, 'rsp-menu'));
+    MEDIA_COLLAPSE_M.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu'));
+    MEDIA_EXPAND_M.addEventListener("change", (event) => expandMenu(event, 'rsp-menu-m'));
+    MEDIA_COLLAPSE_M.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-m'));
+    MEDIA_EXPAND_L.addEventListener("change", (event) => expandMenu(event, 'rsp-menu-l'));
+    MEDIA_COLLAPSE_L.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-l'));
+    MEDIA_EXPAND_XL.addEventListener("change", (event) => expandMenu(event, 'rsp-menu-xl'));
+    MEDIA_COLLAPSE_XL.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-xl'));
+    checkMedia();
+})
+
+/**
+ * Check all media queries.
+ */
+function checkMedia() {
+    debug("Checking media queries");
+    collapseMenu(MEDIA_COLLAPSE_S, 'rsp-menu-s');
+    expandMenu(MEDIA_EXPAND_S, 'rsp-menu-s');
+    collapseMenu(MEDIA_COLLAPSE_M, 'rsp-menu');
+    expandMenu(MEDIA_EXPAND_M, 'rsp-menu');
+    collapseMenu(MEDIA_COLLAPSE_M, 'rsp-menu-m');
+    expandMenu(MEDIA_EXPAND_M, 'rsp-menu-m');
+    collapseMenu(MEDIA_COLLAPSE_L, 'rsp-menu-l');
+    expandMenu(MEDIA_EXPAND_L, 'rsp-menu-l');
+    collapseMenu(MEDIA_COLLAPSE_XL, 'rsp-menu-xl');
+    expandMenu(MEDIA_EXPAND_XL, 'rsp-menu-xl');
+}
+
+/**
+ * Collapse responsive menus.
+ * 
+ * @param {Event} event Change event
+ */
+function collapseMenu(event, className) {
+    if (event.matches) {
+        debug('Collapse Menu [Class] ' + className);
+        var menus = getClass(className);
+        for (i = 0; i < menus.length; i++) {
+            items = menus[i].innerHTML;
+            if (!$(menus[i]).find(".rsp-cnt").hasClass("rsp-cnt")) {
+                menus[i].innerHTML = '<div class="drp"> <button class="drp-btn"> <img width="25" height="25" src="icons/fontawesome-menu-black.svg"> </button> <div class = "drp-cnt pad br rsp-cnt">' + items + '</div> </div>';
+            }
+        }
+    }
+}
+
+/**
+ * Expand responsive menus.
+ * 
+ * @param {Event} event Change event
+ */
+function expandMenu(event, className) {
+    if (event.matches) {
+        debug('Expand Menu [Class] ' + className);
+        var menus = getClass(className);
+        for (i = 0; i < menus.length; i++) {
+            previousHtml = menus[i].innerHTML;
+            if ($(menus[i]).find(".rsp-cnt").hasClass("rsp-cnt")) {
+                menus[i].innerHTML = $(menus[i]).find(".rsp-cnt").html();
+            }
+        }
+    }
+}
 
 /**
  * Get HTML element with id.
@@ -52,7 +129,7 @@ function debug(message) {
  * @param {*} fn Function to execute
  */
 function ready(fn) {
-    debug("Execute document ready");
+    debug("Document ready");
     if (document.readyState === "complete" || document.readyState === "interactive") {
         setTimeout(fn, 1);
     } else {
@@ -170,17 +247,16 @@ function toggleByTag(tagName) {
  * 
  * @param {string} id Id to select
  * @param {number} degrees Number of degress to rotate
- * @param {boolean} reset Whether to reset the rotation if current rotation > 0.  Useful for toggles.
+ * @param {boolean} reset Reset the rotation if current rotation > 0.  Useful for toggles.
  */
 function rotateById(id, degrees, reset) {
     var element = getId(id);
     var transform = element.style.transform;
     debug('Before cut ' + transform);
+    var previousDegrees = transform.match(/-?[\d\.]+/);
+    debug('After cut ' + previousDegrees);
 
-    var previous = transform.match(/-?[\d\.]+/);
-    debug('After cut ' + previous);
-
-    if (previous > 0 && reset) {
+    if (previousDegrees > 0 && reset) {
         debug("Reset rotation [Id] id " + id);
         element.style.transform = "rotate(" + 0 + "deg)";
     } else {

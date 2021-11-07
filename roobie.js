@@ -5,32 +5,26 @@ const appName = "Roobie";
 const debugMode = true;
 
 // Media Queries
-const MEDIA_EXPAND_S = window.matchMedia('(max-width: 600px)');
-const MEDIA_COLLAPSE_S = window.matchMedia('(min-width: 600px)');
-const MEDIA_EXPAND_M = window.matchMedia('(max-width: 1000px)');
-const MEDIA_COLLAPSE_M = window.matchMedia('(min-width: 1000px)');
-const MEDIA_COLLAPSE_L = window.matchMedia('(max-width: 1200px)');
+const MEDIA_EXPAND_S = window.matchMedia('(min-width: 600px)');
+const MEDIA_COLLAPSE_S = window.matchMedia('(max-width: 600px)');
+const MEDIA_EXPAND_M = window.matchMedia('(min-width: 1000px)');
+const MEDIA_COLLAPSE_M = window.matchMedia('(max-width: 1000px)');
 const MEDIA_EXPAND_L = window.matchMedia('(min-width: 1200px)');
-const MEDIA_COLLAPSE_XL = window.matchMedia('(max-width: 1400px)');
+const MEDIA_COLLAPSE_L = window.matchMedia('(max-width: 1200px)');
 const MEDIA_EXPAND_XL = window.matchMedia('(min-width: 1400px)');
+const MEDIA_COLLAPSE_XL = window.matchMedia('(max-width: 1400px)');
 
 ready(function() {
-    MEDIA_EXPAND_S.addEventListener("change", collapseMenu);
-    MEDIA_COLLAPSE_S.addEventListener("change", expandMenu);
-    MEDIA_EXPAND_M.addEventListener("change", collapseMenu);
-    MEDIA_COLLAPSE_M.addEventListener("change", expandMenu);
-    MEDIA_COLLAPSE_L.addEventListener("change", collapseMenu);
-    MEDIA_EXPAND_L.addEventListener("change", expandMenu);
-    MEDIA_COLLAPSE_XL.addEventListener("change", collapseMenu);
-    MEDIA_EXPAND_XL.addEventListener("change", expandMenu);
-    MEDIA_EXPAND_S.menuClass = 'rsp-menu-s';
-    MEDIA_COLLAPSE_S.menuClass = 'rsp-menu-s';
-    MEDIA_EXPAND_M.menuClass = 'rsp-menu';
-    MEDIA_COLLAPSE_M.menuClass = 'rsp-menu';
-    MEDIA_EXPAND_L.menuClass = 'rsp-menu-l';
-    MEDIA_COLLAPSE_L.menuClass = 'rsp-menu-l';
-    MEDIA_EXPAND_XL.menuClass = 'rsp-menu-xl';
-    MEDIA_COLLAPSE_XL.menuClass = 'rsp-menu-xl';
+    MEDIA_EXPAND_S.addEventListener("change", (event) => expandMenu(event, 'rsp-menu-s'));
+    MEDIA_COLLAPSE_S.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-s'));
+    MEDIA_EXPAND_M.addEventListener("change", (event) => expandMenu(event, 'rsp-menu'));
+    MEDIA_COLLAPSE_M.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu'));
+    MEDIA_EXPAND_M.addEventListener("change", (event) => expandMenu(event, 'rsp-menu-m'));
+    MEDIA_COLLAPSE_M.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-m'));
+    MEDIA_EXPAND_L.addEventListener("change", (event) => expandMenu(event, 'rsp-menu-l'));
+    MEDIA_COLLAPSE_L.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-l'));
+    MEDIA_EXPAND_XL.addEventListener("change", (event) => expandMenu(event, 'rsp-menu-xl'));
+    MEDIA_COLLAPSE_XL.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-xl'));
     checkMedia();
 })
 
@@ -39,16 +33,16 @@ ready(function() {
  */
 function checkMedia() {
     debug("Checking media queries");
-    collapseMenu(MEDIA_EXPAND_S);
-    expandMenu(MEDIA_COLLAPSE_S);
-    collapseMenu(MEDIA_EXPAND_M);
-    expandMenu(MEDIA_COLLAPSE_M);
-    collapseMenu(MEDIA_EXPAND_M);
-    expandMenu(MEDIA_COLLAPSE_M);
-    collapseMenu(MEDIA_COLLAPSE_L);
-    expandMenu(MEDIA_EXPAND_L);
-    collapseMenu(MEDIA_COLLAPSE_XL);
-    expandMenu(MEDIA_EXPAND_XL);
+    collapseMenu(MEDIA_COLLAPSE_S, 'rsp-menu-s');
+    expandMenu(MEDIA_EXPAND_S, 'rsp-menu-s');
+    collapseMenu(MEDIA_COLLAPSE_M, 'rsp-menu');
+    expandMenu(MEDIA_EXPAND_M, 'rsp-menu');
+    collapseMenu(MEDIA_COLLAPSE_M, 'rsp-menu-m');
+    expandMenu(MEDIA_EXPAND_M, 'rsp-menu-m');
+    collapseMenu(MEDIA_COLLAPSE_L, 'rsp-menu-l');
+    expandMenu(MEDIA_EXPAND_L, 'rsp-menu-l');
+    collapseMenu(MEDIA_COLLAPSE_XL, 'rsp-menu-xl');
+    expandMenu(MEDIA_EXPAND_XL, 'rsp-menu-xl');
 }
 
 /**
@@ -56,11 +50,10 @@ function checkMedia() {
  * 
  * @param {Event} event Change event
  */
-function collapseMenu(event) {
-    debug('Collapse Menu Event');
+function collapseMenu(event, className) {
     if (event.matches) {
-        debug('Collapse Menu [Class] ' + event.currentTarget.menuClass);
-        var menus = getClass(event.currentTarget.menuClass);
+        debug('Collapse Menu [Class] ' + className);
+        var menus = getClass(className);
         for (i = 0; i < menus.length; i++) {
             items = menus[i].innerHTML;
             if (!$(menus[i]).find(".rsp-cnt").hasClass("rsp-cnt")) {
@@ -75,11 +68,10 @@ function collapseMenu(event) {
  * 
  * @param {Event} event Change event
  */
-function expandMenu(event) {
-    debug('Expand Menu Event');
+function expandMenu(event, className) {
     if (event.matches) {
-        debug('Expand Menu [Class] ' + event.currentTarget.menuClass);
-        var menus = getClass(event.currentTarget.menuClass);
+        debug('Expand Menu [Class] ' + className);
+        var menus = getClass(className);
         for (i = 0; i < menus.length; i++) {
             previousHtml = menus[i].innerHTML;
             if ($(menus[i]).find(".rsp-cnt").hasClass("rsp-cnt")) {
@@ -137,7 +129,7 @@ function debug(message) {
  * @param {*} fn Function to execute
  */
 function ready(fn) {
-    debug("Execute document ready");
+    debug("Document ready");
     if (document.readyState === "complete" || document.readyState === "interactive") {
         setTimeout(fn, 1);
     } else {

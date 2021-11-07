@@ -1052,6 +1052,7 @@ Dropdown
 
 .drp {
     font-size: var(--font-size-m);
+    position: relative;
 }
 
 .drp:focus .drp-cnt,

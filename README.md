@@ -22,12 +22,16 @@ This repo is a demo that requires a web server for dynamic content.   It can be 
 
 ## Structure
 
-- `roobie.css` - All of the roobie styles.  Take a look, its well commented.
+Roobie Files
+- `roobie.css` - Themes & CSS classes.
 - `roobie.js` -  JavaScript helpers for dynamic content.
+
+Demo Files
 - `roobie-demo.css` Styles used alongside Roobie.  Expect your main stylesheet to look similar.
+- `roobie-demo.js` JavaScript to load initial content.
 - `components/` - Pre-built components using Roobie CSS.  Use these as building blocks. 
-- `classes/` - Documentation for our CSS classes.
-- `icons/` - Open-Source icons found on the internet.
+- `docs/` - Documentation for CSS classes.
+- `icons/` - Open-source icons found on the internet.
 
 ## Components
 
@@ -40,15 +44,13 @@ This repo is a demo that requires a web server for dynamic content.   It can be 
 - Navbar
 - Tag
 
-## JavaScript Basics
+## Cascading Style Sheets (CSS)
+
+Roobie contains themes & CSS classes.  Change variables in `roobie.css` to your liking, the CSS Classes depend directly on the theme variables. This repo is a website built entirely with Roobie CSS.  CSS Classes can generate many different styles, using the same CSS.  Roobie centralizes styles to reduce CSS and make your code easier to maintain.  Use Roobie for your core styles, focus on content and colors instead. Checkout the `components/` folder for pre-built components using Roobie.
+
+## JavaScript (JS)
 
 Roobie contains generic JavaScript functions to assist you with dynamic content.  Manipulate DOM without writing any JS, add & remove CSS classes, and much more.
-
-## CSS Basics
-
-Roobie in itself is a theme and a basic set of CSS classes.  Change variables in `roobie.css` to your liking, the CSS Classes depend directly on the theme variables.  Change those, you change the whole theme.  You can build your whole Web-App with Roobie and not write any CSS.  This repo is a website built entirely with Roobie CSS.
-
-CSS Classes can generate many different styles, using the same CSS.  Roobie centralizes styles to reduce CSS and make your code easier to maintain.  Use Roobie for your core styles, focus on content and colors instead. Checkout the `components/` folder for pre-built components using our CSS classes.
 
 ### Abbreviations
 
@@ -79,10 +81,12 @@ Common abbreviations found in class names. They don't exceed 3 characters to kee
 - ord - Order
 - pad - Padding
 - rel - Relative
+- rsp - Responsive
 - scr - Scroll
 - txt - Text
 - ul - Unordered list
 - wrp - Wrap
+- z - Z Index
 
 ### Sizes
 

@@ -6,11 +6,20 @@ Roobie logo
     color: var(--green);
     font-weight: bolder;
     font-size: 1.5em;
-    margin: var(--margin-m) 0;
 }
 
 .roobie span {
     color: var(--black);
+}
+
+.title {
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.title img {
+    margin-right: var(--margin-m);
 }
 
 .title span {
@@ -166,11 +175,16 @@ nav a {
     width: 200px;
 }
 
+
+/*
+Advantages list on home page
+*/
+
 .adv li {
     box-shadow: 0 0 1px 2px rgb(67, 67, 221, .2) !important;
     color: var(--soft-blue) !important;
     font-weight: 800;
-    margin: var(--margin-l) 0;
+    margin: var(--margin-m) 0;
     padding: var(--padding-l);
     border-radius: var(--border-radius-m);
     justify-content: center;

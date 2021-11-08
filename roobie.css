@@ -626,7 +626,8 @@ Button
     margin: var(--margin-s);
     cursor: pointer;
     border: var(--border-s);
-    color: var(--t3);
+    color: var(--btn1);
+    background-color: var(--btn1-bg);
 }
 
 
@@ -1001,7 +1002,6 @@ Dropdown
 .drp {
     font-size: var(--font-size-m);
     position: relative;
-    color: var(--t3);
 }
 
 .drp:focus .drp-cnt,
@@ -1012,6 +1012,8 @@ Dropdown
 .drp-btn {
     font-size: var(--font-size-m);
     border-radius: var(--border-radius-m);
+    color: var(--btn1);
+    background-color: var(--btn1-bg);
 }
 
 .drp-btn:hover {

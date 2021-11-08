@@ -60,12 +60,12 @@
 
 /* Soft Red */
 
-.soft-red {
-    color: var(--soft-red);
+.softred {
+    color: var(--softred);
 }
 
-.bg-soft-red {
-    background-color: var(--soft-red);
+.bg-softred {
+    background-color: var(--softred);
 }
 
 

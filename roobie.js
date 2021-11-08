@@ -15,6 +15,7 @@ const MEDIA_EXPAND_XL = window.matchMedia('(min-width: 1400px)');
 const MEDIA_COLLAPSE_XL = window.matchMedia('(max-width: 1400px)');
 
 ready(function() {
+    addAttributeByTag('body', 'theme', 'light');
     MEDIA_EXPAND_S.addEventListener("change", (event) => expandMenu(event, 'rsp-menu-s'));
     MEDIA_COLLAPSE_S.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-s'));
     MEDIA_EXPAND_M.addEventListener("change", (event) => expandMenu(event, 'rsp-menu'));
@@ -210,19 +211,19 @@ function addAttributeByElement(element, attribute, value) {
 }
 
 /**
- * Remove atrribute by tag name.
+ * Add atrribute by tag name.
  * 
  * @param {string} tagName Tag name to select
- * @param {string} attribute Attribute to remove
+ * @param {string} attribute Attribute to add
+ * @param {string} value Value of attribute
  */
-function removeAttributeByTag(tagName, attribute) {
-    debug("Remove [Attribute] " + attribute + " -> [Tag] " + tagName);
+function addAttributeByTag(tagName, attribute, value) {
+    debug("Add [Attribute] " + attribute + '=' + value + " -> [Tag]" + tagName);
     var elements = getTag(tagName);
     for (i = 0; i < elements.length; i++) {
-        elements[i].removeAttribute(attribute);
+        elements[i].setAttribute(attribute, value);
     }
 }
-
 
 /**
  * Remove CSS class from an element by id.

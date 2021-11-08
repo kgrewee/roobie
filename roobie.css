@@ -1,129 +1,48 @@
 /* Welcome to Roobie CSS.   */
 
- :root {
-    --font-family: "Arial", sans-serif;
-    --padding-s: 5px;
-    --padding-m: 10px;
-    --padding-l: 15px;
-    --padding-xl: 20px;
-    --padding-xxl: 30px;
-    --padding-xxxl: 40px;
-    --padding-xxxxl: 50px;
-    --margin-s: 5px;
-    --margin-m: 10px;
-    --margin-l: 15px;
-    --margin-xl: 20px;
-    --margin-xxl: 30px;
-    --margin-xxxl: 40px;
-    --margin-xxxxl: 50px;
-    --font-size-xxxs: .2em;
-    --font-size-xxs: .4em;
-    --font-size-xs: .6em;
-    --font-size-s: .8em;
-    --font-size-m: 1em;
-    --font-size-l: 1.25em;
-    --font-size-xl: 1.5em;
-    --font-size-xxl: 1.75em;
-    --font-size-xxxl: 2em;
-    --div-s: 20%;
-    --div-m: 40%;
-    --div-l: 60%;
-    --div-xl: 80%;
-    --div-xxl: 90%;
-    --height-s: 20%;
-    --height-m: 40%;
-    --height-l: 60%;
-    --height-xl: 80%;
-    --height-xxl: 90%;
-    --opacity-s: 20%;
-    --opacity-m: 40%;
-    --opacity-l: 60%;
-    --opacity-xl: 80%;
-    --opacity-xxl: 90%;
-    --icon-s: 10px;
-    --icon-m: 15px;
-    --icon-l: 20px;
-    --icon-xl: 25px;
-    --icon-xxl: 35px;
-    --icon-xxxl: 45px;
-    --border-radius-s: 2px;
-    --border-radius-m: 4px;
-    --border-radius-l: 6px;
-    --border-radius-xl: 8px;
-    --border-radius-xxl: 10px;
-    --border-radius-xxxl: 12px;
-    --dropdown-min-width: 160px;
-    --inset-s: inset 0px 0px 1px 1px rgb(17, 17, 17, .1);
-    --inset-m: inset 0px 0px 2px 2px rgb(17, 17, 17, .2);
-    --inset-l: inset 0px 0px 3px 3px rgb(17, 17, 17, .2);
-    --inset-xl: inset 0px 0px 3px 3px rgb(17, 17, 17, .3);
-    --border-s: .5px solid var(--black);
-    --border-m: 1px solid var(--black);
-    --border-l: 2px solid var(--black);
-    --border-xl: 3px solid var(--black);
-    --box-shadow-s: 0 0 1px 1px rgb(17, 17, 17, .1);
-    --box-shadow-m: 0 0 2px 2px rgb(17, 17, 17, .2);
-    --box-shadow-l: 0 0 3px 3px rgb(17, 17, 17, .2);
-    --box-shadow-xl: 0 0 3px 3px rgb(17, 17, 17, .3);
-    --white: rgb(240, 240, 240);
-    --off-white: rgb(228, 228, 228);
-    --smooth-white: rgb(241, 241, 241);
-    --black: rgb(19, 19, 19);
-    --red: rgb(245, 9, 9);
-    --soft-red: rgba(170, 31, 31, 0.9);
-    --orange: rgb(243, 162, 11);
-    --purple: rgb(122, 10, 122);
-    --green: rgb(24, 196, 96);
-    --yellow: rgb(230, 230, 16);
-    --blue: rgb(13, 13, 226);
-    --soft-blue: rgb(67, 67, 221, .9);
-    --grey: rgb(88, 87, 87);
-    --violet: rgb(226, 108, 226);
-    --pink: rgb(219, 163, 173);
-}
-
+@import 'themes/light.css';
 
 /* Black */
 
 .black {
-    color: var(--black);
+    color: var(--t1);
 }
 
 .bg-black {
-    background-color: var(--black);
+    background-color: var(--t1);
 }
 
 
 /* White */
 
 .white {
-    color: var(--white);
+    color: var(--bg1);
 }
 
 .bg-white {
-    background-color: var(--white);
+    background-color: var(--bg1);
 }
 
 
 /* Grey */
 
 .grey {
-    color: var(--grey);
+    color: var(--bg5);
 }
 
 .bg-grey {
-    background-color: var(--grey);
+    background-color: var(--bg5);
 }
 
 
 /* White */
 
 .off-white {
-    color: var(--off-white);
+    color: var(--bg3);
 }
 
 .bg-off-white {
-    background-color: var(--off-white);
+    background-color: var(--bg3);
 }
 
 
@@ -163,11 +82,11 @@
 /* Soft Blue */
 
 .soft-blue {
-    color: var(--soft-blue);
+    color: var(--softblue);
 }
 
 .bg-soft-blue {
-    background-color: var(--soft-blue);
+    background-color: var(--softblue);
 }
 
 
@@ -254,13 +173,13 @@ Navbar
 .nav-title {
     margin: var(--margin-xl);
     font-size: var(--font-size-xl);
-    color: var(--black);
+    color: var(--t1);
 }
 
 .nav-head {
     margin: var(--margin-s);
     font-size: var(--font-size-m);
-    color: var(--black);
+    color: var(--t1);
 }
 
 .nav-item {
@@ -718,7 +637,7 @@ select:focus {
 .inp {
     width: auto;
     padding: var(--padding-l);
-    background-color: var(--off-white);
+    background-color: var(--bg3);
     border-radius: var(--border-radius-xl);
     margin: var(--margin-s);
     font-size: var(--font-size-s);
@@ -742,7 +661,7 @@ Tag
 }
 
 .tag_:hover {
-    border: 1px solid var(--black);
+    border: 1px solid var(--t1);
     box-shadow: var(--box-shadow-l);
     cursor: default;
 }
@@ -1071,7 +990,7 @@ Dropdown
 .drp-cnt {
     display: none;
     position: absolute;
-    background-color: var(--white);
+    background-color: var(--bg1);
     min-width: var(--dropdown-min-width);
     width: auto;
     box-shadow: var(--box-shadow-m);
@@ -1082,24 +1001,24 @@ Dropdown
 .drp-title {
     margin: 0;
     padding: var(--padding-s);
-    color: var(--black);
+    color: var(--t1);
 }
 
 .drp-cnt p {
     margin-top: 0;
     font-size: var(--font-size-s);
-    color: var(--grey);
+    color: var(--t5);
 }
 
 .drp-cnt a {
     padding: var(--padding-m);
-    color: var(--black);
+    color: var(--t1);
     display: block;
     margin: 0;
 }
 
 .drp-cnt a:hover {
-    background-color: var(--off-white);
+    background-color: var(--bg3);
     cursor: pointer;
 }
 
@@ -1121,11 +1040,11 @@ List
 
 .ul li,
 .ul-bdr li {
-    color: var(--grey);
+    color: var(--t5);
     text-decoration: none;
     height: auto;
     padding: var(--padding-m);
-    background-color: var(--smooth-white);
+    background-color: var(--bg2);
     display: flex;
     flex-flow: column nowrap;
     cursor: pointer;
@@ -1133,11 +1052,11 @@ List
 
 .ul-cnt li,
 .ul-cnt-bdr li {
-    color: var(--grey);
+    color: var(--t5);
     text-decoration: none;
     height: auto;
     padding: var(--padding-l);
-    background-color: var(--smooth-white);
+    background-color: var(--bg2);
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -1152,7 +1071,7 @@ List
 .ul li span,
 .ul-bdr li span {
     font-size: var(--font-size-s);
-    color: var(--grey);
+    color: var(--t5);
 }
 
 .ul-bdr li+li,
@@ -1161,13 +1080,13 @@ List
 }
 
 .ul li:hover {
-    color: var(--black);
+    color: var(--t1);
 }
 
 .ul-bdr li:hover,
 .ul-cnt li:hover,
 .ul-cnt-bdr li:hover {
-    color: var(--black);
+    color: var(--t1);
 }
 
 

@@ -9,7 +9,7 @@ Roobie logo
 }
 
 .roobie span {
-    color: var(--black);
+    color: var(--t1);
 }
 
 .title {
@@ -23,7 +23,7 @@ Roobie logo
 }
 
 .title span {
-    color: var(--white);
+    color: var(--bg1);
 }
 
 
@@ -32,7 +32,7 @@ Nav headings
 */
 
 .nav-head {
-    color: var(--soft-blue);
+    color: var(--softblue);
 }
 
 
@@ -56,7 +56,7 @@ Body styles
 */
 
 body {
-    background-color: var(--white);
+    background-color: var(--bg1);
 }
 
 html,
@@ -72,7 +72,7 @@ HTML element that doesn't render HTML inside.  Used for code demos.
 */
 
 xmp {
-    color: var(--black);
+    color: var(--t1);
     font-weight: bold;
     white-space: normal;
 }
@@ -83,17 +83,17 @@ Headings
 */
 
 h1 {
-    color: var(--white);
+    color: var(--bg1);
     margin: var(--margin-m) 0;
     font-size: var(--font-size-xxxl) !important;
 }
 
 h1+p {
-    color: var(--smooth-white);
+    color: var(--bg4);
 }
 
 h2 {
-    color: var(--grey);
+    color: var(--bg5);
     margin: var(--margin-m) 0;
 }
 
@@ -103,7 +103,7 @@ h3 {
 }
 
 h4 {
-    color: var(--soft-blue);
+    color: var(--softblue);
     margin: var(--margin-s) 0;
 }
 
@@ -114,7 +114,7 @@ Documentation
 
 .docs h3 {
     width: 200px;
-    color: var(--black);
+    color: var(--t1);
     font-weight: 500;
 }
 
@@ -142,9 +142,9 @@ Bold element used to highlight important Roobie terms.
 
 b {
     border-radius: var(--border-radius-xl);
-    background-color: var(--off-white);
+    background-color: var(--bg3);
     padding: var(--padding-s);
-    color: var(--soft-blue);
+    color: var(--softblue);
     margin: var(--margin-s);
 }
 
@@ -152,22 +152,22 @@ b {
 /*Navbar*/
 
 nav {
-    background-color: var(--off-white);
+    background-color: var(--bg3);
 }
 
 nav a {
-    color: var(--black);
+    color: var(--t1);
 }
 
 .nav-container {
-    border-left: 2px solid var(--soft-blue);
+    border-left: 2px solid var(--softblue);
     margin-left: var(--margin-m);
 }
 
 .active {
-    border-left: 1px solid var(--soft-blue);
+    border-left: 1px solid var(--softblue);
     background: linear-gradient(90deg, rgba(67, 67, 221, .15) 30%, rgba(255, 255, 255, 0.01) 100%);
-    color: var(--black);
+    color: var(--t1);
     opacity: 100% !important;
 }
 
@@ -182,7 +182,7 @@ Advantages list on home page
 
 .adv li {
     box-shadow: 0 0 1px 2px rgb(67, 67, 221, .2) !important;
-    color: var(--soft-blue) !important;
+    color: var(--softblue) !important;
     font-weight: 800;
     margin: var(--margin-m) 0;
     padding: var(--padding-l);

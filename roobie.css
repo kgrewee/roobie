@@ -6,33 +6,33 @@
 /* Black */
 
 .black {
-    color: var(--t1);
+    color: var(--black);
 }
 
 .bg-black {
-    background-color: var(--t1);
+    background-color: var(--black);
 }
 
 
 /* White */
 
 .white {
-    color: var(--bg1);
+    color: var(--white);
 }
 
 .bg-white {
-    background-color: var(--bg1);
+    background-color: var(--white);
 }
 
 
 /* Grey */
 
 .grey {
-    color: var(--bg5);
+    color: var(--grey);
 }
 
 .bg-grey {
-    background-color: var(--bg5);
+    background-color: var(--grey);
 }
 
 
@@ -154,7 +154,7 @@ Z Index
 Navbar
 */
 
-.nav {
+nav {
     background-color: var(--nav-bg);
 }
 
@@ -684,6 +684,7 @@ Tag
     margin: var(--margin-s);
     font-size: var(--font-size-m);
     color: var(--t3);
+    background-color: var(--bg3);
 }
 
 .tag_:hover {
@@ -1013,7 +1014,6 @@ Dropdown
     font-size: var(--font-size-m);
     border-radius: var(--border-radius-m);
     color: var(--btn1);
-    background-color: var(--btn1-bg);
 }
 
 .drp-btn:hover {

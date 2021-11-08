@@ -133,7 +133,7 @@ b {
     background-color: var(--bg3);
     padding: var(--padding-s);
     color: var(--softblue);
-    margin: var(--margin-s);
+    margin: 0 var(--margin-s);
 }
 
 

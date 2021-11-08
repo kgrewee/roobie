@@ -15,7 +15,13 @@ const MEDIA_EXPAND_XL = window.matchMedia('(min-width: 1400px)');
 const MEDIA_COLLAPSE_XL = window.matchMedia('(max-width: 1400px)');
 
 ready(function() {
-    addAttributeByTag('body', 'theme', 'light');
+    const savedTheme = getLocalStorage('theme');
+    if (savedTheme != null) {
+        switchTheme(savedTheme);
+    } else {
+        switchTheme('light');
+    }
+
     MEDIA_EXPAND_S.addEventListener("change", (event) => expandMenu(event, 'rsp-menu-s'));
     MEDIA_COLLAPSE_S.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-s'));
     MEDIA_EXPAND_M.addEventListener("change", (event) => expandMenu(event, 'rsp-menu'));
@@ -80,6 +86,31 @@ function expandMenu(event, className) {
             }
         }
     }
+}
+
+function switchTheme(themeName) {
+    setLocalStorage('theme', themeName);
+    addAttributeByTag('body', 'theme', themeName);
+}
+
+/**
+ * Get a value from local storage.
+ * 
+ * @param {string} key Key to search for
+ * @returns Value
+ */
+function getLocalStorage(key) {
+    return localStorage.getItem(key);
+}
+
+/**
+ * Set a kay value pair to local storage.
+ * 
+ * @param {string} key Unqiue identifier
+ * @param {string} value Value to store
+ */
+function setLocalStorage(key, value) {
+    localStorage.setItem(key, value);
 }
 
 /**
@@ -156,9 +187,11 @@ function loadById(id, file) {
  * @param {string} id Id to select
  * @param {string} className CSS class to add
  */
-function addClassById(id, className) {
-    debug("Add [Class] " + className + " -> [Id]" + id);
-    getId(id).classList.add(className);
+function addClassById(id, className, condition = true) {
+    if (condition) {
+        debug("Add [Class] " + className + " -> [Id]" + id);
+        getId(id).classList.add(className);
+    }
 }
 
 /**
@@ -167,9 +200,11 @@ function addClassById(id, className) {
  * @param {HTMLElement} element HTML element to select
  * @param {string} className CSS class to add
  */
-function addClassByElement(element, className) {
-    debug("Add [Class] " + className + " -> [Element]" + element);
-    element.classList.add(className);
+function addClassByElement(element, className, condition = true) {
+    if (condition) {
+        debug("Add [Class] " + className + " -> [Element]" + element);
+        element.classList.add(className);
+    }
 }
 
 /**
@@ -178,11 +213,13 @@ function addClassByElement(element, className) {
  * @param {string} tagName Tag name to select
  * @param {string} className CSS class to remove
  */
-function removeClassByTag(tagName, className) {
-    debug("Remove [Class] " + className + " -> [Tag] " + tagName);
-    var elements = getTag(tagName);
-    for (i = 0; i < elements.length; i++) {
-        elements[i].classList.remove(className);
+function removeClassByTag(tagName, className, condition = true) {
+    if (condition) {
+        debug("Remove [Class] " + className + " -> [Tag] " + tagName);
+        var elements = getTag(tagName);
+        for (i = 0; i < elements.length; i++) {
+            elements[i].classList.remove(className);
+        }
     }
 }
 

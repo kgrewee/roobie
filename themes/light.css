@@ -14,6 +14,8 @@
     --bg3: rgb(220, 220, 220);
     --bg4: rgb(210, 210, 210);
     --bg5: rgb(200, 200, 200);
+    --white: rgb(240, 240, 240);
+    --black: rgb(20, 20, 20);
     --red: rgb(245, 9, 9);
     --softred: rgba(170, 31, 31, 0.9);
     --orange: rgb(243, 162, 11);
@@ -28,7 +30,7 @@
     --body: var(--t1);
     --body-bg: var(--bg1);
     --nav: var(--t2);
-    --nav-bg: var(--bg5);
+    --nav-bg: var(--bg4);
     --nav-title: var(--green);
     --nav-subtitle: var(--softblue);
     --nav-active: var(--t3);

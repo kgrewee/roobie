@@ -23,16 +23,7 @@ Roobie logo
 }
 
 .title span {
-    color: var(--bg1);
-}
-
-
-/*
-Nav headings
-*/
-
-.nav-head {
-    color: var(--softblue);
+    color: var(--t1);
 }
 
 
@@ -83,28 +74,29 @@ Headings
 */
 
 h1 {
-    color: var(--bg1);
+    color: var(--h1);
     margin: var(--margin-m) 0;
     font-size: var(--font-size-xxxl) !important;
 }
 
-h1+p {
-    color: var(--bg4);
-}
-
 h2 {
-    color: var(--bg5);
+    color: var(--h2);
     margin: var(--margin-m) 0;
 }
 
 h3 {
-    color: var(--green);
+    color: var(--h3);
     margin: var(--margin-m) 0;
 }
 
 h4 {
-    color: var(--softblue);
+    color: var(--h4);
     margin: var(--margin-s) 0;
+}
+
+p {
+    margin: var(--margin-s) 0;
+    color: var(--t3);
 }
 
 
@@ -114,7 +106,7 @@ Documentation
 
 .docs h3 {
     width: 200px;
-    color: var(--t1);
+    color: var(--h1);
     font-weight: 500;
 }
 
@@ -125,10 +117,6 @@ Documentation
 
 .docs p {
     width: 400px;
-}
-
-p {
-    margin: var(--margin-s) 0;
 }
 
 .ul {
@@ -151,17 +139,19 @@ b {
 
 /*Navbar*/
 
-nav {
-    background-color: var(--bg3);
-}
-
-nav a {
-    color: var(--t1);
+.nav-head {
+    color: var(--softblue);
 }
 
 .nav-container {
     border-left: 2px solid var(--softblue);
     margin-left: var(--margin-m);
+}
+
+.toggle img {
+    background-color: var(--bg4) !important;
+    border-radius: 12px;
+    padding: var(--padding-xs);
 }
 
 .active {

@@ -1,6 +1,7 @@
 /* Welcome to Roobie CSS.   */
 
 @import 'themes/light.css';
+@import 'themes/dark.css';
 
 /* Black */
 
@@ -81,11 +82,11 @@
 
 /* Soft Blue */
 
-.soft-blue {
+.softblue {
     color: var(--softblue);
 }
 
-.bg-soft-blue {
+.bg-softblue {
     background-color: var(--softblue);
 }
 
@@ -153,6 +154,10 @@ Z Index
 Navbar
 */
 
+.nav {
+    background-color: var(--nav-bg);
+}
+
 .nav-top {
     top: 0;
     left: 0;
@@ -188,6 +193,7 @@ Navbar
     opacity: 80%;
     height: 100%;
     text-decoration: none;
+    color: var(--nav);
 }
 
 .nav-item:hover {
@@ -620,6 +626,7 @@ Button
     margin: var(--margin-s);
     cursor: pointer;
     border: var(--border-s);
+    color: var(--t3);
 }
 
 
@@ -645,6 +652,23 @@ select:focus {
     border: var(--border-s);
 }
 
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--t5);
+    opacity: 1;
+    /* Firefox */
+}
+
+ :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: var(--t5);
+}
+
+ ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--t5);
+}
+
 
 /*
 Tag
@@ -658,6 +682,7 @@ Tag
     border-radius: var(--border-radius-xl);
     margin: var(--margin-s);
     font-size: var(--font-size-m);
+    color: var(--t3);
 }
 
 .tag_:hover {
@@ -796,6 +821,10 @@ Padding
 
 .pad-none {
     padding: 0;
+}
+
+.pad-xs {
+    padding: var(--padding-xs);
 }
 
 .pad-s {
@@ -972,6 +1001,7 @@ Dropdown
 .drp {
     font-size: var(--font-size-m);
     position: relative;
+    color: var(--t3);
 }
 
 .drp:focus .drp-cnt,
@@ -981,6 +1011,7 @@ Dropdown
 
 .drp-btn {
     font-size: var(--font-size-m);
+    border-radius: var(--border-radius-m);
 }
 
 .drp-btn:hover {

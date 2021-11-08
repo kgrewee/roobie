@@ -131,7 +131,7 @@ Bold element used to highlight important Roobie terms.
 b {
     border-radius: var(--border-radius-xl);
     background-color: var(--bg3);
-    padding: var(--padding-s);
+    padding: 0 var(--padding-s);
     color: var(--softblue);
     margin: 0 var(--margin-s);
 }
@@ -146,12 +146,6 @@ b {
 .nav-container {
     border-left: 2px solid var(--softblue);
     margin-left: var(--margin-m);
-}
-
-.toggle img {
-    background-color: var(--bg4) !important;
-    border-radius: 12px;
-    padding: var(--padding-xs);
 }
 
 .active {

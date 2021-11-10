@@ -1,7 +1,6 @@
 [theme="dark"] {
     --transition: '1s ease';
     --font-family: 'American Typewriter', serif;
-    --menu-align: right;
     --success: green;
     --caution: yellow;
     --error: red;

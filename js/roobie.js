@@ -15,9 +15,9 @@ const MEDIA_EXPAND_XL = window.matchMedia('(min-width: 1400px)');
 const MEDIA_COLLAPSE_XL = window.matchMedia('(max-width: 1400px)');
 
 ready(function() {
-    const savedTheme = getLocalStorage('theme');
-    if (savedTheme != null) {
-        switchTheme(savedTheme);
+    const theme = getLocalStorage('theme');
+    if (theme != null) {
+        switchTheme(theme);
     } else {
         switchTheme('light');
     }
@@ -104,13 +104,28 @@ function getLocalStorage(key) {
 }
 
 /**
- * Set a kay value pair to local storage.
+ * Set a key value pair to local storage.
  * 
  * @param {string} key Unqiue identifier
  * @param {string} value Value to store
  */
 function setLocalStorage(key, value) {
     localStorage.setItem(key, value);
+}
+
+/**
+ * Set a CSS property by tag name.
+ * 
+ * @param {string} tagName Tag name to select
+ * @param {string} property Property to set
+ * @param {string} value Value of property
+ */
+function setStyleByTag(tagName, property, value) {
+    debug("Set [Style] " + property + " = " + value + " -> [Tag] " + tagName);
+    var elements = getTag(tagName);
+    for (i = 0; i < elements.length; i++) {
+        elements[i].style.setProperty(property, value);
+    }
 }
 
 /**

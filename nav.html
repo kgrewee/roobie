@@ -1,3 +1,16 @@
+<style>
+    .btn-active {
+        font-weight: bold;
+        color: var(--t2);
+        box-shadow: var(--box-shadow);
+    }
+</style>
+<script>
+    ready(function() {
+        addClassById('light', 'btn-active', getLocalStorage('theme') == 'light');
+        addClassById('dark', 'btn-active', getLocalStorage('theme') == 'dark');
+    })
+</script>
 <nav class="nav-col flx-col aln-left in">
     <div class="flx-row jst-start aln-center pad csr-pointer" onclick="index()">
         <img width="35" height="35" src="icons/gem-stone-1.svg">
@@ -6,6 +19,11 @@
     <div class="div flx-col scr">
         <a class="nav-item nav-a active" onclick="loadById('main', 'home.html'); removeClassByClass('nav-a', 'active');addClassByElement(this,'active');">Home</a>
         <a class="nav-item nav-a" onclick="loadById('main', 'install.html'); removeClassByClass('nav-a', 'active');addClassByElement(this,'active');">Install</a>
+        <a class="nav-item nav-a toggle flx-row jst-start aln-center" onclick="toggleById('themes'); rotateById('theme-toggle', 270, true);"><img id="theme-toggle" width="15" height="15" src="icons/mfglabs-down-open-black.svg"><span class="mrgl">Themes</span></a>
+        <div id="themes" class="nav-container flx-col mrgl csr-pointer">
+            <a id="light" class="theme-btn pad" onclick="switchTheme('light');removeClassByClass('theme-btn', 'btn-active');addClassByElement(this,'btn-active', getLocalStorage('theme') == 'light');">Light</a>
+            <a id="dark" class="theme-btn pad" onclick="switchTheme('dark');removeClassByClass('theme-btn', 'btn-active');addClassByElement(this,'btn-active', getLocalStorage('theme') == 'dark');">Dark</a>
+        </div>
         <a class="nav-item nav-a toggle flx-row jst-start aln-center" onclick="toggleById('components'); rotateById('component-toggle', 270, true);"><img id="component-toggle" width="15" height="15" src="icons/mfglabs-down-open-black.svg"><span class="mrgl">Components</span></a>
         <div id="components" class="nav-container flx-col mrgl">
             <a class="nav-item nav-a" onclick="loadById('main', 'components/button.html'); removeClassByClass('nav-a', 'active');addClassByElement(this,'active');">Button</a>

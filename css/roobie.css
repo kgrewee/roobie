@@ -5,131 +5,7 @@
 
 @import './../themes/light.css';
 @import './../themes/dark.css';
-
-/* Black */
-
-.black {
-    color: var(--black);
-}
-
-.bg-black {
-    background-color: var(--black);
-}
-
-
-/* White */
-
-.white {
-    color: var(--white);
-}
-
-.bg-white {
-    background-color: var(--white);
-}
-
-
-/* Grey */
-
-.grey {
-    color: var(--grey);
-}
-
-.bg-grey {
-    background-color: var(--grey);
-}
-
-
-/* White */
-
-.off-white {
-    color: var(--bg3);
-}
-
-.bg-off-white {
-    background-color: var(--bg3);
-}
-
-
-/* Red */
-
-.red {
-    color: var(--red);
-}
-
-.bg-red {
-    background-color: var(--red);
-}
-
-
-/* Soft Red */
-
-.softred {
-    color: var(--softred);
-}
-
-.bg-softred {
-    background-color: var(--softred);
-}
-
-
-/* Blue */
-
-.blue {
-    color: var(--blue);
-}
-
-.bg-blue {
-    background-color: var(--blue);
-}
-
-
-/* Soft Blue */
-
-.softblue {
-    color: var(--softblue);
-}
-
-.bg-softblue {
-    background-color: var(--softblue);
-}
-
-
-/* Yellow */
-
-.yellow {
-    color: var(--yellow);
-}
-
-.bg-yellow {
-    background-color: var(--yellow);
-}
-
-
-/* Orange */
-
-.orange {
-    color: var(--orange);
-}
-
-.bg-orange {
-    background-color: var(--orange);
-}
-
-
-/* Green */
-
-.green {
-    color: var(--green);
-}
-
-.bg-green {
-    background-color: var(--green);
-}
-
-.bdr-green {
-    border: 1px solid var(--green) !important
-}
-
+@import './../themes/classes.css';
 
 /*
 Z Index
@@ -156,10 +32,6 @@ Z Index
 /*
 Navbar
 */
-
-#nav {
-    float: var(--menu-align);
-}
 
 nav {
     background-color: var(--nav-bg);

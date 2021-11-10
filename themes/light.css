@@ -1,6 +1,7 @@
 [theme="light"] {
     --transition: '1s ease';
     --font-family: "Arial", sans-serif;
+    --menu-align: left;
     --success: green;
     --caution: yellow;
     --error: red;

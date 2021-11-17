@@ -3,9 +3,9 @@
 
 /* Themes */
 
-@import './../themes/light.css';
-@import './../themes/dark.css';
-@import './../themes/classes.css';
+@import 'themes/light.css';
+@import 'themes/dark.css';
+@import 'themes/classes.css';
 
 /*
 Z Index

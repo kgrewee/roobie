@@ -1,25 +1,22 @@
-# Roobie
+<div>
+    <h1 style="color: black">Roo<span style="color: green">bie</span></h1>
+<div>
 
 Powerful Web Framework
 
-Light-weight, fast and easy to use.  Centralize styles, reduce CSS, and make your code easier to maintain.
+Centralized CSS & JavaScript.  Light-weight, fast, and easy to use.  Make your code easier to maintain and increase development speed.
+
+# Contributions
+
+Contributions are welcome.  Branch from `develop` and make a PR to `develop` when your branch is ready.  We will review it.
+
+We want to make web development easier.  Help us grow together.
 
 ## Live Demo
 
 This repo is a website built with Roobie.  Visit https://roobie.net or start a local web server.
 
 If you have Python installed, run `./run.sh` in a terminal to start a web server.  Visit http://localhost:8000 in a browser.
-
-## Components
-
-- Button
-- Container
-- Dropdown
-- Grid
-- Input
-- List
-- Navbar
-- Tag
 
 ### Abbreviations
 
@@ -68,7 +65,7 @@ Classes are suffixed with a size, if applicable.
 
 ### Hover States
 
-Some classes offer hover states that are signified by a trailing underscore.  `box_` or `in_` are the box shadow and inset hover state classes.  They feature the same default styles as `box` and `in`, but have a hover state with different styles.
+Classes with hover states are signified by a trailing underscore.  `btn_` and `box_` are the button and box shadow hover state classes.
 
 ### Examples
 

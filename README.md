@@ -2,16 +2,7 @@
 <html>
   <body>
     <div>
-    <style>
-        #title{
-            color: black;
-        }
-
-        #title span{
-            color: rgb(24, 196, 96);
-        }
-    </style>
-    <h1>Roo<span>bie</span></h1>
+    <h1>Roo<span style="color: rgb(24, 196, 96);">bie</span></h1>
 <div>
   </body>
 </html>

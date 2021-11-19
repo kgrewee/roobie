@@ -1,5 +1,3 @@
-```html
-
 <!DOCTYPE html>
 <html>
   <body>
@@ -17,8 +15,6 @@
 <div>
   </body>
 </html>
-
-```
 
 Powerful Web Framework
 

@@ -1,5 +1,9 @@
 ```html
-<div>
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <div>
     <style>
         #title{
             color: black;
@@ -11,6 +15,9 @@
     </style>
     <h1>Roo<span>bie</span></h1>
 <div>
+  </body>
+</html>
+
 ```
 
 Powerful Web Framework

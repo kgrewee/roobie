@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <body>
-    <h1>Roo<span style="color: rgb(24, 196, 96)">bie</span></h1>
-  </body>
-</html>
+<span style="font-size: 30px;">Roo<span style="color: rgb(24, 196, 96)">bie</span></span>
 
 Powerful Web Framework
 
@@ -11,9 +6,9 @@ Centralized CSS & JavaScript.  Light-weight, fast, and easy to use.  Make your c
 
 # Contributions
 
-Contributions are welcome.  Branch from `develop` and make a Pull Request to `develop` when your branch is ready.  We will review it.
+Contributions are welcome.  Branch from `develop` and make a pull request to `develop` when your branch is ready.  We will review it.
 
-We want to make web development easier.  Help us grow.
+We want to make web development easier.  Join us.
 
 ## Live Demo
 

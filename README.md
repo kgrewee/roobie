@@ -1,14 +1,12 @@
-# 💎Roobie
+# 💎 Roobie
 
 Powerful Web Framework
 
 Centralized CSS & JavaScript.  Light-weight, fast, and easy to use.  Make your code easier to maintain and increase development speed.
 
-# Contributions
+## Contributions
 
-Contributions are welcome.  Branch from `develop` and make a pull request to `develop` when your branch is ready.  We will review it.
-
-We want to make web development easier.  Join us.
+Contributions are welcome.  Branch from `develop` and make a pull request to `develop` when your branch is ready.  We will review it.  Help us make web development easier.
 
 ## Live Demo
 

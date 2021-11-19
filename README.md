@@ -1,4 +1,4 @@
-<span style="font-size: 70px;">Roo<span style="color: green">bie</span></span>
+<span style="color:green">Roobie</span>
 
 Powerful Web Framework
 

@@ -1,6 +1,17 @@
+```html
 <div>
-    <h1 style="color: black">Roo<span style="color: green">bie</span></h1>
+    <style>
+        #title{
+            color: black;
+        }
+
+        #title span{
+            color: rgb(24, 196, 96);
+        }
+    </style>
+    <h1>Roo<span>bie</span></h1>
 <div>
+```
 
 Powerful Web Framework
 
@@ -8,9 +19,9 @@ Centralized CSS & JavaScript.  Light-weight, fast, and easy to use.  Make your c
 
 # Contributions
 
-Contributions are welcome.  Branch from `develop` and make a PR to `develop` when your branch is ready.  We will review it.
+Contributions are welcome.  Branch from `develop` and make a Pull Request to `develop` when your branch is ready.  We will review it.
 
-We want to make web development easier.  Help us grow together.
+We want to make web development easier.  Help us grow.
 
 ## Live Demo
 

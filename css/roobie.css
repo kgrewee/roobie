@@ -5,7 +5,9 @@
 
 @import 'themes/light.css';
 @import 'themes/dark.css';
-@import 'classes.css';
+@import 'classes/background-color.css';
+@import 'classes/color.css';
+@import 'classes/border.css';
 
 /*
 Z Index
@@ -169,7 +171,7 @@ Icon
 Border
 */
 
-.bdr-none {
+.nobdr {
     border: none !important;
 }
 
@@ -240,7 +242,7 @@ Border
 Box shadow
 */
 
-.box-none {
+.nobox {
     box-shadow: none;
 }
 
@@ -294,10 +296,6 @@ Box shadow
 /*
 Inset
 */
-
-.in-none {
-    box-shadow: none;
-}
 
 .in-s,
 .in-s_ {
@@ -441,7 +439,7 @@ Float
 Border Radius
 */
 
-.br-none {
+.nobr {
     border-radius: none;
 }
 
@@ -496,7 +494,8 @@ Border Radius
 Button
 */
 
-.btn {
+.btn,
+.btn_ {
     width: auto;
     height: auto;
     padding: var(--padding-s);
@@ -507,6 +506,11 @@ Button
     border: var(--border-s);
     color: var(--btn1);
     background-color: var(--btn1-bg);
+}
+
+.btn_:hover {
+    box-shadow: var(--box-shadow-l);
+    opacity: 90%;
 }
 
 
@@ -570,6 +574,7 @@ Tag
     border: 1px solid var(--t1);
     box-shadow: var(--box-shadow-l);
     cursor: default;
+    opacity: 90%;
 }
 
 
@@ -1018,7 +1023,7 @@ Text
     text-align: right;
 }
 
-.txtd-none {
+.notxtd {
     text-decoration: none;
 }
 
@@ -1098,8 +1103,7 @@ Wrap will push items to the next line if needed
     flex-wrap: wrap-reverse;
 }
 
-.nowrp,
-.wrp-none {
+.nowrp {
     flex-wrap: nowrap;
 }
 

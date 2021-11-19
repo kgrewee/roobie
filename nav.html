@@ -28,21 +28,31 @@
             <a id="light" class="theme-btn pad" onclick="switchTheme('light');removeClassByClass('theme-btn', 'theme-btn-active');addClassByElement(this,'theme-btn-active', getLocalStorage('theme') == 'light');">Light</a>
             <a id="dark" class="theme-btn pad" onclick="switchTheme('dark');removeClassByClass('theme-btn', 'theme-btn-active');addClassByElement(this,'theme-btn-active', getLocalStorage('theme') == 'dark');">Dark</a>
         </div>
-        <a class="nav-item nav-a toggle flx-row jst-start aln-center" onclick="toggleById('components'); rotateById('component-toggle', 270, true);"><img id="component-toggle" width="15" height="15" src="icons/mfglabs-down-open-black.svg"><span class="mrgl">Components</span></a>
-        <div id="components" class="nav-container flx-col mrgl">
-            <a class="nav-item nav-a" onclick="loadById('main', 'components/button.html'); removeClassByClass('nav-a', 'active');addClassByElement(this,'active');">Button</a>
-            <a class="nav-item nav-a" onclick="loadById('main', 'components/container.html'); removeClassByClass('nav-a', 'active');addClassByElement(this,'active');">Container</a>
-            <a class="nav-item nav-a" onclick="loadById('main', 'components/dropdown.html'); removeClassByClass('nav-a', 'active');addClassByElement(this,'active');">Dropdown</a>
-            <a class="nav-item nav-a" onclick="loadById('main', 'components/grid.html'); removeClassByClass('nav-a', 'active');addClassByElement(this,'active');">Grid</a>
-            <a class="nav-item nav-a" onclick="loadById('main','components/input.html'); removeClassByClass('nav-a', 'active');addClassByElement(this,'active');">Input</a>
-            <a class="nav-item nav-a" onclick="loadById('main', 'components/list.html'); removeClassByClass('nav-a', 'active');addClassByElement(this,'active');">List</a>
-            <a class="nav-item nav-a" onclick="loadById('main', 'components/navbar.html'); removeClassByClass('nav-a', 'active');addClassByElement(this,'active');">Navbar</a>
-            <a class="nav-item nav-a" onclick="loadById('main', 'components/tag.html'); removeClassByClass('nav-a', 'active');addClassByElement(this,'active');">Tag</a>
-        </div>
-        <a class="nav-item nav-a toggle flx-row jst-start aln-center" onclick="toggleById('docs'); rotateById('docs-toggle', 270, true);"><img id="docs-toggle" width="15" height="15" src="icons/mfglabs-down-open-black.svg"><span class="mrgl">Docs</span></a>
-        <div id="docs" class="nav-container flx-col mrgl">
-            <a class="nav-item nav-a" onclick="loadById('main', 'docs/css.html'); removeClassByClass('nav-a', 'active');addClassByElement(this,'active');">CSS</a>
-            <!--<a class="nav-item nav-a" onclick="loadById('main', 'docs/js.html'); removeClassByClass('nav-a', 'active');addClassByElement(this,'active');">JavaScript</a>-->
+        <a class="nav-item nav-a toggle flx-row jst-start aln-center" onclick="toggleById('css-docs'); rotateById('css-docs-toggle', 270, true);"><img id="css-docs-toggle" width="15" height="15" src="icons/mfglabs-down-open-black.svg"><span class="mrgl">CSS Docs</span></a>
+        <div id="css-docs" class="nav-container flx-col mrgl">
+            <a class="nav-item docs-a" onclick="loadById('main','docs/css/border.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Border</a>
+            <a class="nav-item docs-a" onclick="loadById('main','docs/css/box-shadow.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Box Shadow</a>
+            <a class="nav-item docs-a" onclick="loadById('main','docs/css/button.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Button</a>
+            <a class="nav-item docs-a" onclick="loadById('main','docs/css/colors.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Colors</a>
+            <a class="nav-item docs-a" onclick="loadById('main','docs/css/container.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Container</a>
+            <a class="nav-item docs-a" onclick="loadById('main','docs/css/cursor.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Cursor</a>
+            <a class="nav-item docs-a" onclick="loadById('main','docs/css/display.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Display</a>
+            <a class="nav-item docs-a" onclick="loadById('main','docs/css/dropdown.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Dropdown</a>
+            <a class="nav-item docs-a" onclick="loadById('main','docs/css/flex.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Flex</a>
+            <a class="nav-item docs-a" onclick="loadById('main','docs/css/float.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Float</a>
+            <a class="nav-item docs-a" onclick="loadById('main','docs/css/font.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Font</a>
+            <a class="nav-item docs-a" onclick="loadById('main','docs/css/height.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Height</a>
+            <a class="nav-item docs-a" onclick="loadById('main','docs/css/input.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Input</a>
+            <a class="nav-item docs-a" onclick="loadById('main','docs/css/inset.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Inset</a>
+            <a class="nav-item docs-a" onclick="loadById('main','docs/css/list.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">List</a>
+            <a class="nav-item docs-a" onclick="loadById('main','docs/css/margin.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Margin</a>
+            <a class="nav-item docs-a" onclick="loadById('main','docs/css/navbar.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Navbar</a>
+            <a class="nav-item docs-a" onclick="loadById('main','docs/css/opacity.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Opacity</a>
+            <a class="nav-item docs-a" onclick="loadById('main','docs/css/padding.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Padding</a>
+            <a class="nav-item docs-a" onclick="loadById('main','docs/css/position.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Position</a>
+            <a class="nav-item docs-a" onclick="loadById('main','docs/css/scroll.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Scroll</a>
+            <a class="nav-item docs-a" onclick="loadById('main','docs/css/tag.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Tag</a>
+            <a class="nav-item docs-a" onclick="loadById('main','docs/css/text.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Text</a>
         </div>
     </div>
 </nav>

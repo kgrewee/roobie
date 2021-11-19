@@ -1,9 +1,32 @@
-<div class="div flx-col aln-center docs">
+<style>
+    .inp {
+        background-color: var(--bg1);
+    }
+</style>
+<div class="div bg-softblue padv flx-col aln-center box">
+    <div class="div-xl">
+        <h1>Input</h1>
+        <p>Improved input styles from browser defaults.</p>
+    </div>
+</div>
+<div class="div flx-col aln-center">
     <div class="div-xl flx-col aln-start jst-start txt-left mrgv">
-        <h3>Input</h3>
-        <div class="div flx-row">
-            <h4>inp</h4>
-            <p>Basic input styles</p>
+        <h3>Basic</h3>
+        <div class="div mrgv flx-row jst-start wrp bg-off-white pad-xl br">
+            <input class="inp nobdr" placeholder="Name"></input>
+            <input class="inp" placeholder="Input"></input>
+        </div>
+        <h3>Raised</h3>
+        <div class="div mrgv flx-row jst-start wrp bg-off-white pad-xl br">
+            <input class="inp box nobdr" placeholder="Enter your email"></input>
+            <input class="inp nobdr box_" placeholder="Enter password"></input>
+            <input class="inp box_" placeholder="Type response"></input>
+        </div>
+        <h3>Inset</h3>
+        <div class="div mrgv flx-row jst-start wrp bg-off-white pad-xl br">
+            <input class="inp in nobdr" placeholder="What's your question?"></input>
+            <input class="inp nobdr in_" placeholder="Enter something"></input>
+            <input class="inp in_" placeholder="Why is the sky blue?"></input>
         </div>
     </div>
 </div>

@@ -1,29 +1,190 @@
-<div class="div flx-col aln-center docs">
-    <div class="div-xl flx-col aln-start jst-start txt-left mrgv">
-        <h3>Navbar</h3>
-        <div class="div flx-row">
-            <h4>nav-top</h4>
-            <p>Navbar at the top of the page. Default height auto. Combine with abs or sticky.</p>
+<style>
+    .nav-div {
+        height: 800px;
+    }
+    
+    .nav-col {
+        margin-bottom: var(--margin-xxl);
+    }
+</style>
+<script>
+    ready(function() {
+        checkMedia();
+    })
+</script>
+<div class="div bg-softblue padv flx-col aln-center box">
+    <div class="div-xl">
+        <h1>Navbar</h1>
+        <p>Navigation bars of all shapes and sizes.</p>
+    </div>
+</div>
+<div class="div-xl flx-col aln-start jst-center txt-left mrgv">
+    <h3>Horizontal</h3>
+    <nav class="nav-row flx-row jst-between aln-center box">
+        <div class="flx-row aln-center">
+            <div class="nav-title"><span>Roo</span>bie</div>
+            <div class="flx-row rsp-menu">
+                <a class="nav-item">Home</a>
+                <a class="nav-item">Products</a>
+                <a class="nav-item">About Us</a>
+                <a class="nav-item">Contact Us</a>
+                <a class="nav-item">Help</a>
+            </div>
         </div>
-        <div class="div flx-row">
-            <h4>nav-row</h4>
-            <p>Horizontal navbar. Defaults to width 100%, height auto.</p>
+        <div class="flx-row">
+            <a class="nav-item">user@roobie.net</a>
         </div>
-        <div class="div flx-row">
-            <h4>nav-col</h4>
-            <p>Vertical navbar. Defaults to height 100%, width auto.</p>
+    </nav>
+    <div class="row-divider"></div>
+    <nav class="nav-row flx-row jst-around aln-center box">
+        <div class="flx-row aln-center">
+            <div class="nav-title"><span>Roo</span>bie</div>
         </div>
-        <div class="div flx-row">
-            <h4>nav-title</h4>
-            <p>Navbar title, usually the site name. Default xl margin and black color.</p>
+        <div class="flx-row aln-center rsp-menu-xl">
+            <a class="nav-item">Home</a>
+            <a class="nav-item">Products</a>
+            <a class="nav-item">About Us</a>
+            <a class="nav-item">Contact Us</a>
+            <a class="nav-item">Help</a>
         </div>
-        <div class="div flx-row">
-            <h4>nav-head</h4>
-            <p>Navbar heading. Default s margin and black color.</p>
+        <div class="flx-row">
+            <a class="nav-item">user@roobie.net</a>
         </div>
-        <div class="div flx-row">
-            <h4>nav-item</h4>
-            <p>Navbar item, usually a link. Default s margin and black color.</p>
+    </nav>
+    <div class="row-divider"></div>
+    <nav class="nav-row flx-row jst-around aln-center box">
+        <div class="flx-row aln-center">
+            <div class="nav-title"><span>Roo</span>bie</div>
+            <div class="flx-row aln-center rsp-menu-l">
+                <a class="nav-item">Home</a>
+                <a class="nav-item">Products</a>
+                <a class="nav-item">About Us</a>
+                <a class="nav-item">Contact Us</a>
+                <a class="nav-item">Help</a>
+            </div>
+
         </div>
+    </nav>
+    <div class="row-divider"></div>
+    <nav class="nav-row flx-row jst-around aln-center box">
+        <div class="div-mr flx-row jst-between aln-center">
+            <div class="flx-row aln-center">
+                <div class="nav-title"><span>Roo</span>bie</div>
+                <div class="flx-row aln-center rsp-menu">
+                    <a class="nav-item">Home</a>
+                    <a class="nav-item">Products</a>
+                    <a class="nav-item">About Us</a>
+                    <a class="nav-item">Contact Us</a>
+                </div>
+            </div>
+            <div class="flx-row aln-center">
+                <a class="nav-item">user@roobie.net</a>
+            </div>
+        </div>
+    </nav>
+    <div class="row-divider"></div>
+    <nav class="nav-row flx-row jst-between aln-center box">
+        <div class="nav-title"><span>Roo</span>bie</div>
+        <div class="flx-row aln-center rsp-menu-s">
+            <a class="nav-item">Home</a>
+            <a class="nav-item">Products</a>
+            <a class="nav-item">Help</a>
+        </div>
+    </nav>
+    <div class="row-divider"></div>
+    <h3>Vertical</h3>
+    <div class="nav-div flx-row jst-start wrp">
+        <nav class="nav-col flx-col jst-between aln-center box txt-center">
+            <div class="flx-col">
+                <div class="nav-title"><span>Roo</span>bie</div>
+                <a class="nav-item">Home</a>
+                <a class="nav-item">Products</a>
+                <a class="nav-item">About Us</a>
+                <a class="nav-item">Contact Us</a>
+                <a class="nav-item">Help</a>
+            </div>
+            <div class="flx-col aln-center">
+                <a class="nav-item">user@roobie.net</a>
+            </div>
+        </nav>
+        <div class="col-divider"></div>
+        <nav class="nav-col flx-col jst-between aln-center box txt-center">
+            <div class="nav-title"><span>Roo</span>bie</div>
+            <div class="flx-col">
+                <a class="nav-item">Home</a>
+                <a class="nav-item">Products</a>
+                <a class="nav-item">About Us</a>
+                <a class="nav-item">Contact Us</a>
+                <a class="nav-item">Help</a>
+            </div>
+        </nav>
+        <div class="col-divider"></div>
+        <nav class="nav-col flx-col jst-between aln-center box txt-center">
+            <div class="nav-title"><span>Roo</span>bie</div>
+            <div class="flx-col">
+                <a class="nav-item">Home</a>
+                <a class="nav-item">Products</a>
+                <a class="nav-item">About Us</a>
+                <a class="nav-item">Contact Us</a>
+                <a class="nav-item">Help</a>
+            </div>
+            <div class="flx-col aln-center">
+                <a class="nav-item">user@roobie.net</a>
+            </div>
+        </nav>
+        <div class="col-divider"></div>
+        <nav class="nav-col flx-col aln-center box txt-center pad">
+            <div class="div">
+                <h4 class="nav-head">Section 1</h4>
+                <div class="flx-col aln-center">
+                    <a class="nav-item">Home</a>
+                    <a class="nav-item">Products</a>
+                </div>
+            </div>
+            <div class="div">
+                <h4 class="nav-head">Section 2</h4>
+                <div class="flx-col aln-center">
+                    <a class="nav-item">About Us</a>
+                    <a class="nav-item">Contact Us</a>
+                    <a class="nav-item">Help</a>
+                </div>
+            </div>
+        </nav>
+        <div class="col-divider"></div>
+        <nav class="nav-col flx-col aln-start box txt-left pad">
+            <div class="div mrgl-xl">
+                <h4 class="nav-head">Section 1</h4>
+                <div class="flx-col aln-start">
+                    <a class="nav-item">Home</a>
+                    <a class="nav-item">Products</a>
+                </div>
+            </div>
+            <div class="div mrgl-xl">
+                <h4 class="nav-head">Section 2</h4>
+                <div class="flx-col aln-start">
+                    <a class="nav-item">About Us</a>
+                    <a class="nav-item">Contact Us</a>
+                    <a class="nav-item">Help</a>
+                </div>
+            </div>
+        </nav>
+        <div class="col-divider"></div>
+        <nav class="nav-col flx-col aln-end box txt-right pad">
+            <div class="div mrgr-xl">
+                <h4 class="nav-head">Section 1</h4>
+                <div class="flx-col aln-end">
+                    <a class="nav-item">Home</a>
+                    <a class="nav-item">Products</a>
+                </div>
+            </div>
+            <div class="div mrgr-xl">
+                <h4 class="nav-head">Section 2</h4>
+                <div class="flx-col aln-end">
+                    <a class="nav-item">About Us</a>
+                    <a class="nav-item">Contact Us</a>
+                    <a class="nav-item">Help</a>
+                </div>
+            </div>
+        </nav>
     </div>
 </div>

@@ -59,14 +59,12 @@ Common abbreviations found in class names. They don't exceed 3 characters to kee
 
 ### Sizes
 
-Classes are suffixed with a size, if applicable.  Size values are configurable at the top of `roobie.css`. 
+Classes are suffixed with a size, if applicable.
 
 - s - Small
 - m - Medium
 - l - Large
 - xl - Extra large
-
-More extreme sizes follow the same convention.  Only some classes offer these when it makes sense, such as txt.
 
 ### Hover States
 
@@ -74,7 +72,7 @@ Some classes offer hover states that are signified by a trailing underscore.  `b
 
 ### Examples
 
-A few examples  of css classes.  Checkout our pre-built components.
+A few examples of Roobie CSS classes.
 
 **Container with 100% width**<br />
 &lt;div class="`div`">&lt;/div>

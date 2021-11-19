@@ -1,5 +1,98 @@
-<div class="div flx-col aln-center docs">
+<style>
+    .ul-bdr li {
+        min-width: 200px;
+    }
+    
+    .ul-cnt li,
+    .ul-cnt-bdr li {
+        min-width: 300px;
+    }
+</style>
+<div class="div bg-softblue padv flx-col aln-center box">
+    <div class="div-xl">
+        <h1>List</h1>
+        <p>List of items with attributes.</p>
+    </div>
+</div>
+<div class="div flx-col aln-center">
     <div class="div-xl flx-col aln-start jst-start txt-left mrgv">
-
+        <h3>Basic</h3>
+        <div class="div">
+            <div class="mrgv flx-row jst-start wrp bg-off-white pad-xl br aln-center">
+                <ul class="ul">
+                    <li>Apples</li>
+                    <li>Oranges</li>
+                    <li>Tomatos</li>
+                </ul>
+                <div class="col-divider"></div>
+                <ul class="ul-bdr flx-col txt-center">
+                    <li>Apples</li>
+                    <li>Oranges</li>
+                    <li>Tomatos</li>
+                </ul>
+                <div class="col-divider"></div>
+                <ul class="ul-bdr bdr flx-col txt-center">
+                    <li>Apples</li>
+                    <li>Oranges</li>
+                    <li>Tomatos</li>
+                </ul>
+            </div>
+        </div>
+        <h3>Descriptions</h3>
+        <div class="div">
+            <div class="div flx-col">
+                <p>Descriptions are built in to the list classes. Add a <em>span</em> inside <em>li</em> and it will be styled under the list item name.</p>
+            </div>
+            <div class="mrgv flx-row jst-start wrp bg-off-white pad-xl br aln-center">
+                <ul class="ul">
+                    <li>Apples <span>red fruit</span></li>
+                    <li>Oranges <span>orange fruit</span></li>
+                    <li>Kiwi <span>green fruit</span></li>
+                </ul>
+                <div class="col-divider"></div>
+                <ul class="ul-bdr">
+                    <li>$1,202,203.44 <span>Sales</span></li>
+                    <li>6,345 <span>Customers</span></li>
+                    <li>345 <span>Assets</span></li>
+                </ul>
+                <div class="col-divider"></div>
+                <ul class="ul-bdr bdr txt-center br">
+                    <li>Test 1<span>40 questions</span></li>
+                    <li>Midterm <span>44 questions</span></li>
+                    <li>Final <span>77 questions</span></li>
+                </ul>
+                <div class="col-divider"></div>
+                <ul class="ul-bdr txt-right">
+                    <li>Elements <span>Elements on the page</span></li>
+                    <li>Outages <span>Website outages</span></li>
+                    <li>People <span>Total people working</span></li>
+                </ul>
+            </div>
+        </div>
+        <h3>Content</h3>
+        <div class="div">
+            <div class="div flx-col">
+                <p>Content lists contain content to the left & right of the container.</p>
+            </div>
+            <div class="mrgv flx-row jst-start wrp bg-off-white pad-xl br aln-center">
+                <ul class="ul-cnt box br">
+                    <li>Update <a class="red">Failure</a></li>
+                    <li>Install <a class="orange">Caution</a></li>
+                    <li>Build<a class="green">Success</a></li>
+                </ul>
+                <div class="col-divider"></div>
+                <ul class="ul-cnt bdr">
+                    <li>Subscription <a class="btn box_ bg-red black">Cancel</a></li>
+                    <li>Package<a class="btn box_ bg-blue white">Purchase</a></li>
+                    <li>roobie.css <a class="btn box_ bg-black white">Download</a></li>
+                </ul>
+                <div class="col-divider"></div>
+                <ul class="ul-cnt-bdr box br softblue">
+                    <li><a class="red">Updated required</a>23.4.2</li>
+                    <li><a class="black">Up to date</a>9.392 </li>
+                    <li><a class="black">Up to date</a>02.34.4.2021</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>

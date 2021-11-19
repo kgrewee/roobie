@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <div>
-    <h1>Roo<span style="color: rgb(24, 196, 96);">bie</span></h1>
-<div>
+    <h1>Roo<span style="color: rgb(24, 196, 96)">bie</span></h1>
   </body>
 </html>
 

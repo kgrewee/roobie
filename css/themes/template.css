@@ -1,0 +1,178 @@
+[theme="template"] {
+    /* Basic Colors */
+    --white: rgb(240, 240, 240);
+    --black: rgb(20, 20, 20);
+    --red: rgb(245, 9, 9);
+    --softred: rgba(170, 31, 31, 0.9);
+    --orange: rgb(243, 162, 11);
+    --purple: rgb(122, 10, 122);
+    --green: rgb(24, 196, 96);
+    --yellow: rgb(230, 230, 16);
+    --blue: rgb(13, 13, 226);
+    --softblue: rgb(67, 67, 221, .9);
+    --grey: rgb(88, 87, 87);
+    --violet: rgb(226, 108, 226);
+    --pink: rgb(219, 163, 173);
+    /*Status*/
+    --s1: green;
+    --s2: orange;
+    --s3: yellow;
+    --s4: red;
+    --s5: grey;
+    /*Text*/
+    --t1: rgb(240, 240, 240);
+    --t2: rgb(230, 230, 230);
+    --t3: rgb(220, 220, 220);
+    --t4: rgb(210, 210, 210);
+    --t5: rgb(200, 200, 200);
+    /*Background*/
+    --bg1: rgb(20, 20, 20);
+    --bg2: rgb(30, 30, 30);
+    --bg3: rgb(40, 40, 40);
+    --bg4: rgb(50, 50, 50);
+    --bg5: rgb(60, 60, 60);
+    /*Nav*/
+    --n1: white;
+    --n2: white;
+    --n3: white;
+    --n4: white;
+    --n5: white;
+    /*Heading*/
+    --h1: var(--t1);
+    --h2: var(--t5);
+    --h3: var(--green);
+    --h4: var(--softblue);
+    --h5: var(--t5);
+    --h6: var(--t5);
+    /*Link*/
+    --a1: var(--softblue);
+    --a2: white;
+    --a3: white;
+    --a4: white;
+    --a5: white;
+    /*Font*/
+    --f1: 'American Typewriter', serif;
+    --f2: 'American Typewriter', serif;
+    --f3: 'American Typewriter', serif;
+    --f4: 'American Typewriter', serif;
+    --f5: 'American Typewriter', serif;
+    /*Transition*/
+    --tr1: '1s ease';
+    --tr2: '1s ease';
+    --tr3: '1s ease';
+    --tr4: '1s ease';
+    --tr5: '1s ease';
+    /*Button*/
+    --btn1: var(--t1);
+    --btn2: var(--t1);
+    --btn3: var(--t1);
+    --btn4: var(--t1);
+    --btn5: var(--t1);
+    /*Paragraph*/
+    --p1: var(--t2);
+    --p2: var(--t2);
+    --p3: var(--t2);
+    --p4: var(--t2);
+    --p5: var(--t2);
+    /*
+        --p: var(--t2);
+    --p-bg: transparent;
+    */
+    /*
+        --btn1: var(--t1);
+    --btn1-bg: var(--bg2);
+    --btn1-hover: var(--t2);
+    --btn1-hover-bg: var(--bg2);
+    --btn2: var(--t3);
+    --btn2-bg: var(--softblue);
+    --btn2-hover: var(--softblue);
+    --btn2-hover-bg: var(--bg3);
+    */
+    /*
+    --transition: '1s ease';
+    */
+    /*
+    --font-family: 'American Typewriter', serif;
+    */
+    /*
+    --a-bg: transparent;
+    --a-visited: var(--t3);
+    --a-active: var(--t5);
+    --a-active-bg: var(--softblue);
+    --a-decoration: none;
+    */
+    /*
+    --body: var(--t1);
+    --body-bg: var(--bg1);
+    --nav: var(--t2);
+    --nav-bg: var(--bg4);
+    --nav-title: var(--green);
+    --nav-subtitle: var(--softblue);
+    --nav-active: var(--t3);
+    --nav-active-bg: var(--softblue);
+    */
+    --border-s: .5px solid var(--t1);
+    --border-m: 1px solid var(--t1);
+    --border-l: 2px solid var(--t1);
+    --border-xl: 3px solid var(--t1);
+    --inset-s: inset 0px 0px 1px 1px rgb(17, 17, 17, .1);
+    --inset-m: inset 0px 0px 2px 2px rgb(17, 17, 17, .2);
+    --inset-l: inset 0px 0px 3px 3px rgb(17, 17, 17, .2);
+    --inset-xl: inset 0px 0px 3px 3px rgb(17, 17, 17, .3);
+    --box-shadow-s: 0 0 1px 1px rgb(17, 17, 17, .1);
+    --box-shadow-m: 0 0 2px 2px rgb(17, 17, 17, .2);
+    --box-shadow-l: 0 0 3px 3px rgb(17, 17, 17, .2);
+    --box-shadow-xl: 0 0 3px 3px rgb(17, 17, 17, .3);
+    --border-radius-s: 2px;
+    --border-radius-m: 4px;
+    --border-radius-l: 6px;
+    --border-radius-xl: 8px;
+    --border-radius-xxl: 10px;
+    --border-radius-xxxl: 12px;
+    --padding-xs: 3px;
+    --padding-s: 5px;
+    --padding-m: 10px;
+    --padding-l: 15px;
+    --padding-xl: 20px;
+    --padding-xxl: 30px;
+    --padding-xxxl: 40px;
+    --padding-xxxxl: 50px;
+    --margin-s: 5px;
+    --margin-m: 10px;
+    --margin-l: 15px;
+    --margin-xl: 20px;
+    --margin-xxl: 30px;
+    --margin-xxxl: 40px;
+    --margin-xxxxl: 50px;
+    --font-size-xxxs: .2em;
+    --font-size-xxs: .4em;
+    --font-size-xs: .6em;
+    --font-size-s: .8em;
+    --font-size-m: 1em;
+    --font-size-l: 1.25em;
+    --font-size-xl: 1.5em;
+    --font-size-xxl: 1.75em;
+    --font-size-xxxl: 2em;
+    --div-s: 20%;
+    --div-m: 40%;
+    --div-l: 60%;
+    --div-xl: 80%;
+    --div-xxl: 90%;
+    --height-s: 20%;
+    --height-m: 40%;
+    --height-l: 60%;
+    --height-xl: 80%;
+    --height-xxl: 90%;
+    --opacity-s: 20%;
+    --opacity-m: 40%;
+    --opacity-l: 60%;
+    --opacity-xl: 80%;
+    --opacity-xxl: 90%;
+    --icon-s: 10px;
+    --icon-m: 15px;
+    --icon-l: 20px;
+    --icon-xl: 25px;
+    --icon-xxl: 35px;
+    --icon-xxxl: 45px;
+    --dropdown-min-width: 160px;
+}

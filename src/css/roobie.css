@@ -1,10 +1,5 @@
-/*Themes*/
-
 @import 'themes/light.css';
 @import 'themes/dark.css';
-
-/*Classes*/
-
 @import 'classes/alignment.css';
 @import 'classes/background-color.css';
 @import 'classes/border-radius.css';

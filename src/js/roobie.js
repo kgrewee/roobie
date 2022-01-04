@@ -64,7 +64,7 @@ function collapseMenu(event, className) {
         for (i = 0; i < menus.length; i++) {
             items = menus[i].innerHTML;
             if (!$(menus[i]).find(".rsp-cnt").hasClass("rsp-cnt")) {
-                menus[i].innerHTML = '<div class="drp"> <button class="drp-btn flx-row aln-center nobdr"> <img width="25" height="25" src="icons/fontawesome-menu-black.svg"> </button> <div class = "drp-cnt pad br rsp-cnt">' + items + '</div> </div>';
+                menus[i].innerHTML = '<div class="drp"> <button class="drp-btn flx-row aln-center nobdr"> <img width="25" height="25" src="../src/icons/fontawesome-menu-black.svg"> </button> <div class = "drp-cnt pad br rsp-cnt">' + items + '</div> </div>';
             }
         }
     }

@@ -19,7 +19,7 @@ Roobie logo
 }
 
 .title img {
-    margin-right: var(--margin-m);
+    margin-right: var(--mrg2);
 }
 
 .title span {
@@ -54,7 +54,7 @@ html,
 body {
     height: 100%;
     overflow: hidden;
-    font-family: var(--font-family);
+    font-family: var(--f1);
 }
 
 
@@ -75,27 +75,27 @@ Headings
 
 h1 {
     color: var(--h1);
-    margin: var(--margin-m) 0;
-    font-size: var(--font-size-xxxl) !important;
+    margin: var(--mrg2) 0;
+    font-size: var(--fnt9) !important;
 }
 
 h2 {
     color: var(--h2);
-    margin: var(--margin-m) 0;
+    margin: var(--mrg2) 0;
 }
 
 h3 {
     color: var(--h3);
-    margin: var(--margin-m) 0;
+    margin: var(--mrg2) 0;
 }
 
 h4 {
     color: var(--h4);
-    margin: var(--margin-s) 0;
+    margin: var(--mrg1) 0;
 }
 
 p {
-    margin: var(--margin-s) 0;
+    margin: var(--mrg1) 0;
     color: var(--t1);
 }
 
@@ -111,7 +111,7 @@ Documentation
 }
 
 .docs h4 {
-    margin-right: var(--margin-xxxxl);
+    margin-right: var(--mrg7);
     width: 200px;
 }
 
@@ -129,11 +129,11 @@ Bold element used to highlight important Roobie terms.
 */
 
 b {
-    border-radius: var(--border-radius-xl);
+    border-radius: var(--br4);
     background-color: var(--bg3);
-    padding: 0 var(--padding-s);
+    padding: 0 var(--pad2);
     color: var(--softblue);
-    margin: 0 var(--margin-s);
+    margin: 0 var(--mrg1);
 }
 
 
@@ -145,7 +145,7 @@ b {
 
 .nav-container {
     border-left: 2px solid var(--softblue);
-    margin-left: var(--margin-m);
+    margin-left: var(--mrg2);
 }
 
 .active {
@@ -168,8 +168,8 @@ Advantages list on home page
     box-shadow: 0 0 1px 2px rgb(67, 67, 221, .2) !important;
     color: var(--softblue) !important;
     font-weight: 800;
-    margin: var(--margin-m) 0;
-    padding: var(--padding-l);
-    border-radius: var(--border-radius-m);
+    margin: var(--mrg2) 0;
+    padding: var(--pad4);
+    border-radius: var(--br2);
     justify-content: center;
 }

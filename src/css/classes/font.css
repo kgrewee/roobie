@@ -1,34 +1,25 @@
 /* Font Size */
 
-.fnt-xxxs {
+.fnt1 {
     font-size: var(--fnt1);
 }
 
-.fnt-xxs {
+.fnt2 {
     font-size: var(--fnt2);
 }
 
-.fnt-xs {
+.fnt3 {
     font-size: var(--fnt3);
 }
 
-.fnt-s {
+.fnt4 {
     font-size: var(--fnt4);
 }
 
-.fnt-m,
-.fnt {
+.fnt5 {
     font-size: var(--fnt5);
 }
 
-.fnt-l {
+.fnt6 {
     font-size: var(--fnt6);
-}
-
-.fnt-xl {
-    font-size: var(--fnt7);
-}
-
-.fnt-xxl {
-    font-size: var(--fnt8);
 }

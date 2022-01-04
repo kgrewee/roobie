@@ -1,5 +1,5 @@
 <style>
-    .category .tag_ {
+    .category .tag {
         background-color: var(--bg1);
     }
     
@@ -16,19 +16,19 @@
         background-color: var(--bg5);
     }
 </style>
-<div class="div cat-active padv flx-col aln-center box">
-    <div class="div-xl">
+<div class="div cat-active padv flx-col aln-center box2">
+    <div class="div6">
         <h1>Tag</h1>
         <p>Short blocks of content.</p>
     </div>
 </div>
-<div class="div-xl flx-col aln-start jst-start txt-left mrgv">
+<div class="div6 flx-col aln-start jst-start txt-left mrgv">
     <h3>Basic</h3>
     <div class="div">
-        <div class="mrgv flx-row jst-start wrp bg-off-white pad-xl br aln-center">
+        <div class="mrgv flx-row jst-start wrp bg-off-white pad-xl br2 aln-center">
             <div class="tag">Cheese</div>
-            <div class="tag bdr">Pepperoni</div>
-            <div class="tag_">Eggs</div>
+            <div class="tagbdr2">Pepperoni</div>
+            <div class="tag">Eggs</div>
         </div>
     </div>
     <h3>Descriptions</h3>
@@ -36,8 +36,8 @@
         <div class="div">
             <p>Tags used to describe.</p>
         </div>
-        <div class="mrgv flx-row jst-start pad-xl wrp bg-off-white br">
-            <div class="mrg card br box_ pad">
+        <div class="mrgv flx-row jst-start pad-xl wrp bg-off-white br2">
+            <div class="mrg card br2 box2 pad">
                 <h4>Mama's Pumpkin Pie</h4>
                 <div class="flx-row">
                     <div class="tag">30 min</div>
@@ -48,12 +48,12 @@
                     The best recipe in the world! Delicious & easy to make.
                 </div>
             </div>
-            <div class="mrg card br box_ pad">
+            <div class="mrg card br2 box2 pad">
                 <h4>Chocolate Chip Cookies</h4>
                 <div class="flx-row">
                     <div class="tag">25 min</div>
                     <div class="tag">Favorite</div>
-                    <div class="tag_ cat-active">New!</div>
+                    <div class="tag cat-active">New!</div>
                 </div>
                 <div class="desc pad-s">
                     Cookies that will knock your socks off.
@@ -66,72 +66,72 @@
         <div class="div flx-col">
             <p>Alike tags styled together in a container.</p>
         </div>
-        <div class="mrgv flx-row jst-start pad-xl wrp bg-off-white br aln-center">
-            <div class="mrg div-m card br box pad">
+        <div class="mrgv flx-row jst-start pad-xl wrp bg-off-white br2 aln-center">
+            <div class="mrg div3 card br2 box2 pad">
                 <div class="flx-col wrp category">
-                    <div class="flx-row bg-off-white br pad mrg">
-                        <div class="tag_">Small</div>
-                        <div class="tag_">Medium</div>
-                        <div class="tag_">Large</div>
-                        <div class="tag_">Extra Large</div>
+                    <div class="flx-row bg-off-white br2 pad mrg">
+                        <div class="tag">Small</div>
+                        <div class="tag">Medium</div>
+                        <div class="tag">Large</div>
+                        <div class="tag">Extra Large</div>
                     </div>
-                    <div class="flx-row jst-center bg-off-white br pad mrg">
-                        <div class="tag_">Red</div>
-                        <div class="tag_">Yellow</div>
-                        <div class="tag_">Orange</div>
-                        <div class="tag_">Purple</div>
-                        <div class="tag_">Blue</div>
+                    <div class="flx-row jst-center bg-off-white br2 pad mrg">
+                        <div class="tag">Red</div>
+                        <div class="tag">Yellow</div>
+                        <div class="tag">Orange</div>
+                        <div class="tag">Purple</div>
+                        <div class="tag">Blue</div>
                     </div>
-                    <div class="flx-row jst-end bg-off-white br pad mrg">
-                        <div class="tag_">Update</div>
-                        <div class="tag_">Shutdown</div>
-                        <div class="tag_">Delete</div>
-                        <div class="tag_">Install</div>
-                    </div>
-
-                    <div class="flx-row jst-around bg-off-white br pad mrg">
-                        <div class="tag_">-1</div>
-                        <div class="tag_">0</div>
-                        <div class="tag_">+1</div>
+                    <div class="flx-row jst-end bg-off-white br2 pad mrg">
+                        <div class="tag">Update</div>
+                        <div class="tag">Shutdown</div>
+                        <div class="tag">Delete</div>
+                        <div class="tag">Install</div>
                     </div>
 
-                    <div class="flx-row jst-between bg-off-white br pad mrg">
-                        <div class="tag_">Start</div>
-                        <div class="tag_">End</div>
+                    <div class="flx-row jst-around bg-off-white br2 pad mrg">
+                        <div class="tag">-1</div>
+                        <div class="tag">0</div>
+                        <div class="tag">+1</div>
+                    </div>
+
+                    <div class="flx-row jst-between bg-off-white br2 pad mrg">
+                        <div class="tag">Start</div>
+                        <div class="tag">End</div>
                     </div>
                 </div>
             </div>
             <div class="col-divider"></div>
-            <div class="flx-col mrg card br box pad-l">
+            <div class="flx-col mrg card br2 box2 pad-l">
                 <h3 class="txt-center">Order</h3>
                 <div class="div mrgh">
                     <h4>Cheese</h4>
                     <div class="flx-row wrp">
-                        <div class="tag_ cheese" onclick="removeClassByClass('cheese', 'cat-active'); addClassByElement(this, 'cat-active');">Light</div>
-                        <div class="tag_ cheese" onclick="removeClassByClass('cheese', 'cat-active'); addClassByElement(this, 'cat-active');">Normal</div>
-                        <div class="tag_ cheese cat-active" onclick="removeClassByClass('cheese', 'cat-active'); addClassByElement(this, 'cat-active');">Extra</div>
-                        <div class="tag_ cheese" onclick="removeClassByClass('cheese', 'cat-active'); addClassByElement(this, 'cat-active');">No Cheese</div>
+                        <div class="tag cheese" onclick="removeClassByClass('cheese', 'cat-active'); addClassByElement(this, 'cat-active');">Light</div>
+                        <div class="tag cheese" onclick="removeClassByClass('cheese', 'cat-active'); addClassByElement(this, 'cat-active');">Normal</div>
+                        <div class="tag cheese cat-active" onclick="removeClassByClass('cheese', 'cat-active'); addClassByElement(this, 'cat-active');">Extra</div>
+                        <div class="tag cheese" onclick="removeClassByClass('cheese', 'cat-active'); addClassByElement(this, 'cat-active');">No Cheese</div>
                     </div>
                 </div>
                 <div class="div mrgh">
                     <h4>Meat</h4>
                     <div class="flx-row wrp">
-                        <div class="tag_ cat-active meat" onclick="removeClassByClass('meat', 'cat-active'); addClassByElement(this, 'cat-active');">Chicken</div>
-                        <div class="tag_ meat" onclick="removeClassByClass('meat', 'cat-active'); addClassByElement(this, 'cat-active');">Beef</div>
-                        <div class="tag_ meat" onclick="removeClassByClass('meat', 'cat-active'); addClassByElement(this, 'cat-active');">Pork</div>
-                        <div class="tag_ meat" onclick="removeClassByClass('meat', 'cat-active'); addClassByElement(this, 'cat-active');">None</div>
+                        <div class="tag cat-active meat" onclick="removeClassByClass('meat', 'cat-active'); addClassByElement(this, 'cat-active');">Chicken</div>
+                        <div class="tag meat" onclick="removeClassByClass('meat', 'cat-active'); addClassByElement(this, 'cat-active');">Beef</div>
+                        <div class="tag meat" onclick="removeClassByClass('meat', 'cat-active'); addClassByElement(this, 'cat-active');">Pork</div>
+                        <div class="tag meat" onclick="removeClassByClass('meat', 'cat-active'); addClassByElement(this, 'cat-active');">None</div>
                     </div>
                 </div>
                 <div class="div mrgh">
                     <h4>Vegetables</h4>
                     <div class="flx-row wrp">
-                        <div class="tag_ veggies" onclick="removeClassByClass('veggies', 'cat-active'); addClassByElement(this, 'cat-active');">Broccoli</div>
-                        <div class="tag_ veggies" onclick="removeClassByClass('veggies', 'cat-active'); addClassByElement(this, 'cat-active');">Carrots</div>
-                        <div class="tag_ cat-active veggies" onclick="removeClassByClass('veggies', 'cat-active'); addClassByElement(this, 'cat-active');">None</div>
+                        <div class="tag veggies" onclick="removeClassByClass('veggies', 'cat-active'); addClassByElement(this, 'cat-active');">Broccoli</div>
+                        <div class="tag veggies" onclick="removeClassByClass('veggies', 'cat-active'); addClassByElement(this, 'cat-active');">Carrots</div>
+                        <div class="tag cat-active veggies" onclick="removeClassByClass('veggies', 'cat-active'); addClassByElement(this, 'cat-active');">None</div>
                     </div>
                 </div>
                 <div class="flx-row jst-end ">
-                    <button class="btn fnt-s bg-green box_">Submit</button>
+                    <button class="btn fnt2 bg-green box2">Submit</button>
                 </div>
             </div>
         </div>

@@ -1,49 +1,40 @@
-.nobox {
+.box0 {
     box-shadow: none;
 }
 
-.box-s,
-.box-s_ {
+.box1 {
     box-shadow: var(--box1);
 }
 
-.box-m,
-.box,
-.box-m_,
-.box_ {
+.box2 {
     box-shadow: var(--box2);
 }
 
-.box-l,
-.box-l_ {
+.box3 {
     box-shadow: var(--box3);
 }
 
-.box-xl,
-.box-xl_ {
+.box4 {
     box-shadow: var(--box4);
 }
 
-.box-s_:hover,
-.box-m_:hover,
-.box-l_:hover,
-.box-xl_:hover,
-.box_:hover {
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover {
     box-shadow: var(--box3);
 }
 
-.box-s_:active,
-.box-m_:active,
-.box-l_:active,
-.box-xl_:active,
-.box_:active {
+.box1:active,
+.box2:active,
+.box3:active,
+.box4:active {
     box-shadow: var(--box3);
 }
 
-.box-s_:focus,
-.box-m_:focus,
-.box-l_:focus,
-.box-xl_:focus,
-.box_:focus {
+.box1:focus,
+.box2:focus,
+.box3:focus,
+.box4:focus {
     box-shadow: var(--box4);
 }

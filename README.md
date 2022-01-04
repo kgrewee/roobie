@@ -59,7 +59,7 @@ Our pre-built themes offer many variables that are adjustable.  We piggy back of
 
 ### Hover States
 
-Classes with hover states are signified by a trailing underscore.  `btn_` and `box_` are the button and box shadow hover state classes.
+Classes with hover states are signified by a trailing underscore.  `btn` and `box` are the button and box shadow hover state classes.
 
 ### Examples
 

@@ -1,45 +1,40 @@
-.in-s,
-.in-s_ {
+.in-s {
     box-shadow: var(--in1);
 }
 
 .in-m,
-.in,
-.in-m_,
-.in_ {
+.in {
     box-shadow: var(--in2);
 }
 
-.in-l,
-.in-l_ {
+.in-l {
     box-shadow: var(--in3);
 }
 
-.in-xl,
-.in-xl_ {
+.in-xl {
     box-shadow: var(--in4);
 }
 
-.in-s_:hover,
-.in-m_:hover,
-.in-l_:hover,
-.in-xl_:hover,
-.in_:hover {
+.in-s:hover,
+.in-m:hover,
+.in-l:hover,
+.in-xl:hover,
+.in:hover {
     box-shadow: var(--in3);
 }
 
-.in-s_:active,
-.in-m_:active,
-.in-l_:active,
-.in-xl_:active,
-.in_:active {
+.in-s:active,
+.in-m:active,
+.in-l:active,
+.in-xl:active,
+.in:active {
     box-shadow: var(--in3);
 }
 
-.in-s_:focus,
-.in-m_:focus,
-.in-l_:focus,
-.in-xl_:focus,
-.in_:focus {
+.in-s:focus,
+.in-m:focus,
+.in-l:focus,
+.in-xl:focus,
+.in:focus {
     box-shadow: var(--in4);
 }

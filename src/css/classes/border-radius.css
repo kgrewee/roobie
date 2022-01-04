@@ -1,49 +1,40 @@
-.nobr {
+.br0 {
     border-radius: none;
 }
 
-.br-s,
-.br-s_ {
+.br1 {
     border-radius: var(--br1);
 }
 
-.br-m,
-.br,
-.br-m_,
-.br_ {
+.br2 {
     border-radius: var(--br2);
 }
 
-.br-l,
-.br-l_ {
+.br3 {
     border-radius: var(--br3);
 }
 
-.br-xl,
-.br-xl_ {
+.br4 {
     border-radius: var(--br4);
 }
 
-.br-s_:hover,
-.br-m_:hover,
-.br-l_:hover,
-.br-xl_:hover,
-.br_:hover {
+.br1:hover,
+.br2:hover,
+.br3:hover,
+.br4:hover {
     border-radius: var(--br3);
 }
 
-.br-s_:active,
-.br-m_:active,
-.br-l_:active,
-.br-xl_:active,
-.br_:active {
+.br1:active,
+.br2:active,
+.br3:active,
+.br4:active {
     border-radius: var(--br3);
 }
 
-.br-s_:focus,
-.br-m_:focus,
-.br-l_:focus,
-.br-xl_:focus,
-.br_:focus {
+.br1:focus,
+.br2:focus,
+.br3:focus,
+.br4:focus {
     border-radius: var(--br4);
 }

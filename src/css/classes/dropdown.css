@@ -1,5 +1,5 @@
 .drp {
-    font-size: var(--fnt5);
+    font-size: var(--fnt3);
     position: relative;
 }
 
@@ -9,7 +9,7 @@
 }
 
 .drp-btn {
-    font-size: var(--fnt5);
+    font-size: var(--fnt3);
     border-radius: var(--br2);
     color: var(--btn1);
 }
@@ -25,7 +25,7 @@
     min-width: var(--dropdown-min-width);
     width: auto;
     box-shadow: var(--box2);
-    font-size: var(--fnt5);
+    font-size: var(--fnt3);
     z-index: 1;
 }
 
@@ -37,7 +37,7 @@
 
 .drp-cnt p {
     margin-top: 0;
-    font-size: var(--fnt4);
+    font-size: var(--fnt2);
     color: var(--t5);
 }
 

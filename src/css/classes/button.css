@@ -1,5 +1,4 @@
-.btn,
-.btn_ {
+.btn {
     width: auto;
     height: auto;
     padding: var(--pad2);
@@ -12,7 +11,7 @@
     background-color: var(--btn2);
 }
 
-.btn_:hover {
+.btn:hover {
     box-shadow: var(--box3);
     opacity: 90%;
 }

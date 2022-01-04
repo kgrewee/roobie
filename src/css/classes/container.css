@@ -1,35 +1,30 @@
-.div-s {
+.div1 {
     width: var(--div1);
     padding: var(--pad2);
 }
 
-.div-33 {
-    width: 33%;
-    padding: var(--pad2);
-}
-
-.div-m {
+.div2 {
     width: var(--div2);
     padding: var(--pad2);
 }
 
-.div-50 {
-    width: 50%;
-    padding: var(--pad2);
-}
-
-.div-l {
+.div3 {
     width: var(--div3);
     padding: var(--pad2);
 }
 
-.div-xl {
+.div4 {
     width: var(--div4);
     padding: var(--pad2);
 }
 
-.div-xxl {
+.div5 {
     width: var(--div5);
+    padding: var(--pad2);
+}
+
+.div6 {
+    width: var(--div6);
     padding: var(--pad2);
 }
 
@@ -49,12 +44,12 @@
 
 @media screen and (max-width: 800px) {
     .div,
-    .div-s,
-    .div-33,
-    .div-m,
-    .div-50,
-    .div-l,
-    .div-xl,
+    .div1,
+    .div2,
+    .div3,
+    .div4,
+    .div5,
+    .div6,
     .div,
     .div-mr {
         width: 100%;

@@ -1,0 +1,54 @@
+.drp {
+    font-size: var(--fnt5);
+    position: relative;
+}
+
+.drp:focus .drp-cnt,
+.drp:hover .drp-cnt {
+    display: block;
+}
+
+.drp-btn {
+    font-size: var(--fnt5);
+    border-radius: var(--br2);
+    color: var(--btn1);
+}
+
+.drp-btn:hover {
+    cursor: pointer;
+}
+
+.drp-cnt {
+    display: none;
+    position: absolute;
+    background-color: var(--bg1);
+    min-width: var(--dropdown-min-width);
+    width: auto;
+    box-shadow: var(--box2);
+    font-size: var(--fnt5);
+    z-index: 1;
+}
+
+.drp-title {
+    margin: 0;
+    padding: var(--pad2);
+    color: var(--t1);
+}
+
+.drp-cnt p {
+    margin-top: 0;
+    font-size: var(--fnt4);
+    color: var(--t5);
+}
+
+.drp-cnt a {
+    padding: var(--pad3);
+    color: var(--t1);
+    display: block;
+    margin: 0;
+}
+
+.drp-cnt a:hover {
+    background-color: var(--bg3);
+    cursor: pointer;
+}

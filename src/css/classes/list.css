@@ -1,0 +1,61 @@
+.ul,
+.ul-bdr,
+.ul-cnt,
+.ul-cnt-bdr {
+    list-style-type: none;
+    width: auto;
+    padding-inline-start: 0;
+    margin: var(--mrg3) 0;
+    padding: 0;
+}
+
+.ul li,
+.ul-bdr li {
+    color: var(--t5);
+    text-decoration: none;
+    height: auto;
+    padding: var(--pad3);
+    background-color: var(--bg2);
+    display: flex;
+    flex-flow: column nowrap;
+    cursor: pointer;
+}
+
+.ul-cnt li,
+.ul-cnt-bdr li {
+    color: var(--t5);
+    text-decoration: none;
+    height: auto;
+    padding: var(--pad4);
+    background-color: var(--bg2);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ul-cnt li a,
+.ul-cnt-bdr li a {
+    margin: var(--mrg2) 0;
+}
+
+.ul li span,
+.ul-bdr li span {
+    font-size: var(--fnt4);
+    color: var(--t5);
+}
+
+.ul-bdr li+li,
+.ul-cnt-bdr li+li {
+    border-top: var(--bdr2);
+}
+
+.ul li:hover {
+    color: var(--t1);
+}
+
+.ul-bdr li:hover,
+.ul-cnt li:hover,
+.ul-cnt-bdr li:hover {
+    color: var(--t1);
+}

@@ -1,0 +1,18 @@
+.btn,
+.btn_ {
+    width: auto;
+    height: auto;
+    padding: var(--pad2);
+    text-decoration: none;
+    border-radius: var(--br3);
+    margin: var(--mrg1);
+    cursor: pointer;
+    border: var(--bdr1);
+    color: var(--btn1);
+    background-color: var(--btn2);
+}
+
+.btn_:hover {
+    box-shadow: var(--box3);
+    opacity: 90%;
+}

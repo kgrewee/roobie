@@ -1,0 +1,136 @@
+/*
+Alignment on the main axis
+Horizontal for row, vertical for column
+*/
+
+.jst-between {
+    justify-content: space-between;
+}
+
+.jst-around {
+    justify-content: space-around;
+}
+
+.jst-center {
+    justify-content: center;
+}
+
+.jst-start {
+    justify-content: flex-start;
+}
+
+.jst-end {
+    justify-content: flex-end;
+}
+
+.jst-base {
+    justify-content: baseline;
+}
+
+.jst-stretch {
+    justify-content: stretch;
+}
+
+
+/* 
+Item alignment
+How items are aligned within a single line
+*/
+
+.aln-center {
+    align-items: center;
+}
+
+.aln-between {
+    align-items: space-between;
+}
+
+.aln-around {
+    align-items: space-around;
+}
+
+.aln-start {
+    align-items: flex-start;
+}
+
+.aln-end {
+    align-items: flex-end;
+}
+
+.aln-base {
+    align-items: baseline;
+}
+
+.aln-stretch {
+    align-items: stretch;
+}
+
+
+/* 
+Self alignment 
+How a single item is aligned within a single line
+*/
+
+.aln-self-between {
+    align-self: space-between;
+}
+
+.aln-self-around {
+    align-self: space-around;
+}
+
+.aln-self-start {
+    align-self: flex-start;
+}
+
+.aln-self-end {
+    align-self: flex-end;
+}
+
+.aln-self-base {
+    align-self: baseline;
+}
+
+.aln-self-stretch {
+    align-self: stretch;
+}
+
+
+/* 
+Content alignment 
+How lines are spaced.  No effect if content is only 1 line.
+*/
+
+.aln-cnt-between {
+    align-content: space-between;
+}
+
+.aln-cnt-around {
+    align-content: space-around;
+}
+
+.aln-cnt-start {
+    align-content: flex-start;
+}
+
+.aln-cnt-end {
+    align-content: flex-end;
+}
+
+.aln-cnt-base {
+    align-content: baseline;
+}
+
+.aln-cnt-stretch {
+    align-content: stretch;
+}
+
+
+/* 
+Order
+How items are ordered
+*/
+
+.ord-first {
+    order: -1;
+}

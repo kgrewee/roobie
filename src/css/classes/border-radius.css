@@ -1,0 +1,49 @@
+.nobr {
+    border-radius: none;
+}
+
+.br-s,
+.br-s_ {
+    border-radius: var(--br1);
+}
+
+.br-m,
+.br,
+.br-m_,
+.br_ {
+    border-radius: var(--br2);
+}
+
+.br-l,
+.br-l_ {
+    border-radius: var(--br3);
+}
+
+.br-xl,
+.br-xl_ {
+    border-radius: var(--br4);
+}
+
+.br-s_:hover,
+.br-m_:hover,
+.br-l_:hover,
+.br-xl_:hover,
+.br_:hover {
+    border-radius: var(--br3);
+}
+
+.br-s_:active,
+.br-m_:active,
+.br-l_:active,
+.br-xl_:active,
+.br_:active {
+    border-radius: var(--br3);
+}
+
+.br-s_:focus,
+.br-m_:focus,
+.br-l_:focus,
+.br-xl_:focus,
+.br_:focus {
+    border-radius: var(--br4);
+}

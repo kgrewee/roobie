@@ -8,15 +8,17 @@ Centralized CSS & JavaScript.  Light-weight, fast, and easy to use.  Make your c
 
 Contributions are welcome.  Branch from `develop` and make a pull request to `develop` when your branch is ready.  We will review it.  Help us make web development easier.
 
-## Live Demo
+## Demo
 
-This repo is a website built with Roobie.  Visit https://roobie.net or start a local web server.
+We built a website entirely with Roobie.
 
-If you have Python installed, run `./run.sh` in a terminal to start a web server.  Visit http://localhost:8000 in a browser.
+**Visit https://roobie.net**
+
+or
+
+**Run `python3 -m http.server` in this directory & visit http://localhost:8000/demo/ in a web browser.**
 
 ### Abbreviations
-
-Common abbreviations found in class names. They don't exceed 3 characters to keep class names short and sweet.
 
 - abs - Absolute
 - aln - Align
@@ -45,19 +47,15 @@ Common abbreviations found in class names. They don't exceed 3 characters to kee
 - rel - Relative
 - rsp - Responsive
 - scr - Scroll
+- trn - Transition
 - txt - Text
 - ul - Unordered list
 - wrp - Wrap
 - z - Z Index
 
-### Sizes
+### Variables
 
-Classes are suffixed with a size, if applicable.
-
-- s - Small
-- m - Medium
-- l - Large
-- xl - Extra large
+Our pre-built themes offer many variables that are adjustable.  We piggy back off the tradition HTML language syntax.  Variables are indexed 1,2,3 etc. to indicates the size, intensity or color of a property.  For example HTML uses h1, h2, and h3 for headings.  We use box1, box2, and box3 for box shadow.  This is consistent across all variables.
 
 ### Hover States
 

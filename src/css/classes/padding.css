@@ -1,0 +1,104 @@
+.pad-0 {
+    padding: 0;
+}
+
+.pad-xs {
+    padding: var(--pad1);
+}
+
+.pad-s {
+    padding: var(--pad2);
+}
+
+.pad-m,
+.pad {
+    padding: var(--pad3);
+}
+
+.pad-l {
+    padding: var(--pad4);
+}
+
+.pad-xl {
+    padding: var(--pad5);
+}
+
+
+/* Padding Left */
+
+.padl-s {
+    padding-left: var(--pad2);
+}
+
+.padl-m,
+.padl {
+    padding-left: var(--pad3);
+}
+
+.padl-l {
+    padding-left: var(--pad4);
+}
+
+.padl-xl {
+    padding-left: var(--pad5);
+}
+
+
+/* Padding Right */
+
+.padr-s {
+    padding-right: var(--pad2);
+}
+
+.padr-m,
+.padr {
+    padding-right: var(--pad3);
+}
+
+.padr-l {
+    padding-right: var(--pad4);
+}
+
+.padr-xl {
+    padding-right: var(--pad5);
+}
+
+
+/* Padding Vertical*/
+
+.padv-s {
+    padding: var(--pad2) 0;
+}
+
+.padv-m,
+.padv {
+    padding: var(--pad3) 0;
+}
+
+.padv-l {
+    padding: var(--pad4) 0;
+}
+
+.padv {
+    padding: var(--pad5) 0;
+}
+
+
+/* Padding Horizontal */
+
+.padh-s {
+    padding: 0 var(--pad2);
+}
+
+.padh-m,
+.padh {
+    padding: 0 var(--pad3);
+}
+
+.padh-l {
+    padding: 0 var(--pad4);
+}
+
+.padh-xl {
+    padding: 0 var(--pad5);
+}

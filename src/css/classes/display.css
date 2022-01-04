@@ -1,0 +1,15 @@
+.flx {
+    display: flex;
+}
+
+.inl {
+    display: inline;
+}
+
+.inl-blk {
+    display: inline-block;
+}
+
+.inl-flx {
+    display: inline-flex;
+}

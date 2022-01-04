@@ -1,0 +1,46 @@
+nav {
+    background-color: var(--nav2);
+}
+
+.nav-top {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+}
+
+.nav-row {
+    width: 100%;
+    height: auto;
+}
+
+.nav-col {
+    height: 100%;
+    width: auto;
+}
+
+.nav-title {
+    margin: var(--mrg4);
+    font-size: var(--fnt7);
+    color: var(--t1);
+}
+
+.nav-head {
+    margin: var(--mrg1);
+    font-size: var(--fnt5);
+    color: var(--t1);
+}
+
+.nav-item {
+    padding: var(--pad3);
+    margin: 0;
+    opacity: 80%;
+    height: 100%;
+    text-decoration: none;
+    color: var(--nav1);
+}
+
+.nav-item:hover {
+    opacity: 100%;
+    cursor: pointer;
+}

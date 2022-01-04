@@ -1,0 +1,82 @@
+<style>
+    .grid div {
+        width: 30%;
+        height: 50px;
+        color: var(--t1);
+        margin: 5px;
+        background-color: var(--bg1);
+    }
+    
+    .grid {
+        background-color: var(--bg3);
+        padding: var(--pad4);
+    }
+    /*
+Max height to demo wrap styles
+*/
+    
+    .grid.mrgv {
+        max-height: 225px;
+    }
+</style>
+<div class="div bg-softblue padv flx-col aln-center box">
+    <div class="div-xl">
+        <h1>Grid</h1>
+        <p>Simple, responsive grids with flexbox.</p>
+    </div>
+</div>
+<div class="div-xl flx-col aln-start jst-start txt-left mrgv">
+    <h3>Horizontal</h3>
+    <div class="div flx-col">
+        <div class="flx-row grid mrgv br jst-center">
+            <div class="box br-xl flx-row aln-center jst-center">1</div>
+            <div class="box br-xl flx-row aln-center jst-center">2</div>
+            <div class="box br-xl flx-row aln-center jst-center">3</div>
+        </div>
+    </div>
+    <h3>Vertical</h3>
+    <div class="div flx-col">
+        <div class="flx-col grid mrgv br aln-center">
+            <div class="box br-xl flx-col aln-center jst-center">1</div>
+            <div class="box br-xl flx-row aln-center jst-center">2</div>
+            <div class="box br-xl flx-row aln-center jst-center">3</div>
+        </div>
+    </div>
+    <h3>Nowrap is the Default</h3>
+    <p>For this demo, the max height of the grids is 225px. The sub-containers are 30% width & 50px height. There isn't enough space in the container for the sub-containers, so the flex-wrap property decides what to do. The default Roobie flex-wrap value
+        is nowrap, so the sub-containers are squished to fit on one line.</p>
+    <div class="div">
+        <div class="flx-row grid mrgv br">
+            <div class="box br-xl flx-row aln-center jst-center">1</div>
+            <div class="box br-xl flx-row aln-center jst-center">2</div>
+            <div class="box br-xl flx-row aln-center jst-center">3</div>
+            <div class="box br-xl flx-row aln-center jst-center">4</div>
+            <div class="box br-xl flx-row aln-center jst-center">5</div>
+        </div>
+        <div class="flx-col grid mrgv br">
+            <div class="box br-xl flx-col aln-center jst-center">1</div>
+            <div class="box br-xl flx-row aln-center jst-center">2</div>
+            <div class="box br-xl flx-row aln-center jst-center">3</div>
+            <div class="box br-xl flx-row aln-center jst-center">4</div>
+            <div class="box br-xl flx-row aln-center jst-center">5</div>
+        </div>
+    </div>
+    <h3>Wrap</h3>
+    <p>Nowrap is useful, but in this case, we want to wrap our items to keep them the same size. Simply add the <b>wrp</b> class to add wrap to the Grid. Use flex classes to align grid content.</p>
+    <div class="div br">
+        <div class="flx-row grid wrp mrgv br jst-end">
+            <div class="box br-xl flx-row aln-center jst-center">1</div>
+            <div class="box br-xl flx-row aln-center jst-center">2</div>
+            <div class="box br-xl flx-row aln-center jst-center">3</div>
+            <div class="box br-xl flx-row aln-center jst-center">4</div>
+            <div class="box br-xl flx-row aln-center jst-center">5</div>
+        </div>
+        <div class="flx-col grid mrgv wrp aln-cnt-start br">
+            <div class="box br-xl flx-col aln-center jst-center">1</div>
+            <div class="box br-xl flx-row aln-center jst-center">2</div>
+            <div class="box br-xl flx-row aln-center jst-center">3</div>
+            <div class="box br-xl flx-row aln-center jst-center">4</div>
+            <div class="box br-xl flx-row aln-center jst-center">5</div>
+        </div>
+    </div>
+</div>

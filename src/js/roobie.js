@@ -193,7 +193,15 @@ function ready(fn) {
 function loadById(id, file) {
     debug("Load [File] " + file + " -> [Id] " + id);
     var element = getId(id);
-    $(element).load(file);
+    var request = new XMLHttpRequest();
+    request.open('GET', file, true);
+    request.onload = function() {
+        if (request.status >= 200 && request.status < 400) {
+            var resp = request.responseText;
+            element.innerHTML = resp;
+        }
+    };
+    request.send();
 }
 
 /**

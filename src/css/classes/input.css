@@ -1,0 +1,34 @@
+input:focus,
+textarea:focus,
+select:focus {
+    outline-offset: 0px !important;
+    outline: none !important;
+}
+
+.inp {
+    width: auto;
+    padding: var(--pad4);
+    background-color: var(--bg3);
+    border-radius: var(--br4);
+    margin: var(--mrg1);
+    font-size: var(--fnt4);
+    font: 500 15px var(--f1);
+    border: var(--bdr1);
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--t5);
+    opacity: 1;
+    /* Firefox */
+}
+
+ :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: var(--t5);
+}
+
+ ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--t5);
+}

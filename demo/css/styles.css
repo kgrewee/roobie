@@ -1,0 +1,175 @@
+/*
+Roobie logo
+*/
+
+.roobie {
+    color: var(--green);
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.roobie span {
+    color: var(--t1);
+}
+
+.title {
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.title img {
+    margin-right: var(--mrg2);
+}
+
+.title span {
+    color: var(--t1);
+}
+
+
+/*
+Dividers
+*/
+
+.row-divider {
+    height: 30px;
+    width: 100%;
+}
+
+.col-divider {
+    height: 100%;
+    width: 30px;
+}
+
+
+/*
+Body styles
+*/
+
+body {
+    background-color: var(--bg1);
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    font-family: var(--f1);
+}
+
+
+/*
+HTML element that doesn't render HTML inside.  Used for code demos.
+*/
+
+xmp {
+    color: var(--t1);
+    font-weight: bold;
+    white-space: normal;
+}
+
+
+/*
+Headings
+*/
+
+h1 {
+    color: var(--h1);
+    margin: var(--mrg2) 0;
+    font-size: var(--fnt9) !important;
+}
+
+h2 {
+    color: var(--h2);
+    margin: var(--mrg2) 0;
+}
+
+h3 {
+    color: var(--h3);
+    margin: var(--mrg2) 0;
+}
+
+h4 {
+    color: var(--h4);
+    margin: var(--mrg1) 0;
+}
+
+p {
+    margin: var(--mrg1) 0;
+    color: var(--t1);
+}
+
+
+/*
+Documentation
+*/
+
+.docs h3 {
+    width: 200px;
+    color: var(--h1);
+    font-weight: 500;
+}
+
+.docs h4 {
+    margin-right: var(--mrg7);
+    width: 200px;
+}
+
+.docs p {
+    width: 400px;
+}
+
+.ul {
+    margin: 0;
+}
+
+
+/*
+Bold element used to highlight important Roobie terms.
+*/
+
+b {
+    border-radius: var(--br4);
+    background-color: var(--bg3);
+    padding: 0 var(--pad2);
+    color: var(--softblue);
+    margin: 0 var(--mrg1);
+}
+
+
+/*Navbar*/
+
+.nav-head {
+    color: var(--softblue);
+}
+
+.nav-container {
+    border-left: 2px solid var(--softblue);
+    margin-left: var(--mrg2);
+}
+
+.active {
+    border-left: 1px solid var(--softblue);
+    background: linear-gradient(90deg, rgba(67, 67, 221, .15) 30%, rgba(255, 255, 255, 0.01) 100%);
+    color: var(--t1);
+    opacity: 100% !important;
+}
+
+#nav {
+    width: 200px;
+}
+
+
+/*
+Advantages list on home page
+*/
+
+.adv li {
+    box-shadow: 0 0 1px 2px rgb(67, 67, 221, .2) !important;
+    color: var(--softblue) !important;
+    font-weight: 800;
+    margin: var(--mrg2) 0;
+    padding: var(--pad4);
+    border-radius: var(--br2);
+    justify-content: center;
+}

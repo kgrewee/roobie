@@ -1,0 +1,8 @@
+.csr-pointer {
+    cursor: pointer;
+}
+
+.csr,
+.csr-default {
+    cursor: default;
+}

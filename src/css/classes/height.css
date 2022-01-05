@@ -1,29 +1,25 @@
-.ht-s {
-    height: var(--ht-s);
+.ht1 {
+    height: var(--ht1);
 }
 
-.ht-33 {
-    height: 33%;
+.ht2 {
+    height: var(--ht2);
 }
 
-.ht-m {
-    height: var(--ht-m);
+.ht3 {
+    height: var(--ht3);
 }
 
-.ht-50 {
-    height: 50%;
+.ht4 {
+    height: var(--ht4);
 }
 
-.ht-l {
-    height: var(--ht-l);
+.ht5 {
+    height: var(--ht5);
 }
 
-.ht-xl {
-    height: var(--ht-xl);
-}
-
-.ht-xxl {
-    height: var(--ht-xxl);
+.ht6 {
+    height: var(--ht6);
 }
 
 .ht-auto {

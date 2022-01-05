@@ -1,29 +1,25 @@
-.op-s {
-    opacity: var(--op-s);
+.op1 {
+    opacity: var(--op1);
 }
 
-.op-33 {
-    opacity: 33%;
+.op2 {
+    opacity: var(--op2);
 }
 
-.op-m {
-    opacity: var(--op-m);
+.op3 {
+    opacity: var(--op3);
 }
 
-.op-50 {
-    opacity: 50%;
+.op4 {
+    opacity: var(--op4);
 }
 
-.op-l {
-    opacity: var(--op-l);
+.op5 {
+    opacity: var(--op5);
 }
 
-.op-xl {
-    opacity: var(--op-xl);
-}
-
-.op-xxl {
-    opacity: var(--op-xxl);
+.op6 {
+    opacity: var(--op6);
 }
 
 .op {

@@ -15,21 +15,21 @@
         addClassById('dark', 'theme-btn-active', getLocalStorage('theme') == 'dark');
     })
 </script>
-<nav class="nav-col flx-col aln-left in">
-    <div class="flx-row jst-start aln-center pad csr-pointer" onclick="index()">
+<nav class="nav-col flx-col aln-left in4">
+    <div class="flx-row jst-start aln-center pad2 csr-pointer" onclick="index()">
         <img width="35" height="35" src="../../src/icons/gem-stone-1.svg">
-        <a class="roobie padl"><span>Roo</span>bie</a>
+        <a class="roobie padl2"><span>Roo</span>bie</a>
     </div>
     <div class="div flx-col scr">
         <a class="nav-item nav-a active" onclick="loadById('main', 'components/home.html'); removeClassByClass('nav-a', 'active');addClassByElement(this,'active');">Home</a>
         <a class="nav-item nav-a" onclick="loadById('main', 'components/install.html'); removeClassByClass('nav-a', 'active');addClassByElement(this,'active');">Install</a>
-        <a class="nav-item nav-a toggle flx-row jst-start aln-center" onclick="toggleById('themes'); rotateById('theme-toggle', 270, true);"><img id="theme-toggle" width="15" height="15" src="../../src/icons/mfglabs-down-open-black.svg"><span class="mrgl">Themes</span></a>
-        <div id="themes" class="nav-container flx-col mrgl csr-pointer">
-            <a id="light" class="theme-btn pad" onclick="switchTheme('light');removeClassByClass('theme-btn', 'theme-btn-active');addClassByElement(this,'theme-btn-active', getLocalStorage('theme') == 'light');">Light</a>
-            <a id="dark" class="theme-btn pad" onclick="switchTheme('dark');removeClassByClass('theme-btn', 'theme-btn-active');addClassByElement(this,'theme-btn-active', getLocalStorage('theme') == 'dark');">Dark</a>
+        <a class="nav-item nav-a toggle flx-row jst-start aln-center" onclick="toggleById('themes'); rotateById('theme-toggle', 270, true);"><img id="theme-toggle" width="15" height="15" src="../../src/icons/mfglabs-down-open-black.svg"><span class="mrgl2">Themes</span></a>
+        <div id="themes" class="nav-container flx-col mrgl2 csr-pointer">
+            <a id="light" class="theme-btn pad2" onclick="switchTheme('light');removeClassByClass('theme-btn', 'theme-btn-active');addClassByElement(this,'theme-btn-active', getLocalStorage('theme') == 'light');">Light</a>
+            <a id="dark" class="theme-btn pad2" onclick="switchTheme('dark');removeClassByClass('theme-btn', 'theme-btn-active');addClassByElement(this,'theme-btn-active', getLocalStorage('theme') == 'dark');">Dark</a>
         </div>
-        <a class="nav-item nav-a toggle flx-row jst-start aln-center" onclick="toggleById('css-docs'); rotateById('css-docs-toggle', 270, true);"><img id="css-docs-toggle" width="15" height="15" src="../../src/icons/mfglabs-down-open-black.svg"><span class="mrgl">CSS Docs</span></a>
-        <div id="css-docs" class="nav-container flx-col mrgl">
+        <a class="nav-item nav-a toggle flx-row jst-start aln-center" onclick="toggleById('css-docs'); rotateById('css-docs-toggle', 270, true);"><img id="css-docs-toggle" width="15" height="15" src="../../src/icons/mfglabs-down-open-black.svg"><span class="mrgl2">CSS Docs</span></a>
+        <div id="css-docs" class="nav-container flx-col mrgl2">
             <a class="nav-item docs-a" onclick="loadById('main','docs/css/border.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Border</a>
             <a class="nav-item docs-a" onclick="loadById('main','docs/css/box-shadow.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Box Shadow</a>
             <a class="nav-item docs-a" onclick="loadById('main','docs/css/button.html'); removeClassByClass('docs-a', 'active');addClassByElement(this,'active');">Button</a>

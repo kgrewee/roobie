@@ -1,16 +1,23 @@
-.z-s {
+.z1 {
     z-index: var(--z1);
 }
 
-.z,
-.z-m {
+.z2 {
     z-index: var(--z2);
 }
 
-.z-l {
+.z3 {
     z-index: var(--z3);
 }
 
-.z-xl {
+.z4 {
     z-index: var(--z4);
+}
+
+.z5 {
+    z-index: var(--z5);
+}
+
+.z6 {
+    z-index: var(--z6);
 }

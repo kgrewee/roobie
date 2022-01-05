@@ -63,7 +63,7 @@ function collapseMenu(event, className) {
         var menus = getClass(className);
         for (i = 0; i < menus.length; i++) {
             items = menus[i].innerHTML;
-            if (!$(menus[i]).find(".rsp-cnt").hasClass("rsp-cnt")) {
+            if (!menus[i].classList.contains('rsp-cnt')) {
                 menus[i].innerHTML = '<div class="drp"> <button class="drp-btn flx-row aln-center bdr0"> <img width="25" height="25" src="../src/icons/fontawesome-menu-black.svg"> </button> <div class = "drp-cnt pad br2 rsp-cnt">' + items + '</div> </div>';
             }
         }
@@ -81,8 +81,8 @@ function expandMenu(event, className) {
         var menus = getClass(className);
         for (i = 0; i < menus.length; i++) {
             previousHtml = menus[i].innerHTML;
-            if ($(menus[i]).find(".rsp-cnt").hasClass("rsp-cnt")) {
-                menus[i].innerHTML = $(menus[i]).find(".rsp-cnt").html();
+            if (menus[i].querySelector('.rsp-cnt').classList.contains('rsp-cnt')) {
+                menus[i].innerHTML = menus[i].querySelector(".rsp-cnt").innerHTML;
             }
         }
     }

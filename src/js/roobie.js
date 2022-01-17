@@ -5,14 +5,14 @@ const appName = "Roobie";
 const debugMode = true;
 
 // Media Queries
-const MEDIA_EXPAND_S = window.matchMedia('(min-width: 600px)');
-const MEDIA_COLLAPSE_S = window.matchMedia('(max-width: 600px)');
-const MEDIA_EXPAND_M = window.matchMedia('(min-width: 1000px)');
-const MEDIA_COLLAPSE_M = window.matchMedia('(max-width: 1000px)');
-const MEDIA_EXPAND_L = window.matchMedia('(min-width: 1200px)');
-const MEDIA_COLLAPSE_L = window.matchMedia('(max-width: 1200px)');
-const MEDIA_EXPAND_XL = window.matchMedia('(min-width: 1400px)');
-const MEDIA_COLLAPSE_XL = window.matchMedia('(max-width: 1400px)');
+const MEDIAEXPANDS = window.matchMedia('(min-width: 600px)');
+const MEDIACOLLAPSES = window.matchMedia('(max-width: 600px)');
+const MEDIAEXPANDM = window.matchMedia('(min-width: 1000px)');
+const MEDIACOLLAPSEM = window.matchMedia('(max-width: 1000px)');
+const MEDIAEXPANDL = window.matchMedia('(min-width: 1200px)');
+const MEDIACOLLAPSEL = window.matchMedia('(max-width: 1200px)');
+const MEDIAEXPANDXL = window.matchMedia('(min-width: 1400px)');
+const MEDIACOLLAPSEXL = window.matchMedia('(max-width: 1400px)');
 
 ready(function() {
     const theme = getLocalStorage('theme');
@@ -22,16 +22,16 @@ ready(function() {
         switchTheme('light');
     }
 
-    MEDIA_EXPAND_S.addEventListener("change", (event) => expandMenu(event, 'rsp-menu-s'));
-    MEDIA_COLLAPSE_S.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-s'));
-    MEDIA_EXPAND_M.addEventListener("change", (event) => expandMenu(event, 'rsp-menu'));
-    MEDIA_COLLAPSE_M.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu'));
-    MEDIA_EXPAND_M.addEventListener("change", (event) => expandMenu(event, 'rsp-menu-m'));
-    MEDIA_COLLAPSE_M.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-m'));
-    MEDIA_EXPAND_L.addEventListener("change", (event) => expandMenu(event, 'rsp-menu-l'));
-    MEDIA_COLLAPSE_L.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-l'));
-    MEDIA_EXPAND_XL.addEventListener("change", (event) => expandMenu(event, 'rsp-menu-xl'));
-    MEDIA_COLLAPSE_XL.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-xl'));
+    MEDIAEXPANDS.addEventListener("change", (event) => expandMenu(event, 'rsp-menu-s'));
+    MEDIACOLLAPSES.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-s'));
+    MEDIAEXPANDM.addEventListener("change", (event) => expandMenu(event, 'rsp-menu'));
+    MEDIACOLLAPSEM.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu'));
+    MEDIAEXPANDM.addEventListener("change", (event) => expandMenu(event, 'rsp-menu-m'));
+    MEDIACOLLAPSEM.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-m'));
+    MEDIAEXPANDL.addEventListener("change", (event) => expandMenu(event, 'rsp-menu-l'));
+    MEDIACOLLAPSEL.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-l'));
+    MEDIAEXPANDXL.addEventListener("change", (event) => expandMenu(event, 'rsp-menu-xl'));
+    MEDIACOLLAPSEXL.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-xl'));
     checkMedia();
 })
 
@@ -40,16 +40,16 @@ ready(function() {
  */
 function checkMedia() {
     debug("Checking media queries");
-    collapseMenu(MEDIA_COLLAPSE_S, 'rsp-menu-s');
-    expandMenu(MEDIA_EXPAND_S, 'rsp-menu-s');
-    collapseMenu(MEDIA_COLLAPSE_M, 'rsp-menu');
-    expandMenu(MEDIA_EXPAND_M, 'rsp-menu');
-    collapseMenu(MEDIA_COLLAPSE_M, 'rsp-menu-m');
-    expandMenu(MEDIA_EXPAND_M, 'rsp-menu-m');
-    collapseMenu(MEDIA_COLLAPSE_L, 'rsp-menu-l');
-    expandMenu(MEDIA_EXPAND_L, 'rsp-menu-l');
-    collapseMenu(MEDIA_COLLAPSE_XL, 'rsp-menu-xl');
-    expandMenu(MEDIA_EXPAND_XL, 'rsp-menu-xl');
+    collapseMenu(MEDIACOLLAPSES, 'rsp-menu-s');
+    expandMenu(MEDIAEXPANDS, 'rsp-menu-s');
+    collapseMenu(MEDIACOLLAPSEM, 'rsp-menu');
+    expandMenu(MEDIAEXPANDM, 'rsp-menu');
+    collapseMenu(MEDIACOLLAPSEM, 'rsp-menu-m');
+    expandMenu(MEDIAEXPANDM, 'rsp-menu-m');
+    collapseMenu(MEDIACOLLAPSEL, 'rsp-menu-l');
+    expandMenu(MEDIAEXPANDL, 'rsp-menu-l');
+    collapseMenu(MEDIACOLLAPSEXL, 'rsp-menu-xl');
+    expandMenu(MEDIAEXPANDXL, 'rsp-menu-xl');
 }
 
 /**
@@ -63,8 +63,8 @@ function collapseMenu(event, className) {
         var menus = getClass(className);
         for (i = 0; i < menus.length; i++) {
             items = menus[i].innerHTML;
-            if (!$(menus[i]).find(".rsp-cnt").hasClass("rsp-cnt")) {
-                menus[i].innerHTML = '<div class="drp"> <button class="drp-btn flx-row aln-center nobdr"> <img width="25" height="25" src="../src/icons/fontawesome-menu-black.svg"> </button> <div class = "drp-cnt pad br rsp-cnt">' + items + '</div> </div>';
+            if (!menus[i].classList.contains('rsp-cnt')) {
+                menus[i].innerHTML = '<div class="drp"> <button class="drp-btn flx-row aln-center bdr0"> <img width="25" height="25" src="../src/icons/fontawesome-menu-black.svg"> </button> <div class = "drp-cnt pad2 br2 rsp-cnt">' + items + '</div> </div>';
             }
         }
     }
@@ -81,8 +81,8 @@ function expandMenu(event, className) {
         var menus = getClass(className);
         for (i = 0; i < menus.length; i++) {
             previousHtml = menus[i].innerHTML;
-            if ($(menus[i]).find(".rsp-cnt").hasClass("rsp-cnt")) {
-                menus[i].innerHTML = $(menus[i]).find(".rsp-cnt").html();
+            if (menus[i].querySelector('.rsp-cnt').classList.contains('rsp-cnt')) {
+                menus[i].innerHTML = menus[i].querySelector(".rsp-cnt").innerHTML;
             }
         }
     }

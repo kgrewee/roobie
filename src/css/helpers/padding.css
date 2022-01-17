@@ -1,0 +1,141 @@
+/*
+Name: Padding
+Prefix: pad
+Dev: Padding on the inside of an element
+*/
+
+.pad0 {
+    padding: 0 !important;
+}
+
+.pad1 {
+    padding: var(--pad1);
+}
+
+.pad2 {
+    padding: var(--pad2);
+}
+
+.pad3 {
+    padding: var(--pad3);
+}
+
+.pad4 {
+    padding: var(--pad4);
+}
+
+.pad5 {
+    padding: var(--pad5);
+}
+
+.pad6 {
+    padding: var(--pad6);
+}
+
+
+/* Padding Left */
+
+.padl1 {
+    padding-left: var(--pad1);
+}
+
+.padl2 {
+    padding-left: var(--pad2);
+}
+
+.padl3 {
+    padding-left: var(--pad3);
+}
+
+.padl4 {
+    padding-left: var(--pad4);
+}
+
+.padl5 {
+    padding-left: var(--pad5);
+}
+
+.padl6 {
+    padding-left: var(--pad6);
+}
+
+
+/* Padding Right */
+
+.padr1 {
+    padding-right: var(--pad1);
+}
+
+.padr2 {
+    padding-right: var(--pad2);
+}
+
+.padr3 {
+    padding-right: var(--pad3);
+}
+
+.padr4 {
+    padding-right: var(--pad4);
+}
+
+.padr5 {
+    padding-right: var(--pad5);
+}
+
+.padr6 {
+    padding-right: var(--pad6);
+}
+
+
+/* Padding Vertical*/
+
+.padv1 {
+    padding: var(--pad1) 0;
+}
+
+.padv2 {
+    padding: var(--pad2) 0;
+}
+
+.padv3 {
+    padding: var(--pad3) 0;
+}
+
+.padv4 {
+    padding: var(--pad4) 0;
+}
+
+.padv5 {
+    padding: var(--pad5) 0;
+}
+
+.padv6 {
+    padding: var(--pad6) 0;
+}
+
+
+/* Padding Horizontal */
+
+.padh1 {
+    padding: 0 var(--pad1);
+}
+
+.padh2 {
+    padding: 0 var(--pad2);
+}
+
+.padh3 {
+    padding: 0 var(--pad3);
+}
+
+.padh4 {
+    padding: 0 var(--pad4);
+}
+
+.padh5 {
+    padding: 0 var(--pad5);
+}
+
+.padh6 {
+    padding: 0 var(--pad6);
+}

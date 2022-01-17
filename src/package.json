@@ -1,0 +1,26 @@
+{
+    "name": "roobie-test",
+    "version": "0.0.1",
+    "description": "Powerful Web Framework.  Centralized CSS and JavaScript.",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kgrewee/roobie.git"
+    },
+    "keywords": [
+        "css-framework",
+        "css",
+        "js",
+        "html"
+    ],
+    "author": "Kyle Grewe",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/kgrewee/roobie/issues"
+    },
+    "homepage": "https://github.com/kgrewee/roobie#readme",
+    "dependencies": {}
+}

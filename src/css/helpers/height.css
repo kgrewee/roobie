@@ -1,0 +1,37 @@
+/* 
+Name: Height
+Prefix: fnt
+Dev: Height of an element
+*/
+
+.ht0 {
+    height: auto;
+}
+
+.ht1 {
+    height: var(--ht1);
+}
+
+.ht2 {
+    height: var(--ht2);
+}
+
+.ht3 {
+    height: var(--ht3);
+}
+
+.ht4 {
+    height: var(--ht4);
+}
+
+.ht5 {
+    height: var(--ht5);
+}
+
+.ht6 {
+    height: var(--ht6);
+}
+
+.ht {
+    height: 100%;
+}

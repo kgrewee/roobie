@@ -1,0 +1,48 @@
+/* 
+Prefix: 
+Dev: Colors are referenced by name
+*/
+
+.black {
+    color: var(--black);
+}
+
+.white {
+    color: var(--white);
+}
+
+.grey {
+    color: var(--grey);
+}
+
+.offwhite {
+    color: var(--bg3);
+}
+
+.red {
+    color: var(--red);
+}
+
+.softred {
+    color: var(--softred);
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.softblue {
+    color: var(--softblue);
+}
+
+.yellow {
+    color: var(--yellow);
+}
+
+.orange {
+    color: var(--orange);
+}
+
+.green {
+    color: var(--green);
+}

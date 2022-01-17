@@ -1,0 +1,17 @@
+/* 
+Name: Flex Wrap
+Prefix: wrp
+Dev: How items are effected when there isn't enough space on a line
+*/
+
+.wrp {
+    flex-wrap: wrap;
+}
+
+.wrp-rev {
+    flex-wrap: wrap-reverse;
+}
+
+.wrp0 {
+    flex-wrap: nowrap;
+}

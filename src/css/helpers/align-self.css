@@ -1,0 +1,33 @@
+/* 
+Name: Align Self
+Prefix: aln-self
+Dev: How a single item is aligned within a single line
+*/
+
+.aln-self-center {
+    align-self: center;
+}
+
+.aln-self-between {
+    align-self: space-between;
+}
+
+.aln-self-around {
+    align-self: space-around;
+}
+
+.aln-self-start {
+    align-self: flex-start;
+}
+
+.aln-self-end {
+    align-self: flex-end;
+}
+
+.aln-self-base {
+    align-self: baseline;
+}
+
+.aln-self-stretch {
+    align-self: stretch;
+}

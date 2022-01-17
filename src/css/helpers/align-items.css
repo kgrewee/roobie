@@ -1,0 +1,33 @@
+/* 
+Name: Align Items
+Prefix: aln
+Dev: How items are aligned within a single line
+*/
+
+.aln-center {
+    align-items: center;
+}
+
+.aln-between {
+    align-items: space-between;
+}
+
+.aln-around {
+    align-items: space-around;
+}
+
+.aln-start {
+    align-items: flex-start;
+}
+
+.aln-end {
+    align-items: flex-end;
+}
+
+.aln-base {
+    align-items: baseline;
+}
+
+.aln-stretch {
+    align-items: stretch;
+}

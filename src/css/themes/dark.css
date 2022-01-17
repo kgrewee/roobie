@@ -76,13 +76,6 @@
     --trn4: '1s ease';
     --trn5: '1s ease';
     --trn6: '1s ease';
-    /*Button*/
-    --btn1: var(--t1);
-    --btn2: var(--bg2);
-    --btn3: var(--t1);
-    --btn4: var(--t1);
-    --btn5: var(--t1);
-    --btn6: var(--t1);
     /*Paragraph*/
     --p1: var(--t2);
     --p2: var(--t2);

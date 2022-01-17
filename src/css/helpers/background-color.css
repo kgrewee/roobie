@@ -1,0 +1,77 @@
+/* 
+Name: Background Color
+Prefix: bg
+Dev: Background color of an element
+*/
+
+.bg0 {
+    background-color: transparent !important;
+}
+
+.bg1 {
+    background-color: var(--bg1);
+}
+
+.bg2 {
+    background-color: var(--bg2);
+}
+
+.bg3 {
+    background-color: var(--bg3);
+}
+
+.bg4 {
+    background-color: var(--bg4);
+}
+
+.bg5 {
+    background-color: var(--bg5);
+}
+
+.bg6 {
+    background-color: var(--bg6);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-grey {
+    background-color: var(--grey);
+}
+
+.bg-offwhite {
+    background-color: var(--bg3);
+}
+
+.bg-red {
+    background-color: var(--red);
+}
+
+.bg-softred {
+    background-color: var(--softred);
+}
+
+.bg-blue {
+    background-color: var(--blue);
+}
+
+.bg-softblue {
+    background-color: var(--softblue);
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+.bg-orange {
+    background-color: var(--orange);
+}
+
+.bg-green {
+    background-color: var(--green);
+}

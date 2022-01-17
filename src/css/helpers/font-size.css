@@ -1,0 +1,29 @@
+/* 
+Name: Font Size
+Prefix: fnt
+Dev: Font size of an element
+*/
+
+.fnt1 {
+    font-size: var(--fnt1);
+}
+
+.fnt2 {
+    font-size: var(--fnt2);
+}
+
+.fnt3 {
+    font-size: var(--fnt3);
+}
+
+.fnt4 {
+    font-size: var(--fnt4);
+}
+
+.fnt5 {
+    font-size: var(--fnt5);
+}
+
+.fnt6 {
+    font-size: var(--fnt6);
+}

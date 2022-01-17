@@ -1,0 +1,84 @@
+/* 
+Name: Border
+Prefix: bdr
+Dev: Border of an element
+*/
+
+.bdr0 {
+    border: none !important;
+}
+
+.bdr1 {
+    border: var(--bdr1) !important;
+}
+
+.bdr2 {
+    border: var(--bdr2) !important;
+}
+
+.bdr3 {
+    border: var(--bdr3) !important;
+}
+
+.bdr4 {
+    border: var(--bdr4) !important;
+}
+
+.bdr5 {
+    border: var(--bdr5) !important;
+}
+
+.bdr6 {
+    border: var(--bdr6) !important;
+}
+
+
+/* Border with color */
+
+.bdr-black {
+    border: 1px solid var(--black) !important;
+}
+
+.bdr-white {
+    border: 1px solid var(--white) !important;
+}
+
+.bdr-grey {
+    border: 1px solid var(--grey) !important;
+}
+
+.bdr-offwhite {
+    border: 1px solid var(--bg3) !important;
+}
+
+.bdr-red {
+    border: 1px solid var(--red) !important;
+}
+
+.bdr-softred {
+    border: 1px solid var(--softred) !important;
+}
+
+.bdr-blue {
+    border: 1px solid var(--blue) !important;
+}
+
+.bdr-softblue {
+    border: 1px solid var(--softblue) !important;
+}
+
+.bdr-yellow {
+    border: 1px solid var(--yellow) !important;
+}
+
+.bdr-orange {
+    border: 1px solid var(--orange) !important;
+}
+
+.bdr-green {
+    border: 1px solid var(--green) !important;
+}
+
+.bdr-b:hover {
+    border-bottom: var(--bdr2) !important;
+}

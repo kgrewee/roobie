@@ -1,0 +1,16 @@
+.btn {
+    width: auto;
+    height: auto;
+    padding: var(--pad2);
+    text-decoration: none;
+    border-radius: var(--br3);
+    margin: var(--mrg1);
+    cursor: pointer;
+    color: var(--t3);
+    background-color: var(--bg5);
+}
+
+.btn:hover {
+    box-shadow: var(--box3);
+    opacity: 90%;
+}

@@ -1,65 +1,25 @@
 # 💎 Roobie
 
-Powerful Web Framework
+Website code is often sloppy and inefficient.  All developers have different code patterns and naming conventions when making CSS classes and JavaScript functions.  Common CSS properties are often repeated on multiple classes and applied to a single element, creating duplicate code and slower load times.  Roobie aims to centralize common web patterns and naming conventions to help a teams efficiently code together.  Roobie favors reusing CSS classes and JavaScript functions, making HTML files bigger, but reducing custom written CSS and JavaScript code.
 
-Centralized CSS & JavaScript.  Light-weight, fast, and easy to use.  Make your code easier to maintain and increase development speed.
+**Benefits**
+
+- Increased maintainability 
+- Increased development speed
+- Reduced custom code
+- Reduced code cleanup
 
 ## Contributions
 
-Contributions are welcome.  Branch from `develop` and make a pull request to `develop` when your branch is ready.  We will review it.  Help us make web development easier.
+Contributions are welcome.  Branch from `develop` and make a pull request to `develop` when your branch is ready.  We will review it.  Solid contributors will be granted merge privledges.
 
 ## Demo
-
-We built a website entirely with Roobie.
 
 **Visit https://roobie.net**
 
 or
 
 **Run `python3 -m http.server` in this directory & visit http://localhost:8000/demo/ in a web browser.**
-
-### Abbreviations
-
-- abs - Absolute
-- aln - Align
-- bdr - Border
-- bg - Background
-- blk - Block
-- br - Border Radius
-- btn - Button
-- cnt - Content
-- csr - Cursor
-- div - Container
-- drp - Dropdown
-- flt - Float
-- flx - Flex
-- fnt - Font
-- ht - Height
-- in - Inset
-- inl - Inline
-- inp - Input
-- jst - Justify
-- mrg - Margin
-- ol - Ordered list
-- op - Opacity
-- ord - Order
-- pad - Padding
-- rel - Relative
-- rsp - Responsive
-- scr - Scroll
-- trn - Transition
-- txt - Text
-- ul - Unordered list
-- wrp - Wrap
-- z - Z Index
-
-### Variables
-
-Our pre-built themes offer many variables that are adjustable.  We piggy back off the tradition HTML language syntax.  Variables are indexed 1,2,3 etc. to indicates the size, intensity or color of a property.  For example HTML uses h1, h2, and h3 for headings.  We use box1, box2, and box3 for box shadow.  This is consistent across all variables.
-
-### Hover States
-
-Classes with hover states are signified by a trailing underscore.  `btn_` and `box_` are the button and box shadow hover state classes.
 
 ### Examples
 

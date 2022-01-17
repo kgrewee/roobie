@@ -18,30 +18,36 @@
     --z2: 5;
     --z3: 10;
     --z4: 20;
+    --z5: 50;
+    --z6: 100;
     /*Status*/
     --s1: green;
     --s2: orange;
     --s3: yellow;
     --s4: red;
     --s5: grey;
+    --s6: blue;
     /*Text*/
     --t1: rgb(20, 20, 20);
     --t2: rgb(30, 30, 30);
     --t3: rgb(40, 40, 40);
     --t4: rgb(50, 50, 50);
     --t5: rgb(60, 60, 60);
+    --t6: rgb(70, 70, 70);
     /*Background*/
     --bg1: rgb(240, 240, 240);
     --bg2: rgb(230, 230, 230);
     --bg3: rgb(220, 220, 220);
     --bg4: rgb(210, 210, 210);
     --bg5: rgb(200, 200, 200);
+    --bg6: rgb(190, 190, 190);
     /*Nav*/
     --nav1: var(--t2);
     --nav2: var(--bg4);
     --nav3: white;
     --nav4: white;
     --nav5: white;
+    --nav6: white;
     /*Heading*/
     --h1: var(--t1);
     --h2: var(--t5);
@@ -55,39 +61,49 @@
     --a3: white;
     --a4: white;
     --a5: white;
+    --a6: white;
     /*Font*/
     --f1: 'American Typewriter', serif;
     --f2: 'American Typewriter', serif;
     --f3: 'American Typewriter', serif;
     --f4: 'American Typewriter', serif;
     --f5: 'American Typewriter', serif;
+    --f6: 'American Typewriter', serif;
     /*Transition*/
     --trn1: '1s ease';
     --trn2: '1s ease';
     --trn3: '1s ease';
     --trn4: '1s ease';
     --trn5: '1s ease';
-    /*Button*/
-    --btn1: var(--t1);
-    --btn2: var(--bg2);
-    --btn3: var(--t1);
-    --btn4: var(--t1);
-    --btn5: var(--t1);
+    --trn6: '1s ease';
+    /*Paragraph*/
+    --p1: var(--t2);
+    --p2: var(--t2);
+    --p3: var(--t2);
+    --p4: var(--t2);
+    --p5: var(--t2);
+    --p6: var(--t2);
     /*Border*/
     --bdr1: .5px solid var(--t1);
     --bdr2: 1px solid var(--t1);
     --bdr3: 2px solid var(--t1);
     --bdr4: 3px solid var(--t1);
+    --bdr5: 5px solid var(--t1);
+    --bdr6: 7px solid var(--t1);
     /*Inset*/
     --in1: inset 0px 0px 1px 1px rgb(17, 17, 17, .1);
     --in2: inset 0px 0px 2px 2px rgb(17, 17, 17, .2);
     --in3: inset 0px 0px 3px 3px rgb(17, 17, 17, .2);
     --in4: inset 0px 0px 3px 3px rgb(17, 17, 17, .3);
+    --in5: inset 0px 0px 3px 3px rgb(17, 17, 17, .3);
+    --in6: inset 0px 0px 3px 3px rgb(17, 17, 17, .3);
     /*Box Shadow*/
     --box1: 0 0 1px 1px rgb(17, 17, 17, .1);
     --box2: 0 0 2px 2px rgb(17, 17, 17, .2);
     --box3: 0 0 3px 3px rgb(17, 17, 17, .2);
     --box4: 0 0 3px 3px rgb(17, 17, 17, .3);
+    --box5: 0 0 4px 4px rgb(17, 17, 17, .3);
+    --box6: 0 0 5px 5px rgb(17, 17, 17, .3);
     /*Border Radius*/
     --br1: 2px;
     --br2: 4px;
@@ -110,33 +126,32 @@
     --mrg5: 30px;
     --mrg6: 40px;
     /*Font Size*/
-    --fnt1: .2em;
-    --fnt2: .4em;
-    --fnt3: .6em;
-    --fnt4: .8em;
-    --fnt5: 1em;
-    --fnt6: 1.25em;
-    --fnt7: 1.5em;
-    --fnt8: 1.75em;
-    --fnt9: 2em;
-    --fnt10: 2.5em;
+    --fnt1: .5em;
+    --fnt2: .8em;
+    --fnt3: 1em;
+    --fnt4: 1.25em;
+    --fnt5: 1.5em;
+    --fnt6: 2em;
     /*Container*/
     --div1: 20%;
-    --div2: 40%;
-    --div3: 60%;
-    --div4: 80%;
-    --div5: 90%;
+    --div2: 33%;
+    --div3: 40%;
+    --div4: 50%;
+    --div5: 75%;
+    --div6: 90%;
     /*Height*/
     --ht1: 20%;
-    --ht2: 40%;
-    --ht3: 60%;
-    --ht4: 80%;
-    --ht5: 90%;
+    --ht2: 33%;
+    --ht3: 40%;
+    --ht4: 50%;
+    --ht5: 75%;
+    --ht6: 90%;
     /*Opacity*/
     --op1: 20%;
-    --op2: 40%;
-    --op3: 60%;
-    --op4: 80%;
-    --op5: 90%;
+    --op2: 33%;
+    --op3: 40%;
+    --op4: 50%;
+    --op5: 75%;
+    --op6: 90%;
     --dropdown-min-width: 160px;
 }

@@ -1,0 +1,71 @@
+/* Containers with auto width */
+
+.div0 {
+    width: auto;
+    height: auto;
+    padding: var(--pad2);
+}
+
+.div1 {
+    width: var(--div1);
+    height: auto;
+    padding: var(--pad2);
+}
+
+.div2 {
+    width: var(--div2);
+    height: auto;
+    padding: var(--pad2);
+}
+
+.div3 {
+    width: var(--div3);
+    height: auto;
+    padding: var(--pad2);
+}
+
+.div4 {
+    width: var(--div4);
+    height: auto;
+    padding: var(--pad2);
+}
+
+.div5 {
+    width: var(--div5);
+    height: auto;
+    padding: var(--pad2);
+}
+
+.div6 {
+    width: var(--div6);
+    height: auto;
+    padding: var(--pad2);
+}
+
+.div {
+    width: 100%;
+    height: auto;
+}
+
+.div-mr {
+    width: 1000px;
+    height: auto;
+}
+
+
+/* Mobile responsive container media queries */
+
+@media screen and (max-width: 800px) {
+    .div,
+    .div1,
+    .div2,
+    .div3,
+    .div4,
+    .div5,
+    .div6,
+    .div,
+    .div-mr {
+        width: 100%;
+        display: inline;
+    }
+}

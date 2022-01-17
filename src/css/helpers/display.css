@@ -1,0 +1,47 @@
+/* 
+Name: Display
+Prefix:   
+Dev: We use a flex based layouts most
+*/
+
+.flx {
+    display: flex;
+}
+
+
+/* Flex Column */
+
+.flx-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flx-col-rev {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+/* Flex Row */
+
+.flx-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flx-row-rev {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.inl {
+    display: inline;
+}
+
+.inl-blk {
+    display: inline-block;
+}
+
+.inl-flx {
+    display: inline-flex;
+}

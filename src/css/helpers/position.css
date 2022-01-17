@@ -1,0 +1,25 @@
+/*
+Name: Position
+Prefix: 
+Dev: 
+*/
+
+.sticky {
+    position: sticky;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.rel {
+    position: relative;
+}
+
+.abs {
+    position: absolute;
+}
+
+.static {
+    position: static;
+}

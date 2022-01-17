@@ -76,7 +76,7 @@ Headings
 h1 {
     color: var(--h1);
     margin: var(--mrg2) 0;
-    font-size: var(--fnt9) !important;
+    font-size: var(--fnt6) !important;
 }
 
 h2 {

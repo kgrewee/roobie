@@ -26,6 +26,7 @@
 .drp-cnt {
     display: none;
     position: absolute;
+    top: 20px;
     background-color: var(--bg1);
     min-width: var(--drp-min-width);
     width: auto;

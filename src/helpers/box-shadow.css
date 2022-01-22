@@ -8,45 +8,51 @@ Dev: Box shadow of an element
     box-shadow: none !important;
 }
 
-.box1 {
+.box1,
+.box1h {
     box-shadow: var(--box1);
 }
 
-.box2 {
+.box2,
+.box2h {
     box-shadow: var(--box2);
 }
 
-.box3 {
+.box3,
+.box3h {
     box-shadow: var(--box3);
 }
 
-.box4 {
+.box4,
+.box4h {
     box-shadow: var(--box4);
 }
 
-.box5 {
+.box5,
+.box5h {
     box-shadow: var(--box5);
 }
 
-.box6 {
+.box6,
+.box6h {
     box-shadow: var(--box6);
 }
 
-.box1:hover,
-.box2:hover,
-.box3:hover,
-.box4:hover,
-.box5:hover,
-.box6:hover {
+.box1h:hover,
+.box2h:hover,
+.box3h:hover,
+.box4h:hover,
+.box5h:hover,
+.box6h:hover {
     box-shadow: var(--box3);
 }
 
-.box1:focus,
-.box2:focus,
-.box3:focus,
-.box4:focus,
-.box5:focus,
-.box6:focus {
+.box1h:focus,
+.box2h:focus,
+.box3h:focus,
+.box4h:focus,
+.box5h:focus,
+.box6h:focus {
     box-shadow: var(--box4);
 }
 
@@ -54,44 +60,50 @@ Dev: Box shadow of an element
     box-shadow: none !important;
 }
 
-.in1 {
+.in1,
+.in1h {
     box-shadow: var(--in1);
 }
 
-.in2 {
+.in2,
+.in2h {
     box-shadow: var(--in2);
 }
 
-.in3 {
+.in3,
+.in3h {
     box-shadow: var(--in3);
 }
 
-.in4 {
+.in4,
+.in4h {
     box-shadow: var(--in4);
 }
 
-.in5 {
+.in5,
+.in5h {
     box-shadow: var(--in5);
 }
 
-.in6 {
+.in6,
+.in6h {
     box-shadow: var(--in6);
 }
 
-.in1:hover,
-.in2:hover,
-.in3:hover,
-.in4:hover,
-.in5:hover,
-.in6:hover {
+.in1h:hover,
+.in2h:hover,
+.in3h:hover,
+.in4h:hover,
+.in5h:hover,
+.in6h:hover {
     box-shadow: var(--in3);
 }
 
-.in1:focus,
-.in2:focus,
-.in3:focus,
-.in4:focus,
-.in5:focus,
-.in6:focus {
+.in1h:focus,
+.in2h:focus,
+.in3h:focus,
+.in4h:focus,
+.in5h:focus,
+.in6h:focus {
     box-shadow: var(--in4);
 }

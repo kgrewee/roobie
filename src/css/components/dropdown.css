@@ -11,7 +11,7 @@
 .drp-btn {
     font-size: var(--fnt3);
     border-radius: var(--br2);
-    color: var(--btn1);
+    color: var(--t2);
 }
 
 .drp-btn:hover {
@@ -22,7 +22,7 @@
     display: none;
     position: absolute;
     background-color: var(--bg1);
-    min-width: var(--dropdown-min-width);
+    min-width: var(--drp-min-width);
     width: auto;
     box-shadow: var(--box2);
     font-size: var(--fnt3);

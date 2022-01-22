@@ -1,0 +1,25 @@
+/* 
+Name: Status
+Prefix: s
+Dev: Statuses that can signal the user.  s1 usually means success or ok and is green.
+*/
+
+.s1 {
+    color: var(--s1);
+}
+
+.s2 {
+    color: var(--s2);
+}
+
+.s3 {
+    color: var(--s3);
+}
+
+.s4 {
+    color: var(--s4);
+}
+
+.s5 {
+    color: var(--s5);
+}

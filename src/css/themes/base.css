@@ -1,0 +1,37 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg1);
+}
+
+h1 {
+    color: var(--t1);
+}
+
+h2 {
+    color: var(--t2);
+}
+
+h3,
+h4,
+h5,
+h6 {
+    color: var(--t3);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: var(--mrg1) 0;
+}
+
+span,
+p {
+    color: var(--t3);
+}

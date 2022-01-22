@@ -47,24 +47,18 @@
     height: auto;
 }
 
-.div-mr {
-    width: 1000px;
-    height: auto;
-}
 
-
-/* Mobile responsive container media queries */
+/* Container media queries */
 
 @media screen and (max-width: 800px) {
-    .div,
+    .div0,
     .div1,
     .div2,
     .div3,
     .div4,
     .div5,
     .div6,
-    .div,
-    .div-mr {
+    .div {
         width: 100%;
         display: inline;
     }

@@ -33,7 +33,7 @@
     --bg3: rgb(40, 40, 40);
     --bg4: rgb(50, 50, 50);
     --bg5: rgb(60, 60, 60);
-    --bg6: rgb(70, 70, 70);
+    --bg6: var(--softblue);
     /*Nav*/
     --nav1: var(--t2);
     --nav2: var(--bg4);
@@ -70,17 +70,17 @@
     --bdr5: 5px solid var(--t1);
     --bdr6: 7px solid var(--t1);
     /*Inset*/
-    --in1: inset 0px 0px 1px 1px rgb(17, 17, 17, .1);
-    --in2: inset 0px 0px 2px 2px rgb(17, 17, 17, .2);
-    --in3: inset 0px 0px 3px 3px rgb(17, 17, 17, .2);
-    --in4: inset 0px 0px 3px 3px rgb(17, 17, 17, .3);
-    --in5: inset 0px 0px 3px 3px rgb(17, 17, 17, .3);
-    --in6: inset 0px 0px 3px 3px rgb(17, 17, 17, .3);
+    --in1: inset 0px 0px 1px 1px rgb(235, 235, 235, .1);
+    --in2: inset 0px 0px 2px 2px rgb(235, 235, 235, .2);
+    --in3: inset 0px 0px 3px 3px rgb(235, 235, 235, .2);
+    --in4: inset 0px 0px 3px 3px rgb(235, 235, 235, .3);
+    --in5: inset 0px 0px 3px 3px rgb(235, 235, 235, .3);
+    --in6: inset 0px 0px 3px 3px rgb(235, 235, 235, .3);
     /*Box Shadow*/
-    --box1: 0 0 1px 1px rgb(17, 17, 17, .1);
-    --box2: 0 0 2px 2px rgb(17, 17, 17, .2);
-    --box3: 0 0 3px 3px rgb(17, 17, 17, .2);
-    --box4: 0 0 3px 3px rgb(17, 17, 17, .3);
-    --box5: 0 0 4px 4px rgb(17, 17, 17, .3);
-    --box6: 0 0 5px 5px rgb(17, 17, 17, .3);
+    --box1: 0 0 1px 1px rgb(235, 235, 235, .1);
+    --box2: 0 0 2px 2px rgb(235, 235, 235, .2);
+    --box3: 0 0 3px 3px rgb(235, 235, 235, .2);
+    --box4: 0 0 3px 3px rgb(235, 235, 235, .3);
+    --box5: 0 0 4px 4px rgb(235, 235, 235, .3);
+    --box6: 0 0 5px 5px rgb(235, 235, 235, .3);
 }

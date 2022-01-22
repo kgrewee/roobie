@@ -54,5 +54,5 @@
 .ul-bdr li:hover,
 .ul-cnt li:hover,
 .ul-cnt-bdr li:hover {
-    opacity: 85%;
+    color: var(--t1);
 }

@@ -1,4 +1,5 @@
-.btn {
+.btn,
+.btnh {
     width: auto;
     height: auto;
     padding: var(--pad2);
@@ -10,6 +11,6 @@
     background-color: var(--bg5);
 }
 
-.btn:hover {
+.btnh:hover {
     opacity: 85%;
 }

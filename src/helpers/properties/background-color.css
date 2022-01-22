@@ -32,6 +32,30 @@ Dev: Background color of an element
     background-color: var(--bg6);
 }
 
+.bg-s1 {
+    background-color: var(--s1);
+}
+
+.bg-s2 {
+    background-color: var(--s2);
+}
+
+.bg-s3 {
+    background-color: var(--s3);
+}
+
+.bg-s4 {
+    background-color: var(--s4);
+}
+
+.bg-s5 {
+    background-color: var(--s5);
+}
+
+.bg-s6 {
+    background-color: var(--s6);
+}
+
 .bg-black {
     background-color: var(--black);
 }

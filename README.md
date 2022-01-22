@@ -17,30 +17,54 @@ The result is:
 
 ## Contributions
 
-Contributions are welcome.  Branch from `develop` and make a pull request to `develop` when your branch is ready.  We will review it.  Solid contributors will be granted merge privledges.
+Contributions are welcome.  Feel free to contribute CSS Classes, JS functions, themes, examples, etc.  Branch from `develop` and make a pull request to `develop` when your branch is ready.  We will review it.  Solid contributors will be granted merge privledges.  
 
 ## Examples
 
-A few examples of Roobie CSS classes.
+A few examples... these don't even scratch the surface.  Fully customized HTML without any custom code.
 
-**Container with 100% width**<br />
-&lt;div class="`div`">&lt;/div>
+**Button**<br />
+<pre>
+&lt;a class="btn"&gt;Button&lt;/a&gt;
+&lt;a class="btnh"&gt;Button with hover&lt;/a&gt;
+</pre>
 
-**Container with padding**<br />
-&lt;div class="`pad`">&lt;/div>
+**Dropdown**<br />
+<pre>
+&lt;div class="drp mrg2"&gt;
+    &lt;a class="drp-btn"&gt;Links&lt;/a&gt;
+    &lt;div class="drp-cnt br2 txtc"&gt;
+        &lt;a&gt;Link 1&lt;/a&gt;
+        &lt;a&gt;Link 2&lt;/a&gt;
+        &lt;a&gt;Link 3&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
 
-**Container with a flex row layout**<br />
-&lt;div class="`flx-row`">&lt;/div>
+**Styled List**<br />
+<pre>
+&lt;ul class="ul mrgh2"&gt;
+    &lt;li&gt;Apples&lt;/li&gt;
+    &lt;li&gt;Oranges&lt;/li&gt;
+    &lt;li&gt;Tomatos&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
 
-**Link styled as a Button**<br />
-&lt;a class="`btn`">&lt;/a>
-
-**Styled input box**<br />
-&lt;input class="`inp`">&lt;/input>
-
-**Styled block of content**<br />
-&lt;span class="`tag`">&lt;/span>
-
-**Styled list**<br />
-&lt;ul class="`ul`">&lt;/ul>
-
+**Responsive Menu**<br />
+<pre>
+&lt;nav class="nav-row flx-row jst-cnt-between aln-center box2"&gt;
+    &lt;div class="flx-row aln-center"&gt;
+        &lt;div class="nav-title"&gt;Navbar&lt;/div&gt;
+        &lt;div class="flx-row rsp-menu"&gt;
+            &lt;a class="nav-item"&gt;Home&lt;/a&gt;
+            &lt;a class="nav-item"&gt;Products&lt;/a&gt;
+            &lt;a class="nav-item"&gt;About Us&lt;/a&gt;
+            &lt;a class="nav-item"&gt;Contact Us&lt;/a&gt;
+            &lt;a class="nav-item"&gt;Help&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="flx-row"&gt;
+        &lt;a class="nav-item"&gt;user@roobie.net&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+</pre>

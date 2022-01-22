@@ -7,7 +7,7 @@ select:focus {
 
 .inp {
     width: auto;
-    padding: var(--pad4);
+    padding: var(--pad3);
     background-color: var(--bg2);
     border-radius: var(--br4);
     margin: var(--mrg1);

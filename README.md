@@ -17,30 +17,63 @@ The result is:
 
 ## Contributions
 
-Contributions are welcome.  Branch from `develop` and make a pull request to `develop` when your branch is ready.  We will review it.  Solid contributors will be granted merge privledges.
+Contributions are welcome.  Feel free to contribute CSS Classes, JS functions, themes, examples, etc.  Branch from `develop` and make a pull request to `develop` when your branch is ready.  We will review it.  Solid contributors will be granted merge privledges.  
 
 ## Examples
 
-A few examples of Roobie CSS classes.
+A few examples... these don't even scratch the surface.  Fully customized HTML without any custom code.
 
-**Container with 100% width**<br />
-&lt;div class="`div`">&lt;/div>
+**Button**
+<pre>
+<xmp>
+<a class="btn">Button</a>
+<a class="btnh">Button with hover</a>
+</xmp>
+</pre>
 
-**Container with padding**<br />
-&lt;div class="`pad`">&lt;/div>
+**Dropdown**
+<pre>
+<xmp>
+<div class="drp mrg2">
+    <a class="drp-btn">Links</a>
+    <div class="drp-cnt br2 txtc">
+        <a>Link 1</a>
+        <a>Link 2</a>
+        <a>Link 3</a>
+    </div>
+</div>
+</xmp>
+</pre>
 
-**Container with a flex row layout**<br />
-&lt;div class="`flx-row`">&lt;/div>
+**Styled List**
+<pre>
+<xmp>
+<ul class="ul mrgh2">
+    <li>Apples</li>
+    <li>Oranges</li>
+    <li>Tomatos</li>
+</ul>
+</xmp>
+</pre>
 
-**Link styled as a Button**<br />
-&lt;a class="`btn`">&lt;/a>
 
-**Styled input box**<br />
-&lt;input class="`inp`">&lt;/input>
-
-**Styled block of content**<br />
-&lt;span class="`tag`">&lt;/span>
-
-**Styled list**<br />
-&lt;ul class="`ul`">&lt;/ul>
-
+**Responsive Menu**
+<pre>
+<xmp>
+<nav class="nav-row flx-row jst-cnt-between aln-center box2">
+    <div class="flx-row aln-center">
+        <div class="nav-title">Navbar</div>
+        <div class="flx-row rsp-menu">
+            <a class="nav-item">Home</a>
+            <a class="nav-item">Products</a>
+            <a class="nav-item">About Us</a>
+            <a class="nav-item">Contact Us</a>
+            <a class="nav-item">Help</a>
+        </div>
+    </div>
+    <div class="flx-row">
+        <a class="nav-item">user@roobie.net</a>
+    </div>
+</nav>
+</xmp>
+</pre>

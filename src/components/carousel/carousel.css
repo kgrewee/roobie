@@ -23,10 +23,11 @@
     top: 50%;
     width: auto;
     margin-top: -22px;
-    padding: 16px;
-    color: white;
+    padding: var(--pad3);
+    color: var(--t1);
+    background-color: var(--bg1);
     font-weight: bold;
-    font-size: 18px;
+    font-size: var(--fnt4);
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -45,14 +46,15 @@
 
 .car-prev:hover,
 .car-next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: var(--bg3);
+    opacity: 90%;
 }
 
 
 /* Caption text */
 
 .car-txt {
-    color: #f2f2f2;
+    color: var(--t2);
     font-size: var(--fnt4);
     position: absolute;
     bottom: 50px;
@@ -61,25 +63,14 @@
 }
 
 
-/* Slide numbers */
-
-.car-num {
-    color: var(--t2);
-    font-size: var(--fnt4);
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-
 /* Dots to indicate slide active */
 
 .car-dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
     margin: 0 2px;
-    background-color: var(--bg2);
+    background-color: var(--bg3);
     border-radius: 50%;
     transition: background-color 0.6s ease;
     display: inline-block;
@@ -87,7 +78,7 @@
 
 .active,
 .car-dot:hover {
-    background-color: var(--bg5);
+    background-color: var(--bg6);
 }
 
 

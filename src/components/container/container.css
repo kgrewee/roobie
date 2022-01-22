@@ -61,5 +61,6 @@
     .div {
         width: 100%;
         display: inline;
+        padding: var(--pad2);
     }
 }

@@ -14,6 +14,7 @@ select:focus {
     font-size: var(--fnt4);
     font: 500 15px var(--f1);
     border: var(--bdr1);
+    color: var(--t2);
 }
 
 ::placeholder {

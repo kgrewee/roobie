@@ -89,6 +89,7 @@ function expandMenu(event, className) {
 }
 
 function switchTheme(themeName) {
+    console.log("Switching theme to " + themeName);
     setLocalStorage('theme', themeName);
     addAttributeByTag('body', 'theme', themeName);
 }

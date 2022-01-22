@@ -1,8 +1,14 @@
 # 💎 Roobie
 
-Website code is often sloppy and inefficient.  All developers have different code patterns and naming conventions when making CSS classes and JavaScript functions.  Common CSS properties are often repeated on multiple classes and applied to a single element, creating duplicate code and slower load times.  Roobie aims to centralize common web patterns and naming conventions to help a teams efficiently code together.  Roobie favors reusing CSS classes and JavaScript functions, making HTML files bigger, but reducing custom written CSS and JavaScript code.
+# Problem
 
-**Benefits**
+Website code is often sloppy and inefficient.  Developers follow different code patterns and naming conventions when making CSS classes and JavaScript functions.  Common CSS properties are often repeated on multiple classes and applied to a single element, creating duplicate code and slower load times.  Most projects are built from scratch, instead of using a template, causing overhead for project setup.  Custom setups for each application make the process un-replicable and hard to onboard developers to new projects.
+
+# Solution
+
+Roobie aims to centralize common web patterns and naming conventions to help a teams efficiently code. Reuse CSS classes and JavaScript functions, making HTML files bigger, but reducing custom written CSS and JavaScript code.  We provide free and proprietary templates that can be used as a starting point.
+
+The result is:
 
 - Increased maintainability 
 - Increased development speed
@@ -12,14 +18,6 @@ Website code is often sloppy and inefficient.  All developers have different cod
 ## Contributions
 
 Contributions are welcome.  Branch from `develop` and make a pull request to `develop` when your branch is ready.  We will review it.  Solid contributors will be granted merge privledges.
-
-## Demo
-
-**Visit https://roobie.net**
-
-or
-
-**Run `python3 -m http.server` in this directory & visit http://localhost:8000/demo/ in a web browser.**
 
 ### Examples
 

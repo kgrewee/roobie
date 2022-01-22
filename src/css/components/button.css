@@ -6,11 +6,10 @@
     border-radius: var(--br3);
     margin: var(--mrg1);
     cursor: pointer;
-    color: var(--t3);
+    color: var(--t2);
     background-color: var(--bg5);
 }
 
 .btn:hover {
-    box-shadow: var(--box3);
-    opacity: 90%;
+    opacity: 85%;
 }

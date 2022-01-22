@@ -4,7 +4,7 @@
 
 Website code is often sloppy and inefficient.  Developers follow different code patterns and naming conventions when making CSS classes and JavaScript functions.  Common CSS properties are often repeated on multiple classes and applied to a single element, creating duplicate code and slower load times.  Most projects are built from scratch, instead of using a template, causing overhead for project setup.  Custom setups for each application make the process un-replicable and hard to onboard developers to new projects.
 
-## Roobie's Solution
+## Solution
 
 Roobie aims to centralize common web patterns and naming conventions to help a teams efficiently code. Reuse CSS classes and JavaScript functions, making HTML files bigger, but reducing custom written CSS and JavaScript code.  We provide free and proprietary templates that can be used as a starting point.
 

@@ -50,12 +50,9 @@
     border-top: var(--bdr2);
 }
 
-.ul li:hover {
-    color: var(--t1);
-}
-
+.ul li:hover,
 .ul-bdr li:hover,
 .ul-cnt li:hover,
 .ul-cnt-bdr li:hover {
-    color: var(--t1);
+    opacity: 85%;
 }

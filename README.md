@@ -23,11 +23,14 @@ Contributions are welcome.  Feel free to contribute CSS Classes, JS functions, t
 
 A few examples... these don't even scratch the surface.  Fully customized HTML without any custom code.
 
-**Button**&lt;br /&gt;
+**Button**<br />
+<pre>
 &lt;a class="btn"&gt;Button&lt;/a&gt;
 &lt;a class="btnh"&gt;Button with hover&lt;/a&gt;
+</pre>
 
-**Dropdown**&lt;br /&gt;
+**Dropdown**<br />
+<pre>
 &lt;div class="drp mrg2"&gt;
     &lt;a class="drp-btn"&gt;Links&lt;/a&gt;
     &lt;div class="drp-cnt br2 txtc"&gt;
@@ -36,16 +39,19 @@ A few examples... these don't even scratch the surface.  Fully customized HTML w
         &lt;a&gt;Link 3&lt;/a&gt;
     &lt;/div&gt;
 &lt;/div&gt;
+</pre>
 
-**Styled List**&lt;br /&gt;
+**Styled List**<br />
+<pre>
 &lt;ul class="ul mrgh2"&gt;
     &lt;li&gt;Apples&lt;/li&gt;
     &lt;li&gt;Oranges&lt;/li&gt;
     &lt;li&gt;Tomatos&lt;/li&gt;
 &lt;/ul&gt;
+</pre>
 
-
-**Responsive Menu**&lt;br /&gt;
+**Responsive Menu**<br />
+<pre>
 &lt;nav class="nav-row flx-row jst-cnt-between aln-center box2"&gt;
     &lt;div class="flx-row aln-center"&gt;
         &lt;div class="nav-title"&gt;Navbar&lt;/div&gt;
@@ -61,3 +67,4 @@ A few examples... these don't even scratch the surface.  Fully customized HTML w
         &lt;a class="nav-item"&gt;user@roobie.net&lt;/a&gt;
     &lt;/div&gt;
 &lt;/nav&gt;
+</pre>

@@ -10,7 +10,6 @@
 }
 
 .tag:hover {
-    border: 1px solid var(--t1);
     box-shadow: var(--box3);
     cursor: default;
     opacity: 90%;

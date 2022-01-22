@@ -1,26 +1,32 @@
-@import 'align-content.css';
-@import 'align-items.css';
-@import 'align-self.css';
-@import 'background-color.css';
-@import 'border-radius.css';
-@import 'border.css';
-@import 'box-shadow.css';
-@import 'color.css';
-@import 'cursor.css';
-@import 'display.css';
-@import 'divider.css';
-@import 'flex-wrap.css';
-@import 'float.css';
-@import 'font-size.css';
-@import 'height.css';
-@import 'justify-content.css';
-@import 'margin.css';
-@import 'opacity.css';
-@import 'order.css';
-@import 'padding.css';
-@import 'position.css';
-@import 'scroll.css';
-@import 'status.css';
-@import 'text-align.css';
-@import 'text-decoration.css';
-@import 'z-index.css';
+/* Properties */
+
+@import 'properties/align-content.css';
+@import 'properties/align-items.css';
+@import 'properties/align-self.css';
+@import 'properties/background-color.css';
+@import 'properties/border-radius.css';
+@import 'properties/border.css';
+@import 'properties/box-shadow.css';
+@import 'properties/color.css';
+@import 'properties/cursor.css';
+@import 'properties/display.css';
+@import 'properties/divider.css';
+@import 'properties/flex-wrap.css';
+@import 'properties/float.css';
+@import 'properties/font-size.css';
+@import 'properties/height.css';
+@import 'properties/justify-content.css';
+@import 'properties/margin.css';
+@import 'properties/opacity.css';
+@import 'properties/order.css';
+@import 'properties/padding.css';
+@import 'properties/position.css';
+@import 'properties/scroll.css';
+@import 'properties/status.css';
+@import 'properties/text-align.css';
+@import 'properties/text-decoration.css';
+@import 'properties/z-index.css';
+
+/* Animations */
+
+@import 'animations/fade.css';

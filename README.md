@@ -23,57 +23,41 @@ Contributions are welcome.  Feel free to contribute CSS Classes, JS functions, t
 
 A few examples... these don't even scratch the surface.  Fully customized HTML without any custom code.
 
-**Button**
-<pre>
-<xmp>
-<a class="btn">Button</a>
-<a class="btnh">Button with hover</a>
-</xmp>
-</pre>
+**Button**&lt;br /&gt;
+&lt;a class="btn"&gt;Button&lt;/a&gt;
+&lt;a class="btnh"&gt;Button with hover&lt;/a&gt;
 
-**Dropdown**
-<pre>
-<xmp>
-<div class="drp mrg2">
-    <a class="drp-btn">Links</a>
-    <div class="drp-cnt br2 txtc">
-        <a>Link 1</a>
-        <a>Link 2</a>
-        <a>Link 3</a>
-    </div>
-</div>
-</xmp>
-</pre>
+**Dropdown**&lt;br /&gt;
+&lt;div class="drp mrg2"&gt;
+    &lt;a class="drp-btn"&gt;Links&lt;/a&gt;
+    &lt;div class="drp-cnt br2 txtc"&gt;
+        &lt;a&gt;Link 1&lt;/a&gt;
+        &lt;a&gt;Link 2&lt;/a&gt;
+        &lt;a&gt;Link 3&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
-**Styled List**
-<pre>
-<xmp>
-<ul class="ul mrgh2">
-    <li>Apples</li>
-    <li>Oranges</li>
-    <li>Tomatos</li>
-</ul>
-</xmp>
-</pre>
+**Styled List**&lt;br /&gt;
+&lt;ul class="ul mrgh2"&gt;
+    &lt;li&gt;Apples&lt;/li&gt;
+    &lt;li&gt;Oranges&lt;/li&gt;
+    &lt;li&gt;Tomatos&lt;/li&gt;
+&lt;/ul&gt;
 
 
-**Responsive Menu**
-<pre>
-<xmp>
-<nav class="nav-row flx-row jst-cnt-between aln-center box2">
-    <div class="flx-row aln-center">
-        <div class="nav-title">Navbar</div>
-        <div class="flx-row rsp-menu">
-            <a class="nav-item">Home</a>
-            <a class="nav-item">Products</a>
-            <a class="nav-item">About Us</a>
-            <a class="nav-item">Contact Us</a>
-            <a class="nav-item">Help</a>
-        </div>
-    </div>
-    <div class="flx-row">
-        <a class="nav-item">user@roobie.net</a>
-    </div>
-</nav>
-</xmp>
-</pre>
+**Responsive Menu**&lt;br /&gt;
+&lt;nav class="nav-row flx-row jst-cnt-between aln-center box2"&gt;
+    &lt;div class="flx-row aln-center"&gt;
+        &lt;div class="nav-title"&gt;Navbar&lt;/div&gt;
+        &lt;div class="flx-row rsp-menu"&gt;
+            &lt;a class="nav-item"&gt;Home&lt;/a&gt;
+            &lt;a class="nav-item"&gt;Products&lt;/a&gt;
+            &lt;a class="nav-item"&gt;About Us&lt;/a&gt;
+            &lt;a class="nav-item"&gt;Contact Us&lt;/a&gt;
+            &lt;a class="nav-item"&gt;Help&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="flx-row"&gt;
+        &lt;a class="nav-item"&gt;user@roobie.net&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;

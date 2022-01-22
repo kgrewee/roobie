@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Roobie | Carousel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../src/icons/gem-stone-1.svg">
+    <link rel="stylesheet" href="../src/roobie.css">
+    <script src="../src/roobie.js"></script>
+    <script src="../src/components/carousel/carousel.js"></script>
+</head>
+
+<body>
+    <header class="div flx-col aln-center bg6">
+        <div class="div6">
+            <h1>Carousel</h1>
+            <p class="fnt4">Interactive image slider.</p>
+        </div>
+    </header>
+    <main>
+        <div class="div flx-col aln-center">
+            <div class="div6 flx-col aln-start mrgv2">
+                <a class="btn mrg0" href="index.html">Back to home</a>
+                <h2>Basic</h2>
+                <div class="car">
+                    <div class="car-slide fade">
+                        <img src="./../src/images/summer.jpg" style="height: 600px;">
+                        <div class="car-txt white">Summer</div>
+                    </div>
+
+                    <div class="car-slide fade">
+                        <img src="./../src/images/blue-sky-sea.jpg" style="height: 600px;">
+                        <div class="car-txt white">Deep Blue Sea</div>
+                    </div>
+
+                    <div class="car-slide fade">
+                        <img src="./../src/images/fish.jpg" style="height: 600px;">
+                        <div class="car-txt white">Fish</div>
+                    </div>
+
+                    <a class="car-prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="car-next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <div class="div mrgv2 flx-col aln-center">
+                        <div class="flx-row">
+                            <span class="car-dot" onclick="currentSlide(1)"></span>
+                            <span class="car-dot" onclick="currentSlide(2)"></span>
+                            <span class="car-dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

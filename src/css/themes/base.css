@@ -1,3 +1,77 @@
+:root {
+    /*Font*/
+    --f1: 'American Typewriter', serif;
+    --f2: 'American Typewriter', serif;
+    --f3: 'American Typewriter', serif;
+    --f4: 'American Typewriter', serif;
+    --f5: 'American Typewriter', serif;
+    --f6: 'American Typewriter', serif;
+    /*Transition*/
+    --trn1: '1s ease';
+    --trn2: '1s ease';
+    --trn3: '1s ease';
+    --trn4: '1s ease';
+    --trn5: '1s ease';
+    --trn6: '1s ease';
+    /*Z-index*/
+    --z1: 1;
+    --z2: 5;
+    --z3: 10;
+    --z4: 20;
+    --z5: 50;
+    --z6: 100;
+    /*Border Radius*/
+    --br1: 2px;
+    --br2: 4px;
+    --br3: 6px;
+    --br4: 8px;
+    --br5: 10px;
+    --br6: 12px;
+    /*Padding*/
+    --pad1: 3px;
+    --pad2: 5px;
+    --pad3: 10px;
+    --pad4: 15px;
+    --pad5: 20px;
+    --pad6: 30px;
+    /*Margin*/
+    --mrg1: 5px;
+    --mrg2: 10px;
+    --mrg3: 15px;
+    --mrg4: 20px;
+    --mrg5: 30px;
+    --mrg6: 40px;
+    /*Font Size*/
+    --fnt1: .5em;
+    --fnt2: .8em;
+    --fnt3: 1em;
+    --fnt4: 1.25em;
+    --fnt5: 1.5em;
+    --fnt6: 2em;
+    /*Container*/
+    --div1: 20%;
+    --div2: 33%;
+    --div3: 40%;
+    --div4: 50%;
+    --div5: 75%;
+    --div6: 90%;
+    /*Height*/
+    --ht1: 20%;
+    --ht2: 33%;
+    --ht3: 40%;
+    --ht4: 50%;
+    --ht5: 75%;
+    --ht6: 90%;
+    /*Opacity*/
+    --op1: 20%;
+    --op2: 33%;
+    --op3: 40%;
+    --op4: 50%;
+    --op5: 75%;
+    --op6: 90%;
+    --drp-min-width: 160px;
+}
+
 html,
 body {
     height: 100%;
@@ -27,7 +101,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+span,
+p {
     margin: var(--mrg1) 0;
 }
 

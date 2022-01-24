@@ -6,7 +6,7 @@ Website code is often sloppy and inefficient.  Developers follow different code 
 
 ## Solution
 
-Roobie aims to centralize common web patterns and naming conventions to help a teams efficiently code. Reuse CSS classes and JavaScript functions, making HTML files bigger, but reducing custom written CSS and JavaScript code.  We provide free and proprietary templates that can be used as a starting point.
+Roobie aims to centralize common web patterns and naming conventions to help teams collaborate effectively. Reuse CSS classes and JavaScript functions, making HTML files bigger, but reducing custom written CSS and JavaScript code.  We provide free and proprietary templates that can be used as a starting point.
 
 The result is:
 

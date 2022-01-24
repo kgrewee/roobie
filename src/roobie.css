@@ -2,4 +2,5 @@
 
 @import 'themes/themes.module.css';
 @import 'components/components.module.css';
-@import 'helpers/helpers.module.css';
+@import 'animations/animations.module.css';
+@import 'properties/properties.module.css';

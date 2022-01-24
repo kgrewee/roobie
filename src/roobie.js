@@ -1,8 +1,4 @@
 /**
- * Imports
- */
-
-/**
  * Global variables.
  */
 const appName = "Roobie";
@@ -72,6 +68,19 @@ function collapseMenu(event, className) {
             }
         }
     }
+}
+
+/**
+ * Triggers an animation on an element.
+ * 
+ * @param {HTMLElement} element 
+ * @param {string} className 
+ */
+function animation(element, className) {
+    console.log("Animating " + element);
+    element.classList.remove(className);
+    void element.offsetWidth;
+    element.classList.add(className);
 }
 
 /**

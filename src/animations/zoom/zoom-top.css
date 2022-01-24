@@ -13,6 +13,7 @@
 
 .zoomt {
     animation-name: zoomt;
+    animation-duration: var(--animation-duration);
 }
 
 @keyframes zoomoutt {
@@ -31,4 +32,5 @@
 .zoomoutt {
     animation-name: zoomoutt;
     transform-origin: center bottom;
+    animation-duration: var(--animation-duration);
 }

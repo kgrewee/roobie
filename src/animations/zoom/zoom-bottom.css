@@ -13,6 +13,7 @@
 
 .zoomb {
     animation-name: zoomb;
+    animation-duration: var(--animation-duration);
 }
 
 @keyframes zoomoutb {
@@ -31,4 +32,5 @@
 .zoomoutb {
     animation-name: zoomoutb;
     transform-origin: center bottom;
+    animation-duration: var(--animation-duration);
 }

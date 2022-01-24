@@ -27,6 +27,7 @@
 
 .bouncel {
     animation-name: bouncel;
+    animation-duration: var(--animation-duration);
 }
 
 @keyframes bounceoutl {
@@ -42,4 +43,5 @@
 
 .bounceoutl {
     animation-name: bounceoutl;
+    animation-duration: var(--animation-duration);
 }

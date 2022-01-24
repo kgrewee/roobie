@@ -11,4 +11,5 @@
 
 .roll {
     animation-name: roll;
+    animation-duration: var(--animation-duration);
 }

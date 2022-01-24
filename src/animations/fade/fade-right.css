@@ -11,6 +11,7 @@
 
 .fader {
     animation-name: fader;
+    animation-duration: var(--animation-duration);
 }
 
 @keyframes fadeoutr {
@@ -25,4 +26,5 @@
 
 .fadeoutr {
     animation-name: fadeoutr;
+    animation-duration: var(--animation-duration);
 }

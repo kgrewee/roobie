@@ -27,6 +27,7 @@
 
 .bouncet {
     animation-name: bouncet;
+    animation-duration: var(--animation-duration);
 }
 
 @keyframes bounceoutt {
@@ -46,4 +47,5 @@
 
 .bounceoutt {
     animation-name: bounceoutt;
+    animation-duration: var(--animation-duration);
 }

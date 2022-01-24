@@ -10,6 +10,7 @@
 
 .zoom {
     animation-name: zoom;
+    animation-duration: var(--animation-duration);
 }
 
 @keyframes zoomout {
@@ -27,4 +28,5 @@
 
 .zoomout {
     animation-name: zoomout;
+    animation-duration: var(--animation-duration);
 }

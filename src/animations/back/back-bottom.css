@@ -15,6 +15,7 @@
 
 .backb {
     animation-name: backb;
+    animation-duration: var(--animation-duration);
 }
 
 @keyframes backoutb {
@@ -34,4 +35,5 @@
 
 .backoutb {
     animation-name: backoutb;
+    animation-duration: var(--animation-duration);
 }

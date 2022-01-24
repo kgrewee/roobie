@@ -10,6 +10,7 @@
 
 .slider {
     animation-name: slider;
+    animation-duration: var(--animation-duration);
 }
 
 @keyframes slideoutr {
@@ -24,4 +25,5 @@
 
 .slideoutr {
     animation-name: slideoutr;
+    animation-duration: var(--animation-duration);
 }

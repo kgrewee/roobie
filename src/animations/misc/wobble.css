@@ -24,4 +24,5 @@
 
 .wobble {
     animation-name: wobble;
+    animation-duration: var(--animation-duration);
 }

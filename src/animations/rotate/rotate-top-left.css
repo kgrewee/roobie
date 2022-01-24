@@ -12,6 +12,7 @@
 .rotatetl {
     animation-name: rotatetl;
     transform-origin: left bottom;
+    animation-duration: var(--animation-duration);
 }
 
 @keyframes rotateouttl {
@@ -27,4 +28,5 @@
 .rotateouttl {
     animation-name: rotateouttl;
     transform-origin: left bottom;
+    animation-duration: var(--animation-duration);
 }

@@ -11,6 +11,7 @@
 
 .fadetr {
     animation-name: fadetr;
+    animation-duration: var(--animation-duration);
 }
 
 @keyframes fadeouttr {
@@ -26,4 +27,5 @@
 
 .fadeouttr {
     animation-name: fadeouttr;
+    animation-duration: var(--animation-duration);
 }

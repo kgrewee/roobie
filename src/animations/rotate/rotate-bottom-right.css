@@ -12,6 +12,7 @@
 .rotatebr {
     animation-name: rotatebr;
     transform-origin: right bottom;
+    animation-duration: var(--animation-duration);
 }
 
 @keyframes rotateoutbr {
@@ -27,4 +28,5 @@
 .rotateoutbr {
     animation-name: rotateoutbr;
     transform-origin: right bottom;
+    animation-duration: var(--animation-duration);
 }

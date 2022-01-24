@@ -13,8 +13,9 @@
     }
 }
 
-.backb {
-    animation-name: backb;
+.backt {
+    animation-name: backt;
+    animation-duration: var(--animation-duration);
 }
 
 @keyframes backoutt {
@@ -34,4 +35,5 @@
 
 .backoutt {
     animation-name: backoutt;
+    animation-duration: var(--animation-duration);
 }

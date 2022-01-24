@@ -15,6 +15,7 @@
 
 .backl {
     animation-name: backl;
+    animation-duration: var(--animation-duration);
 }
 
 @keyframes backoutl {
@@ -34,4 +35,5 @@
 
 .backoutl {
     animation-name: backoutl;
+    animation-duration: var(--animation-duration);
 }

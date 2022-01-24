@@ -11,3 +11,11 @@ Dev: How items are effected when there isn't enough space on a line
 .flt-right {
     float: right;
 }
+
+.flt-none {
+    float: none;
+}
+
+.flt-inherit {
+    float: inherit;
+}

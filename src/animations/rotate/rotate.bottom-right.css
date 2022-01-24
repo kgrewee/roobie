@@ -13,3 +13,18 @@
     animation-name: rotatebr;
     transform-origin: right bottom;
 }
+
+@keyframes rotateoutbr {
+    from {
+        opacity: 1;
+    }
+    to {
+        transform: rotate3d(0, 0, 1, 90deg);
+        opacity: 0;
+    }
+}
+
+.rotateoutbr {
+    animation-name: rotateoutbr;
+    transform-origin: right bottom;
+}

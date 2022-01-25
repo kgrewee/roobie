@@ -48,18 +48,11 @@
 @import 'misc/rabid.css';
 @import 'misc/roll-out.css';
 @import 'misc/roll.css';
+@import 'misc/rotate.css';
 @import 'misc/shake.css';
 @import 'misc/stretch.css';
 @import 'misc/swing.css';
 @import 'misc/wobble.css';
-
-/* Rotate */
-
-@import 'rotate/rotate-bottom-left.css';
-@import 'rotate/rotate-top-left.css';
-@import 'rotate/rotate-top-right.css';
-@import 'rotate/rotate-bottom-right.css';
-@import 'rotate/rotate.css';
 
 /* Slide */
 

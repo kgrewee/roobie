@@ -12,7 +12,8 @@ Dev: Border of an element
     border: var(--bdr1) !important;
 }
 
-.bdr2 {
+.bdr2,
+.bdr {
     border: var(--bdr2) !important;
 }
 
@@ -80,5 +81,5 @@ Dev: Border of an element
 }
 
 .bdr-b:hover {
-    border-bottom: var(--bdr2) !important;
+    border-bottom: var(--bdr) !important;
 }

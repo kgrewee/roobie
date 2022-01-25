@@ -27,6 +27,7 @@ A few examples... these don't even scratch the surface.  Fully customized HTML w
 <pre>
 &lt;a class="fade"&gt;Fade&lt;/a&gt;
 &lt;a class="zoom"&gt;Zoom&lt;/a&gt;
+&lt;a class="flip"&gt;Flip&lt;/a&gt;
 &lt;a class="stretch"&gt;Stretch&lt;/a&gt;
 &lt;a class="heartbeat"&gt;Heartbeat&lt;/a&gt;
 </pre>
@@ -35,6 +36,11 @@ A few examples... these don't even scratch the surface.  Fully customized HTML w
 <pre>
 &lt;a class="btn"&gt;Button&lt;/a&gt;
 &lt;a class="btnh"&gt;Button with hover&lt;/a&gt;
+</pre>
+
+**Container**<br />
+<pre>
+&lt;div class="div"&gt;Container with 100% width&lt;/div&gt;
 </pre>
 
 **Dropdown**<br />
@@ -49,18 +55,19 @@ A few examples... these don't even scratch the surface.  Fully customized HTML w
 &lt;/div&gt;
 </pre>
 
-**Styled List**<br />
+**Margin**<br />
 <pre>
-&lt;ul class="ul"&gt;
-    &lt;li&gt;Apples&lt;/li&gt;
-    &lt;li&gt;Oranges&lt;/li&gt;
-    &lt;li&gt;Tomatos&lt;/li&gt;
-&lt;/ul&gt;
+&lt;div class="mrg"&gt;Container with margin&lt;/div&gt;
+</pre>
+
+**Padding**<br />
+<pre>
+&lt;div class="pad"&gt;Container with padding&lt;/div&gt;
 </pre>
 
 **Responsive Menu**<br />
 <pre>
-&lt;nav class="nav-row box2"&gt;
+&lt;nav class="nav-row"&gt;
     &lt;div class="nav-title"&gt;Navbar&lt;/div&gt;
     &lt;div class="flx-row rsp-menu"&gt;
         &lt;a class="nav-item"&gt;Home&lt;/a&gt;
@@ -70,4 +77,13 @@ A few examples... these don't even scratch the surface.  Fully customized HTML w
         &lt;a class="nav-item"&gt;Help&lt;/a&gt;
     &lt;/div&gt;
 &lt;/nav&gt;
+</pre>
+
+**Styled List**<br />
+<pre>
+&lt;ul class="ul"&gt;
+    &lt;li&gt;Apples&lt;/li&gt;
+    &lt;li&gt;Oranges&lt;/li&gt;
+    &lt;li&gt;Tomatos&lt;/li&gt;
+&lt;/ul&gt;
 </pre>

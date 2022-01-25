@@ -12,11 +12,16 @@ nav {
 .nav-row {
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .nav-col {
     height: 100%;
     width: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .nav-title {

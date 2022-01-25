@@ -12,7 +12,8 @@ Dev: Border radius of an element
     border-radius: var(--br1);
 }
 
-.br2 {
+.br2,
+.br {
     border-radius: var(--br2);
 }
 

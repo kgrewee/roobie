@@ -1,8 +1,4 @@
 /**
- * Imports
- */
-
-/**
  * Global variables.
  */
 const appName = "Roobie";
@@ -68,12 +64,38 @@ function collapseMenu(event, className) {
         for (i = 0; i < menus.length; i++) {
             items = menus[i].innerHTML;
             if (!menus[i].classList.contains('rsp-cnt')) {
-                menus[i].innerHTML = '<div class="drp"> <button class="drp-btn flx-row aln-center bdr0"> <img width="25" height="25" src="../src/assets/icons/fontawesome-menu-black.svg"> </button> <div class = "drp-cnt pad2 br2 rsp-cnt">' + items + '</div> </div>';
+                menus[i].innerHTML = '<div class="drp"> <button class="drp-btn flx-row aln-center bdr0"> <img width="25" height="25" src="../src/assets/icons/fontawesome-menu-black.svg"> </button> <div class = "drp-cnt pad2 br rsp-cnt">' + items + '</div> </div>';
             }
         }
     }
 }
 
+/**
+ * Triggers an animation on an element.
+ * 
+ * @param {HTMLElement} element Element to animate
+ * @param {string} className Class name of animation
+ */
+function animationByElement(element, className) {
+    console.log("Animating by element " + element);
+    element.classList.remove(className);
+    void element.offsetWidth;
+    element.classList.add(className);
+}
+
+/**
+ * Triggers an animation on an element by id.
+ * 
+ * @param {string} id Id of element to animate
+ * @param {string} className Class name of animation
+ */
+function animationById(id, className) {
+    console.log("Animating by id " + id);
+    let element = getId(id);
+    element.classList.remove(className);
+    void element.offsetWidth;
+    element.classList.add(className);
+}
 /**
  * Expand responsive menus.
  * 

@@ -12,7 +12,8 @@ Dev: Margin on the outside of an element
     margin: var(--mrg1);
 }
 
-.mrg2 {
+.mrg2,
+.mrg {
     margin: var(--mrg2);
 }
 
@@ -39,7 +40,8 @@ Dev: Margin on the outside of an element
     margin-left: var(--mrg1);
 }
 
-.mrgl2 {
+.mrgl2,
+.mrgl {
     margin-left: var(--mrg2);
 }
 
@@ -66,7 +68,8 @@ Dev: Margin on the outside of an element
     margin-right: var(--mrg1);
 }
 
-.mrgr2 {
+.mrgr2,
+.mrgr {
     margin-right: var(--mrg2);
 }
 
@@ -93,7 +96,8 @@ Dev: Margin on the outside of an element
     margin: var(--mrg1) 0;
 }
 
-.mrgv2 {
+.mrgv2,
+.mrgv {
     margin: var(--mrg2) 0;
 }
 
@@ -120,7 +124,8 @@ Dev: Margin on the outside of an element
     margin: 0 var(--mrg1);
 }
 
-.mrgh2 {
+.mrgh2,
+.mrgh {
     margin: 0 var(--mrg2);
 }
 

@@ -1,0 +1,29 @@
+@keyframes slidel {
+    from {
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.slidel {
+    animation-name: slidel;
+    animation-duration: var(--animation-duration);
+}
+
+@keyframes slideoutl {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        visibility: hidden;
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+.slideoutl {
+    animation-name: slideoutl;
+    animation-duration: var(--animation-duration);
+}

@@ -1,0 +1,30 @@
+@keyframes fadeb {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeb {
+    animation-name: fadeb;
+    animation-duration: var(--animation-duration);
+}
+
+@keyframes fadeoutb {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+}
+
+.fadeoutb {
+    animation-name: fadeoutb;
+    animation-duration: var(--animation-duration);
+}

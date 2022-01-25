@@ -1,0 +1,29 @@
+@keyframes slider {
+    from {
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.slider {
+    animation-name: slider;
+    animation-duration: var(--animation-duration);
+}
+
+@keyframes slideoutr {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        visibility: hidden;
+        transform: translate3d(100%, 0, 0);
+    }
+}
+
+.slideoutr {
+    animation-name: slideoutr;
+    animation-duration: var(--animation-duration);
+}

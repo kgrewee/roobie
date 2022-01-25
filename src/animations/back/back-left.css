@@ -1,0 +1,39 @@
+@keyframes backl {
+    0% {
+        transform: translateX(-2000px) scale(0.7);
+        opacity: 0.7;
+    }
+    80% {
+        transform: translateX(0px) scale(0.7);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.backl {
+    animation-name: backl;
+    animation-duration: var(--animation-duration);
+}
+
+@keyframes backoutl {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(0px) scale(0.7);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateX(-2000px) scale(0.7);
+        opacity: 0.7;
+    }
+}
+
+.backoutl {
+    animation-name: backoutl;
+    animation-duration: var(--animation-duration);
+}

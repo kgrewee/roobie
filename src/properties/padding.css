@@ -12,7 +12,8 @@ Dev: Padding on the inside of an element
     padding: var(--pad1);
 }
 
-.pad2 {
+.pad2,
+.pad {
     padding: var(--pad2);
 }
 
@@ -39,7 +40,8 @@ Dev: Padding on the inside of an element
     padding-left: var(--pad1);
 }
 
-.padl2 {
+.padl2,
+.padl {
     padding-left: var(--pad2);
 }
 
@@ -66,7 +68,8 @@ Dev: Padding on the inside of an element
     padding-right: var(--pad1);
 }
 
-.padr2 {
+.padr2,
+.padr {
     padding-right: var(--pad2);
 }
 
@@ -93,7 +96,8 @@ Dev: Padding on the inside of an element
     padding: var(--pad1) 0;
 }
 
-.padv2 {
+.padv2,
+.padv {
     padding: var(--pad2) 0;
 }
 
@@ -120,7 +124,8 @@ Dev: Padding on the inside of an element
     padding: 0 var(--pad1);
 }
 
-.padh2 {
+.padh2,
+.padh {
     padding: 0 var(--pad2);
 }
 

@@ -3094,7 +3094,6 @@ p {
     .div6,
     .div {
         width: 100%;
-        display: inline;
         padding: var(--pad2);
     }
 }.drp {

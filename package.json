@@ -1,8 +1,21 @@
 {
     "name": "roobie",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "Centralized CSS and JavaScript",
-    "main": "roobie.css",
+    "author": "Kyle Grewe",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/kgrewee/roobie/issues"
+    },
+    "homepage": "https://github.com/kgrewee/roobie#readme",
+    "keywords": [
+        "centralized",
+        "css-framework",
+        "css",
+        "js",
+        "html"
+    ],
+    "main": "roobie.js",
     "scripts": {
         "build": "npm-run-all dev prod",
         "dev": "cat src/**/*.css src/**/**/*.css  > roobie.css && cat src/*.js src/**/**/*.js  > roobie.js",
@@ -17,23 +30,12 @@
         "type": "git",
         "url": "git+https://github.com/kgrewee/roobie.git"
     },
-    "keywords": [
-        "centralized",
-        "css-framework",
-        "css",
-        "js",
-        "html"
-    ],
-    "author": "Kyle Grewe",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/kgrewee/roobie/issues"
-    },
-    "homepage": "https://github.com/kgrewee/roobie#readme",
     "dependencies": {},
     "files": [
         "roobie.min.css",
         "roobie.min.js",
+        "roobie.js",
+        "roobie.css",
         "examples/"
     ]
 }

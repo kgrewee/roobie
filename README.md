@@ -23,6 +23,14 @@ Contributions are welcome.  Feel free to contribute CSS Classes, JS functions, t
 
 A few examples... these don't even scratch the surface.  Fully customized HTML without any custom code.
 
+**Animations**<br />
+<pre>
+&lt;a class="fade"&gt;Fade&lt;/a&gt;
+&lt;a class="zoom"&gt;Zoom&lt;/a&gt;
+&lt;a class="stretch"&gt;Stretch&lt;/a&gt;
+&lt;a class="heartbeat"&gt;Heartbeat&lt;/a&gt;
+</pre>
+
 **Button**<br />
 <pre>
 &lt;a class="btn"&gt;Button&lt;/a&gt;
@@ -31,9 +39,9 @@ A few examples... these don't even scratch the surface.  Fully customized HTML w
 
 **Dropdown**<br />
 <pre>
-&lt;div class="drp mrg2"&gt;
+&lt;div class="drp"&gt;
     &lt;a class="drp-btn"&gt;Links&lt;/a&gt;
-    &lt;div class="drp-cnt br2 txtc"&gt;
+    &lt;div class="drp-cnt"&gt;
         &lt;a&gt;Link 1&lt;/a&gt;
         &lt;a&gt;Link 2&lt;/a&gt;
         &lt;a&gt;Link 3&lt;/a&gt;
@@ -43,7 +51,7 @@ A few examples... these don't even scratch the surface.  Fully customized HTML w
 
 **Styled List**<br />
 <pre>
-&lt;ul class="ul mrgh2"&gt;
+&lt;ul class="ul"&gt;
     &lt;li&gt;Apples&lt;/li&gt;
     &lt;li&gt;Oranges&lt;/li&gt;
     &lt;li&gt;Tomatos&lt;/li&gt;
@@ -52,19 +60,14 @@ A few examples... these don't even scratch the surface.  Fully customized HTML w
 
 **Responsive Menu**<br />
 <pre>
-&lt;nav class="nav-row flx-row jst-cnt-between aln-center box2"&gt;
-    &lt;div class="flx-row aln-center"&gt;
-        &lt;div class="nav-title"&gt;Navbar&lt;/div&gt;
-        &lt;div class="flx-row rsp-menu"&gt;
-            &lt;a class="nav-item"&gt;Home&lt;/a&gt;
-            &lt;a class="nav-item"&gt;Products&lt;/a&gt;
-            &lt;a class="nav-item"&gt;About Us&lt;/a&gt;
-            &lt;a class="nav-item"&gt;Contact Us&lt;/a&gt;
-            &lt;a class="nav-item"&gt;Help&lt;/a&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="flx-row"&gt;
-        &lt;a class="nav-item"&gt;user@roobie.net&lt;/a&gt;
+&lt;nav class="nav-row box2"&gt;
+    &lt;div class="nav-title"&gt;Navbar&lt;/div&gt;
+    &lt;div class="flx-row rsp-menu"&gt;
+        &lt;a class="nav-item"&gt;Home&lt;/a&gt;
+        &lt;a class="nav-item"&gt;Products&lt;/a&gt;
+        &lt;a class="nav-item"&gt;About Us&lt;/a&gt;
+        &lt;a class="nav-item"&gt;Contact Us&lt;/a&gt;
+        &lt;a class="nav-item"&gt;Help&lt;/a&gt;
     &lt;/div&gt;
 &lt;/nav&gt;
 </pre>

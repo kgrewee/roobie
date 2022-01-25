@@ -1,5 +1,15 @@
 # 💎 Roobie
 
+MIT License
+
+## Installation
+
+Install with npm:
+
+```shell
+npm install roobie --save
+```
+
 ## Problem
 
 Website code is often sloppy and inefficient.  Developers follow different code patterns and naming conventions when making CSS classes and JavaScript functions.  CSS properties are repeated on multiple classes and applied to a single element, creating duplicate code and slower load times.  Most projects are built from scratch, instead of using a template, making the process un-replicable and time consuming.

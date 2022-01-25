@@ -26,8 +26,9 @@ nav {
 
 .nav-title {
     margin: var(--mrg4);
-    font-size: var(--fnt7);
+    font-size: var(--fnt4);
     color: var(--t1);
+    font-weight: bold;
 }
 
 .nav-head {

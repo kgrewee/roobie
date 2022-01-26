@@ -2,62 +2,57 @@
 
 ### Table of Contents
 
-*   [appName][1]
-*   [checkMedia][2]
-*   [collapseMenu][3]
-    *   [Parameters][4]
-*   [animationByElement][5]
-    *   [Parameters][6]
-*   [animationById][7]
-    *   [Parameters][8]
-*   [expandMenu][9]
-    *   [Parameters][10]
-*   [getLocalStorage][11]
-    *   [Parameters][12]
-*   [setLocalStorage][13]
-    *   [Parameters][14]
-*   [setStyleByTag][15]
-    *   [Parameters][16]
-*   [getId][17]
-    *   [Parameters][18]
-*   [getClass][19]
-    *   [Parameters][20]
-*   [getTag][21]
-    *   [Parameters][22]
-*   [debug][23]
-    *   [Parameters][24]
-*   [ready][25]
-    *   [Parameters][26]
-*   [loadById][27]
-    *   [Parameters][28]
-*   [addClassById][29]
-    *   [Parameters][30]
-*   [addClassByElement][31]
-    *   [Parameters][32]
-*   [removeClassByTag][33]
-    *   [Parameters][34]
-*   [addAttributeById][35]
-    *   [Parameters][36]
-*   [addAttributeByElement][37]
-    *   [Parameters][38]
-*   [addAttributeByTag][39]
-    *   [Parameters][40]
-*   [removeClassById][41]
-    *   [Parameters][42]
-*   [removeClassByClass][43]
-    *   [Parameters][44]
-*   [toggleById][45]
-    *   [Parameters][46]
-*   [toggleByTag][47]
-    *   [Parameters][48]
-*   [rotateById][49]
-    *   [Parameters][50]
-
-## appName
-
-Global variables.
-
-Type: [string][51]
+*   [checkMedia][1]
+*   [collapseMenu][2]
+    *   [Parameters][3]
+*   [animationByElement][4]
+    *   [Parameters][5]
+*   [animationById][6]
+    *   [Parameters][7]
+*   [expandMenu][8]
+    *   [Parameters][9]
+*   [switchTheme][10]
+    *   [Parameters][11]
+*   [getLocalStorage][12]
+    *   [Parameters][13]
+*   [setLocalStorage][14]
+    *   [Parameters][15]
+*   [setStyleByTag][16]
+    *   [Parameters][17]
+*   [getId][18]
+    *   [Parameters][19]
+*   [getClass][20]
+    *   [Parameters][21]
+*   [getTag][22]
+    *   [Parameters][23]
+*   [debug][24]
+    *   [Parameters][25]
+*   [ready][26]
+    *   [Parameters][27]
+*   [loadById][28]
+    *   [Parameters][29]
+*   [addClassById][30]
+    *   [Parameters][31]
+*   [addClassByElement][32]
+    *   [Parameters][33]
+*   [removeClassByTag][34]
+    *   [Parameters][35]
+*   [addAttributeById][36]
+    *   [Parameters][37]
+*   [addAttributeByElement][38]
+    *   [Parameters][39]
+*   [addAttributeByTag][40]
+    *   [Parameters][41]
+*   [removeClassById][42]
+    *   [Parameters][43]
+*   [removeClassByClass][44]
+    *   [Parameters][45]
+*   [toggleById][46]
+    *   [Parameters][47]
+*   [toggleByTag][48]
+    *   [Parameters][49]
+*   [rotateById][50]
+    *   [Parameters][51]
 
 ## checkMedia
 
@@ -65,12 +60,12 @@ Check all media queries.
 
 ## collapseMenu
 
-Collapse responsive menus.
+Collapses a menu by CSS class name if an event is found to be true.
 
 ### Parameters
 
-*   `event` **[Event][52]** Change event
-*   `className`  
+*   `event` **MediaQueryListEvent** Event to check for
+*   `className` **[string][52]** Class name of menu to collapse
 
 ## animationByElement
 
@@ -79,7 +74,7 @@ Triggers an animation on an element.
 ### Parameters
 
 *   `element` **[HTMLElement][53]** Element to animate
-*   `className` **[string][51]** Class name of animation
+*   `className` **[string][52]** Class name of animation
 
 ## animationById
 
@@ -87,17 +82,25 @@ Triggers an animation on an element by id.
 
 ### Parameters
 
-*   `id` **[string][51]** Id of element to animate
-*   `className` **[string][51]** Class name of animation
+*   `id` **[string][52]** Id of element to animate
+*   `className` **[string][52]** Class name of animation
 
 ## expandMenu
 
-Expand responsive menus.
+Expands a menu by CSS class name if an event is found to be true.
 
 ### Parameters
 
-*   `event` **[Event][52]** Change event
-*   `className`  
+*   `event` **MediaQueryListEvent** Event to check for
+*   `className` **[string][52]** Class name of menu to expand
+
+## switchTheme
+
+Switch the CSS theme.  Updates local storage and body tag.
+
+### Parameters
+
+*   `themeName` **[string][52]** Name of the theme
 
 ## getLocalStorage
 
@@ -105,9 +108,9 @@ Get a value from local storage.
 
 ### Parameters
 
-*   `key` **[string][51]** Key to search for
+*   `key` **[string][52]** Key to search for
 
-Returns **any** Value
+Returns **any** Value String from local storage
 
 ## setLocalStorage
 
@@ -115,8 +118,8 @@ Set a key value pair to local storage.
 
 ### Parameters
 
-*   `key` **[string][51]** Unqiue identifier
-*   `value` **[string][51]** Value to store
+*   `key` **[string][52]** Unqiue identifier
+*   `value` **[string][52]** Value to store
 
 ## setStyleByTag
 
@@ -124,9 +127,9 @@ Set a CSS property by tag name.
 
 ### Parameters
 
-*   `tagName` **[string][51]** Tag name to select
-*   `property` **[string][51]** Property to set
-*   `value` **[string][51]** Value of property
+*   `tagName` **[string][52]** Tag name to select
+*   `property` **[string][52]** Property to set
+*   `value` **[string][52]** Value of property
 
 ## getId
 
@@ -134,7 +137,7 @@ Get HTML element with id.
 
 ### Parameters
 
-*   `id` **[string][51]** id to select
+*   `id` **[string][52]** id to select
 
 Returns **any** HTMLElement
 
@@ -144,7 +147,7 @@ Get HTML elements with CSS class.
 
 ### Parameters
 
-*   `className` **[string][51]** CSS class to select
+*   `className` **[string][52]** CSS class to select
 
 Returns **any** List of HTMLElement
 
@@ -154,7 +157,7 @@ Get HTML elements with tag name.
 
 ### Parameters
 
-*   `tagName` **[string][51]** Tag name to select
+*   `tagName` **[string][52]** Tag name to select
 
 Returns **any** List of HTMLElement
 
@@ -164,15 +167,15 @@ Print debug message to console if Debug Mode is ON.
 
 ### Parameters
 
-*   `message` **[string][51]** Text to print alonside custom date and app details
+*   `message` **[string][52]** Text to print alonside custom date and app details
 
 ## ready
 
-Execute function on DOMContentLoaded, aka document ready.
+Execute export function on DOMContentLoaded, aka document ready.
 
 ### Parameters
 
-*   `fn` **any** Function to execute
+*   `fn` **any** export function to execute
 
 ## loadById
 
@@ -180,8 +183,8 @@ Load file content into an element by id.
 
 ### Parameters
 
-*   `id` **[string][51]** Id to select
-*   `file` **[string][51]** Path to file to load
+*   `id` **[string][52]** Id to select
+*   `file` **[string][52]** Path to file to load
 
 ## addClassById
 
@@ -189,8 +192,8 @@ Add class to an element by id.
 
 ### Parameters
 
-*   `id` **[string][51]** Id to select
-*   `className` **[string][51]** CSS class to add
+*   `id` **[string][52]** Id to select
+*   `className` **[string][52]** CSS class to add
 *   `condition`   (optional, default `true`)
 
 ## addClassByElement
@@ -200,7 +203,7 @@ Add class to an element.
 ### Parameters
 
 *   `element` **[HTMLElement][53]** HTML element to select
-*   `className` **[string][51]** CSS class to add
+*   `className` **[string][52]** CSS class to add
 *   `condition`   (optional, default `true`)
 
 ## removeClassByTag
@@ -209,8 +212,8 @@ Remove CSS class by tag name.
 
 ### Parameters
 
-*   `tagName` **[string][51]** Tag name to select
-*   `className` **[string][51]** CSS class to remove
+*   `tagName` **[string][52]** Tag name to select
+*   `className` **[string][52]** CSS class to remove
 *   `condition`   (optional, default `true`)
 
 ## addAttributeById
@@ -219,9 +222,9 @@ Add atrribute to an element by id.
 
 ### Parameters
 
-*   `id` **[string][51]** Id to select
-*   `attribute` **[string][51]** Attribute to add
-*   `value` **[string][51]** Value of attribute
+*   `id` **[string][52]** Id to select
+*   `attribute` **[string][52]** Attribute to add
+*   `value` **[string][52]** Value of attribute
 
 ## addAttributeByElement
 
@@ -230,8 +233,8 @@ Add attribute to an element.
 ### Parameters
 
 *   `element` **[HTMLElement][53]** HTML element to select
-*   `attribute` **[string][51]** Attribute to add
-*   `value` **[string][51]** Value of attribute
+*   `attribute` **[string][52]** Attribute to add
+*   `value` **[string][52]** Value of attribute
 
 ## addAttributeByTag
 
@@ -239,9 +242,9 @@ Add atrribute by tag name.
 
 ### Parameters
 
-*   `tagName` **[string][51]** Tag name to select
-*   `attribute` **[string][51]** Attribute to add
-*   `value` **[string][51]** Value of attribute
+*   `tagName` **[string][52]** Tag name to select
+*   `attribute` **[string][52]** Attribute to add
+*   `value` **[string][52]** Value of attribute
 
 ## removeClassById
 
@@ -249,8 +252,8 @@ Remove CSS class from an element by id.
 
 ### Parameters
 
-*   `id` **[string][51]** Id to select
-*   `className` **[string][51]** CSS class to remove
+*   `id` **[string][52]** Id to select
+*   `className` **[string][52]** CSS class to remove
 
 ## removeClassByClass
 
@@ -258,8 +261,8 @@ Remove CSS class from an element by class name.
 
 ### Parameters
 
-*   `className` **[string][51]** CSS class to select
-*   `removeClassName` **[string][51]** CSS class to remove
+*   `className` **[string][52]** CSS class to select
+*   `removeClassName` **[string][52]** CSS class to remove
 
 ## toggleById
 
@@ -267,7 +270,7 @@ Toggle the display of an element based on the current state.
 
 ### Parameters
 
-*   `id` **[string][51]** Id to select
+*   `id` **[string][52]** Id to select
 
 ## toggleByTag
 
@@ -275,7 +278,7 @@ Toggle display of an element by tag name.
 
 ### Parameters
 
-*   `tagName` **[string][51]** Tag name to select
+*   `tagName` **[string][52]** Tag name to select
 
 ## rotateById
 
@@ -283,113 +286,113 @@ Rotate element by x amount of degrees.
 
 ### Parameters
 
-*   `id` **[string][51]** Id to select
+*   `id` **[string][52]** Id to select
 *   `degrees` **[number][54]** Number of degress to rotate
 *   `reset` **[boolean][55]** Reset the rotation if current rotation > 0.  Useful for toggles.
 
-[1]: #appname
+[1]: #checkmedia
 
-[2]: #checkmedia
+[2]: #collapsemenu
 
-[3]: #collapsemenu
+[3]: #parameters
 
-[4]: #parameters
+[4]: #animationbyelement
 
-[5]: #animationbyelement
+[5]: #parameters-1
 
-[6]: #parameters-1
+[6]: #animationbyid
 
-[7]: #animationbyid
+[7]: #parameters-2
 
-[8]: #parameters-2
+[8]: #expandmenu
 
-[9]: #expandmenu
+[9]: #parameters-3
 
-[10]: #parameters-3
+[10]: #switchtheme
 
-[11]: #getlocalstorage
+[11]: #parameters-4
 
-[12]: #parameters-4
+[12]: #getlocalstorage
 
-[13]: #setlocalstorage
+[13]: #parameters-5
 
-[14]: #parameters-5
+[14]: #setlocalstorage
 
-[15]: #setstylebytag
+[15]: #parameters-6
 
-[16]: #parameters-6
+[16]: #setstylebytag
 
-[17]: #getid
+[17]: #parameters-7
 
-[18]: #parameters-7
+[18]: #getid
 
-[19]: #getclass
+[19]: #parameters-8
 
-[20]: #parameters-8
+[20]: #getclass
 
-[21]: #gettag
+[21]: #parameters-9
 
-[22]: #parameters-9
+[22]: #gettag
 
-[23]: #debug
+[23]: #parameters-10
 
-[24]: #parameters-10
+[24]: #debug
 
-[25]: #ready
+[25]: #parameters-11
 
-[26]: #parameters-11
+[26]: #ready
 
-[27]: #loadbyid
+[27]: #parameters-12
 
-[28]: #parameters-12
+[28]: #loadbyid
 
-[29]: #addclassbyid
+[29]: #parameters-13
 
-[30]: #parameters-13
+[30]: #addclassbyid
 
-[31]: #addclassbyelement
+[31]: #parameters-14
 
-[32]: #parameters-14
+[32]: #addclassbyelement
 
-[33]: #removeclassbytag
+[33]: #parameters-15
 
-[34]: #parameters-15
+[34]: #removeclassbytag
 
-[35]: #addattributebyid
+[35]: #parameters-16
 
-[36]: #parameters-16
+[36]: #addattributebyid
 
-[37]: #addattributebyelement
+[37]: #parameters-17
 
-[38]: #parameters-17
+[38]: #addattributebyelement
 
-[39]: #addattributebytag
+[39]: #parameters-18
 
-[40]: #parameters-18
+[40]: #addattributebytag
 
-[41]: #removeclassbyid
+[41]: #parameters-19
 
-[42]: #parameters-19
+[42]: #removeclassbyid
 
-[43]: #removeclassbyclass
+[43]: #parameters-20
 
-[44]: #parameters-20
+[44]: #removeclassbyclass
 
-[45]: #togglebyid
+[45]: #parameters-21
 
-[46]: #parameters-21
+[46]: #togglebyid
 
-[47]: #togglebytag
+[47]: #parameters-22
 
-[48]: #parameters-22
+[48]: #togglebytag
 
-[49]: #rotatebyid
+[49]: #parameters-23
 
-[50]: #parameters-23
+[50]: #rotatebyid
 
-[51]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[51]: #parameters-24
 
-[52]: https://developer.mozilla.org/docs/Web/API/Event
+[52]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
 [53]: https://developer.mozilla.org/docs/Web/HTML/Element
 

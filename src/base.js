@@ -1,6 +1,3 @@
-/**
- * Global variables.
- */
 const appName = "Roobie";
 const debugMode = true;
 
@@ -14,7 +11,7 @@ const MEDIACOLLAPSEL = window.matchMedia('(max-width: 1200px)');
 const MEDIAEXPANDXL = window.matchMedia('(min-width: 1400px)');
 const MEDIACOLLAPSEXL = window.matchMedia('(max-width: 1400px)');
 
-ready(function() {
+ready(() => {
     const theme = getLocalStorage('theme');
     if (theme != null) {
         switchTheme(theme);
@@ -38,7 +35,7 @@ ready(function() {
 /**
  * Check all media queries.
  */
-function checkMedia() {
+export function checkMedia() {
     debug("Checking media queries");
     collapseMenu(MEDIACOLLAPSES, 'rsp-menu-s');
     expandMenu(MEDIAEXPANDS, 'rsp-menu-s');
@@ -53,11 +50,12 @@ function checkMedia() {
 }
 
 /**
- * Collapse responsive menus.
+ * Collapses a menu by CSS class name if an event is found to be true.
  * 
- * @param {Event} event Change event
+ * @param {MediaQueryListEvent} event Event to check for
+ * @param {string} className Class name of menu to collapse
  */
-function collapseMenu(event, className) {
+export function collapseMenu(event, className) {
     if (event.matches) {
         debug('Collapse Menu [Class] ' + className);
         var menus = getClass(className);
@@ -76,7 +74,7 @@ function collapseMenu(event, className) {
  * @param {HTMLElement} element Element to animate
  * @param {string} className Class name of animation
  */
-function animationByElement(element, className) {
+export function animationByElement(element, className) {
     console.log("Animating by element " + element);
     element.classList.remove(className);
     void element.offsetWidth;
@@ -89,7 +87,7 @@ function animationByElement(element, className) {
  * @param {string} id Id of element to animate
  * @param {string} className Class name of animation
  */
-function animationById(id, className) {
+export function animationById(id, className) {
     console.log("Animating by id " + id);
     let element = getId(id);
     element.classList.remove(className);
@@ -97,11 +95,12 @@ function animationById(id, className) {
     element.classList.add(className);
 }
 /**
- * Expand responsive menus.
+ * Expands a menu by CSS class name if an event is found to be true.
  * 
- * @param {Event} event Change event
+ * @param {MediaQueryListEvent} event Event to check for
+ * @param {string} className Class name of menu to expand
  */
-function expandMenu(event, className) {
+export function expandMenu(event, className) {
     if (event.matches) {
         debug('Expand Menu [Class] ' + className);
         var menus = getClass(className);
@@ -114,7 +113,12 @@ function expandMenu(event, className) {
     }
 }
 
-function switchTheme(themeName) {
+/**
+ * Switch the CSS theme.  Updates local storage and body tag.
+ * 
+ * @param {string} themeName Name of the theme
+ */
+export function switchTheme(themeName) {
     console.log("Switching theme to " + themeName);
     setLocalStorage('theme', themeName);
     addAttributeByTag('body', 'theme', themeName);
@@ -124,9 +128,9 @@ function switchTheme(themeName) {
  * Get a value from local storage.
  * 
  * @param {string} key Key to search for
- * @returns Value
+ * @returns Value String from local storage
  */
-function getLocalStorage(key) {
+export function getLocalStorage(key) {
     return localStorage.getItem(key);
 }
 
@@ -136,7 +140,7 @@ function getLocalStorage(key) {
  * @param {string} key Unqiue identifier
  * @param {string} value Value to store
  */
-function setLocalStorage(key, value) {
+export function setLocalStorage(key, value) {
     localStorage.setItem(key, value);
 }
 
@@ -147,7 +151,7 @@ function setLocalStorage(key, value) {
  * @param {string} property Property to set
  * @param {string} value Value of property
  */
-function setStyleByTag(tagName, property, value) {
+export function setStyleByTag(tagName, property, value) {
     debug("Set [Style] " + property + " = " + value + " -> [Tag] " + tagName);
     var elements = getTag(tagName);
     for (i = 0; i < elements.length; i++) {
@@ -161,7 +165,7 @@ function setStyleByTag(tagName, property, value) {
  * @param {string} id id to select
  * @returns HTMLElement
  */
-function getId(id) {
+export function getId(id) {
     return document.getElementById(id);
 }
 
@@ -171,7 +175,7 @@ function getId(id) {
  * @param {string} className CSS class to select
  * @returns List of HTMLElement
  */
-function getClass(className) {
+export function getClass(className) {
     return document.getElementsByClassName(className);
 }
 
@@ -181,7 +185,7 @@ function getClass(className) {
  * @param {string} tagName Tag name to select
  * @returns List of HTMLElement
  */
-function getTag(tagName) {
+export function getTag(tagName) {
     return document.getElementsByTagName(tagName);
 }
 
@@ -190,7 +194,7 @@ function getTag(tagName) {
  * 
  * @param {string} message Text to print alonside custom date and app details
  */
-function debug(message) {
+export function debug(message) {
     var ts = new Date();
     if (debugMode) {
         console.log(ts.toISOString() + ' ' + appName + ' | ' + message);
@@ -198,11 +202,11 @@ function debug(message) {
 }
 
 /**
- * Execute function on DOMContentLoaded, aka document ready.
+ * Execute export function on DOMContentLoaded, aka document ready.
  * 
- * @param {*} fn Function to execute
+ * @param {*} fn export function to execute
  */
-function ready(fn) {
+export function ready(fn) {
     debug("Document ready");
     if (document.readyState === "complete" || document.readyState === "interactive") {
         setTimeout(fn, 1);
@@ -217,12 +221,12 @@ function ready(fn) {
  * @param {string} id Id to select
  * @param {string} file Path to file to load
  */
-function loadById(id, file) {
+export function loadById(id, file) {
     debug("Load [File] " + file + " -> [Id] " + id);
     var element = getId(id);
     var request = new XMLHttpRequest();
     request.open('GET', file, true);
-    request.onload = function() {
+    request.onload = () => {
         if (request.status >= 200 && request.status < 400) {
             var resp = request.responseText;
             element.innerHTML = resp;
@@ -237,7 +241,7 @@ function loadById(id, file) {
  * @param {string} id Id to select
  * @param {string} className CSS class to add
  */
-function addClassById(id, className, condition = true) {
+export function addClassById(id, className, condition = true) {
     if (condition) {
         debug("Add [Class] " + className + " -> [Id]" + id);
         getId(id).classList.add(className);
@@ -250,7 +254,7 @@ function addClassById(id, className, condition = true) {
  * @param {HTMLElement} element HTML element to select
  * @param {string} className CSS class to add
  */
-function addClassByElement(element, className, condition = true) {
+export function addClassByElement(element, className, condition = true) {
     if (condition) {
         debug("Add [Class] " + className + " -> [Element]" + element);
         element.classList.add(className);
@@ -263,7 +267,7 @@ function addClassByElement(element, className, condition = true) {
  * @param {string} tagName Tag name to select
  * @param {string} className CSS class to remove
  */
-function removeClassByTag(tagName, className, condition = true) {
+export function removeClassByTag(tagName, className, condition = true) {
     if (condition) {
         debug("Remove [Class] " + className + " -> [Tag] " + tagName);
         var elements = getTag(tagName);
@@ -280,7 +284,7 @@ function removeClassByTag(tagName, className, condition = true) {
  * @param {string} attribute Attribute to add
  * @param {string} value Value of attribute
  */
-function addAttributeById(id, attribute, value) {
+export function addAttributeById(id, attribute, value) {
     debug("Add [Attribute] " + attribute + '=' + value + " -> [Id]" + id);
     getId(id).setAttribute(attribute, value);
 }
@@ -292,7 +296,7 @@ function addAttributeById(id, attribute, value) {
  * @param {string} attribute Attribute to add
  * @param {string} value Value of attribute
  */
-function addAttributeByElement(element, attribute, value) {
+export function addAttributeByElement(element, attribute, value) {
     debug("Add [Attribute] " + attribute + '=' + value + " -> [Element]" + element);
     element.setAttribute(attribute, value);
 }
@@ -304,7 +308,7 @@ function addAttributeByElement(element, attribute, value) {
  * @param {string} attribute Attribute to add
  * @param {string} value Value of attribute
  */
-function addAttributeByTag(tagName, attribute, value) {
+export function addAttributeByTag(tagName, attribute, value) {
     debug("Add [Attribute] " + attribute + '=' + value + " -> [Tag]" + tagName);
     var elements = getTag(tagName);
     for (i = 0; i < elements.length; i++) {
@@ -318,7 +322,7 @@ function addAttributeByTag(tagName, attribute, value) {
  * @param {string} id Id to select
  * @param {string} className CSS class to remove
  */
-function removeClassById(id, className) {
+export function removeClassById(id, className) {
     debug("Remove [Class] " + className + " -> [Id] " + id);
     getId(id).classList.remove(className);
 }
@@ -329,7 +333,7 @@ function removeClassById(id, className) {
  * @param {string} className CSS class to select
  * @param {string} removeClassName CSS class to remove
  */
-function removeClassByClass(className, removeClassName) {
+export function removeClassByClass(className, removeClassName) {
     debug("Remove [Class] " + removeClassName + " -> [Class] " + className);
     var elements = getClass(className);
     for (i = 0; i < elements.length; i++) {
@@ -342,7 +346,7 @@ function removeClassByClass(className, removeClassName) {
  * 
  * @param {string} id Id to select
  */
-function toggleById(id) {
+export function toggleById(id) {
     debug("Toggle [Id] " + id);
     var element = getId(id);
     if (element.style.display === "none") {
@@ -357,7 +361,7 @@ function toggleById(id) {
  * 
  * @param {string} tagName Tag name to select
  */
-function toggleByTag(tagName) {
+export function toggleByTag(tagName) {
     debug("Toggle [Tag] " + tagName);
     var elements = getTag(tagName);
     for (i = 0; i < elements.length; i++) {
@@ -376,7 +380,7 @@ function toggleByTag(tagName) {
  * @param {number} degrees Number of degress to rotate
  * @param {boolean} reset Reset the rotation if current rotation > 0.  Useful for toggles.
  */
-function rotateById(id, degrees, reset) {
+export function rotateById(id, degrees, reset) {
     var element = getId(id);
     var transform = element.style.transform;
     debug('Before cut ' + transform);

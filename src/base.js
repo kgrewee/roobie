@@ -35,7 +35,7 @@ ready(() => {
 /**
  * Check all media queries.
  */
-export function checkMedia() {
+function checkMedia() {
     debug("Checking media queries");
     collapseMenu(MEDIACOLLAPSES, 'rsp-menu-s');
     expandMenu(MEDIAEXPANDS, 'rsp-menu-s');
@@ -55,7 +55,7 @@ export function checkMedia() {
  * @param {MediaQueryListEvent} event Event to check for
  * @param {string} className Class name of menu to collapse
  */
-export function collapseMenu(event, className) {
+function collapseMenu(event, className) {
     if (event.matches) {
         debug('Collapse Menu [Class] ' + className);
         var menus = getClass(className);
@@ -74,7 +74,7 @@ export function collapseMenu(event, className) {
  * @param {HTMLElement} element Element to animate
  * @param {string} className Class name of animation
  */
-export function animationByElement(element, className) {
+function animationByElement(element, className) {
     console.log("Animating by element " + element);
     element.classList.remove(className);
     void element.offsetWidth;
@@ -87,7 +87,7 @@ export function animationByElement(element, className) {
  * @param {string} id Id of element to animate
  * @param {string} className Class name of animation
  */
-export function animationById(id, className) {
+function animationById(id, className) {
     console.log("Animating by id " + id);
     let element = getId(id);
     element.classList.remove(className);
@@ -100,7 +100,7 @@ export function animationById(id, className) {
  * @param {MediaQueryListEvent} event Event to check for
  * @param {string} className Class name of menu to expand
  */
-export function expandMenu(event, className) {
+function expandMenu(event, className) {
     if (event.matches) {
         debug('Expand Menu [Class] ' + className);
         var menus = getClass(className);
@@ -118,7 +118,7 @@ export function expandMenu(event, className) {
  * 
  * @param {string} themeName Name of the theme
  */
-export function switchTheme(themeName) {
+function switchTheme(themeName) {
     console.log("Switching theme to " + themeName);
     setLocalStorage('theme', themeName);
     addAttributeByTag('body', 'theme', themeName);
@@ -130,7 +130,7 @@ export function switchTheme(themeName) {
  * @param {string} key Key to search for
  * @returns Value String from local storage
  */
-export function getLocalStorage(key) {
+function getLocalStorage(key) {
     return localStorage.getItem(key);
 }
 
@@ -140,7 +140,7 @@ export function getLocalStorage(key) {
  * @param {string} key Unqiue identifier
  * @param {string} value Value to store
  */
-export function setLocalStorage(key, value) {
+function setLocalStorage(key, value) {
     localStorage.setItem(key, value);
 }
 
@@ -151,7 +151,7 @@ export function setLocalStorage(key, value) {
  * @param {string} property Property to set
  * @param {string} value Value of property
  */
-export function setStyleByTag(tagName, property, value) {
+function setStyleByTag(tagName, property, value) {
     debug("Set [Style] " + property + " = " + value + " -> [Tag] " + tagName);
     var elements = getTag(tagName);
     for (i = 0; i < elements.length; i++) {
@@ -165,7 +165,7 @@ export function setStyleByTag(tagName, property, value) {
  * @param {string} id id to select
  * @returns HTMLElement
  */
-export function getId(id) {
+function getId(id) {
     return document.getElementById(id);
 }
 
@@ -175,7 +175,7 @@ export function getId(id) {
  * @param {string} className CSS class to select
  * @returns List of HTMLElement
  */
-export function getClass(className) {
+function getClass(className) {
     return document.getElementsByClassName(className);
 }
 
@@ -185,7 +185,7 @@ export function getClass(className) {
  * @param {string} tagName Tag name to select
  * @returns List of HTMLElement
  */
-export function getTag(tagName) {
+function getTag(tagName) {
     return document.getElementsByTagName(tagName);
 }
 
@@ -194,7 +194,7 @@ export function getTag(tagName) {
  * 
  * @param {string} message Text to print alonside custom date and app details
  */
-export function debug(message) {
+function debug(message) {
     var ts = new Date();
     if (debugMode) {
         console.log(ts.toISOString() + ' ' + appName + ' | ' + message);
@@ -202,11 +202,11 @@ export function debug(message) {
 }
 
 /**
- * Execute export function on DOMContentLoaded, aka document ready.
+ * Execute function on DOMContentLoaded, aka document ready.
  * 
- * @param {*} fn export function to execute
+ * @param {*} fn function to execute
  */
-export function ready(fn) {
+function ready(fn) {
     debug("Document ready");
     if (document.readyState === "complete" || document.readyState === "interactive") {
         setTimeout(fn, 1);
@@ -221,7 +221,7 @@ export function ready(fn) {
  * @param {string} id Id to select
  * @param {string} file Path to file to load
  */
-export function loadById(id, file) {
+function loadById(id, file) {
     debug("Load [File] " + file + " -> [Id] " + id);
     var element = getId(id);
     var request = new XMLHttpRequest();
@@ -241,7 +241,7 @@ export function loadById(id, file) {
  * @param {string} id Id to select
  * @param {string} className CSS class to add
  */
-export function addClassById(id, className, condition = true) {
+function addClassById(id, className, condition = true) {
     if (condition) {
         debug("Add [Class] " + className + " -> [Id]" + id);
         getId(id).classList.add(className);
@@ -254,7 +254,7 @@ export function addClassById(id, className, condition = true) {
  * @param {HTMLElement} element HTML element to select
  * @param {string} className CSS class to add
  */
-export function addClassByElement(element, className, condition = true) {
+function addClassByElement(element, className, condition = true) {
     if (condition) {
         debug("Add [Class] " + className + " -> [Element]" + element);
         element.classList.add(className);
@@ -267,7 +267,7 @@ export function addClassByElement(element, className, condition = true) {
  * @param {string} tagName Tag name to select
  * @param {string} className CSS class to remove
  */
-export function removeClassByTag(tagName, className, condition = true) {
+function removeClassByTag(tagName, className, condition = true) {
     if (condition) {
         debug("Remove [Class] " + className + " -> [Tag] " + tagName);
         var elements = getTag(tagName);
@@ -284,7 +284,7 @@ export function removeClassByTag(tagName, className, condition = true) {
  * @param {string} attribute Attribute to add
  * @param {string} value Value of attribute
  */
-export function addAttributeById(id, attribute, value) {
+function addAttributeById(id, attribute, value) {
     debug("Add [Attribute] " + attribute + '=' + value + " -> [Id]" + id);
     getId(id).setAttribute(attribute, value);
 }
@@ -296,7 +296,7 @@ export function addAttributeById(id, attribute, value) {
  * @param {string} attribute Attribute to add
  * @param {string} value Value of attribute
  */
-export function addAttributeByElement(element, attribute, value) {
+function addAttributeByElement(element, attribute, value) {
     debug("Add [Attribute] " + attribute + '=' + value + " -> [Element]" + element);
     element.setAttribute(attribute, value);
 }
@@ -308,7 +308,7 @@ export function addAttributeByElement(element, attribute, value) {
  * @param {string} attribute Attribute to add
  * @param {string} value Value of attribute
  */
-export function addAttributeByTag(tagName, attribute, value) {
+function addAttributeByTag(tagName, attribute, value) {
     debug("Add [Attribute] " + attribute + '=' + value + " -> [Tag]" + tagName);
     var elements = getTag(tagName);
     for (i = 0; i < elements.length; i++) {
@@ -322,7 +322,7 @@ export function addAttributeByTag(tagName, attribute, value) {
  * @param {string} id Id to select
  * @param {string} className CSS class to remove
  */
-export function removeClassById(id, className) {
+function removeClassById(id, className) {
     debug("Remove [Class] " + className + " -> [Id] " + id);
     getId(id).classList.remove(className);
 }
@@ -333,7 +333,7 @@ export function removeClassById(id, className) {
  * @param {string} className CSS class to select
  * @param {string} removeClassName CSS class to remove
  */
-export function removeClassByClass(className, removeClassName) {
+function removeClassByClass(className, removeClassName) {
     debug("Remove [Class] " + removeClassName + " -> [Class] " + className);
     var elements = getClass(className);
     for (i = 0; i < elements.length; i++) {
@@ -346,7 +346,7 @@ export function removeClassByClass(className, removeClassName) {
  * 
  * @param {string} id Id to select
  */
-export function toggleById(id) {
+function toggleById(id) {
     debug("Toggle [Id] " + id);
     var element = getId(id);
     if (element.style.display === "none") {
@@ -361,7 +361,7 @@ export function toggleById(id) {
  * 
  * @param {string} tagName Tag name to select
  */
-export function toggleByTag(tagName) {
+function toggleByTag(tagName) {
     debug("Toggle [Tag] " + tagName);
     var elements = getTag(tagName);
     for (i = 0; i < elements.length; i++) {
@@ -380,7 +380,7 @@ export function toggleByTag(tagName) {
  * @param {number} degrees Number of degress to rotate
  * @param {boolean} reset Reset the rotation if current rotation > 0.  Useful for toggles.
  */
-export function rotateById(id, degrees, reset) {
+function rotateById(id, degrees, reset) {
     var element = getId(id);
     var transform = element.style.transform;
     debug('Before cut ' + transform);

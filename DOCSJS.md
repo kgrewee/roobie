@@ -171,11 +171,11 @@ Print debug message to console if Debug Mode is ON.
 
 ## ready
 
-Execute export function on DOMContentLoaded, aka document ready.
+Execute function on DOMContentLoaded, aka document ready.
 
 ### Parameters
 
-*   `fn` **any** export function to execute
+*   `fn` **any** function to execute
 
 ## loadById
 

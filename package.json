@@ -21,7 +21,7 @@
         "build:dev": "cat src/**/*.css src/**/**/*.css  > roobie.css && cat src/*.js src/**/**/*.js  > roobie.js",
         "build:prod": "minify roobie.css > roobie.min.css && minify roobie.js > roobie.min.js",
         "docs": "npm-run-all docs:js",
-        "docs:js": "documentation build roobie.js -f md > DOCSJS.md",
+        "docs:js": "documentation build roobie.js -f md > docs/JS.md",
         "docs:jsdev": "documentation serve --watch roobie.js"
 
     },

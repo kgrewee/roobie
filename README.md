@@ -12,7 +12,7 @@ npm i roobie --save
 
 ## Docs
 
-[JavaScript](DOCSJS.md)
+[JavaScript](docs/JS.md)
 
 CSS docs coming soon.
 

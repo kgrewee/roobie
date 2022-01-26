@@ -39,57 +39,57 @@ Contributions are welcome.  Feel free to contribute CSS Classes, JS functions, t
 
 A few examples... these don't even scratch the surface.  Fully customized HTML without any custom code.
 
-**Animations**<br />
-<pre>
-&lt;a class="fade"&gt;Fade&lt;/a&gt;
-&lt;a class="zoom"&gt;Zoom&lt;/a&gt;
-&lt;a class="flip"&gt;Flip&lt;/a&gt;
-&lt;a class="stretch"&gt;Stretch&lt;/a&gt;
-&lt;a class="heartbeat"&gt;Heartbeat&lt;/a&gt;
-</pre>
+**Animations**
+```shell
+<a class="fade">Fade</a>
+<a class="zoom">Zoom</a>
+<a class="flip">Flip</a>
+<a class="stretch">Stretch</a>
+<a class="heartbeat">Heartbeat</a>
+```
 
-**Button**<br />
-<pre>
-&lt;a class="btn"&gt;Button&lt;/a&gt;
-&lt;a class="btnh"&gt;Button with hover&lt;/a&gt;
-</pre>
+**Button**
+```shell
+<a class="btn">Button</a>
+<a class="btnh">Button with hover</a>
+```
 
-**Container**<br />
-<pre>
-&lt;div class="div mrg pad"&gt;Container with 100% width, margin, padding&lt;/div&gt;
-</pre>
+**Container**
+```shell
+<div class="div mrg pad">Container with 100% width, margin, padding</div>
+```
 
-**Dropdown**<br />
-<pre>
-&lt;div class="drp"&gt;
-    &lt;a class="drp-btn"&gt;Links&lt;/a&gt;
-    &lt;div class="drp-cnt"&gt;
-        &lt;a&gt;Link 1&lt;/a&gt;
-        &lt;a&gt;Link 2&lt;/a&gt;
-        &lt;a&gt;Link 3&lt;/a&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre>
+**Dropdown**
+```shell
+<div class="drp">
+    <a class="drp-btn">Links</a>
+    <div class="drp-cnt">
+        <a>Link 1</a>
+        <a>Link 2</a>
+        <a>Link 3</a>
+    </div>
+</div>
+```
 
-**Responsive Menu**<br />
-<pre>
-&lt;nav class="nav-row"&gt;
-    &lt;div class="nav-title"&gt;Navbar&lt;/div&gt;
-    &lt;div class="flx-row rsp-menu"&gt;
-        &lt;a class="nav-item"&gt;Home&lt;/a&gt;
-        &lt;a class="nav-item"&gt;Products&lt;/a&gt;
-        &lt;a class="nav-item"&gt;About Us&lt;/a&gt;
-        &lt;a class="nav-item"&gt;Contact Us&lt;/a&gt;
-        &lt;a class="nav-item"&gt;Help&lt;/a&gt;
-    &lt;/div&gt;
-&lt;/nav&gt;
-</pre>
+**Responsive Menu**
+```shell
+<nav class="nav-row">
+    <div class="nav-title">Navbar</div>
+    <div class="flx-row rsp-menu">
+        <a class="nav-item">Home</a>
+        <a class="nav-item">Products</a>
+        <a class="nav-item">About Us</a>
+        <a class="nav-item">Contact Us</a>
+        <a class="nav-item">Help</a>
+    </div>
+</nav>
+```
 
-**Styled List**<br />
-<pre>
-&lt;ul class="ul"&gt;
-    &lt;li&gt;Apples&lt;/li&gt;
-    &lt;li&gt;Oranges&lt;/li&gt;
-    &lt;li&gt;Tomatos&lt;/li&gt;
-&lt;/ul&gt;
-</pre>
+**Styled List**
+```shell
+<ul class="ul">
+    <li>Apples</li>
+    <li>Oranges</li>
+    <li>Tomatos</li>
+</ul>
+```

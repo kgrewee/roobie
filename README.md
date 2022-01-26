@@ -1,14 +1,20 @@
 # 💎 Roobie
 
-MIT License
+Centralized CSS & JavaScript for efficient Web Development.
 
-## Installation
+## Install
 
-Install with npm:
+Install with npm
 
 ```shell
-npm install roobie --save
+npm i roobie --save
 ```
+
+## Docs
+
+[JavaScript](docs/JS.md)
+
+CSS docs coming soon.
 
 ## Problem
 
@@ -50,7 +56,7 @@ A few examples... these don't even scratch the surface.  Fully customized HTML w
 
 **Container**<br />
 <pre>
-&lt;div class="div"&gt;Container with 100% width&lt;/div&gt;
+&lt;div class="div mrg pad"&gt;Container with 100% width, margin, padding&lt;/div&gt;
 </pre>
 
 **Dropdown**<br />
@@ -63,16 +69,6 @@ A few examples... these don't even scratch the surface.  Fully customized HTML w
         &lt;a&gt;Link 3&lt;/a&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-</pre>
-
-**Margin**<br />
-<pre>
-&lt;div class="mrg"&gt;Container with margin&lt;/div&gt;
-</pre>
-
-**Padding**<br />
-<pre>
-&lt;div class="pad"&gt;Container with padding&lt;/div&gt;
 </pre>
 
 **Responsive Menu**<br />

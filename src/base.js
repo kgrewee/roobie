@@ -1,6 +1,3 @@
-/**
- * Global variables.
- */
 const appName = "Roobie";
 const debugMode = true;
 
@@ -14,7 +11,7 @@ const MEDIACOLLAPSEL = window.matchMedia('(max-width: 1200px)');
 const MEDIAEXPANDXL = window.matchMedia('(min-width: 1400px)');
 const MEDIACOLLAPSEXL = window.matchMedia('(max-width: 1400px)');
 
-ready(function() {
+ready(() => {
     const theme = getLocalStorage('theme');
     if (theme != null) {
         switchTheme(theme);
@@ -53,9 +50,10 @@ function checkMedia() {
 }
 
 /**
- * Collapse responsive menus.
+ * Collapses a menu by CSS class name if an event is found to be true.
  * 
- * @param {Event} event Change event
+ * @param {MediaQueryListEvent} event Event to check for
+ * @param {string} className Class name of menu to collapse
  */
 function collapseMenu(event, className) {
     if (event.matches) {
@@ -97,9 +95,10 @@ function animationById(id, className) {
     element.classList.add(className);
 }
 /**
- * Expand responsive menus.
+ * Expands a menu by CSS class name if an event is found to be true.
  * 
- * @param {Event} event Change event
+ * @param {MediaQueryListEvent} event Event to check for
+ * @param {string} className Class name of menu to expand
  */
 function expandMenu(event, className) {
     if (event.matches) {
@@ -114,6 +113,11 @@ function expandMenu(event, className) {
     }
 }
 
+/**
+ * Switch the CSS theme.  Updates local storage and body tag.
+ * 
+ * @param {string} themeName Name of the theme
+ */
 function switchTheme(themeName) {
     console.log("Switching theme to " + themeName);
     setLocalStorage('theme', themeName);
@@ -124,7 +128,7 @@ function switchTheme(themeName) {
  * Get a value from local storage.
  * 
  * @param {string} key Key to search for
- * @returns Value
+ * @returns Value String from local storage
  */
 function getLocalStorage(key) {
     return localStorage.getItem(key);
@@ -200,7 +204,7 @@ function debug(message) {
 /**
  * Execute function on DOMContentLoaded, aka document ready.
  * 
- * @param {*} fn Function to execute
+ * @param {*} fn function to execute
  */
 function ready(fn) {
     debug("Document ready");
@@ -222,7 +226,7 @@ function loadById(id, file) {
     var element = getId(id);
     var request = new XMLHttpRequest();
     request.open('GET', file, true);
-    request.onload = function() {
+    request.onload = () => {
         if (request.status >= 200 && request.status < 400) {
             var resp = request.responseText;
             element.innerHTML = resp;

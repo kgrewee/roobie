@@ -41,6 +41,7 @@
         "roobie.min.js",
         "roobie.js",
         "roobie.css",
-        "examples/"
+        "examples/",
+        "docs/"
     ]
 }

@@ -1,0 +1,179 @@
+.itrash {
+    background-image: url(icons/trash.svg)
+}
+
+.iplus {
+    background-image: url(icons/plus.svg)
+}
+
+.iminus {
+    background-image: url(icons/minus.svg)
+}
+
+.iheart-empty {
+    background-image: url(icons/heart-empty.svg)
+}
+
+.iheart {
+    background-image: url(icons/heart.svg)
+}
+
+.imail {
+    background-image: url(icons/mail.svg)
+}
+
+.isearch {
+    background-image: url(icons/search.svg)
+}
+
+.istar-empty {
+    background-image: url(icons/star-empty.svg)
+}
+
+.istar {
+    background-image: url(icons/star.svg)
+}
+
+.iuser {
+    background-image: url(icons/user.svg)
+}
+
+.iphone {
+    background-image: url(icons/phone.svg)
+}
+
+.iattach {
+    background-image: url(icons/attach.svg)
+}
+
+.iright {
+    background-image: url(icons/right.svg)
+}
+
+.ileft {
+    background-image: url(icons/left.svg)
+}
+
+.icog-2 {
+    background-image: url(icons/cog.svg)
+}
+
+.ihelp {
+    background-image: url(icons/help.svg)
+}
+
+.ifacebook {
+    background-image: url(icons/facebook.svg)
+}
+
+.ilinkedin {
+    background-image: url(icons/linkedin.svg)
+}
+
+.ileft-open {
+    background-image: url(icons/left-open.svg)
+}
+
+.iok {
+    background-image: url(icons/ok.svg)
+}
+
+.icancel {
+    background-image: url(icons/cancel.svg)
+}
+
+.iright-open {
+    background-image: url(icons/right-open.svg)
+}
+
+.iup-open {
+    background-image: url(icons/up-open.svg)
+}
+
+.idown-open {
+    background-image: url(icons/down-open.svg)
+}
+
+.ipause {
+    background-image: url(icons/pause.svg)
+}
+
+.istop {
+    background-image: url(icons/stop.svg)
+}
+
+.iplay {
+    background-image: url(icons/play.svg)
+}
+
+.icw {
+    background-image: url(icons/cw.svg)
+}
+
+.iup {
+    background-image: url(icons/up.svg)
+}
+
+.idown {
+    background-image: url(icons/down.svg)
+}
+
+.izoom-in {
+    background-image: url(icons/zoom-in.svg)
+}
+
+.izoom-out {
+    background-image: url(icons/zoom-out.svg)
+}
+
+.ieject {
+    background-image: url(icons/eject.svg)
+}
+
+.ialign-right {
+    background-image: url(icons/align-right.svg)
+}
+
+.ialign-center {
+    background-image: url(icons/align-center.svg);
+}
+
+.ialign-left {
+    background-image: url(icons/align-left.svg)
+}
+
+.ialign-justify {
+    background-image: url(icons/align-justify.svg)
+}
+
+.igithub-text {
+    background-image: url(icons/github-text.svg)
+}
+
+.igithub {
+    background-image: url(icons/github.svg)
+}
+
+.iflag {
+    background-image: url(icons/flag.svg)
+}
+
+.ilocation {
+    background-image: url(icons/location.svg)
+}
+
+.ithumbs-down {
+    background-image: url(icons/thumbs-down.svg)
+}
+
+.ithumbs-up {
+    background-image: url(icons/thumbs-up.svg)
+}
+
+.ibell {
+    background-image: url(icons/bell.svg)
+}
+
+.icomment {
+    background-image: url(icons/comment.svg)
+}

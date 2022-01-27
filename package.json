@@ -1,6 +1,6 @@
 {
     "name": "roobie",
-    "version": "0.0.7",
+    "version": "0.1.1",
     "description": "Centralized CSS and JavaScript",
     "author": "Kyle Grewe",
     "license": "MIT",
@@ -15,9 +15,9 @@
         "js",
         "html"
     ],
-    "main": "roobie.js",
+    "main": "roobie.min.js",
     "scripts": {
-        "build": "npm-run-all build:dev build:prod docs",
+        "build": "npm-run-all build:dev build:prod",
         "build:dev": "cat src/**/*.css src/**/**/*.css  > roobie.css && cat src/*.js src/**/**/*.js  > roobie.js",
         "build:prod": "minify roobie.css > roobie.min.css && minify roobie.js > roobie.min.js",
         "docs": "npm-run-all docs:js",
@@ -35,11 +35,11 @@
     },
     "dependencies": {},
     "files": [
+        "README.md",
+        "LICENSE.md",
         "roobie.min.css",
         "roobie.min.js",
-        "roobie.js",
-        "roobie.css",
-        "examples/",
-        "docs/"
+        "images/",
+        "icons/"
     ]
 }

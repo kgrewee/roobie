@@ -4,6 +4,30 @@ Prefix:
 Dev: Colors are referenced by name
 */
 
+.t1 {
+    color: var(--t1);
+}
+
+.t2 {
+    color: var(--t2);
+}
+
+.t3 {
+    color: var(--t3);
+}
+
+.t4 {
+    color: var(--t4);
+}
+
+.t5 {
+    color: var(--t5);
+}
+
+.t6 {
+    color: var(--t6);
+}
+
 .black {
     color: var(--black);
 }

@@ -50,6 +50,27 @@ function checkMedia() {
 }
 
 /**
+ * Expands a menu by CSS class name if an event is found to be true.
+ * 
+ * @param {MediaQueryListEvent} event Event to check for
+ * @param {string} className Class name of menu to expand
+ */
+function expandMenu(event, className) {
+    if (event.matches) {
+        debug('Expand Menu [Class] ' + className);
+        var menus = getClass(className);
+        for (i = 0; i < menus.length; i++) {
+            let cnt = menus[i].querySelector('.rsp-cnt');
+            if (cnt) {
+                if (cnt.classList.contains('rsp-cnt')) {
+                    menus[i].innerHTML = cnt.innerHTML;
+                }
+            }
+        }
+    }
+}
+
+/**
  * Collapses a menu by CSS class name if an event is found to be true.
  * 
  * @param {MediaQueryListEvent} event Event to check for
@@ -93,24 +114,6 @@ function animationById(id, className) {
     element.classList.remove(className);
     void element.offsetWidth;
     element.classList.add(className);
-}
-/**
- * Expands a menu by CSS class name if an event is found to be true.
- * 
- * @param {MediaQueryListEvent} event Event to check for
- * @param {string} className Class name of menu to expand
- */
-function expandMenu(event, className) {
-    if (event.matches) {
-        debug('Expand Menu [Class] ' + className);
-        var menus = getClass(className);
-        for (i = 0; i < menus.length; i++) {
-            previousHtml = menus[i].innerHTML;
-            if (menus[i].querySelector('.rsp-cnt').classList.contains('rsp-cnt')) {
-                menus[i].innerHTML = menus[i].querySelector(".rsp-cnt").innerHTML;
-            }
-        }
-    }
 }
 
 /**

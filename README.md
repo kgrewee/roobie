@@ -1,6 +1,6 @@
-# 💎 Roobie
+# Roobie
 
-Centralized CSS & JavaScript for efficient Web Development.
+Centralized CSS & JavaScript for efficient Web Development.  Templates coming soon.
 
 ## Install
 
@@ -20,7 +20,7 @@ Website code is often sloppy and inefficient.  Developers follow different code 
 
 ## Solution
 
-Centralize common web properties, functions, themes, and animations to help teams collaborate effectively. Reuse core CSS classes and JavaScript functions instead of writing custom code.  Always build from a template (Templates coming soon).
+Centralize common web properties, functions, themes, and animations to help teams collaborate effectively. Reuse core CSS classes and JavaScript functions instead of writing custom code.  Always build from a template.
 
 The result is:
 

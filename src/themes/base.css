@@ -112,3 +112,7 @@ span,
 p {
     color: var(--t3);
 }
+
+path {
+    fill: var(--t2);
+}

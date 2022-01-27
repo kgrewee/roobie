@@ -12,9 +12,7 @@ npm i roobie --save
 
 ## Docs
 
-[JavaScript](docs/JS.md)
-
-CSS docs coming soon.
+CSS & JS documentation coming soon.
 
 ## Problem
 

@@ -9,93 +9,93 @@ Dev: Background color of an element
 }
 
 .bg1 {
-    background-color: var(--bg1);
+    background-color: var(--bg1) !important;
 }
 
 .bg2 {
-    background-color: var(--bg2);
+    background-color: var(--bg2) !important;
 }
 
 .bg3 {
-    background-color: var(--bg3);
+    background-color: var(--bg3) !important;
 }
 
 .bg4 {
-    background-color: var(--bg4);
+    background-color: var(--bg4) !important;
 }
 
 .bg5 {
-    background-color: var(--bg5);
+    background-color: var(--bg5) !important;
 }
 
 .bg6 {
-    background-color: var(--bg6);
+    background-color: var(--bg6) !important;
 }
 
 .bg-s1 {
-    background-color: var(--s1);
+    background-color: var(--s1) !important;
 }
 
 .bg-s2 {
-    background-color: var(--s2);
+    background-color: var(--s2) !important;
 }
 
 .bg-s3 {
-    background-color: var(--s3);
+    background-color: var(--s3) !important;
 }
 
 .bg-s4 {
-    background-color: var(--s4);
+    background-color: var(--s4) !important;
 }
 
 .bg-s5 {
-    background-color: var(--s5);
+    background-color: var(--s5) !important;
 }
 
 .bg-s6 {
-    background-color: var(--s6);
+    background-color: var(--s6) !important;
 }
 
 .bg-black {
-    background-color: var(--black);
+    background-color: var(--black) !important;
 }
 
 .bg-white {
-    background-color: var(--white);
+    background-color: var(--white) !important;
 }
 
 .bg-grey {
-    background-color: var(--grey);
+    background-color: var(--grey) !important;
 }
 
 .bg-offwhite {
-    background-color: var(--bg3);
+    background-color: var(--bg3) !important;
 }
 
 .bg-red {
-    background-color: var(--red);
+    background-color: var(--red) !important;
 }
 
 .bg-softred {
-    background-color: var(--softred);
+    background-color: var(--softred) !important;
 }
 
 .bg-blue {
-    background-color: var(--blue);
+    background-color: var(--blue) !important;
 }
 
 .bg-softblue {
-    background-color: var(--softblue);
+    background-color: var(--softblue) !important;
 }
 
 .bg-yellow {
-    background-color: var(--yellow);
+    background-color: var(--yellow) !important;
 }
 
 .bg-orange {
-    background-color: var(--orange);
+    background-color: var(--orange) !important;
 }
 
 .bg-green {
-    background-color: var(--green);
+    background-color: var(--green) !important;
 }

@@ -9,6 +9,9 @@
     cursor: pointer;
     color: var(--t2);
     background-color: var(--bg5);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 
 .btnh:hover {

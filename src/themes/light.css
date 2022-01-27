@@ -34,13 +34,6 @@
     --bg4: rgb(210, 210, 210);
     --bg5: rgb(200, 200, 200);
     --bg6: var(--softred);
-    /*Nav*/
-    --nav1: var(--t2);
-    --nav2: var(--bg4);
-    --nav3: white;
-    --nav4: white;
-    --nav5: white;
-    --nav6: white;
     /*Heading*/
     --h1: var(--t1);
     --h2: var(--t5);

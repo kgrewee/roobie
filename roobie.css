@@ -176,6 +176,26 @@
 
 .icomment {
     background-image: url(icons/comment.svg)
+}
+
+.iapps {
+    background-image: url(elusive-th-black.svg)
+}
+
+.ilist {
+    background-image: url(elusive-th-list-black.svg)
+}
+
+.imenu {
+    background-image: url(typicons-menu-black.svg)
+}
+
+.imenu-outline {
+    background-image: url(typicons-menu-outline-black.svg)
+}
+
+.icamera {
+    background-image: url(elusive-camera-black.svg)
 }/* 
 Name: Align Content
 Prefix: aln-cnt

@@ -179,21 +179,21 @@
 }
 
 .iapps {
-    background-image: url(elusive-th-black.svg)
+    background-image: url(icons/apps.svg)
 }
 
 .ilist {
-    background-image: url(elusive-th-list-black.svg)
+    background-image: url(icons/list.svg)
 }
 
 .imenu {
-    background-image: url(typicons-menu-black.svg)
+    background-image: url(icons/menu.svg)
 }
 
 .imenu-outline {
-    background-image: url(typicons-menu-outline-black.svg)
+    background-image: url(icons/menu-outline.svg)
 }
 
 .icamera {
-    background-image: url(elusive-camera-black.svg)
+    background-image: url(icons/camera.svg)
 }

@@ -6,7 +6,7 @@
  */
 function addClassById(id, className, condition = true) {
     if (condition) {
-        debug("Add [Class] " + className + " -> [Id]" + id);
+        debug("Add [Class] " + className + " -> [Id] " + id);
         getId(id).classList.add(className);
     }
 }
@@ -19,7 +19,7 @@ function addClassById(id, className, condition = true) {
  */
 function addClassByElement(element, className, condition = true) {
     if (condition) {
-        debug("Add [Class] " + className + " -> [Element]" + element);
+        debug("Add [Class] " + className + " -> [Element] " + element);
         element.classList.add(className);
     }
 }

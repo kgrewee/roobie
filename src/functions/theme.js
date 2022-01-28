@@ -3,6 +3,7 @@ ready(() => {
     if (theme != null) {
         switchTheme(theme);
     } else {
+        debug("Defaulting theme -> light");
         switchTheme('light');
     }
 })
@@ -13,7 +14,7 @@ ready(() => {
  * @param {string} themeName Name of the theme
  */
 function switchTheme(themeName) {
-    console.log("Switching theme to " + themeName);
+    debug("Switch theme -> " + themeName);
     setLocalStorage('theme', themeName);
     addAttributeByTag('body', 'theme', themeName);
 }

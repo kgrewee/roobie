@@ -7,9 +7,8 @@ const debugMode = true;
  * @param {string} message Text to print alonside custom date and app details
  */
 function debug(message) {
-    var ts = new Date();
     if (debugMode) {
-        console.log(ts.toISOString() + ' ' + appName + ' | ' + message);
+        console.log(appName + ' ' + new Date().toISOString() + '   ' + message);
     }
 }
 

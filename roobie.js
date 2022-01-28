@@ -5,7 +5,7 @@
  * @param {string} className Class name of animation
  */
 function animationByElement(element, className) {
-    console.log("Animating by element " + element);
+    debug("[Animation] " + className + " -> [Element] " + element);
     element.classList.remove(className);
     void element.offsetWidth;
     element.classList.add(className);
@@ -18,7 +18,7 @@ function animationByElement(element, className) {
  * @param {string} className Class name of animation
  */
 function animationById(id, className) {
-    console.log("Animating by id " + id);
+    debug("[Animation] " + className + " -> [Id] " + id);
     let element = getId(id);
     element.classList.remove(className);
     void element.offsetWidth;
@@ -31,7 +31,7 @@ function animationById(id, className) {
  * @param {string} value Value of attribute
  */
 function addAttributeById(id, attribute, value) {
-    debug("Add [Attribute] " + attribute + '=' + value + " -> [Id]" + id);
+    debug("Add [Attribute] " + attribute + '=' + value + " -> [Id] " + id);
     getId(id).setAttribute(attribute, value);
 }
 
@@ -43,7 +43,7 @@ function addAttributeById(id, attribute, value) {
  * @param {string} value Value of attribute
  */
 function addAttributeByElement(element, attribute, value) {
-    debug("Add [Attribute] " + attribute + '=' + value + " -> [Element]" + element);
+    debug("Add [Attribute] " + attribute + '=' + value + " -> [Element] " + element);
     element.setAttribute(attribute, value);
 }
 
@@ -55,7 +55,7 @@ function addAttributeByElement(element, attribute, value) {
  * @param {string} value Value of attribute
  */
 function addAttributeByTag(tagName, attribute, value) {
-    debug("Add [Attribute] " + attribute + '=' + value + " -> [Tag]" + tagName);
+    debug("Add [Attribute] " + attribute + '=' + value + " -> [Tag] " + tagName);
     var elements = getTag(tagName);
     for (i = 0; i < elements.length; i++) {
         elements[i].setAttribute(attribute, value);
@@ -69,9 +69,8 @@ const debugMode = true;
  * @param {string} message Text to print alonside custom date and app details
  */
 function debug(message) {
-    var ts = new Date();
     if (debugMode) {
-        console.log(ts.toISOString() + ' ' + appName + ' | ' + message);
+        console.log(appName + ' ' + new Date().toISOString() + '   ' + message);
     }
 }
 
@@ -95,7 +94,7 @@ function ready(fn) {
  */
 function addClassById(id, className, condition = true) {
     if (condition) {
-        debug("Add [Class] " + className + " -> [Id]" + id);
+        debug("Add [Class] " + className + " -> [Id] " + id);
         getId(id).classList.add(className);
     }
 }
@@ -108,7 +107,7 @@ function addClassById(id, className, condition = true) {
  */
 function addClassByElement(element, className, condition = true) {
     if (condition) {
-        debug("Add [Class] " + className + " -> [Element]" + element);
+        debug("Add [Class] " + className + " -> [Element] " + element);
         element.classList.add(className);
     }
 }
@@ -293,10 +292,10 @@ function rotateById(id, degrees, reset) {
     debug('After cut ' + previousDegrees);
 
     if (previousDegrees > 0 && reset) {
-        debug("Reset rotation [Id] id " + id);
+        debug("Reset rotation [Id] " + id);
         element.style.transform = "rotate(" + 0 + "deg)";
     } else {
-        debug("Rotate [Id] " + id + " -> [Degrees] " + degrees);
+        debug("Rotate [Degrees] " + degrees + " -> [Id] " + id);
         element.style.transform = "rotate(" + degrees + "deg)";
     }
 
@@ -307,6 +306,7 @@ function rotateById(id, degrees, reset) {
  * @returns Value String from local storage
  */
 function getLocalStorage(key) {
+    debug("Local Storage [Get] " + key);
     return localStorage.getItem(key);
 }
 
@@ -317,6 +317,7 @@ function getLocalStorage(key) {
  * @param {string} value Value to store
  */
 function setLocalStorage(key, value) {
+    debug("Local Storage [Set] " + key + "=" + value);
     localStorage.setItem(key, value);
 }/**
  * Set a CSS property by tag name.
@@ -334,8 +335,10 @@ function setStyleByTag(tagName, property, value) {
 }ready(() => {
     const theme = getLocalStorage('theme');
     if (theme != null) {
+        debug("Setting theme from local storage -> " + theme);
         switchTheme(theme);
     } else {
+        debug("Defaulting to light theme");
         switchTheme('light');
     }
 })
@@ -346,7 +349,7 @@ function setStyleByTag(tagName, property, value) {
  * @param {string} themeName Name of the theme
  */
 function switchTheme(themeName) {
-    console.log("Switching theme to " + themeName);
+    debug("Switch theme -> " + themeName);
     setLocalStorage('theme', themeName);
     addAttributeByTag('body', 'theme', themeName);
 }/**

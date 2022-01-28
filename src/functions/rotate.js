@@ -13,10 +13,10 @@ function rotateById(id, degrees, reset) {
     debug('After cut ' + previousDegrees);
 
     if (previousDegrees > 0 && reset) {
-        debug("Reset rotation [Id] id " + id);
+        debug("Reset rotation [Id] " + id);
         element.style.transform = "rotate(" + 0 + "deg)";
     } else {
-        debug("Rotate [Id] " + id + " -> [Degrees] " + degrees);
+        debug("Rotate [Degrees] " + degrees + " -> [Id] " + id);
         element.style.transform = "rotate(" + degrees + "deg)";
     }
 

@@ -5,6 +5,7 @@
  * @returns Value String from local storage
  */
 function getLocalStorage(key) {
+    debug("Local Storage [Get] " + key);
     return localStorage.getItem(key);
 }
 
@@ -15,5 +16,6 @@ function getLocalStorage(key) {
  * @param {string} value Value to store
  */
 function setLocalStorage(key, value) {
+    debug("Local Storage [Set] " + key + "=" + value);
     localStorage.setItem(key, value);
 }

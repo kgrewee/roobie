@@ -1,6 +1,6 @@
 {
     "name": "roobie",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "description": "Centralized CSS and JavaScript",
     "author": "Kyle Grewe",
     "license": "MIT",
@@ -18,11 +18,12 @@
     "main": "roobie.min.js",
     "scripts": {
         "build": "npm-run-all build:dev build:prod",
-        "build:dev": "cat src/**/*.css src/**/**/*.css  > roobie.css && cat src/*.js src/**/**/*.js  > roobie.js",
+        "build:dev": "cat src/**/*.css src/**/**/*.css  > roobie.css && cat src/**/*.js src/**/**/*.js  > roobie.js",
         "build:prod": "minify roobie.css > roobie.min.css && minify roobie.js > roobie.min.js",
         "docs": "npm-run-all docs:js",
         "docs:js": "",
-        "docs:css": ""
+        "docs:css": "",
+        "prepare": "husky install"
     },
     "devDependencies": {
         "husky": "^7.0.4",

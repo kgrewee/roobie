@@ -22,7 +22,8 @@
         "build:prod": "minify roobie.css > roobie.min.css && minify roobie.js > roobie.min.js",
         "docs": "npm-run-all docs:js",
         "docs:js": "",
-        "docs:css": ""
+        "docs:css": "",
+        "prepare": "husky install"
     },
     "devDependencies": {
         "husky": "^7.0.4",

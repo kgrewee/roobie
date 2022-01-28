@@ -335,10 +335,9 @@ function setStyleByTag(tagName, property, value) {
 }ready(() => {
     const theme = getLocalStorage('theme');
     if (theme != null) {
-        debug("Setting theme from local storage -> " + theme);
         switchTheme(theme);
     } else {
-        debug("Defaulting to light theme");
+        debug("Defaulting theme -> light");
         switchTheme('light');
     }
 })

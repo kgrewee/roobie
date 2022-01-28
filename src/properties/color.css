@@ -48,16 +48,16 @@ Dev: Colors are referenced by name
     color: var(--red);
 }
 
-.softred {
-    color: var(--softred);
+.red2 {
+    color: var(--red2);
 }
 
 .blue {
     color: var(--blue);
 }
 
-.softblue {
-    color: var(--softblue);
+.blue2 {
+    color: var(--blue2);
 }
 
 .yellow {

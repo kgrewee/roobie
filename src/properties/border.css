@@ -56,16 +56,16 @@ Dev: Border of an element
     border: 1px solid var(--red) !important;
 }
 
-.bdr-softred {
-    border: 1px solid var(--softred) !important;
+.bdr-red2 {
+    border: 1px solid var(--red2) !important;
 }
 
 .bdr-blue {
     border: 1px solid var(--blue) !important;
 }
 
-.bdr-softblue {
-    border: 1px solid var(--softblue) !important;
+.bdr-blue2 {
+    border: 1px solid var(--blue2) !important;
 }
 
 .bdr-yellow {

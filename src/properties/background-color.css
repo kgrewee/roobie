@@ -32,6 +32,9 @@ Dev: Background color of an element
     background-color: var(--bg6) !important;
 }
 
+
+/* Status */
+
 .bg-s1 {
     background-color: var(--s1) !important;
 }
@@ -56,46 +59,131 @@ Dev: Background color of an element
     background-color: var(--s6) !important;
 }
 
-.bg-black {
-    background-color: var(--black) !important;
-}
+
+/* Shade 1 */
 
 .bg-white {
     background-color: var(--white) !important;
+}
+
+.bg-black {
+    background-color: var(--black) !important;
 }
 
 .bg-grey {
     background-color: var(--grey) !important;
 }
 
-.bg-offwhite {
-    background-color: var(--bg3) !important;
-}
-
 .bg-red {
     background-color: var(--red) !important;
-}
-
-.bg-softred {
-    background-color: var(--softred) !important;
-}
-
-.bg-blue {
-    background-color: var(--blue) !important;
-}
-
-.bg-softblue {
-    background-color: var(--softblue) !important;
-}
-
-.bg-yellow {
-    background-color: var(--yellow) !important;
 }
 
 .bg-orange {
     background-color: var(--orange) !important;
 }
 
+.bg-yellow {
+    background-color: var(--yellow) !important;
+}
+
 .bg-green {
     background-color: var(--green) !important;
+}
+
+.bg-blue {
+    background-color: var(--blue) !important;
+}
+
+.bg-indigo {
+    background-color: var(--indigo) !important;
+}
+
+.bg-violet {
+    background-color: var(--violet) !important;
+}
+
+
+/* Shade 2 */
+
+.bg-white2 {
+    background-color: var(--white2) !important;
+}
+
+.bg-black2 {
+    background-color: var(--black2) !important;
+}
+
+.bg-grey2 {
+    background-color: var(--grey2) !important;
+}
+
+.bg-red2 {
+    background-color: var(--red2) !important;
+}
+
+.bg-orange2 {
+    background-color: var(--orange2) !important;
+}
+
+.bg-yellow2 {
+    background-color: var(--yellow2) !important;
+}
+
+.bg-green2 {
+    background-color: var(--green2) !important;
+}
+
+.bg-blue2 {
+    background-color: var(--blue2) !important;
+}
+
+.bg-indigo2 {
+    background-color: var(--indigo2) !important;
+}
+
+.bg-violet2 {
+    background-color: var(--violet2) !important;
+}
+
+
+/* Shade 3 */
+
+.bg-white3 {
+    background-color: var(--white3) !important;
+}
+
+.bg-black3 {
+    background-color: var(--black3) !important;
+}
+
+.bg-grey3 {
+    background-color: var(--grey3) !important;
+}
+
+.bg-red3 {
+    background-color: var(--red3) !important;
+}
+
+.bg-orange3 {
+    background-color: var(--orange3) !important;
+}
+
+.bg-yellow3 {
+    background-color: var(--yellow3) !important;
+}
+
+.bg-green3 {
+    background-color: var(--green3) !important;
+}
+
+.bg-blue3 {
+    background-color: var(--blue3) !important;
+}
+
+.bg-indigo3 {
+    background-color: var(--indigo3) !important;
+}
+
+.bg-violet3 {
+    background-color: var(--violet3) !important;
 }

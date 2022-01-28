@@ -1,202 +1,4 @@
-.itrash {
-    background-image: url(icons/trash.svg)
-}
-
-.iplus {
-    background-image: url(icons/plus.svg)
-}
-
-.iminus {
-    background-image: url(icons/minus.svg)
-}
-
-.iheart-empty {
-    background-image: url(icons/heart-empty.svg)
-}
-
-.iheart {
-    background-image: url(icons/heart.svg)
-}
-
-.imail {
-    background-image: url(icons/mail.svg)
-}
-
-.isearch {
-    background-image: url(icons/search.svg)
-}
-
-.istar-empty {
-    background-image: url(icons/star-empty.svg)
-}
-
-.istar {
-    background-image: url(icons/star.svg)
-}
-
-.iuser {
-    background-image: url(icons/user.svg)
-}
-
-.iphone {
-    background-image: url(icons/phone.svg)
-}
-
-.iattach {
-    background-image: url(icons/attach.svg)
-}
-
-.iright {
-    background-image: url(icons/right.svg)
-}
-
-.ileft {
-    background-image: url(icons/left.svg)
-}
-
-.icog-2 {
-    background-image: url(icons/cog.svg)
-}
-
-.ihelp {
-    background-image: url(icons/help.svg)
-}
-
-.ifacebook {
-    background-image: url(icons/facebook.svg)
-}
-
-.ilinkedin {
-    background-image: url(icons/linkedin.svg)
-}
-
-.ileft-open {
-    background-image: url(icons/left-open.svg)
-}
-
-.iok {
-    background-image: url(icons/ok.svg)
-}
-
-.icancel {
-    background-image: url(icons/cancel.svg)
-}
-
-.iright-open {
-    background-image: url(icons/right-open.svg)
-}
-
-.iup-open {
-    background-image: url(icons/up-open.svg)
-}
-
-.idown-open {
-    background-image: url(icons/down-open.svg)
-}
-
-.ipause {
-    background-image: url(icons/pause.svg)
-}
-
-.istop {
-    background-image: url(icons/stop.svg)
-}
-
-.iplay {
-    background-image: url(icons/play.svg)
-}
-
-.icw {
-    background-image: url(icons/cw.svg)
-}
-
-.iup {
-    background-image: url(icons/up.svg)
-}
-
-.idown {
-    background-image: url(icons/down.svg)
-}
-
-.izoom-in {
-    background-image: url(icons/zoom-in.svg)
-}
-
-.izoom-out {
-    background-image: url(icons/zoom-out.svg)
-}
-
-.ieject {
-    background-image: url(icons/eject.svg)
-}
-
-.ialign-right {
-    background-image: url(icons/align-right.svg)
-}
-
-.ialign-center {
-    background-image: url(icons/align-center.svg);
-}
-
-.ialign-left {
-    background-image: url(icons/align-left.svg)
-}
-
-.ialign-justify {
-    background-image: url(icons/align-justify.svg)
-}
-
-.igithub-text {
-    background-image: url(icons/github-text.svg)
-}
-
-.igithub {
-    background-image: url(icons/github.svg)
-}
-
-.iflag {
-    background-image: url(icons/flag.svg)
-}
-
-.ilocation {
-    background-image: url(icons/location.svg)
-}
-
-.ithumbs-down {
-    background-image: url(icons/thumbs-down.svg)
-}
-
-.ithumbs-up {
-    background-image: url(icons/thumbs-up.svg)
-}
-
-.ibell {
-    background-image: url(icons/bell.svg)
-}
-
-.icomment {
-    background-image: url(icons/comment.svg)
-}
-
-.iapps {
-    background-image: url(icons/apps.svg)
-}
-
-.ilist {
-    background-image: url(icons/list.svg)
-}
-
-.imenu {
-    background-image: url(icons/menu.svg)
-}
-
-.imenu-outline {
-    background-image: url(icons/menu-outline.svg)
-}
-
-.icamera {
-    background-image: url(icons/camera.svg)
-}/* 
+/* 
 Name: Align Content
 Prefix: aln-cnt
 Dev: How lines are spaced.  No effect if content is only 1 line.
@@ -322,6 +124,9 @@ Dev: Background color of an element
     background-color: var(--bg6) !important;
 }
 
+
+/* Status */
+
 .bg-s1 {
     background-color: var(--s1) !important;
 }
@@ -346,48 +151,133 @@ Dev: Background color of an element
     background-color: var(--s6) !important;
 }
 
-.bg-black {
-    background-color: var(--black) !important;
-}
+
+/* Shade 1 */
 
 .bg-white {
     background-color: var(--white) !important;
+}
+
+.bg-black {
+    background-color: var(--black) !important;
 }
 
 .bg-grey {
     background-color: var(--grey) !important;
 }
 
-.bg-offwhite {
-    background-color: var(--bg3) !important;
-}
-
 .bg-red {
     background-color: var(--red) !important;
-}
-
-.bg-softred {
-    background-color: var(--softred) !important;
-}
-
-.bg-blue {
-    background-color: var(--blue) !important;
-}
-
-.bg-softblue {
-    background-color: var(--softblue) !important;
-}
-
-.bg-yellow {
-    background-color: var(--yellow) !important;
 }
 
 .bg-orange {
     background-color: var(--orange) !important;
 }
 
+.bg-yellow {
+    background-color: var(--yellow) !important;
+}
+
 .bg-green {
     background-color: var(--green) !important;
+}
+
+.bg-blue {
+    background-color: var(--blue) !important;
+}
+
+.bg-indigo {
+    background-color: var(--indigo) !important;
+}
+
+.bg-violet {
+    background-color: var(--violet) !important;
+}
+
+
+/* Shade 2 */
+
+.bg-white2 {
+    background-color: var(--white2) !important;
+}
+
+.bg-black2 {
+    background-color: var(--black2) !important;
+}
+
+.bg-grey2 {
+    background-color: var(--grey2) !important;
+}
+
+.bg-red2 {
+    background-color: var(--red2) !important;
+}
+
+.bg-orange2 {
+    background-color: var(--orange2) !important;
+}
+
+.bg-yellow2 {
+    background-color: var(--yellow2) !important;
+}
+
+.bg-green2 {
+    background-color: var(--green2) !important;
+}
+
+.bg-blue2 {
+    background-color: var(--blue2) !important;
+}
+
+.bg-indigo2 {
+    background-color: var(--indigo2) !important;
+}
+
+.bg-violet2 {
+    background-color: var(--violet2) !important;
+}
+
+
+/* Shade 3 */
+
+.bg-white3 {
+    background-color: var(--white3) !important;
+}
+
+.bg-black3 {
+    background-color: var(--black3) !important;
+}
+
+.bg-grey3 {
+    background-color: var(--grey3) !important;
+}
+
+.bg-red3 {
+    background-color: var(--red3) !important;
+}
+
+.bg-orange3 {
+    background-color: var(--orange3) !important;
+}
+
+.bg-yellow3 {
+    background-color: var(--yellow3) !important;
+}
+
+.bg-green3 {
+    background-color: var(--green3) !important;
+}
+
+.bg-blue3 {
+    background-color: var(--blue3) !important;
+}
+
+.bg-indigo3 {
+    background-color: var(--indigo3) !important;
+}
+
+.bg-violet3 {
+    background-color: var(--violet3) !important;
 }/* 
 Name: Border Radius
 Prefix: br
@@ -479,16 +369,16 @@ Dev: Border of an element
     border: 1px solid var(--red) !important;
 }
 
-.bdr-softred {
-    border: 1px solid var(--softred) !important;
+.bdr-red2 {
+    border: 1px solid var(--red2) !important;
 }
 
 .bdr-blue {
     border: 1px solid var(--blue) !important;
 }
 
-.bdr-softblue {
-    border: 1px solid var(--softblue) !important;
+.bdr-blue2 {
+    border: 1px solid var(--blue2) !important;
 }
 
 .bdr-yellow {
@@ -671,16 +561,16 @@ Dev: Colors are referenced by name
     color: var(--red);
 }
 
-.softred {
-    color: var(--softred);
+.red2 {
+    color: var(--red2);
 }
 
 .blue {
     color: var(--blue);
 }
 
-.softblue {
-    color: var(--softblue);
+.blue2 {
+    color: var(--blue2);
 }
 
 .yellow {
@@ -1500,20 +1390,39 @@ span,
 p {
     color: var(--t3);
 }[theme="dark"] {
-    /*Color*/
+    /*Shade 1*/
     --white: rgb(240, 240, 240);
     --black: rgb(20, 20, 20);
-    --red: rgb(245, 9, 9);
-    --softred: rgba(170, 31, 31, 0.9);
+    --grey: rgb(199, 199, 199);
+    --red: rgb(182, 26, 26);
     --orange: rgb(243, 162, 11);
-    --purple: rgb(122, 10, 122);
-    --green: rgb(24, 196, 96);
-    --yellow: rgb(230, 230, 16);
-    --blue: rgb(13, 13, 226);
-    --softblue: rgb(67, 67, 221, .9);
-    --grey: rgb(88, 87, 87);
-    --violet: rgb(226, 108, 226);
-    --pink: rgb(219, 163, 173);
+    --yellow: rgb(221, 221, 25);
+    --green: rgb(19, 172, 82);
+    --blue: rgb(23, 23, 192);
+    --indigo: rgb(117, 13, 117);
+    --violet: rgb(184, 88, 184);
+    /* Shade 2*/
+    --white2: rgba(240, 240, 240, .7);
+    --black2: rgba(20, 20, 20, .7);
+    --grey2: rgba(199, 199, 199, .7);
+    --red2: rgb(182, 26, 26, .7);
+    --orange2: rgba(243, 162, 11, .7);
+    --yellow2: rgba(221, 221, 25, .7);
+    --green2: rgba(19, 172, 82, .7);
+    --blue2: rgba(23, 23, 192, .7);
+    --indigo2: rgba(117, 13, 117, .7);
+    --violet2: rgba(184, 88, 184, .7);
+    /* Shade 3*/
+    --white3: rgba(240, 240, 240, .5);
+    --black3: rgba(20, 20, 20, .5);
+    --grey3: rgba(199, 199, 199, .5);
+    --red3: rgba(182, 26, 26, .5);
+    --orange3: rgba(243, 162, 11, .5);
+    --yellow3: rgba(221, 221, 25, .5);
+    --green3: rgba(19, 172, 82, .5);
+    --blue3: rgba(23, 23, 192, .5);
+    --indigo3: rgba(117, 13, 117, .5);
+    --violet3: rgba(184, 88, 184, .5);
     /*Status*/
     --s1: green;
     --s2: orange;
@@ -1534,16 +1443,16 @@ p {
     --bg3: rgb(40, 40, 40);
     --bg4: rgb(50, 50, 50);
     --bg5: rgb(60, 60, 60);
-    --bg6: var(--softblue);
+    --bg6: var(--blue2);
     /*Heading*/
     --h1: var(--t1);
     --h2: var(--t5);
     --h3: var(--green);
-    --h4: var(--softblue);
+    --h4: var(--blue2);
     --h5: var(--t5);
     --h6: var(--t5);
     /*Link*/
-    --a1: var(--softblue);
+    --a1: var(--blue2);
     --a2: white;
     --a3: white;
     --a4: white;
@@ -1578,20 +1487,39 @@ p {
     --box5: 0 0 4px 4px rgb(235, 235, 235, .3);
     --box6: 0 0 5px 5px rgb(235, 235, 235, .3);
 }[theme="light"] {
-    /*Color*/
+    /*Shade 1*/
     --white: rgb(240, 240, 240);
     --black: rgb(20, 20, 20);
-    --red: rgb(245, 9, 9);
-    --softred: rgba(226, 89, 89, 0.9);
+    --grey: rgb(199, 199, 199);
+    --red: rgb(182, 26, 26);
     --orange: rgb(243, 162, 11);
-    --purple: rgb(122, 10, 122);
-    --green: rgb(24, 196, 96);
-    --yellow: rgb(230, 230, 16);
-    --blue: rgb(13, 13, 226);
-    --softblue: rgba(72, 72, 255, 0.9);
-    --grey: rgb(88, 87, 87);
-    --violet: rgb(226, 108, 226);
-    --pink: rgb(219, 163, 173);
+    --yellow: rgb(221, 221, 25);
+    --green: rgb(19, 172, 82);
+    --blue: rgb(23, 23, 192);
+    --indigo: rgb(117, 13, 117);
+    --violet: rgb(184, 88, 184);
+    /* Shade 2*/
+    --white2: rgba(240, 240, 240, .7);
+    --black2: rgba(20, 20, 20, .7);
+    --grey2: rgba(199, 199, 199, .7);
+    --red2: rgb(182, 26, 26, .7);
+    --orange2: rgba(243, 162, 11, .7);
+    --yellow2: rgba(221, 221, 25, .7);
+    --green2: rgba(19, 172, 82, .7);
+    --blue2: rgba(23, 23, 192, .7);
+    --indigo2: rgba(117, 13, 117, .7);
+    --violet2: rgba(184, 88, 184, .7);
+    /* Shade 3*/
+    --white3: rgba(240, 240, 240, .5);
+    --black3: rgba(20, 20, 20, .5);
+    --grey3: rgba(199, 199, 199, .5);
+    --red3: rgba(182, 26, 26, .5);
+    --orange3: rgba(243, 162, 11, .5);
+    --yellow3: rgba(221, 221, 25, .5);
+    --green3: rgba(19, 172, 82, .5);
+    --blue3: rgba(23, 23, 192, .5);
+    --indigo3: rgba(117, 13, 117, .5);
+    --violet3: rgba(184, 88, 184, .5);
     /*Status*/
     --s1: green;
     --s2: orange;
@@ -1612,16 +1540,16 @@ p {
     --bg3: rgb(220, 220, 220);
     --bg4: rgb(210, 210, 210);
     --bg5: rgb(200, 200, 200);
-    --bg6: var(--softred);
+    --bg6: var(--red2);
     /*Heading*/
     --h1: var(--t1);
     --h2: var(--t5);
     --h3: var(--green);
-    --h4: var(--softblue);
+    --h4: var(--blue2);
     --h5: var(--t5);
     --h6: var(--t5);
     /*Link*/
-    --a1: var(--softblue);
+    --a1: var(--blue2);
     --a2: white;
     --a3: white;
     --a4: white;
@@ -3363,6 +3291,204 @@ p {
 .drp-cnt a:hover {
     background-color: var(--bg3);
     cursor: pointer;
+}.itrash {
+    background-image: url(icons/trash.svg)
+}
+
+.iplus {
+    background-image: url(icons/plus.svg)
+}
+
+.iminus {
+    background-image: url(icons/minus.svg)
+}
+
+.iheart-empty {
+    background-image: url(icons/heart-empty.svg)
+}
+
+.iheart {
+    background-image: url(icons/heart.svg)
+}
+
+.imail {
+    background-image: url(icons/mail.svg)
+}
+
+.isearch {
+    background-image: url(icons/search.svg)
+}
+
+.istar-empty {
+    background-image: url(icons/star-empty.svg)
+}
+
+.istar {
+    background-image: url(icons/star.svg)
+}
+
+.iuser {
+    background-image: url(icons/user.svg)
+}
+
+.iphone {
+    background-image: url(icons/phone.svg)
+}
+
+.iattach {
+    background-image: url(icons/attach.svg)
+}
+
+.iright {
+    background-image: url(icons/right.svg)
+}
+
+.ileft {
+    background-image: url(icons/left.svg)
+}
+
+.icog-2 {
+    background-image: url(icons/cog.svg)
+}
+
+.ihelp {
+    background-image: url(icons/help.svg)
+}
+
+.ifacebook {
+    background-image: url(icons/facebook.svg)
+}
+
+.ilinkedin {
+    background-image: url(icons/linkedin.svg)
+}
+
+.ileft-open {
+    background-image: url(icons/left-open.svg)
+}
+
+.iok {
+    background-image: url(icons/ok.svg)
+}
+
+.icancel {
+    background-image: url(icons/cancel.svg)
+}
+
+.iright-open {
+    background-image: url(icons/right-open.svg)
+}
+
+.iup-open {
+    background-image: url(icons/up-open.svg)
+}
+
+.idown-open {
+    background-image: url(icons/down-open.svg)
+}
+
+.ipause {
+    background-image: url(icons/pause.svg)
+}
+
+.istop {
+    background-image: url(icons/stop.svg)
+}
+
+.iplay {
+    background-image: url(icons/play.svg)
+}
+
+.icw {
+    background-image: url(icons/cw.svg)
+}
+
+.iup {
+    background-image: url(icons/up.svg)
+}
+
+.idown {
+    background-image: url(icons/down.svg)
+}
+
+.izoom-in {
+    background-image: url(icons/zoom-in.svg)
+}
+
+.izoom-out {
+    background-image: url(icons/zoom-out.svg)
+}
+
+.ieject {
+    background-image: url(icons/eject.svg)
+}
+
+.ialign-right {
+    background-image: url(icons/align-right.svg)
+}
+
+.ialign-center {
+    background-image: url(icons/align-center.svg);
+}
+
+.ialign-left {
+    background-image: url(icons/align-left.svg)
+}
+
+.ialign-justify {
+    background-image: url(icons/align-justify.svg)
+}
+
+.igithub-text {
+    background-image: url(icons/github-text.svg)
+}
+
+.igithub {
+    background-image: url(icons/github.svg)
+}
+
+.iflag {
+    background-image: url(icons/flag.svg)
+}
+
+.ilocation {
+    background-image: url(icons/location.svg)
+}
+
+.ithumbs-down {
+    background-image: url(icons/thumbs-down.svg)
+}
+
+.ithumbs-up {
+    background-image: url(icons/thumbs-up.svg)
+}
+
+.ibell {
+    background-image: url(icons/bell.svg)
+}
+
+.icomment {
+    background-image: url(icons/comment.svg)
+}
+
+.iapps {
+    background-image: url(icons/apps.svg)
+}
+
+.ilist {
+    background-image: url(icons/list.svg)
+}
+
+.imenu {
+    background-image: url(icons/menu.svg)
+}
+
+.imenu-outline {
+    background-image: url(icons/menu-outline.svg)
+}
+
+.icamera {
+    background-image: url(icons/camera.svg)
 }input:focus,
 textarea:focus,
 select:focus {

@@ -1,5 +1,5 @@
 .drp {
-    font-size: var(--fnt3);
+    font-size: var(--fnts3);
     position: relative;
 }
 
@@ -31,7 +31,7 @@
     min-width: var(--drp-min-width);
     width: auto;
     box-shadow: var(--box2);
-    font-size: var(--fnt3);
+    font-size: var(--fnts3);
     z-index: 1;
 }
 
@@ -43,7 +43,7 @@
 
 .drp-cnt p {
     margin-top: 0;
-    font-size: var(--fnt2);
+    font-size: var(--fnts2);
     color: var(--t5);
 }
 

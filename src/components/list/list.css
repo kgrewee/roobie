@@ -41,7 +41,7 @@
 
 .ul li span,
 .ul-bdr li span {
-    font-size: var(--fnt4);
+    font-size: var(--fnts4);
     color: var(--t5);
 }
 

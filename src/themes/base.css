@@ -1,12 +1,19 @@
 :root {
     --animation-duration: 1.5s;
-    /*Font*/
-    --f1: 'American Typewriter', serif;
-    --f2: 'American Typewriter', serif;
-    --f3: 'American Typewriter', serif;
-    --f4: 'American Typewriter', serif;
-    --f5: 'American Typewriter', serif;
-    --f6: 'American Typewriter', serif;
+    /*Font Family*/
+    --fntf1: 'American Typewriter', serif;
+    --fntf2: 'American Typewriter', serif;
+    --fntf3: 'American Typewriter', serif;
+    --fntf4: 'American Typewriter', serif;
+    --fntf5: 'American Typewriter', serif;
+    --fntf6: 'American Typewriter', serif;
+    /*Font Weight*/
+    --fntw1: 200;
+    --fntw2: 300;
+    --fntw3: 400;
+    --fntw4: 700;
+    --fntw5: 800;
+    --fntw6: 900;
     /*Transition*/
     --trn1: '1s ease';
     --trn2: '1s ease';
@@ -43,12 +50,12 @@
     --mrg5: 30px;
     --mrg6: 40px;
     /*Font Size*/
-    --fnt1: .5em;
-    --fnt2: .8em;
-    --fnt3: 1em;
-    --fnt4: 1.25em;
-    --fnt5: 1.5em;
-    --fnt6: 2em;
+    --fnts1: .5em;
+    --fnts2: .8em;
+    --fnts3: 1em;
+    --fnts4: 1.25em;
+    --fnts5: 1.5em;
+    --fnts6: 2em;
     /*Container*/
     --div1: 20%;
     --div2: 33%;
@@ -80,6 +87,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--bg1);
+    font-family: var(--fntf1);
 }
 
 h1 {

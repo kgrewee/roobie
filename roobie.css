@@ -885,6 +885,10 @@ Dev: We use a flex based layouts most
     flex-direction: row-reverse;
 }
 
+.blk {
+    display: block;
+}
+
 .inl {
     display: inline;
 }
@@ -1068,150 +1072,182 @@ Dev: Alignment on the main axis.  Horizontal for row, vertical for column
 .jst-cnt-stretch {
     justify-content: stretch;
 }/*
+Name: Line Height
+Prefix: lht
+Dev
+*/
+
+.lht1 {
+    line-height: var(--lht1);
+}
+
+.lht2 {
+    line-height: var(--lht2);
+}
+
+.lht3 {
+    line-height: var(--lht3);
+}
+
+.lht4 {
+    line-height: var(--lht4);
+}
+
+.lht5 {
+    line-height: var(--lht5);
+}
+
+.lht6 {
+    line-height: var(--lht6);
+}/*
 Name: Margin
 Prefix: mrg
 Dev: Margin on the outside of an element
 */
+
+.mrga {
+    margin: auto !important;
+}
 
 .mrg0 {
     margin: 0 !important;
 }
 
 .mrg1 {
-    margin: var(--mrg1);
+    margin: var(--mrg1) !important;
 }
 
 .mrg2,
 .mrg {
-    margin: var(--mrg2);
+    margin: var(--mrg2) !important;
 }
 
 .mrg3 {
-    margin: var(--mrg3);
+    margin: var(--mrg3) !important;
 }
 
 .mrg4 {
-    margin: var(--mrg4);
+    margin: var(--mrg4) !important;
 }
 
 .mrg5 {
-    margin: var(--mrg5);
+    margin: var(--mrg5) !important;
 }
 
 .mrg6 {
-    margin: var(--mrg6);
+    margin: var(--mrg6) !important;
 }
 
 
 /* Margin Left */
 
 .mrgl1 {
-    margin-left: var(--mrg1);
+    margin-left: var(--mrg1) !important;
 }
 
 .mrgl2,
 .mrgl {
-    margin-left: var(--mrg2);
+    margin-left: var(--mrg2) !important;
 }
 
 .mrgl3 {
-    margin-left: var(--mrg3);
+    margin-left: var(--mrg3) !important;
 }
 
 .mrgl4 {
-    margin-left: var(--mrg4);
+    margin-left: var(--mrg4) !important;
 }
 
 .mrgl5 {
-    margin-left: var(--mrg5);
+    margin-left: var(--mrg5) !important;
 }
 
 .mrgl6 {
-    margin-left: var(--mrg6);
+    margin-left: var(--mrg6) !important;
 }
 
 
 /* Margin Right */
 
 .mrgr1 {
-    margin-right: var(--mrg1);
+    margin-right: var(--mrg1) !important;
 }
 
 .mrgr2,
 .mrgr {
-    margin-right: var(--mrg2);
+    margin-right: var(--mrg2) !important;
 }
 
 .mrgr3 {
-    margin-right: var(--mrg3);
+    margin-right: var(--mrg3) !important;
 }
 
 .mrgr4 {
-    margin-right: var(--mrg4);
+    margin-right: var(--mrg4) !important;
 }
 
 .mrgr5 {
-    margin-right: var(--mrg5);
+    margin-right: var(--mrg5) !important;
 }
 
 .mrgr6 {
-    margin-right: var(--mrg6);
+    margin-right: var(--mrg6) !important;
 }
 
 
 /* Margin Vertical */
 
 .mrgv1 {
-    margin: var(--mrg1) 0;
+    margin: var(--mrg1) 0 !important;
 }
 
 .mrgv2,
 .mrgv {
-    margin: var(--mrg2) 0;
+    margin: var(--mrg2) 0 !important;
 }
 
 .mrgv3 {
-    margin: var(--mrg3) 0;
+    margin: var(--mrg3) 0 !important;
 }
 
 .mrgv4 {
-    margin: var(--mrg4) 0;
+    margin: var(--mrg4) 0 !important;
 }
 
 .mrgv5 {
-    margin: var(--mrg5) 0;
+    margin: var(--mrg5) 0 !important;
 }
 
 .mrgv6 {
-    margin: var(--mrg6) 0;
+    margin: var(--mrg6) 0 !important;
 }
 
 
 /* Margin Horizontal */
 
 .mrgh1 {
-    margin: 0 var(--mrg1);
+    margin: 0 var(--mrg1) !important;
 }
 
 .mrgh2,
 .mrgh {
-    margin: 0 var(--mrg2);
+    margin: 0 var(--mrg2) !important;
 }
 
 .mrgh3 {
-    margin: 0 var(--mrg3);
+    margin: 0 var(--mrg3) !important;
 }
 
 .mrgh4 {
-    margin: 0 var(--mrg4);
+    margin: 0 var(--mrg4) !important;
 }
 
 .mrgh5 {
-    margin: 0 var(--mrg5);
+    margin: 0 var(--mrg5) !important;
 }
 
 .mrgh6 {
-    margin: 0 var(--mrg6);
+    margin: 0 var(--mrg6) !important;
 }/*
 Name: Opacity
 Prefix: op
@@ -1298,145 +1334,149 @@ Prefix: pad
 Dev: Padding on the inside of an element
 */
 
+.pada {
+    padding: auto !important;
+}
+
 .pad0 {
     padding: 0 !important;
 }
 
 .pad1 {
-    padding: var(--pad1);
+    padding: var(--pad1) !important;
 }
 
 .pad2,
 .pad {
-    padding: var(--pad2);
+    padding: var(--pad2) !important;
 }
 
 .pad3 {
-    padding: var(--pad3);
+    padding: var(--pad3) !important;
 }
 
 .pad4 {
-    padding: var(--pad4);
+    padding: var(--pad4) !important;
 }
 
 .pad5 {
-    padding: var(--pad5);
+    padding: var(--pad5) !important;
 }
 
 .pad6 {
-    padding: var(--pad6);
+    padding: var(--pad6) !important;
 }
 
 
 /* Padding Left */
 
 .padl1 {
-    padding-left: var(--pad1);
+    padding-left: var(--pad1) !important;
 }
 
 .padl2,
 .padl {
-    padding-left: var(--pad2);
+    padding-left: var(--pad2) !important;
 }
 
 .padl3 {
-    padding-left: var(--pad3);
+    padding-left: var(--pad3) !important;
 }
 
 .padl4 {
-    padding-left: var(--pad4);
+    padding-left: var(--pad4) !important;
 }
 
 .padl5 {
-    padding-left: var(--pad5);
+    padding-left: var(--pad5) !important;
 }
 
 .padl6 {
-    padding-left: var(--pad6);
+    padding-left: var(--pad6) !important;
 }
 
 
 /* Padding Right */
 
 .padr1 {
-    padding-right: var(--pad1);
+    padding-right: var(--pad1) !important;
 }
 
 .padr2,
 .padr {
-    padding-right: var(--pad2);
+    padding-right: var(--pad2) !important;
 }
 
 .padr3 {
-    padding-right: var(--pad3);
+    padding-right: var(--pad3) !important;
 }
 
 .padr4 {
-    padding-right: var(--pad4);
+    padding-right: var(--pad4) !important;
 }
 
 .padr5 {
-    padding-right: var(--pad5);
+    padding-right: var(--pad5) !important;
 }
 
 .padr6 {
-    padding-right: var(--pad6);
+    padding-right: var(--pad6) !important;
 }
 
 
 /* Padding Vertical*/
 
 .padv1 {
-    padding: var(--pad1) 0;
+    padding: var(--pad1) 0 !important;
 }
 
 .padv2,
 .padv {
-    padding: var(--pad2) 0;
+    padding: var(--pad2) 0 !important;
 }
 
 .padv3 {
-    padding: var(--pad3) 0;
+    padding: var(--pad3) 0 !important;
 }
 
 .padv4 {
-    padding: var(--pad4) 0;
+    padding: var(--pad4) 0 !important;
 }
 
 .padv5 {
-    padding: var(--pad5) 0;
+    padding: var(--pad5) 0 !important;
 }
 
 .padv6 {
-    padding: var(--pad6) 0;
+    padding: var(--pad6) 0 !important;
 }
 
 
 /* Padding Horizontal */
 
 .padh1 {
-    padding: 0 var(--pad1);
+    padding: 0 var(--pad1) !important;
 }
 
 .padh2,
 .padh {
-    padding: 0 var(--pad2);
+    padding: 0 var(--pad2) !important;
 }
 
 .padh3 {
-    padding: 0 var(--pad3);
+    padding: 0 var(--pad3) !important;
 }
 
 .padh4 {
-    padding: 0 var(--pad4);
+    padding: 0 var(--pad4) !important;
 }
 
 .padh5 {
-    padding: 0 var(--pad5);
+    padding: 0 var(--pad5) !important;
 }
 
 .padh6 {
-    padding: 0 var(--pad6);
+    padding: 0 var(--pad6) !important;
 }/*
 Name: Position
 Prefix: 
@@ -1636,6 +1676,13 @@ Dev
     --op4: 50%;
     --op5: 75%;
     --op6: 90%;
+    /*Line Height */
+    --lht1: .8em;
+    --lht2: 1em;
+    --lht3: 1.5em;
+    --lht4: 2em;
+    --lht5: 1.5em;
+    --lht6: 3em;
     --drp-min-width: 160px;
 }
 
@@ -3372,6 +3419,7 @@ p {
     cursor: pointer;
     color: var(--t2);
     background-color: var(--bg5);
+    display: inline-block;
 }
 
 .btnh:hover {
@@ -3518,6 +3566,7 @@ p {
     .div5,
     .div6,
     .div {
+        display: block;
         width: 100%;
         padding: var(--pad2);
     }
@@ -3540,7 +3589,6 @@ p {
     margin: var(--mrg1);
     cursor: pointer;
     color: var(--t2);
-    background-color: var(--bg5);
 }
 
 .drp-btn:hover {

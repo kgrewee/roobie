@@ -34,6 +34,10 @@ Dev: We use a flex based layouts most
     flex-direction: row-reverse;
 }
 
+.blk {
+    display: block;
+}
+
 .inl {
     display: inline;
 }

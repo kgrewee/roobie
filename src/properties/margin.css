@@ -4,143 +4,147 @@ Prefix: mrg
 Dev: Margin on the outside of an element
 */
 
+.mrga {
+    margin: auto !important;
+}
+
 .mrg0 {
     margin: 0 !important;
 }
 
 .mrg1 {
-    margin: var(--mrg1);
+    margin: var(--mrg1) !important;
 }
 
 .mrg2,
 .mrg {
-    margin: var(--mrg2);
+    margin: var(--mrg2) !important;
 }
 
 .mrg3 {
-    margin: var(--mrg3);
+    margin: var(--mrg3) !important;
 }
 
 .mrg4 {
-    margin: var(--mrg4);
+    margin: var(--mrg4) !important;
 }
 
 .mrg5 {
-    margin: var(--mrg5);
+    margin: var(--mrg5) !important;
 }
 
 .mrg6 {
-    margin: var(--mrg6);
+    margin: var(--mrg6) !important;
 }
 
 
 /* Margin Left */
 
 .mrgl1 {
-    margin-left: var(--mrg1);
+    margin-left: var(--mrg1) !important;
 }
 
 .mrgl2,
 .mrgl {
-    margin-left: var(--mrg2);
+    margin-left: var(--mrg2) !important;
 }
 
 .mrgl3 {
-    margin-left: var(--mrg3);
+    margin-left: var(--mrg3) !important;
 }
 
 .mrgl4 {
-    margin-left: var(--mrg4);
+    margin-left: var(--mrg4) !important;
 }
 
 .mrgl5 {
-    margin-left: var(--mrg5);
+    margin-left: var(--mrg5) !important;
 }
 
 .mrgl6 {
-    margin-left: var(--mrg6);
+    margin-left: var(--mrg6) !important;
 }
 
 
 /* Margin Right */
 
 .mrgr1 {
-    margin-right: var(--mrg1);
+    margin-right: var(--mrg1) !important;
 }
 
 .mrgr2,
 .mrgr {
-    margin-right: var(--mrg2);
+    margin-right: var(--mrg2) !important;
 }
 
 .mrgr3 {
-    margin-right: var(--mrg3);
+    margin-right: var(--mrg3) !important;
 }
 
 .mrgr4 {
-    margin-right: var(--mrg4);
+    margin-right: var(--mrg4) !important;
 }
 
 .mrgr5 {
-    margin-right: var(--mrg5);
+    margin-right: var(--mrg5) !important;
 }
 
 .mrgr6 {
-    margin-right: var(--mrg6);
+    margin-right: var(--mrg6) !important;
 }
 
 
 /* Margin Vertical */
 
 .mrgv1 {
-    margin: var(--mrg1) 0;
+    margin: var(--mrg1) 0 !important;
 }
 
 .mrgv2,
 .mrgv {
-    margin: var(--mrg2) 0;
+    margin: var(--mrg2) 0 !important;
 }
 
 .mrgv3 {
-    margin: var(--mrg3) 0;
+    margin: var(--mrg3) 0 !important;
 }
 
 .mrgv4 {
-    margin: var(--mrg4) 0;
+    margin: var(--mrg4) 0 !important;
 }
 
 .mrgv5 {
-    margin: var(--mrg5) 0;
+    margin: var(--mrg5) 0 !important;
 }
 
 .mrgv6 {
-    margin: var(--mrg6) 0;
+    margin: var(--mrg6) 0 !important;
 }
 
 
 /* Margin Horizontal */
 
 .mrgh1 {
-    margin: 0 var(--mrg1);
+    margin: 0 var(--mrg1) !important;
 }
 
 .mrgh2,
 .mrgh {
-    margin: 0 var(--mrg2);
+    margin: 0 var(--mrg2) !important;
 }
 
 .mrgh3 {
-    margin: 0 var(--mrg3);
+    margin: 0 var(--mrg3) !important;
 }
 
 .mrgh4 {
-    margin: 0 var(--mrg4);
+    margin: 0 var(--mrg4) !important;
 }
 
 .mrgh5 {
-    margin: 0 var(--mrg5);
+    margin: 0 var(--mrg5) !important;
 }
 
 .mrgh6 {
-    margin: 0 var(--mrg6);
+    margin: 0 var(--mrg6) !important;
 }

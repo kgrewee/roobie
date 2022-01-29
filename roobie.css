@@ -1249,6 +1249,30 @@ Dev: Margin on the outside of an element
 .mrgh6 {
     margin: 0 var(--mrg6) !important;
 }/*
+Name: Object Fit
+Prefix: objf
+Dev: Used to specify how an <img> or <video> should be resized to fit its container. Fill is default.
+*/
+
+.objf0 {
+    object-fit: none;
+}
+
+.objf-fill {
+    object-fit: fill;
+}
+
+.objf-contain {
+    object-fit: contain;
+}
+
+.objf-cover {
+    object-fit: cover;
+}
+
+.objf-scale {
+    object-fit: scale-down;
+}/*
 Name: Opacity
 Prefix: op
 Dev: Opacity of an element

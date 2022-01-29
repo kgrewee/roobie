@@ -3409,20 +3409,45 @@ p {
     animation-name: zoomout;
     animation-duration: var(--animation-duration);
 }.btn,
-.btnh {
+.btnh,
+.btnp,
+.btns,
+.btnt {
     width: auto;
     height: auto;
-    padding: var(--pad1);
+    padding: var(--pad2);
     text-decoration: none;
     border-radius: var(--br2);
     margin: var(--mrg1);
     cursor: pointer;
     color: var(--t2);
-    background-color: var(--bg5);
     display: inline-block;
 }
 
-.btnh:hover {
+.btn,
+.btnh {
+    background-color: var(--bg5);
+}
+
+.btnp {
+    background-color: var(--blue2);
+    color: var(--white);
+}
+
+.btns {
+    background-color: var(--bg4);
+    color: var(--t2);
+}
+
+.btnt {
+    background-color: var(--bg1);
+    color: var(--t1);
+}
+
+.btnh:hover,
+.btnp:hover,
+.btns:hover,
+.btnt:hover {
     opacity: 85%;
 }* {
     box-sizing: border-box;
@@ -3578,6 +3603,8 @@ p {
 .drp:focus .drp-cnt,
 .drp:hover .drp-cnt {
     display: block;
+    animation-name: fade;
+    animation-duration: .5s;
 }
 
 .drp-btn {

@@ -6,6 +6,8 @@
 .drp:focus .drp-cnt,
 .drp:hover .drp-cnt {
     display: block;
+    animation-name: fade;
+    animation-duration: .5s;
 }
 
 .drp-btn {

@@ -20,6 +20,13 @@ function animationByElement(element, className) {
 function animationById(id, className) {
     debug("[Animation] " + className + " -> [Id] " + id);
     let element = getId(id);
+    let classList = element.classList;
+    // Remove any current animation classes
+    for (let c of classList) {
+        if (c.startsWith("_")) {
+            element.classList.remove(c);
+        }
+    }
     element.classList.remove(className);
     void element.offsetWidth;
     element.classList.add(className);

@@ -22,7 +22,7 @@
     }
 }
 
-.stretch {
+._stretch {
     animation-name: stretch;
     animation-duration: var(--animation-duration);
 }

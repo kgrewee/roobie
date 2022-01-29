@@ -11,7 +11,7 @@
     }
 }
 
-.zoomt {
+._zoomt {
     animation-name: zoomt;
     animation-duration: var(--animation-duration);
 }
@@ -29,7 +29,7 @@
     }
 }
 
-.zoomoutt {
+._zoomoutt {
     animation-name: zoomoutt;
     transform-origin: center bottom;
     animation-duration: var(--animation-duration);

@@ -933,19 +933,19 @@ Prefix: flt
 Dev: How items are effected when there isn't enough space on a line
 */
 
-.flt-left {
+.fltl {
     float: left;
 }
 
-.flt-right {
+.fltr {
     float: right;
 }
 
-.flt-none {
+.flt0 {
     float: none;
 }
 
-.flt-inherit {
+.flti {
     float: inherit;
 }/* 
 Name: Font Size
@@ -1600,9 +1600,9 @@ Dev
 }:root {
     --animation-duration: 1.5s;
     /*Font Family*/
-    --fntf1: 'American Typewriter', serif;
-    --fntf2: 'American Typewriter', serif;
-    --fntf3: 'American Typewriter', serif;
+    --fntf1: 'Ubuntu', sans-serif;
+    --fntf2: 'Open Sans', sans-serif;
+    --fntf3: 'PT Sans', sans-serif;
     --fntf4: 'American Typewriter', serif;
     --fntf5: 'American Typewriter', serif;
     --fntf6: 'American Typewriter', serif;
@@ -1708,7 +1708,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--t3);
+    color: var(--t4);
 }
 
 h1,
@@ -1934,7 +1934,7 @@ p {
     }
 }
 
-.backb {
+._backb {
     animation-name: backb;
     animation-duration: var(--animation-duration);
 }
@@ -1954,7 +1954,7 @@ p {
     }
 }
 
-.backoutb {
+._backoutb {
     animation-name: backoutb;
     animation-duration: var(--animation-duration);
 }@keyframes backl {
@@ -1972,7 +1972,7 @@ p {
     }
 }
 
-.backl {
+._backl {
     animation-name: backl;
     animation-duration: var(--animation-duration);
 }
@@ -1992,7 +1992,7 @@ p {
     }
 }
 
-.backoutl {
+._backoutl {
     animation-name: backoutl;
     animation-duration: var(--animation-duration);
 }@keyframes backr {
@@ -2010,7 +2010,7 @@ p {
     }
 }
 
-.backr {
+._backr {
     animation-name: backr;
     animation-duration: var(--animation-duration);
 }
@@ -2030,7 +2030,7 @@ p {
     }
 }
 
-.backoutr {
+._backoutr {
     animation-name: backoutr;
     animation-duration: var(--animation-duration);
 }@keyframes backt {
@@ -2048,7 +2048,7 @@ p {
     }
 }
 
-.backt {
+._backt {
     animation-name: backt;
     animation-duration: var(--animation-duration);
 }
@@ -2068,7 +2068,7 @@ p {
     }
 }
 
-.backoutt {
+._backoutt {
     animation-name: backoutt;
     animation-duration: var(--animation-duration);
 }@keyframes bounceb {
@@ -2098,7 +2098,7 @@ p {
     }
 }
 
-.bounceb {
+._bounceb {
     animation-name: bounceb;
     animation-duration: var(--animation-duration);
 }
@@ -2118,7 +2118,7 @@ p {
     }
 }
 
-.bounceoutb {
+._bounceoutb {
     animation-name: bounceoutb;
     animation-duration: var(--animation-duration);
 }@keyframes bouncel {
@@ -2148,7 +2148,7 @@ p {
     }
 }
 
-.bouncel {
+._bouncel {
     animation-name: bouncel;
     animation-duration: var(--animation-duration);
 }
@@ -2164,7 +2164,7 @@ p {
     }
 }
 
-.bounceoutl {
+._bounceoutl {
     animation-name: bounceoutl;
     animation-duration: var(--animation-duration);
 }@keyframes bouncer {
@@ -2194,7 +2194,7 @@ p {
     }
 }
 
-.bouncer {
+._bouncer {
     animation-name: bouncer;
     animation-duration: var(--animation-duration);
 }
@@ -2210,7 +2210,7 @@ p {
     }
 }
 
-.bounceoutr {
+._bounceoutr {
     animation-name: bounceoutr;
     animation-duration: var(--animation-duration);
 }@keyframes bouncet {
@@ -2240,7 +2240,7 @@ p {
     }
 }
 
-.bouncet {
+._bouncet {
     animation-name: bouncet;
     animation-duration: var(--animation-duration);
 }
@@ -2260,7 +2260,7 @@ p {
     }
 }
 
-.bounceoutt {
+._bounceoutt {
     animation-name: bounceoutt;
     animation-duration: var(--animation-duration);
 }@keyframes bounce {
@@ -2295,7 +2295,7 @@ p {
     }
 }
 
-.bounce {
+._bounce {
     animation-duration: calc(var(--animation-duration) * 0.75);
     animation-name: bounce;
 }
@@ -2315,7 +2315,7 @@ p {
     }
 }
 
-.bounceout {
+._bounceout {
     animation-duration: calc(var(--animation-duration) * 0.75);
     animation-name: bounceout;
 }@keyframes fadebl {
@@ -2329,7 +2329,7 @@ p {
     }
 }
 
-.fadebl {
+._fadebl {
     animation-name: fadebl;
     animation-duration: var(--animation-duration);
 }
@@ -2345,7 +2345,7 @@ p {
     }
 }
 
-.fadeoutbl {
+._fadeoutbl {
     animation-name: fadeoutbl;
     animation-duration: var(--animation-duration);
 }@keyframes fadebplus {
@@ -2359,7 +2359,7 @@ p {
     }
 }
 
-.fadebplus {
+._fadebplus {
     animation-name: fadebplus;
     animation-duration: var(--animation-duration);
 }
@@ -2374,7 +2374,7 @@ p {
     }
 }
 
-.fadeoutbplus {
+._fadeoutbplus {
     animation-name: fadeoutbplus;
     animation-duration: var(--animation-duration);
 }@keyframes fadebr {
@@ -2388,7 +2388,7 @@ p {
     }
 }
 
-.fadebr {
+._fadebr {
     animation-name: fadebr;
     animation-duration: var(--animation-duration);
 }
@@ -2404,7 +2404,7 @@ p {
     }
 }
 
-.fadeoutbr {
+._fadeoutbr {
     animation-name: fadeoutbr;
     animation-duration: var(--animation-duration);
 }@keyframes fadeb {
@@ -2418,7 +2418,7 @@ p {
     }
 }
 
-.fadeb {
+._fadeb {
     animation-name: fadeb;
     animation-duration: var(--animation-duration);
 }
@@ -2433,7 +2433,7 @@ p {
     }
 }
 
-.fadeoutb {
+._fadeoutb {
     animation-name: fadeoutb;
     animation-duration: var(--animation-duration);
 }@keyframes fadelplus {
@@ -2447,7 +2447,7 @@ p {
     }
 }
 
-.fadelplus {
+._fadelplus {
     animation-name: fadelplus;
     animation-duration: var(--animation-duration);
 }
@@ -2462,7 +2462,7 @@ p {
     }
 }
 
-.fadeoutlplus {
+._fadeoutlplus {
     animation-name: fadeoutlplus;
     animation-duration: var(--animation-duration);
 }@keyframes fadel {
@@ -2476,7 +2476,7 @@ p {
     }
 }
 
-.fadel {
+._fadel {
     animation-name: fadel;
     animation-duration: var(--animation-duration);
 }
@@ -2491,7 +2491,7 @@ p {
     }
 }
 
-.fadeoutl {
+._fadeoutl {
     animation-name: fadeoutl;
     animation-duration: var(--animation-duration);
 }@keyframes faderplus {
@@ -2505,7 +2505,7 @@ p {
     }
 }
 
-.faderplus {
+._faderplus {
     animation-name: faderplus;
     animation-duration: var(--animation-duration);
 }
@@ -2520,7 +2520,7 @@ p {
     }
 }
 
-.fadeoutrplus {
+._fadeoutrplus {
     animation-name: fadeoutrplus;
     animation-duration: var(--animation-duration);
 }@keyframes fader {
@@ -2534,7 +2534,7 @@ p {
     }
 }
 
-.fader {
+._fader {
     animation-name: fader;
     animation-duration: var(--animation-duration);
 }
@@ -2549,7 +2549,7 @@ p {
     }
 }
 
-.fadeoutr {
+._fadeoutr {
     animation-name: fadeoutr;
     animation-duration: var(--animation-duration);
 }@keyframes fadetl {
@@ -2563,7 +2563,7 @@ p {
     }
 }
 
-.fadetl {
+._fadetl {
     animation-name: fadetl;
     animation-duration: var(--animation-duration);
 }
@@ -2579,7 +2579,7 @@ p {
     }
 }
 
-.fadeouttl {
+._fadeouttl {
     animation-name: fadeouttl;
     animation-duration: var(--animation-duration);
 }@keyframes fadetplus {
@@ -2593,7 +2593,7 @@ p {
     }
 }
 
-.fadetplus {
+._fadetplus {
     animation-name: fadetplus;
     animation-duration: var(--animation-duration);
 }
@@ -2608,7 +2608,7 @@ p {
     }
 }
 
-.fadeouttplus {
+._fadeouttplus {
     animation-name: fadeouttplus;
     animation-duration: var(--animation-duration);
 }@keyframes fadetr {
@@ -2622,7 +2622,7 @@ p {
     }
 }
 
-.fadetr {
+._fadetr {
     animation-name: fadetr;
     animation-duration: var(--animation-duration);
 }
@@ -2638,7 +2638,7 @@ p {
     }
 }
 
-.fadeouttr {
+._fadeouttr {
     animation-name: fadeouttr;
     animation-duration: var(--animation-duration);
 }@keyframes fadet {
@@ -2652,7 +2652,7 @@ p {
     }
 }
 
-.fadet {
+._fadet {
     animation-name: fadet;
     animation-duration: var(--animation-duration);
 }
@@ -2667,7 +2667,7 @@ p {
     }
 }
 
-.fadeoutt {
+._fadeoutt {
     animation-name: fadeoutt;
     animation-duration: var(--animation-duration);
 }@keyframes fade {
@@ -2679,7 +2679,7 @@ p {
     }
 }
 
-.fade {
+._fade {
     animation-name: fade;
     animation-duration: var(--animation-duration);
 }
@@ -2693,7 +2693,7 @@ p {
     }
 }
 
-.fadeout {
+._fadeout {
     animation-name: fadeout;
     animation-duration: var(--animation-duration);
 }@keyframes flipoutx {
@@ -2710,7 +2710,7 @@ p {
     }
 }
 
-.flipoutx {
+._flipoutx {
     animation-duration: calc(var(--animation-duration) * 0.75);
     animation-name: flipoutx;
     backface-visibility: visible !important;
@@ -2728,7 +2728,7 @@ p {
     }
 }
 
-.flipouty {
+._flipouty {
     animation-duration: calc(var(--animation-duration) * 0.75);
     backface-visibility: visible !important;
     animation-name: flipouty;
@@ -2754,7 +2754,7 @@ p {
     }
 }
 
-.flipx {
+._flipx {
     backface-visibility: visible !important;
     animation-name: flipx;
     animation-duration: var(--animation-duration);
@@ -2780,7 +2780,7 @@ p {
     }
 }
 
-.flipy {
+._flipy {
     backface-visibility: visible !important;
     animation-name: flipy;
     animation-duration: var(--animation-duration);
@@ -2807,7 +2807,7 @@ p {
     }
 }
 
-.flip {
+._flip {
     backface-visibility: visible;
     animation-name: flip;
     animation-duration: var(--animation-duration);
@@ -2823,7 +2823,7 @@ p {
     }
 }
 
-.flash {
+._flash {
     animation-name: flash;
     animation-duration: var(--animation-duration);
 }@keyframes heartbeat {
@@ -2844,7 +2844,7 @@ p {
     }
 }
 
-.heartbeat {
+._heartbeat {
     animation-name: heartbeat;
     animation-duration: calc(var(--animation-duration) * 1.3);
     animation-timing-function: ease-in-out;
@@ -2869,7 +2869,7 @@ p {
     }
 }
 
-.hinge {
+._hinge {
     animation-duration: calc(var(--animation-duration) * 2);
     animation-name: hinge;
     transform-origin: top left;
@@ -2902,7 +2902,7 @@ p {
     }
 }
 
-.jello {
+._jello {
     animation-name: jello;
     transform-origin: center;
     animation-duration: var(--animation-duration);
@@ -2930,7 +2930,7 @@ p {
     }
 }
 
-.pop {
+._pop {
     animation-name: pop;
     animation-duration: var(--animation-duration);
 }@keyframes pulse {
@@ -2945,7 +2945,7 @@ p {
     }
 }
 
-.pulse {
+._pulse {
     animation-name: pulse;
     animation-timing-function: ease-in-out;
     animation-duration: var(--animation-duration);
@@ -2967,7 +2967,7 @@ p {
     }
 }
 
-.rabid {
+._rabid {
     animation-name: rabid;
     animation-duration: var(--animation-duration);
 }@keyframes rollout {
@@ -2980,7 +2980,7 @@ p {
     }
 }
 
-.rollout {
+._rollout {
     animation-name: rollout;
     animation-duration: var(--animation-duration);
 }@keyframes roll {
@@ -2994,7 +2994,7 @@ p {
     }
 }
 
-.roll {
+._roll {
     animation-name: roll;
     animation-duration: var(--animation-duration);
 }@keyframes rotate {
@@ -3008,7 +3008,7 @@ p {
     }
 }
 
-.rotate {
+._rotate {
     animation-name: rotate;
     transform-origin: center;
     animation-duration: var(--animation-duration);
@@ -3024,7 +3024,7 @@ p {
     }
 }
 
-.rotateout {
+._rotateout {
     animation-name: rotateout;
     transform-origin: center;
     animation-duration: var(--animation-duration);
@@ -3049,7 +3049,7 @@ p {
     }
 }
 
-.shake {
+._shake {
     animation-timing-function: ease-in-out;
     animation-name: shake;
     animation-duration: var(--animation-duration);
@@ -3077,7 +3077,7 @@ p {
     }
 }
 
-.stretch {
+._stretch {
     animation-name: stretch;
     animation-duration: var(--animation-duration);
 }@keyframes swing {
@@ -3098,7 +3098,7 @@ p {
     }
 }
 
-.swing {
+._swing {
     transform-origin: top center;
     animation-name: swing;
     animation-duration: var(--animation-duration);
@@ -3126,7 +3126,7 @@ p {
     }
 }
 
-.wobble {
+._wobble {
     animation-name: wobble;
     animation-duration: var(--animation-duration);
 }@keyframes slideb {
@@ -3139,7 +3139,7 @@ p {
     }
 }
 
-.slideb {
+._slideb {
     animation-name: slideb;
     animation-duration: var(--animation-duration);
 }
@@ -3154,7 +3154,7 @@ p {
     }
 }
 
-.slideoutb {
+._slideoutb {
     animation-name: slideoutb;
     animation-duration: var(--animation-duration);
 }@keyframes slidel {
@@ -3167,7 +3167,7 @@ p {
     }
 }
 
-.slidel {
+._slidel {
     animation-name: slidel;
     animation-duration: var(--animation-duration);
 }
@@ -3182,7 +3182,7 @@ p {
     }
 }
 
-.slideoutl {
+._slideoutl {
     animation-name: slideoutl;
     animation-duration: var(--animation-duration);
 }@keyframes slider {
@@ -3195,7 +3195,7 @@ p {
     }
 }
 
-.slider {
+._slider {
     animation-name: slider;
     animation-duration: var(--animation-duration);
 }
@@ -3210,7 +3210,7 @@ p {
     }
 }
 
-.slideoutr {
+._slideoutr {
     animation-name: slideoutr;
     animation-duration: var(--animation-duration);
 }@keyframes slidet {
@@ -3223,7 +3223,7 @@ p {
     }
 }
 
-.slidet {
+._slidet {
     animation-name: slidet;
     animation-duration: var(--animation-duration);
 }
@@ -3238,7 +3238,7 @@ p {
     }
 }
 
-.slideoutt {
+._slideoutt {
     animation-name: slideoutt;
     animation-duration: var(--animation-duration);
 }@keyframes zoomb {
@@ -3254,7 +3254,7 @@ p {
     }
 }
 
-.zoomb {
+._zoomb {
     animation-name: zoomb;
     animation-duration: var(--animation-duration);
 }
@@ -3272,7 +3272,7 @@ p {
     }
 }
 
-.zoomoutb {
+._zoomoutb {
     animation-name: zoomoutb;
     transform-origin: center bottom;
     animation-duration: var(--animation-duration);
@@ -3289,7 +3289,7 @@ p {
     }
 }
 
-.zooml {
+._zooml {
     animation-name: zooml;
     animation-duration: var(--animation-duration);
 }
@@ -3305,7 +3305,7 @@ p {
     }
 }
 
-.zoomoutl {
+._zoomoutl {
     animation-name: zoomoutl;
     transform-origin: left center;
     animation-duration: var(--animation-duration);
@@ -3322,7 +3322,7 @@ p {
     }
 }
 
-.zoomr {
+._zoomr {
     animation-name: zoomr;
     animation-duration: var(--animation-duration);
 }
@@ -3338,7 +3338,7 @@ p {
     }
 }
 
-.zoomoutr {
+._zoomoutr {
     animation-name: zoomoutr;
     transform-origin: right center;
     animation-duration: var(--animation-duration);
@@ -3355,7 +3355,7 @@ p {
     }
 }
 
-.zoomt {
+._zoomt {
     animation-name: zoomt;
     animation-duration: var(--animation-duration);
 }
@@ -3373,7 +3373,7 @@ p {
     }
 }
 
-.zoomoutt {
+._zoomoutt {
     animation-name: zoomoutt;
     transform-origin: center bottom;
     animation-duration: var(--animation-duration);
@@ -3387,7 +3387,7 @@ p {
     }
 }
 
-.zoom {
+._zoom {
     animation-name: zoom;
     animation-duration: var(--animation-duration);
 }
@@ -3405,7 +3405,7 @@ p {
     }
 }
 
-.zoomout {
+._zoomout {
     animation-name: zoomout;
     animation-duration: var(--animation-duration);
 }.btn,
@@ -3935,6 +3935,7 @@ select:focus {
     display: flex;
     flex-direction: row;
     align-items: center;
+    overflow: auto;
 }
 
 .nav-col {
@@ -3942,6 +3943,7 @@ select:focus {
     width: auto;
     display: flex;
     flex-direction: column;
+    overflow: auto;
 }
 
 .nav-title {
@@ -3953,7 +3955,7 @@ select:focus {
 
 .nav-head {
     margin: var(--mrg1);
-    font-size: var(--fnts5);
+    font-size: var(--fnts3);
     color: var(--t1);
 }
 
@@ -4044,9 +4046,9 @@ select:focus {
 }
 
 .toggle input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(23px);
+    -ms-transform: translateX(23px);
+    transform: translateX(23px);
 }
 
 

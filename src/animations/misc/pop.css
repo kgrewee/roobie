@@ -22,7 +22,7 @@
     }
 }
 
-.pop {
+._pop {
     animation-name: pop;
     animation-duration: var(--animation-duration);
 }

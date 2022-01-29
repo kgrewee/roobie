@@ -21,7 +21,7 @@
     }
 }
 
-.flip {
+._flip {
     backface-visibility: visible;
     animation-name: flip;
     animation-duration: var(--animation-duration);

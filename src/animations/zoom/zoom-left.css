@@ -11,7 +11,7 @@
     }
 }
 
-.zooml {
+._zooml {
     animation-name: zooml;
     animation-duration: var(--animation-duration);
 }
@@ -27,7 +27,7 @@
     }
 }
 
-.zoomoutl {
+._zoomoutl {
     animation-name: zoomoutl;
     transform-origin: left center;
     animation-duration: var(--animation-duration);

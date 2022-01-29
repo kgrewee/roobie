@@ -19,7 +19,7 @@
     }
 }
 
-.hinge {
+._hinge {
     animation-duration: calc(var(--animation-duration) * 2);
     animation-name: hinge;
     transform-origin: top left;

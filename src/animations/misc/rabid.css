@@ -16,7 +16,7 @@
     }
 }
 
-.rabid {
+._rabid {
     animation-name: rabid;
     animation-duration: var(--animation-duration);
 }

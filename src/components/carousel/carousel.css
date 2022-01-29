@@ -27,7 +27,7 @@
     color: var(--t1);
     background-color: var(--bg1);
     font-weight: bold;
-    font-size: var(--fnt4);
+    font-size: var(--fnts4);
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -55,7 +55,7 @@
 
 .car-txt {
     color: var(--t2);
-    font-size: var(--fnt4);
+    font-size: var(--fnts4);
     position: absolute;
     bottom: 50px;
     width: 100%;

@@ -5,69 +5,181 @@ Dev: Colors are referenced by name
 */
 
 .t1 {
-    color: var(--t1);
+    color: var(--t1) !important;
 }
 
 .t2 {
-    color: var(--t2);
+    color: var(--t2) !important;
 }
 
 .t3 {
-    color: var(--t3);
+    color: var(--t3) !important;
 }
 
 .t4 {
-    color: var(--t4);
+    color: var(--t4) !important;
 }
 
 .t5 {
-    color: var(--t5);
+    color: var(--t5) !important;
 }
 
 .t6 {
-    color: var(--t6);
+    color: var(--t6) !important;
+}
+
+
+/* Status */
+
+.s1 {
+    color: var(--s1) !important;
+}
+
+.s2 {
+    color: var(--s2) !important;
+}
+
+.s3 {
+    color: var(--s3) !important;
+}
+
+.s4 {
+    color: var(--s4) !important;
+}
+
+.s5 {
+    color: var(--s5) !important;
+}
+
+.s6 {
+    color: var(--s6) !important;
+}
+
+
+/* Shade 1 */
+
+.white {
+    color: var(--white) !important;
 }
 
 .black {
-    color: var(--black);
-}
-
-.white {
-    color: var(--white);
+    color: var(--black) !important;
 }
 
 .grey {
-    color: var(--grey);
-}
-
-.offwhite {
-    color: var(--bg3);
+    color: var(--grey) !important;
 }
 
 .red {
-    color: var(--red);
-}
-
-.softred {
-    color: var(--softred);
-}
-
-.blue {
-    color: var(--blue);
-}
-
-.softblue {
-    color: var(--softblue);
-}
-
-.yellow {
-    color: var(--yellow);
+    color: var(--red) !important;
 }
 
 .orange {
-    color: var(--orange);
+    color: var(--orange) !important;
+}
+
+.yellow {
+    color: var(--yellow) !important;
 }
 
 .green {
-    color: var(--green);
+    color: var(--green) !important;
+}
+
+.blue {
+    color: var(--blue) !important;
+}
+
+.indigo {
+    color: var(--indigo) !important;
+}
+
+.violet {
+    color: var(--violet) !important;
+}
+
+
+/* Shade 2 */
+
+.white2 {
+    color: var(--white2) !important;
+}
+
+.black2 {
+    color: var(--black2) !important;
+}
+
+.grey2 {
+    color: var(--grey2) !important;
+}
+
+.red2 {
+    color: var(--red2) !important;
+}
+
+.orange2 {
+    color: var(--orange2) !important;
+}
+
+.yellow2 {
+    color: var(--yellow2) !important;
+}
+
+.green2 {
+    color: var(--green2) !important;
+}
+
+.blue2 {
+    color: var(--blue2) !important;
+}
+
+.indigo2 {
+    color: var(--indigo2) !important;
+}
+
+.violet2 {
+    color: var(--violet2) !important;
+}
+
+
+/* Shade 3 */
+
+.white3 {
+    color: var(--white3) !important;
+}
+
+.black3 {
+    color: var(--black3) !important;
+}
+
+.grey3 {
+    color: var(--grey3) !important;
+}
+
+.red3 {
+    color: var(--red3) !important;
+}
+
+.orange3 {
+    color: var(--orange3) !important;
+}
+
+.yellow3 {
+    color: var(--yellow3) !important;
+}
+
+.green3 {
+    color: var(--green3) !important;
+}
+
+.blue3 {
+    color: var(--blue3) !important;
+}
+
+.indigo3 {
+    color: var(--indigo3) !important;
+}
+
+.violet3 {
+    color: var(--violet3) !important;
 }

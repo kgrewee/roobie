@@ -11,8 +11,8 @@ select:focus {
     background-color: var(--bg2);
     border-radius: var(--br4);
     margin: var(--mrg1);
-    font-size: var(--fnt4);
-    font: 500 15px var(--f1);
+    font-size: var(--fnts4);
+    font: 500 15px var(--fntf1);
     border: var(--bdr1);
     color: var(--t2);
 }

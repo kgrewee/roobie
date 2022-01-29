@@ -1,29 +1,29 @@
 /* 
 Name: Font Size
-Prefix: fnt
+Prefix: fnts
 Dev: Font size of an element
 */
 
-.fnt1 {
-    font-size: var(--fnt1);
+.fnts1 {
+    font-size: var(--fnts1);
 }
 
-.fnt2 {
-    font-size: var(--fnt2);
+.fnts2 {
+    font-size: var(--fnts2);
 }
 
-.fnt3 {
-    font-size: var(--fnt3);
+.fnts3 {
+    font-size: var(--fnts3);
 }
 
-.fnt4 {
-    font-size: var(--fnt4);
+.fnts4 {
+    font-size: var(--fnts4);
 }
 
-.fnt5 {
-    font-size: var(--fnt5);
+.fnts5 {
+    font-size: var(--fnts5);
 }
 
-.fnt6 {
-    font-size: var(--fnt6);
+.fnts6 {
+    font-size: var(--fnts6);
 }

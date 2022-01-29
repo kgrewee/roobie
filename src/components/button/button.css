@@ -9,6 +9,7 @@
     cursor: pointer;
     color: var(--t2);
     background-color: var(--bg5);
+    display: inline-block;
 }
 
 .btnh:hover {

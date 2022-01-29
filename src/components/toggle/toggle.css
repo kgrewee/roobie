@@ -1,0 +1,68 @@
+/* The toggle - Area around the slider */
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 30px;
+}
+
+
+/* Hide default HTML checkbox */
+
+.toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+/* The slider that moves back and forth */
+
+.toggle .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bg5);
+    transition: .4s;
+    box-shadow: var(--in1);
+}
+
+.toggle .slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 0;
+    bottom: -1px;
+    background-color: var(--t1);
+    transition: .4s;
+}
+
+
+/* Move and change color when checked */
+
+.toggle input:checked+.slider {
+    background-color: var(--bg6);
+    box-shadow: var(--in1);
+}
+
+.toggle input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+/* Rounded sliders */
+
+.toggle .slider.round {
+    border-radius: 34px;
+}
+
+.toggle .slider.round:before {
+    border-radius: 50%;
+}

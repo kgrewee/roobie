@@ -17,6 +17,7 @@
     margin: var(--mrg1);
     cursor: pointer;
     color: var(--t2);
+    background-color: var(--bg5);
 }
 
 .drp-btn:hover {

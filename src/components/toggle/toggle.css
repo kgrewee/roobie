@@ -28,7 +28,7 @@
     bottom: 0;
     background-color: var(--bg5);
     transition: .4s;
-    box-shadow: var(--in2);
+    box-shadow: var(--in1);
 }
 
 .toggle .slider:before {
@@ -47,7 +47,7 @@
 
 .toggle input:checked+.slider {
     background-color: var(--bg6);
-    box-shadow: var(--in2);
+    box-shadow: var(--in1);
 }
 
 .toggle input:checked+.slider:before {

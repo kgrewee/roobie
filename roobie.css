@@ -3540,6 +3540,7 @@ p {
     margin: var(--mrg1);
     cursor: pointer;
     color: var(--t2);
+    background-color: var(--bg5);
 }
 
 .drp-btn:hover {
@@ -3966,7 +3967,7 @@ select:focus {
     bottom: 0;
     background-color: var(--bg5);
     transition: .4s;
-    box-shadow: var(--in2);
+    box-shadow: var(--in1);
 }
 
 .toggle .slider:before {
@@ -3985,7 +3986,7 @@ select:focus {
 
 .toggle input:checked+.slider {
     background-color: var(--bg6);
-    box-shadow: var(--in2);
+    box-shadow: var(--in1);
 }
 
 .toggle input:checked+.slider:before {

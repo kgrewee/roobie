@@ -1249,6 +1249,30 @@ Dev: Margin on the outside of an element
 .mrgh6 {
     margin: 0 var(--mrg6) !important;
 }/*
+Name: Object Fit
+Prefix: objf
+Dev: Used to specify how an <img> or <video> should be resized to fit its container. Fill is default.
+*/
+
+.objf0 {
+    object-fit: none;
+}
+
+.objf-fill {
+    object-fit: fill;
+}
+
+.objf-contain {
+    object-fit: contain;
+}
+
+.objf-cover {
+    object-fit: cover;
+}
+
+.objf-scale {
+    object-fit: scale-down;
+}/*
 Name: Opacity
 Prefix: op
 Dev: Opacity of an element
@@ -1726,6 +1750,9 @@ span,
 p {
     color: var(--t3);
 }[theme="dark"] {
+    --primary: var(--bg6);
+    --secondary: var(--bg4);
+    --tertiary: var(--bg1);
     /*Shade 1*/
     --white: rgb(240, 240, 240);
     --black: rgb(20, 20, 20);
@@ -1823,6 +1850,9 @@ p {
     --box5: 0 0 4px 4px rgb(235, 235, 235, .3);
     --box6: 0 0 5px 5px rgb(235, 235, 235, .3);
 }[theme="light"] {
+    --primary: var(--bg6);
+    --secondary: var(--bg4);
+    --tertiary: var(--bg1);
     /*Shade 1*/
     --white: rgb(240, 240, 240);
     --black: rgb(20, 20, 20);
@@ -3409,20 +3439,42 @@ p {
     animation-name: zoomout;
     animation-duration: var(--animation-duration);
 }.btn,
-.btnh {
+.btnh,
+.btnp,
+.btns,
+.btnt {
     width: auto;
     height: auto;
     padding: var(--pad2);
     text-decoration: none;
-    border-radius: var(--br3);
+    border-radius: var(--br2);
     margin: var(--mrg1);
     cursor: pointer;
     color: var(--t2);
-    background-color: var(--bg5);
     display: inline-block;
 }
 
-.btnh:hover {
+.btn,
+.btnh {
+    background-color: var(--bg5);
+}
+
+.btnp {
+    background-color: var(--primary);
+}
+
+.btns {
+    background-color: var(--secondary);
+}
+
+.btnt {
+    background-color: var(--tertiary);
+}
+
+.btnh:hover,
+.btnp:hover,
+.btns:hover,
+.btnt:hover {
     opacity: 85%;
 }* {
     box-sizing: border-box;
@@ -3578,6 +3630,8 @@ p {
 .drp:focus .drp-cnt,
 .drp:hover .drp-cnt {
     display: block;
+    animation-name: fade;
+    animation-duration: .5s;
 }
 
 .drp-btn {
@@ -3604,7 +3658,7 @@ p {
     width: auto;
     box-shadow: var(--box2);
     font-size: var(--fnts3);
-    z-index: 1;
+    z-index: var(--z1);
 }
 
 .drp-title {
@@ -3841,7 +3895,7 @@ select:focus {
     border-radius: var(--br4);
     margin: var(--mrg1);
     font-size: var(--fnts4);
-    font: 500 15px var(--fntf1);
+    font: 500 var(--fnts3) var(--fntf1);
     border: var(--bdr1);
     color: var(--t2);
 }
@@ -3935,7 +3989,6 @@ select:focus {
     display: flex;
     flex-direction: row;
     align-items: center;
-    overflow: auto;
 }
 
 .nav-col {
@@ -3943,7 +3996,6 @@ select:focus {
     width: auto;
     display: flex;
     flex-direction: column;
-    overflow: auto;
 }
 
 .nav-title {
@@ -4060,4 +4112,96 @@ select:focus {
 
 .toggle .slider.round:before {
     border-radius: 50%;
+}.tooltip {
+    position: relative;
+    display: inline-block;
+    color: var(--t2);
+}
+
+.tooltip .tooltiptxt {
+    visibility: hidden;
+    min-width: 120px;
+    background-color: var(--bg2);
+    text-align: center;
+    padding: var(--pad2) 0;
+    border-radius: var(--br3);
+    position: absolute;
+    z-index: 1;
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+
+.tooltip:hover .tooltiptxt {
+    visibility: visible;
+    animation-name: fade;
+    animation-duration: .5s;
+}
+
+.tooltipr .tooltiptxt {
+    top: -10px;
+    left: 105%;
+}
+
+.tooltipl .tooltiptxt {
+    top: -10px;
+    right: 105%;
+}
+
+.tooltipt .tooltiptxt {
+    width: 120px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltipb .tooltiptxt {
+    width: 120px;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltipt .tooltiptxt::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--bg2) transparent transparent transparent;
+}
+
+.tooltipb .tooltiptxt::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent var(--bg2) transparent;
+}
+
+.tooltipl .tooltiptxt::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--bg2);
+}
+
+.tooltipr .tooltiptxt::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent var(--bg2) transparent transparent;
 }

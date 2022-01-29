@@ -1,6 +1,6 @@
 # Roobie
 
-Centralized CSS & JavaScript for efficient Web Development.  Templates coming soon.
+Centralized CSS & JavaScript for Advanced Web Development.  No external dependencies.  Templates coming soon.
 
 ## Install
 
@@ -11,6 +11,8 @@ npm i roobie --save
 ```
 
 ## Docs
+
+All documentation is browser based.
 
 - [JavaScript Docs](docs/js)
 - CSS Docs - Coming Soon
@@ -38,7 +40,7 @@ Contributions are welcome.  Feel free to contribute CSS Classes, JS functions, t
 
 A few examples... these don't even scratch the surface.  Fully customized HTML without any custom code.
 
-**Animations**
+**Animation**
 ```shell
 <a class="_fade">Fade</a>
 <a class="_zoom">Zoom</a>
@@ -51,6 +53,9 @@ A few examples... these don't even scratch the surface.  Fully customized HTML w
 ```shell
 <a class="btn">Button</a>
 <a class="btnh">Button with hover</a>
+<a class="btnp">Primary</a>
+<a class="btns">Secondary</a>
+<a class="btnt">Tertiary</a>
 ```
 
 **Container**

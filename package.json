@@ -17,10 +17,10 @@
     ],
     "main": "roobie.min.js",
     "scripts": {
-        "build": "npm-run-all build:dev build:prod",
+        "build": "npm-run-all build:dev build:prod docs",
         "build:dev": "cat src/**/*.css src/**/**/*.css  > roobie.css && cat src/**/*.js src/**/**/*.js  > roobie.js",
         "build:prod": "minify roobie.css > roobie.min.css && minify roobie.js > roobie.min.js",
-        "docs": "npm-run-all docs:js",
+        "docs": "npm-run-all docs:js docs:css",
         "docs:js": "jsdoc roobie.js -d docs/js",
         "docs:css": "",
         "prepare": "husky install"

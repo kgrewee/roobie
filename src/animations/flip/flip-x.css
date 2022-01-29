@@ -20,7 +20,7 @@
     }
 }
 
-.flipx {
+._flipx {
     backface-visibility: visible !important;
     animation-name: flipx;
     animation-duration: var(--animation-duration);

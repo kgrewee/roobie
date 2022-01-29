@@ -13,7 +13,7 @@
     }
 }
 
-.backr {
+._backr {
     animation-name: backr;
     animation-duration: var(--animation-duration);
 }
@@ -33,7 +33,7 @@
     }
 }
 
-.backoutr {
+._backoutr {
     animation-name: backoutr;
     animation-duration: var(--animation-duration);
 }

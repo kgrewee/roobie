@@ -25,7 +25,7 @@
     }
 }
 
-.bounceb {
+._bounceb {
     animation-name: bounceb;
     animation-duration: var(--animation-duration);
 }
@@ -45,7 +45,7 @@
     }
 }
 
-.bounceoutb {
+._bounceoutb {
     animation-name: bounceoutb;
     animation-duration: var(--animation-duration);
 }

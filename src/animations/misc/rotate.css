@@ -9,7 +9,7 @@
     }
 }
 
-.rotate {
+._rotate {
     animation-name: rotate;
     transform-origin: center;
     animation-duration: var(--animation-duration);
@@ -25,7 +25,7 @@
     }
 }
 
-.rotateout {
+._rotateout {
     animation-name: rotateout;
     transform-origin: center;
     animation-duration: var(--animation-duration);

@@ -8,7 +8,7 @@
     }
 }
 
-.rollout {
+._rollout {
     animation-name: rollout;
     animation-duration: var(--animation-duration);
 }

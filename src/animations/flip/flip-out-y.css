@@ -12,7 +12,7 @@
     }
 }
 
-.flipouty {
+._flipouty {
     animation-duration: calc(var(--animation-duration) * 0.75);
     backface-visibility: visible !important;
     animation-name: flipouty;

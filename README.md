@@ -1,6 +1,6 @@
 # Roobie
 
-Centralized CSS & JavaScript for efficient Web Development.  Templates coming soon.
+Centralized CSS & JavaScript for Advanced Web Development.  No external dependencies.  Templates coming soon.
 
 ## Install
 
@@ -40,7 +40,7 @@ Contributions are welcome.  Feel free to contribute CSS Classes, JS functions, t
 
 A few examples... these don't even scratch the surface.  Fully customized HTML without any custom code.
 
-**Animations**
+**Animation**
 ```shell
 <a class="_fade">Fade</a>
 <a class="_zoom">Zoom</a>

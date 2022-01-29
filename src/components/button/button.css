@@ -2,9 +2,9 @@
 .btnh {
     width: auto;
     height: auto;
-    padding: var(--pad2);
+    padding: var(--pad1);
     text-decoration: none;
-    border-radius: var(--br3);
+    border-radius: var(--br2);
     margin: var(--mrg1);
     cursor: pointer;
     color: var(--t2);

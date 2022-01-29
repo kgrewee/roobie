@@ -1,9 +1,9 @@
 :root {
     --animation-duration: 1.5s;
     /*Font Family*/
-    --fntf1: 'American Typewriter', serif;
-    --fntf2: 'American Typewriter', serif;
-    --fntf3: 'American Typewriter', serif;
+    --fntf1: 'Ubuntu', sans-serif;
+    --fntf2: 'Open Sans', sans-serif;
+    --fntf3: 'PT Sans', sans-serif;
     --fntf4: 'American Typewriter', serif;
     --fntf5: 'American Typewriter', serif;
     --fntf6: 'American Typewriter', serif;

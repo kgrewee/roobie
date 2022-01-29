@@ -10,7 +10,7 @@
     }
 }
 
-.flash {
+._flash {
     animation-name: flash;
     animation-duration: var(--animation-duration);
 }

@@ -9,7 +9,7 @@
     }
 }
 
-.fadetr {
+._fadetr {
     animation-name: fadetr;
     animation-duration: var(--animation-duration);
 }
@@ -25,7 +25,7 @@
     }
 }
 
-.fadeouttr {
+._fadeouttr {
     animation-name: fadeouttr;
     animation-duration: var(--animation-duration);
 }

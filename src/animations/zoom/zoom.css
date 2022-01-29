@@ -8,7 +8,7 @@
     }
 }
 
-.zoom {
+._zoom {
     animation-name: zoom;
     animation-duration: var(--animation-duration);
 }
@@ -26,7 +26,7 @@
     }
 }
 
-.zoomout {
+._zoomout {
     animation-name: zoomout;
     animation-duration: var(--animation-duration);
 }

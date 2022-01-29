@@ -4,18 +4,18 @@ Prefix: flt
 Dev: How items are effected when there isn't enough space on a line
 */
 
-.flt-left {
+.fltl {
     float: left;
 }
 
-.flt-right {
+.fltr {
     float: right;
 }
 
-.flt-none {
+.flt0 {
     float: none;
 }
 
-.flt-inherit {
+.flti {
     float: inherit;
 }

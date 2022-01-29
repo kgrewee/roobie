@@ -8,7 +8,7 @@
     }
 }
 
-.slider {
+._slider {
     animation-name: slider;
     animation-duration: var(--animation-duration);
 }
@@ -23,7 +23,7 @@
     }
 }
 
-.slideoutr {
+._slideoutr {
     animation-name: slideoutr;
     animation-duration: var(--animation-duration);
 }

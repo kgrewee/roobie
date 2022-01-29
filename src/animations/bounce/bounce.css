@@ -30,7 +30,7 @@
     }
 }
 
-.bounce {
+._bounce {
     animation-duration: calc(var(--animation-duration) * 0.75);
     animation-name: bounce;
 }
@@ -50,7 +50,7 @@
     }
 }
 
-.bounceout {
+._bounceout {
     animation-duration: calc(var(--animation-duration) * 0.75);
     animation-name: bounceout;
 }

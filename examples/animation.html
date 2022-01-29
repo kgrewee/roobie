@@ -11,109 +11,102 @@
 </head>
 
 <body>
-    <header class="div flx-col aln-center bg6">
-        <div class="div6 fade">
-            <h1>65+ Animations</h1>
-            <p class="fnts4">Make your app flashy with unique animations.</p>
+    <nav class="nav-col aln-start box pad4 fltl bg6 fade">
+        <h1>Animations</h1>
+        <a class="btnh box3h mrgv" href="index.html">Back to home</a>
+        <h4 class="nav-head">Back</h4>
+        <div class="flx-col">
+            <span class="nav-item" onclick="animationById('animation', '_backt')">Back T</span>
+            <span class="nav-item" onclick="animationById('animation', '_backb')">Back B</span>
+            <span class="nav-item" onclick="animationById('animation', '_backl')">Back L</span>
+            <span class="nav-item" onclick="animationById('animation', '_backr')">Back R</span>
+            <span class="nav-item" onclick="animationById('animation', '_backoutt')">Back Out T</span>
+            <span class="nav-item" onclick="animationById('animation', '_backoutb')">Back Out B</span>
+            <span class="nav-item" onclick="animationById('animation', '_backoutl')">Back Out L</span>
+            <span class="nav-item" onclick="animationById('animation', '_backoutr')">Back Out R</span>
         </div>
-    </header>
-    <main>
-        <div class="div flx-col aln-center">
-            <div class="div6 flx-col aln-start mrgv fade">
-                <a class="btnh box3h mrgv" href="index.html">Back to home</a>
-                <p class="mrgv">Click the button to see the animation. Top (T), Bottom (B), Left (L), Right (R).</p>
-                <h2>Back</h2>
-                <div class="flx-row wrp aln-center mrgv br bg5">
-                    <span class="btnh box" onclick="animationByElement(this, 'backt')">Back T</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'backb')">Back B</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'backl')">Back L</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'backr')">Back R</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'backoutt')">Back Out T</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'backoutb')">Back Out B</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'backoutl')">Back Out L</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'backoutr')">Back Out R</span>
-                </div>
-                <h2>Bounce</h2>
-                <div class="flx-row wrp aln-center mrgv br bg5">
-                    <span class="btnh box" onclick="animationByElement(this, 'bounce')">Bounce</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'bouncet')">Bounce T</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'bounceb')">Bounce B</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'bouncel')">Bounce L</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'bouncer')">Bounce R</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'bounceout')">Bounce Out</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'bounceoutt')">Bounce Out T</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'bounceoutb')">Bounce Out B</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'bounceoutl')">Bounce Out L</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'bounceoutr')">Bounce Out R</span>
-                </div>
-                <h2>Flip</h2>
-                <div class="flx-row wrp aln-center mrgv br bg5">
-                    <span class="btnh box" onclick="animationByElement(this, 'flip')">Flip</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'flipx')">Flip X</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'flipy')">Flip Y</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'flipoutx')">Flip Out X</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'flipouty')">Flip Out Y</span>
-                </div>
-                <h2>Fade</h2>
-                <div class="flx-row wrp aln-center mrgv br bg5">
-                    <span class="btnh box" onclick="animationByElement(this, 'fade')">Fade</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'fadet')">Fade T</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'fadeb')">Fade B</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'fadel')">Fade L</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'fader')">Fade R</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'fadetplus')">Fade T Plus</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'fadebplus')">Fade B Plus</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'fadelplus')">Fade L Plus</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'faderplus')">Fade R Plus</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'fadetl')">Fade T L</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'fadebl')">Fade B L</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'fadetr')">Fade T R</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'fadebr')">Fade B R</span>
-                </div>
-                <h2>Misc</h2>
-                <div class="flx-row wrp aln-center mrgv br bg5">
-                    <span class="btnh box" onclick="animationByElement(this, 'flash')">Flash</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'heartbeat')">Heartbeat</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'hinge')">Hinge</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'jello')">Jello</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'pop')">Pop</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'pulse')">Pulse</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'rabid')">Rabid</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'roll')">Roll</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'rollout')">Roll Out</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'rotate')">Rotate</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'rotateout')">Rotate Out</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'shake')">Shake</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'stretch')">Stretch</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'swing')">Swing</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'wobble')">Wobble</span>
-                </div>
-                <h2>Slide</h2>
-                <div class="flx-row wrp aln-center mrgv br bg5">
-                    <span class="btnh box" onclick="animationByElement(this, 'slidet')">Slide T</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'slideb')">Slide B</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'slidel')">Slide L</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'slider')">Slide R</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'slideoutt')">Slide Out T</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'slideoutb')">Slide Out B</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'slideoutl')">Slide Out L</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'slideoutr')">Slide Out R</span>
-                </div>
-                <h2>Zoom</h2>
-                <div class="flx-row wrp aln-center mrgv br bg5">
-                    <span class="btnh box" onclick="animationByElement(this, 'zoom')">Zoom</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'zoomt')">Zoom T</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'zoomb')">Zoom B</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'zooml')">Zoom L</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'zoomr')">Zoom R</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'zoomout')">Zoom Out</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'zoomoutt')">Zoom Out T</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'zoomoutb')">Zoom Out B</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'zoomoutl')">Zoom Out L</span>
-                    <span class="btnh box" onclick="animationByElement(this, 'zoomoutr')">Zoom Out R</span>
-                </div>
-            </div>
+        <h4 class="nav-head">Bounce</h4>
+        <div class="flx-col">
+            <span class="nav-item" onclick="animationById('animation', '_bounce')">Bounce</span>
+            <span class="nav-item" onclick="animationById('animation', '_bouncet')">Bounce T</span>
+            <span class="nav-item" onclick="animationById('animation', '_bounceb')">Bounce B</span>
+            <span class="nav-item" onclick="animationById('animation', '_bouncel')">Bounce L</span>
+            <span class="nav-item" onclick="animationById('animation', '_bouncer')">Bounce R</span>
+            <span class="nav-item" onclick="animationById('animation', '_bounceout')">Bounce Out</span>
+            <span class="nav-item" onclick="animationById('animation', '_bounceoutt')">Bounce Out T</span>
+            <span class="nav-item" onclick="animationById('animation', '_bounceoutb')">Bounce Out B</span>
+            <span class="nav-item" onclick="animationById('animation', '_bounceoutl')">Bounce Out L</span>
+            <span class="nav-item" onclick="animationById('animation', '_bounceoutr')">Bounce Out R</span>
         </div>
+        <h4 class="nav-head">Flip</h4>
+        <div class="flx-col">
+            <span class="nav-item" onclick="animationById('animation', '_flip')">Flip</span>
+            <span class="nav-item" onclick="animationById('animation', '_flipx')">Flip X</span>
+            <span class="nav-item" onclick="animationById('animation', '_flipy')">Flip Y</span>
+            <span class="nav-item" onclick="animationById('animation', '_flipoutx')">Flip Out X</span>
+            <span class="nav-item" onclick="animationById('animation', '_flipouty')">Flip Out Y</span>
+        </div>
+        <h4 class="nav-head">Fade</h4>
+        <div class="flx-col">
+            <span class="nav-item" onclick="animationById('animation', '_fade')">Fade</span>
+            <span class="nav-item" onclick="animationById('animation', '_fadet')">Fade T</span>
+            <span class="nav-item" onclick="animationById('animation', '_fadeb')">Fade B</span>
+            <span class="nav-item" onclick="animationById('animation', '_fadel')">Fade L</span>
+            <span class="nav-item" onclick="animationById('animation', '_fader')">Fade R</span>
+            <span class="nav-item" onclick="animationById('animation', '_fadetplus')">Fade T Plus</span>
+            <span class="nav-item" onclick="animationById('animation', '_fadebplus')">Fade B Plus</span>
+            <span class="nav-item" onclick="animationById('animation', '_fadelplus')">Fade L Plus</span>
+            <span class="nav-item" onclick="animationById('animation', '_faderplus')">Fade R Plus</span>
+            <span class="nav-item" onclick="animationById('animation', '_fadetl')">Fade T L</span>
+            <span class="nav-item" onclick="animationById('animation', '_fadebl')">Fade B L</span>
+            <span class="nav-item" onclick="animationById('animation', '_fadetr')">Fade T R</span>
+            <span class="nav-item" onclick="animationById('animation', '_fadebr')">Fade B R</span>
+        </div>
+        <h4 class="nav-head">Misc</h4>
+        <div class="flx-col">
+            <span class="nav-item" onclick="animationById('animation', '_flash')">Flash</span>
+            <span class="nav-item" onclick="animationById('animation', '_heartbeat')">Heartbeat</span>
+            <span class="nav-item" onclick="animationById('animation', '_hinge')">Hinge</span>
+            <span class="nav-item" onclick="animationById('animation', '_jello')">Jello</span>
+            <span class="nav-item" onclick="animationById('animation', '_pop')">Pop</span>
+            <span class="nav-item" onclick="animationById('animation', '_pulse')">Pulse</span>
+            <span class="nav-item" onclick="animationById('animation', '_rabid')">Rabid</span>
+            <span class="nav-item" onclick="animationById('animation', '_roll')">Roll</span>
+            <span class="nav-item" onclick="animationById('animation', '_rollout')">Roll Out</span>
+            <span class="nav-item" onclick="animationById('animation', '_rotate')">Rotate</span>
+            <span class="nav-item" onclick="animationById('animation', '_rotateout')">Rotate Out</span>
+            <span class="nav-item" onclick="animationById('animation', '_shake')">Shake</span>
+            <span class="nav-item" onclick="animationById('animation', '_stretch')">Stretch</span>
+            <span class="nav-item" onclick="animationById('animation', '_swing')">Swing</span>
+            <span class="nav-item" onclick="animationById('animation', '_wobble')">Wobble</span>
+        </div>
+        <h4 class="nav-head">Slide</h4>
+        <div class="flx-col">
+            <span class="nav-item" onclick="animationById('animation', '_slidet')">Slide T</span>
+            <span class="nav-item" onclick="animationById('animation', '_slideb')">Slide B</span>
+            <span class="nav-item" onclick="animationById('animation', '_slidel')">Slide L</span>
+            <span class="nav-item" onclick="animationById('animation', '_slider')">Slide R</span>
+            <span class="nav-item" onclick="animationById('animation', '_slideoutt')">Slide Out T</span>
+            <span class="nav-item" onclick="animationById('animation', '_slideoutb')">Slide Out B</span>
+            <span class="nav-item" onclick="animationById('animation', '_slideoutl')">Slide Out L</span>
+            <span class="nav-item" onclick="animationById('animation', '_slideoutr')">Slide Out R</span>
+        </div>
+        <h4 class="nav-head">Zoom</h4>
+        <div class="flx-col">
+            <span class="nav-item" onclick="animationById('animation', '_zoom')">Zoom</span>
+            <span class="nav-item" onclick="animationById('animation', '_zoomt')">Zoom T</span>
+            <span class="nav-item" onclick="animationById('animation', '_zoomb')">Zoom B</span>
+            <span class="nav-item" onclick="animationById('animation', '_zooml')">Zoom L</span>
+            <span class="nav-item" onclick="animationById('animation', '_zoomr')">Zoom R</span>
+            <span class="nav-item" onclick="animationById('animation', '_zoomout')">Zoom Out</span>
+            <span class="nav-item" onclick="animationById('animation', '_zoomoutt')">Zoom Out T</span>
+            <span class="nav-item" onclick="animationById('animation', '_zoomoutb')">Zoom Out B</span>
+            <span class="nav-item" onclick="animationById('animation', '_zoomoutl')">Zoom Out L</span>
+            <span class="nav-item" onclick="animationById('animation', '_zoomoutr')">Zoom Out R</span>
+        </div>
+    </nav>
+    <main class="flx-row jst-cnt-center aln-center fnts6 ht">
+        <h1 id="animation">Animation</h1>
     </main>
     <footer></footer>
 </body>

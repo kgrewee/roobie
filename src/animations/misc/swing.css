@@ -16,7 +16,7 @@
     }
 }
 
-.swing {
+._swing {
     transform-origin: top center;
     animation-name: swing;
     animation-duration: var(--animation-duration);

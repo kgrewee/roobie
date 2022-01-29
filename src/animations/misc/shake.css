@@ -19,7 +19,7 @@
     }
 }
 
-.shake {
+._shake {
     animation-timing-function: ease-in-out;
     animation-name: shake;
     animation-duration: var(--animation-duration);

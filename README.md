@@ -12,7 +12,8 @@ npm i roobie --save
 
 ## Docs
 
-CSS & JS documentation coming soon.
+- [JavaScript Docs](docs/js)
+- CSS Docs - Coming Soon
 
 ## Problem
 
@@ -39,11 +40,11 @@ A few examples... these don't even scratch the surface.  Fully customized HTML w
 
 **Animations**
 ```shell
-<a class="fade">Fade</a>
-<a class="zoom">Zoom</a>
-<a class="flip">Flip</a>
-<a class="stretch">Stretch</a>
-<a class="heartbeat">Heartbeat</a>
+<a class="_fade">Fade</a>
+<a class="_zoom">Zoom</a>
+<a class="_flip">Flip</a>
+<a class="_stretch">Stretch</a>
+<a class="_heartbeat">Heartbeat</a>
 ```
 
 **Button**

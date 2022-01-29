@@ -1,0 +1,7 @@
+.table th {
+    color: var(--t1);
+}
+
+.table td {
+    color: var(--t3);
+}

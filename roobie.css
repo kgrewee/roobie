@@ -3969,6 +3969,12 @@ select:focus {
 .nav-item:hover {
     opacity: 100%;
     cursor: pointer;
+}.table th {
+    color: var(--t1);
+}
+
+.table td {
+    color: var(--t3);
 }.tag,
 .tagh {
     border: 1px solid transparent;

@@ -1,4 +1,7 @@
 [theme="dark"] {
+    --primary: var(--bg6);
+    --secondary: var(--bg4);
+    --tertiary: var(--bg1);
     /*Shade 1*/
     --white: rgb(240, 240, 240);
     --black: rgb(20, 20, 20);

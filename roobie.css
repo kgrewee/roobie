@@ -1726,6 +1726,9 @@ span,
 p {
     color: var(--t3);
 }[theme="dark"] {
+    --primary: var(--bg6);
+    --secondary: var(--bg4);
+    --tertiary: var(--bg1);
     /*Shade 1*/
     --white: rgb(240, 240, 240);
     --black: rgb(20, 20, 20);
@@ -1823,6 +1826,9 @@ p {
     --box5: 0 0 4px 4px rgb(235, 235, 235, .3);
     --box6: 0 0 5px 5px rgb(235, 235, 235, .3);
 }[theme="light"] {
+    --primary: var(--bg6);
+    --secondary: var(--bg4);
+    --tertiary: var(--bg1);
     /*Shade 1*/
     --white: rgb(240, 240, 240);
     --black: rgb(20, 20, 20);
@@ -3430,18 +3436,15 @@ p {
 }
 
 .btnp {
-    background-color: var(--blue2);
-    color: var(--white);
+    background-color: var(--primary);
 }
 
 .btns {
-    background-color: var(--bg4);
-    color: var(--t2);
+    background-color: var(--secondary);
 }
 
 .btnt {
-    background-color: var(--bg1);
-    color: var(--t1);
+    background-color: var(--tertiary);
 }
 
 .btnh:hover,

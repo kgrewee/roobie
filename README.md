@@ -12,6 +12,8 @@ npm i roobie --save
 
 ## Docs
 
+All documentation is browser based.
+
 - [JavaScript Docs](docs/js)
 - CSS Docs - Coming Soon
 

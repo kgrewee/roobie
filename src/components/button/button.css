@@ -20,18 +20,15 @@
 }
 
 .btnp {
-    background-color: var(--blue2);
-    color: var(--white);
+    background-color: var(--primary);
 }
 
 .btns {
-    background-color: var(--bg4);
-    color: var(--t2);
+    background-color: var(--secondary);
 }
 
 .btnt {
-    background-color: var(--bg1);
-    color: var(--t1);
+    background-color: var(--tertiary);
 }
 
 .btnh:hover,

@@ -12,7 +12,8 @@ npm i roobie --save
 
 ## Docs
 
-CSS & JS documentation coming soon.
+- [JavaScript Docs](docs/js)
+- CSS Docs - Coming Soon
 
 ## Problem
 

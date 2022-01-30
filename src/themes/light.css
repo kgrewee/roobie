@@ -1,12 +1,12 @@
 [theme="light"] {
-    --primary: var(--bg6);
+    --primary: var(--red2);
     --secondary: var(--bg4);
     --tertiary: var(--bg1);
     /*Shade 1*/
     --white: rgb(240, 240, 240);
     --black: rgb(20, 20, 20);
     --grey: rgb(199, 199, 199);
-    --red: rgb(182, 26, 26);
+    --red: rgb(167, 32, 32);
     --orange: rgb(243, 162, 11);
     --yellow: rgb(221, 221, 25);
     --green: rgb(19, 172, 82);
@@ -64,7 +64,7 @@
     --h5: var(--t5);
     --h6: var(--t5);
     /*Link*/
-    --a1: var(--blue2);
+    --a1: var(--red2);
     --a2: white;
     --a3: white;
     --a4: white;

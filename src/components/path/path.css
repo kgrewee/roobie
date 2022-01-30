@@ -6,17 +6,17 @@
 }
 
 .path-item {
-    color: var(--t2);
+    color: var(--a1);
 }
 
 .path-item:hover {
     cursor: pointer;
-    color: var(--t4);
+    color: var(--t1);
 }
 
 .path-item+.path-item::before {
     content: var(--path-divider);
     margin: 0 var(--mrg2);
-    color: var(--t6) !important;
+    color: var(--t5);
     cursor: text;
 }

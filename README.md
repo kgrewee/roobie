@@ -1,4 +1,5 @@
 # Roobie
+![Build](https://github.com/kgrewee/roobie/actions/workflows/npm-publish.yml/badge.svg)
 
 Centralized CSS & JavaScript for Advanced Web Development.  No external dependencies.  Templates coming soon.
 

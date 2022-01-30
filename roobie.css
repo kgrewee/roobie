@@ -3963,7 +3963,7 @@ select:focus {
 
 .ul li span,
 .ul-bdr li span {
-    font-size: var(--fnts4);
+    font-size: var(--fnts2);
     color: var(--t5);
 }
 

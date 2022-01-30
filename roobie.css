@@ -3439,8 +3439,7 @@ p {
 }.btn,
 .btnh,
 .btnp,
-.btns,
-.btnt {
+.btns {
     width: auto;
     height: auto;
     padding: var(--pad2);
@@ -3450,6 +3449,8 @@ p {
     cursor: pointer;
     color: var(--t2);
     display: inline-flex;
+    border: none;
+    font-size: var(--fnts3);
 }
 
 .btn,
@@ -3466,14 +3467,9 @@ p {
     background-color: var(--secondary);
 }
 
-.btnt {
-    background-color: var(--tertiary);
-}
-
 .btnh:hover,
 .btnp:hover,
-.btns:hover,
-.btnt:hover {
+.btns:hover {
     opacity: 85%;
 }* {
     box-sizing: border-box;

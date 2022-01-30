@@ -11,12 +11,12 @@
 
 .path-item:hover {
     cursor: pointer;
-    opacity: 85%;
+    color: var(--t4);
 }
 
 .path-item+.path-item::before {
     content: var(--path-divider);
-    margin: 0 var(--mrg1);
-    color: var(--primary);
+    margin: 0 var(--mrg2);
+    color: var(--t6) !important;
     cursor: text;
 }

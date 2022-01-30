@@ -1,199 +1,204 @@
 .itrash {
-    background-image: url(icons/trash.svg)
+    content: url(icons/trash.svg)
 }
 
 .iplus {
-    background-image: url(icons/plus.svg)
+    content: url(icons/plus.svg)
 }
 
 .iminus {
-    background-image: url(icons/minus.svg)
+    content: url(icons/minus.svg)
 }
 
 .iheart-empty {
-    background-image: url(icons/heart-empty.svg)
+    content: url(icons/heart-empty.svg)
 }
 
 .iheart {
-    background-image: url(icons/heart.svg)
+    content: url(icons/heart.svg);
 }
 
 .imail {
-    background-image: url(icons/mail.svg)
+    content: url(icons/mail.svg)
 }
 
 .isearch {
-    background-image: url(icons/search.svg)
+    content: url(icons/search.svg)
 }
 
 .istar-empty {
-    background-image: url(icons/star-empty.svg)
+    content: url(icons/star-empty.svg)
 }
 
 .istar {
-    background-image: url(icons/star.svg)
+    content: url(icons/star.svg)
 }
 
 .iuser {
-    background-image: url(icons/user.svg)
+    content: url(icons/user.svg)
 }
 
 .iphone {
-    background-image: url(icons/phone.svg)
+    content: url(icons/phone.svg)
 }
 
 .iattach {
-    background-image: url(icons/attach.svg)
+    content: url(icons/attach.svg)
 }
 
 .iright {
-    background-image: url(icons/right.svg)
+    content: url(icons/right.svg)
 }
 
 .ileft {
-    background-image: url(icons/left.svg)
+    content: url(icons/left.svg)
 }
 
 .icog-2 {
-    background-image: url(icons/cog.svg)
+    content: url(icons/cog.svg)
 }
 
 .ihelp {
-    background-image: url(icons/help.svg)
+    content: url(icons/help.svg)
 }
 
 .ifacebook {
-    background-image: url(icons/facebook.svg)
+    content: url(icons/facebook.svg)
 }
 
 .ilinkedin {
-    background-image: url(icons/linkedin.svg)
+    content: url(icons/linkedin.svg)
 }
 
 .ileft-open {
-    background-image: url(icons/left-open.svg)
+    content: url(icons/left-open.svg)
 }
 
 .iok {
-    background-image: url(icons/ok.svg)
+    content: url(icons/ok.svg)
 }
 
 .icancel {
-    background-image: url(icons/cancel.svg)
+    content: url(icons/cancel.svg)
 }
 
 .iright-open {
-    background-image: url(icons/right-open.svg)
+    content: url(icons/right-open.svg)
 }
 
 .iup-open {
-    background-image: url(icons/up-open.svg)
+    content: url(icons/up-open.svg)
 }
 
 .idown-open {
-    background-image: url(icons/down-open.svg)
+    content: url(icons/down-open.svg)
 }
 
 .ipause {
-    background-image: url(icons/pause.svg)
+    content: url(icons/pause.svg)
 }
 
 .istop {
-    background-image: url(icons/stop.svg)
+    content: url(icons/stop.svg)
 }
 
 .iplay {
-    background-image: url(icons/play.svg)
+    content: url(icons/play.svg)
 }
 
 .icw {
-    background-image: url(icons/cw.svg)
+    content: url(icons/cw.svg)
 }
 
 .iup {
-    background-image: url(icons/up.svg)
+    content: url(icons/up.svg)
 }
 
 .idown {
-    background-image: url(icons/down.svg)
+    content: url(icons/down.svg)
 }
 
 .izoom-in {
-    background-image: url(icons/zoom-in.svg)
+    content: url(icons/zoom-in.svg)
 }
 
 .izoom-out {
-    background-image: url(icons/zoom-out.svg)
+    content: url(icons/zoom-out.svg)
 }
 
 .ieject {
-    background-image: url(icons/eject.svg)
+    content: url(icons/eject.svg)
 }
 
 .ialign-right {
-    background-image: url(icons/align-right.svg)
+    content: url(icons/align-right.svg)
 }
 
 .ialign-center {
-    background-image: url(icons/align-center.svg);
+    content: url(icons/align-center.svg);
 }
 
 .ialign-left {
-    background-image: url(icons/align-left.svg)
+    content: url(icons/align-left.svg)
 }
 
 .ialign-justify {
-    background-image: url(icons/align-justify.svg)
+    content: url(icons/align-justify.svg)
 }
 
 .igithub-text {
-    background-image: url(icons/github-text.svg)
+    content: url(icons/github-text.svg)
 }
 
 .igithub {
-    background-image: url(icons/github.svg)
+    content: url(icons/github.svg)
 }
 
 .iflag {
-    background-image: url(icons/flag.svg)
+    content: url(icons/flag.svg)
 }
 
 .ilocation {
-    background-image: url(icons/location.svg)
+    content: url(icons/location.svg)
 }
 
 .ithumbs-down {
-    background-image: url(icons/thumbs-down.svg)
+    content: url(icons/thumbs-down.svg)
 }
 
 .ithumbs-up {
-    background-image: url(icons/thumbs-up.svg)
+    content: url(icons/thumbs-up.svg)
 }
 
 .ibell {
-    background-image: url(icons/bell.svg)
+    content: url(icons/bell.svg)
 }
 
 .icomment {
-    background-image: url(icons/comment.svg)
+    content: url(icons/comment.svg)
 }
 
 .iapps {
-    background-image: url(icons/apps.svg)
+    content: url(icons/apps.svg)
 }
 
 .ilist {
-    background-image: url(icons/list.svg)
+    content: url(icons/list.svg)
 }
 
 .imenu {
-    background-image: url(icons/menu.svg)
+    content: url(icons/menu.svg)
 }
 
 .imenu-outline {
-    background-image: url(icons/menu-outline.svg)
+    content: url(icons/menu-outline.svg)
 }
 
 .icamera {
-    background-image: url(icons/camera.svg)
+    content: url(icons/camera.svg)
+}
+
+i {
+    width: 25px;
+    height: 25px;
 }

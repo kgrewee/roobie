@@ -11,7 +11,7 @@
     margin: var(--mrg1);
     cursor: pointer;
     color: var(--t2);
-    display: inline-block;
+    display: inline-flex;
 }
 
 .btn,

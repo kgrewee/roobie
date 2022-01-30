@@ -1,16 +1,14 @@
 .ul,
-.ul-bdr,
-.ul-cnt,
-.ul-cnt-bdr {
+.ul-cnt {
     list-style-type: none;
     width: auto;
     padding-inline-start: 0;
     margin: var(--mrg3) 0;
     padding: 0;
+    border-radius: var(--br1);
 }
 
-.ul li,
-.ul-bdr li {
+.ul li {
     color: var(--t5);
     text-decoration: none;
     height: auto;
@@ -21,8 +19,7 @@
     cursor: pointer;
 }
 
-.ul-cnt li,
-.ul-cnt-bdr li {
+.ul-cnt li {
     color: var(--t5);
     text-decoration: none;
     height: auto;
@@ -34,25 +31,21 @@
     align-items: center;
 }
 
-.ul-cnt li a,
-.ul-cnt-bdr li a {
+.ul-cnt li a {
     margin: var(--mrg2) 0;
 }
 
-.ul li span,
-.ul-bdr li span {
+.ul li span {
     font-size: var(--fnts2);
     color: var(--t5);
 }
 
-.ul-bdr li+li,
-.ul-cnt-bdr li+li {
+.ul li+li,
+.ul-cnt li+li {
     border-top: var(--bdr2);
 }
 
 .ul li:hover,
-.ul-bdr li:hover,
-.ul-cnt li:hover,
-.ul-cnt-bdr li:hover {
+.ul-cnt li:hover {
     color: var(--t1);
 }

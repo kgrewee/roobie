@@ -4021,6 +4021,27 @@ select:focus {
 .nav-item:hover {
     opacity: 100%;
     cursor: pointer;
+}.path {
+    display: inline-flex;
+    list-style-type: none;
+    width: auto;
+    padding-inline-start: 0;
+}
+
+.path-item {
+    color: var(--t2);
+}
+
+.path-item:hover {
+    cursor: pointer;
+    opacity: 85%;
+}
+
+.path-item+.path-item::before {
+    content: "/";
+    margin: 0 var(--mrg1);
+    color: var(--primary);
+    cursor: text;
 }.table th {
     color: var(--t1);
 }

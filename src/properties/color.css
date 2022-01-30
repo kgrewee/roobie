@@ -31,28 +31,20 @@ Dev: Colors are referenced by name
 
 /* Status */
 
-.s1 {
-    color: var(--s1) !important;
+.success {
+    color: var(--success) !important;
 }
 
-.s2 {
-    color: var(--s2) !important;
+.warning {
+    color: var(--warning) !important;
 }
 
-.s3 {
-    color: var(--s3) !important;
+.danger {
+    color: var(--danger) !important;
 }
 
-.s4 {
-    color: var(--s4) !important;
-}
-
-.s5 {
-    color: var(--s5) !important;
-}
-
-.s6 {
-    color: var(--s6) !important;
+.info {
+    color: var(--info) !important;
 }
 
 

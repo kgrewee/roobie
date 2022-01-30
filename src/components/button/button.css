@@ -16,7 +16,8 @@
 
 .btn,
 .btnh {
-    background-color: var(--bg5);
+    background-color: var(--bg1);
+    border: var(--bdr1);
 }
 
 .btnp {

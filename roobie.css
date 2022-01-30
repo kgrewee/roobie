@@ -1,4 +1,6 @@
-/* 
+.infinite {
+    animation-iteration-count: infinite;
+}/* 
 Name: Align Content
 Prefix: aln-cnt
 Dev: How lines are spaced.  No effect if content is only 1 line.
@@ -127,28 +129,20 @@ Dev: Background color of an element
 
 /* Status */
 
-.bg-s1 {
-    background-color: var(--s1) !important;
+.bg-success {
+    background-color: var(--success) !important;
 }
 
-.bg-s2 {
-    background-color: var(--s2) !important;
+.bg-warning {
+    background-color: var(--warning) !important;
 }
 
-.bg-s3 {
-    background-color: var(--s3) !important;
+.bg-danger {
+    background-color: var(--danger) !important;
 }
 
-.bg-s4 {
-    background-color: var(--s4) !important;
-}
-
-.bg-s5 {
-    background-color: var(--s5) !important;
-}
-
-.bg-s6 {
-    background-color: var(--s6) !important;
+.bg-info {
+    background-color: var(--info) !important;
 }
 
 
@@ -349,34 +343,24 @@ Dev: Border of an element
 
 /* Status */
 
-.bdr-s1 {
+.bdr-success {
     border: 1px solid var(--t2);
-    border-color: var(--s1) !important;
+    border-color: var(--success) !important;
 }
 
-.bdr-s2 {
+.bdr-warning {
     border: 1px solid var(--t2);
-    border-color: var(--s2) !important;
+    border-color: var(--warning) !important;
 }
 
-.bdr-s3 {
+.bdr-danger {
     border: 1px solid var(--t2);
-    border-color: var(--s3) !important;
+    border-color: var(--danger) !important;
 }
 
-.bdr-s4 {
+.bdr-info {
     border: 1px solid var(--t2);
-    border-color: var(--s4) !important;
-}
-
-.bdr-s5 {
-    border: 1px solid var(--t2);
-    border-color: var(--s5) !important;
-}
-
-.bdr-s6 {
-    border: 1px solid var(--t2);
-    border-color: var(--s6) !important;
+    border-color: var(--info) !important;
 }
 
 
@@ -685,28 +669,20 @@ Dev: Colors are referenced by name
 
 /* Status */
 
-.s1 {
-    color: var(--s1) !important;
+.success {
+    color: var(--success) !important;
 }
 
-.s2 {
-    color: var(--s2) !important;
+.warning {
+    color: var(--warning) !important;
 }
 
-.s3 {
-    color: var(--s3) !important;
+.danger {
+    color: var(--danger) !important;
 }
 
-.s4 {
-    color: var(--s4) !important;
-}
-
-.s5 {
-    color: var(--s5) !important;
-}
-
-.s6 {
-    color: var(--s6) !important;
+.info {
+    color: var(--info) !important;
 }
 
 
@@ -1543,28 +1519,24 @@ Dev:
     overflow-x: auto;
 }/* 
 Name: Status
-Prefix: s
-Dev: Statuses that can signal the user.  s1 usually means success or ok and is green.
+Prefix: 
+Dev: Statuses that can signal the user
 */
 
-.s1 {
-    color: var(--s1);
+.success {
+    color: var(--success);
 }
 
-.s2 {
-    color: var(--s2);
+.warning {
+    color: var(--warning);
 }
 
-.s3 {
-    color: var(--s3);
+.danger {
+    color: var(--danger);
 }
 
-.s4 {
-    color: var(--s4);
-}
-
-.s5 {
-    color: var(--s5);
+.info {
+    color: var(--info);
 }/*
 Name Scroll
 Prefix scr
@@ -1622,6 +1594,11 @@ Dev
 .z6 {
     z-index: var(--z6);
 }:root {
+    /*Status*/
+    --success: rgb(75, 181, 67);
+    --warning: rgb(255, 102, 0);
+    --danger: rgb(243, 32, 19);
+    --info: rgb(135, 206, 235);
     --animation-duration: 1.5s;
     --path-divider: '/';
     /*Font Family*/
@@ -1658,7 +1635,7 @@ Dev
     --br3: 6px;
     --br4: 8px;
     --br5: 10px;
-    --br6: 12px;
+    --br6: 15px;
     /*Padding*/
     --pad1: 3px;
     --pad2: 5px;
@@ -1751,9 +1728,8 @@ span,
 p {
     color: var(--t3);
 }[theme="dark"] {
-    --primary: var(--blue);
+    --primary: var(--blue2);
     --secondary: var(--bg4);
-    --tertiary: var(--bg1);
     /*Shade 1*/
     --white: rgb(240, 240, 240);
     --black: rgb(20, 20, 20);
@@ -1787,13 +1763,6 @@ p {
     --blue3: rgba(39, 39, 219, .5);
     --indigo3: rgba(117, 13, 117, .5);
     --violet3: rgba(184, 88, 184, .5);
-    /*Status*/
-    --s1: green;
-    --s2: orange;
-    --s3: yellow;
-    --s4: red;
-    --s5: grey;
-    --s6: blue;
     /*Text*/
     --t1: rgb(240, 240, 240);
     --t2: rgb(230, 230, 230);
@@ -1830,12 +1799,12 @@ p {
     --p5: var(--t2);
     --p6: var(--t2);
     /*Border*/
-    --bdr1: .5px solid var(--t1);
-    --bdr2: 1px solid var(--t1);
-    --bdr3: 2px solid var(--t1);
-    --bdr4: 3px solid var(--t1);
-    --bdr5: 5px solid var(--t1);
-    --bdr6: 7px solid var(--t1);
+    --bdr1: .5px solid var(--grey3);
+    --bdr2: 1px solid var(--grey3);
+    --bdr3: 2px solid var(--grey3);
+    --bdr4: 3px solid var(--grey3);
+    --bdr5: 5px solid var(--grey3);
+    --bdr6: 7px solid var(--grey3);
     /*Inset*/
     --in1: inset 0px 0px 1px 1px rgb(235, 235, 235, .1);
     --in2: inset 0px 0px 2px 2px rgb(235, 235, 235, .2);
@@ -1851,9 +1820,8 @@ p {
     --box5: 0 0 4px 4px rgb(235, 235, 235, .3);
     --box6: 0 0 5px 5px rgb(235, 235, 235, .3);
 }[theme="light"] {
-    --primary: var(--red2);
+    --primary: rgb(161, 255, 177);
     --secondary: var(--bg4);
-    --tertiary: var(--bg1);
     /*Shade 1*/
     --white: rgb(240, 240, 240);
     --black: rgb(20, 20, 20);
@@ -1887,13 +1855,6 @@ p {
     --blue3: rgba(23, 23, 192, .5);
     --indigo3: rgba(117, 13, 117, .5);
     --violet3: rgba(184, 88, 184, .5);
-    /*Status*/
-    --s1: green;
-    --s2: orange;
-    --s3: yellow;
-    --s4: red;
-    --s5: grey;
-    --s6: blue;
     /*Text*/
     --t1: rgb(20, 20, 20);
     --t2: rgb(30, 30, 30);
@@ -1907,7 +1868,7 @@ p {
     --bg3: rgb(220, 220, 220);
     --bg4: rgb(210, 210, 210);
     --bg5: rgb(200, 200, 200);
-    --bg6: var(--red2);
+    --bg6: var(--primary);
     /*Heading*/
     --h1: var(--t1);
     --h2: var(--t5);
@@ -1930,12 +1891,12 @@ p {
     --p5: var(--t2);
     --p6: var(--t2);
     /*Border*/
-    --bdr1: .5px solid var(--t1);
-    --bdr2: 1px solid var(--t1);
-    --bdr3: 2px solid var(--t1);
-    --bdr4: 3px solid var(--t1);
-    --bdr5: 5px solid var(--t1);
-    --bdr6: 7px solid var(--t1);
+    --bdr1: .5px solid var(--grey);
+    --bdr2: 1px solid var(--grey);
+    --bdr3: 2px solid var(--grey);
+    --bdr4: 3px solid var(--grey);
+    --bdr5: 5px solid var(--grey);
+    --bdr6: 7px solid var(--grey);
     /*Inset*/
     --in1: inset 0px 0px 1px 1px rgb(17, 17, 17, .1);
     --in2: inset 0px 0px 2px 2px rgb(17, 17, 17, .2);
@@ -2857,6 +2818,42 @@ p {
 ._flash {
     animation-name: flash;
     animation-duration: var(--animation-duration);
+}@keyframes glow {
+    10% {
+        opacity: .9;
+    }
+    20% {
+        opacity: .7;
+    }
+    30% {
+        opacity: .5;
+    }
+    40% {
+        opacity: .3;
+    }
+    50% {
+        opacity: 0;
+    }
+    60% {
+        opacity: .3;
+    }
+    70% {
+        opacity: .5;
+    }
+    80% {
+        opacity: .7;
+    }
+    90% {
+        opacity: .9;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+._glow {
+    animation-name: glow;
+    animation-duration: var(--animation-duration);
 }@keyframes heartbeat {
     0% {
         transform: scale(1);
@@ -3457,7 +3454,8 @@ p {
 
 .btn,
 .btnh {
-    background-color: var(--bg5);
+    background-color: var(--bg1);
+    border: var(--bdr1);
 }
 
 .btnp {

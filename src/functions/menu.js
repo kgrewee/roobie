@@ -19,7 +19,6 @@ ready(() => {
     MEDIACOLLAPSEL.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-l'));
     MEDIAEXPANDXL.addEventListener("change", (event) => expandMenu(event, 'rsp-menu-xl'));
     MEDIACOLLAPSEXL.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-xl'));
-    checkMenu();
 })
 
 
@@ -74,7 +73,7 @@ function collapseMenu(event, className) {
         for (i = 0; i < menus.length; i++) {
             items = menus[i].innerHTML;
             if (!menus[i].classList.contains('rsp-cnt')) {
-                menus[i].innerHTML = '<div class="drp"> <button class="drp-btn flx-row aln-center bdr0"> <img width="25" height="25" src="icons/menu.svg"> </button> <div class = "drp-cnt pad2 br rsp-cnt">' + items + '</div> </div>';
+                menus[i].innerHTML = '<div class="drp"> <button type="button" class="drp-btn btnp"><i class="imenu"></i></button><div class = "drp-cnt pad2 br rsp-cnt">' + items + '</div> </div>';
             }
         }
     }

@@ -2,22 +2,22 @@
     box-sizing: border-box;
 }
 
-.car {
+.carousel {
     position: relative;
 }
 
 
 /* Hide the images by default */
 
-.car-slide {
+.carousel-slide {
     display: none;
 }
 
 
 /* Next & previous buttons */
 
-.car-prev,
-.car-next {
+.carousel-prev,
+.carousel-next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -36,7 +36,7 @@
 
 /* Position the "next button" to the right */
 
-.car-next {
+.carousel-next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
@@ -44,8 +44,8 @@
 
 /* On hover, add a black background */
 
-.car-prev:hover,
-.car-next:hover {
+.carousel-prev:hover,
+.carousel-next:hover {
     background-color: var(--bg3);
     opacity: 90%;
 }
@@ -53,7 +53,7 @@
 
 /* Caption text */
 
-.car-txt {
+.carousel-txt {
     color: var(--t2);
     font-size: var(--fnts4);
     position: absolute;
@@ -65,7 +65,7 @@
 
 /* Dots to indicate slide active */
 
-.car-dot {
+.carousel-dot {
     cursor: pointer;
     height: 20px;
     width: 20px;
@@ -77,6 +77,6 @@
 }
 
 .active,
-.car-dot:hover {
+.carousel-dot:hover {
     background-color: var(--bg6);
 }

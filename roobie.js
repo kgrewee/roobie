@@ -225,7 +225,6 @@ ready(() => {
     MEDIACOLLAPSEL.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-l'));
     MEDIAEXPANDXL.addEventListener("change", (event) => expandMenu(event, 'rsp-menu-xl'));
     MEDIACOLLAPSEXL.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-xl'));
-    checkMenu();
 })
 
 
@@ -280,7 +279,7 @@ function collapseMenu(event, className) {
         for (i = 0; i < menus.length; i++) {
             items = menus[i].innerHTML;
             if (!menus[i].classList.contains('rsp-cnt')) {
-                menus[i].innerHTML = '<div class="drp"> <button class="drp-btn flx-row aln-center bdr0"> <img width="25" height="25" src="icons/menu.svg"> </button> <div class = "drp-cnt pad2 br rsp-cnt">' + items + '</div> </div>';
+                menus[i].innerHTML = '<div class="drp"> <button type="button" class="drp-btn btnp"><i class="imenu"></i></button><div class = "drp-cnt pad2 br rsp-cnt">' + items + '</div> </div>';
             }
         }
     }
@@ -405,8 +404,8 @@ function currentSlide(n) {
 
 function showSlides(n) {
     var i;
-    var slides = document.getElementsByClassName("car-slide");
-    var dots = document.getElementsByClassName("car-dot");
+    var slides = document.getElementsByClassName("carousel-slide");
+    var dots = document.getElementsByClassName("carousel-dot");
     if (n > slides.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length }
     for (i = 0; i < slides.length; i++) {

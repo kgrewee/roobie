@@ -1623,6 +1623,7 @@ Dev
     z-index: var(--z6);
 }:root {
     --animation-duration: 1.5s;
+    --path-divider: '/';
     /*Font Family*/
     --fntf1: 'Ubuntu', sans-serif;
     --fntf2: 'Open Sans', sans-serif;
@@ -3894,6 +3895,7 @@ select:focus {
 }
 
 .inp {
+    display: inline-flex;
     width: auto;
     padding: var(--pad3);
     background-color: var(--bg2);
@@ -3903,6 +3905,7 @@ select:focus {
     font: 500 var(--fnts3) var(--fntf1);
     border: var(--bdr1);
     color: var(--t2);
+    min-width: 100px;
 }
 
 ::placeholder {
@@ -4038,7 +4041,7 @@ select:focus {
 }
 
 .path-item+.path-item::before {
-    content: "/";
+    content: var(--path-divider);
     margin: 0 var(--mrg1);
     color: var(--primary);
     cursor: text;

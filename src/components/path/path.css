@@ -15,7 +15,7 @@
 }
 
 .path-item+.path-item::before {
-    content: "/";
+    content: var(--path-divider);
     margin: 0 var(--mrg1);
     color: var(--primary);
     cursor: text;

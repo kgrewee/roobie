@@ -1,5 +1,6 @@
 :root {
     --animation-duration: 1.5s;
+    --path-divider: '/';
     /*Font Family*/
     --fntf1: 'Ubuntu', sans-serif;
     --fntf2: 'Open Sans', sans-serif;

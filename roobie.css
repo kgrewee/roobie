@@ -3451,6 +3451,7 @@ p {
     display: inline-flex;
     border: none;
     font-size: var(--fnts3);
+    font-family: var(--fntf1);
 }
 
 .btn,

@@ -1,12 +1,11 @@
 [theme="light"] {
-    --primary: var(--bg6);
+    --primary: rgb(161, 255, 177);
     --secondary: var(--bg4);
-    --tertiary: var(--bg1);
     /*Shade 1*/
     --white: rgb(240, 240, 240);
     --black: rgb(20, 20, 20);
     --grey: rgb(199, 199, 199);
-    --red: rgb(182, 26, 26);
+    --red: rgb(167, 32, 32);
     --orange: rgb(243, 162, 11);
     --yellow: rgb(221, 221, 25);
     --green: rgb(19, 172, 82);
@@ -35,13 +34,6 @@
     --blue3: rgba(23, 23, 192, .5);
     --indigo3: rgba(117, 13, 117, .5);
     --violet3: rgba(184, 88, 184, .5);
-    /*Status*/
-    --s1: green;
-    --s2: orange;
-    --s3: yellow;
-    --s4: red;
-    --s5: grey;
-    --s6: blue;
     /*Text*/
     --t1: rgb(20, 20, 20);
     --t2: rgb(30, 30, 30);
@@ -55,7 +47,7 @@
     --bg3: rgb(220, 220, 220);
     --bg4: rgb(210, 210, 210);
     --bg5: rgb(200, 200, 200);
-    --bg6: var(--red2);
+    --bg6: var(--primary);
     /*Heading*/
     --h1: var(--t1);
     --h2: var(--t5);
@@ -64,7 +56,7 @@
     --h5: var(--t5);
     --h6: var(--t5);
     /*Link*/
-    --a1: var(--blue2);
+    --a1: var(--red2);
     --a2: white;
     --a3: white;
     --a4: white;
@@ -78,12 +70,12 @@
     --p5: var(--t2);
     --p6: var(--t2);
     /*Border*/
-    --bdr1: .5px solid var(--t1);
-    --bdr2: 1px solid var(--t1);
-    --bdr3: 2px solid var(--t1);
-    --bdr4: 3px solid var(--t1);
-    --bdr5: 5px solid var(--t1);
-    --bdr6: 7px solid var(--t1);
+    --bdr1: .5px solid var(--grey);
+    --bdr2: 1px solid var(--grey);
+    --bdr3: 2px solid var(--grey);
+    --bdr4: 3px solid var(--grey);
+    --bdr5: 5px solid var(--grey);
+    --bdr6: 7px solid var(--grey);
     /*Inset*/
     --in1: inset 0px 0px 1px 1px rgb(17, 17, 17, .1);
     --in2: inset 0px 0px 2px 2px rgb(17, 17, 17, .2);

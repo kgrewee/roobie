@@ -1,4 +1,6 @@
-/* 
+.infinite {
+    animation-iteration-count: infinite;
+}/* 
 Name: Align Content
 Prefix: aln-cnt
 Dev: How lines are spaced.  No effect if content is only 1 line.
@@ -127,28 +129,20 @@ Dev: Background color of an element
 
 /* Status */
 
-.bg-s1 {
-    background-color: var(--s1) !important;
+.bg-success {
+    background-color: var(--success) !important;
 }
 
-.bg-s2 {
-    background-color: var(--s2) !important;
+.bg-warning {
+    background-color: var(--warning) !important;
 }
 
-.bg-s3 {
-    background-color: var(--s3) !important;
+.bg-danger {
+    background-color: var(--danger) !important;
 }
 
-.bg-s4 {
-    background-color: var(--s4) !important;
-}
-
-.bg-s5 {
-    background-color: var(--s5) !important;
-}
-
-.bg-s6 {
-    background-color: var(--s6) !important;
+.bg-info {
+    background-color: var(--info) !important;
 }
 
 
@@ -349,34 +343,24 @@ Dev: Border of an element
 
 /* Status */
 
-.bdr-s1 {
+.bdr-success {
     border: 1px solid var(--t2);
-    border-color: var(--s1) !important;
+    border-color: var(--success) !important;
 }
 
-.bdr-s2 {
+.bdr-warning {
     border: 1px solid var(--t2);
-    border-color: var(--s2) !important;
+    border-color: var(--warning) !important;
 }
 
-.bdr-s3 {
+.bdr-danger {
     border: 1px solid var(--t2);
-    border-color: var(--s3) !important;
+    border-color: var(--danger) !important;
 }
 
-.bdr-s4 {
+.bdr-info {
     border: 1px solid var(--t2);
-    border-color: var(--s4) !important;
-}
-
-.bdr-s5 {
-    border: 1px solid var(--t2);
-    border-color: var(--s5) !important;
-}
-
-.bdr-s6 {
-    border: 1px solid var(--t2);
-    border-color: var(--s6) !important;
+    border-color: var(--info) !important;
 }
 
 
@@ -685,28 +669,20 @@ Dev: Colors are referenced by name
 
 /* Status */
 
-.s1 {
-    color: var(--s1) !important;
+.success {
+    color: var(--success) !important;
 }
 
-.s2 {
-    color: var(--s2) !important;
+.warning {
+    color: var(--warning) !important;
 }
 
-.s3 {
-    color: var(--s3) !important;
+.danger {
+    color: var(--danger) !important;
 }
 
-.s4 {
-    color: var(--s4) !important;
-}
-
-.s5 {
-    color: var(--s5) !important;
-}
-
-.s6 {
-    color: var(--s6) !important;
+.info {
+    color: var(--info) !important;
 }
 
 
@@ -1543,28 +1519,24 @@ Dev:
     overflow-x: auto;
 }/* 
 Name: Status
-Prefix: s
-Dev: Statuses that can signal the user.  s1 usually means success or ok and is green.
+Prefix: 
+Dev: Statuses that can signal the user
 */
 
-.s1 {
-    color: var(--s1);
+.success {
+    color: var(--success);
 }
 
-.s2 {
-    color: var(--s2);
+.warning {
+    color: var(--warning);
 }
 
-.s3 {
-    color: var(--s3);
+.danger {
+    color: var(--danger);
 }
 
-.s4 {
-    color: var(--s4);
-}
-
-.s5 {
-    color: var(--s5);
+.info {
+    color: var(--info);
 }/*
 Name Scroll
 Prefix scr
@@ -1622,7 +1594,13 @@ Dev
 .z6 {
     z-index: var(--z6);
 }:root {
+    /*Status*/
+    --success: rgb(75, 181, 67);
+    --warning: rgb(255, 102, 0);
+    --danger: rgb(243, 32, 19);
+    --info: rgb(135, 206, 235);
     --animation-duration: 1.5s;
+    --path-divider: '/';
     /*Font Family*/
     --fntf1: 'Ubuntu', sans-serif;
     --fntf2: 'Open Sans', sans-serif;
@@ -1657,7 +1635,7 @@ Dev
     --br3: 6px;
     --br4: 8px;
     --br5: 10px;
-    --br6: 12px;
+    --br6: 15px;
     /*Padding*/
     --pad1: 3px;
     --pad2: 5px;
@@ -1750,9 +1728,8 @@ span,
 p {
     color: var(--t3);
 }[theme="dark"] {
-    --primary: var(--bg6);
+    --primary: var(--blue2);
     --secondary: var(--bg4);
-    --tertiary: var(--bg1);
     /*Shade 1*/
     --white: rgb(240, 240, 240);
     --black: rgb(20, 20, 20);
@@ -1761,7 +1738,7 @@ p {
     --orange: rgb(243, 162, 11);
     --yellow: rgb(221, 221, 25);
     --green: rgb(19, 172, 82);
-    --blue: rgb(23, 23, 192);
+    --blue: rgb(83, 143, 255);
     --indigo: rgb(117, 13, 117);
     --violet: rgb(184, 88, 184);
     /* Shade 2*/
@@ -1772,7 +1749,7 @@ p {
     --orange2: rgba(243, 162, 11, .7);
     --yellow2: rgba(221, 221, 25, .7);
     --green2: rgba(19, 172, 82, .7);
-    --blue2: rgba(23, 23, 192, .7);
+    --blue2: rgba(39, 39, 219, .7);
     --indigo2: rgba(117, 13, 117, .7);
     --violet2: rgba(184, 88, 184, .7);
     /* Shade 3*/
@@ -1783,16 +1760,9 @@ p {
     --orange3: rgba(243, 162, 11, .5);
     --yellow3: rgba(221, 221, 25, .5);
     --green3: rgba(19, 172, 82, .5);
-    --blue3: rgba(23, 23, 192, .5);
+    --blue3: rgba(39, 39, 219, .5);
     --indigo3: rgba(117, 13, 117, .5);
     --violet3: rgba(184, 88, 184, .5);
-    /*Status*/
-    --s1: green;
-    --s2: orange;
-    --s3: yellow;
-    --s4: red;
-    --s5: grey;
-    --s6: blue;
     /*Text*/
     --t1: rgb(240, 240, 240);
     --t2: rgb(230, 230, 230);
@@ -1815,7 +1785,7 @@ p {
     --h5: var(--t5);
     --h6: var(--t5);
     /*Link*/
-    --a1: var(--blue2);
+    --a1: var(--blue);
     --a2: white;
     --a3: white;
     --a4: white;
@@ -1829,12 +1799,12 @@ p {
     --p5: var(--t2);
     --p6: var(--t2);
     /*Border*/
-    --bdr1: .5px solid var(--t1);
-    --bdr2: 1px solid var(--t1);
-    --bdr3: 2px solid var(--t1);
-    --bdr4: 3px solid var(--t1);
-    --bdr5: 5px solid var(--t1);
-    --bdr6: 7px solid var(--t1);
+    --bdr1: .5px solid var(--grey3);
+    --bdr2: 1px solid var(--grey3);
+    --bdr3: 2px solid var(--grey3);
+    --bdr4: 3px solid var(--grey3);
+    --bdr5: 5px solid var(--grey3);
+    --bdr6: 7px solid var(--grey3);
     /*Inset*/
     --in1: inset 0px 0px 1px 1px rgb(235, 235, 235, .1);
     --in2: inset 0px 0px 2px 2px rgb(235, 235, 235, .2);
@@ -1850,14 +1820,13 @@ p {
     --box5: 0 0 4px 4px rgb(235, 235, 235, .3);
     --box6: 0 0 5px 5px rgb(235, 235, 235, .3);
 }[theme="light"] {
-    --primary: var(--bg6);
+    --primary: rgb(161, 255, 177);
     --secondary: var(--bg4);
-    --tertiary: var(--bg1);
     /*Shade 1*/
     --white: rgb(240, 240, 240);
     --black: rgb(20, 20, 20);
     --grey: rgb(199, 199, 199);
-    --red: rgb(182, 26, 26);
+    --red: rgb(167, 32, 32);
     --orange: rgb(243, 162, 11);
     --yellow: rgb(221, 221, 25);
     --green: rgb(19, 172, 82);
@@ -1886,13 +1855,6 @@ p {
     --blue3: rgba(23, 23, 192, .5);
     --indigo3: rgba(117, 13, 117, .5);
     --violet3: rgba(184, 88, 184, .5);
-    /*Status*/
-    --s1: green;
-    --s2: orange;
-    --s3: yellow;
-    --s4: red;
-    --s5: grey;
-    --s6: blue;
     /*Text*/
     --t1: rgb(20, 20, 20);
     --t2: rgb(30, 30, 30);
@@ -1906,7 +1868,7 @@ p {
     --bg3: rgb(220, 220, 220);
     --bg4: rgb(210, 210, 210);
     --bg5: rgb(200, 200, 200);
-    --bg6: var(--red2);
+    --bg6: var(--primary);
     /*Heading*/
     --h1: var(--t1);
     --h2: var(--t5);
@@ -1915,7 +1877,7 @@ p {
     --h5: var(--t5);
     --h6: var(--t5);
     /*Link*/
-    --a1: var(--blue2);
+    --a1: var(--red2);
     --a2: white;
     --a3: white;
     --a4: white;
@@ -1929,12 +1891,12 @@ p {
     --p5: var(--t2);
     --p6: var(--t2);
     /*Border*/
-    --bdr1: .5px solid var(--t1);
-    --bdr2: 1px solid var(--t1);
-    --bdr3: 2px solid var(--t1);
-    --bdr4: 3px solid var(--t1);
-    --bdr5: 5px solid var(--t1);
-    --bdr6: 7px solid var(--t1);
+    --bdr1: .5px solid var(--grey);
+    --bdr2: 1px solid var(--grey);
+    --bdr3: 2px solid var(--grey);
+    --bdr4: 3px solid var(--grey);
+    --bdr5: 5px solid var(--grey);
+    --bdr6: 7px solid var(--grey);
     /*Inset*/
     --in1: inset 0px 0px 1px 1px rgb(17, 17, 17, .1);
     --in2: inset 0px 0px 2px 2px rgb(17, 17, 17, .2);
@@ -2856,6 +2818,42 @@ p {
 ._flash {
     animation-name: flash;
     animation-duration: var(--animation-duration);
+}@keyframes glow {
+    10% {
+        opacity: .9;
+    }
+    20% {
+        opacity: .7;
+    }
+    30% {
+        opacity: .5;
+    }
+    40% {
+        opacity: .3;
+    }
+    50% {
+        opacity: 0;
+    }
+    60% {
+        opacity: .3;
+    }
+    70% {
+        opacity: .5;
+    }
+    80% {
+        opacity: .7;
+    }
+    90% {
+        opacity: .9;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+._glow {
+    animation-name: glow;
+    animation-duration: var(--animation-duration);
 }@keyframes heartbeat {
     0% {
         transform: scale(1);
@@ -3441,8 +3439,7 @@ p {
 }.btn,
 .btnh,
 .btnp,
-.btns,
-.btnt {
+.btns {
     width: auto;
     height: auto;
     padding: var(--pad2);
@@ -3451,12 +3448,16 @@ p {
     margin: var(--mrg1);
     cursor: pointer;
     color: var(--t2);
-    display: inline-block;
+    display: inline-flex;
+    border: none;
+    font-size: var(--fnts3);
+    font-family: var(--fntf1);
 }
 
 .btn,
 .btnh {
-    background-color: var(--bg5);
+    background-color: var(--bg1);
+    border: var(--bdr1);
 }
 
 .btnp {
@@ -3467,35 +3468,30 @@ p {
     background-color: var(--secondary);
 }
 
-.btnt {
-    background-color: var(--tertiary);
-}
-
 .btnh:hover,
 .btnp:hover,
-.btns:hover,
-.btnt:hover {
+.btns:hover {
     opacity: 85%;
 }* {
     box-sizing: border-box;
 }
 
-.car {
+.carousel {
     position: relative;
 }
 
 
 /* Hide the images by default */
 
-.car-slide {
+.carousel-slide {
     display: none;
 }
 
 
 /* Next & previous buttons */
 
-.car-prev,
-.car-next {
+.carousel-prev,
+.carousel-next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -3514,7 +3510,7 @@ p {
 
 /* Position the "next button" to the right */
 
-.car-next {
+.carousel-next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
@@ -3522,8 +3518,8 @@ p {
 
 /* On hover, add a black background */
 
-.car-prev:hover,
-.car-next:hover {
+.carousel-prev:hover,
+.carousel-next:hover {
     background-color: var(--bg3);
     opacity: 90%;
 }
@@ -3531,7 +3527,7 @@ p {
 
 /* Caption text */
 
-.car-txt {
+.carousel-txt {
     color: var(--t2);
     font-size: var(--fnts4);
     position: absolute;
@@ -3543,7 +3539,7 @@ p {
 
 /* Dots to indicate slide active */
 
-.car-dot {
+.carousel-dot {
     cursor: pointer;
     height: 20px;
     width: 20px;
@@ -3555,7 +3551,7 @@ p {
 }
 
 .active,
-.car-dot:hover {
+.carousel-dot:hover {
     background-color: var(--bg6);
 }/* Containers with auto width */
 
@@ -3646,7 +3642,7 @@ p {
 }
 
 .drp-btn:hover {
-    opacity: 85%;
+    opacity: 90%;
 }
 
 .drp-cnt {
@@ -3684,203 +3680,208 @@ p {
     background-color: var(--bg3);
     cursor: pointer;
 }.itrash {
-    background-image: url(icons/trash.svg)
+    content: url(icons/trash.svg)
 }
 
 .iplus {
-    background-image: url(icons/plus.svg)
+    content: url(icons/plus.svg)
 }
 
 .iminus {
-    background-image: url(icons/minus.svg)
+    content: url(icons/minus.svg)
 }
 
 .iheart-empty {
-    background-image: url(icons/heart-empty.svg)
+    content: url(icons/heart-empty.svg)
 }
 
 .iheart {
-    background-image: url(icons/heart.svg)
+    content: url(icons/heart.svg);
 }
 
 .imail {
-    background-image: url(icons/mail.svg)
+    content: url(icons/mail.svg)
 }
 
 .isearch {
-    background-image: url(icons/search.svg)
+    content: url(icons/search.svg)
 }
 
 .istar-empty {
-    background-image: url(icons/star-empty.svg)
+    content: url(icons/star-empty.svg)
 }
 
 .istar {
-    background-image: url(icons/star.svg)
+    content: url(icons/star.svg)
 }
 
 .iuser {
-    background-image: url(icons/user.svg)
+    content: url(icons/user.svg)
 }
 
 .iphone {
-    background-image: url(icons/phone.svg)
+    content: url(icons/phone.svg)
 }
 
 .iattach {
-    background-image: url(icons/attach.svg)
+    content: url(icons/attach.svg)
 }
 
 .iright {
-    background-image: url(icons/right.svg)
+    content: url(icons/right.svg)
 }
 
 .ileft {
-    background-image: url(icons/left.svg)
+    content: url(icons/left.svg)
 }
 
 .icog-2 {
-    background-image: url(icons/cog.svg)
+    content: url(icons/cog.svg)
 }
 
 .ihelp {
-    background-image: url(icons/help.svg)
+    content: url(icons/help.svg)
 }
 
 .ifacebook {
-    background-image: url(icons/facebook.svg)
+    content: url(icons/facebook.svg)
 }
 
 .ilinkedin {
-    background-image: url(icons/linkedin.svg)
+    content: url(icons/linkedin.svg)
 }
 
 .ileft-open {
-    background-image: url(icons/left-open.svg)
+    content: url(icons/left-open.svg)
 }
 
 .iok {
-    background-image: url(icons/ok.svg)
+    content: url(icons/ok.svg)
 }
 
 .icancel {
-    background-image: url(icons/cancel.svg)
+    content: url(icons/cancel.svg)
 }
 
 .iright-open {
-    background-image: url(icons/right-open.svg)
+    content: url(icons/right-open.svg)
 }
 
 .iup-open {
-    background-image: url(icons/up-open.svg)
+    content: url(icons/up-open.svg)
 }
 
 .idown-open {
-    background-image: url(icons/down-open.svg)
+    content: url(icons/down-open.svg)
 }
 
 .ipause {
-    background-image: url(icons/pause.svg)
+    content: url(icons/pause.svg)
 }
 
 .istop {
-    background-image: url(icons/stop.svg)
+    content: url(icons/stop.svg)
 }
 
 .iplay {
-    background-image: url(icons/play.svg)
+    content: url(icons/play.svg)
 }
 
 .icw {
-    background-image: url(icons/cw.svg)
+    content: url(icons/cw.svg)
 }
 
 .iup {
-    background-image: url(icons/up.svg)
+    content: url(icons/up.svg)
 }
 
 .idown {
-    background-image: url(icons/down.svg)
+    content: url(icons/down.svg)
 }
 
 .izoom-in {
-    background-image: url(icons/zoom-in.svg)
+    content: url(icons/zoom-in.svg)
 }
 
 .izoom-out {
-    background-image: url(icons/zoom-out.svg)
+    content: url(icons/zoom-out.svg)
 }
 
 .ieject {
-    background-image: url(icons/eject.svg)
+    content: url(icons/eject.svg)
 }
 
 .ialign-right {
-    background-image: url(icons/align-right.svg)
+    content: url(icons/align-right.svg)
 }
 
 .ialign-center {
-    background-image: url(icons/align-center.svg);
+    content: url(icons/align-center.svg);
 }
 
 .ialign-left {
-    background-image: url(icons/align-left.svg)
+    content: url(icons/align-left.svg)
 }
 
 .ialign-justify {
-    background-image: url(icons/align-justify.svg)
+    content: url(icons/align-justify.svg)
 }
 
 .igithub-text {
-    background-image: url(icons/github-text.svg)
+    content: url(icons/github-text.svg)
 }
 
 .igithub {
-    background-image: url(icons/github.svg)
+    content: url(icons/github.svg)
 }
 
 .iflag {
-    background-image: url(icons/flag.svg)
+    content: url(icons/flag.svg)
 }
 
 .ilocation {
-    background-image: url(icons/location.svg)
+    content: url(icons/location.svg)
 }
 
 .ithumbs-down {
-    background-image: url(icons/thumbs-down.svg)
+    content: url(icons/thumbs-down.svg)
 }
 
 .ithumbs-up {
-    background-image: url(icons/thumbs-up.svg)
+    content: url(icons/thumbs-up.svg)
 }
 
 .ibell {
-    background-image: url(icons/bell.svg)
+    content: url(icons/bell.svg)
 }
 
 .icomment {
-    background-image: url(icons/comment.svg)
+    content: url(icons/comment.svg)
 }
 
 .iapps {
-    background-image: url(icons/apps.svg)
+    content: url(icons/apps.svg)
 }
 
 .ilist {
-    background-image: url(icons/list.svg)
+    content: url(icons/list.svg)
 }
 
 .imenu {
-    background-image: url(icons/menu.svg)
+    content: url(icons/menu.svg)
 }
 
 .imenu-outline {
-    background-image: url(icons/menu-outline.svg)
+    content: url(icons/menu-outline.svg)
 }
 
 .icamera {
-    background-image: url(icons/camera.svg)
+    content: url(icons/camera.svg)
+}
+
+i {
+    width: 25px;
+    height: 25px;
 }input:focus,
 textarea:focus,
 select:focus {
@@ -3889,6 +3890,7 @@ select:focus {
 }
 
 .inp {
+    display: inline-flex;
     width: auto;
     padding: var(--pad3);
     background-color: var(--bg2);
@@ -3898,6 +3900,7 @@ select:focus {
     font: 500 var(--fnts3) var(--fntf1);
     border: var(--bdr1);
     color: var(--t2);
+    min-width: 100px;
 }
 
 ::placeholder {
@@ -3916,18 +3919,16 @@ select:focus {
     /* Microsoft Edge */
     color: var(--t5);
 }.ul,
-.ul-bdr,
-.ul-cnt,
-.ul-cnt-bdr {
+.ul-cnt {
     list-style-type: none;
     width: auto;
     padding-inline-start: 0;
     margin: var(--mrg3) 0;
     padding: 0;
+    border-radius: var(--br1);
 }
 
-.ul li,
-.ul-bdr li {
+.ul li {
     color: var(--t5);
     text-decoration: none;
     height: auto;
@@ -3938,8 +3939,7 @@ select:focus {
     cursor: pointer;
 }
 
-.ul-cnt li,
-.ul-cnt-bdr li {
+.ul-cnt li {
     color: var(--t5);
     text-decoration: none;
     height: auto;
@@ -3951,26 +3951,22 @@ select:focus {
     align-items: center;
 }
 
-.ul-cnt li a,
-.ul-cnt-bdr li a {
+.ul-cnt li a {
     margin: var(--mrg2) 0;
 }
 
-.ul li span,
-.ul-bdr li span {
-    font-size: var(--fnts4);
+.ul li span {
+    font-size: var(--fnts2);
     color: var(--t5);
 }
 
-.ul-bdr li+li,
-.ul-cnt-bdr li+li {
+.ul li+li,
+.ul-cnt li+li {
     border-top: var(--bdr2);
 }
 
 .ul li:hover,
-.ul-bdr li:hover,
-.ul-cnt li:hover,
-.ul-cnt-bdr li:hover {
+.ul-cnt li:hover {
     color: var(--t1);
 }nav {
     background-color: var(--bg2);
@@ -4023,6 +4019,27 @@ select:focus {
 .nav-item:hover {
     opacity: 100%;
     cursor: pointer;
+}.path {
+    display: inline-flex;
+    list-style-type: none;
+    width: auto;
+    padding-inline-start: 0;
+}
+
+.path-item {
+    color: var(--a1);
+}
+
+.path-item:hover {
+    cursor: pointer;
+    color: var(--t1);
+}
+
+.path-item+.path-item::before {
+    content: var(--path-divider);
+    margin: 0 var(--mrg2);
+    color: var(--t5);
+    cursor: text;
 }.table th {
     color: var(--t1);
 }
@@ -4032,9 +4049,9 @@ select:focus {
 }.tag,
 .tagh {
     border: 1px solid transparent;
-    padding: 0 var(--pad2);
-    box-shadow: var(--box2);
-    border-radius: var(--br4);
+    padding: var(--pad1) var(--pad2);
+    box-shadow: var(--box1);
+    border-radius: var(--br6);
     margin: var(--mrg1);
     font-size: var(--fnts3);
     color: var(--t3);
@@ -4042,7 +4059,7 @@ select:focus {
 }
 
 .tagh:hover {
-    box-shadow: var(--box3);
+    box-shadow: var(--box2);
     cursor: default;
     opacity: 90%;
 }/* The toggle - Area around the slider */

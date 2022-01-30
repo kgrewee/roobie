@@ -1,8 +1,7 @@
 .btn,
 .btnh,
 .btnp,
-.btns,
-.btnt {
+.btns {
     width: auto;
     height: auto;
     padding: var(--pad2);
@@ -11,12 +10,16 @@
     margin: var(--mrg1);
     cursor: pointer;
     color: var(--t2);
-    display: inline-block;
+    display: inline-flex;
+    border: none;
+    font-size: var(--fnts3);
+    font-family: var(--fntf1);
 }
 
 .btn,
 .btnh {
-    background-color: var(--bg5);
+    background-color: var(--bg1);
+    border: var(--bdr1);
 }
 
 .btnp {
@@ -27,13 +30,8 @@
     background-color: var(--secondary);
 }
 
-.btnt {
-    background-color: var(--tertiary);
-}
-
 .btnh:hover,
 .btnp:hover,
-.btns:hover,
-.btnt:hover {
+.btns:hover {
     opacity: 85%;
 }

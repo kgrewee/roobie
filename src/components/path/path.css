@@ -1,0 +1,22 @@
+.path {
+    display: inline-flex;
+    list-style-type: none;
+    width: auto;
+    padding-inline-start: 0;
+}
+
+.path-item {
+    color: var(--a1);
+}
+
+.path-item:hover {
+    cursor: pointer;
+    color: var(--t1);
+}
+
+.path-item+.path-item::before {
+    content: var(--path-divider);
+    margin: 0 var(--mrg2);
+    color: var(--t5);
+    cursor: text;
+}

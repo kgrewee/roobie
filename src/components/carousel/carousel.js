@@ -15,8 +15,8 @@ function currentSlide(n) {
 
 function showSlides(n) {
     var i;
-    var slides = document.getElementsByClassName("car-slide");
-    var dots = document.getElementsByClassName("car-dot");
+    var slides = document.getElementsByClassName("carousel-slide");
+    var dots = document.getElementsByClassName("carousel-dot");
     if (n > slides.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length }
     for (i = 0; i < slides.length; i++) {

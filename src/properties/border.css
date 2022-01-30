@@ -36,34 +36,24 @@ Dev: Border of an element
 
 /* Status */
 
-.bdr-s1 {
+.bdr-success {
     border: 1px solid var(--t2);
-    border-color: var(--s1) !important;
+    border-color: var(--success) !important;
 }
 
-.bdr-s2 {
+.bdr-warning {
     border: 1px solid var(--t2);
-    border-color: var(--s2) !important;
+    border-color: var(--warning) !important;
 }
 
-.bdr-s3 {
+.bdr-danger {
     border: 1px solid var(--t2);
-    border-color: var(--s3) !important;
+    border-color: var(--danger) !important;
 }
 
-.bdr-s4 {
+.bdr-info {
     border: 1px solid var(--t2);
-    border-color: var(--s4) !important;
-}
-
-.bdr-s5 {
-    border: 1px solid var(--t2);
-    border-color: var(--s5) !important;
-}
-
-.bdr-s6 {
-    border: 1px solid var(--t2);
-    border-color: var(--s6) !important;
+    border-color: var(--info) !important;
 }
 
 

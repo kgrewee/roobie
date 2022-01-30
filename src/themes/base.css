@@ -1,5 +1,11 @@
 :root {
+    /*Status*/
+    --success: rgb(75, 181, 67);
+    --warning: rgb(255, 102, 0);
+    --danger: rgb(243, 32, 19);
+    --info: rgb(135, 206, 235);
     --animation-duration: 1.5s;
+    --path-divider: '/';
     /*Font Family*/
     --fntf1: 'Ubuntu', sans-serif;
     --fntf2: 'Open Sans', sans-serif;
@@ -34,7 +40,7 @@
     --br3: 6px;
     --br4: 8px;
     --br5: 10px;
-    --br6: 12px;
+    --br6: 15px;
     /*Padding*/
     --pad1: 3px;
     --pad2: 5px;

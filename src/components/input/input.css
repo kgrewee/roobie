@@ -6,6 +6,7 @@ select:focus {
 }
 
 .inp {
+    display: inline-flex;
     width: auto;
     padding: var(--pad3);
     background-color: var(--bg2);
@@ -15,6 +16,7 @@ select:focus {
     font: 500 var(--fnts3) var(--fntf1);
     border: var(--bdr1);
     color: var(--t2);
+    min-width: 100px;
 }
 
 ::placeholder {

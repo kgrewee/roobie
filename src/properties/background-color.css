@@ -37,18 +37,22 @@ Dev: Background color of an element
 
 .bg-success {
     background-color: var(--success) !important;
+    color: var(--black) !important;
 }
 
 .bg-warning {
     background-color: var(--warning) !important;
+    color: var(--black) !important;
 }
 
 .bg-danger {
     background-color: var(--danger) !important;
+    color: var(--black) !important;
 }
 
 .bg-info {
     background-color: var(--info) !important;
+    color: var(--black) !important;
 }
 
 

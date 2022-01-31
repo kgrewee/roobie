@@ -133,3 +133,7 @@ span,
 p {
     color: var(--t3);
 }
+
+.active {
+    background-color: var(--bg6) !important;
+}

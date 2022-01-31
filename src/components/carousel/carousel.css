@@ -76,7 +76,6 @@
     display: inline-block;
 }
 
-.active,
 .carousel-dot:hover {
     background-color: var(--bg6);
 }

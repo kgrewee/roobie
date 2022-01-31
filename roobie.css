@@ -1699,6 +1699,10 @@ p {
 span,
 p {
     color: var(--t3);
+}
+
+.active {
+    background-color: var(--bg6) !important;
 }[theme="dark"] {
     --primary: var(--blue2);
     --secondary: var(--bg4);
@@ -3408,6 +3412,49 @@ p {
 ._zoomout {
     animation-name: zoomout;
     animation-duration: var(--animation-duration);
+}/* Style the buttons that are used to open and close the accordion panel */
+
+.accordion {
+    width: 100%;
+}
+
+.accordion-header {
+    background-color: var(--bg2);
+    color: var(--t2);
+    cursor: pointer;
+    padding: var(--pad5);
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: var(--fnts3);
+    transition: 0.5s ease-in-out;
+}
+
+.accordion-header:hover {
+    background-color: var(--bg4);
+}
+
+.accordion-panel {
+    width: 100%;
+    padding: var(--pad4);
+    background-color: var(--bg3);
+    display: none;
+    overflow: hidden;
+}
+
+.accordion-header:after {
+    content: " ";
+    border: 7px solid transparent;
+    border-color: transparent transparent transparent var(--t1);
+    float: right;
+}
+
+.accordion-header.active:after {
+    content: " ";
+    margin-top: 5px;
+    border: 7px solid transparent;
+    border-color: var(--t1) transparent transparent transparent;
 }.btn,
 .btnh,
 .btnp,
@@ -3523,7 +3570,6 @@ p {
     display: inline-block;
 }
 
-.active,
 .carousel-dot:hover {
     background-color: var(--bg6);
 }/* Containers with auto width */

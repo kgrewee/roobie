@@ -561,7 +561,8 @@ Dev: Box shadow of an element
     box-shadow: var(--box6);
 }
 
-.boxh:hover {
+.boxh:hover,
+.boxh:focus {
     box-shadow: var(--box3);
 }
 
@@ -596,7 +597,8 @@ Dev: Box shadow of an element
     box-shadow: var(--in6);
 }
 
-.inh:hover {
+.inh:hover,
+.inh:focus {
     box-shadow: var(--in3);
 }/* 
 Name: Color
@@ -1565,10 +1567,10 @@ Dev
     z-index: var(--z6);
 }:root {
     /*Status*/
-    --success: rgb(75, 181, 67);
-    --warning: rgb(255, 102, 0);
-    --danger: rgb(243, 32, 19);
-    --info: rgb(135, 206, 235);
+    --success: rgb(87, 199, 79);
+    --warning: rgb(235, 119, 42);
+    --danger: rgb(248, 62, 52);
+    --info: rgb(152, 217, 243);
     --animation-duration: 1.5s;
     --path-divider: '/';
     /*Font Family*/
@@ -3861,9 +3863,10 @@ select:focus {
     outline: none !important;
 }
 
-.inp {
+.inp,
+.inp-expand {
     display: inline-flex;
-    width: auto;
+    width: 250px;
     padding: var(--pad3);
     background-color: var(--bg2);
     border-radius: var(--br4);
@@ -3872,7 +3875,12 @@ select:focus {
     font: 500 var(--fnts3) var(--fntf1);
     border: var(--bdr1);
     color: var(--t2);
-    min-width: 100px;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+}
+
+.inp-expand:focus {
+    width: 500px;
 }
 
 ::placeholder {
@@ -3957,6 +3965,7 @@ select:focus {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 0 var(--pad2);
 }
 
 .nav-col {
@@ -3964,6 +3973,7 @@ select:focus {
     width: auto;
     display: flex;
     flex-direction: column;
+    padding: 0 var(--pad2);
 }
 
 .nav-title {
@@ -3971,6 +3981,7 @@ select:focus {
     font-size: var(--fnts4);
     color: var(--t1);
     font-weight: bold;
+    text-decoration: none;
 }
 
 .nav-head {

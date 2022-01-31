@@ -5,9 +5,10 @@ select:focus {
     outline: none !important;
 }
 
-.inp {
+.inp,
+.inp-expand {
     display: inline-flex;
-    width: auto;
+    width: 250px;
     padding: var(--pad3);
     background-color: var(--bg2);
     border-radius: var(--br4);
@@ -16,7 +17,12 @@ select:focus {
     font: 500 var(--fnts3) var(--fntf1);
     border: var(--bdr1);
     color: var(--t2);
-    min-width: 100px;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+}
+
+.inp-expand:focus {
+    width: 500px;
 }
 
 ::placeholder {

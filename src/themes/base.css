@@ -1,9 +1,9 @@
 :root {
     /*Status*/
-    --success: rgb(75, 181, 67);
-    --warning: rgb(255, 102, 0);
-    --danger: rgb(243, 32, 19);
-    --info: rgb(135, 206, 235);
+    --success: rgb(87, 199, 79);
+    --warning: rgb(235, 119, 42);
+    --danger: rgb(248, 62, 52);
+    --info: rgb(152, 217, 243);
     --animation-duration: 1.5s;
     --path-divider: '/';
     /*Font Family*/

@@ -17,9 +17,10 @@
     background-color: var(--primary);
 }
 
-.is-selected {
+.is-selected,
+.select-items div:hover {
     background-color: var(--primary);
-    filter: brightness(150%);
+    filter: brightness(130%);
 }
 
 
@@ -66,9 +67,4 @@
     left: 0;
     right: 0;
     z-index: var(--z6);
-}
-
-.select-items div:hover {
-    background-color: var(--primary);
-    filter: brightness(150%);
 }

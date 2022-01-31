@@ -3637,7 +3637,8 @@ p {
 .drp-cnt {
     display: none;
     position: absolute;
-    top: 20px;
+    top: 100%;
+    left: 0;
     background-color: var(--bg1);
     min-width: var(--drp-min-width);
     width: auto;
@@ -4048,9 +4049,10 @@ select:focus {
     background-color: var(--primary);
 }
 
-.is-selected {
+.is-selected,
+.select-items div:hover {
     background-color: var(--primary);
-    filter: brightness(150%);
+    filter: brightness(130%);
 }
 
 
@@ -4097,11 +4099,6 @@ select:focus {
     left: 0;
     right: 0;
     z-index: var(--z6);
-}
-
-.select-items div:hover {
-    background-color: var(--primary);
-    filter: brightness(150%);
 }.table th {
     color: var(--t1);
 }

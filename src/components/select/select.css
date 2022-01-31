@@ -18,7 +18,8 @@
 }
 
 .is-selected {
-    font-weight: var(--fntw5);
+    background-color: var(--primary);
+    filter: brightness(150%);
 }
 
 
@@ -68,5 +69,6 @@
 }
 
 .select-items div:hover {
-    opacity: 85%;
+    background-color: var(--primary);
+    filter: brightness(150%);
 }

@@ -449,24 +449,28 @@ function showSlides(n) {
             /* When an option is clicked, update the original select box,
             and the select-selected item */
             optionItem.addEventListener("click", function(e) {
-                var y, i, k, s, h, sl, yl;
-                s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-                sl = s.length;
-                h = this.parentNode.previousSibling;
-                for (i = 0; i < sl; i++) {
-                    if (s.options[i].innerHTML == this.innerHTML) {
-                        s.selectedIndex = i;
-                        h.innerHTML = this.innerHTML;
-                        y = this.parentNode.getElementsByClassName("is-selected");
-                        yl = y.length;
-                        for (k = 0; k < yl; k++) {
-                            y[k].removeAttribute("class");
+                let i = 0;
+                let selectBox = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                let selectedItem = this.parentNode.previousSibling;
+                for (let option of selectBox.options) {
+                    if (option.innerHTML == this.innerHTML) {
+                        // Set the index and selected item
+                        selectBox.selectedIndex = i;
+                        selectedItem.innerHTML = this.innerHTML;
+
+                        // Remove the previously selected item
+                        let removeSelected = this.parentNode.getElementsByClassName("is-selected");
+                        for (let item of removeSelected) {
+                            item.removeAttribute("class");
                         }
+
+                        // Updated the select item
                         this.setAttribute("class", "is-selected");
                         break;
                     }
+                    i++;
                 }
-                h.click();
+                selectedItem.click();
             });
 
             optionList.appendChild(optionItem);

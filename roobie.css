@@ -4241,13 +4241,7 @@ select:focus {
 
 .toggle .slider.round:before {
     border-radius: 50%;
-}.tooltip {
-    position: relative;
-    display: inline-block;
-    color: var(--t2);
-}
-
-.tooltip .tooltiptxt {
+}.tooltip-text {
     visibility: hidden;
     min-width: 120px;
     background-color: var(--bg2);
@@ -4256,42 +4250,40 @@ select:focus {
     border-radius: var(--br3);
     position: absolute;
     z-index: 1;
+    pointer-events: none;
 }
 
-
-/* Show the tooltip text when you mouse over the tooltip container */
-
-.tooltip:hover .tooltiptxt {
+.tooltip:hover .tooltip-text {
     visibility: visible;
     animation-name: fade;
     animation-duration: .5s;
 }
 
-.tooltipr .tooltiptxt {
+.tooltip-right {
     top: -10px;
     left: 105%;
 }
 
-.tooltipl .tooltiptxt {
+.tooltip-left {
     top: -10px;
     right: 105%;
 }
 
-.tooltipt .tooltiptxt {
+.tooltip-top {
     width: 120px;
     bottom: 100%;
     left: 50%;
     margin-left: -60px;
 }
 
-.tooltipb .tooltiptxt {
+.tooltip-bottom {
     width: 120px;
     top: 100%;
     left: 50%;
     margin-left: -60px;
 }
 
-.tooltipt .tooltiptxt::after {
+.tooltipt-top::after {
     content: " ";
     position: absolute;
     top: 100%;
@@ -4302,7 +4294,7 @@ select:focus {
     border-color: var(--bg2) transparent transparent transparent;
 }
 
-.tooltipb .tooltiptxt::after {
+.tooltip-bottom::after {
     content: " ";
     position: absolute;
     bottom: 100%;
@@ -4313,7 +4305,7 @@ select:focus {
     border-color: transparent transparent var(--bg2) transparent;
 }
 
-.tooltipl .tooltiptxt::after {
+.tooltip-left::after {
     content: " ";
     position: absolute;
     top: 50%;
@@ -4324,7 +4316,7 @@ select:focus {
     border-color: transparent transparent transparent var(--bg2);
 }
 
-.tooltipr .tooltiptxt::after {
+.tooltip-right::after {
     content: " ";
     position: absolute;
     top: 50%;

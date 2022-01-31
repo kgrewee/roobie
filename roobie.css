@@ -3430,7 +3430,7 @@ p {
 .btns {
     width: auto;
     height: auto;
-    padding: var(--pad2);
+    padding: var(--pad3);
     text-decoration: none;
     border-radius: var(--br2);
     margin: var(--mrg1);

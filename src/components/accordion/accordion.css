@@ -23,10 +23,12 @@
 
 .accordion-panel {
     width: 100%;
-    padding: var(--pad4);
     background-color: var(--bg3);
     display: none;
+    padding: var(--pad4);
     overflow: hidden;
+    animation-name: fade;
+    animation-duration: 0.5s;
 }
 
 .accordion-header:after {
@@ -34,11 +36,11 @@
     border: 7px solid transparent;
     border-color: transparent transparent transparent var(--t1);
     float: right;
+    transition: 0.5s ease-in-out;
 }
 
 .accordion-header.active:after {
     content: " ";
     margin-top: 5px;
-    border: 7px solid transparent;
-    border-color: var(--t1) transparent transparent transparent;
+    transform: rotate(90deg);
 }

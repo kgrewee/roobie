@@ -1,7 +1,4 @@
-.btn,
-.btnh,
-.btnp,
-.btns {
+.btn {
     width: auto;
     height: auto;
     padding: var(--pad3);
@@ -14,25 +11,42 @@
     border: none;
     font-size: var(--fnts3);
     font-family: var(--fntf1);
-}
-
-.btn,
-.btnh {
     background-color: var(--bg1);
-    border: var(--bdr1);
 }
 
-.btnp {
+.btn:hover {
+    background-color: currentBackgroundColor;
+    filter: brightness(95%);
+}
+
+.btn-primary {
     background-color: var(--primary);
 }
 
-.btns {
+.btn-secondary {
     background-color: var(--secondary);
 }
 
-.btnh:hover,
-.btnp:hover,
-.btns:hover {
-    background-color: currentBackgroundColor;
-    filter: brightness(90%);
+.btn-outline {
+    border: var(--bdr1);
+}
+
+.btn-success {
+    background-color: var(--success);
+    color: var(--black);
+}
+
+.btn-warning {
+    background-color: var(--warning);
+    color: var(--black);
+}
+
+.btn-danger {
+    background-color: var(--danger);
+    color: var(--black);
+}
+
+.btn-info {
+    background-color: var(--info);
+    color: var(--black);
 }

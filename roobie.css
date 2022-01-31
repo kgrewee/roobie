@@ -131,22 +131,18 @@ Dev: Background color of an element
 
 .bg-success {
     background-color: var(--success) !important;
-    color: var(--black) !important;
 }
 
 .bg-warning {
     background-color: var(--warning) !important;
-    color: var(--black) !important;
 }
 
 .bg-danger {
     background-color: var(--danger) !important;
-    color: var(--black) !important;
 }
 
 .bg-info {
     background-color: var(--info) !important;
-    color: var(--black) !important;
 }
 
 
@@ -348,22 +344,22 @@ Dev: Border of an element
 /* Status */
 
 .bdr-success {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--success) !important;
 }
 
 .bdr-warning {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent!important;
     border-color: var(--warning) !important;
 }
 
 .bdr-danger {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--danger) !important;
 }
 
 .bdr-info {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--info) !important;
 }
 
@@ -371,52 +367,52 @@ Dev: Border of an element
 /* Shade 1 */
 
 .bdr-white {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--white) !important;
 }
 
 .bdr-black {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--black) !important;
 }
 
 .bdr-grey {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--grey) !important;
 }
 
 .bdr-red {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--red) !important;
 }
 
 .bdr-orange {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--orange) !important;
 }
 
 .bdr-yellow {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--yellow) !important;
 }
 
 .bdr-green {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--green) !important;
 }
 
 .bdr-blue {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--blue) !important;
 }
 
 .bdr-indigo {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--indigo) !important;
 }
 
 .bdr-violet {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--violet) !important;
 }
 
@@ -424,52 +420,52 @@ Dev: Border of an element
 /* Shade 2 */
 
 .bdr-white2 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--white2) !important;
 }
 
 .bdr-black2 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--black2) !important;
 }
 
 .bdr-grey2 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--grey2) !important;
 }
 
 .bdr-red2 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--red2) !important;
 }
 
 .bdr-orange2 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--orange2) !important;
 }
 
 .bdr-yellow2 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--yellow2) !important;
 }
 
 .bdr-green2 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--green2) !important;
 }
 
 .bdr-blue2 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--blue2) !important;
 }
 
 .bdr-indigo2 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--indigo2) !important;
 }
 
 .bdr-violet2 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--violet2) !important;
 }
 
@@ -477,52 +473,52 @@ Dev: Border of an element
 /* Shade 3 */
 
 .bdr-white3 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--white3) !important;
 }
 
 .bdr-black3 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--black3) !important;
 }
 
 .bdr-grey3 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--grey3) !important;
 }
 
 .bdr-red3 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--red3) !important;
 }
 
 .bdr-orange3 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--orange3) !important;
 }
 
 .bdr-yellow3 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--yellow3) !important;
 }
 
 .bdr-green3 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--green3) !important;
 }
 
 .bdr-blue3 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--blue3) !important;
 }
 
 .bdr-indigo3 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--indigo3) !important;
 }
 
 .bdr-violet3 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--violet3) !important;
 }/* 
 Name: Box Shadow
@@ -3457,10 +3453,7 @@ p {
     content: " ";
     margin-top: 5px;
     transform: rotate(90deg);
-}.btn,
-.btnh,
-.btnp,
-.btns {
+}.btn {
     width: auto;
     height: auto;
     padding: var(--pad3);
@@ -3473,27 +3466,44 @@ p {
     border: none;
     font-size: var(--fnts3);
     font-family: var(--fntf1);
-}
-
-.btn,
-.btnh {
     background-color: var(--bg1);
-    border: var(--bdr1);
 }
 
-.btnp {
+.btn:hover {
+    background-color: currentBackgroundColor;
+    filter: brightness(95%);
+}
+
+.btn-primary {
     background-color: var(--primary);
 }
 
-.btns {
+.btn-secondary {
     background-color: var(--secondary);
 }
 
-.btnh:hover,
-.btnp:hover,
-.btns:hover {
-    background-color: currentBackgroundColor;
-    filter: brightness(90%);
+.btn-outline {
+    border: var(--bdr1);
+}
+
+.btn-success {
+    background-color: var(--success);
+    color: var(--black);
+}
+
+.btn-warning {
+    background-color: var(--warning);
+    color: var(--black);
+}
+
+.btn-danger {
+    background-color: var(--danger);
+    color: var(--black);
+}
+
+.btn-info {
+    background-color: var(--info);
+    color: var(--black);
 }* {
     box-sizing: border-box;
 }

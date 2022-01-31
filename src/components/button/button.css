@@ -33,5 +33,6 @@
 .btnh:hover,
 .btnp:hover,
 .btns:hover {
-    opacity: 85%;
+    background-color: currentBackgroundColor;
+    filter: brightness(90%);
 }

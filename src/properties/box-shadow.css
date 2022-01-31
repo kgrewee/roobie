@@ -50,16 +50,6 @@ Dev: Box shadow of an element
     box-shadow: var(--box3);
 }
 
-.boxh:focus,
-.box1h:focus,
-.box2h:focus,
-.box3h:focus,
-.box4h:focus,
-.box5h:focus,
-.box6h:focus {
-    box-shadow: var(--box4);
-}
-
 .in0 {
     box-shadow: none !important;
 }
@@ -104,14 +94,4 @@ Dev: Box shadow of an element
 .in5h:hover,
 .in6h:hover {
     box-shadow: var(--in3);
-}
-
-.inh:focus,
-.in1h:focus,
-.in2h:focus,
-.in3h:focus,
-.in4h:focus,
-.in5h:focus,
-.in6h:focus {
-    box-shadow: var(--in4);
 }

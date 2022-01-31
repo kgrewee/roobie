@@ -40,13 +40,13 @@ nav {
 .nav-item {
     padding: var(--pad3);
     margin: 0;
-    opacity: 80%;
     height: 100%;
     text-decoration: none;
     color: var(--t2);
+    cursor: pointer;
 }
 
 .nav-item:hover {
-    opacity: 100%;
-    cursor: pointer;
+    color: 'currentColor';
+    filter: opacity(80%);
 }

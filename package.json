@@ -1,6 +1,6 @@
 {
     "name": "roobie",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "description": "Centralized CSS and JavaScript for Advanced Web Development.",
     "author": "Kyle Grewe",
     "license": "MIT",
@@ -42,6 +42,7 @@
         "roobie.min.css",
         "roobie.min.js",
         "images/",
-        "icons/"
+        "icons/",
+        "examples/"
     ]
 }

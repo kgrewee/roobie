@@ -53,10 +53,12 @@ A few examples... these don't even scratch the surface.  Fully customized HTML w
 **Button**
 ```shell
 <a class="btn">Button</a>
-<a class="btnh">Button with hover</a>
-<a class="btnp">Primary</a>
-<a class="btns">Secondary</a>
-<a class="btnt">Tertiary</a>
+<a class="btn btn-primary">Primary</a>
+<a class="btn btn-secondary">Secondary</a>
+<a class="btn btn-success">Success</a>
+<a class="btn btn-warning">Warning</a>
+<a class="btn btn-danger">Danger</a>
+<a class="btn btn-info">Info</a>
 ```
 
 **Container**

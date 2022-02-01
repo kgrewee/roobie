@@ -4,6 +4,14 @@ Prefix:
 Dev: We use a flex based layouts most
 */
 
+.hide {
+    display: none;
+}
+
+.show {
+    display: inline-flex;
+}
+
 .flx {
     display: flex;
 }

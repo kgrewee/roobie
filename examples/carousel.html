@@ -12,40 +12,65 @@
 
 <body>
     <header class="div flx-col aln-center bg6">
-        <div class="div6 fade">
+        <div class="div6 _fade">
             <h1>Carousel</h1>
             <p class="fnts4">Interactive image slider.</p>
         </div>
     </header>
     <main>
         <div class="div flx-col aln-center">
-            <div class="div6 flx-col aln-start mrgv fade">
-                <a class="btnh boxh mrgv" href="index.html">Back to home</a>
+            <div class="div6 flx-col aln-start mrgv _fade">
+                <a class="btn btn-secondary mrgv" href="index.html">Back to home</a>
                 <h2>Basic</h2>
-                <div class="carousel">
-                    <div class="carousel-slide fade">
-                        <img src="../images/summer.jpg" style="height: 500px">
-                        <div class="carousel-txt white">Summer</div>
+                <div class="div flx-row aln-start mrgv bdr1 pad5 br wrp">
+                    <div id="carouselBasic" class="carousel">
+                        <div class="carousel-slide _fade">
+                            <img src="../images/summer.jpg" style="height: 500px">
+                        </div>
+                        <div class="carousel-slide _fade">
+                            <img src="../images/blue-sky-sea.jpg" style="height: 500px">
+                        </div>
+                        <div class="carousel-slide _fade">
+                            <img src="../images/fish.jpg" style="height: 500px">
+                        </div>
+                        <a class="carousel-previous">&#10094;</a>
+                        <a class="carousel-next">&#10095;</a>
                     </div>
-
-                    <div class="carousel-slide fade">
-                        <img src="../images/blue-sky-sea.jpg" style="height: 500px">
-                        <div class="carousel-txt white">Deep Blue Sea</div>
+                    <div id="carouselBasic2" class="carousel" index="1">
+                        <div class="carousel-slide _fade">
+                            <img src="../images/summer.jpg" style="height: 500px">
+                        </div>
+                        <div class="carousel-slide _fade">
+                            <img src="../images/blue-sky-sea.jpg" style="height: 500px">
+                        </div>
+                        <div class="carousel-slide _fade">
+                            <img src="../images/fish.jpg" style="height: 500px">
+                        </div>
+                        <a class="carousel-previous">&#10094;</a>
+                        <a class="carousel-next">&#10095;</a>
                     </div>
-
-                    <div class="carousel-slide fade">
-                        <img src="../images/fish.jpg" style="height: 500px">
-                        <div class="carousel-txt white">Fish</div>
-                    </div>
-
-                    <a class="carousel-prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="carousel-next" onclick="plusSlides(1)">&#10095;</a>
-
-                    <div class="div mrgv flx-col aln-center">
-                        <div class="flx-row">
-                            <span class="carousel-dot" onclick="currentSlide(1)"></span>
-                            <span class="carousel-dot" onclick="currentSlide(2)"></span>
-                            <span class="carousel-dot" onclick="currentSlide(3)"></span>
+                </div>
+                <h2>Indicators</h2>
+                <div class="div flx-row mrgv bdr1 pad5 br wrp">
+                    <div id="carouselIndicator" class="carousel" index="2">
+                        <div class="carousel-slide _fade">
+                            <img src="../images/summer.jpg" style="height: 500px">
+                            <div class="carousel-text white">Summer</div>
+                        </div>
+                        <div class="carousel-slide _fade">
+                            <img src="../images/blue-sky-sea.jpg" style="height: 500px">
+                            <div class="carousel-text white">Deep Blue Sea</div>
+                        </div>
+                        <div class="carousel-slide _fade">
+                            <img src="../images/fish.jpg" style="height: 500px">
+                            <div class="carousel-text white">Fish</div>
+                        </div>
+                        <a class="carousel-previous">&#10094;</a>
+                        <a class="carousel-next">&#10095;</a>
+                        <div class="carousel-indicators">
+                            <span index="0"></span>
+                            <span index="1"></span>
+                            <span index="2"></span>
                         </div>
                     </div>
                 </div>

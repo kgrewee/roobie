@@ -344,22 +344,22 @@ Dev: Border of an element
 /* Status */
 
 .bdr-success {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--success) !important;
 }
 
 .bdr-warning {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent!important;
     border-color: var(--warning) !important;
 }
 
 .bdr-danger {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--danger) !important;
 }
 
 .bdr-info {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--info) !important;
 }
 
@@ -367,52 +367,52 @@ Dev: Border of an element
 /* Shade 1 */
 
 .bdr-white {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--white) !important;
 }
 
 .bdr-black {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--black) !important;
 }
 
 .bdr-grey {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--grey) !important;
 }
 
 .bdr-red {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--red) !important;
 }
 
 .bdr-orange {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--orange) !important;
 }
 
 .bdr-yellow {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--yellow) !important;
 }
 
 .bdr-green {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--green) !important;
 }
 
 .bdr-blue {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--blue) !important;
 }
 
 .bdr-indigo {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--indigo) !important;
 }
 
 .bdr-violet {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--violet) !important;
 }
 
@@ -420,52 +420,52 @@ Dev: Border of an element
 /* Shade 2 */
 
 .bdr-white2 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--white2) !important;
 }
 
 .bdr-black2 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--black2) !important;
 }
 
 .bdr-grey2 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--grey2) !important;
 }
 
 .bdr-red2 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--red2) !important;
 }
 
 .bdr-orange2 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--orange2) !important;
 }
 
 .bdr-yellow2 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--yellow2) !important;
 }
 
 .bdr-green2 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--green2) !important;
 }
 
 .bdr-blue2 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--blue2) !important;
 }
 
 .bdr-indigo2 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--indigo2) !important;
 }
 
 .bdr-violet2 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--violet2) !important;
 }
 
@@ -473,52 +473,52 @@ Dev: Border of an element
 /* Shade 3 */
 
 .bdr-white3 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--white3) !important;
 }
 
 .bdr-black3 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--black3) !important;
 }
 
 .bdr-grey3 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--grey3) !important;
 }
 
 .bdr-red3 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--red3) !important;
 }
 
 .bdr-orange3 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--orange3) !important;
 }
 
 .bdr-yellow3 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--yellow3) !important;
 }
 
 .bdr-green3 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--green3) !important;
 }
 
 .bdr-blue3 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--blue3) !important;
 }
 
 .bdr-indigo3 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--indigo3) !important;
 }
 
 .bdr-violet3 {
-    border: 1px solid var(--t2);
+    border: 1px solid transparent !important;
     border-color: var(--violet3) !important;
 }/* 
 Name: Box Shadow
@@ -530,8 +530,7 @@ Dev: Box shadow of an element
     box-shadow: none !important;
 }
 
-.box1,
-.box1h {
+.box1 {
     box-shadow: var(--box1);
 }
 
@@ -542,52 +541,32 @@ Dev: Box shadow of an element
     box-shadow: var(--box2);
 }
 
-.box3,
-.box3h {
+.box3 {
     box-shadow: var(--box3);
 }
 
-.box4,
-.box4h {
+.box4 {
     box-shadow: var(--box4);
 }
 
-.box5,
-.box5h {
+.box5 {
     box-shadow: var(--box5);
 }
 
-.box6,
-.box6h {
+.box6 {
     box-shadow: var(--box6);
 }
 
 .boxh:hover,
-.box1h:hover,
-.box2h:hover,
-.box3h:hover,
-.box4h:hover,
-.box5h:hover,
-.box6h:hover {
+.boxh:focus {
     box-shadow: var(--box3);
-}
-
-.boxh:focus,
-.box1h:focus,
-.box2h:focus,
-.box3h:focus,
-.box4h:focus,
-.box5h:focus,
-.box6h:focus {
-    box-shadow: var(--box4);
 }
 
 .in0 {
     box-shadow: none !important;
 }
 
-.in1,
-.in1h {
+.in1 {
     box-shadow: var(--in1);
 }
 
@@ -598,44 +577,25 @@ Dev: Box shadow of an element
     box-shadow: var(--in2);
 }
 
-.in3,
-.in3h {
+.in3 {
     box-shadow: var(--in3);
 }
 
-.in4,
-.in4h {
+.in4 {
     box-shadow: var(--in4);
 }
 
-.in5,
-.in5h {
+.in5 {
     box-shadow: var(--in5);
 }
 
-.in6,
-.in6h {
+.in6 {
     box-shadow: var(--in6);
 }
 
 .inh:hover,
-.in1h:hover,
-.in2h:hover,
-.in3h:hover,
-.in4h:hover,
-.in5h:hover,
-.in6h:hover {
+.inh:focus {
     box-shadow: var(--in3);
-}
-
-.inh:focus,
-.in1h:focus,
-.in2h:focus,
-.in3h:focus,
-.in4h:focus,
-.in5h:focus,
-.in6h:focus {
-    box-shadow: var(--in4);
 }/* 
 Name: Color
 Prefix: 
@@ -830,6 +790,14 @@ Name: Display
 Prefix:   
 Dev: We use a flex based layouts most
 */
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: inline-flex;
+}
 
 .flx {
     display: flex;
@@ -1595,10 +1563,10 @@ Dev
     z-index: var(--z6);
 }:root {
     /*Status*/
-    --success: rgb(75, 181, 67);
-    --warning: rgb(255, 102, 0);
-    --danger: rgb(243, 32, 19);
-    --info: rgb(135, 206, 235);
+    --success: rgb(87, 199, 79);
+    --warning: rgb(235, 119, 42);
+    --danger: rgb(248, 62, 52);
+    --info: rgb(152, 217, 243);
     --animation-duration: 1.5s;
     --path-divider: '/';
     /*Font Family*/
@@ -1727,6 +1695,10 @@ p {
 span,
 p {
     color: var(--t3);
+}
+
+.active {
+    background-color: var(--bg6) !important;
 }[theme="dark"] {
     --primary: var(--blue2);
     --secondary: var(--bg4);
@@ -3436,13 +3408,63 @@ p {
 ._zoomout {
     animation-name: zoomout;
     animation-duration: var(--animation-duration);
-}.btn,
-.btnh,
-.btnp,
-.btns {
+}.accordion {
+    width: 100%;
+}
+
+
+/* Header that triggers hidden content */
+
+.accordion-header {
+    background-color: var(--bg2);
+    color: var(--t2);
+    cursor: pointer;
+    padding: var(--pad5);
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: var(--fnts3);
+    transition: 0.5s ease-in-out;
+}
+
+.accordion-header:hover {
+    background-color: var(--bg4);
+}
+
+
+/* Icon in header  */
+
+.accordion-header:after {
+    content: " ";
+    border: 7px solid transparent;
+    border-color: transparent transparent transparent var(--t1);
+    float: right;
+    transition: 0.5s ease-in-out;
+}
+
+.accordion-header.active:after {
+    content: " ";
+    margin-top: 5px;
+    transform: rotate(90deg);
+}
+
+
+/* Hidden content */
+
+.accordion-panel {
+    background-color: var(--bg3);
+    display: none;
+    padding: var(--pad4);
+    overflow: hidden;
+    animation-name: fade;
+    animation-duration: 0.5s;
+}/* Base */
+
+.btn {
     width: auto;
     height: auto;
-    padding: var(--pad2);
+    padding: var(--pad3);
     text-decoration: none;
     border-radius: var(--br2);
     margin: var(--mrg1);
@@ -3452,73 +3474,80 @@ p {
     border: none;
     font-size: var(--fnts3);
     font-family: var(--fntf1);
-}
-
-.btn,
-.btnh {
     background-color: var(--bg1);
-    border: var(--bdr1);
 }
 
-.btnp {
+.btn:hover {
+    background-color: currentBackgroundColor;
+    filter: brightness(95%);
+}
+
+
+/* Modifiers */
+
+.btn-primary {
     background-color: var(--primary);
 }
 
-.btns {
+.btn-secondary {
     background-color: var(--secondary);
 }
 
-.btnh:hover,
-.btnp:hover,
-.btns:hover {
-    opacity: 85%;
-}* {
-    box-sizing: border-box;
+.btn-outline {
+    border: var(--bdr1);
 }
 
-.carousel {
+.btn-success {
+    background-color: var(--success);
+    color: var(--black);
+}
+
+.btn-warning {
+    background-color: var(--warning);
+    color: var(--black);
+}
+
+.btn-danger {
+    background-color: var(--danger);
+    color: var(--black);
+}
+
+.btn-info {
+    background-color: var(--info);
+    color: var(--black);
+}.carousel {
     position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: var(--mrg2);
 }
-
-
-/* Hide the images by default */
 
 .carousel-slide {
     display: none;
 }
 
-
-/* Next & previous buttons */
-
-.carousel-prev,
+.carousel-previous,
 .carousel-next {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    width: auto;
-    margin-top: -22px;
+    transform: translate(0, -50%);
     padding: var(--pad3);
     color: var(--t1);
     background-color: var(--bg1);
     font-weight: bold;
     font-size: var(--fnts4);
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 0 var(--br2) var(--br2) 0;
     user-select: none;
 }
 
-
-/* Position the "next button" to the right */
-
 .carousel-next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: var(--br2) 0 0 var(--br2);
 }
 
-
-/* On hover, add a black background */
-
-.carousel-prev:hover,
+.carousel-previous:hover,
 .carousel-next:hover {
     background-color: var(--bg3);
     opacity: 90%;
@@ -3527,7 +3556,7 @@ p {
 
 /* Caption text */
 
-.carousel-txt {
+.carousel-text {
     color: var(--t2);
     font-size: var(--fnts4);
     position: absolute;
@@ -3537,21 +3566,27 @@ p {
 }
 
 
-/* Dots to indicate slide active */
+/* Indicators of active slide */
 
-.carousel-dot {
+.carousel-indicators {
+    z-index: var(--z2);
+    position: relative;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    margin: auto;
+}
+
+.carousel-indicators span {
     cursor: pointer;
-    height: 20px;
-    width: 20px;
+    height: 5px;
+    width: 30px;
     margin: 0 2px;
     background-color: var(--bg3);
-    border-radius: 50%;
     transition: background-color 0.6s ease;
     display: inline-block;
 }
 
-.active,
-.carousel-dot:hover {
+.carousel-indicators span:hover {
     background-color: var(--bg6);
 }/* Containers with auto width */
 
@@ -3648,11 +3683,13 @@ p {
 .drp-cnt {
     display: none;
     position: absolute;
-    top: 20px;
+    top: 100%;
+    left: 0;
     background-color: var(--bg1);
     min-width: var(--drp-min-width);
     width: auto;
     box-shadow: var(--box2);
+    border-radius: var(--br2);
     font-size: var(--fnts3);
     z-index: var(--z1);
 }
@@ -3674,214 +3711,215 @@ p {
     color: var(--t1);
     display: block;
     margin: 0;
+    border-radius: var(--br2);
 }
 
 .drp-cnt a:hover {
-    background-color: var(--bg3);
+    background-color: var(--bg2);
     cursor: pointer;
-}.itrash {
+}.icon {
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.icon-trash {
     content: url(icons/trash.svg)
 }
 
-.iplus {
+.icon-plus {
     content: url(icons/plus.svg)
 }
 
-.iminus {
+.icon-minus {
     content: url(icons/minus.svg)
 }
 
-.iheart-empty {
+.icon-heart-empty {
     content: url(icons/heart-empty.svg)
 }
 
-.iheart {
+.icon-heart {
     content: url(icons/heart.svg);
 }
 
-.imail {
+.icon-mail {
     content: url(icons/mail.svg)
 }
 
-.isearch {
+.icon-search {
     content: url(icons/search.svg)
 }
 
-.istar-empty {
+.icon-star-empty {
     content: url(icons/star-empty.svg)
 }
 
-.istar {
+.icon-star {
     content: url(icons/star.svg)
 }
 
-.iuser {
+.icon-user {
     content: url(icons/user.svg)
 }
 
-.iphone {
+.icon-phone {
     content: url(icons/phone.svg)
 }
 
-.iattach {
+.icon-attach {
     content: url(icons/attach.svg)
 }
 
-.iright {
+.icon-right {
     content: url(icons/right.svg)
 }
 
-.ileft {
+.icon-left {
     content: url(icons/left.svg)
 }
 
-.icog-2 {
+.icon-cog-2 {
     content: url(icons/cog.svg)
 }
 
-.ihelp {
+.icon-help {
     content: url(icons/help.svg)
 }
 
-.ifacebook {
+.icon-facebook {
     content: url(icons/facebook.svg)
 }
 
-.ilinkedin {
+.icon-linkedin {
     content: url(icons/linkedin.svg)
 }
 
-.ileft-open {
+.icon-left-open {
     content: url(icons/left-open.svg)
 }
 
-.iok {
+.icon-ok {
     content: url(icons/ok.svg)
 }
 
-.icancel {
+.icon-cancel {
     content: url(icons/cancel.svg)
 }
 
-.iright-open {
+.icon-right-open {
     content: url(icons/right-open.svg)
 }
 
-.iup-open {
+.icon-up-open {
     content: url(icons/up-open.svg)
 }
 
-.idown-open {
+.icon-down-open {
     content: url(icons/down-open.svg)
 }
 
-.ipause {
+.icon-pause {
     content: url(icons/pause.svg)
 }
 
-.istop {
+.icon-stop {
     content: url(icons/stop.svg)
 }
 
-.iplay {
+.icon-play {
     content: url(icons/play.svg)
 }
 
-.icw {
+.icon-cw {
     content: url(icons/cw.svg)
 }
 
-.iup {
+.icon-up {
     content: url(icons/up.svg)
 }
 
-.idown {
+.icon-down {
     content: url(icons/down.svg)
 }
 
-.izoom-in {
+.icon-zoom-in {
     content: url(icons/zoom-in.svg)
 }
 
-.izoom-out {
+.icon-zoom-out {
     content: url(icons/zoom-out.svg)
 }
 
-.ieject {
+.icon-eject {
     content: url(icons/eject.svg)
 }
 
-.ialign-right {
+.icon-align-right {
     content: url(icons/align-right.svg)
 }
 
-.ialign-center {
+.icon-align-center {
     content: url(icons/align-center.svg);
 }
 
-.ialign-left {
+.icon-align-left {
     content: url(icons/align-left.svg)
 }
 
-.ialign-justify {
+.icon-align-justify {
     content: url(icons/align-justify.svg)
 }
 
-.igithub-text {
+.icon-github-text {
     content: url(icons/github-text.svg)
 }
 
-.igithub {
+.icon-github {
     content: url(icons/github.svg)
 }
 
-.iflag {
+.icon-flag {
     content: url(icons/flag.svg)
 }
 
-.ilocation {
+.icon-location {
     content: url(icons/location.svg)
 }
 
-.ithumbs-down {
+.icon-thumbs-down {
     content: url(icons/thumbs-down.svg)
 }
 
-.ithumbs-up {
+.icon-thumbs-up {
     content: url(icons/thumbs-up.svg)
 }
 
-.ibell {
+.icon-bell {
     content: url(icons/bell.svg)
 }
 
-.icomment {
+.icon-comment {
     content: url(icons/comment.svg)
 }
 
-.iapps {
+.icon-apps {
     content: url(icons/apps.svg)
 }
 
-.ilist {
+.icon-list {
     content: url(icons/list.svg)
 }
 
-.imenu {
+.icon-menu {
     content: url(icons/menu.svg)
 }
 
-.imenu-outline {
+.icon-menu-outline {
     content: url(icons/menu-outline.svg)
 }
 
-.icamera {
+.icon-camera {
     content: url(icons/camera.svg)
-}
-
-i {
-    width: 25px;
-    height: 25px;
 }input:focus,
 textarea:focus,
 select:focus {
@@ -3889,25 +3927,32 @@ select:focus {
     outline: none !important;
 }
 
-.inp {
+.input {
     display: inline-flex;
-    width: auto;
+    width: 250px;
     padding: var(--pad3);
     background-color: var(--bg2);
     border-radius: var(--br4);
     margin: var(--mrg1);
     font-size: var(--fnts4);
     font: 500 var(--fnts3) var(--fntf1);
-    border: var(--bdr1);
+    border: none;
     color: var(--t2);
-    min-width: 100px;
+    transition: width 0.5s ease-in-out;
+}
+
+.input-outline {
+    border: var(--bdr2) !important;
+}
+
+.input-expand:focus {
+    width: 500px;
 }
 
 ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: var(--t5);
     opacity: 1;
-    /* Firefox */
 }
 
  :-ms-input-placeholder {
@@ -3985,6 +4030,7 @@ select:focus {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 0 var(--pad2);
 }
 
 .nav-col {
@@ -3992,6 +4038,7 @@ select:focus {
     width: auto;
     display: flex;
     flex-direction: column;
+    padding: 0 var(--pad2);
 }
 
 .nav-title {
@@ -3999,9 +4046,10 @@ select:focus {
     font-size: var(--fnts4);
     color: var(--t1);
     font-weight: bold;
+    text-decoration: none;
 }
 
-.nav-head {
+.nav-heading {
     margin: var(--mrg1);
     font-size: var(--fnts3);
     color: var(--t1);
@@ -4009,16 +4057,14 @@ select:focus {
 
 .nav-item {
     padding: var(--pad3);
-    margin: 0;
-    opacity: 80%;
-    height: 100%;
     text-decoration: none;
     color: var(--t2);
+    cursor: pointer;
 }
 
 .nav-item:hover {
-    opacity: 100%;
-    cursor: pointer;
+    color: 'currentColor';
+    filter: opacity(80%);
 }.path {
     display: inline-flex;
     list-style-type: none;
@@ -4040,6 +4086,75 @@ select:focus {
     margin: 0 var(--mrg2);
     color: var(--t5);
     cursor: text;
+}.select {
+    position: relative;
+    font-family: Arial;
+    margin: var(--mrg1);
+    width: 200px;
+    font-family: var(--fntf1);
+}
+
+
+/* Hide original select box */
+
+.select select {
+    display: none;
+}
+
+.select-selected {
+    background-color: var(--primary);
+}
+
+.is-selected,
+.select-items div:hover {
+    background-color: var(--primary);
+    filter: brightness(130%);
+}
+
+
+/* Style the arrow inside the select element: */
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: var(--t1) transparent transparent transparent;
+}
+
+
+/* Point the arrow upwards when the select box is open (active): */
+
+.select-selected.select-active:after {
+    border-color: transparent transparent var(--t1) transparent;
+    top: 7px;
+}
+
+
+/* style the items (options), including the select-selected item: */
+
+.select-items div,
+.select-selected {
+    color: var(--t1);
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+
+
+/* Style items (options): */
+
+.select-items {
+    position: absolute;
+    background-color: var(--primary);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: var(--z6);
 }.table th {
     color: var(--t1);
 }
@@ -4129,13 +4244,7 @@ select:focus {
 
 .toggle .slider.round:before {
     border-radius: 50%;
-}.tooltip {
-    position: relative;
-    display: inline-block;
-    color: var(--t2);
-}
-
-.tooltip .tooltiptxt {
+}.tooltip-text {
     visibility: hidden;
     min-width: 120px;
     background-color: var(--bg2);
@@ -4144,42 +4253,34 @@ select:focus {
     border-radius: var(--br3);
     position: absolute;
     z-index: 1;
+    pointer-events: none;
 }
 
-
-/* Show the tooltip text when you mouse over the tooltip container */
-
-.tooltip:hover .tooltiptxt {
-    visibility: visible;
-    animation-name: fade;
-    animation-duration: .5s;
-}
-
-.tooltipr .tooltiptxt {
+.tooltip-right {
     top: -10px;
     left: 105%;
 }
 
-.tooltipl .tooltiptxt {
+.tooltip-left {
     top: -10px;
     right: 105%;
 }
 
-.tooltipt .tooltiptxt {
+.tooltip-top {
     width: 120px;
     bottom: 100%;
     left: 50%;
     margin-left: -60px;
 }
 
-.tooltipb .tooltiptxt {
+.tooltip-bottom {
     width: 120px;
     top: 100%;
     left: 50%;
     margin-left: -60px;
 }
 
-.tooltipt .tooltiptxt::after {
+.tooltipt-top::after {
     content: " ";
     position: absolute;
     top: 100%;
@@ -4190,7 +4291,7 @@ select:focus {
     border-color: var(--bg2) transparent transparent transparent;
 }
 
-.tooltipb .tooltiptxt::after {
+.tooltip-bottom::after {
     content: " ";
     position: absolute;
     bottom: 100%;
@@ -4201,7 +4302,7 @@ select:focus {
     border-color: transparent transparent var(--bg2) transparent;
 }
 
-.tooltipl .tooltiptxt::after {
+.tooltip-left::after {
     content: " ";
     position: absolute;
     top: 50%;
@@ -4212,7 +4313,7 @@ select:focus {
     border-color: transparent transparent transparent var(--bg2);
 }
 
-.tooltipr .tooltiptxt::after {
+.tooltip-right::after {
     content: " ";
     position: absolute;
     top: 50%;

@@ -5,25 +5,32 @@ select:focus {
     outline: none !important;
 }
 
-.inp {
+.input {
     display: inline-flex;
-    width: auto;
+    width: 250px;
     padding: var(--pad3);
     background-color: var(--bg2);
     border-radius: var(--br4);
     margin: var(--mrg1);
     font-size: var(--fnts4);
     font: 500 var(--fnts3) var(--fntf1);
-    border: var(--bdr1);
+    border: none;
     color: var(--t2);
-    min-width: 100px;
+    transition: width 0.5s ease-in-out;
+}
+
+.input-outline {
+    border: var(--bdr2) !important;
+}
+
+.input-expand:focus {
+    width: 500px;
 }
 
 ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: var(--t5);
     opacity: 1;
-    /* Firefox */
 }
 
  :-ms-input-placeholder {

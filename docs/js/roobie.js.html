@@ -355,36 +355,91 @@ function toggleByTag(tagName) {
             }
         });
     }
-});var slideIndex = 1;
-ready(() => {
-    showSlide(slideIndex);
-})
-
-function incrementSlide(n) {
-    showSlide(slideIndex += n);
-}
-
-function showSlide(n) {
-    var i;
-    var slides = document.getElementsByClassName("carousel-slide");
-    var dots = document.getElementsByClassName("carousel-dots");
-    if (n > slides.length) {
-        slideIndex = 1;
+});ready(() => {
+    let carousels = document.getElementsByClassName("carousel");
+    for (let carousel of carousels) {
+        let index = carousel.getAttribute("index");
+        if (index == "" || index == null) {
+            index = 0;
+            carousel.setAttribute("index", "0");
+        }
+        showSlide(carousel.getAttribute("id"), index);
     }
-    if (n &lt; 1) {
-        slideIndex = slides.length;
+
+    // Previous button click event
+    let previousButtons = document.getElementsByClassName("carousel-previous");
+    for (let btn of previousButtons) {
+        btn.addEventListener("click", function(e) {
+            showSlide(this.closest(".carousel").getAttribute("id"), +this.closest(".carousel").getAttribute("index") - 1);
+        });
     }
-    for (i = 0; i &lt; slides.length; i++) {
+
+    // Next button click event
+    let nextButtons = document.getElementsByClassName("carousel-next");
+    for (let btn of nextButtons) {
+        btn.addEventListener("click", function(e) {
+            showSlide(this.closest(".carousel").getAttribute("id"), +this.closest(".carousel").getAttribute("index") + 1);
+        });
+    }
+
+    // Indicator click event
+    let indicatorContainers = document.getElementsByClassName("carousel-indicators");
+    for (let container of indicatorContainers) {
+        for (let indicator of container.children) {
+            indicator.addEventListener("click", function(e) {
+                showSlide(this.closest(".carousel").getAttribute("id"), +this.getAttribute("index"));
+            });
+        }
+    }
+});
+
+/**
+ * Show carousel slide by index.
+ * 
+ * @param {string} id Id of carousel element
+ * @param {number} index Index of slide to show
+ */
+function showSlide(id, index) {
+    debug("Show carousel [Id] " + id + " slides by index " + index);
+    let element = document.getElementById(id);
+
+    // Get carousel slides
+    let slides = element.querySelectorAll(".carousel-slide");
+
+    // Check if the index is out of bounds
+    if (index > slides.length - 1) {
+        index = 0;
+    }
+    if (index &lt; 0) {
+        index = slides.length - 1;
+    }
+
+    // Hide all slides
+    for (let i = 0; i &lt; slides.length; i++) {
         slides[i].style.display = "none";
     }
-    for (i = 0; i &lt; dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    if (slides[slideIndex - 1]) {
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
+
+    // Show slide index
+    if (slides[index]) {
+        slides[index].style.display = "block";
     }
 
+    let indicators = element.querySelectorAll(".carousel-indicators")[0];
+    if (indicators) {
+        indicators = indicators.children;
+        // Remove highlighted indicators
+        for (let i = 0; i &lt; indicators.length; i++) {
+            indicators[i].classList.remove("active");
+        }
+
+        // Highlight active indicator
+        if (indicators[index]) {
+            indicators[index].classList.add("active");
+        }
+    }
+
+    // Update index attribute
+    element.setAttribute("index", index);
 }// Media Queries
 const MEDIAEXPANDS = window.matchMedia('(min-width: 600px)');
 const MEDIACOLLAPSES = window.matchMedia('(max-width: 600px)');
@@ -619,13 +674,13 @@ document.addEventListener("click", closeAllSelect);ready(() => {
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#addAttributeByElement">addAttributeByElement</a></li><li><a href="global.html#addAttributeById">addAttributeById</a></li><li><a href="global.html#addAttributeByTag">addAttributeByTag</a></li><li><a href="global.html#addClassByElement">addClassByElement</a></li><li><a href="global.html#addClassById">addClassById</a></li><li><a href="global.html#animationByElement">animationByElement</a></li><li><a href="global.html#animationById">animationById</a></li><li><a href="global.html#checkMenu">checkMenu</a></li><li><a href="global.html#collapseMenu">collapseMenu</a></li><li><a href="global.html#debug">debug</a></li><li><a href="global.html#expandMenu">expandMenu</a></li><li><a href="global.html#getClass">getClass</a></li><li><a href="global.html#getId">getId</a></li><li><a href="global.html#getLocalStorage">getLocalStorage</a></li><li><a href="global.html#getTag">getTag</a></li><li><a href="global.html#loadById">loadById</a></li><li><a href="global.html#ready">ready</a></li><li><a href="global.html#removeClassByClass">removeClassByClass</a></li><li><a href="global.html#removeClassById">removeClassById</a></li><li><a href="global.html#removeClassByTag">removeClassByTag</a></li><li><a href="global.html#rotateById">rotateById</a></li><li><a href="global.html#setLocalStorage">setLocalStorage</a></li><li><a href="global.html#setStyleByTag">setStyleByTag</a></li><li><a href="global.html#switchTheme">switchTheme</a></li><li><a href="global.html#toggleById">toggleById</a></li><li><a href="global.html#toggleByTag">toggleByTag</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#addAttributeByElement">addAttributeByElement</a></li><li><a href="global.html#addAttributeById">addAttributeById</a></li><li><a href="global.html#addAttributeByTag">addAttributeByTag</a></li><li><a href="global.html#addClassByElement">addClassByElement</a></li><li><a href="global.html#addClassById">addClassById</a></li><li><a href="global.html#animationByElement">animationByElement</a></li><li><a href="global.html#animationById">animationById</a></li><li><a href="global.html#checkMenu">checkMenu</a></li><li><a href="global.html#collapseMenu">collapseMenu</a></li><li><a href="global.html#debug">debug</a></li><li><a href="global.html#expandMenu">expandMenu</a></li><li><a href="global.html#getClass">getClass</a></li><li><a href="global.html#getId">getId</a></li><li><a href="global.html#getLocalStorage">getLocalStorage</a></li><li><a href="global.html#getTag">getTag</a></li><li><a href="global.html#loadById">loadById</a></li><li><a href="global.html#ready">ready</a></li><li><a href="global.html#removeClassByClass">removeClassByClass</a></li><li><a href="global.html#removeClassById">removeClassById</a></li><li><a href="global.html#removeClassByTag">removeClassByTag</a></li><li><a href="global.html#rotateById">rotateById</a></li><li><a href="global.html#setLocalStorage">setLocalStorage</a></li><li><a href="global.html#setStyleByTag">setStyleByTag</a></li><li><a href="global.html#showSlide">showSlide</a></li><li><a href="global.html#switchTheme">switchTheme</a></li><li><a href="global.html#toggleById">toggleById</a></li><li><a href="global.html#toggleByTag">toggleByTag</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.10</a> on Mon Jan 31 2022 23:37:19 GMT-0500 (Eastern Standard Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.10</a> on Tue Feb 01 2022 02:07:33 GMT-0500 (Eastern Standard Time)
 </footer>
 
 <script> prettyPrint(); </script>

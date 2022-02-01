@@ -3518,6 +3518,9 @@ p {
     color: var(--black);
 }.carousel {
     position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: var(--mrg2);
 }
 
 .carousel-slide {
@@ -3529,24 +3532,20 @@ p {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    width: auto;
-    margin-top: -22px;
+    transform: translate(0, -50%);
     padding: var(--pad3);
     color: var(--t1);
     background-color: var(--bg1);
     font-weight: bold;
     font-size: var(--fnts4);
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 0 var(--br2) var(--br2) 0;
     user-select: none;
 }
 
-
-/* Position the "next button" to the right */
-
 .carousel-next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: var(--br2) 0 0 var(--br2);
 }
 
 .carousel-previous:hover,
@@ -3568,20 +3567,27 @@ p {
 }
 
 
-/* Dots to indicate slide active */
+/* Indicators of active slide */
 
-.carousel-dots {
+.carousel-indicators {
+    z-index: var(--z2);
+    position: relative;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    margin: auto;
+}
+
+.carousel-indicators span {
     cursor: pointer;
-    height: 20px;
-    width: 20px;
+    height: 5px;
+    width: 30px;
     margin: 0 2px;
     background-color: var(--bg3);
-    border-radius: 50%;
     transition: background-color 0.6s ease;
     display: inline-block;
 }
 
-.carousel-dots:hover {
+.carousel-indicators span:hover {
     background-color: var(--bg6);
 }/* Containers with auto width */
 

@@ -3453,7 +3453,6 @@ p {
 /* Hidden content */
 
 .accordion-panel {
-    width: 100%;
     background-color: var(--bg3);
     display: none;
     padding: var(--pad4);

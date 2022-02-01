@@ -309,17 +309,13 @@ function toggleByTag(tagName) {
         }
     }
 }ready(() => {
-    var acc = document.getElementsByClassName("accordion-header");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            /* Toggle between adding and removing the "active" class,
-            to highlight the button that controls the panel */
+    let accordionHeaders = document.getElementsByClassName("accordion-header");
+    for (let header of accordionHeaders) {
+        header.addEventListener("click", function() {
             this.classList.toggle("active");
 
-            /* Toggle between hiding and showing the active panel */
-            var panel = this.nextElementSibling;
+            /* Toggle panel */
+            let panel = this.nextElementSibling;
             if (panel.style.display === "block") {
                 panel.style.display = "none";
             } else {

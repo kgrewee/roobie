@@ -28,11 +28,13 @@
 .drp-cnt {
     display: none;
     position: absolute;
-    top: 20px;
+    top: 100%;
+    left: 0;
     background-color: var(--bg1);
     min-width: var(--drp-min-width);
     width: auto;
     box-shadow: var(--box2);
+    border-radius: var(--br2);
     font-size: var(--fnts3);
     z-index: var(--z1);
 }
@@ -54,9 +56,10 @@
     color: var(--t1);
     display: block;
     margin: 0;
+    border-radius: var(--br2);
 }
 
 .drp-cnt a:hover {
-    background-color: var(--bg3);
+    background-color: var(--bg2);
     cursor: pointer;
 }

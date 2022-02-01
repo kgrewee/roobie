@@ -1,0 +1,52 @@
+.accordion {
+    width: 100%;
+}
+
+
+/* Header that triggers hidden content */
+
+.accordion-header {
+    background-color: var(--bg2);
+    color: var(--t2);
+    cursor: pointer;
+    padding: var(--pad5);
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: var(--fnts3);
+    transition: 0.5s ease-in-out;
+}
+
+.accordion-header:hover {
+    background-color: var(--bg4);
+}
+
+
+/* Icon in header  */
+
+.accordion-header:after {
+    content: " ";
+    border: 7px solid transparent;
+    border-color: transparent transparent transparent var(--t1);
+    float: right;
+    transition: 0.5s ease-in-out;
+}
+
+.accordion-header.active:after {
+    content: " ";
+    margin-top: 5px;
+    transform: rotate(90deg);
+}
+
+
+/* Hidden content */
+
+.accordion-panel {
+    background-color: var(--bg3);
+    display: none;
+    padding: var(--pad4);
+    overflow: hidden;
+    animation-name: fade;
+    animation-duration: 0.5s;
+}

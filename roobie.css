@@ -3460,7 +3460,9 @@ p {
     overflow: hidden;
     animation-name: fade;
     animation-duration: 0.5s;
-}.btn {
+}/* Base */
+
+.btn {
     width: auto;
     height: auto;
     padding: var(--pad3);
@@ -3480,6 +3482,9 @@ p {
     background-color: currentBackgroundColor;
     filter: brightness(95%);
 }
+
+
+/* Modifiers */
 
 .btn-primary {
     background-color: var(--primary);
@@ -3511,25 +3516,15 @@ p {
 .btn-info {
     background-color: var(--info);
     color: var(--black);
-}* {
-    box-sizing: border-box;
-}
-
-.carousel {
+}.carousel {
     position: relative;
 }
-
-
-/* Hide the images by default */
 
 .carousel-slide {
     display: none;
 }
 
-
-/* Next & previous buttons */
-
-.carousel-prev,
+.carousel-previous,
 .carousel-next {
     cursor: pointer;
     position: absolute;
@@ -3554,10 +3549,7 @@ p {
     border-radius: 3px 0 0 3px;
 }
 
-
-/* On hover, add a black background */
-
-.carousel-prev:hover,
+.carousel-previous:hover,
 .carousel-next:hover {
     background-color: var(--bg3);
     opacity: 90%;
@@ -3566,7 +3558,7 @@ p {
 
 /* Caption text */
 
-.carousel-txt {
+.carousel-text {
     color: var(--t2);
     font-size: var(--fnts4);
     position: absolute;
@@ -3578,7 +3570,7 @@ p {
 
 /* Dots to indicate slide active */
 
-.carousel-dot {
+.carousel-dots {
     cursor: pointer;
     height: 20px;
     width: 20px;
@@ -3589,7 +3581,7 @@ p {
     display: inline-block;
 }
 
-.carousel-dot:hover {
+.carousel-dots:hover {
     background-color: var(--bg6);
 }/* Containers with auto width */
 

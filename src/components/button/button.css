@@ -1,3 +1,5 @@
+/* Base */
+
 .btn {
     width: auto;
     height: auto;
@@ -18,6 +20,9 @@
     background-color: currentBackgroundColor;
     filter: brightness(95%);
 }
+
+
+/* Modifiers */
 
 .btn-primary {
     background-color: var(--primary);

@@ -4253,12 +4253,6 @@ select:focus {
     pointer-events: none;
 }
 
-.tooltip:hover .tooltip-text {
-    visibility: visible;
-    animation-name: fade;
-    animation-duration: .5s;
-}
-
 .tooltip-right {
     top: -10px;
     left: 105%;

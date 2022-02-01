@@ -5,8 +5,7 @@ select:focus {
     outline: none !important;
 }
 
-.inp,
-.inp-expand {
+.input {
     display: inline-flex;
     width: 250px;
     padding: var(--pad3);
@@ -15,13 +14,16 @@ select:focus {
     margin: var(--mrg1);
     font-size: var(--fnts4);
     font: 500 var(--fnts3) var(--fntf1);
-    border: var(--bdr1);
+    border: none;
     color: var(--t2);
-    -webkit-transition: width 0.5s ease-in-out;
     transition: width 0.5s ease-in-out;
 }
 
-.inp-expand:focus {
+.input-outline {
+    border: var(--bdr2) !important;
+}
+
+.input-expand:focus {
     width: 500px;
 }
 
@@ -29,7 +31,6 @@ select:focus {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: var(--t5);
     opacity: 1;
-    /* Firefox */
 }
 
  :-ms-input-placeholder {

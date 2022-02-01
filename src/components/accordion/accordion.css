@@ -1,8 +1,9 @@
-/* Style the buttons that are used to open and close the accordion panel */
-
 .accordion {
     width: 100%;
 }
+
+
+/* Header that triggers hidden content */
 
 .accordion-header {
     background-color: var(--bg2);
@@ -21,15 +22,8 @@
     background-color: var(--bg4);
 }
 
-.accordion-panel {
-    width: 100%;
-    background-color: var(--bg3);
-    display: none;
-    padding: var(--pad4);
-    overflow: hidden;
-    animation-name: fade;
-    animation-duration: 0.5s;
-}
+
+/* Icon in header  */
 
 .accordion-header:after {
     content: " ";
@@ -43,4 +37,17 @@
     content: " ";
     margin-top: 5px;
     transform: rotate(90deg);
+}
+
+
+/* Hidden content */
+
+.accordion-panel {
+    width: 100%;
+    background-color: var(--bg3);
+    display: none;
+    padding: var(--pad4);
+    overflow: hidden;
+    animation-name: fade;
+    animation-duration: 0.5s;
 }

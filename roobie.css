@@ -3408,11 +3408,12 @@ p {
 ._zoomout {
     animation-name: zoomout;
     animation-duration: var(--animation-duration);
-}/* Style the buttons that are used to open and close the accordion panel */
-
-.accordion {
+}.accordion {
     width: 100%;
 }
+
+
+/* Header that triggers hidden content */
 
 .accordion-header {
     background-color: var(--bg2);
@@ -3431,15 +3432,8 @@ p {
     background-color: var(--bg4);
 }
 
-.accordion-panel {
-    width: 100%;
-    background-color: var(--bg3);
-    display: none;
-    padding: var(--pad4);
-    overflow: hidden;
-    animation-name: fade;
-    animation-duration: 0.5s;
-}
+
+/* Icon in header  */
 
 .accordion-header:after {
     content: " ";
@@ -3453,6 +3447,19 @@ p {
     content: " ";
     margin-top: 5px;
     transform: rotate(90deg);
+}
+
+
+/* Hidden content */
+
+.accordion-panel {
+    width: 100%;
+    background-color: var(--bg3);
+    display: none;
+    padding: var(--pad4);
+    overflow: hidden;
+    animation-name: fade;
+    animation-duration: 0.5s;
 }.btn {
     width: auto;
     height: auto;
@@ -3713,209 +3720,209 @@ p {
 .drp-cnt a:hover {
     background-color: var(--bg2);
     cursor: pointer;
-}.itrash {
+}.icon {
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.icon-trash {
     content: url(icons/trash.svg)
 }
 
-.iplus {
+.icon-plus {
     content: url(icons/plus.svg)
 }
 
-.iminus {
+.icon-minus {
     content: url(icons/minus.svg)
 }
 
-.iheart-empty {
+.icon-heart-empty {
     content: url(icons/heart-empty.svg)
 }
 
-.iheart {
+.icon-heart {
     content: url(icons/heart.svg);
 }
 
-.imail {
+.icon-mail {
     content: url(icons/mail.svg)
 }
 
-.isearch {
+.icon-search {
     content: url(icons/search.svg)
 }
 
-.istar-empty {
+.icon-star-empty {
     content: url(icons/star-empty.svg)
 }
 
-.istar {
+.icon-star {
     content: url(icons/star.svg)
 }
 
-.iuser {
+.icon-user {
     content: url(icons/user.svg)
 }
 
-.iphone {
+.icon-phone {
     content: url(icons/phone.svg)
 }
 
-.iattach {
+.icon-attach {
     content: url(icons/attach.svg)
 }
 
-.iright {
+.icon-right {
     content: url(icons/right.svg)
 }
 
-.ileft {
+.icon-left {
     content: url(icons/left.svg)
 }
 
-.icog-2 {
+.icon-cog-2 {
     content: url(icons/cog.svg)
 }
 
-.ihelp {
+.icon-help {
     content: url(icons/help.svg)
 }
 
-.ifacebook {
+.icon-facebook {
     content: url(icons/facebook.svg)
 }
 
-.ilinkedin {
+.icon-linkedin {
     content: url(icons/linkedin.svg)
 }
 
-.ileft-open {
+.icon-left-open {
     content: url(icons/left-open.svg)
 }
 
-.iok {
+.icon-ok {
     content: url(icons/ok.svg)
 }
 
-.icancel {
+.icon-cancel {
     content: url(icons/cancel.svg)
 }
 
-.iright-open {
+.icon-right-open {
     content: url(icons/right-open.svg)
 }
 
-.iup-open {
+.icon-up-open {
     content: url(icons/up-open.svg)
 }
 
-.idown-open {
+.icon-down-open {
     content: url(icons/down-open.svg)
 }
 
-.ipause {
+.icon-pause {
     content: url(icons/pause.svg)
 }
 
-.istop {
+.icon-stop {
     content: url(icons/stop.svg)
 }
 
-.iplay {
+.icon-play {
     content: url(icons/play.svg)
 }
 
-.icw {
+.icon-cw {
     content: url(icons/cw.svg)
 }
 
-.iup {
+.icon-up {
     content: url(icons/up.svg)
 }
 
-.idown {
+.icon-down {
     content: url(icons/down.svg)
 }
 
-.izoom-in {
+.icon-zoom-in {
     content: url(icons/zoom-in.svg)
 }
 
-.izoom-out {
+.icon-zoom-out {
     content: url(icons/zoom-out.svg)
 }
 
-.ieject {
+.icon-eject {
     content: url(icons/eject.svg)
 }
 
-.ialign-right {
+.icon-align-right {
     content: url(icons/align-right.svg)
 }
 
-.ialign-center {
+.icon-align-center {
     content: url(icons/align-center.svg);
 }
 
-.ialign-left {
+.icon-align-left {
     content: url(icons/align-left.svg)
 }
 
-.ialign-justify {
+.icon-align-justify {
     content: url(icons/align-justify.svg)
 }
 
-.igithub-text {
+.icon-github-text {
     content: url(icons/github-text.svg)
 }
 
-.igithub {
+.icon-github {
     content: url(icons/github.svg)
 }
 
-.iflag {
+.icon-flag {
     content: url(icons/flag.svg)
 }
 
-.ilocation {
+.icon-location {
     content: url(icons/location.svg)
 }
 
-.ithumbs-down {
+.icon-thumbs-down {
     content: url(icons/thumbs-down.svg)
 }
 
-.ithumbs-up {
+.icon-thumbs-up {
     content: url(icons/thumbs-up.svg)
 }
 
-.ibell {
+.icon-bell {
     content: url(icons/bell.svg)
 }
 
-.icomment {
+.icon-comment {
     content: url(icons/comment.svg)
 }
 
-.iapps {
+.icon-apps {
     content: url(icons/apps.svg)
 }
 
-.ilist {
+.icon-list {
     content: url(icons/list.svg)
 }
 
-.imenu {
+.icon-menu {
     content: url(icons/menu.svg)
 }
 
-.imenu-outline {
+.icon-menu-outline {
     content: url(icons/menu-outline.svg)
 }
 
-.icamera {
+.icon-camera {
     content: url(icons/camera.svg)
-}
-
-i {
-    width: 25px;
-    height: 25px;
 }input:focus,
 textarea:focus,
 select:focus {
@@ -3923,8 +3930,7 @@ select:focus {
     outline: none !important;
 }
 
-.inp,
-.inp-expand {
+.input {
     display: inline-flex;
     width: 250px;
     padding: var(--pad3);
@@ -3933,13 +3939,16 @@ select:focus {
     margin: var(--mrg1);
     font-size: var(--fnts4);
     font: 500 var(--fnts3) var(--fntf1);
-    border: var(--bdr1);
+    border: none;
     color: var(--t2);
-    -webkit-transition: width 0.5s ease-in-out;
     transition: width 0.5s ease-in-out;
 }
 
-.inp-expand:focus {
+.input-outline {
+    border: var(--bdr2) !important;
+}
+
+.input-expand:focus {
     width: 500px;
 }
 
@@ -3947,7 +3956,6 @@ select:focus {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: var(--t5);
     opacity: 1;
-    /* Firefox */
 }
 
  :-ms-input-placeholder {
@@ -4052,8 +4060,6 @@ select:focus {
 
 .nav-item {
     padding: var(--pad3);
-    margin: 0;
-    height: 100%;
     text-decoration: none;
     color: var(--t2);
     cursor: pointer;

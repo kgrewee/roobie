@@ -309,7 +309,12 @@ function toggleByTag(tagName) {
         }
     }
 }ready(() => {
+    accordion();
+});
+
+function accordion() {
     let accordionHeaders = document.getElementsByClassName("accordion-header");
+    debug("Found " + accordionHeaders.length + " accordion headers");
     for (let header of accordionHeaders) {
         header.addEventListener("click", function() {
             this.classList.toggle("active");
@@ -318,12 +323,14 @@ function toggleByTag(tagName) {
             let panel = this.nextElementSibling;
             if (panel.style.display === "block") {
                 panel.style.display = "none";
+                debug("Accordion panel toggle [display=none]");
             } else {
                 panel.style.display = "block";
+                debug("Accordion panel toggle [display=block]");
             }
         });
     }
-});ready(() => {
+}ready(() => {
     let carousels = document.getElementsByClassName("carousel");
     for (let carousel of carousels) {
         let index = carousel.getAttribute("index");
@@ -434,10 +441,10 @@ ready(() => {
 
 
 /**
- * Checks menu for media queries.
+ * Checks menu media queries.
  */
 function checkMenu() {
-    debug("Checking media queries");
+    debug("Checking menu media queries");
     collapseMenu(MEDIACOLLAPSES, 'rsp-menu-s');
     expandMenu(MEDIAEXPANDS, 'rsp-menu-s');
     collapseMenu(MEDIACOLLAPSEM, 'rsp-menu');
@@ -458,7 +465,7 @@ function checkMenu() {
  */
 function expandMenu(event, className) {
     if (event.matches) {
-        debug('Expand Menu [Class] ' + className);
+        debug('Expand Menu [class=' + className + "]");
         var menus = getClass(className);
         for (i = 0; i < menus.length; i++) {
             let cnt = menus[i].querySelector('.rsp-cnt');
@@ -479,7 +486,7 @@ function expandMenu(event, className) {
  */
 function collapseMenu(event, className) {
     if (event.matches) {
-        debug('Collapse Menu [Class] ' + className);
+        debug('Collapse Menu [class=' + className + "]");
         var menus = getClass(className);
         for (i = 0; i < menus.length; i++) {
             items = menus[i].innerHTML;

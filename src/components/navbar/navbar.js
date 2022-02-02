@@ -24,10 +24,10 @@ ready(() => {
 
 
 /**
- * Checks menu for media queries.
+ * Checks menu media queries.
  */
 function checkMenu() {
-    debug("Checking media queries");
+    debug("Checking menu media queries");
     collapseMenu(MEDIACOLLAPSES, 'rsp-menu-s');
     expandMenu(MEDIAEXPANDS, 'rsp-menu-s');
     collapseMenu(MEDIACOLLAPSEM, 'rsp-menu');
@@ -48,7 +48,7 @@ function checkMenu() {
  */
 function expandMenu(event, className) {
     if (event.matches) {
-        debug('Expand Menu [Class] ' + className);
+        debug('Expand Menu [class=' + className + "]");
         var menus = getClass(className);
         for (i = 0; i < menus.length; i++) {
             let cnt = menus[i].querySelector('.rsp-cnt');
@@ -69,7 +69,7 @@ function expandMenu(event, className) {
  */
 function collapseMenu(event, className) {
     if (event.matches) {
-        debug('Collapse Menu [Class] ' + className);
+        debug('Collapse Menu [class=' + className + "]");
         var menus = getClass(className);
         for (i = 0; i < menus.length; i++) {
             items = menus[i].innerHTML;

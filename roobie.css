@@ -4156,7 +4156,11 @@ select:focus {
     left: 0;
     right: 0;
     z-index: var(--z6);
-}.table th {
+}.table {
+    width: 100%;
+}
+
+.table th {
     color: var(--t1);
 }
 

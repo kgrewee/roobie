@@ -787,7 +787,6 @@ Dev: Cursor when a user hovers an element
     cursor: default;
 }/* 
 Name: Display
-Prefix:   
 Dev: We use a flex based layouts most
 */
 
@@ -865,7 +864,7 @@ Dev: How items are effected when there isn't enough space on a line
     flex-wrap: wrap;
 }
 
-.wrp-rev {
+.wrpr {
     flex-wrap: wrap-reverse;
 }
 
@@ -953,35 +952,27 @@ Prefix: ht
 Dev: Height of an element
 */
 
-.ht0 {
+.ht-auto {
     height: auto !important;
 }
 
-.ht1 {
-    height: var(--ht1) !important;
+.ht-25 {
+    height: 25% !important;
 }
 
-.ht2 {
-    height: var(--ht2) !important;
+.ht-33 {
+    height: 33% !important;
 }
 
-.ht3 {
-    height: var(--ht3) !important;
+.ht-50 {
+    height: 50% !important;
 }
 
-.ht4 {
-    height: var(--ht4) !important;
+.ht-75 {
+    height: 75% !important;
 }
 
-.ht5 {
-    height: var(--ht5) !important;
-}
-
-.ht6 {
-    height: var(--ht6) !important;
-}
-
-.ht {
+.ht-100 {
     height: 100% !important;
 }/*
 Name: Justify Content
@@ -1216,49 +1207,29 @@ Dev: Used to specify how an <img> or <video> should be resized to fit its contai
 
 .objf-scale {
     object-fit: scale-down;
-}/*
-Name: Opacity
-Prefix: op
-Dev: Opacity of an element
-*/
-
-.op0 {
+}.opacity-0 {
     opacity: 0 !important;
 }
 
-.op1 {
-    opacity: var(--op1);
+.opacity-25 {
+    opacity: var(--opacity-25);
 }
 
-.op2 {
-    opacity: var(--op2);
+.opacity-33 {
+    opacity: var(--opacity-33);
 }
 
-.op3 {
-    opacity: var(--op3);
+.opacity-50 {
+    opacity: var(--opacity-50);
 }
 
-.op4 {
-    opacity: var(--op4);
+.opacity-75 {
+    opacity: var(--opacity-75);
 }
 
-.op5 {
-    opacity: var(--op5);
-}
-
-.op6 {
-    opacity: var(--op6);
-}
-
-.op {
+.opacity-100 {
     opacity: 100%;
-}/*
-Name: Order
-Prefix: ord
-Dev: Order of an element in a line
-*/
-
-.ord-first {
+}.order-first {
     order: -1;
 }/*
 Name: Outline Style
@@ -1296,6 +1267,26 @@ Dev: Outline of an element
 
 .out-outset {
     outline-style: outset;
+}/*
+Name: Scroll
+Prefix: overflow
+Dev: 
+*/
+
+.overflow {
+    overflow: auto;
+}
+
+.overflow-y {
+    overflow-y: auto;
+}
+
+.overflow-x {
+    overflow-x: auto;
+}
+
+.overflow-hidden {
+    overflow: hidden;
 }/*
 Name: Padding
 Prefix: pad
@@ -1447,7 +1438,6 @@ Dev: Padding on the inside of an element
     padding: 0 var(--pad6) !important;
 }/*
 Name: Position
-Prefix: 
 Dev: 
 */
 
@@ -1459,59 +1449,17 @@ Dev:
     position: fixed;
 }
 
-.rel {
+.relative {
     position: relative;
 }
 
-.abs {
+.absolute {
     position: absolute;
 }
 
 .static {
     position: static;
-}/*
-Name: Scroll
-Prefix: scr
-Dev: 
-*/
-
-.scr {
-    overflow: auto;
-}
-
-.scr-y {
-    overflow-y: auto;
-}
-
-.scr-x {
-    overflow-x: auto;
-}/* 
-Name: Status
-Prefix: 
-Dev: Statuses that can signal the user
-*/
-
-.success {
-    color: var(--success);
-}
-
-.warning {
-    color: var(--warning);
-}
-
-.danger {
-    color: var(--danger);
-}
-
-.info {
-    color: var(--info);
-}/*
-Name Scroll
-Prefix scr
-Dev 
-*/
-
-.txtc {
+}.txtc {
     text-align: center;
 }
 
@@ -1529,6 +1477,12 @@ Dev
 
 .txtd0 {
     text-decoration: none;
+}.visible {
+    visibility: visible;
+}
+
+.invisible {
+    visibility: hidden;
 }/*
 Name Z Index
 Prefix z
@@ -1625,27 +1579,6 @@ Dev
     --fnts4: 1.25em;
     --fnts5: 1.5em;
     --fnts6: 2em;
-    /*Container*/
-    --div1: 20%;
-    --div2: 33%;
-    --div3: 40%;
-    --div4: 50%;
-    --div5: 75%;
-    --div6: 90%;
-    /*Height*/
-    --ht1: 20%;
-    --ht2: 33%;
-    --ht3: 40%;
-    --ht4: 50%;
-    --ht5: 75%;
-    --ht6: 90%;
-    /*Opacity*/
-    --op1: 20%;
-    --op2: 33%;
-    --op3: 40%;
-    --op4: 50%;
-    --op5: 75%;
-    --op6: 90%;
     /*Line Height */
     --lht1: .8em;
     --lht2: 1em;
@@ -3592,44 +3525,32 @@ p {
     background-color: var(--bg6);
 }/* Containers with auto width */
 
-.div0 {
+.div-auto {
     width: auto;
     height: auto;
     padding: var(--pad2);
 }
 
-.div1 {
-    width: var(--div1);
+.div-25 {
+    width: 25%;
     height: auto;
     padding: var(--pad2);
 }
 
-.div2 {
-    width: var(--div2);
+.div-33 {
+    width: 33%;
     height: auto;
     padding: var(--pad2);
 }
 
-.div3 {
-    width: var(--div3);
+.div-50 {
+    width: 50%;
     height: auto;
     padding: var(--pad2);
 }
 
-.div4 {
-    width: var(--div4);
-    height: auto;
-    padding: var(--pad2);
-}
-
-.div5 {
-    width: var(--div5);
-    height: auto;
-    padding: var(--pad2);
-}
-
-.div6 {
-    width: var(--div6);
+.div-75 {
+    width: 75%;
     height: auto;
     padding: var(--pad2);
 }
@@ -3643,13 +3564,11 @@ p {
 /* Container media queries */
 
 @media screen and (max-width: 800px) {
-    .div0,
-    .div1,
-    .div2,
-    .div3,
-    .div4,
-    .div5,
-    .div6,
+    .div-auto,
+    .div-25,
+    .div-33,
+    .div-50,
+    .div-75,
     .div {
         display: inline-block;
     }

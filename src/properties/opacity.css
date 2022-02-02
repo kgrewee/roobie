@@ -1,37 +1,23 @@
-/*
-Name: Opacity
-Prefix: op
-Dev: Opacity of an element
-*/
-
-.op0 {
+.opacity-0 {
     opacity: 0 !important;
 }
 
-.op1 {
-    opacity: var(--op1);
+.opacity-25 {
+    opacity: var(--opacity-25);
 }
 
-.op2 {
-    opacity: var(--op2);
+.opacity-33 {
+    opacity: var(--opacity-33);
 }
 
-.op3 {
-    opacity: var(--op3);
+.opacity-50 {
+    opacity: var(--opacity-50);
 }
 
-.op4 {
-    opacity: var(--op4);
+.opacity-75 {
+    opacity: var(--opacity-75);
 }
 
-.op5 {
-    opacity: var(--op5);
-}
-
-.op6 {
-    opacity: var(--op6);
-}
-
-.op {
+.opacity-100 {
     opacity: 100%;
 }

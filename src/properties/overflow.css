@@ -1,0 +1,21 @@
+/*
+Name: Scroll
+Prefix: overflow
+Dev: 
+*/
+
+.overflow {
+    overflow: auto;
+}
+
+.overflow-y {
+    overflow-y: auto;
+}
+
+.overflow-x {
+    overflow-x: auto;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}

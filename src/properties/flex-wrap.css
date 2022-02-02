@@ -8,7 +8,7 @@ Dev: How items are effected when there isn't enough space on a line
     flex-wrap: wrap;
 }
 
-.wrp-rev {
+.wrpr {
     flex-wrap: wrap-reverse;
 }
 

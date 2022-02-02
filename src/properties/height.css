@@ -4,34 +4,26 @@ Prefix: ht
 Dev: Height of an element
 */
 
-.ht0 {
+.ht-auto {
     height: auto !important;
 }
 
-.ht1 {
-    height: var(--ht1) !important;
+.ht-25 {
+    height: 25% !important;
 }
 
-.ht2 {
-    height: var(--ht2) !important;
+.ht-33 {
+    height: 33% !important;
 }
 
-.ht3 {
-    height: var(--ht3) !important;
+.ht-50 {
+    height: 50% !important;
 }
 
-.ht4 {
-    height: var(--ht4) !important;
+.ht-75 {
+    height: 75% !important;
 }
 
-.ht5 {
-    height: var(--ht5) !important;
-}
-
-.ht6 {
-    height: var(--ht6) !important;
-}
-
-.ht {
+.ht-100 {
     height: 100% !important;
 }

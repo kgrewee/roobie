@@ -467,10 +467,10 @@ function expandMenu(event, className) {
         debug('Expand Menu [class=' + className + "]");
         var menus = getClass(className);
         for (i = 0; i < menus.length; i++) {
-            let cnt = menus[i].querySelector('.rsp-cnt');
-            if (cnt) {
-                if (cnt.classList.contains('rsp-cnt')) {
-                    menus[i].innerHTML = cnt.innerHTML;
+            let content = menus[i].querySelector('.rsp-cnt');
+            if (content) {
+                if (content.classList.contains('rsp-cnt')) {
+                    menus[i].innerHTML = content.innerHTML;
                 }
             }
         }

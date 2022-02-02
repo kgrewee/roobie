@@ -1,6 +1,5 @@
 /*
 Name: Position
-Prefix: 
 Dev: 
 */
 
@@ -12,11 +11,11 @@ Dev:
     position: fixed;
 }
 
-.rel {
+.relative {
     position: relative;
 }
 
-.abs {
+.absolute {
     position: absolute;
 }
 

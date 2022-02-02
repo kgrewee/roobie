@@ -1,43 +1,31 @@
 /* Containers with auto width */
 
-.div0 {
+.div-auto {
     width: auto;
     height: auto;
     padding: var(--pad2);
 }
 
-.div1 {
-    width: var(--div1);
+.div-25 {
+    width: 25%;
     height: auto;
     padding: var(--pad2);
 }
 
-.div2 {
-    width: var(--div2);
+.div-33 {
+    width: 33%;
     height: auto;
     padding: var(--pad2);
 }
 
-.div3 {
-    width: var(--div3);
+.div-50 {
+    width: 50%;
     height: auto;
     padding: var(--pad2);
 }
 
-.div4 {
-    width: var(--div4);
-    height: auto;
-    padding: var(--pad2);
-}
-
-.div5 {
-    width: var(--div5);
-    height: auto;
-    padding: var(--pad2);
-}
-
-.div6 {
-    width: var(--div6);
+.div-75 {
+    width: 75%;
     height: auto;
     padding: var(--pad2);
 }
@@ -51,13 +39,11 @@
 /* Container media queries */
 
 @media screen and (max-width: 800px) {
-    .div0,
-    .div1,
-    .div2,
-    .div3,
-    .div4,
-    .div5,
-    .div6,
+    .div-auto,
+    .div-25,
+    .div-33,
+    .div-50,
+    .div-75,
     .div {
         display: inline-block;
     }

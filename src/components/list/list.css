@@ -3,7 +3,7 @@
     list-style-type: none;
     width: auto;
     padding-inline-start: 0;
-    margin: var(--mrg3) 0;
+    margin: var(--mrg2);
     padding: 0;
     border-radius: var(--br1);
 }

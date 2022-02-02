@@ -87,7 +87,6 @@ function debug(message) {
  * @param {*} fn function to execute
  */
 function ready(fn) {
-    debug("Document ready");
     if (document.readyState === "complete" || document.readyState === "interactive") {
         setTimeout(fn, 1);
     } else {
@@ -375,7 +374,7 @@ function accordion() {
  * @param {number} index Index of slide to show
  */
 function showSlide(id, index) {
-    debug("Show carousel [Id] " + id + " slides by index " + index);
+    debug("Show slide [id=" + id + "] [index=" + index + "]");
     let element = document.getElementById(id);
 
     // Get carousel slides

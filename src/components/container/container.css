@@ -59,8 +59,6 @@
     .div5,
     .div6,
     .div {
-        display: block;
-        width: 100%;
-        padding: var(--pad2);
+        display: inline-block;
     }
 }

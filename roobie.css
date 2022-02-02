@@ -3651,9 +3651,7 @@ p {
     .div5,
     .div6,
     .div {
-        display: block;
-        width: 100%;
-        padding: var(--pad2);
+        display: inline-block;
     }
 }.drp {
     font-size: var(--fnts3);
@@ -3970,7 +3968,7 @@ select:focus {
     list-style-type: none;
     width: auto;
     padding-inline-start: 0;
-    margin: var(--mrg3) 0;
+    margin: var(--mrg2);
     padding: 0;
     border-radius: var(--br1);
 }
@@ -4072,6 +4070,7 @@ select:focus {
     list-style-type: none;
     width: auto;
     padding-inline-start: 0;
+    margin: var(--mrg2);
 }
 
 .path-item {

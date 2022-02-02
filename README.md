@@ -8,7 +8,7 @@ Centralized CSS & JavaScript for Advanced Web Development.  No external dependen
 Install with npm
 
 ```shell
-npm i roobie --save
+npm i roobie
 ```
 
 ## Docs

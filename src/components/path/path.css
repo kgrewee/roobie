@@ -3,6 +3,7 @@
     list-style-type: none;
     width: auto;
     padding-inline-start: 0;
+    margin: var(--mrg2);
 }
 
 .path-item {

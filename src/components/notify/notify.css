@@ -1,0 +1,54 @@
+/* Base */
+
+.notify {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: var(--br3);
+    padding: var(--pad5);
+}
+
+.notify:after {
+    align-self: flex-end;
+    content: "\2715";
+    color: var(--t1);
+    font-family: var(--fntf1);
+    font-size: var(--fnts4);
+    cursor: pointer;
+}
+
+
+/* Modifiers */
+
+.notify-primary {
+    background-color: var(--primary);
+}
+
+.notify-secondary {
+    background-color: var(--secondary);
+}
+
+.notify-outline {
+    border: var(--bdr1);
+}
+
+.notify-success {
+    background-color: var(--success);
+    color: var(--black);
+}
+
+.notify-warning {
+    background-color: var(--warning);
+    color: var(--black);
+}
+
+.notify-danger {
+    background-color: var(--danger);
+    color: var(--black);
+}
+
+.notify-info {
+    background-color: var(--info);
+    color: var(--black);
+}

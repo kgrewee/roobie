@@ -1,6 +1,15 @@
 const appName = "Roobie";
 const debugMode = true;
 
+ready(() => {
+    let docs = document.getElementsByClassName("docs");
+    debug("Found " + docs.length + " docs classes");
+    for (let doc of docs) {
+        let pre = document.createElement("xmp");
+        pre.innerHTML = doc.innerHTML;
+        doc.insertAdjacentElement("afterend", pre);
+    }
+});
 /**
  * Print debug message to console if Debug Mode is ON.
  * 

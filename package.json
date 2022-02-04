@@ -1,6 +1,6 @@
 {
     "name": "roobie",
-    "version": "0.2.3",
+    "version": "0.2.4",
     "description": "Centralized CSS and JavaScript for Advanced Web Development.",
     "author": "Kyle Grewe",
     "license": "MIT",
@@ -17,9 +17,11 @@
     ],
     "main": "roobie.min.js",
     "scripts": {
-        "build": "npm-run-all build:dev build:prod docs",
-        "build:dev": "cat src/**/*.css src/**/**/*.css  > roobie.css && cat src/**/*.js src/**/**/*.js  > roobie.js",
-        "build:prod": "minify roobie.css > roobie.min.css && minify roobie.js > roobie.min.js",
+        "build": "npm-run-all build:css build:css:prod build:js build:js:prod docs",
+        "build:css": "cat src/animations/*.css src/themes/*.css src/animations/**/*.css src/components/**/*.css src/core/*.css src/layout/*.css src/utilities/*.css > roobie.css",
+        "build:css:prod": "minify roobie.css > roobie.min.css",
+        "build:js": "cat src/animations/*.js src/themes/*.js src/components/**/*.js src/utilities/*.js > roobie.js",
+        "build:js:prod": "minify roobie.js > roobie.min.js",
         "docs": "npm-run-all docs:js docs:css",
         "docs:js": "jsdoc roobie.js -d docs/js",
         "docs:css": "",
@@ -39,10 +41,13 @@
     "files": [
         "README.md",
         "LICENSE.md",
+        "roobie.css",
+        "roobie.js",
         "roobie.min.css",
         "roobie.min.js",
-        "images/",
         "icons/",
-        "examples/"
+        "examples/",
+        "docs/",
+        "src/themes/"
     ]
 }

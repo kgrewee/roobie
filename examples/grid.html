@@ -32,66 +32,66 @@ Max height to demo wrap styles
 </style>
 
 <body>
-    <header class="div flx-col aln-center bg6">
-        <div class="div6 _fade">
+    <header class="div col aln-center bg6">
+        <div class="div75 _fade">
             <h1>Grid</h1>
             <p class="fnts4">Simple, responsive grids with flexbox.</p>
         </div>
     </header>
-    <main class="div flx-col aln-center _fade">
-        <div class="div6 flx-col aln-start mrgv">
+    <main class="div col aln-center _fade">
+        <div class="div75 col aln-start mrgv">
             <a class="btn btn-secondary mrgv" href="index.html">Back to home</a>
             <h2>Horizontal</h2>
-            <div class="div flx-col">
-                <div class="flx-row grid mrgv br jst-cnt-center">
-                    <div class="box br4 flx-row aln-center jst-cnt-center">1</div>
-                    <div class="box br4 flx-row aln-center jst-cnt-center">2</div>
-                    <div class="box br4 flx-row aln-center jst-cnt-center">3</div>
+            <div class="div col">
+                <div class="row grid mrgv br jst-center">
+                    <div class="box br4 row aln-center jst-center">1</div>
+                    <div class="box br4 row aln-center jst-center">2</div>
+                    <div class="box br4 row aln-center jst-center">3</div>
                 </div>
             </div>
             <h2>Vertical</h2>
-            <div class="div flx-col">
-                <div class="flx-col grid mrgv br aln-center">
-                    <div class="box br4 flx-col aln-center jst-cnt-center">1</div>
-                    <div class="box br4 flx-row aln-center jst-cnt-center">2</div>
-                    <div class="box br4 flx-row aln-center jst-cnt-center">3</div>
+            <div class="div col">
+                <div class="col grid mrgv br aln-center">
+                    <div class="box br4 col aln-center jst-center">1</div>
+                    <div class="box br4 row aln-center jst-center">2</div>
+                    <div class="box br4 row aln-center jst-center">3</div>
                 </div>
             </div>
             <h2>Nowrap is the Default</h2>
             <p>For this demo, the max height of the grids is 225px. The sub-containers are 30% width & 50px height. There isn't enough space in the container for the sub-containers, so the flex-wrap property decides what to do. The default Roobie flex-wrap
                 value is nowrap, so the sub-containers are squished to fit on one line.</p>
             <div class="div">
-                <div class="flx-row grid mrgv br">
-                    <div class="box br4 flx-row aln-center jst-cnt-center">1</div>
-                    <div class="box br4 flx-row aln-center jst-cnt-center">2</div>
-                    <div class="box br4 flx-row aln-center jst-cnt-center">3</div>
-                    <div class="box br4 flx-row aln-center jst-cnt-center">4</div>
-                    <div class="box br4 flx-row aln-center jst-cnt-center">5</div>
+                <div class="row grid mrgv br">
+                    <div class="box br4 row aln-center jst-center">1</div>
+                    <div class="box br4 row aln-center jst-center">2</div>
+                    <div class="box br4 row aln-center jst-center">3</div>
+                    <div class="box br4 row aln-center jst-center">4</div>
+                    <div class="box br4 row aln-center jst-center">5</div>
                 </div>
-                <div class="flx-col grid mrgv br">
-                    <div class="box br4 flx-col aln-center jst-cnt-center">1</div>
-                    <div class="box br4 flx-row aln-center jst-cnt-center">2</div>
-                    <div class="box br4 flx-row aln-center jst-cnt-center">3</div>
-                    <div class="box br4 flx-row aln-center jst-cnt-center">4</div>
-                    <div class="box br4 flx-row aln-center jst-cnt-center">5</div>
+                <div class="col grid mrgv br">
+                    <div class="box br4 col aln-center jst-center">1</div>
+                    <div class="box br4 row aln-center jst-center">2</div>
+                    <div class="box br4 row aln-center jst-center">3</div>
+                    <div class="box br4 row aln-center jst-center">4</div>
+                    <div class="box br4 row aln-center jst-center">5</div>
                 </div>
             </div>
             <h2>Wrap</h2>
             <p>Nowrap is useful, but in this case, we want to wrap our items to keep them the same size. Simply add the <b>wrp</b> class to add wrap to the Grid. Use flex classes to align grid content.</p>
             <div class="div br">
-                <div class="flx-row grid wrp mrgv br jst-cnt-end">
-                    <div class="box br4 flx-row aln-center jst-cnt-center">1</div>
-                    <div class="box br4 flx-row aln-center jst-cnt-center">2</div>
-                    <div class="box br4 flx-row aln-center jst-cnt-center">3</div>
-                    <div class="box br4 flx-row aln-center jst-cnt-center">4</div>
-                    <div class="box br4 flx-row aln-center jst-cnt-center">5</div>
+                <div class="row grid wrp mrgv br jst-end">
+                    <div class="box br4 row aln-center jst-center">1</div>
+                    <div class="box br4 row aln-center jst-center">2</div>
+                    <div class="box br4 row aln-center jst-center">3</div>
+                    <div class="box br4 row aln-center jst-center">4</div>
+                    <div class="box br4 row aln-center jst-center">5</div>
                 </div>
-                <div class="flx-col grid mrgv wrp aln-cnt-start br">
-                    <div class="box br4 flx-col aln-center jst-cnt-center">1</div>
-                    <div class="box br4 flx-row aln-center jst-cnt-center">2</div>
-                    <div class="box br4 flx-row aln-center jst-cnt-center">3</div>
-                    <div class="box br4 flx-row aln-center jst-cnt-center">4</div>
-                    <div class="box br4 flx-row aln-center jst-cnt-center">5</div>
+                <div class="col grid mrgv wrp aln-cnt-start br">
+                    <div class="box br4 col aln-center jst-center">1</div>
+                    <div class="box br4 row aln-center jst-center">2</div>
+                    <div class="box br4 row aln-center jst-center">3</div>
+                    <div class="box br4 row aln-center jst-center">4</div>
+                    <div class="box br4 row aln-center jst-center">5</div>
                 </div>
             </div>
         </div>

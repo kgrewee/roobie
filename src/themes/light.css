@@ -1,6 +1,12 @@
 [theme="light"] {
+    /*Base*/
     --primary: rgb(161, 255, 177);
     --secondary: var(--bg4);
+    /*Status*/
+    --success: rgb(87, 199, 79);
+    --warning: rgb(235, 119, 42);
+    --danger: rgb(248, 62, 52);
+    --info: rgb(152, 217, 243);
     /*Shade 1*/
     --white: rgb(240, 240, 240);
     --black: rgb(20, 20, 20);

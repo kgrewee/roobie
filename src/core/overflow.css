@@ -1,17 +1,21 @@
 /*
 Name: Scroll
-Prefix: scr
+Prefix: ov
 Dev: 
 */
 
-.scr {
+.ov {
     overflow: auto;
 }
 
-.scr-y {
+.ovy {
     overflow-y: auto;
 }
 
-.scr-x {
+.ovx {
     overflow-x: auto;
+}
+
+.ovh {
+    overflow: hidden;
 }

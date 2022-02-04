@@ -3,10 +3,14 @@
     display: flex;
     flex-flow: column nowrap;
     margin: var(--mrg2);
+    text-align: center;
 }
 
 .carousel-slide {
     display: none;
+    background-color: var(--bg3);
+    animation-name: fade;
+    animation-duration: var(--animation-duration);
 }
 
 .carousel-previous,
@@ -39,11 +43,11 @@
 
 /* Caption text */
 
-.carousel-text {
+.carousel-info {
     color: var(--t2);
     font-size: var(--fnts4);
     position: absolute;
-    bottom: 50px;
+    bottom: 20px;
     width: 100%;
     text-align: center;
 }
@@ -52,23 +56,28 @@
 /* Indicators of active slide */
 
 .carousel-indicators {
-    z-index: var(--z2);
-    position: relative;
-    display: inline-flex;
-    flex-flow: row nowrap;
-    margin: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .carousel-indicators span {
     cursor: pointer;
-    height: 5px;
-    width: 30px;
+    height: 10px;
+    width: 50px;
     margin: 0 2px;
-    background-color: var(--bg3);
+    background-color: var(--bg4);
     transition: background-color 0.6s ease;
     display: inline-block;
 }
 
 .carousel-indicators span:hover {
     background-color: var(--bg6);
+}
+
+@media screen and (max-width: 800px) {
+    .carousel,
+    .carousel-slide {
+        width: 100% !important;
+    }
 }

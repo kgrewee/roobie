@@ -1,9 +1,0 @@
-/*
-Name: Order
-Prefix: ord
-Dev: Order of an element in a line
-*/
-
-.ord-first {
-    order: -1;
-}

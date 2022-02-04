@@ -1,8 +1,11 @@
 /* 
 Name: Color
-Prefix: 
 Dev: Colors are referenced by name
 */
+
+.t0 {
+    color: transparent !important;
+}
 
 .t1 {
     color: var(--t1) !important;

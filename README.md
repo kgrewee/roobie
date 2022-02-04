@@ -1,14 +1,14 @@
 # Roobie
-![Build](https://github.com/kgrewee/roobie/actions/workflows/npm-publish.yml/badge.svg)
+![Build](https://github.com/kgrewee/roobie/actions/workflows/npm.yml/badge.svg)
 
-Centralized CSS & JavaScript for Advanced Web Development.  No external dependencies.  Templates coming soon.
+Minimalistic CSS & JavaScript Framework.  No external dependencies.  Templates coming soon.
 
 ## Install
 
 Install with npm
 
 ```shell
-npm i roobie --save
+npm i roobie
 ```
 
 ## Docs
@@ -82,7 +82,7 @@ A few examples... these don't even scratch the surface.  Fully customized HTML w
 ```shell
 <nav class="nav-row">
     <div class="nav-title">Navbar</div>
-    <div class="flx-row rsp-menu">
+    <div class="row rsp-menu">
         <a class="nav-item">Home</a>
         <a class="nav-item">Products</a>
         <a class="nav-item">About Us</a>

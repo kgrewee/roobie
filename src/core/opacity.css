@@ -1,0 +1,23 @@
+.op0 {
+    opacity: 0 !important;
+}
+
+.op25 {
+    opacity: var(--op25);
+}
+
+.op33 {
+    opacity: var(--op33);
+}
+
+.op50 {
+    opacity: var(--op50);
+}
+
+.op75 {
+    opacity: var(--op75);
+}
+
+.op {
+    opacity: 100%;
+}

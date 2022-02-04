@@ -1,45 +1,39 @@
 /* 
 Name: Display
-Prefix:   
-Dev: We use a flex based layouts most
+Dev: We use a flex based layout.
 */
 
-.hide {
-    display: none;
-}
 
-.show {
-    display: inline-flex;
-}
+/* Column */
 
-.flx {
-    display: flex;
-}
-
-
-/* Flex Column */
-
-.flx-col {
+.col {
     display: flex;
     flex-direction: column;
 }
 
-.flx-col-rev {
+.colr {
     display: flex;
     flex-direction: column-reverse;
 }
 
 
-/* Flex Row */
+/* Row */
 
-.flx-row {
+.row {
     display: flex;
     flex-direction: row;
 }
 
-.flx-row-rev {
+.rowr {
     display: flex;
     flex-direction: row-reverse;
+}
+
+
+/* Base */
+
+.flx {
+    display: flex;
 }
 
 .blk {

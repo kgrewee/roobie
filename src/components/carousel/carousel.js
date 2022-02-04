@@ -43,7 +43,7 @@ ready(() => {
  * @param {number} index Index of slide to show
  */
 function showSlide(id, index) {
-    debug("Show carousel [Id] " + id + " slides by index " + index);
+    debug("Show slide [id=" + id + "] [index=" + index + "]");
     let element = document.getElementById(id);
 
     // Get carousel slides

@@ -30,286 +30,32 @@ function animationById(id, className) {
     element.classList.remove(className);
     void element.offsetWidth;
     element.classList.add(className);
-}/**
- * Add atrribute to an element by id.
- * 
- * @param {string} id Id to select
- * @param {string} attribute Attribute to add
- * @param {string} value Value of attribute
- */
-function addAttributeById(id, attribute, value) {
-    debug("Add [Attribute] " + attribute + '=' + value + " -> [Id] " + id);
-    getId(id).setAttribute(attribute, value);
-}
-
-/**
- * Add attribute to an element.
- * 
- * @param {HTMLElement} element HTML element to select
- * @param {string} attribute Attribute to add
- * @param {string} value Value of attribute
- */
-function addAttributeByElement(element, attribute, value) {
-    debug("Add [Attribute] " + attribute + '=' + value + " -> [Element] " + element);
-    element.setAttribute(attribute, value);
-}
-
-/**
- * Add atrribute by tag name.
- * 
- * @param {string} tagName Tag name to select
- * @param {string} attribute Attribute to add
- * @param {string} value Value of attribute
- */
-function addAttributeByTag(tagName, attribute, value) {
-    debug("Add [Attribute] " + attribute + '=' + value + " -> [Tag] " + tagName);
-    var elements = getTag(tagName);
-    for (i = 0; i < elements.length; i++) {
-        elements[i].setAttribute(attribute, value);
-    }
-}const appName = "Roobie";
-const debugMode = true;
-
-/**
- * Print debug message to console if Debug Mode is ON.
- * 
- * @param {string} message Text to print alonside custom date and app details
- */
-function debug(message) {
-    if (debugMode) {
-        console.log(appName + ' ' + new Date().toISOString() + '   ' + message);
-    }
-}
-
-/**
- * Execute function on DOMContentLoaded, aka document ready.
- * 
- * @param {*} fn function to execute
- */
-function ready(fn) {
-    debug("Document ready");
-    if (document.readyState === "complete" || document.readyState === "interactive") {
-        setTimeout(fn, 1);
-    } else {
-        document.addEventListener("DOMContentLoaded", fn);
-    }
-}/**
- * Add class to an element by id.
- * 
- * @param {string} id Id to select
- * @param {string} className CSS class to add
- */
-function addClassById(id, className, condition = true) {
-    if (condition) {
-        debug("Add [Class] " + className + " -> [Id] " + id);
-        getId(id).classList.add(className);
-    }
-}
-
-/**
- * Add class to an element.
- * 
- * @param {HTMLElement} element HTML element to select
- * @param {string} className CSS class to add
- */
-function addClassByElement(element, className, condition = true) {
-    if (condition) {
-        debug("Add [Class] " + className + " -> [Element] " + element);
-        element.classList.add(className);
-    }
-}
-
-/**
- * Remove CSS class by tag name.
- * 
- * @param {string} tagName Tag name to select
- * @param {string} className CSS class to remove
- */
-function removeClassByTag(tagName, className, condition = true) {
-    if (condition) {
-        debug("Remove [Class] " + className + " -> [Tag] " + tagName);
-        var elements = getTag(tagName);
-        for (i = 0; i < elements.length; i++) {
-            elements[i].classList.remove(className);
-        }
-    }
-}
-
-/**
- * Remove CSS class from an element by id.
- * 
- * @param {string} id Id to select
- * @param {string} className CSS class to remove
- */
-function removeClassById(id, className) {
-    debug("Remove [Class] " + className + " -> [Id] " + id);
-    getId(id).classList.remove(className);
-}
-
-/**
- * Remove CSS class from an element by class name.
- * 
- * @param {string} className CSS class to select
- * @param {string} removeClassName CSS class to remove
- */
-function removeClassByClass(className, removeClassName) {
-    debug("Remove [Class] " + removeClassName + " -> [Class] " + className);
-    var elements = getClass(className);
-    for (i = 0; i < elements.length; i++) {
-        elements[i].classList.remove(removeClassName);
-    }
-}/**
- * Get HTML element with id.
- * 
- * @param {string} id id to select
- * @returns HTMLElement
- */
-function getId(id) {
-    return document.getElementById(id);
-}
-
-/**
- * Get HTML elements with CSS class.
- * 
- * @param {string} className CSS class to select
- * @returns List of HTMLElement
- */
-function getClass(className) {
-    return document.getElementsByClassName(className);
-}
-
-/**
- * Get HTML elements with tag name.
- * 
- * @param {string} tagName Tag name to select
- * @returns List of HTMLElement
- */
-function getTag(tagName) {
-    return document.getElementsByTagName(tagName);
-}/**
- * Load file content into an element by id.
- * 
- * @param {string} id Id to select
- * @param {string} file Path to file to load
- */
-function loadById(id, file) {
-    debug("Load [File] " + file + " -> [Id] " + id);
-    var element = getId(id);
-    var request = new XMLHttpRequest();
-    request.open('GET', file, true);
-    request.onload = () => {
-        if (request.status >= 200 && request.status < 400) {
-            var resp = request.responseText;
-            element.innerHTML = resp;
-        }
-    };
-    request.send();
-}/**
- * Rotate element by x amount of degrees.  
- * 
- * @param {string} id Id to select
- * @param {number} degrees Number of degress to rotate
- * @param {boolean} reset Reset the rotation if current rotation > 0.  Useful for toggles.
- */
-function rotateById(id, degrees, reset) {
-    var element = getId(id);
-    var transform = element.style.transform;
-    debug('Before cut ' + transform);
-    var previousDegrees = transform.match(/-?[\d\.]+/);
-    debug('After cut ' + previousDegrees);
-
-    if (previousDegrees > 0 && reset) {
-        debug("Reset rotation [Id] " + id);
-        element.style.transform = "rotate(" + 0 + "deg)";
-    } else {
-        debug("Rotate [Degrees] " + degrees + " -> [Id] " + id);
-        element.style.transform = "rotate(" + degrees + "deg)";
-    }
-
-}/**
- * Get a value from local storage.
- * 
- * @param {string} key Key to search for
- * @returns Value String from local storage
- */
-function getLocalStorage(key) {
-    debug("Local Storage [Get] " + key);
-    return localStorage.getItem(key);
-}
-
-/**
- * Set a key value pair to local storage.
- * 
- * @param {string} key Unqiue identifier
- * @param {string} value Value to store
- */
-function setLocalStorage(key, value) {
-    debug("Local Storage [Set] " + key + "=" + value);
-    localStorage.setItem(key, value);
-}/**
- * Set a CSS property by tag name.
- * 
- * @param {string} tagName Tag name to select
- * @param {string} property Property to set
- * @param {string} value Value of property
- */
-function setStyleByTag(tagName, property, value) {
-    debug("Set [Style] " + property + " = " + value + " -> [Tag] " + tagName);
-    var elements = getTag(tagName);
-    for (i = 0; i < elements.length; i++) {
-        elements[i].style.setProperty(property, value);
-    }
-}ready(() => {
-    const theme = getLocalStorage('theme');
+}/* On document ready get the theme from local storage, default to light if its null. */
+ready(() => {
+    const theme = localStorage.getItem('theme');
     if (theme != null) {
         switchTheme(theme);
     } else {
-        debug("Defaulting theme -> light");
         switchTheme('light');
     }
 })
 
 /**
- * Switch the CSS theme.  Updates local storage and body tag.
+ * Switch the CSS theme.  Updates local storage and body tag with theme attribute.
  * 
  * @param {string} themeName Name of the theme
  */
 function switchTheme(themeName) {
-    debug("Switch theme -> " + themeName);
-    setLocalStorage('theme', themeName);
-    addAttributeByTag('body', 'theme', themeName);
-}/**
- * Toggle the display of an element based on the current state.
- * 
- * @param {string} id Id to select
- */
-function toggleById(id) {
-    debug("Toggle [Id] " + id);
-    var element = getId(id);
-    if (element.style.display === "none") {
-        element.style.display = "flex";
-    } else {
-        element.style.display = "none";
-    }
-}
-
-/**
- * Toggle display of an element by tag name.
- * 
- * @param {string} tagName Tag name to select
- */
-function toggleByTag(tagName) {
-    debug("Toggle [Tag] " + tagName);
-    var elements = getTag(tagName);
-    for (i = 0; i < elements.length; i++) {
-        if (elements[i].style.display === "none") {
-            elements[i].style.display = "flex";
-        } else {
-            elements[i].style.display = "none";
-        }
-    }
+    console.log("Switching to " + themeName + " theme");
+    localStorage.setItem('theme', themeName);
+    document.body.setAttribute('theme', themeName);
 }ready(() => {
+    accordion();
+});
+
+function accordion() {
     let accordionHeaders = document.getElementsByClassName("accordion-header");
+    debug("Found " + accordionHeaders.length + " accordion headers");
     for (let header of accordionHeaders) {
         header.addEventListener("click", function() {
             this.classList.toggle("active");
@@ -318,12 +64,14 @@ function toggleByTag(tagName) {
             let panel = this.nextElementSibling;
             if (panel.style.display === "block") {
                 panel.style.display = "none";
+                debug("Accordion panel toggle [display=none]");
             } else {
                 panel.style.display = "block";
+                debug("Accordion panel toggle [display=block]");
             }
         });
     }
-});ready(() => {
+}ready(() => {
     let carousels = document.getElementsByClassName("carousel");
     for (let carousel of carousels) {
         let index = carousel.getAttribute("index");
@@ -368,7 +116,7 @@ function toggleByTag(tagName) {
  * @param {number} index Index of slide to show
  */
 function showSlide(id, index) {
-    debug("Show carousel [Id] " + id + " slides by index " + index);
+    debug("Show slide [id=" + id + "] [index=" + index + "]");
     let element = document.getElementById(id);
 
     // Get carousel slides
@@ -434,10 +182,10 @@ ready(() => {
 
 
 /**
- * Checks menu for media queries.
+ * Checks menu media queries.
  */
 function checkMenu() {
-    debug("Checking media queries");
+    debug("Checking menu media queries");
     collapseMenu(MEDIACOLLAPSES, 'rsp-menu-s');
     expandMenu(MEDIAEXPANDS, 'rsp-menu-s');
     collapseMenu(MEDIACOLLAPSEM, 'rsp-menu');
@@ -458,13 +206,13 @@ function checkMenu() {
  */
 function expandMenu(event, className) {
     if (event.matches) {
-        debug('Expand Menu [Class] ' + className);
+        debug('Expand Menu [class=' + className + "]");
         var menus = getClass(className);
         for (i = 0; i < menus.length; i++) {
-            let cnt = menus[i].querySelector('.rsp-cnt');
-            if (cnt) {
-                if (cnt.classList.contains('rsp-cnt')) {
-                    menus[i].innerHTML = cnt.innerHTML;
+            let content = menus[i].querySelector('.rsp-cnt');
+            if (content) {
+                if (content.classList.contains('rsp-cnt')) {
+                    menus[i].innerHTML = content.innerHTML;
                 }
             }
         }
@@ -479,7 +227,7 @@ function expandMenu(event, className) {
  */
 function collapseMenu(event, className) {
     if (event.matches) {
-        debug('Collapse Menu [Class] ' + className);
+        debug('Collapse Menu [class=' + className + "]");
         var menus = getClass(className);
         for (i = 0; i < menus.length; i++) {
             items = menus[i].innerHTML;
@@ -632,4 +380,240 @@ document.addEventListener("click", closeAllSelect);ready(() => {
             tooltipText[0].style.animationDuration = '';
         });
     }
-})
+})/**
+ * Add atrribute to an element by id.
+ * 
+ * @param {string} id Id to select
+ * @param {string} attribute Attribute to add
+ * @param {string} value Value of attribute
+ */
+function addAttributeById(id, attribute, value) {
+    debug("Add [Attribute] " + attribute + '=' + value + " -> [Id] " + id);
+    getId(id).setAttribute(attribute, value);
+}
+
+/**
+ * Add attribute to an element.
+ * 
+ * @param {HTMLElement} element HTML element to select
+ * @param {string} attribute Attribute to add
+ * @param {string} value Value of attribute
+ */
+function addAttributeByElement(element, attribute, value) {
+    debug("Add [Attribute] " + attribute + '=' + value + " -> [Element] " + element);
+    element.setAttribute(attribute, value);
+}
+
+/**
+ * Add atrribute by tag name.
+ * 
+ * @param {string} tagName Tag name to select
+ * @param {string} attribute Attribute to add
+ * @param {string} value Value of attribute
+ */
+function addAttributeByTag(tagName, attribute, value) {
+    debug("Add [Attribute] " + attribute + '=' + value + " -> [Tag] " + tagName);
+    var elements = getTag(tagName);
+    for (i = 0; i < elements.length; i++) {
+        elements[i].setAttribute(attribute, value);
+    }
+}/**
+ * Add class to an element by id.
+ * 
+ * @param {string} id Id to select
+ * @param {string} className CSS class to add
+ */
+function addClassById(id, className, condition = true) {
+    if (condition) {
+        debug("Add [Class] " + className + " -> [Id] " + id);
+        getId(id).classList.add(className);
+    }
+}
+
+/**
+ * Add class to an element.
+ * 
+ * @param {HTMLElement} element HTML element to select
+ * @param {string} className CSS class to add
+ */
+function addClassByElement(element, className, condition = true) {
+    if (condition) {
+        debug("Add [Class] " + className + " -> [Element] " + element);
+        element.classList.add(className);
+    }
+}
+
+/**
+ * Remove CSS class by tag name.
+ * 
+ * @param {string} tagName Tag name to select
+ * @param {string} className CSS class to remove
+ */
+function removeClassByTag(tagName, className, condition = true) {
+    if (condition) {
+        debug("Remove [Class] " + className + " -> [Tag] " + tagName);
+        var elements = getTag(tagName);
+        for (i = 0; i < elements.length; i++) {
+            elements[i].classList.remove(className);
+        }
+    }
+}
+
+/**
+ * Remove CSS class from an element by id.
+ * 
+ * @param {string} id Id to select
+ * @param {string} className CSS class to remove
+ */
+function removeClassById(id, className) {
+    debug("Remove [Class] " + className + " -> [Id] " + id);
+    getId(id).classList.remove(className);
+}
+
+/**
+ * Remove CSS class from an element by class name.
+ * 
+ * @param {string} className CSS class to select
+ * @param {string} removeClassName CSS class to remove
+ */
+function removeClassByClass(className, removeClassName) {
+    debug("Remove [Class] " + removeClassName + " -> [Class] " + className);
+    var elements = getClass(className);
+    for (i = 0; i < elements.length; i++) {
+        elements[i].classList.remove(removeClassName);
+    }
+}/**
+ * Get HTML element with id.
+ * 
+ * @param {string} id id to select
+ * @returns HTMLElement
+ */
+function getId(id) {
+    return document.getElementById(id);
+}
+
+/**
+ * Get HTML elements with CSS class.
+ * 
+ * @param {string} className CSS class to select
+ * @returns List of HTMLElement
+ */
+function getClass(className) {
+    return document.getElementsByClassName(className);
+}
+
+/**
+ * Get HTML elements with tag name.
+ * 
+ * @param {string} tagName Tag name to select
+ * @returns List of HTMLElement
+ */
+function getTag(tagName) {
+    return document.getElementsByTagName(tagName);
+}/**
+ * Execute function on DOMContentLoaded, aka document ready.
+ * 
+ * @param {*} fn function to execute
+ */
+function ready(fn) {
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+        setTimeout(fn, 1);
+    } else {
+        document.addEventListener("DOMContentLoaded", fn);
+    }
+}/**
+ * Load file content into an element by id.
+ * 
+ * @param {string} id Id to select
+ * @param {string} file Path to file to load
+ */
+function loadById(id, file) {
+    debug("Load [File] " + file + " -> [Id] " + id);
+    var element = getId(id);
+    var request = new XMLHttpRequest();
+    request.open('GET', file, true);
+    request.onload = () => {
+        if (request.status >= 200 && request.status < 400) {
+            var resp = request.responseText;
+            element.innerHTML = resp;
+        }
+    };
+    request.send();
+}const appName = "Roobie";
+const debugMode = true;
+
+/**
+ * Print debug message to console if Debug Mode is ON.
+ * 
+ * @param {string} message Text to print alonside custom date and app details
+ */
+function debug(message) {
+    if (debugMode) {
+        console.log(appName + ' ' + new Date().toISOString() + '   ' + message);
+    }
+}/**
+ * Rotate element by x amount of degrees.  
+ * 
+ * @param {string} id Id to select
+ * @param {number} degrees Number of degress to rotate
+ * @param {boolean} reset Reset the rotation if current rotation > 0.  Useful for toggles.
+ */
+function rotateById(id, degrees, reset) {
+    var element = getId(id);
+    var transform = element.style.transform;
+    debug('Before cut ' + transform);
+    var previousDegrees = transform.match(/-?[\d\.]+/);
+    debug('After cut ' + previousDegrees);
+
+    if (previousDegrees > 0 && reset) {
+        debug("Reset rotation [Id] " + id);
+        element.style.transform = "rotate(" + 0 + "deg)";
+    } else {
+        debug("Rotate [Degrees] " + degrees + " -> [Id] " + id);
+        element.style.transform = "rotate(" + degrees + "deg)";
+    }
+
+}/**
+ * Set a CSS property by tag name.
+ * 
+ * @param {string} tagName Tag name to select
+ * @param {string} property Property to set
+ * @param {string} value Value of property
+ */
+function setStyleByTag(tagName, property, value) {
+    debug("Set [Style] " + property + " = " + value + " -> [Tag] " + tagName);
+    var elements = getTag(tagName);
+    for (i = 0; i < elements.length; i++) {
+        elements[i].style.setProperty(property, value);
+    }
+}/**
+ * Toggle the display of an element based on the current state.
+ * 
+ * @param {string} id Id to select
+ */
+function toggleById(id) {
+    debug("Toggle [Id] " + id);
+    var element = getId(id);
+    if (element.style.display === "none") {
+        element.style.display = "flex";
+    } else {
+        element.style.display = "none";
+    }
+}
+
+/**
+ * Toggle display of an element by tag name.
+ * 
+ * @param {string} tagName Tag name to select
+ */
+function toggleByTag(tagName) {
+    debug("Toggle [Tag] " + tagName);
+    var elements = getTag(tagName);
+    for (i = 0; i < elements.length; i++) {
+        if (elements[i].style.display === "none") {
+            elements[i].style.display = "flex";
+        } else {
+            elements[i].style.display = "none";
+        }
+    }
+}

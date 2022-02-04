@@ -82,7 +82,7 @@ A few examples... these don't even scratch the surface.  Fully customized HTML w
 ```shell
 <nav class="nav-row">
     <div class="nav-title">Navbar</div>
-    <div class="flx-row rsp-menu">
+    <div class="row rsp-menu">
         <a class="nav-item">Home</a>
         <a class="nav-item">Products</a>
         <a class="nav-item">About Us</a>

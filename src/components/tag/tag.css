@@ -1,5 +1,8 @@
 .tag,
 .tagh {
+    display: inline-flex;
+    width: auto;
+    height: auto;
     border: 1px solid transparent;
     padding: var(--pad1) var(--pad2);
     box-shadow: var(--box1);

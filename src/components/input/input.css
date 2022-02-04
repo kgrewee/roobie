@@ -42,3 +42,9 @@ select:focus {
     /* Microsoft Edge */
     color: var(--t5);
 }
+
+@media screen and (max-width: 800px) {
+    .input {
+        width: 100% !important;
+    }
+}

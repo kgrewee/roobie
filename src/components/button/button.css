@@ -10,6 +10,8 @@
     cursor: pointer;
     color: var(--t2);
     display: inline-flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     font-size: var(--fnts3);
     font-family: var(--fntf1);

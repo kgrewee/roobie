@@ -1,10 +1,9 @@
-/* On document ready get the theme from local storage, default if its null. */
+/* On document ready get the theme from local storage, default to light if its null. */
 ready(() => {
     const theme = localStorage.getItem('theme');
     if (theme != null) {
         switchTheme(theme);
     } else {
-        console.log("Defaulting to light theme");
         switchTheme('light');
     }
 })

@@ -17,13 +17,11 @@
     ],
     "main": "roobie.min.js",
     "scripts": {
-        "build": "npm-run-all build:css build:css:bare build:css:prod build:js build:js:bare build:js:prod docs",
-        "build:css": "cat src/animations/*.css src/animations/**/*.css  src/components/**/*.css src/core/*.css src/layout/*.css src/themes/*.css src/utilities/*.css > roobie.css",
-        "build:css:bare": "cat src/animations/*.css src/animations/**/*.css  src/components/**/*.css src/core/*.css src/layout/*.css src/utilities/*.css > roobie-bare.css",
-        "build:css:prod": "minify roobie.css > roobie.min.css && minify roobie-bare.css > roobie-bare.min.css",
-        "build:js": "cat src/animations/*.js src/components/**/*.js src/themes/*.js src/utilities/*.js > roobie.js",
-        "build:js:bare": "cat src/animations/*.js src/components/**/*.js src/utilities/*.js > roobie-bare.js",
-        "build:js:prod": "minify roobie.js > roobie.min.js && minify roobie-bare.js > roobie-bare.min.js",
+        "build": "npm-run-all build:css build:css:prod build:js build:js:prod docs",
+        "build:css": "cat src/animations/*.css src/themes/*.css src/animations/**/*.css src/components/**/*.css src/core/*.css src/layout/*.css src/utilities/*.css > roobie.css",
+        "build:css:prod": "minify roobie.css > roobie.min.css",
+        "build:js": "cat src/animations/*.js src/themes/*.js src/components/**/*.js src/utilities/*.js > roobie.js",
+        "build:js:prod": "minify roobie.js > roobie.min.js",
         "docs": "npm-run-all docs:js docs:css",
         "docs:js": "jsdoc roobie.js -d docs/js",
         "docs:css": "",
@@ -43,12 +41,13 @@
     "files": [
         "README.md",
         "LICENSE.md",
+        "roobie.css",
+        "roobie.js",
         "roobie.min.css",
         "roobie.min.js",
-        "roobie-bare.min.css",
-        "roobie-bare.min.js",
         "icons/",
         "examples/",
+        "docs/",
         "src/themes/"
     ]
 }

@@ -30,6 +30,25 @@ function animationById(id, className) {
     element.classList.remove(className);
     void element.offsetWidth;
     element.classList.add(className);
+}/* On document ready get the theme from local storage, default to light if its null. */
+ready(() => {
+    const theme = localStorage.getItem('theme');
+    if (theme != null) {
+        switchTheme(theme);
+    } else {
+        switchTheme('light');
+    }
+})
+
+/**
+ * Switch the CSS theme.  Updates local storage and body tag with theme attribute.
+ * 
+ * @param {string} themeName Name of the theme
+ */
+function switchTheme(themeName) {
+    console.log("Switching to " + themeName + " theme");
+    localStorage.setItem('theme', themeName);
+    document.body.setAttribute('theme', themeName);
 }ready(() => {
     accordion();
 });
@@ -361,27 +380,7 @@ document.addEventListener("click", closeAllSelect);ready(() => {
             tooltipText[0].style.animationDuration = '';
         });
     }
-})/* On document ready get the theme from local storage, default if its null. */
-ready(() => {
-    const theme = localStorage.getItem('theme');
-    if (theme != null) {
-        switchTheme(theme);
-    } else {
-        console.log("Defaulting to light theme");
-        switchTheme('light');
-    }
-})
-
-/**
- * Switch the CSS theme.  Updates local storage and body tag with theme attribute.
- * 
- * @param {string} themeName Name of the theme
- */
-function switchTheme(themeName) {
-    console.log("Switching to " + themeName + " theme");
-    localStorage.setItem('theme', themeName);
-    document.body.setAttribute('theme', themeName);
-}/**
+})/**
  * Add atrribute to an element by id.
  * 
  * @param {string} id Id to select

@@ -15,7 +15,7 @@
         "js",
         "html"
     ],
-    "main": "roobie.min.js",
+    "main": "dist/roobie.min.js",
     "scripts": {
         "dry": "npm publish --dry-run",
         "package": "npm-run-all build copy docs",

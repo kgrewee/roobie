@@ -1,7 +1,7 @@
 {
     "name": "roobie",
-    "version": "0.2.5",
-    "description": "Centralized CSS and JavaScript for Advanced Web Development.",
+    "version": "0.2.6",
+    "description": "Minimalistic CSS and JavaScript for Advanced Web Development.",
     "author": "Kyle Grewe",
     "license": "MIT",
     "bugs": {
@@ -23,9 +23,8 @@
         "build:css:prod": "minify dist/roobie.css > dist/roobie.min.css",
         "build:js": "cat src/**/*.js src/**/**/*.js  > dist/roobie.js",
         "build:js:prod": "minify dist/roobie.js > dist/roobie.min.js",
-        "copy": "npm-run-all copy:themes copy:icons",
+        "copy": "npm-run-all copy:themes",
         "copy:themes": "cp -r src/themes/ dist/",
-        "copy:icons": "cp -r src/icons/ dist/",
         "docs": "npm-run-all docs:js docs:css",
         "docs:js": "jsdoc dist/roobie.js -d docs/js",
         "docs:css": "",

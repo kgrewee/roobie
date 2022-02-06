@@ -3871,7 +3871,6 @@ select:focus {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0 var(--pad2);
 }
 
 .nav-col {
@@ -3879,7 +3878,6 @@ select:focus {
     width: auto;
     display: flex;
     flex-direction: column;
-    padding: 0 var(--pad2);
 }
 
 .nav-title {

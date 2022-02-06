@@ -1,0 +1,106 @@
+:root {
+    --animation-duration: 1.5s;
+    --path-divider: '/';
+    /*Font Family*/
+    --fntf1: 'Ubuntu', sans-serif;
+    --fntf2: 'Open Sans', sans-serif;
+    --fntf3: 'PT Sans', sans-serif;
+    --fntf4: 'American Typewriter', serif;
+    --fntf5: 'American Typewriter', serif;
+    --fntf6: 'American Typewriter', serif;
+    /*Font Weight*/
+    --fntw1: 200;
+    --fntw2: 300;
+    --fntw3: 400;
+    --fntw4: 700;
+    --fntw5: 800;
+    --fntw6: 900;
+    /*Transition*/
+    --trn1: '1s ease';
+    --trn2: '1s ease';
+    --trn3: '1s ease';
+    --trn4: '1s ease';
+    --trn5: '1s ease';
+    --trn6: '1s ease';
+    /*Border Radius*/
+    --br1: 2px;
+    --br2: 4px;
+    --br3: 6px;
+    --br4: 8px;
+    --br5: 10px;
+    --br6: 15px;
+    /*Padding*/
+    --pad1: 3px;
+    --pad2: 5px;
+    --pad3: 10px;
+    --pad4: 15px;
+    --pad5: 20px;
+    --pad6: 30px;
+    /*Margin*/
+    --mrg1: 5px;
+    --mrg2: 10px;
+    --mrg3: 15px;
+    --mrg4: 20px;
+    --mrg5: 30px;
+    --mrg6: 40px;
+    /*Font Size*/
+    --fnts1: .5em;
+    --fnts2: .8em;
+    --fnts3: 1em;
+    --fnts4: 1.25em;
+    --fnts5: 1.5em;
+    --fnts6: 2em;
+    /*Line Height */
+    --lht1: .8em;
+    --lht2: 1em;
+    --lht3: 1.5em;
+    --lht4: 2em;
+    --lht5: 1.5em;
+    --lht6: 3em;
+    --drp-min-width: 160px;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg1);
+    font-family: var(--fntf1);
+}
+
+h1 {
+    color: var(--t1);
+}
+
+h2 {
+    color: var(--t2);
+}
+
+h3,
+h4,
+h5,
+h6 {
+    color: var(--t4);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p {
+    margin: var(--mrg1) 0;
+}
+
+span,
+p {
+    color: var(--t3);
+}
+
+.active {
+    background-color: var(--bg6) !important;
+}

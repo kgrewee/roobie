@@ -1,6 +1,6 @@
 {
     "name": "roobie",
-    "version": "0.2.4",
+    "version": "0.2.5",
     "description": "Centralized CSS and JavaScript for Advanced Web Development.",
     "author": "Kyle Grewe",
     "license": "MIT",
@@ -17,13 +17,17 @@
     ],
     "main": "roobie.min.js",
     "scripts": {
-        "build": "npm-run-all build:css build:css:prod build:js build:js:prod docs",
-        "build:css": "cat src/animations/*.css src/themes/*.css src/animations/**/*.css src/components/**/*.css src/core/*.css src/layout/*.css src/utilities/*.css > roobie.css",
-        "build:css:prod": "minify roobie.css > roobie.min.css",
-        "build:js": "cat src/animations/*.js src/themes/*.js src/components/**/*.js src/utilities/*.js > roobie.js",
-        "build:js:prod": "minify roobie.js > roobie.min.js",
+        "package": "npm-run-all build copy docs",
+        "build": "npm-run-all build:css build:css:prod build:js build:js:prod",
+        "build:css": "cat src/**/*.css src/**/**/*.css  > dist/roobie.css",
+        "build:css:prod": "minify dist/roobie.css > dist/roobie.min.css",
+        "build:js": "cat src/**/*.js src/**/**/*.js  > dist/roobie.js",
+        "build:js:prod": "minify dist/roobie.js > dist/roobie.min.js",
+        "copy": "npm-run-all copy:themes copy:icons",
+        "copy:themes": "cp -r src/themes/ dist/",
+        "copy:icons": "cp -r src/icons/ dist/",
         "docs": "npm-run-all docs:js docs:css",
-        "docs:js": "jsdoc roobie.js -d docs/js",
+        "docs:js": "jsdoc dist/roobie.js -d docs/js",
         "docs:css": "",
         "prepare": "husky install"
     },
@@ -40,14 +44,11 @@
     "dependencies": {},
     "files": [
         "README.md",
-        "LICENSE.md",
-        "roobie.css",
-        "roobie.js",
-        "roobie.min.css",
-        "roobie.min.js",
-        "icons/",
-        "examples/",
-        "docs/",
-        "src/themes/"
-    ]
+        "LICENSE.md"
+    ],
+    "directories": {
+        "bin": "dist/",
+        "example": "examples/",
+        "doc": "docs/"
+    }
 }

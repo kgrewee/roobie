@@ -1,6 +1,6 @@
 {
     "name": "roobie",
-    "version": "0.2.6",
+    "version": "0.2.7",
     "description": "Minimalistic CSS and JavaScript for Advanced Web Development.",
     "author": "Kyle Grewe",
     "license": "MIT",
@@ -17,14 +17,16 @@
     ],
     "main": "roobie.min.js",
     "scripts": {
+        "dry": "npm publish --dry-run",
         "package": "npm-run-all build copy docs",
         "build": "npm-run-all build:css build:css:prod build:js build:js:prod",
         "build:css": "cat src/**/*.css src/**/**/*.css  > dist/roobie.css",
         "build:css:prod": "minify dist/roobie.css > dist/roobie.min.css",
         "build:js": "cat src/**/*.js src/**/**/*.js  > dist/roobie.js",
         "build:js:prod": "minify dist/roobie.js > dist/roobie.min.js",
-        "copy": "npm-run-all copy:themes",
+        "copy": "npm-run-all copy:themes copy:icons",
         "copy:themes": "cp -r src/themes/ dist/",
+        "copy:icons": "cp -r src/icons/ dist/",
         "docs": "npm-run-all docs:js docs:css",
         "docs:js": "jsdoc dist/roobie.js -d docs/js",
         "docs:css": "",
@@ -43,7 +45,10 @@
     "dependencies": {},
     "files": [
         "README.md",
-        "LICENSE.md"
+        "LICENSE.md",
+        "dist/",
+        "examples/",
+        "docs/"
     ],
     "directories": {
         "bin": "dist/",

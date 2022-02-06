@@ -1,7 +1,16 @@
 # Roobie
 ![Build](https://github.com/kgrewee/roobie/actions/workflows/npm.yml/badge.svg)
 
-Minimalistic CSS & JavaScript Framework.  No external dependencies.  Templates coming soon.
+Website code is often sloppy and inefficient.  Developers follow different code patterns and naming conventions when making CSS classes and JavaScript functions.  CSS properties are repeated on multiple classes and applied to a single element, creating duplicate code and slower load times.  Most projects are built from scratch, instead of using a template, making the process un-replicable and time consuming.
+
+Roobie's solution is to centralize common web properties, functions, themes, etc. to help developers code fast and efficiently. Reuse core CSS classes and JavaScript functions instead of writing custom code.  Always build from a template.
+
+The result is:
+
+- Increased maintainability 
+- Increased development speed
+- Reduced custom code
+- Reduced code cleanup
 
 ## Install
 
@@ -18,24 +27,9 @@ All documentation is browser based.
 - [JavaScript Docs](docs/js)
 - CSS Docs - Coming Soon
 
-## Problem
-
-Website code is often sloppy and inefficient.  Developers follow different code patterns and naming conventions when making CSS classes and JavaScript functions.  CSS properties are repeated on multiple classes and applied to a single element, creating duplicate code and slower load times.  Most projects are built from scratch, instead of using a template, making the process un-replicable and time consuming.
-
-## Solution
-
-Centralize common web properties, functions, themes, and animations to help teams collaborate effectively. Reuse core CSS classes and JavaScript functions instead of writing custom code.  Always build from a template.
-
-The result is:
-
-- Increased maintainability 
-- Increased development speed
-- Reduced custom code
-- Reduced code cleanup
-
 ## Contributions
 
-Contributions are welcome.  Feel free to contribute CSS Classes, JS functions, themes, examples, etc.  Branch from `develop` and make a pull request to `develop` when your branch is ready.  We will review it.  Solid contributors will be granted merge privledges.  
+Contributions are always welcome.  Feel free to contribute anything that will make web development easier and more efficient.  Branch from `develop` and make a pull request to `develop` when your branch is ready.  We will review it.  We are always looking for more help and feedback.
 
 ## Examples
 
@@ -76,6 +70,12 @@ A few examples... these don't even scratch the surface.  Fully customized HTML w
         <a>Link 3</a>
     </div>
 </div>
+```
+
+**Layout**
+```shell
+<div class="col">Column</div>
+<div class="row">Row</div>
 ```
 
 **Responsive Menu**

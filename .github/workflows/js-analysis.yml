@@ -1,4 +1,4 @@
-name: JavaScript Code Analysis
+name: JS Analysis
 
 on:
   push:

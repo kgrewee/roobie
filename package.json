@@ -1,7 +1,7 @@
 {
     "name": "roobie",
-    "version": "0.2.7",
-    "description": "Minimalistic CSS and JavaScript for Advanced Web Development.",
+    "version": "0.2.9",
+    "description": "Minimalistic CSS and JavaScript framework.",
     "author": "Kyle Grewe",
     "license": "MIT",
     "bugs": {
@@ -15,7 +15,7 @@
         "js",
         "html"
     ],
-    "main": "roobie.min.js",
+    "main": "dist/roobie.min.js",
     "scripts": {
         "dry": "npm publish --dry-run",
         "package": "npm-run-all build copy docs",

@@ -160,10 +160,27 @@ function getClass(className) {
  */
 function getTag(tagName) {
     return document.getElementsByTagName(tagName);
+}
+
+/**
+ * Create HTML Element under tag.
+ * 
+ * @param {string} tagName Tag of element to create
+ * @param {string} appendTagName Tag to append new element
+ * @param {string} innerHTML Inner HTML to add to new element
+ */
+function createElementByTag(tagName, appendTagName, innerHTML) {
+    debug("Create element");
+    let element = document.createElement(tagName);
+    element.innerHTML = innerHTML;
+    let tags = getTag(appendTagName);
+    for (let tag of tags) {
+        tag.appendChild(element);
+    }
 }/**
  * Execute function on DOMContentLoaded, aka document ready.
  * 
- * @param {*} fn function to execute
+ * @param {*} fn Function to execute
  */
 function ready(fn) {
     if (document.readyState === "complete" || document.readyState === "interactive") {
@@ -171,6 +188,29 @@ function ready(fn) {
     } else {
         document.addEventListener("DOMContentLoaded", fn);
     }
+}
+
+/**
+ * Execute function on changes to the DOM.
+ * 
+ * @param {*} fn  Function to execute
+ */
+function changes(fn) {
+    debug("on changes");
+    // Options for the observer
+    const config = { attributes: true, childList: true, subtree: true };
+
+    // Create an observer
+    const observer = new MutationObserver(fn);
+
+    // Start observing the target node
+    observer.observe(document, config);
+
+    // Stop observing
+    //observer.disconnect();
+
+    // Legacy
+    //document.addEventListener("DOMSubtreeModified", fn);
 }/**
  * Load file content into an element by id.
  * 
@@ -252,7 +292,7 @@ ready(() => {
  * @param {string} themeName Name of the theme
  */
 function switchTheme(themeName) {
-    console.log("Switching to " + themeName + " theme");
+    debug("Switch theme [theme=" + themeName + "]");
     localStorage.setItem('theme', themeName);
     document.body.setAttribute('theme', themeName);
 }/**
@@ -287,27 +327,33 @@ function toggleByTag(tagName) {
     }
 }ready(() => {
     accordion();
+    changes(() => {
+        accordion();
+    });
 });
 
 function accordion() {
     let accordionHeaders = document.getElementsByClassName("accordion-header");
     debug("Found " + accordionHeaders.length + " accordion headers");
     for (let header of accordionHeaders) {
-        header.addEventListener("click", function() {
-            this.classList.toggle("active");
-
-            /* Toggle panel */
-            let panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-                debug("Accordion panel toggle [display=none]");
-            } else {
-                panel.style.display = "block";
-                debug("Accordion panel toggle [display=block]");
-            }
-        });
+        header.removeEventListener("click", toggleNextSibling);
+        header.addEventListener("click", toggleNextSibling)
     }
-}ready(() => {
+}
+
+function toggleNextSibling() {
+    this.classList.toggle("active");
+
+    /* Toggle panel */
+    let panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+        panel.style.display = "none";
+        debug("Accordion panel toggle [display=none]");
+    } else {
+        panel.style.display = "block";
+        debug("Accordion panel toggle [display=block]");
+    }
+};ready(() => {
     let carousels = document.getElementsByClassName("carousel");
     for (let carousel of carousels) {
         let index = carousel.getAttribute("index");

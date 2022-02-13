@@ -14,7 +14,7 @@ ready(() => {
  * @param {string} themeName Name of the theme
  */
 function switchTheme(themeName) {
-    console.log("Switching to " + themeName + " theme");
+    debug("Switch theme [theme=" + themeName + "]");
     localStorage.setItem('theme', themeName);
     document.body.setAttribute('theme', themeName);
 }

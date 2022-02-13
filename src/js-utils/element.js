@@ -27,3 +27,20 @@ function getClass(className) {
 function getTag(tagName) {
     return document.getElementsByTagName(tagName);
 }
+
+/**
+ * Create HTML Element under tag.
+ * 
+ * @param {string} tagName Tag of element to create
+ * @param {string} appendTagName Tag to append new element
+ * @param {string} innerHTML Inner HTML to add to new element
+ */
+function createElementByTag(tagName, appendTagName, innerHTML) {
+    debug("Create element");
+    let element = document.createElement(tagName);
+    element.innerHTML = innerHTML;
+    let tags = getTag(appendTagName);
+    for (let tag of tags) {
+        tag.appendChild(element);
+    }
+}

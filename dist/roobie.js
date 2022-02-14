@@ -365,7 +365,7 @@ function toggleNextSibling() {
         panel.style.display = "block";
         debug("Accordion panel toggle [display=block]");
     }
-};ready(() => {
+};changes(() => {
     let carousels = document.getElementsByClassName("carousel");
     for (let carousel of carousels) {
         let index = carousel.getAttribute("index");
@@ -379,29 +379,38 @@ function toggleNextSibling() {
     // Previous button click event
     let previousButtons = document.getElementsByClassName("carousel-previous");
     for (let btn of previousButtons) {
-        btn.addEventListener("click", function(e) {
-            showSlide(this.closest(".carousel").getAttribute("id"), +this.closest(".carousel").getAttribute("index") - 1);
-        });
+        btn.removeEventListener("click", showPrevious);
+        btn.addEventListener("click", showPrevious);
     }
 
     // Next button click event
     let nextButtons = document.getElementsByClassName("carousel-next");
     for (let btn of nextButtons) {
-        btn.addEventListener("click", function(e) {
-            showSlide(this.closest(".carousel").getAttribute("id"), +this.closest(".carousel").getAttribute("index") + 1);
-        });
+        btn.removeEventListener("click", showNext);
+        btn.addEventListener("click", showNext);
     }
 
     // Indicator click event
     let indicatorContainers = document.getElementsByClassName("carousel-indicators");
     for (let container of indicatorContainers) {
         for (let indicator of container.children) {
-            indicator.addEventListener("click", function(e) {
-                showSlide(this.closest(".carousel").getAttribute("id"), +this.getAttribute("index"));
-            });
+            indicator.removeEventListener("click", showIndicator);
+            indicator.addEventListener("click", showIndicator);
         }
     }
 });
+
+function showPrevious() {
+    showSlide(this.closest(".carousel").getAttribute("id"), +this.closest(".carousel").getAttribute("index") - 1);
+}
+
+function showNext() {
+    showSlide(this.closest(".carousel").getAttribute("id"), +this.closest(".carousel").getAttribute("index") + 1);
+}
+
+function showIndicator() {
+    showSlide(this.closest(".carousel").getAttribute("id"), +this.getAttribute("index"));
+}
 
 /**
  * Show carousel slide by index.
@@ -410,7 +419,7 @@ function toggleNextSibling() {
  * @param {number} index Index of slide to show
  */
 function showSlide(id, index) {
-    debug("Show slide [id=" + id + "] [index=" + index + "]");
+    debug("Show slide [index=" + index + "] => [id=" + id + "]");
     let element = document.getElementById(id);
 
     // Get carousel slides

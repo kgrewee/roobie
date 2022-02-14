@@ -4,6 +4,7 @@
  * @param {*} fn Function to execute
  */
 function ready(fn) {
+    debug("Hook [ready]");
     if (document.readyState === "complete" || document.readyState === "interactive") {
         setTimeout(fn, 1);
     } else {
@@ -17,7 +18,7 @@ function ready(fn) {
  * @param {*} fn  Function to execute
  */
 function changes(fn) {
-    debug("on changes");
+    debug("Hook [changes]");
     // Options for the observer
     const config = { childList: true, subtree: true };
 

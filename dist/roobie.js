@@ -163,7 +163,7 @@ function getTag(tagName) {
 }
 
 /**
- * Create HTML Element under tag.
+ * Append HTML Element as child to all elements a specific tag name.
  * 
  * @param {string} tagName Tag of element to create
  * @param {string} appendTagName Tag to append new element
@@ -177,6 +177,20 @@ function createElementByTag(tagName, appendTagName, innerHTML) {
     for (let tag of tags) {
         tag.appendChild(element);
     }
+}
+
+/**
+ * Append HTML Element as child to a specific element.
+ * 
+ * @param {string} tagName Tag of element to create
+ * @param {HTMLElement} element Element to append new element as child
+ * @param {string} innerHTML Inner HTML to add to new element
+ */
+function createElementByElement(tagName, element, innerHTML) {
+    debug("Create element by element");
+    let newElement = document.createElement(tagName);
+    newElement.innerHTML = innerHTML;
+    element.appendChild(newElement);
 }/**
  * Execute function on DOMContentLoaded, aka document ready.
  * 
@@ -198,7 +212,7 @@ function ready(fn) {
 function changes(fn) {
     debug("on changes");
     // Options for the observer
-    const config = { attributes: true, childList: true, subtree: true };
+    const config = { childList: true, subtree: true };
 
     // Create an observer
     const observer = new MutationObserver(fn);
@@ -327,9 +341,10 @@ function toggleByTag(tagName) {
     }
 }ready(() => {
     accordion();
-    changes(() => {
-        accordion();
-    });
+});
+
+changes(() => {
+    accordion();
 });
 
 function accordion() {

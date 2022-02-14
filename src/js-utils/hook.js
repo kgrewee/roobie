@@ -19,7 +19,7 @@ function ready(fn) {
 function changes(fn) {
     debug("on changes");
     // Options for the observer
-    const config = { attributes: true, childList: true, subtree: true };
+    const config = { childList: true, subtree: true };
 
     // Create an observer
     const observer = new MutationObserver(fn);

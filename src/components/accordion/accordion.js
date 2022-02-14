@@ -1,8 +1,9 @@
 ready(() => {
     accordion();
-    changes(() => {
-        accordion();
-    });
+});
+
+changes(() => {
+    accordion();
 });
 
 function accordion() {

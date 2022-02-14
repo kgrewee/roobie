@@ -1,9 +1,9 @@
 # Roobie
 ![Build](https://github.com/kgrewee/roobie/actions/workflows/npm.yml/badge.svg)
 
-Website code is often sloppy and inefficient.  Developers follow different code patterns and naming conventions when making CSS classes and JavaScript functions.  CSS properties are repeated on multiple classes and applied to a single element, creating duplicate code and slower load times.  Most projects are built from scratch, instead of using a template, making the process un-replicable and time consuming.
+**Not currently for production use.  We are exploring a new way to approach web development.  Stable release TBD.**
 
-Roobie's solution is to centralize common web properties, functions, themes, etc. to help developers code fast and efficiently. Reuse core CSS classes and JavaScript functions instead of writing custom code.  Always build from a template.
+A minimalistic approach to web development.  Roobie makes web development **easier**.  Centralized CSS, JavaScript, themes, animations & more. Reuse core CSS classes and JavaScript functions instead of writing custom code.  Always build from a template.
 
 The result is:
 

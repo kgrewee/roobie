@@ -340,11 +340,7 @@ function toggleByTag(tagName) {
             elements[i].style.display = "none";
         }
     }
-}ready(() => {
-    accordion();
-});
-
-changes(() => {
+}changes(() => {
     accordion();
 });
 

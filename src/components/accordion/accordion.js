@@ -1,7 +1,3 @@
-ready(() => {
-    accordion();
-});
-
 changes(() => {
     accordion();
 });

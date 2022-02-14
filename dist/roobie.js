@@ -460,26 +460,37 @@ function showSlide(id, index) {
     // Update index attribute
     element.setAttribute("index", index);
 }// Media Queries
-const MEDIAEXPANDS = window.matchMedia('(min-width: 600px)');
-const MEDIACOLLAPSES = window.matchMedia('(max-width: 600px)');
-const MEDIAEXPANDM = window.matchMedia('(min-width: 1000px)');
-const MEDIACOLLAPSEM = window.matchMedia('(max-width: 1000px)');
-const MEDIAEXPANDL = window.matchMedia('(min-width: 1200px)');
-const MEDIACOLLAPSEL = window.matchMedia('(max-width: 1200px)');
-const MEDIAEXPANDXL = window.matchMedia('(min-width: 1400px)');
-const MEDIACOLLAPSEXL = window.matchMedia('(max-width: 1400px)');
+const MEDIA_EXPAND_1 = window.matchMedia('(min-width: 600px)');
+const MEDIA_COLLAPSE_1 = window.matchMedia('(max-width: 600px)');
+const MEDIA_EXPAND_2 = window.matchMedia('(min-width: 1000px)');
+const MEDIA_COLLAPSE_2 = window.matchMedia('(max-width: 1000px)');
+const MEDIA_EXPAND_3 = window.matchMedia('(min-width: 1200px)');
+const MEDIA_COLLAPSE_3 = window.matchMedia('(max-width: 1200px)');
+const MEDIA_EXPAND_4 = window.matchMedia('(min-width: 1400px)');
+const MEDIA_COLLAPSE_4 = window.matchMedia('(max-width: 1400px)');
 
 ready(() => {
-    MEDIAEXPANDS.addEventListener("change", (event) => expandMenu(event, 'rsp-menu-s'));
-    MEDIACOLLAPSES.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-s'));
-    MEDIAEXPANDM.addEventListener("change", (event) => expandMenu(event, 'rsp-menu'));
-    MEDIACOLLAPSEM.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu'));
-    MEDIAEXPANDM.addEventListener("change", (event) => expandMenu(event, 'rsp-menu-m'));
-    MEDIACOLLAPSEM.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-m'));
-    MEDIAEXPANDL.addEventListener("change", (event) => expandMenu(event, 'rsp-menu-l'));
-    MEDIACOLLAPSEL.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-l'));
-    MEDIAEXPANDXL.addEventListener("change", (event) => expandMenu(event, 'rsp-menu-xl'));
-    MEDIACOLLAPSEXL.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-xl'));
+    MEDIA_EXPAND_1.removeEventListener("change", (event) => expandMenu(event, 'rsp-menu-s'));
+    MEDIA_COLLAPSE_1.removeEventListener("change", (event) => collapseMenu(event, 'rsp-menu-s'));
+    MEDIA_EXPAND_2.removeEventListener("change", (event) => expandMenu(event, 'rsp-menu'));
+    MEDIA_COLLAPSE_2.removeEventListener("change", (event) => collapseMenu(event, 'rsp-menu'));
+    MEDIA_EXPAND_2.removeEventListener("change", (event) => expandMenu(event, 'rsp-menu-m'));
+    MEDIA_COLLAPSE_2.removeEventListener("change", (event) => collapseMenu(event, 'rsp-menu-m'));
+    MEDIA_EXPAND_3.removeEventListener("change", (event) => expandMenu(event, 'rsp-menu-l'));
+    MEDIA_COLLAPSE_3.removeEventListener("change", (event) => collapseMenu(event, 'rsp-menu-l'));
+    MEDIA_EXPAND_4.removeEventListener("change", (event) => expandMenu(event, 'rsp-menu-xl'));
+    MEDIA_COLLAPSE_4.removeEventListener("change", (event) => collapseMenu(event, 'rsp-menu-xl'));
+    
+    MEDIA_EXPAND_1.addEventListener("change", (event) => expandMenu(event, 'rsp-menu-s'));
+    MEDIA_COLLAPSE_1.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-s'));
+    MEDIA_EXPAND_2.addEventListener("change", (event) => expandMenu(event, 'rsp-menu'));
+    MEDIA_COLLAPSE_2.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu'));
+    MEDIA_EXPAND_2.addEventListener("change", (event) => expandMenu(event, 'rsp-menu-m'));
+    MEDIA_COLLAPSE_2.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-m'));
+    MEDIA_EXPAND_3.addEventListener("change", (event) => expandMenu(event, 'rsp-menu-l'));
+    MEDIA_COLLAPSE_3.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-l'));
+    MEDIA_EXPAND_4.addEventListener("change", (event) => expandMenu(event, 'rsp-menu-xl'));
+    MEDIA_COLLAPSE_4.addEventListener("change", (event) => collapseMenu(event, 'rsp-menu-xl'));
     checkMenu();
 })
 
@@ -489,16 +500,16 @@ ready(() => {
  */
 function checkMenu() {
     debug("Checking menu media queries");
-    collapseMenu(MEDIACOLLAPSES, 'rsp-menu-s');
-    expandMenu(MEDIAEXPANDS, 'rsp-menu-s');
-    collapseMenu(MEDIACOLLAPSEM, 'rsp-menu');
-    expandMenu(MEDIAEXPANDM, 'rsp-menu');
-    collapseMenu(MEDIACOLLAPSEM, 'rsp-menu-m');
-    expandMenu(MEDIAEXPANDM, 'rsp-menu-m');
-    collapseMenu(MEDIACOLLAPSEL, 'rsp-menu-l');
-    expandMenu(MEDIAEXPANDL, 'rsp-menu-l');
-    collapseMenu(MEDIACOLLAPSEXL, 'rsp-menu-xl');
-    expandMenu(MEDIAEXPANDXL, 'rsp-menu-xl');
+    collapseMenu(MEDIA_COLLAPSE_1, 'rsp-menu-s');
+    expandMenu(MEDIA_EXPAND_1, 'rsp-menu-s');
+    collapseMenu(MEDIA_COLLAPSE_2, 'rsp-menu');
+    expandMenu(MEDIA_EXPAND_2, 'rsp-menu');
+    collapseMenu(MEDIA_COLLAPSE_2, 'rsp-menu-m');
+    expandMenu(MEDIA_EXPAND_2, 'rsp-menu-m');
+    collapseMenu(MEDIA_COLLAPSE_3, 'rsp-menu-l');
+    expandMenu(MEDIA_EXPAND_3, 'rsp-menu-l');
+    collapseMenu(MEDIA_COLLAPSE_4, 'rsp-menu-xl');
+    expandMenu(MEDIA_EXPAND_4, 'rsp-menu-xl');
 }
 
 /**

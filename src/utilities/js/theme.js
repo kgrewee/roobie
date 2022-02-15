@@ -6,7 +6,7 @@ ready(() => {
     } else {
         switchTheme('light');
     }
-})
+});
 
 /**
  * Switch the CSS theme.  Updates local storage and body tag with theme attribute.

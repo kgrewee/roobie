@@ -1,7 +1,7 @@
 # Roobie
 ![Build](https://github.com/kgrewee/roobie/actions/workflows/npm.yml/badge.svg)
 
-**Not currently for production use.  We are exploring a new way to approach web development.  Stable release TBD.**
+**No official releases yet.  We are exploring a new methods to approach web development.  Stable release TBD.**
 
 A minimalistic approach to web development.  Roobie makes web development **easier**.  Centralized CSS, JavaScript, themes, animations & more. Reuse core CSS classes and JavaScript functions instead of writing custom code.  Always build from a template.
 

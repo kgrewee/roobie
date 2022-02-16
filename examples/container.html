@@ -7,35 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../dist/roobie.min.css">
     <script src="../dist/roobie.min.js"></script>
+    <style>
+        .div-demo div {
+            height: 50px;
+            background-color: var(--bg3);
+            margin-bottom: var(--mrg3);
+            color: var(--t2);
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+        }
+        
+        .nested-div {
+            height: 150px;
+            padding: var(--pad4);
+            margin-right: var(--mrg4);
+            background-color: var(--bg3);
+        }
+        
+        .nested-div div {
+            margin: var(--mrg1);
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--bg1);
+            color: var(--t2);
+        }
+    </style>
 </head>
-<style>
-    .div-demo div {
-        height: 50px;
-        background-color: var(--bg3);
-        margin-bottom: var(--mrg3);
-        color: var(--t2);
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-    }
-    
-    .nested-div {
-        height: 150px;
-        padding: var(--pad4);
-        margin-right: var(--mrg4);
-        background-color: var(--bg3);
-    }
-    
-    .nested-div div {
-        margin: var(--mrg1);
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--bg1);
-        color: var(--t2);
-    }
-</style>
 
 <body>
     <header class="div col aln-center bg6">

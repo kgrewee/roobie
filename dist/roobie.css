@@ -3720,11 +3720,11 @@ Dev: Cursor when a user hovers an element
 
 .csr-pointer,
 .csr {
-    cursor: pointer;
+    cursor: pointer !important;
 }
 
 .csr-default {
-    cursor: default;
+    cursor: default !important;
 }/* 
 Name: Font Size
 Prefix: fnts

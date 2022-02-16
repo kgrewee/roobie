@@ -71,18 +71,27 @@ body {
 }
 
 h1 {
-    color: var(--t1);
+    color: var(--h1);
 }
 
 h2 {
-    color: var(--t2);
+    color: var(--h2);
 }
 
-h3,
-h4,
-h5,
+h3 {
+    color: var(--h3);
+}
+
+h4 {
+    color: var(--h4);
+}
+
+h5 {
+    color: var(--h5);
+}
+
 h6 {
-    color: var(--t4);
+    color: var(--h6);
 }
 
 h1,

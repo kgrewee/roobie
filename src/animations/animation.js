@@ -5,7 +5,7 @@
  * @param {string} className Class name of animation
  */
 function animationByElement(element, className) {
-    debug("[Animation] " + className + " -> [Element] " + element);
+    debug("Animation [class=" + className + "] -> [element=" + element + "]");
     element.classList.remove(className);
     void element.offsetWidth;
     element.classList.add(className);
@@ -18,7 +18,7 @@ function animationByElement(element, className) {
  * @param {string} className Class name of animation
  */
 function animationById(id, className) {
-    debug("[Animation] " + className + " -> [Id] " + id);
+    debug("Animation [class=" + className + "] -> [id=" + id + "]");
     let element = getId(id);
     let classList = element.classList;
     // Remove any current animation classes

@@ -22,10 +22,7 @@ npm i roobie
 
 ## Docs
 
-All documentation is browser based.
-
-- [JavaScript Docs](docs/js)
-- CSS Docs - Coming Soon
+Markdown documentation coming soon.  Reference examples for now.
 
 ## Contributions
 

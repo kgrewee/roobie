@@ -28,13 +28,12 @@
         "copy:themes": "cp -r src/themes/ dist/",
         "copy:icons": "cp -r src/icons/ dist/",
         "docs": "npm-run-all docs:js docs:css",
-        "docs:js": "jsdoc dist/roobie.js -d docs/js",
+        "docs:js": "",
         "docs:css": "",
         "prepare": "husky install"
     },
     "devDependencies": {
         "husky": "^7.0.4",
-        "jsdoc": "^3.6.10",
         "minify": "^8.0.3",
         "npm-run-all": "^4.1.5"
     },

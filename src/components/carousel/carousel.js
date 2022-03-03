@@ -1,4 +1,4 @@
-changes(() => {
+ready(() => {
     let carousels = document.getElementsByClassName("carousel");
     for (let carousel of carousels) {
         let index = carousel.getAttribute("index");

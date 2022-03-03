@@ -1,4 +1,4 @@
-changes(() => {
+ready(() => {
     accordion();
 });
 

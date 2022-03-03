@@ -30,7 +30,7 @@ function animationById(id, className) {
     element.classList.remove(className);
     void element.offsetWidth;
     element.classList.add(className);
-}changes(() => {
+}ready(() => {
     accordion();
 });
 
@@ -55,7 +55,7 @@ function toggleNextSibling() {
         panel.style.display = "block";
         debug("Accordion panel toggle [display=block]");
     }
-};changes(() => {
+};ready(() => {
     let carousels = document.getElementsByClassName("carousel");
     for (let carousel of carousels) {
         let index = carousel.getAttribute("index");

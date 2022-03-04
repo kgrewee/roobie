@@ -2262,6 +2262,29 @@ p {
 .btn-info {
     background-color: var(--info);
     color: var(--black);
+}.card {
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: var(--br2);
+    border: var(--bdr1);
+    padding: var(--pad3);
+    margin: var(--mrg2);
+}
+
+.card-title {}
+
+.card-subtitle {}
+
+.card-content {
+    margin: var(--mrg2) 0;
+    width: 100%;
+    flex: 1;
+}
+
+.card-actions {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
 }.carousel {
     position: relative;
     display: flex;

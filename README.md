@@ -33,7 +33,7 @@ Contributions are always welcome.  Feel free to contribute anything that will ma
 A few examples... these don't even scratch the surface.  Fully customized HTML without any custom code.
 
 **Animation**
-```shell
+```html
 <a class="_fade">Fade</a>
 <a class="_zoom">Zoom</a>
 <a class="_flip">Flip</a>
@@ -42,7 +42,7 @@ A few examples... these don't even scratch the surface.  Fully customized HTML w
 ```
 
 **Button**
-```shell
+```html
 <a class="btn">Button</a>
 <a class="btn btn-primary">Primary</a>
 <a class="btn btn-secondary">Secondary</a>
@@ -53,12 +53,12 @@ A few examples... these don't even scratch the surface.  Fully customized HTML w
 ```
 
 **Container**
-```shell
+```html
 <div class="div mrg pad">Container with 100% width, margin, padding</div>
 ```
 
 **Dropdown**
-```shell
+```html
 <div class="drp">
     <a class="drp-btn">Links</a>
     <div class="drp-cnt">
@@ -70,13 +70,13 @@ A few examples... these don't even scratch the surface.  Fully customized HTML w
 ```
 
 **Layout**
-```shell
+```html
 <div class="col">Column</div>
 <div class="row">Row</div>
 ```
 
 **Responsive Menu**
-```shell
+```html
 <nav class="nav-row">
     <div class="nav-title">Navbar</div>
     <div class="row rsp-menu">
@@ -90,7 +90,7 @@ A few examples... these don't even scratch the surface.  Fully customized HTML w
 ```
 
 **Styled List**
-```shell
+```html
 <ul class="ul">
     <li>Apples</li>
     <li>Oranges</li>

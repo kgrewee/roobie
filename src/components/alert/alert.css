@@ -1,6 +1,4 @@
-/* Base */
-
-.notify {
+.alert {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -9,7 +7,7 @@
     padding: var(--pad5);
 }
 
-.notify:after {
+.alert:after {
     align-self: flex-end;
     content: "\2715";
     color: var(--t1);
@@ -21,34 +19,34 @@
 
 /* Modifiers */
 
-.notify-primary {
+.alert-primary {
     background-color: var(--primary);
 }
 
-.notify-secondary {
+.alert-secondary {
     background-color: var(--secondary);
 }
 
-.notify-outline {
+.alert-outline {
     border: var(--bdr1);
 }
 
-.notify-success {
+.alert-success {
     background-color: var(--success);
     color: var(--black);
 }
 
-.notify-warning {
+.alert-warning {
     background-color: var(--warning);
     color: var(--black);
 }
 
-.notify-danger {
+.alert-danger {
     background-color: var(--danger);
     color: var(--black);
 }
 
-.notify-info {
+.alert-info {
     background-color: var(--info);
     color: var(--black);
 }

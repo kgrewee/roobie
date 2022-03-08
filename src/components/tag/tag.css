@@ -4,8 +4,8 @@
     width: auto;
     height: auto;
     border: 1px solid transparent;
-    padding: var(--pad1) var(--pad2);
-    box-shadow: var(--box1);
+    padding: 0 var(--pad2);
+    border: var(--bdr1);
     border-radius: var(--br6);
     margin: var(--mrg1);
     font-size: var(--fnts3);

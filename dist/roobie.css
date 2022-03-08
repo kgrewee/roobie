@@ -137,6 +137,7 @@ Dev: How a single item is aligned within a single line
     .div50,
     .div75,
     .div {
+        width: 100%;
         display: inline-block;
     }
 }/* Column */
@@ -345,12 +346,12 @@ Dev: Alignment on the main axis.  Horizontal for row, vertical for column.
     --p5: var(--t2);
     --p6: var(--t2);
     /*Border*/
-    --bdr1: .5px solid var(--grey3);
-    --bdr2: 1px solid var(--grey3);
-    --bdr3: 2px solid var(--grey3);
-    --bdr4: 3px solid var(--grey3);
-    --bdr5: 5px solid var(--grey3);
-    --bdr6: 7px solid var(--grey3);
+    --bdr1: .5px solid var(--bg2);
+    --bdr2: 1px solid var(--bg2);
+    --bdr3: 2px solid var(--bg2);
+    --bdr4: 3px solid var(--bg2);
+    --bdr5: 5px solid var(--bg2);
+    --bdr6: 7px solid var(--bg2);
     /*Inset*/
     --in1: inset 0px 0px 1px 1px rgb(235, 235, 235, .1);
     --in2: inset 0px 0px 2px 2px rgb(235, 235, 235, .2);
@@ -443,12 +444,12 @@ Dev: Alignment on the main axis.  Horizontal for row, vertical for column.
     --p5: var(--t2);
     --p6: var(--t2);
     /*Border*/
-    --bdr1: .5px solid var(--grey);
-    --bdr2: 1px solid var(--grey);
-    --bdr3: 2px solid var(--grey);
-    --bdr4: 3px solid var(--grey);
-    --bdr5: 5px solid var(--grey);
-    --bdr6: 7px solid var(--grey);
+    --bdr1: .5px solid var(--bg2);
+    --bdr2: 1px solid var(--bg2);
+    --bdr3: 2px solid var(--bg2);
+    --bdr4: 3px solid var(--bg2);
+    --bdr5: 5px solid var(--bg2);
+    --bdr6: 7px solid var(--bg2);
     /*Inset*/
     --in1: inset 0px 0px 1px 1px rgb(17, 17, 17, .1);
     --in2: inset 0px 0px 2px 2px rgb(17, 17, 17, .2);

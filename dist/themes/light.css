@@ -1,6 +1,6 @@
 [theme="light"] {
     /*Base*/
-    --primary: rgb(161, 255, 177);
+    --primary: rgba(23, 192, 169, 0.7);
     --secondary: var(--bg4);
     /*Status*/
     --success: rgb(87, 199, 79);
@@ -76,12 +76,12 @@
     --p5: var(--t2);
     --p6: var(--t2);
     /*Border*/
-    --bdr1: .5px solid var(--bg2);
-    --bdr2: 1px solid var(--bg2);
-    --bdr3: 2px solid var(--bg2);
-    --bdr4: 3px solid var(--bg2);
-    --bdr5: 5px solid var(--bg2);
-    --bdr6: 7px solid var(--bg2);
+    --bdr1: .5px solid var(--bg3);
+    --bdr2: 1px solid var(--bg3);
+    --bdr3: 2px solid var(--bg3);
+    --bdr4: 3px solid var(--bg3);
+    --bdr5: 5px solid var(--bg3);
+    --bdr6: 7px solid var(--bg3);
     /*Inset*/
     --in1: inset 0px 0px 1px 1px rgb(17, 17, 17, .1);
     --in2: inset 0px 0px 2px 2px rgb(17, 17, 17, .2);

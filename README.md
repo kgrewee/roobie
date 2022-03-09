@@ -5,7 +5,7 @@
 
 A minimalistic approach to web development.  Roobie makes web development ***easier***.  Centralized CSS, JavaScript, themes, animations & more. Reuse core CSS classes and JavaScript functions instead of writing custom code.  Always build from a template.
 
-Result:
+Result
 
 - Increased maintainability 
 - Increased development speed
@@ -44,22 +44,32 @@ Add Roobie dist files to **angular.json**.
  "styles": [
         "src/styles.scss",
         "./node_modules/roobie/dist/roobie.min.css",
-        "./node_modules/roobie/dist/themes/light.css"
+        "./node_modules/roobie/dist/themes/light.css",
         "./node_modules/roobie/dist/themes/dark.css"
     ],
     "scripts": ["./node_modules/roobie/dist/roobie.min.js"]
 ```
 
+## Examples
+Examples are found [here](examples/).
+
 ## Themes
-Roobie has two base CSS themes, dark & light.  Include the defaults or copy **dist/themes/light.css** & **dist/themes/dark.css** to a folder of your choice and customize them.  Expand on these and create more themes.  Make sure to include the theme files in your project, or things won't work correctly.  Every CSS class in Roobie is based on a theme variable.
+
+### Root
+Roobie has root CSS classes and variables in [root.css](dist/themes/root.css) that are theme independent.  These are currently bundled in the build, but will soon be user customizable like themes.  Standby for future updates to customize these settings.
+
+### Pre-built Themes
+Roobie has two pre-built CSS themes [light.css](dist/themes/light.css) & [dark.css](dist/themes/dark.css).  Create copies and include them in your project for further customization and to persist your themes through npm installs.  If you want to use the default Roobie themes, keep calm and carry on.  These will probably change in future versions.  Make sure to include the theme files in your project, or things won't work correctly.  Every CSS class in Roobie is based on a theme variable.
 
 ## Contributions
 Contributions are always welcome.  Feel free to contribute anything that will make web development easier and more efficient.  Branch from `develop` and make a pull request to `develop` when your branch is ready.  We will review it.  We are always looking for more help and feedback.
 
+# Documentation 
+
 ## Layout
 
 ### Container
-Containers in Roobie are styled using width and padding.  They are the basic building block.
+Containers are the basic building block.  Styled using width and padding.
 ```html
 <div class="diva">Auto width</div>
 <div class="div25">25% width</div>
@@ -598,7 +608,7 @@ Components for quick reference.  Not tested in SPA Frameworks such as Angular an
 ### Tag
 ```html
 <div class="tag">Tag</div>
-<div class="tagh">Tag with Hover</div>
+<div class="tagh">Tag with hover</div>
 ```
 
 ### Tooltip

@@ -1,5 +1,6 @@
 # Roobie
 ![Build](https://github.com/kgrewee/roobie/actions/workflows/npm.yml/badge.svg)
+[![npm version](https://badge.fury.io/js/roobie.svg)](https://badge.fury.io/js/roobie)
 
 **No official release yet.**
 
@@ -63,8 +64,6 @@ Roobie has two pre-built CSS themes [light.css](dist/themes/light.css) & [dark.c
 
 ## Contributions
 Contributions are always welcome.  Feel free to contribute anything that will make web development easier and more efficient.  Branch from `develop` and make a pull request to `develop` when your branch is ready.  We will review it.  We are always looking for more help and feedback.
-
-# Documentation 
 
 ## Layout
 

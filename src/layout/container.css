@@ -43,6 +43,7 @@
     .div50,
     .div75,
     .div {
+        width: 100%;
         display: inline-block;
     }
 }

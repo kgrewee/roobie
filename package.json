@@ -1,6 +1,6 @@
 {
     "name": "roobie",
-    "version": "0.3.3",
+    "version": "0.3.4",
     "description": "Minimalistic CSS and JavaScript framework.",
     "author": "Kyle Grewe",
     "repository": {
@@ -23,23 +23,23 @@
     "scripts": {
         "dry": "npm publish --dry-run",
         "package": "npm-run-all build copy docs",
-        "build": "npm-run-all build:css build:css:prod build:js build:js:prod",
+        "build": "npm-run-all build:css build:js minify",
         "build:css": "cat src/**/*.css src/**/**/*.css  > dist/roobie.css",
-        "build:css:prod": "minify dist/roobie.css > dist/roobie.min.css",
         "build:js": "cat src/**/*.js src/**/**/*.js  > dist/roobie.js",
-        "build:js:prod": "minify dist/roobie.js > dist/roobie.min.js",
+        "minify": "node minify.js",
         "copy": "npm-run-all copy:themes copy:icons",
         "copy:themes": "cp -r src/themes/ dist/",
         "copy:icons": "cp -r src/icons/ dist/",
-        "docs": "npm-run-all docs:js docs:css",
-        "docs:js": "",
-        "docs:css": "",
+        "docs": "npm-run-all docs:build docs:move",
+        "docs:build": "",
+        "docs:move": "",
         "prepare": "husky install"
     },
-    "dependencies": {},
     "devDependencies": {
+        "@node-minify/clean-css": "^6.2.0",
+        "@node-minify/core": "^6.2.0",
+        "@node-minify/uglify-es": "^6.2.0",
         "husky": "^7.0.4",
-        "minify": "^8.0.3",
         "npm-run-all": "^4.1.5"
     },
     "files": [

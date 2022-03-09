@@ -597,9 +597,8 @@ Components for quick reference.  Not tested in SPA Frameworks such as Angular an
 
 ### Tag
 ```html
-<div class="tag">Cheese</div>
-<div class="tag bdr3">Pepperoni</div>
-<div class="tagh">Eggs</div>
+<div class="tag">Tag</div>
+<div class="tagh">Tag with Hover</div>
 ```
 
 ### Tooltip

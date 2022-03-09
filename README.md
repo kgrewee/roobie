@@ -51,15 +51,15 @@ Add Roobie dist files to **angular.json**.
 ```
 
 ## Themes
-Roobie has two base CSS themes, dark & light.  Include the defaults or copy **dark.css** & **light.css** a folder of your choice and customize it.  Make sure to include the theme files, or things won't work correctly.  Every CSS class in Roobie is based on a theme variable.
+Roobie has two base CSS themes, dark & light.  Include the defaults or copy **dist/themes/light.css** & **dist/themes/dark.css** to a folder of your choice and customize them.  Expand on these and create more themes.  Make sure to include the theme files in your project, or things won't work correctly.  Every CSS class in Roobie is based on a theme variable.
 
 ## Contributions
 Contributions are always welcome.  Feel free to contribute anything that will make web development easier and more efficient.  Branch from `develop` and make a pull request to `develop` when your branch is ready.  We will review it.  We are always looking for more help and feedback.
 
-## Basics
-Full HTML examples are found in **examples/**.
+## Layout
 
 ### Container
+Containers in Roobie are styled using width and padding.  They are the basic building block.
 ```html
 <div class="diva">Auto width</div>
 <div class="div25">25% width</div>
@@ -79,9 +79,8 @@ Full HTML examples are found in **examples/**.
 <div class="ht">100% height</div>
 ```
 
-### Flex Display
-Use these if you want alignment classes to work correctly.
-
+### Display
+Roobie uses a Flexbox layout.  Use these if you want alignment classes to work correctly.
 ```html
 <div class="col">Column</div>
 <div class="row">Row</div>
@@ -89,9 +88,7 @@ Use these if you want alignment classes to work correctly.
 <div class="rowr">Row reverse</div>
 ```
 
-### Other Display Classes
-Other classes included for convienence.
-
+Other display classes included for convienence.
 ```html
 <div class="flx">Flex</div>
 <div class="blk">Block</div>
@@ -100,7 +97,8 @@ Other classes included for convienence.
 <div class="inl-flx">Inline Flex</div>
 ```
 
-### Main Axis Alignment
+### Justify Content
+Justify content on the main axis.  Row for a **row** display.  Column for a **col** display.
 ```html
 <div class="row jst-start">Start</div>
 <div class="row jst-end">End</div>
@@ -111,7 +109,8 @@ Other classes included for convienence.
 <div class="row jst-stretch">Stretch</div>
 ```
 
-### Opposite Axis Alignment
+### Align Items
+Align items opposite of the main axis.  Column for a **row** display.  Row for a **col** display.
 ```html
 <div class="row aln-start">Start</div>
 <div class="row aln-end">End</div>
@@ -131,10 +130,10 @@ Other classes included for convienence.
 
 ### Float
 ```html
-<div class="fltl">Float left</div>
-<div class="fltr">Float right</div>
-<div class="flt0">Float none</div>
-<div class="flti">Float interit</div>
+<div class="fltl">Left</div>
+<div class="fltr">Right</div>
+<div class="flt0">None</div>
+<div class="flti">Interit</div>
 ```
 
 ### Position
@@ -305,7 +304,7 @@ Most utility classes range between 0-6 in terms of intensity.
 ```
 
 ## Components
-Components for quick reference.
+Components for quick reference.  Not tested in SPA Frameworks such as Angular and React.
 
 ### Accordion
 ```html
@@ -560,7 +559,7 @@ Components for quick reference.
 </ul>
 ```
 
-### Horizontal Navbar
+### Navbar Horizontal
 ```html
 <nav class="nav-row jst-between aln-center box">
     <div class="row aln-center">
@@ -577,68 +576,9 @@ Components for quick reference.
         <a class="nav-item">user@roobie.net</a>
     </div>
 </nav>
-<nav class="nav-row jst-around aln-center box">
-    <div class="row aln-center">
-        <a class="nav-title" href="">Roobie</a>
-    </div>
-    <div class="row aln-center rsp-menu-xl">
-        <a class="nav-item">Home</a>
-        <a class="nav-item">Products</a>
-        <a class="nav-item">About Us</a>
-        <a class="nav-item">Contact Us</a>
-        <a class="nav-item">Help</a>
-    </div>
-    <div class="row">
-        <a class="nav-item">user@roobie.net</a>
-    </div>
-</nav>
-<nav class="nav-row jst-around aln-center box">
-    <div class="row aln-center">
-        <a class="nav-title" href="">Roobie</a>
-        <div class="row aln-center rsp-menu-l">
-            <a class="nav-item">Home</a>
-            <a class="nav-item">Products</a>
-            <a class="nav-item">About Us</a>
-            <a class="nav-item">Contact Us</a>
-            <a class="nav-item">Help</a>
-        </div>
-    </div>
-</nav>
-<nav class="nav-row jst-between aln-center box">
-    <div class="row aln-center">
-        <a class="nav-title" href="">Roobie</a>
-        <div class="row aln-center rsp-menu">
-            <a class="nav-item">Home</a>
-            <a class="nav-item">Products</a>
-            <a class="nav-item">About Us</a>
-            <a class="nav-item">Contact Us</a>
-        </div>
-    </div>
-    <input type="text" class="input input-outline" placeholder="Search">
-</nav>
-<nav class="nav-row jst-between aln-center box">
-    <div class="row aln-center">
-        <a class="nav-title" href="">Roobie</a>
-        <div class="row aln-center rsp-menu">
-            <a class="nav-item">Home</a>
-            <a class="nav-item">Products</a>
-            <a class="nav-item">About Us</a>
-            <a class="nav-item">Contact Us</a>
-        </div>
-    </div>
-    <input type="text" class="input input-outline input-expand" placeholder="Search with expand">
-</nav>
-<nav class="nav-row jst-between aln-center box">
-    <a class="nav-title" href="">Roobie</a>
-    <div class="row aln-center rsp-menu-s">
-        <a class="nav-item">Home</a>
-        <a class="nav-item">Products</a>
-        <a class="nav-item">Help</a>
-    </div>
-</nav>
 ```
 
-### Vertical Navbar
+### Navbar Vertical
 ```html
 <nav class="nav-col jst-between aln-center box txtc">
     <div class="col">
@@ -651,74 +591,6 @@ Components for quick reference.
     </div>
     <div class="col aln-center">
         <a class="nav-item">user@roobie.net</a>
-    </div>
-</nav>
-<div class="mrgh3"></div>
-<nav class="nav-col jst-between aln-center box txtc">
-    <a class="nav-title" href="">Roobie</a>
-    <div class="col">
-        <a class="nav-item">Home</a>
-        <a class="nav-item">Products</a>
-        <a class="nav-item">About Us</a>
-        <a class="nav-item">Contact Us</a>
-        <a class="nav-item">Help</a>
-    </div>
-</nav>
-<div class="mrgh3"></div>
-<nav class="nav-col jst-between aln-center box txtc">
-    <a class="nav-title" href="">Roobie</a>
-    <div class="col">
-        <a class="nav-item">Home</a>
-        <a class="nav-item">Products</a>
-        <a class="nav-item">About Us</a>
-        <a class="nav-item">Contact Us</a>
-        <a class="nav-item">Help</a>
-    </div>
-    <div class="col aln-center">
-        <a class="nav-item">user@roobie.net</a>
-    </div>
-</nav>
-<div class="mrgh3"></div>
-<nav class="nav-col aln-center box pad4">
-    <a class="nav-item"><i class="icon icon-apps"></i></a>
-    <a class="nav-item"><i class="icon icon-linkedin"></i></a>
-    <a class="nav-item"><i class="icon icon-facebook"></i></a>
-    <a class="nav-item"><i class="icon icon-bell"></i></a>
-</nav>
-<div class="mrgh3"></div>
-<nav class="nav-col aln-center box txtc pad4">
-    <div class="div">
-        <h4 class="nav-heading">Section 1</h4>
-        <div class="col aln-center">
-            <a class="nav-item">Home</a>
-            <a class="nav-item">Products</a>
-        </div>
-    </div>
-    <div class="div">
-        <h4 class="nav-heading">Section 2</h4>
-        <div class="col aln-center">
-            <a class="nav-item">About Us</a>
-            <a class="nav-item">Contact Us</a>
-            <a class="nav-item">Help</a>
-        </div>
-    </div>
-</nav>
-<div class="mrgh3"></div>
-<nav class="nav-col aln-start box pad4">
-    <div class="div">
-        <h4 class="nav-heading">Section 1</h4>
-        <div class="col aln-start">
-            <a class="nav-item">Home</a>
-            <a class="nav-item">Products</a>
-        </div>
-    </div>
-    <div class="div">
-        <h4 class="nav-heading">Section 2</h4>
-        <div class="col aln-start">
-            <a class="nav-item">About Us</a>
-            <a class="nav-item">Contact Us</a>
-            <a class="nav-item">Help</a>
-        </div>
     </div>
 </nav>
 ```

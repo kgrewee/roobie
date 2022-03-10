@@ -1,10 +1,9 @@
 /**
- * Execute function on DOMContentLoaded, aka document ready.
+ * Execute on DOMContentLoaded, aka document ready.
  * 
- * @param {*} fn Function to execute
+ * @param {*} fn to execute
  */
 function ready(fn) {
-    debug("Hook [ready]");
     if (document.readyState === "complete" || document.readyState === "interactive") {
         setTimeout(fn, 1);
     } else {
@@ -13,12 +12,11 @@ function ready(fn) {
 }
 
 /**
- * Execute function on changes to the DOM.
+ * Execute on changes to the DOM.
  * 
- * @param {*} fn  Function to execute
+ * @param {*} fn  to execute
  */
 function changes(fn) {
-    debug("Hook [changes]");
     // Options for the observer
     const config = { childList: true, subtree: true };
 

@@ -36,7 +36,7 @@ Add Roobie dist files to the **head** tag of an HTML file.
 </head>
 ```
 
-or
+**or**
 
 ```html
 <head>
@@ -63,7 +63,7 @@ Add Roobie dist files to **angular.json**.
     "scripts": ["./node_modules/roobie/dist/roobie.min.js"]
 ```
 
-or
+**or**
 
 ```ts
  "styles": [

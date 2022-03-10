@@ -368,13 +368,13 @@ Dev: Alignment on the main axis.  Horizontal for row, vertical for column.
     --box6: 0 0 5px 5px rgb(235, 235, 235, .3);
 }[theme="light"] {
     /*Base*/
-    --primary: rgba(23, 192, 169, 0.7);
+    --primary: rgba(51, 192, 173, 0.7);
     --secondary: var(--bg4);
     /*Status*/
-    --success: rgb(87, 199, 79);
-    --warning: rgb(235, 119, 42);
-    --danger: rgb(248, 62, 52);
-    --info: rgb(152, 217, 243);
+    --success: rgba(81, 190, 73, 0.7);
+    --warning: rgba(235, 119, 42, .7);
+    --danger: rgba(248, 62, 52, .7);
+    --info: rgba(152, 217, 243, .7);
     /*Shade 1*/
     --white: rgb(240, 240, 240);
     --black: rgb(20, 20, 20);
@@ -2897,7 +2897,7 @@ select:focus {
     width: auto;
     height: auto;
     border: 1px solid transparent;
-    padding: 0 var(--pad2);
+    padding: 1px var(--pad3);
     border: var(--bdr1);
     border-radius: var(--br6);
     margin: var(--mrg1);
@@ -2907,7 +2907,7 @@ select:focus {
 }
 
 .tagh:hover {
-    box-shadow: var(--box2);
+    box-shadow: var(--box1);
     cursor: default;
     opacity: 90%;
 }/* The toggle - Area around the slider */

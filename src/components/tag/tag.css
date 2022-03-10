@@ -4,7 +4,7 @@
     width: auto;
     height: auto;
     border: 1px solid transparent;
-    padding: 0 var(--pad2);
+    padding: 1px var(--pad3);
     border: var(--bdr1);
     border-radius: var(--br6);
     margin: var(--mrg1);
@@ -14,7 +14,7 @@
 }
 
 .tagh:hover {
-    box-shadow: var(--box2);
+    box-shadow: var(--box1);
     cursor: default;
     opacity: 90%;
 }

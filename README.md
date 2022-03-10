@@ -57,10 +57,10 @@ Examples are found [here](examples/).
 ## Themes
 
 ### Root
-Roobie has root CSS classes and variables in [root.css](dist/themes/root.css) that are theme independent.  These are currently bundled in the build, but will soon be user customizable like themes.  Standby for future updates to customize these settings.
+Root CSS classes and variables in [root.css](dist/themes/root.css) are theme independent.  These are currently bundled in the build, but will soon be user customizable like themes.  Standby for future updates to customize these settings.
 
 ### Pre-built Themes
-Roobie has two pre-built CSS themes [light.css](dist/themes/light.css) & [dark.css](dist/themes/dark.css).  Create copies and include them in your project for further customization and to persist your themes through npm installs.  If you want to use the default Roobie themes, keep calm and carry on.  These will probably change in future versions.  Make sure to include the theme files in your project, or things won't work correctly.  Every CSS class in Roobie is based on a theme variable.
+There are two pre-built CSS themes: [light.css](dist/themes/light.css) & [dark.css](dist/themes/dark.css).  Create copies and include them in your project, instead of using the defaults. This will persist your themes through npm installs.  If you want to use the default Roobie themes, keep calm and carry on.  These will probably change in future versions.  Make sure to include the theme files in your project, or things won't work correctly.  Every CSS class in Roobie is based on a theme variable.
 
 ## Contributions
 Contributions are always welcome.  Feel free to contribute anything that will make web development easier and more efficient.  Branch from `develop` and make a pull request to `develop` when your branch is ready.  We will review it.  We are always looking for more help and feedback.
@@ -312,39 +312,8 @@ Most utility classes range between 0-6 in terms of intensity.
 <div class="z6">Theme setting</div>
 ```
 
-## Components
-Components for quick reference.  Not tested in SPA Frameworks such as Angular and React.
-
-### Accordion
-```html
- <div class="accordion">
-    <button class="accordion-header">Section 1</button>
-    <div class="accordion-panel">
-        <p>This is the first section.</p>
-    </div>
-    <button class="accordion-header">Section 2</button>
-    <div class="accordion-panel">
-        <p>This is the second section.</p>
-    </div>
-    <button class="accordion-header">Section 3</button>
-    <div class="accordion-panel">
-        <p>This is the third section.</p>
-    </div>
-</div>
-```
-
-### Alert
-```html
-<span class="alert alert-primary">An event has occurred</span>
-<span class="alert alert-secondary">An event has occurred</span>
-<span class="alert alert-outline">An event has occurred</span>
-<span class="alert alert-success">An event has occurred</span>
-<span class="alert alert-warning">An event has occurred</span>
-<span class="alert alert-danger">An event has occurred</span>
-<span class="alert alert-info">An event has occurred</span>
-```
-
-### Animation
+## Animations
+Animation classes start with an _underscore.
 ```html
 <span class="_backt">Back T</span>
 <span class="_backb">Back B</span>
@@ -418,16 +387,101 @@ Components for quick reference.  Not tested in SPA Frameworks such as Angular an
 <span class="_zoomoutr">Zoom Out R</span>
 ```
 
+## Components
+
+### Accordion
+Panels of expandable content.
+
+#### Basic
+```html
+ <div class="accordion">
+    <button class="accordion-header">Section 1</button>
+    <div class="accordion-panel">
+        <p>This is the first section.</p>
+    </div>
+    <button class="accordion-header">Section 2</button>
+    <div class="accordion-panel">
+        <p>This is the second section.</p>
+    </div>
+    <button class="accordion-header">Section 3</button>
+    <div class="accordion-panel">
+        <p>This is the third section.</p>
+    </div>
+</div>
+```
+
+#### Nested
+```html
+ <div class="accordion">
+    <button class="accordion-header">Section 1</button>
+    <div class="accordion-panel">
+        <div class="accordion">
+            <button class="accordion-header">Sub-Section 1</button>
+            <div class="accordion-panel">
+                <p>This is the first sub-section.</p>
+            </div>
+            <button class="accordion-header">Sub-Section 2</button>
+            <div class="accordion-panel">
+                <p>This is the second sub-section.</p>
+            </div>
+            <button class="accordion-header">Sub-Section 3</button>
+            <div class="accordion-panel">
+                <p>This is the third sub-section.</p>
+            </div>
+        </div>
+    </div>
+    <button class="accordion-header">Section 2</button>
+    <div class="accordion-panel">
+        <div class="accordion">
+            <button class="accordion-header">Sub-Section 1</button>
+            <div class="accordion-panel">
+                <p>This is the first sub-section.</p>
+            </div>
+            <button class="accordion-header">Sub-Section 2</button>
+            <div class="accordion-panel">
+                <p>This is the second sub-section.</p>
+            </div>
+            <button class="accordion-header">Sub-Section 3</button>
+            <div class="accordion-panel">
+                <p>This is the third sub-section.</p>
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+### Alert
+Alert the user of an event that has occurred.
+```html
+<span class="alert alert-primary">An event has occurred</span>
+<span class="alert alert-secondary">An event has occurred</span>
+<span class="alert alert-outline">An event has occurred</span>
+<span class="alert alert-success">An event has occurred</span>
+<span class="alert alert-warning">An event has occurred</span>
+<span class="alert alert-danger">An event has occurred</span>
+<span class="alert alert-info">An event has occurred</span>
+```
+
 ### Button
+Simple button styles that can be applied to most elements.
+
+#### Basic
 ```html
 <button type="button" class="btn">Basic</button>
 <button type="button" class="btn btn-outline">Outline</button>
+```
+#### Theme
+```html
 <button type="button" class="btn btn-primary">Primary</button>
 <button type="button" class="btn btn-secondary">Seconday</button>
 <button type="button" class="btn btn-success">Success</button>
 <button type="button" class="btn btn-warning">Warning</button>
 <button type="button" class="btn btn-danger">Danger</button>
 <button type="button" class="btn btn-info">Info</button>
+```
+
+#### Colored
+```html
 <button type="button" class="btn bg-red2">Red</button>
 <button type="button" class="btn bg-orange2">Orange</button>
 <button type="button" class="btn bg-yellow2">Yellow</button>
@@ -435,13 +489,29 @@ Components for quick reference.  Not tested in SPA Frameworks such as Angular an
 <button type="button" class="btn bg-blue2">Blue</button>
 <button type="button" class="btn bg-indigo2">Indigo</button>
 <button type="button" class="btn bg-violet2">Violet</button>
+```
+
+#### Raised
+```html
 <button type="button" class="btn box">Raised</button>
 <button type="button" class="btn boxh">Raised with hover</button>
+```
+
+#### Inset
+```html
 <button type="button" class="btn in">Inset</button>
 <button type="button" class="btn inh">Inset with hover</button>
+```
+
+#### Icon
+```html
 <button type="button" class="btn btn-primary"><i class="icon icon-heart"></i></button>
 <button type="button" class="btn btn-primary"><i class="icon icon-facebook"></i></button>
 <button type="button" class="btn btn-primary"><i class="icon icon-comment"></i></button>
+```
+
+#### Variations
+```html
 <button type="button" class="btn bdr-success">Success</button>
 <button type="button" class="btn bdr-warning">Warning</button>
 <button type="button" class="btn bdr-danger">Danger</button>
@@ -467,6 +537,8 @@ Components for quick reference.  Not tested in SPA Frameworks such as Angular an
 ```
 
 ### Card
+
+#### Basic
 ```html
 <div class="card">
     <h2 class="card-title">Title</h2>
@@ -475,6 +547,9 @@ Components for quick reference.  Not tested in SPA Frameworks such as Angular an
         This is the content.
     </div>
 </div>
+```
+#### Image
+```html
 <div class="card">
     <h2 class="card-title">Image</h2>
     <span class="card-subtitle">By Artist Name</span>
@@ -482,6 +557,9 @@ Components for quick reference.  Not tested in SPA Frameworks such as Angular an
         <img class="br bg2" width="400" height="200">
     </div>
 </div>
+```
+#### Actions
+```html
 <div class="card">
     <h2 class="card-title">Title</h2>
     <span class="card-subtitle">Subtitle</span>
@@ -496,6 +574,8 @@ Components for quick reference.  Not tested in SPA Frameworks such as Angular an
 ```
 
 ### Carousel
+
+#### Basic
 ```html
 <div id="carouselBasic" class="carousel">
     <div class="carousel-slide">
@@ -561,11 +641,6 @@ Components for quick reference.  Not tested in SPA Frameworks such as Angular an
     <li>Oranges</li>
     <li>Tomatos</li>
 </ul>
-<ul class="ul bdr col mrgh">
-    <li>Apples</li>
-    <li>Oranges</li>
-    <li>Tomatos</li>
-</ul>
 ```
 
 ### Navbar Horizontal
@@ -612,8 +687,9 @@ Components for quick reference.  Not tested in SPA Frameworks such as Angular an
 
 ### Tooltip
 ```html
-<div tooltip="Tooltip bottom" side="bottom" class="mrg">Bottom</div>
-<div tooltip="Tooltip top" side="top" class="mrg">Top</div>
-<div tooltip="Tooltip left" side="left" class="mrg">Left</div>
-<div tooltip="Tooltip right" side="right" class="mrg">Right</div>
+<div tooltip="Default to tooltip bottom">Bottom</div>
+<div tooltip="Tooltip bottom" side="bottom">Bottom</div>
+<div tooltip="Tooltip top" side="top">Top</div>
+<div tooltip="Tooltip left" side="left">Left</div>
+<div tooltip="Tooltip right" side="right">Right</div>
 ```

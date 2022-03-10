@@ -1,0 +1,27 @@
+.jst-center {
+    justify-content: center;
+}
+
+.jst-between {
+    justify-content: space-between;
+}
+
+.jst-around {
+    justify-content: space-around;
+}
+
+.jst-start {
+    justify-content: flex-start;
+}
+
+.jst-end {
+    justify-content: flex-end;
+}
+
+.jst-base {
+    justify-content: baseline;
+}
+
+.jst-stretch {
+    justify-content: stretch;
+}

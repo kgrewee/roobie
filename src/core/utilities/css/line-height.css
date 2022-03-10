@@ -1,0 +1,23 @@
+.lht1 {
+    line-height: var(--lht1);
+}
+
+.lht2 {
+    line-height: var(--lht2);
+}
+
+.lht3 {
+    line-height: var(--lht3);
+}
+
+.lht4 {
+    line-height: var(--lht4);
+}
+
+.lht5 {
+    line-height: var(--lht5);
+}
+
+.lht6 {
+    line-height: var(--lht6);
+}

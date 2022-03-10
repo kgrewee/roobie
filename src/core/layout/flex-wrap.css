@@ -1,0 +1,11 @@
+.wrp {
+    flex-wrap: wrap;
+}
+
+.wrpr {
+    flex-wrap: wrap-reverse;
+}
+
+.wrp0 {
+    flex-wrap: nowrap;
+}

@@ -1,0 +1,15 @@
+.ov {
+    overflow: auto;
+}
+
+.ovy {
+    overflow-y: auto;
+}
+
+.ovx {
+    overflow-x: auto;
+}
+
+.ovh {
+    overflow: hidden;
+}

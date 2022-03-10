@@ -1,6 +1,6 @@
 {
     "name": "roobie",
-    "version": "0.3.5",
+    "version": "0.3.6",
     "description": "Minimalistic CSS and JavaScript framework.",
     "author": "Kyle Grewe",
     "repository": {
@@ -22,10 +22,13 @@
     "main": "dist/roobie.min.js",
     "scripts": {
         "dry": "npm publish --dry-run",
-        "package": "npm-run-all build copy docs",
-        "build": "npm-run-all build:css build:js minify",
-        "build:css": "cat src/**/*.css src/**/**/*.css  > dist/roobie.css",
-        "build:js": "cat src/**/*.js src/**/**/*.js  > dist/roobie.js",
+        "package": "npm-run-all build bundle minify copy docs",
+        "build": "npm-run-all build:css build:js",
+        "build:css": "cat src/core/**/*.css src/core/**/**/*.css  > dist/roobie.css",
+        "build:js": "cat src/core/**/*.js src/core/**/**/*.js  > dist/roobie.js",
+        "bundle": "npm-run-all bundle:css bundle:js",
+        "bundle:css": "cat src/**/*.css src/**/**/*.css src/**/**/**/*.css  > dist/roobie.bundle.css",
+        "bundle:js": "cat src/**/**/*.js src/**/**/**/*.js  > dist/roobie.bundle.js",
         "minify": "node minify.js",
         "copy": "npm-run-all copy:themes copy:icons",
         "copy:themes": "cp -r src/themes/ dist/",

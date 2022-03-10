@@ -4,10 +4,9 @@
 
 **No official release yet.**
 
-A minimalistic approach to web development.  Roobie makes web development ***easier***.  Centralized CSS, JavaScript, themes, animations & more. Reuse core CSS classes and JavaScript functions instead of writing custom code.  Always build from a template.
+A minimalistic approach to web development.  Roobie makes web development **easier**.  Centralized CSS, JavaScript, themes, animations & more. Reuse core CSS classes and JavaScript functions instead of writing custom code.  Always build from a template.
 
 Result
-
 - Increased maintainability 
 - Increased development speed
 - Reduced custom code
@@ -30,14 +29,26 @@ Add Roobie dist files to the **head** tag of an HTML file.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./node_modules/roobie/dist/roobie.min.css">
+    <link rel="stylesheet" href="./node_modules/roobie/dist/themes/root.css">
     <link rel="stylesheet" href="./node_modules/roobie/dist/themes/light.css">
     <link rel="stylesheet" href="./node_modules/roobie/dist/themes/dark.css">
     <script src="./node_modules/roobie/dist/roobie.min.js"></script>
 </head>
 ```
 
+**or**
+
+```html
+<head>
+    <title>Roobie</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/roobie/dist/roobie.bundle.css">
+    <script src="./node_modules/roobie/dist/roobie.bundle.js"></script>
+</head>
+```
+
 ### Angular 
-***Warning:  We have not tested our components in Angular.  Base CSS classes and themes will work correctly.***
 
 Add Roobie dist files to **angular.json**.
 
@@ -45,27 +56,46 @@ Add Roobie dist files to **angular.json**.
  "styles": [
         "src/styles.scss",
         "./node_modules/roobie/dist/roobie.min.css",
+        "./node_modules/roobie/dist/themes/root.css",
         "./node_modules/roobie/dist/themes/light.css",
         "./node_modules/roobie/dist/themes/dark.css"
     ],
     "scripts": ["./node_modules/roobie/dist/roobie.min.js"]
 ```
 
+**or**
+
+```ts
+ "styles": [
+        "src/styles.scss",
+        "./node_modules/roobie/dist/roobie.bundle.css"
+    ],
+    "scripts": ["./node_modules/roobie/dist/roobie.bundle.js"]
+```
+
+
+
 ## Examples
 Examples are found [here](examples/).
 
 ## Themes
 
+These are required for Roobie to function properly.  Create copies and include them in your project, instead of using the defaults in the `node_modules/` directory to persist your themes through npm installs.
+
+- [dist/themes/root.css](dist/themes/root.css)
+- [dist/themes/light.css](dist/themes/light.css)
+- [dist/themes/dark.css](dist/themes/dark.css)
+
+Include the defaults, copy them and create your own version, or use a bundle distribution.  Make sure to include the theme files in your project, or things won't work correctly.  Every CSS class in Roobie is based on a theme variable.
+
 ### Root
-Roobie has root CSS classes and variables in [root.css](dist/themes/root.css) that are theme independent.  These are currently bundled in the build, but will soon be user customizable like themes.  Standby for future updates to customize these settings.
+`root.css` classes and variables in are theme independent.  Modify them to change all themes.
 
 ### Pre-built Themes
-Roobie has two pre-built CSS themes [light.css](dist/themes/light.css) & [dark.css](dist/themes/dark.css).  Create copies and include them in your project for further customization and to persist your themes through npm installs.  If you want to use the default Roobie themes, keep calm and carry on.  These will probably change in future versions.  Make sure to include the theme files in your project, or things won't work correctly.  Every CSS class in Roobie is based on a theme variable.
-
-## Contributions
-Contributions are always welcome.  Feel free to contribute anything that will make web development easier and more efficient.  Branch from `develop` and make a pull request to `develop` when your branch is ready.  We will review it.  We are always looking for more help and feedback.
+`light.css` and `dark.css` are pre-built themes.  Copy them to create new themes and expand them with new variables.
 
 ## Layout
+Roobie uses a Flexbox layout.  Our classes align closely with CSS properties.
 
 ### Container
 Containers are the basic building block.  Styled using width and padding.
@@ -89,7 +119,9 @@ Containers are the basic building block.  Styled using width and padding.
 ```
 
 ### Display
-Roobie uses a Flexbox layout.  Use these if you want alignment classes to work correctly.
+
+#### Direction
+Use these if you want flexbox layout classes to work correctly.
 ```html
 <div class="col">Column</div>
 <div class="row">Row</div>
@@ -97,8 +129,10 @@ Roobie uses a Flexbox layout.  Use these if you want alignment classes to work c
 <div class="rowr">Row reverse</div>
 ```
 
-Other display classes included for convienence.
+#### Other
 ```html
+<div class="show">Show</div>
+<div class="hide">Hide</div>
 <div class="flx">Flex</div>
 <div class="blk">Block</div>
 <div class="inl">Inline</div>
@@ -130,7 +164,20 @@ Align items opposite of the main axis.  Column for a **row** display.  Row for a
 <div class="row aln-stretch">Stretch</div>
 ```
 
+### Align Content
+How lines are spaced.  No effect if content is only 1 line.
+```html
+<div class="row aln-cnt-start">Start</div>
+<div class="row aln-cnt-end">End</div>
+<div class="row aln-cnt-between">Between</div>
+<div class="row aln-cnt-around">Around</div>
+<div class="row aln-cnt-center">Center</div>
+<div class="row aln-cnt-base">Base</div>
+<div class="row aln-cnt-stretch">Stretch</div>
+```
+
 ### Wrap
+Determine what to do with items when there isn't enough space in the container.  The default for all containers is no wrap.
 ```html
 <div class="row wrp">Wrap</div>
 <div class="row wrpr">Wrap reverse</div>
@@ -189,6 +236,7 @@ Most utility classes range between 0-6 in terms of intensity.
 <div class="bdr5">Theme setting</div>
 <div class="bdr6">Theme setting</div>
 ```
+
 ### Box Shadow
 ```html
 <div class="box0">None</div>
@@ -283,6 +331,19 @@ Most utility classes range between 0-6 in terms of intensity.
 <div class="pad6">Theme setting</div>
 ```
 
+### Rotate
+```html
+<div class="rotate0">0 degrees</div>
+<div class="rotate45">45 degrees</div>
+<div class="rotate90">90 degrees</div>
+<div class="rotate135">135 degrees</div>
+<div class="rotate180">180 degrees</div>
+<div class="rotate225">225 degrees</div>
+<div class="rotate270">270 degrees</div>
+<div class="rotate315">315 degrees</div>
+<div class="rotate360">360 degrees</div>
+```
+
 ### Text Align
 ```html
 <div class="txtl">Left</div>
@@ -297,54 +358,24 @@ Most utility classes range between 0-6 in terms of intensity.
 
 ### Visibility
 ```html
-<div class="show">Show</div>
-<div class="hide">Hide</div>
+<div class="visible">Visible</div>
+<div class="hidden">Hidden</div>
+<div class="collapse">collapse</div>
 ```
 
-### Z-Index
+### Z Index
 ```html
-<div class="z0">Theme setting</div>
-<div class="z1">Theme setting</div>
-<div class="z2">Theme setting</div>
-<div class="z3">Theme setting</div>
-<div class="z4">Theme setting</div>
-<div class="z5">Theme setting</div>
-<div class="z6">Theme setting</div>
+<div class="z0">-1</div>
+<div class="z1">1</div>
+<div class="z2">5</div>
+<div class="z3">10</div>
+<div class="z4">25</div>
+<div class="z5">50</div>
+<div class="z6">100</div>
 ```
 
-## Components
-Components for quick reference.  Not tested in SPA Frameworks such as Angular and React.
-
-### Accordion
-```html
- <div class="accordion">
-    <button class="accordion-header">Section 1</button>
-    <div class="accordion-panel">
-        <p>This is the first section.</p>
-    </div>
-    <button class="accordion-header">Section 2</button>
-    <div class="accordion-panel">
-        <p>This is the second section.</p>
-    </div>
-    <button class="accordion-header">Section 3</button>
-    <div class="accordion-panel">
-        <p>This is the third section.</p>
-    </div>
-</div>
-```
-
-### Alert
-```html
-<span class="alert alert-primary">An event has occurred</span>
-<span class="alert alert-secondary">An event has occurred</span>
-<span class="alert alert-outline">An event has occurred</span>
-<span class="alert alert-success">An event has occurred</span>
-<span class="alert alert-warning">An event has occurred</span>
-<span class="alert alert-danger">An event has occurred</span>
-<span class="alert alert-info">An event has occurred</span>
-```
-
-### Animation
+## Animations
+Animation classes start with an _underscore.
 ```html
 <span class="_backt">Back T</span>
 <span class="_backb">Back B</span>
@@ -418,16 +449,101 @@ Components for quick reference.  Not tested in SPA Frameworks such as Angular an
 <span class="_zoomoutr">Zoom Out R</span>
 ```
 
+## Components
+
+### Accordion
+Panels of expandable content.
+
+#### Basic
+```html
+ <div class="accordion">
+    <button class="accordion-header">Section 1</button>
+    <div class="accordion-panel">
+        <p>This is the first section.</p>
+    </div>
+    <button class="accordion-header">Section 2</button>
+    <div class="accordion-panel">
+        <p>This is the second section.</p>
+    </div>
+    <button class="accordion-header">Section 3</button>
+    <div class="accordion-panel">
+        <p>This is the third section.</p>
+    </div>
+</div>
+```
+
+#### Nested
+```html
+ <div class="accordion">
+    <button class="accordion-header">Section 1</button>
+    <div class="accordion-panel">
+        <div class="accordion">
+            <button class="accordion-header">Sub-Section 1</button>
+            <div class="accordion-panel">
+                <p>This is the first sub-section.</p>
+            </div>
+            <button class="accordion-header">Sub-Section 2</button>
+            <div class="accordion-panel">
+                <p>This is the second sub-section.</p>
+            </div>
+            <button class="accordion-header">Sub-Section 3</button>
+            <div class="accordion-panel">
+                <p>This is the third sub-section.</p>
+            </div>
+        </div>
+    </div>
+    <button class="accordion-header">Section 2</button>
+    <div class="accordion-panel">
+        <div class="accordion">
+            <button class="accordion-header">Sub-Section 1</button>
+            <div class="accordion-panel">
+                <p>This is the first sub-section.</p>
+            </div>
+            <button class="accordion-header">Sub-Section 2</button>
+            <div class="accordion-panel">
+                <p>This is the second sub-section.</p>
+            </div>
+            <button class="accordion-header">Sub-Section 3</button>
+            <div class="accordion-panel">
+                <p>This is the third sub-section.</p>
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+### Alert
+Alert the user of an event that has occurred.
+```html
+<span class="alert alert-primary">An event has occurred</span>
+<span class="alert alert-secondary">An event has occurred</span>
+<span class="alert alert-outline">An event has occurred</span>
+<span class="alert alert-success">An event has occurred</span>
+<span class="alert alert-warning">An event has occurred</span>
+<span class="alert alert-danger">An event has occurred</span>
+<span class="alert alert-info">An event has occurred</span>
+```
+
 ### Button
+Simple button styles that can be applied to most elements.
+
+#### Basic
 ```html
 <button type="button" class="btn">Basic</button>
 <button type="button" class="btn btn-outline">Outline</button>
+```
+#### Theme
+```html
 <button type="button" class="btn btn-primary">Primary</button>
 <button type="button" class="btn btn-secondary">Seconday</button>
 <button type="button" class="btn btn-success">Success</button>
 <button type="button" class="btn btn-warning">Warning</button>
 <button type="button" class="btn btn-danger">Danger</button>
 <button type="button" class="btn btn-info">Info</button>
+```
+
+#### Colored
+```html
 <button type="button" class="btn bg-red2">Red</button>
 <button type="button" class="btn bg-orange2">Orange</button>
 <button type="button" class="btn bg-yellow2">Yellow</button>
@@ -435,13 +551,29 @@ Components for quick reference.  Not tested in SPA Frameworks such as Angular an
 <button type="button" class="btn bg-blue2">Blue</button>
 <button type="button" class="btn bg-indigo2">Indigo</button>
 <button type="button" class="btn bg-violet2">Violet</button>
+```
+
+#### Raised
+```html
 <button type="button" class="btn box">Raised</button>
 <button type="button" class="btn boxh">Raised with hover</button>
+```
+
+#### Inset
+```html
 <button type="button" class="btn in">Inset</button>
 <button type="button" class="btn inh">Inset with hover</button>
+```
+
+#### Icon
+```html
 <button type="button" class="btn btn-primary"><i class="icon icon-heart"></i></button>
 <button type="button" class="btn btn-primary"><i class="icon icon-facebook"></i></button>
 <button type="button" class="btn btn-primary"><i class="icon icon-comment"></i></button>
+```
+
+#### Variations
+```html
 <button type="button" class="btn bdr-success">Success</button>
 <button type="button" class="btn bdr-warning">Warning</button>
 <button type="button" class="btn bdr-danger">Danger</button>
@@ -467,6 +599,9 @@ Components for quick reference.  Not tested in SPA Frameworks such as Angular an
 ```
 
 ### Card
+A container of styled content.
+
+#### Basic
 ```html
 <div class="card">
     <h2 class="card-title">Title</h2>
@@ -475,6 +610,9 @@ Components for quick reference.  Not tested in SPA Frameworks such as Angular an
         This is the content.
     </div>
 </div>
+```
+#### Image
+```html
 <div class="card">
     <h2 class="card-title">Image</h2>
     <span class="card-subtitle">By Artist Name</span>
@@ -482,6 +620,9 @@ Components for quick reference.  Not tested in SPA Frameworks such as Angular an
         <img class="br bg2" width="400" height="200">
     </div>
 </div>
+```
+#### Actions
+```html
 <div class="card">
     <h2 class="card-title">Title</h2>
     <span class="card-subtitle">Subtitle</span>
@@ -496,6 +637,9 @@ Components for quick reference.  Not tested in SPA Frameworks such as Angular an
 ```
 
 ### Carousel
+Interactive slider full of content.
+
+#### Basic
 ```html
 <div id="carouselBasic" class="carousel">
     <div class="carousel-slide">
@@ -510,6 +654,9 @@ Components for quick reference.  Not tested in SPA Frameworks such as Angular an
     <a class="carousel-previous">&#10094;</a>
     <a class="carousel-next">&#10095;</a>
 </div>
+```
+#### Captions
+```html
 <div id="carouselBasic2" class="carousel" index="1">
     <div class="carousel-slide">
         <h1>Slide 1</h1>
@@ -531,7 +678,32 @@ Components for quick reference.  Not tested in SPA Frameworks such as Angular an
 </div>
 ```
 
+#### Indicators
+```html
+<div id="carouselIndicator" class="carousel br bdr" index="2">
+    <div class="carousel-slide">
+        <h1>Slide 1</h1>
+    </div>
+    <div class="carousel-slide">
+        <h1>Slide 2</h1>
+    </div>
+    <div class="carousel-slide">
+        <h1>Slide 3</h1>
+    </div>
+    <a class="carousel-previous">&#10094;</a>
+    <a class="carousel-next">&#10095;</a>
+    <div class="carousel-indicators">
+        <span index="0"></span>
+        <span index="1"></span>
+        <span index="2"></span>
+    </div>
+</div>
+```
+
 ### Dropdown
+Display hidden content on hover.
+
+#### Basic
 ```html
 <div class="drp">
     <a class="drp-btn">Links</a>
@@ -543,20 +715,139 @@ Components for quick reference.  Not tested in SPA Frameworks such as Angular an
 </div>
 ```
 
+#### Descriptions
+```html
+<div class="drp">
+    <a class="drp-btn">Descriptions</a>
+    <div class="drp-cnt">
+        <a>Products<p>Handmade, carefully crafted products</p></a>
+        <a>Resources<p>An archive of learning resources</p></a>
+        <a>Tutorials<p>Description tutorials to learn CSS</p></a>
+    </div>
+</div>
+```
+
+#### Categories
+```html
+<div class="drp">
+    <span class="drp-btn">Categories</span>
+    <div class="drp-cnt txtl">
+        <div class="row pad2 br">
+            <div class="col mrg">
+                <h4 class="drp-title">Sports</h4>
+                <a>Frisbee</a>
+                <a>Football</a>
+                <a>Soccer</a>
+                <a>Baseball</a>
+            </div>
+            <div class="col mrg">
+                <h4 class="drp-title">Calendar</h4>
+                <a>2020</a>
+                <a>2021</a>
+                <a>2022</a>
+            </div>
+            <div class="col mrg">
+                <h4 class="drp-title">Schedule</h4>
+                <a>Fall</a>
+                <a>Winter</a>
+                <a>Spring</a>
+                <a>Summer</a>
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+#### Navbar Integration
+```html
+<nav class="nav-row row jst-between aln-center box">
+    <div class="row aln-center">
+        <div class="nav-title"><span>Roo</span>bie</div>
+        <div class="drp">
+            <a class="drp-btn nav-item">Links</a>
+            <div class="drp-cnt txtc">
+                <a>Link 1</a>
+                <a>Link 2</a>
+                <a>Link 3</a>
+            </div>
+        </div>
+        <div class="drp">
+            <span class="drp-btn nav-item">Content</span>
+            <div class="drp-cnt pad3 br">
+                <p>Container that can hold any element</p>
+            </div>
+        </div>
+        <div class="drp">
+            <a class="drp-btn nav-item">Descriptions</a>
+            <div class="drp-cnt">
+                <a>Products<p>Handmade, carefully crafted products</p></a>
+                <a>Resources<p>An archive of learning resources</p></a>
+                <a>Tutorials<p>Description tutorials to learn CSS</p></a>
+            </div>
+        </div>
+        <div class="drp">
+            <span class="drp-btn nav-item">Categories</span>
+            <div class="drp-cnt txtl">
+                <div class="row pad2 br">
+                    <div class="col mrg">
+                        <h4 class="drp-title">Sports</h4>
+                        <a>Frisbee</a>
+                        <a>Football</a>
+                        <a>Soccer</a>
+                        <a>Baseball</a>
+                    </div>
+                    <div class="col mrg">
+                        <h4 class="drp-title">Calendar</h4>
+                        <a>2020</a>
+                        <a>2021</a>
+                        <a>2022</a>
+                    </div>
+                    <div class="col mrg">
+                        <h4 class="drp-title">Schedule</h4>
+                        <a>Fall</a>
+                        <a>Winter</a>
+                        <a>Spring</a>
+                        <a>Summer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+```
+
 ### Input
+Improved input styles from browser defaults.
+
+#### Basic
 ```html
 <input type="text" class="input" placeholder="Name"></input>
 <input type="text" class="input input-outline" placeholder="Input"></input>
+```
+
+#### Raised
+```html
 <input type="text" class="input box" type='email' placeholder="Enter your email"></input>
 <input type="text" class="input boxh" type='password' placeholder="Enter password"></input>
+```
+
+#### Inset
+```html
 <input type="text" class="input in" placeholder="What's your question?"></input>
 <input type="text" class="input inh" placeholder="Enter something"></input>
+```
+
+#### Expand
+```html
 <input type="text" class="input input-expand" placeholder="Expand me"></input>
 ```
 
 ### List
+List of items with attributes.
+
+#### Basic
 ```html
-<ul class="ul mrgh">
+ <ul class="ul mrgh">
     <li>Apples</li>
     <li>Oranges</li>
     <li>Tomatos</li>
@@ -568,9 +859,49 @@ Components for quick reference.  Not tested in SPA Frameworks such as Angular an
 </ul>
 ```
 
-### Navbar Horizontal
+#### Descriptions
 ```html
-<nav class="nav-row jst-between aln-center box">
+<ul class="ul">
+    <li>$1,202,203.44 <span>Sales</span></li>
+    <li>6,345 <span>Customers</span></li>
+    <li>345 <span>Assets</span></li>
+</ul>
+<ul class="ul bdr txtc br mrgh">
+    <li>Test 1<span>40 questions</span></li>
+    <li>Midterm <span>44 questions</span></li>
+    <li>Final <span>77 questions</span></li>
+</ul>
+<ul class="ul txtr mrgh">
+    <li>Elements <span>Elements on the page</span></li>
+    <li>Outages <span>Website outages</span></li>
+    <li>People <span>Total people working</span></li>
+</ul>
+```
+
+#### Content
+```html
+  <ul class="ul-cnt box br mrgh">
+    <li>Update <a class="red">Failure</a></li>
+    <li>Install <a class="orange">Caution</a></li>
+    <li>Build<a class="green">Success</a></li>
+</ul>
+<ul class="ul-cnt bdr mrgh">
+    <li>Subscription <a class="btn btn-primary">Cancel</a></li>
+    <li>Package<a class="btn btn-primary">Purchase</a></li>
+    <li>roobie.css <a class="btn btn-primary">Download</a></li>
+</ul>
+<ul class="ul-cnt box br blue2 mrgh">
+    <li><a class="red">Updated required</a>23.4.2</li>
+    <li><a>Up to date</a>9.392 </li>
+    <li><a>Up to date</a>02.34.4.2021</li>
+</ul>
+```
+
+### Navbar
+
+#### Horizontal
+```html
+<nav class="nav-row jst-between aln-center bdr1">
     <div class="row aln-center">
         <a class="nav-title" href="">Roobie</a>
         <div class="row rsp-menu">
@@ -585,11 +916,70 @@ Components for quick reference.  Not tested in SPA Frameworks such as Angular an
         <a class="nav-item">user@roobie.net</a>
     </div>
 </nav>
+<nav class="nav-row jst-around aln-center bdr1">
+    <div class="row aln-center">
+        <a class="nav-title" href="">Roobie</a>
+    </div>
+    <div class="row aln-center rsp-menu-xl">
+        <a class="nav-item">Home</a>
+        <a class="nav-item">Products</a>
+        <a class="nav-item">About Us</a>
+        <a class="nav-item">Contact Us</a>
+        <a class="nav-item">Help</a>
+    </div>
+    <div class="row">
+        <a class="nav-item">user@roobie.net</a>
+    </div>
+</nav>
+<nav class="nav-row jst-around aln-center bdr1">
+    <div class="row aln-center">
+        <a class="nav-title" href="">Roobie</a>
+        <div class="row aln-center rsp-menu-l">
+            <a class="nav-item">Home</a>
+            <a class="nav-item">Products</a>
+            <a class="nav-item">About Us</a>
+            <a class="nav-item">Contact Us</a>
+            <a class="nav-item">Help</a>
+        </div>
+    </div>
+</nav>
+<nav class="nav-row jst-between aln-center bdr1">
+    <div class="row aln-center">
+        <a class="nav-title" href="">Roobie</a>
+        <div class="row aln-center rsp-menu">
+            <a class="nav-item">Home</a>
+            <a class="nav-item">Products</a>
+            <a class="nav-item">About Us</a>
+            <a class="nav-item">Contact Us</a>
+        </div>
+    </div>
+    <input type="text" class="input input-outline" placeholder="Search">
+</nav>
+<nav class="nav-row jst-between aln-center bdr1">
+    <div class="row aln-center">
+        <a class="nav-title" href="">Roobie</a>
+        <div class="row aln-center rsp-menu">
+            <a class="nav-item">Home</a>
+            <a class="nav-item">Products</a>
+            <a class="nav-item">About Us</a>
+            <a class="nav-item">Contact Us</a>
+        </div>
+    </div>
+    <input type="text" class="input input-outline input-expand" placeholder="Search with expand">
+</nav>
+<nav class="nav-row jst-between aln-center bdr1">
+    <a class="nav-title" href="">Roobie</a>
+    <div class="row aln-center rsp-menu-s">
+        <a class="nav-item">Home</a>
+        <a class="nav-item">Products</a>
+        <a class="nav-item">Help</a>
+    </div>
+</nav>
 ```
 
-### Navbar Vertical
+#### Vertical
 ```html
-<nav class="nav-col jst-between aln-center box txtc">
+<nav class="nav-col jst-between aln-center bdr1 txtc">
     <div class="col">
         <a class="nav-title" href="">Roobie</a>
         <a class="nav-item">Home</a>
@@ -602,18 +992,176 @@ Components for quick reference.  Not tested in SPA Frameworks such as Angular an
         <a class="nav-item">user@roobie.net</a>
     </div>
 </nav>
+<nav class="nav-col jst-between aln-center bdr1 txtc">
+    <a class="nav-title" href="">Roobie</a>
+    <div class="col">
+        <a class="nav-item">Home</a>
+        <a class="nav-item">Products</a>
+        <a class="nav-item">About Us</a>
+        <a class="nav-item">Contact Us</a>
+        <a class="nav-item">Help</a>
+    </div>
+</nav>
+<nav class="nav-col jst-between aln-center bdr1 txtc">
+    <a class="nav-title" href="">Roobie</a>
+    <div class="col">
+        <a class="nav-item">Home</a>
+        <a class="nav-item">Products</a>
+        <a class="nav-item">About Us</a>
+        <a class="nav-item">Contact Us</a>
+        <a class="nav-item">Help</a>
+    </div>
+    <div class="col aln-center">
+        <a class="nav-item">user@roobie.net</a>
+    </div>
+</nav>
+<nav class="nav-col aln-center bdr1">
+    <a class="nav-item"><i class="icon icon-apps"></i></a>
+    <a class="nav-item"><i class="icon icon-linkedin"></i></a>
+    <a class="nav-item"><i class="icon icon-facebook"></i></a>
+    <a class="nav-item"><i class="icon icon-bell"></i></a>
+</nav>
+<nav class="nav-col aln-center bdr1 txtc">
+    <div class="div">
+        <h4 class="nav-heading">Section 1</h4>
+        <div class="col aln-center">
+            <a class="nav-item">Home</a>
+            <a class="nav-item">Products</a>
+        </div>
+    </div>
+    <div class="div">
+        <h4 class="nav-heading">Section 2</h4>
+        <div class="col aln-center">
+            <a class="nav-item">About Us</a>
+            <a class="nav-item">Contact Us</a>
+            <a class="nav-item">Help</a>
+        </div>
+    </div>
+</nav>
+```
+
+### Path
+Display the current website path, or a group of items.
+
+#### Basic
+```html
+<ul class="path">
+    <li class="path-item">Home</li>
+    <li class="path-item">Shopping</li>
+    <li class="path-item">Cart</li>
+</ul>
+```
+
+#### Custom Divider
+```html
+<ul class="path" style="--path-divider: '>'">
+    <li class="path-item">Home</li>
+    <li class="path-item">Order</li>
+</ul>
+<ul class="path" style="--path-divider: '|'">
+    <li class="path-item">All</li>
+    <li class="path-item">Clothes</li>
+    <li class="path-item">Shoes</li>
+    <li class="path-item">Hats</li>
+    <li class="path-item">Accessories</li>
+    <li class="path-item">Office</li>
+</ul>
 ```
 
 ### Tag
+Short blocks of content.
+
+#### Basic
 ```html
 <div class="tag">Tag</div>
 <div class="tagh">Tag with hover</div>
 ```
 
-### Tooltip
+#### Descriptions
 ```html
-<div tooltip="Tooltip bottom" side="bottom" class="mrg">Bottom</div>
-<div tooltip="Tooltip top" side="top" class="mrg">Top</div>
-<div tooltip="Tooltip left" side="left" class="mrg">Left</div>
-<div tooltip="Tooltip right" side="right" class="mrg">Right</div>
+<div class="mrg2 card br box pad2">
+    <h4>Mama's Pumpkin Pie</h4>
+    <div class="row">
+        <div class="tag">30 min</div>
+        <div class="tag">Pumpkin</div>
+        <div class="tag">Gluten Free</div>
+    </div>
+    <div class="desc pad2">
+        The best recipe in the world! Delicious & easy to make.
+    </div>
+</div>
+<div class="mrg2 card br box pad2">
+    <h4>Chocolate Chip Cookies</h4>
+    <div class="row">
+        <div class="tag">25 min</div>
+        <div class="tag">Favorite</div>
+        <div class="tag cat-active">New!</div>
+    </div>
+    <div class="desc pad2">
+        Cookies that will knock your socks off.
+    </div>
+</div>
+```
+
+#### Categories
+```html
+<div class="mrg2 div33 card br box pad2">
+    <div class="col wrp category">
+        <div class="row bg3 br pad2 mrg2">
+            <div class="tag">Small</div>
+            <div class="tag">Medium</div>
+            <div class="tag">Large</div>
+            <div class="tag">Extra Large</div>
+        </div>
+        <div class="row jst-center bg3 br pad2 mrg2">
+            <div class="tag">Red</div>
+            <div class="tag">Yellow</div>
+            <div class="tag">Orange</div>
+            <div class="tag">Purple</div>
+            <div class="tag">Blue</div>
+        </div>
+        <div class="row jst-end bg3 br pad2 mrg2">
+            <div class="tag">Update</div>
+            <div class="tag">Shutdown</div>
+            <div class="tag">Delete</div>
+            <div class="tag">Install</div>
+        </div>
+
+        <div class="row jst-around bg3 br pad2 mrg2">
+            <div class="tag">-1</div>
+            <div class="tag">0</div>
+            <div class="tag">+1</div>
+        </div>
+
+        <div class="row jst-between bg3 br pad2 mrg2">
+            <div class="tag">Start</div>
+            <div class="tag">End</div>
+        </div>
+    </div>
+</div>
+```
+
+### Toggle
+Toggle on or off.
+
+```html
+<label class="toggle">
+    <input type="checkbox">
+        <span class="slider round"></span>
+</label>
+<label class="toggle">
+    <input type="checkbox">
+        <span class="slider"></span>
+</label>
+```
+
+### Tooltip
+Show hidden text on hover.
+
+```html
+<div tooltip="Default tooltip bottom">Bottom</div>
+<div tooltip="Tooltip bottom" side="bottom">Bottom</div>
+<div tooltip="Tooltip top" side="top">Top</div>
+<div tooltip="Tooltip left" side="left">Left</div>
+<div tooltip="Tooltip right" side="right">Right</div>
 ```

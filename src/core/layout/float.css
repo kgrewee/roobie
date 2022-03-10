@@ -1,0 +1,15 @@
+.fltl {
+    float: left;
+}
+
+.fltr {
+    float: right;
+}
+
+.flt0 {
+    float: none;
+}
+
+.flti {
+    float: inherit;
+}

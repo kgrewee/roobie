@@ -4,10 +4,9 @@
 
 **No official release yet.**
 
-A minimalistic approach to web development.  Roobie makes web development ***easier***.  Centralized CSS, JavaScript, themes, animations & more. Reuse core CSS classes and JavaScript functions instead of writing custom code.  Always build from a template.
+A minimalistic approach to web development.  Roobie makes web development **easier**.  Centralized CSS, JavaScript, themes, animations & more. Reuse core CSS classes and JavaScript functions instead of writing custom code.  Always build from a template.
 
 Result
-
 - Increased maintainability 
 - Increased development speed
 - Reduced custom code
@@ -37,7 +36,6 @@ Add Roobie dist files to the **head** tag of an HTML file.
 ```
 
 ### Angular 
-***Warning:  We have not tested our components in Angular.  Base CSS classes and themes will work correctly.***
 
 Add Roobie dist files to **angular.json**.
 
@@ -62,10 +60,8 @@ Root CSS classes and variables in [root.css](dist/themes/root.css) are theme ind
 ### Pre-built Themes
 There are two pre-built CSS themes: [light.css](dist/themes/light.css) & [dark.css](dist/themes/dark.css).  Create copies and include them in your project, instead of using the defaults. This will persist your themes through npm installs.  If you want to use the default Roobie themes, keep calm and carry on.  These will probably change in future versions.  Make sure to include the theme files in your project, or things won't work correctly.  Every CSS class in Roobie is based on a theme variable.
 
-## Contributions
-Contributions are always welcome.  Feel free to contribute anything that will make web development easier and more efficient.  Branch from `develop` and make a pull request to `develop` when your branch is ready.  We will review it.  We are always looking for more help and feedback.
-
 ## Layout
+Roobie uses a Flexbox layout.
 
 ### Container
 Containers are the basic building block.  Styled using width and padding.
@@ -89,7 +85,7 @@ Containers are the basic building block.  Styled using width and padding.
 ```
 
 ### Display
-Roobie uses a Flexbox layout.  Use these if you want alignment classes to work correctly.
+Use these if you want flexbox layout classes to work correctly.
 ```html
 <div class="col">Column</div>
 <div class="row">Row</div>
@@ -131,11 +127,14 @@ Align items opposite of the main axis.  Column for a **row** display.  Row for a
 ```
 
 ### Wrap
+Determine what to do with items when there isn't enough space in the container.  The default for all containers is no wrap.
 ```html
 <div class="row wrp">Wrap</div>
 <div class="row wrpr">Wrap reverse</div>
 <div class="row wrp0">No wrap</div>
 ```
+
+***Float and position should almost never be used in a flexbox layout.  Favor flexbox layout classes above.***
 
 ### Float
 ```html
@@ -301,7 +300,7 @@ Most utility classes range between 0-6 in terms of intensity.
 <div class="hide">Hide</div>
 ```
 
-### Z-Index
+### Z Index
 ```html
 <div class="z0">Theme setting</div>
 <div class="z1">Theme setting</div>
@@ -537,6 +536,7 @@ Simple button styles that can be applied to most elements.
 ```
 
 ### Card
+A container of styled content.
 
 #### Basic
 ```html
@@ -574,6 +574,7 @@ Simple button styles that can be applied to most elements.
 ```
 
 ### Carousel
+Interactive slider full of content.
 
 #### Basic
 ```html
@@ -590,6 +591,9 @@ Simple button styles that can be applied to most elements.
     <a class="carousel-previous">&#10094;</a>
     <a class="carousel-next">&#10095;</a>
 </div>
+```
+#### Captions
+```html
 <div id="carouselBasic2" class="carousel" index="1">
     <div class="carousel-slide">
         <h1>Slide 1</h1>
@@ -611,7 +615,32 @@ Simple button styles that can be applied to most elements.
 </div>
 ```
 
+#### Indicators
+```html
+<div id="carouselIndicator" class="carousel br bdr" index="2">
+    <div class="carousel-slide">
+        <h1>Slide 1</h1>
+    </div>
+    <div class="carousel-slide">
+        <h1>Slide 2</h1>
+    </div>
+    <div class="carousel-slide">
+        <h1>Slide 3</h1>
+    </div>
+    <a class="carousel-previous">&#10094;</a>
+    <a class="carousel-next">&#10095;</a>
+    <div class="carousel-indicators">
+        <span index="0"></span>
+        <span index="1"></span>
+        <span index="2"></span>
+    </div>
+</div>
+```
+
 ### Dropdown
+Display hidden content on hover.
+
+#### Basic
 ```html
 <div class="drp">
     <a class="drp-btn">Links</a>
@@ -623,29 +652,193 @@ Simple button styles that can be applied to most elements.
 </div>
 ```
 
+#### Descriptions
+```html
+<div class="drp">
+    <a class="drp-btn">Descriptions</a>
+    <div class="drp-cnt">
+        <a>Products<p>Handmade, carefully crafted products</p></a>
+        <a>Resources<p>An archive of learning resources</p></a>
+        <a>Tutorials<p>Description tutorials to learn CSS</p></a>
+    </div>
+</div>
+```
+
+#### Categories
+```html
+<div class="drp">
+    <span class="drp-btn">Categories</span>
+    <div class="drp-cnt txtl">
+        <div class="row pad2 br">
+            <div class="col mrg">
+                <h4 class="drp-title">Sports</h4>
+                <a>Frisbee</a>
+                <a>Football</a>
+                <a>Soccer</a>
+                <a>Baseball</a>
+            </div>
+            <div class="col mrg">
+                <h4 class="drp-title">Calendar</h4>
+                <a>2020</a>
+                <a>2021</a>
+                <a>2022</a>
+            </div>
+            <div class="col mrg">
+                <h4 class="drp-title">Schedule</h4>
+                <a>Fall</a>
+                <a>Winter</a>
+                <a>Spring</a>
+                <a>Summer</a>
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+#### Navbar Integration
+```html
+<nav class="nav-row row jst-between aln-center box">
+    <div class="row aln-center">
+        <div class="nav-title"><span>Roo</span>bie</div>
+        <div class="drp">
+            <a class="drp-btn nav-item">Links</a>
+            <div class="drp-cnt txtc">
+                <a>Link 1</a>
+                <a>Link 2</a>
+                <a>Link 3</a>
+            </div>
+        </div>
+        <div class="drp">
+            <span class="drp-btn nav-item">Content</span>
+            <div class="drp-cnt pad3 br">
+                <p>Container that can hold any element</p>
+            </div>
+        </div>
+        <div class="drp">
+            <a class="drp-btn nav-item">Descriptions</a>
+            <div class="drp-cnt">
+                <a>Products<p>Handmade, carefully crafted products</p></a>
+                <a>Resources<p>An archive of learning resources</p></a>
+                <a>Tutorials<p>Description tutorials to learn CSS</p></a>
+            </div>
+        </div>
+        <div class="drp">
+            <span class="drp-btn nav-item">Categories</span>
+            <div class="drp-cnt txtl">
+                <div class="row pad2 br">
+                    <div class="col mrg">
+                        <h4 class="drp-title">Sports</h4>
+                        <a>Frisbee</a>
+                        <a>Football</a>
+                        <a>Soccer</a>
+                        <a>Baseball</a>
+                    </div>
+                    <div class="col mrg">
+                        <h4 class="drp-title">Calendar</h4>
+                        <a>2020</a>
+                        <a>2021</a>
+                        <a>2022</a>
+                    </div>
+                    <div class="col mrg">
+                        <h4 class="drp-title">Schedule</h4>
+                        <a>Fall</a>
+                        <a>Winter</a>
+                        <a>Spring</a>
+                        <a>Summer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+```
+
 ### Input
+Improved input styles from browser defaults.
+
+#### Basic
 ```html
 <input type="text" class="input" placeholder="Name"></input>
 <input type="text" class="input input-outline" placeholder="Input"></input>
+```
+
+#### Raised
+```html
 <input type="text" class="input box" type='email' placeholder="Enter your email"></input>
 <input type="text" class="input boxh" type='password' placeholder="Enter password"></input>
+```
+
+#### Inset
+```html
 <input type="text" class="input in" placeholder="What's your question?"></input>
 <input type="text" class="input inh" placeholder="Enter something"></input>
+```
+
+#### Expand
+```html
 <input type="text" class="input input-expand" placeholder="Expand me"></input>
 ```
 
 ### List
+List of items with attributes.
+
+#### Basic
 ```html
-<ul class="ul mrgh">
+ <ul class="ul mrgh">
+    <li>Apples</li>
+    <li>Oranges</li>
+    <li>Tomatos</li>
+</ul>
+<ul class="ul bdr col mrgh">
     <li>Apples</li>
     <li>Oranges</li>
     <li>Tomatos</li>
 </ul>
 ```
 
-### Navbar Horizontal
+#### Descriptions
 ```html
-<nav class="nav-row jst-between aln-center box">
+<ul class="ul">
+    <li>$1,202,203.44 <span>Sales</span></li>
+    <li>6,345 <span>Customers</span></li>
+    <li>345 <span>Assets</span></li>
+</ul>
+<ul class="ul bdr txtc br mrgh">
+    <li>Test 1<span>40 questions</span></li>
+    <li>Midterm <span>44 questions</span></li>
+    <li>Final <span>77 questions</span></li>
+</ul>
+<ul class="ul txtr mrgh">
+    <li>Elements <span>Elements on the page</span></li>
+    <li>Outages <span>Website outages</span></li>
+    <li>People <span>Total people working</span></li>
+</ul>
+```
+
+#### Content
+```html
+  <ul class="ul-cnt box br mrgh">
+    <li>Update <a class="red">Failure</a></li>
+    <li>Install <a class="orange">Caution</a></li>
+    <li>Build<a class="green">Success</a></li>
+</ul>
+<ul class="ul-cnt bdr mrgh">
+    <li>Subscription <a class="btn btn-primary">Cancel</a></li>
+    <li>Package<a class="btn btn-primary">Purchase</a></li>
+    <li>roobie.css <a class="btn btn-primary">Download</a></li>
+</ul>
+<ul class="ul-cnt box br blue2 mrgh">
+    <li><a class="red">Updated required</a>23.4.2</li>
+    <li><a>Up to date</a>9.392 </li>
+    <li><a>Up to date</a>02.34.4.2021</li>
+</ul>
+```
+
+### Navbar
+
+#### Horizontal
+```html
+<nav class="nav-row jst-between aln-center bdr1">
     <div class="row aln-center">
         <a class="nav-title" href="">Roobie</a>
         <div class="row rsp-menu">
@@ -660,11 +853,70 @@ Simple button styles that can be applied to most elements.
         <a class="nav-item">user@roobie.net</a>
     </div>
 </nav>
+<nav class="nav-row jst-around aln-center bdr1">
+    <div class="row aln-center">
+        <a class="nav-title" href="">Roobie</a>
+    </div>
+    <div class="row aln-center rsp-menu-xl">
+        <a class="nav-item">Home</a>
+        <a class="nav-item">Products</a>
+        <a class="nav-item">About Us</a>
+        <a class="nav-item">Contact Us</a>
+        <a class="nav-item">Help</a>
+    </div>
+    <div class="row">
+        <a class="nav-item">user@roobie.net</a>
+    </div>
+</nav>
+<nav class="nav-row jst-around aln-center bdr1">
+    <div class="row aln-center">
+        <a class="nav-title" href="">Roobie</a>
+        <div class="row aln-center rsp-menu-l">
+            <a class="nav-item">Home</a>
+            <a class="nav-item">Products</a>
+            <a class="nav-item">About Us</a>
+            <a class="nav-item">Contact Us</a>
+            <a class="nav-item">Help</a>
+        </div>
+    </div>
+</nav>
+<nav class="nav-row jst-between aln-center bdr1">
+    <div class="row aln-center">
+        <a class="nav-title" href="">Roobie</a>
+        <div class="row aln-center rsp-menu">
+            <a class="nav-item">Home</a>
+            <a class="nav-item">Products</a>
+            <a class="nav-item">About Us</a>
+            <a class="nav-item">Contact Us</a>
+        </div>
+    </div>
+    <input type="text" class="input input-outline" placeholder="Search">
+</nav>
+<nav class="nav-row jst-between aln-center bdr1">
+    <div class="row aln-center">
+        <a class="nav-title" href="">Roobie</a>
+        <div class="row aln-center rsp-menu">
+            <a class="nav-item">Home</a>
+            <a class="nav-item">Products</a>
+            <a class="nav-item">About Us</a>
+            <a class="nav-item">Contact Us</a>
+        </div>
+    </div>
+    <input type="text" class="input input-outline input-expand" placeholder="Search with expand">
+</nav>
+<nav class="nav-row jst-between aln-center bdr1">
+    <a class="nav-title" href="">Roobie</a>
+    <div class="row aln-center rsp-menu-s">
+        <a class="nav-item">Home</a>
+        <a class="nav-item">Products</a>
+        <a class="nav-item">Help</a>
+    </div>
+</nav>
 ```
 
-### Navbar Vertical
+#### Vertical
 ```html
-<nav class="nav-col jst-between aln-center box txtc">
+<nav class="nav-col jst-between aln-center bdr1 txtc">
     <div class="col">
         <a class="nav-title" href="">Roobie</a>
         <a class="nav-item">Home</a>
@@ -677,17 +929,174 @@ Simple button styles that can be applied to most elements.
         <a class="nav-item">user@roobie.net</a>
     </div>
 </nav>
+<nav class="nav-col jst-between aln-center bdr1 txtc">
+    <a class="nav-title" href="">Roobie</a>
+    <div class="col">
+        <a class="nav-item">Home</a>
+        <a class="nav-item">Products</a>
+        <a class="nav-item">About Us</a>
+        <a class="nav-item">Contact Us</a>
+        <a class="nav-item">Help</a>
+    </div>
+</nav>
+<nav class="nav-col jst-between aln-center bdr1 txtc">
+    <a class="nav-title" href="">Roobie</a>
+    <div class="col">
+        <a class="nav-item">Home</a>
+        <a class="nav-item">Products</a>
+        <a class="nav-item">About Us</a>
+        <a class="nav-item">Contact Us</a>
+        <a class="nav-item">Help</a>
+    </div>
+    <div class="col aln-center">
+        <a class="nav-item">user@roobie.net</a>
+    </div>
+</nav>
+<nav class="nav-col aln-center bdr1">
+    <a class="nav-item"><i class="icon icon-apps"></i></a>
+    <a class="nav-item"><i class="icon icon-linkedin"></i></a>
+    <a class="nav-item"><i class="icon icon-facebook"></i></a>
+    <a class="nav-item"><i class="icon icon-bell"></i></a>
+</nav>
+<nav class="nav-col aln-center bdr1 txtc">
+    <div class="div">
+        <h4 class="nav-heading">Section 1</h4>
+        <div class="col aln-center">
+            <a class="nav-item">Home</a>
+            <a class="nav-item">Products</a>
+        </div>
+    </div>
+    <div class="div">
+        <h4 class="nav-heading">Section 2</h4>
+        <div class="col aln-center">
+            <a class="nav-item">About Us</a>
+            <a class="nav-item">Contact Us</a>
+            <a class="nav-item">Help</a>
+        </div>
+    </div>
+</nav>
+```
+
+### Path
+Display the current website path, or a group of items.
+
+#### Basic
+```html
+<ul class="path">
+    <li class="path-item">Home</li>
+    <li class="path-item">Shopping</li>
+    <li class="path-item">Cart</li>
+</ul>
+```
+
+#### Custom Divider
+```html
+<ul class="path" style="--path-divider: '>'">
+    <li class="path-item">Home</li>
+    <li class="path-item">Order</li>
+</ul>
+<ul class="path" style="--path-divider: '|'">
+    <li class="path-item">All</li>
+    <li class="path-item">Clothes</li>
+    <li class="path-item">Shoes</li>
+    <li class="path-item">Hats</li>
+    <li class="path-item">Accessories</li>
+    <li class="path-item">Office</li>
+</ul>
 ```
 
 ### Tag
+Short blocks of content.
+
+#### Basic
 ```html
 <div class="tag">Tag</div>
 <div class="tagh">Tag with hover</div>
 ```
 
-### Tooltip
+#### Descriptions
 ```html
-<div tooltip="Default to tooltip bottom">Bottom</div>
+<div class="mrg2 card br box pad2">
+    <h4>Mama's Pumpkin Pie</h4>
+    <div class="row">
+        <div class="tag">30 min</div>
+        <div class="tag">Pumpkin</div>
+        <div class="tag">Gluten Free</div>
+    </div>
+    <div class="desc pad2">
+        The best recipe in the world! Delicious & easy to make.
+    </div>
+</div>
+<div class="mrg2 card br box pad2">
+    <h4>Chocolate Chip Cookies</h4>
+    <div class="row">
+        <div class="tag">25 min</div>
+        <div class="tag">Favorite</div>
+        <div class="tag cat-active">New!</div>
+    </div>
+    <div class="desc pad2">
+        Cookies that will knock your socks off.
+    </div>
+</div>
+```
+
+#### Categories
+```html
+<div class="mrg2 div33 card br box pad2">
+    <div class="col wrp category">
+        <div class="row bg3 br pad2 mrg2">
+            <div class="tag">Small</div>
+            <div class="tag">Medium</div>
+            <div class="tag">Large</div>
+            <div class="tag">Extra Large</div>
+        </div>
+        <div class="row jst-center bg3 br pad2 mrg2">
+            <div class="tag">Red</div>
+            <div class="tag">Yellow</div>
+            <div class="tag">Orange</div>
+            <div class="tag">Purple</div>
+            <div class="tag">Blue</div>
+        </div>
+        <div class="row jst-end bg3 br pad2 mrg2">
+            <div class="tag">Update</div>
+            <div class="tag">Shutdown</div>
+            <div class="tag">Delete</div>
+            <div class="tag">Install</div>
+        </div>
+
+        <div class="row jst-around bg3 br pad2 mrg2">
+            <div class="tag">-1</div>
+            <div class="tag">0</div>
+            <div class="tag">+1</div>
+        </div>
+
+        <div class="row jst-between bg3 br pad2 mrg2">
+            <div class="tag">Start</div>
+            <div class="tag">End</div>
+        </div>
+    </div>
+</div>
+```
+
+### Toggle
+Toggle on or off.
+
+```html
+<label class="toggle">
+    <input type="checkbox">
+        <span class="slider round"></span>
+</label>
+<label class="toggle">
+    <input type="checkbox">
+        <span class="slider"></span>
+</label>
+```
+
+### Tooltip
+Show hidden text on hover.
+
+```html
+<div tooltip="Default tooltip bottom">Bottom</div>
 <div tooltip="Tooltip bottom" side="bottom">Bottom</div>
 <div tooltip="Tooltip top" side="top">Top</div>
 <div tooltip="Tooltip left" side="left">Left</div>

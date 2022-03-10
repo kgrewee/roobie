@@ -33,7 +33,8 @@ nav {
 }
 
 .nav-heading {
-    margin: var(--mrg1);
+    margin: var(--mrg2);
+    margin-bottom: 0;
     font-size: var(--fnts3);
     color: var(--t1);
 }

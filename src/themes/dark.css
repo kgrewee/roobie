@@ -3,10 +3,10 @@
     --primary: var(--blue2);
     --secondary: var(--bg4);
     /*Status*/
-    --success: rgb(87, 199, 79);
-    --warning: rgb(235, 119, 42);
-    --danger: rgb(248, 62, 52);
-    --info: rgb(152, 217, 243);
+    --success: rgba(81, 190, 73, 0.7);
+    --warning: rgba(235, 119, 42, .7);
+    --danger: rgba(248, 62, 52, .7);
+    --info: rgba(152, 217, 243, .7);
     /*Shade 1*/
     --white: rgb(240, 240, 240);
     --black: rgb(20, 20, 20);

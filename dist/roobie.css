@@ -2461,7 +2461,6 @@ select:focus {
 }
 
 .nav-item:hover {
-    color: 'currentColor';
     filter: opacity(80%);
 }.path {
     display: inline-flex;

@@ -56,9 +56,9 @@
     --bg6: var(--primary);
     /*Heading*/
     --h1: var(--t1);
-    --h2: var(--t5);
-    --h3: var(--green);
-    --h4: var(--blue2);
+    --h2: var(--t1);
+    --h3: var(--t2);
+    --h4: var(--t2);
     --h5: var(--t5);
     --h6: var(--t5);
     /*Link*/

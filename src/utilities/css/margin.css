@@ -1,9 +1,3 @@
-/*
-Name: Margin
-Prefix: mrg
-Dev: Margin on the outside of an element
-*/
-
 .mrga {
     margin: auto !important;
 }

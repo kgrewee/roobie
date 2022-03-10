@@ -23,6 +23,14 @@
     flex-direction: row-reverse;
 }
 
+.show {
+    display: inline-flex;
+}
+
+.hide {
+    display: none;
+}
+
 
 /* Base */
 

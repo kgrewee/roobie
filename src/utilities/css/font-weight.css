@@ -1,9 +1,3 @@
-/* 
-Name: Font Weight
-Prefix: fntw
-Dev: Font size of an element
-*/
-
 .fntw1 {
     font-weight: var(--fntw1);
 }

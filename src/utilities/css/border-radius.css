@@ -1,9 +1,3 @@
-/* 
-Name: Border Radius
-Prefix: br
-Dev: Border radius of an element
-*/
-
 .br0 {
     border-radius: none !important;
 }

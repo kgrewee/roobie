@@ -1,7 +1,11 @@
-.show {
+.visible {
     visibility: visible;
 }
 
-.hide {
+.hidden {
     visibility: hidden;
+}
+
+.collapse {
+    visibility: collapse;
 }

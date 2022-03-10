@@ -1,9 +1,3 @@
-/* 
-Name: Font Size
-Prefix: fnts
-Dev: Font size of an element
-*/
-
 .fnts1 {
     font-size: var(--fnts1);
 }

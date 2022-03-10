@@ -1,9 +1,3 @@
-/* 
-Name: Box Shadow
-Prefix: box,in
-Dev: Box shadow of an element
-*/
-
 .box0 {
     box-shadow: none !important;
 }

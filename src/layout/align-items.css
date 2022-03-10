@@ -1,9 +1,3 @@
-/* 
-Name: Align Items
-Prefix: aln
-Dev: Alignment opposite of main axis.  Vertical for row, horizontal for column.
-*/
-
 .aln-center {
     align-items: center;
 }

@@ -1,9 +1,3 @@
-/* 
-Name: Background Color
-Prefix: bg
-Dev: Background color of an element
-*/
-
 .bg0 {
     background-color: transparent !important;
 }

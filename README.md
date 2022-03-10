@@ -61,7 +61,7 @@ Root CSS classes and variables in [root.css](dist/themes/root.css) are theme ind
 There are two pre-built CSS themes: [light.css](dist/themes/light.css) & [dark.css](dist/themes/dark.css).  Create copies and include them in your project, instead of using the defaults. This will persist your themes through npm installs.  If you want to use the default Roobie themes, keep calm and carry on.  These will probably change in future versions.  Make sure to include the theme files in your project, or things won't work correctly.  Every CSS class in Roobie is based on a theme variable.
 
 ## Layout
-Roobie uses a Flexbox layout.
+Roobie uses a Flexbox layout.  Our classes align closely with CSS properties.
 
 ### Container
 Containers are the basic building block.  Styled using width and padding.
@@ -85,6 +85,8 @@ Containers are the basic building block.  Styled using width and padding.
 ```
 
 ### Display
+
+#### Direction
 Use these if you want flexbox layout classes to work correctly.
 ```html
 <div class="col">Column</div>
@@ -93,8 +95,10 @@ Use these if you want flexbox layout classes to work correctly.
 <div class="rowr">Row reverse</div>
 ```
 
-Other display classes included for convienence.
+#### Other
 ```html
+<div class="show">Show</div>
+<div class="hide">Hide</div>
 <div class="flx">Flex</div>
 <div class="blk">Block</div>
 <div class="inl">Inline</div>
@@ -126,6 +130,18 @@ Align items opposite of the main axis.  Column for a **row** display.  Row for a
 <div class="row aln-stretch">Stretch</div>
 ```
 
+### Align Content
+How lines are spaced.  No effect if content is only 1 line.
+```html
+<div class="row aln-cnt-start">Start</div>
+<div class="row aln-cnt-end">End</div>
+<div class="row aln-cnt-between">Between</div>
+<div class="row aln-cnt-around">Around</div>
+<div class="row aln-cnt-center">Center</div>
+<div class="row aln-cnt-base">Base</div>
+<div class="row aln-cnt-stretch">Stretch</div>
+```
+
 ### Wrap
 Determine what to do with items when there isn't enough space in the container.  The default for all containers is no wrap.
 ```html
@@ -133,8 +149,6 @@ Determine what to do with items when there isn't enough space in the container. 
 <div class="row wrpr">Wrap reverse</div>
 <div class="row wrp0">No wrap</div>
 ```
-
-***Float and position should almost never be used in a flexbox layout.  Favor flexbox layout classes above.***
 
 ### Float
 ```html
@@ -188,6 +202,7 @@ Most utility classes range between 0-6 in terms of intensity.
 <div class="bdr5">Theme setting</div>
 <div class="bdr6">Theme setting</div>
 ```
+
 ### Box Shadow
 ```html
 <div class="box0">None</div>
@@ -296,19 +311,20 @@ Most utility classes range between 0-6 in terms of intensity.
 
 ### Visibility
 ```html
-<div class="show">Show</div>
-<div class="hide">Hide</div>
+<div class="visible">Visible</div>
+<div class="hidden">Hidden</div>
+<div class="collapse">collapse</div>
 ```
 
 ### Z Index
 ```html
-<div class="z0">Theme setting</div>
-<div class="z1">Theme setting</div>
-<div class="z2">Theme setting</div>
-<div class="z3">Theme setting</div>
-<div class="z4">Theme setting</div>
-<div class="z5">Theme setting</div>
-<div class="z6">Theme setting</div>
+<div class="z0">-1</div>
+<div class="z1">1</div>
+<div class="z2">5</div>
+<div class="z3">10</div>
+<div class="z4">25</div>
+<div class="z5">50</div>
+<div class="z6">100</div>
 ```
 
 ## Animations

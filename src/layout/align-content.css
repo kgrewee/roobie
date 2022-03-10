@@ -1,8 +1,6 @@
-/* 
-Name: Align Content
-Prefix: aln-cnt
-Dev: How lines are spaced.  No effect if content is only 1 line.
-*/
+.aln-cnt-center {
+    align-content: center;
+}
 
 .aln-cnt-between {
     align-content: space-between;

@@ -1,6 +1,6 @@
-/*
-Dev: Alignment on the main axis.  Horizontal for row, vertical for column.
-*/
+.jst-center {
+    justify-content: center;
+}
 
 .jst-between {
     justify-content: space-between;
@@ -8,10 +8,6 @@ Dev: Alignment on the main axis.  Horizontal for row, vertical for column.
 
 .jst-around {
     justify-content: space-around;
-}
-
-.jst-center {
-    justify-content: center;
 }
 
 .jst-start {

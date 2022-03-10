@@ -1,9 +1,3 @@
-/* 
-Name: Border
-Prefix: bdr
-Dev: Border of an element
-*/
-
 .bdr0 {
     border: none !important;
 }

@@ -1,10 +1,8 @@
 ._inf {
     animation-iteration-count: infinite;
-}/* 
-Name: Align Content
-Prefix: aln-cnt
-Dev: How lines are spaced.  No effect if content is only 1 line.
-*/
+}.aln-cnt-center {
+    align-content: center;
+}
 
 .aln-cnt-between {
     align-content: space-between;
@@ -28,13 +26,7 @@ Dev: How lines are spaced.  No effect if content is only 1 line.
 
 .aln-cnt-stretch {
     align-content: stretch;
-}/* 
-Name: Align Items
-Prefix: aln
-Dev: Alignment opposite of main axis.  Vertical for row, horizontal for column.
-*/
-
-.aln-center {
+}.aln-center {
     align-items: center;
 }
 
@@ -60,13 +52,7 @@ Dev: Alignment opposite of main axis.  Vertical for row, horizontal for column.
 
 .aln-stretch {
     align-items: stretch;
-}/* 
-Name: Align Self
-Prefix: aln-self
-Dev: How a single item is aligned within a single line
-*/
-
-.aln-self-center {
+}.aln-self-center {
     align-self: center;
 }
 
@@ -165,6 +151,14 @@ Dev: How a single item is aligned within a single line
     flex-direction: row-reverse;
 }
 
+.show {
+    display: inline-flex;
+}
+
+.hide {
+    display: none;
+}
+
 
 /* Base */
 
@@ -186,11 +180,7 @@ Dev: How a single item is aligned within a single line
 
 .inl-flx {
     display: inline-flex;
-}/* 
-How items are effected when there isn't enough space on a line
-*/
-
-.wrp {
+}.wrp {
     flex-wrap: wrap;
 }
 
@@ -200,11 +190,7 @@ How items are effected when there isn't enough space on a line
 
 .wrp0 {
     flex-wrap: nowrap;
-}/* 
-Dev: How items are effected when there isn't enough space on a line
-*/
-
-.fltl {
+}.fltl {
     float: left;
 }
 
@@ -218,9 +204,9 @@ Dev: How items are effected when there isn't enough space on a line
 
 .flti {
     float: inherit;
-}/*
-Dev: Alignment on the main axis.  Horizontal for row, vertical for column.
-*/
+}.jst-center {
+    justify-content: center;
+}
 
 .jst-between {
     justify-content: space-between;
@@ -228,10 +214,6 @@ Dev: Alignment on the main axis.  Horizontal for row, vertical for column.
 
 .jst-around {
     justify-content: space-around;
-}
-
-.jst-center {
-    justify-content: center;
 }
 
 .jst-start {
@@ -3056,13 +3038,7 @@ select:focus {
     border-width: 5px;
     border-style: solid;
     border-color: transparent var(--bg2) transparent transparent;
-}/* 
-Name: Background Color
-Prefix: bg
-Dev: Background color of an element
-*/
-
-.bg0 {
+}.bg0 {
     background-color: transparent !important;
 }
 
@@ -3236,13 +3212,7 @@ Dev: Background color of an element
 
 .bg-violet3 {
     background-color: var(--violet3) !important;
-}/* 
-Name: Border Radius
-Prefix: br
-Dev: Border radius of an element
-*/
-
-.br0 {
+}.br0 {
     border-radius: none !important;
 }
 
@@ -3269,13 +3239,7 @@ Dev: Border radius of an element
 
 .br6 {
     border-radius: var(--br6);
-}/* 
-Name: Border
-Prefix: bdr
-Dev: Border of an element
-*/
-
-.bdr0 {
+}.bdr0 {
     border: none !important;
 }
 
@@ -3484,13 +3448,7 @@ Dev: Border of an element
 .bdr-violet3 {
     border: 1px solid transparent !important;
     border-color: var(--violet3) !important;
-}/* 
-Name: Box Shadow
-Prefix: box,in
-Dev: Box shadow of an element
-*/
-
-.box0 {
+}.box0 {
     box-shadow: none !important;
 }
 
@@ -3560,12 +3518,7 @@ Dev: Box shadow of an element
 .inh:hover,
 .inh:focus {
     box-shadow: var(--in3);
-}/* 
-Name: Color
-Dev: Colors are referenced by name
-*/
-
-.t0 {
+}.t0 {
     color: transparent !important;
 }
 
@@ -3739,26 +3692,14 @@ Dev: Colors are referenced by name
 
 .violet3 {
     color: var(--violet3) !important;
-}/* 
-Name: Cursor
-Prefix: csr
-Dev: Cursor when a user hovers an element
-*/
-
-.csr-pointer,
+}.csr-pointer,
 .csr {
     cursor: pointer !important;
 }
 
 .csr-default {
     cursor: default !important;
-}/* 
-Name: Font Size
-Prefix: fnts
-Dev: Font size of an element
-*/
-
-.fnts1 {
+}.fnts1 {
     font-size: var(--fnts1);
 }
 
@@ -3780,13 +3721,7 @@ Dev: Font size of an element
 
 .fnts6 {
     font-size: var(--fnts6);
-}/* 
-Name: Font Weight
-Prefix: fntw
-Dev: Font size of an element
-*/
-
-.fntw1 {
+}.fntw1 {
     font-weight: var(--fntw1);
 }
 
@@ -3808,13 +3743,7 @@ Dev: Font size of an element
 
 .fntw6 {
     font-weight: var(--fntw6);
-}/* 
-Name: Height
-Prefix: ht
-Dev: Height of an element
-*/
-
-.hta {
+}.hta {
     height: auto !important;
 }
 
@@ -3836,13 +3765,7 @@ Dev: Height of an element
 
 .ht {
     height: 100% !important;
-}/*
-Name: Line Height
-Prefix: lht
-Dev
-*/
-
-.lht1 {
+}.lht1 {
     line-height: var(--lht1);
 }
 
@@ -3864,13 +3787,7 @@ Dev
 
 .lht6 {
     line-height: var(--lht6);
-}/*
-Name: Margin
-Prefix: mrg
-Dev: Margin on the outside of an element
-*/
-
-.mrga {
+}.mrga {
     margin: auto !important;
 }
 
@@ -4035,13 +3952,7 @@ Dev: Margin on the outside of an element
 
 .op {
     opacity: 100%;
-}/*
-Name: Scroll
-Prefix: ov
-Dev: 
-*/
-
-.ov {
+}.ov {
     overflow: auto;
 }
 
@@ -4055,13 +3966,7 @@ Dev:
 
 .ovh {
     overflow: hidden;
-}/*
-Name: Padding
-Prefix: pad
-Dev: Padding on the inside of an element
-*/
-
-.pada {
+}.pada {
     padding: auto !important;
 }
 
@@ -4214,26 +4119,20 @@ Dev: Padding on the inside of an element
 
 .txtr {
     text-align: right;
-}/*
-Name: Text Decoration
-Prefix: txtd
-*/
-
-.txtd0 {
+}.txtd0 {
     text-decoration: none;
-}.show {
+}.visible {
     visibility: visible;
 }
 
-.hide {
+.hidden {
     visibility: hidden;
-}/*
-Name: Z Index
-Prefix: z
-*/
+}
 
-.z0 {
-    z-index: 0;
+.collapse {
+    visibility: collapse;
+}.z0 {
+    z-index: -1;
 }
 
 .z1 {

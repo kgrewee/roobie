@@ -1,10 +1,5 @@
-/*
-Name: Z Index
-Prefix: z
-*/
-
 .z0 {
-    z-index: 0;
+    z-index: -1;
 }
 
 .z1 {

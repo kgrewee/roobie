@@ -1,7 +1,3 @@
-/* 
-How items are effected when there isn't enough space on a line
-*/
-
 .wrp {
     flex-wrap: wrap;
 }

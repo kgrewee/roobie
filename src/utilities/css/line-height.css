@@ -1,9 +1,3 @@
-/*
-Name: Line Height
-Prefix: lht
-Dev
-*/
-
 .lht1 {
     line-height: var(--lht1);
 }

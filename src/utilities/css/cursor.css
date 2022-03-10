@@ -1,9 +1,3 @@
-/* 
-Name: Cursor
-Prefix: csr
-Dev: Cursor when a user hovers an element
-*/
-
 .csr-pointer,
 .csr {
     cursor: pointer !important;

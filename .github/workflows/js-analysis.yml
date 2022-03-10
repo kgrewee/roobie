@@ -2,9 +2,7 @@ name: JS Analysis
 
 on:
   push:
-    branches: [ main, develop ]
-  pull_request:
-    branches: [ main ]
+    branches: [main, develop]
   schedule:
     - cron: '42 3 * * 2'
 

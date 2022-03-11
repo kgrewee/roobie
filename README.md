@@ -20,9 +20,13 @@ Install with npm
 npm i roobie --save
 ```
 
-### HTML
-Add Roobie dist files to the **head** tag of an HTML file.
+**or**
 
+Pull this GitHub repository.  Import our dist files from `dist/` in your local repository instead of the `node_modules/` directory.
+
+### Minified with external themes (Recommended)
+It is recommended to copy the `dist/themes/` directory to your local project to persist themes through npm installs, instead of including the node modules.  The node module theme files are included here for transparency.
+#### HTML
 ```html
 <head>
     <title>Roobie</title>
@@ -36,22 +40,8 @@ Add Roobie dist files to the **head** tag of an HTML file.
 </head>
 ```
 
-**or**
-
-```html
-<head>
-    <title>Roobie</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./node_modules/roobie/dist/roobie.bundle.css">
-    <script src="./node_modules/roobie/dist/roobie.bundle.js"></script>
-</head>
-```
-
-### Angular 
-
-Add Roobie dist files to **angular.json**.
-
+#### Angular
+Add Roobie minified dist files to **angular.json**.
 ```ts
  "styles": [
         "src/styles.scss",
@@ -63,8 +53,21 @@ Add Roobie dist files to **angular.json**.
     "scripts": ["./node_modules/roobie/dist/roobie.min.js"]
 ```
 
-**or**
+### Bundle with internal themes
+Internal themes are not bad, but you're stuck with the Roobie default light and dark themes unless you override variables in your CSS.  For some people this better than maintaining their own theme files.  Our theme variables may change in the future versions.
+#### HTML
+```html
+<head>
+    <title>Roobie</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/roobie/dist/roobie.bundle.css">
+    <script src="./node_modules/roobie/dist/roobie.bundle.js"></script>
+</head>
+```
 
+#### Angular
+Add Roobie bundle dist files to **angular.json**.
 ```ts
  "styles": [
         "src/styles.scss",
@@ -73,26 +76,45 @@ Add Roobie dist files to **angular.json**.
     "scripts": ["./node_modules/roobie/dist/roobie.bundle.js"]
 ```
 
+### Base
+Human readable Roobie dist files are included but not recommmended for production.
 
+- [roobie.css](dist/roobie.css)
+- [roobie.js](dist/roobie.js)
 
 ## Examples
-Examples are found [here](examples/).
+Examples found [here](examples/) are hosted at https://roobie.net.  You can see them locally if you pull this repository and open any example .html file.
 
 ## Themes
 
-These are required for Roobie to function properly.  Create copies and include them in your project, instead of using the defaults in the `node_modules/` directory to persist your themes through npm installs.
+Themes are required for Roobie to function properly.  Create copies of the theme files and include them in your project instead of using the defaults in the `node_modules/` directory to persist your themes through npm installs.  If you want to use the defaults, use the bundle distribution for less imports.
 
-- [dist/themes/root.css](dist/themes/root.css)
-- [dist/themes/light.css](dist/themes/light.css)
-- [dist/themes/dark.css](dist/themes/dark.css)
-
-Include the defaults, copy them and create your own version, or use a bundle distribution.  Make sure to include the theme files in your project, or things won't work correctly.  Every CSS class in Roobie is based on a theme variable.
+- [root.css](dist/themes/root.css)
+- [light.css](dist/themes/light.css)
+- [dark.css](dist/themes/dark.css)
 
 ### Root
-`root.css` classes and variables in are theme independent.  Modify them to change all themes.
+`root.css` classes and variables in are theme independent.  Modify them to change all themes.  Themes will not function properly without these variables.
 
 ### Pre-built Themes
-`light.css` and `dark.css` are pre-built themes.  Copy them to create new themes and expand them with new variables.
+`light.css` and `dark.css` are pre-built themes.  Copy them to create new themes and expand them new variables.
+
+## Custom Theme
+You can add more themes alongside the base light and dark, just copy `light.css` or `dark.css` and change selector `[theme="light"]`/`[theme="dark"]` in the top of the file to reflect the name of your theme.  Make sure to import this new theme file to use it.
+
+### Activate Theme
+Activate a theme by setting local storage and body HTML attribute.  Replace {themeName} with the name of your theme.
+```js
+localStorage.setItem('theme', {themeName});
+document.body.setAttribute('theme', {themeName});
+```
+
+Result
+```html
+<body theme="{themeName}">
+```
+
+The active theme is saved in the local storage `theme` variable so it can be loaded later.  Roobie sets the default theme to `light` on initial load if the local storage variable `theme` is null aka not set.  If the local storage variable `theme` is not null, the theme body HTML attribute is set to its value on load.  Make sure to include the theme files in your project, or **things won't work correctly**.  Every CSS class in Roobie is based on a theme variable.
 
 ## Layout
 Roobie uses a Flexbox layout.  Our classes align closely with CSS properties.
@@ -360,7 +382,7 @@ Most utility classes range between 0-6 in terms of intensity.
 ```html
 <div class="visible">Visible</div>
 <div class="hidden">Hidden</div>
-<div class="collapse">collapse</div>
+<div class="collapse">Collapse</div>
 ```
 
 ### Z Index
@@ -450,6 +472,7 @@ Animation classes start with an _underscore.
 ```
 
 ## Components
+Not tested in Angular or React.
 
 ### Accordion
 Panels of expandable content.

@@ -1835,6 +1835,7 @@
     width: 100%;
     border-radius: var(--br3);
     padding: var(--pad5);
+    margin: var(--mrg1);
 }
 
 .alert:after {
@@ -2563,8 +2564,8 @@ select:focus {
 
 .table td {
     color: var(--t3);
-}.tag,
-.tagh {
+}.chip,
+.chiph {
     display: inline-flex;
     width: auto;
     height: auto;
@@ -2578,7 +2579,7 @@ select:focus {
     background-color: var(--bg2);
 }
 
-.tagh:hover {
+.chiph:hover {
     box-shadow: var(--box1);
     cursor: default;
     opacity: 90%;
@@ -3850,10 +3851,6 @@ select:focus {
 
 .hidden {
     visibility: hidden;
-}
-
-.collapse {
-    visibility: collapse;
 }.z0 {
     z-index: -1;
 }

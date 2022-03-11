@@ -5,6 +5,7 @@
     width: 100%;
     border-radius: var(--br3);
     padding: var(--pad5);
+    margin: var(--mrg1);
 }
 
 .alert:after {

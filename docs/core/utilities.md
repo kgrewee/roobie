@@ -158,7 +158,6 @@ Most utility classes range between 0-6 in terms of intensity.
 ```html
 <div class="visible">Visible</div>
 <div class="hidden">Hidden</div>
-<div class="collapse">Collapse</div>
 ```
 
 ## Z Index

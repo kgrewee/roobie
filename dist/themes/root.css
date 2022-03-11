@@ -100,7 +100,6 @@ h3,
 h4,
 h5,
 h6,
-span,
 p {
     margin: var(--mrg1);
 }
@@ -108,8 +107,4 @@ p {
 span,
 p {
     color: var(--t3);
-}
-
-.active {
-    background-color: var(--bg6) !important;
 }

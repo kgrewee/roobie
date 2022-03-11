@@ -33,9 +33,9 @@
         "copy": "npm-run-all copy:themes copy:icons",
         "copy:themes": "cp -r src/themes/ dist/",
         "copy:icons": "cp -r src/icons/ dist/",
-        "docs": "npm-run-all docs:build docs:move",
-        "docs:build": "",
-        "docs:move": "",
+        "docs": "npm-run-all docs:move",
+        "docs:move": "cp dist/roobie.bundle.css docs/ && cp dist/roobie.bundle.js docs/",
+        "docs:serve": "cd docs && python3 -m http.server 3000",
         "prepare": "husky install"
     },
     "devDependencies": {

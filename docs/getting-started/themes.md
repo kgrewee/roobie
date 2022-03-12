@@ -1,5 +1,5 @@
 # Themes
-Themes are required for Roobie to function properly.  Create copies of the theme files and include them in your project instead of using the defaults in the `node_modules/` directory to persist your themes through npm installs.  If you want to use the defaults, use the bundle distribution.
+Themes are required for Roobie to function properly.  Create copies of `root.css`, `light.css` and `dark.css` from your install directory. Include them in your project instead of using the defaults to persist your themes or use a bundle distribution that includes the themes.  Make sure to include the theme files in your project or **things won't work correctly**.  Every CSS class in Roobie is based on a theme variable.
 
 ## Root
 `root.css` classes and variables in are theme independent.  Modify them to change all themes.  Themes will not function properly without these variables.
@@ -354,9 +354,14 @@ localStorage.setItem('theme', themeName);
 document.body.setAttribute('theme', themeName);
 ```
 
-Result
+View active theme on body tag:
 ```html
 <body theme="themeName">
 ```
 
-The active theme is saved in the local storage so it can be loaded later.  Roobie sets the default theme to `light` on load if the local storage variable is null aka not set.  If the local storage variable is not null, the body HTML attribute theme is set to its value on load.  Make sure to include the theme files in your project, or **things won't work correctly**.  Every CSS class in Roobie is based on a theme variable.
+Get active theme from local storage:
+```js
+localStorage.getItem('theme');
+```
+
+Roobie sets the default theme to `light` on load if the local storage variable is null aka not set.  If the local storage variable is not null, the body HTML attribute theme is set to its value on load.

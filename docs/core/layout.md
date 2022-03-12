@@ -44,21 +44,16 @@ The default height for all containers is auto.
 <div class="ht">100%</div>
 ```
 
-## Display
-Use `row` or `column` display for layout classes to work correctly.  Other classes are provided for special occasions.
+## Row
 
-### Row
+### Classes
 ```html
 <div class="row">Row</div>
 <div class="rowr">Row reverse</div>
 ```
 
+### Usage
 <div class="row">
-    <button type="button" class="btn">Button 1</button>
-    <button type="button" class="btn">Button 2</button>
-    <button type="button" class="btn">Button 3</button>
-</div>
-<div class="rowr">
     <button type="button" class="btn">Button 1</button>
     <button type="button" class="btn">Button 2</button>
     <button type="button" class="btn">Button 3</button>
@@ -70,6 +65,15 @@ Use `row` or `column` display for layout classes to work correctly.  Other class
     <button type="button" class="btn">Button 2</button>
     <button type="button" class="btn">Button 3</button>
 </div>
+```
+
+<div class="rowr">
+    <button type="button" class="btn">Button 1</button>
+    <button type="button" class="btn">Button 2</button>
+    <button type="button" class="btn">Button 3</button>
+</div>
+
+```html
 <div class="rowr">
     <button type="button" class="btn">Button 1</button>
     <button type="button" class="btn">Button 2</button>
@@ -77,17 +81,29 @@ Use `row` or `column` display for layout classes to work correctly.  Other class
 </div>
 ```
 
-### Column
+## Column
+
+### Classes
 ```html
 <div class="col">Column</div>
 <div class="colr">Column reverse</div>
 ```
 
+### Usage
 <div class="col">
     <button type="button" class="btn">Button 1</button>
     <button type="button" class="btn">Button 2</button>
     <button type="button" class="btn">Button 3</button>
 </div>
+
+```html
+<div class="col">
+    <button type="button" class="btn">Button 1</button>
+    <button type="button" class="btn">Button 2</button>
+    <button type="button" class="btn">Button 3</button>
+</div>
+```
+
 <div class="colr">
     <button type="button" class="btn">Button 1</button>
     <button type="button" class="btn">Button 2</button>
@@ -95,11 +111,6 @@ Use `row` or `column` display for layout classes to work correctly.  Other class
 </div>
 
 ```html
-<div class="col">
-    <button type="button" class="btn">Button 1</button>
-    <button type="button" class="btn">Button 2</button>
-    <button type="button" class="btn">Button 3</button>
-</div>
 <div class="colr">
     <button type="button" class="btn">Button 1</button>
     <button type="button" class="btn">Button 2</button>
@@ -121,7 +132,7 @@ Use `row` or `column` display for layout classes to work correctly.  Other class
 ## Justify Content
 Justify content on the main axis.  Row for a **row** display.  Column for a **col** display.
 
-### Basic Usage
+### Classes
 ```html
 <div class="row jst-start">Start</div>
 <div class="row jst-end">End</div>
@@ -131,8 +142,7 @@ Justify content on the main axis.  Row for a **row** display.  Column for a **co
 <div class="row jst-base">Base</div>
 <div class="row jst-stretch">Stretch</div>
 ```
-
-### Start
+### Usage
 <div class="row jst-start">   
     <button type="button" class="btn">Button 1</button>
     <button type="button" class="btn">Button 2</button>
@@ -147,7 +157,6 @@ Justify content on the main axis.  Row for a **row** display.  Column for a **co
 </div>
 ```
 
-### End
 <div class="row jst-end">   
     <button type="button" class="btn">Button 1</button>
     <button type="button" class="btn">Button 2</button>
@@ -162,7 +171,6 @@ Justify content on the main axis.  Row for a **row** display.  Column for a **co
 </div>
 ```
 
-### Between
 <div class="row jst-between">   
     <button type="button" class="btn">Button 1</button>
     <button type="button" class="btn">Button 2</button>
@@ -177,7 +185,6 @@ Justify content on the main axis.  Row for a **row** display.  Column for a **co
 </div>
 ```
 
-### Around
 <div class="row jst-around">  
     <button type="button" class="btn">Button 1</button>
     <button type="button" class="btn">Button 2</button>
@@ -192,7 +199,6 @@ Justify content on the main axis.  Row for a **row** display.  Column for a **co
 </div>
 ```
 
-### Center
 <div class="row jst-center">   
     <button type="button" class="btn">Button 1</button>
     <button type="button" class="btn">Button 2</button>
@@ -207,7 +213,6 @@ Justify content on the main axis.  Row for a **row** display.  Column for a **co
 </div>
 ```
 
-### Base
 <div class="row jst-base">   
     <button type="button" class="btn">Button 1</button>
     <button type="button" class="btn">Button 2</button>
@@ -222,7 +227,6 @@ Justify content on the main axis.  Row for a **row** display.  Column for a **co
 </div>
 ```
 
-### Stretch
 <div class="row jst-stretch"> 
     <button type="button" class="btn">Button 1</button>
     <button type="button" class="btn">Button 2</button>
@@ -236,7 +240,6 @@ Justify content on the main axis.  Row for a **row** display.  Column for a **co
     <button type="button" class="btn">Button 3</button>
 </div>
 ```
-
 
 
 ## Align Items

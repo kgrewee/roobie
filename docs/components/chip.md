@@ -53,7 +53,7 @@ Short blocks of content.
     <div class="row">
         <div class="chip">25 min</div>
         <div class="chip">Favorite</div>
-        <div class="chip cat-active">New!</div>
+        <div class="chip">New!</div>
     </div>
     <div class="desc pad2">
         Cookies that will knock your socks off.

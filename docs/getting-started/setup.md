@@ -2,7 +2,7 @@
 If you installed using npm, use the path to the `node_modules/roobie/dist/` directory.  If you installed with Git, use the path to the `roobie/dist/` in your local repository.
 
 ## Option 1: Minified with external themes (Recommended)
-It is recommended to copy the `roobie/dist/themes/` directory to your local project to persist your themes instead of relying on roobie dist themes that could change upon npm install or git pull.  The CSS theme files are included here for transparency.
+It is recommended to copy the `roobie/dist/themes/` directory to your project to persist themes. Using default dist themes will revert variables to Roobie defaults during npm install or git pull.  The default dist theme files are included here for transparency.
 
 ### HTML
 ```html
@@ -32,7 +32,7 @@ Add Roobie minified dist files to **angular.json**.
 ```
 
 ## Option 2: Bundle with internal themes
-Internal themes aren't bad, but you're stuck with the Roobie default light and dark themes unless you override variables in your CSS.  For some people this better than maintaining their own theme files.  Our theme variables may change in the future versions.  You can still create your own themes while keeping the Roobie light and dark defaults.  See [Custom Themes](/getting-started/themes?id=custom-themes).
+If you use internal themes, you will have to override Roobie default light and dark theme variables to change the default themes.  Sometimes this better than maintaining your own theme files.  Our theme variables may change in the future versions.  You can create your own themes alongside Roobie light and dark defaults.  See [Custom Themes](/getting-started/themes?id=custom-themes).
 ### HTML
 ```html
 <head>

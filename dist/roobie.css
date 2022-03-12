@@ -78,34 +78,38 @@
 
 .aln-self-stretch {
     align-self: stretch;
-}.diva {
-    width: auto;
+}.diva,
+.div25,
+.div33,
+.div50,
+.div75,
+.div100 {
     height: auto;
     padding: var(--pad2);
+}
+
+.diva {
+    width: auto;
 }
 
 .div25 {
     width: 25%;
-    height: auto;
-    padding: var(--pad2);
 }
 
 .div33 {
     width: 33%;
-    height: auto;
-    padding: var(--pad2);
 }
 
 .div50 {
     width: 50%;
-    height: auto;
-    padding: var(--pad2);
 }
 
 .div75 {
     width: 75%;
-    height: auto;
-    padding: var(--pad2);
+}
+
+.div100 {
+    width: 100%;
 }
 
 .div {
@@ -113,15 +117,13 @@
     height: auto;
 }
 
-
-/* Media queries */
-
 @media screen and (max-width: 800px) {
     .diva,
     .div25,
     .div33,
     .div50,
     .div75,
+    .div100,
     .div {
         width: 100%;
         padding: 0;

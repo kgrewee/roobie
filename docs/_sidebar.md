@@ -1,5 +1,7 @@
 * Getting Started
+  * [Intro](README.md)
   * [Install](getting-started/install.md)
+  * [Setup](getting-started/setup.md)
   * [Themes](getting-started/themes.md)
 
 * Core

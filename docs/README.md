@@ -1,12 +1,26 @@
 # Roobie
 
-A minimalistic approach to web development.  Roobie makes web development **easier**.  Centralized CSS, JavaScript, themes, animations & more. Reuse core CSS classes and JavaScript functions instead of writing custom code.  Always build from a template.
+Web Framework that reduces boilerplate code with a lightweight, simple and easy to use API. A minimalistic approach to web development in Pure CSS and Vanilla JS.  Collection of CSS themes & utilities, JavaScript functions, animations and more. Reuse core CSS classes and JavaScript functions instead of writing custom code.  Always build from a template.
 
-Result
-- Increased maintainability 
-- Increased development speed
-- Reduced custom code
-- Reduced code cleanup
+## Benefits
+ > - Increased maintainability 
+ > - Increased development speed
+ > - Reduced custom code
+ > - Reduced code cleanup
+ > - No external dependencies
 
-## Examples
-Examples found [here](examples/) are hosted at https://roobie.net.  You can see them locally if you pull this repository and open any example .html file.
+## Documentation
+Documentation is hosted at https://roobie.net.
+
+### Run locally
+```shell
+npm run docs:serve
+```
+
+## Package
+```shell
+npm run package
+```
+
+## Husky
+Husky provides git hooks.  `npm run package` runs on pre-commit.

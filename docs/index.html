@@ -43,6 +43,18 @@
         [tooltip] {
             padding: var(--pad2);
         }
+        
+        .app-sub-sidebar li::before {
+            content: '' !important;
+        }
+        
+        .row-spacer div {
+            margin: 0 var(--mrg1);
+        }
+        
+        .col-spacer div {
+            margin: var(--mrg1) 0;
+        }
     </style>
 </head>
 
@@ -61,6 +73,15 @@
     </script>
     <!-- Docsify v4 -->
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script>
+        ready(() => {
+            let subtitle = document.createElement('div');
+            subtitle.innerHTML = "Minimalistic CSS & JS framework";
+            subtitle.classList.add("fnts2");
+            subtitle.classList.add("mrgv");
+            document.getElementsByClassName('app-name')[0].appendChild(subtitle);
+        });
+    </script>
 </body>
 
 </html>

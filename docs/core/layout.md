@@ -3,24 +3,45 @@
 Roobie uses a Flexbox layout.  Our classes align closely with CSS properties.
 
 ## Container
-Containers are the basic building block.  Styled using width and padding.
+Containers are the basic building block.  Styled using width and padding.  Fluid has no padding.
+<div class="div col aln-start txtc col-spacer">
+    <div class="diva bg2">Auto</div>
+    <div class="div25 bg2">25%</div>
+    <div class="div33 bg2">33%</div>
+    <div class="div50 bg2">50%</div>
+    <div class="div75 bg2">75%</div>
+    <div class="div100 bg2">100%</div>
+    <div class="div bg2">Fluid 100%</div>
+</div>
+
 ```html
-<div class="diva">Auto width</div>
-<div class="div25">25% width</div>
-<div class="div33">33% width</div>
-<div class="div50">50% width</div>
-<div class="div75">75% width</div>
-<div class="div">100% width</div>
+<div class="diva">Auto</div>
+<div class="div25">25%</div>
+<div class="div33">33%</div>
+<div class="div50">50%</div>
+<div class="div75">75%</div>
+<div class="div100">100%</div>
+<div class="div">Fluid 100%</div>
 ```
 
 ## Height
+Height auto is applied to all containers.
+<div class="div row row-spacer" style="height: 300px">
+    <div class="hta bg2">Auto</div>
+    <div class="ht25 bg2">25%</div>
+    <div class="ht33 bg2">33%</div>
+    <div class="ht50 bg2">50%</div>
+    <div class="ht75 bg2">75%</div>
+    <div class="ht bg2">100%</div>
+</div>
+
 ```html
-<div class="hta">Auto height</div>
-<div class="ht25">25% height</div>
-<div class="ht33">33% height</div>
-<div class="ht50">50% height</div>
-<div class="ht75">75% height</div>
-<div class="ht">100% height</div>
+<div class="hta">Auto</div>
+<div class="ht25">25%</div>
+<div class="ht33">33%</div>
+<div class="ht50">50%</div>
+<div class="ht75">75%</div>
+<div class="ht">100%</div>
 ```
 
 ## Display

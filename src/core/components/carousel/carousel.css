@@ -4,6 +4,7 @@
     flex-flow: column nowrap;
     margin: var(--mrg2);
     text-align: center;
+    border-radius: var(--br2);
 }
 
 .carousel-slide {

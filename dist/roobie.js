@@ -33,6 +33,29 @@ class Animation {
         element.classList.add(className);
     }
 
+    /**
+     * Triggers an animation on an element by class.
+     * 
+     * @param {string} className CSS class to select
+     * @param {string} animationClass Class name of animation
+     */
+    static animationByClass(className, animationClass) {
+        console.log("Animation [class=" + animationClass + "] -> [class=" + className + "]");
+        let elements = document.getElementsByClassName(className);
+        for (let i = 0; i < elements.length; i++) {
+            let element = elements[i];
+            let classList = element.classList;
+            // Remove any current animation classes
+            for (let c of classList) {
+                if (c.startsWith("_")) {
+                    element.classList.remove(c);
+                }
+            }
+            element.classList.remove(animationClass);
+            void element.offsetWidth;
+            element.classList.add(animationClass);
+        }
+    }
 }ready(() => {
     Accordion.check();
 });

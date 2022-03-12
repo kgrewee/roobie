@@ -3,7 +3,7 @@
     flex-flow: column nowrap;
     border-radius: var(--br2);
     border: var(--bdr1);
-    padding: var(--pad3);
+    padding: var(--pad4);
     margin: var(--mrg2);
 }
 

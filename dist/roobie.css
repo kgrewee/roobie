@@ -1834,7 +1834,7 @@
     justify-content: space-between;
     width: 100%;
     border-radius: var(--br3);
-    padding: var(--pad5);
+    padding: var(--pad4);
     margin: var(--mrg1);
 }
 
@@ -1941,7 +1941,7 @@
     flex-flow: column nowrap;
     border-radius: var(--br2);
     border: var(--bdr1);
-    padding: var(--pad3);
+    padding: var(--pad4);
     margin: var(--mrg2);
 }
 
@@ -1965,6 +1965,7 @@
     flex-flow: column nowrap;
     margin: var(--mrg2);
     text-align: center;
+    border-radius: var(--br2);
 }
 
 .carousel-slide {
@@ -2041,6 +2042,25 @@
     .carousel-slide {
         width: 100% !important;
     }
+}.chip,
+.chiph {
+    display: inline-flex;
+    width: auto;
+    height: auto;
+    border: 1px solid transparent;
+    padding: 1px var(--pad3);
+    border: var(--bdr1);
+    border-radius: var(--br6);
+    margin: var(--mrg1);
+    font-size: var(--fnts3);
+    color: var(--t3);
+    background-color: var(--bg2);
+}
+
+.chiph:hover {
+    box-shadow: var(--box1);
+    cursor: default;
+    opacity: 90%;
 }.drp {
     font-size: var(--fnts3);
     position: relative;
@@ -2564,32 +2584,12 @@ select:focus {
 
 .table td {
     color: var(--t3);
-}.chip,
-.chiph {
-    display: inline-flex;
-    width: auto;
-    height: auto;
-    border: 1px solid transparent;
-    padding: 1px var(--pad3);
-    border: var(--bdr1);
-    border-radius: var(--br6);
-    margin: var(--mrg1);
-    font-size: var(--fnts3);
-    color: var(--t3);
-    background-color: var(--bg2);
-}
-
-.chiph:hover {
-    box-shadow: var(--box1);
-    cursor: default;
-    opacity: 90%;
 }/* The toggle - Area around the slider */
 
 .toggle {
     position: relative;
     display: inline-block;
     width: 45px;
-    height: 30px;
 }
 
 

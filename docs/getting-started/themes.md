@@ -2,10 +2,10 @@
 Themes are required for Roobie to function properly.  Create copies of the theme files and include them in your project instead of using the defaults in the `node_modules/` directory to persist your themes through npm installs.  If you want to use the defaults, use the bundle distribution.
 
 ## Root
-[root.css](dist/themes/root.css) classes and variables in are theme independent.  Modify them to change all themes.  Themes will not function properly without these variables.
+`root.css` classes and variables in are theme independent.  Modify them to change all themes.  Themes will not function properly without these variables.
 
 ## Pre-built Themes
-[light.css](dist/themes/light.css) & [dark.css](dist/themes/dark.css) are pre-built themes.  Copy them to create new themes and expand them with new variables.
+`light.css` & `dark.css` are pre-built themes.  Copy them to create new themes and expand them with new variables.
 
 ## Custom Themes
 You can add more themes alongside the base light and dark, just copy light.css or dark.css and change selector `[theme="themeName"]` in the top of the file to reflect the name of your theme.  Make sure to import this new theme file to use it.

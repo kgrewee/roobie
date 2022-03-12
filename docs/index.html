@@ -8,8 +8,42 @@
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-    <link rel="stylesheet" href="roobie.bundle.css">
-    <script src="roobie.bundle.js"></script>
+    <link rel="stylesheet" href="includes/roobie.bundle.css">
+    <script src="includes/roobie.bundle.js"></script>
+    <style>
+        .card,
+        .carousel {
+            min-width: 350px;
+            min-height: 250px;
+        }
+        
+        .card h2 {
+            margin: var(--mrg1) 0 !important;
+        }
+        
+        ul.ul,
+        ul.ul-cnt {
+            padding-left: 0;
+            min-width: 300px;
+        }
+        
+        ul.path {
+            padding-left: 0;
+        }
+        
+        .nav-row {
+            margin-bottom: var(--mrg2);
+        }
+        
+        .nav-col {
+            height: 700px;
+            margin-right: var(--mrg2);
+        }
+        
+        [tooltip] {
+            padding: var(--pad2);
+        }
+    </style>
 </head>
 
 <body>
@@ -22,7 +56,7 @@
                 '/.*/_sidebar.md': '/_sidebar.md'
             },
             repo: 'https://github.com/kgrewee/roobie',
-            subMaxLevel: 3
+            subMaxLevel: 2
         }
     </script>
     <!-- Docsify v4 -->

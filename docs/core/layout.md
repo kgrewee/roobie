@@ -25,7 +25,7 @@ Containers are the basic building block.  Styled using width and padding.  Fluid
 ```
 
 ## Height
-Height auto is applied to all containers.
+The default height for all containers is auto.
 <div class="div row row-spacer" style="height: 300px">
     <div class="hta bg2">Auto</div>
     <div class="ht25 bg2">25%</div>
@@ -45,14 +45,66 @@ Height auto is applied to all containers.
 ```
 
 ## Display
+Use `row` or `column` display for layout classes to work correctly.  Other classes are provided for special occasions.
 
-### Direction
-Use these if you want flexbox layout classes to work correctly.
+### Row
+```html
+<div class="row">Row</div>
+<div class="rowr">Row reverse</div>
+```
+
+<div class="row">
+    <button type="button" class="btn">Button 1</button>
+    <button type="button" class="btn">Button 2</button>
+    <button type="button" class="btn">Button 3</button>
+</div>
+<div class="rowr">
+    <button type="button" class="btn">Button 1</button>
+    <button type="button" class="btn">Button 2</button>
+    <button type="button" class="btn">Button 3</button>
+</div>
+
+```html
+<div class="row">
+    <button type="button" class="btn">Button 1</button>
+    <button type="button" class="btn">Button 2</button>
+    <button type="button" class="btn">Button 3</button>
+</div>
+<div class="rowr">
+    <button type="button" class="btn">Button 1</button>
+    <button type="button" class="btn">Button 2</button>
+    <button type="button" class="btn">Button 3</button>
+</div>
+```
+
+### Column
 ```html
 <div class="col">Column</div>
-<div class="row">Row</div>
 <div class="colr">Column reverse</div>
-<div class="rowr">Row reverse</div>
+```
+
+<div class="col">
+    <button type="button" class="btn">Button 1</button>
+    <button type="button" class="btn">Button 2</button>
+    <button type="button" class="btn">Button 3</button>
+</div>
+<div class="colr">
+    <button type="button" class="btn">Button 1</button>
+    <button type="button" class="btn">Button 2</button>
+    <button type="button" class="btn">Button 3</button>
+</div>
+
+```html
+<div class="col">
+    <button type="button" class="btn">Button 1</button>
+    <button type="button" class="btn">Button 2</button>
+    <button type="button" class="btn">Button 3</button>
+</div>
+<div class="colr">
+    <button type="button" class="btn">Button 1</button>
+    <button type="button" class="btn">Button 2</button>
+    <button type="button" class="btn">Button 3</button>
+</div>
 ```
 
 ### Other
@@ -68,6 +120,8 @@ Use these if you want flexbox layout classes to work correctly.
 
 ## Justify Content
 Justify content on the main axis.  Row for a **row** display.  Column for a **col** display.
+
+### Basic Usage
 ```html
 <div class="row jst-start">Start</div>
 <div class="row jst-end">End</div>
@@ -77,6 +131,113 @@ Justify content on the main axis.  Row for a **row** display.  Column for a **co
 <div class="row jst-base">Base</div>
 <div class="row jst-stretch">Stretch</div>
 ```
+
+### Start
+<div class="row jst-start">   
+    <button type="button" class="btn">Button 1</button>
+    <button type="button" class="btn">Button 2</button>
+    <button type="button" class="btn">Button 3</button>
+</div>
+
+```html
+<div class="row jst-start">   
+    <button type="button" class="btn">Button 1</button>
+    <button type="button" class="btn">Button 2</button>
+    <button type="button" class="btn">Button 3</button>
+</div>
+```
+
+### End
+<div class="row jst-end">   
+    <button type="button" class="btn">Button 1</button>
+    <button type="button" class="btn">Button 2</button>
+    <button type="button" class="btn">Button 3</button>
+    </div>
+
+```html
+<div class="row jst-end">   
+    <button type="button" class="btn">Button 1</button>
+    <button type="button" class="btn">Button 2</button>
+    <button type="button" class="btn">Button 3</button>
+</div>
+```
+
+### Between
+<div class="row jst-between">   
+    <button type="button" class="btn">Button 1</button>
+    <button type="button" class="btn">Button 2</button>
+    <button type="button" class="btn">Button 3</button>
+</div>
+
+```html
+<div class="row jst-between">   
+    <button type="button" class="btn">Button 1</button>
+    <button type="button" class="btn">Button 2</button>
+    <button type="button" class="btn">Button 3</button>
+</div>
+```
+
+### Around
+<div class="row jst-around">  
+    <button type="button" class="btn">Button 1</button>
+    <button type="button" class="btn">Button 2</button>
+    <button type="button" class="btn">Button 3</button>
+</div>
+
+```html
+<div class="row jst-around">  
+    <button type="button" class="btn">Button 1</button>
+    <button type="button" class="btn">Button 2</button>
+    <button type="button" class="btn">Button 3</button>
+</div>
+```
+
+### Center
+<div class="row jst-center">   
+    <button type="button" class="btn">Button 1</button>
+    <button type="button" class="btn">Button 2</button>
+    <button type="button" class="btn">Button 3</button>
+</div>
+
+```html
+<div class="row jst-center">   
+    <button type="button" class="btn">Button 1</button>
+    <button type="button" class="btn">Button 2</button>
+    <button type="button" class="btn">Button 3</button>
+</div>
+```
+
+### Base
+<div class="row jst-base">   
+    <button type="button" class="btn">Button 1</button>
+    <button type="button" class="btn">Button 2</button>
+    <button type="button" class="btn">Button 3</button>
+</div>
+
+```html
+<div class="row jst-base">   
+    <button type="button" class="btn">Button 1</button>
+    <button type="button" class="btn">Button 2</button>
+    <button type="button" class="btn">Button 3</button>
+</div>
+```
+
+### Stretch
+<div class="row jst-stretch"> 
+    <button type="button" class="btn">Button 1</button>
+    <button type="button" class="btn">Button 2</button>
+    <button type="button" class="btn">Button 3</button>
+</div>
+
+```html
+<div class="row jst-stretch"> 
+    <button type="button" class="btn">Button 1</button>
+    <button type="button" class="btn">Button 2</button>
+    <button type="button" class="btn">Button 3</button>
+</div>
+```
+
+
 
 ## Align Items
 Align items opposite of the main axis.  Column for a **row** display.  Row for a **col** display.
@@ -100,6 +261,18 @@ How lines are spaced.  No effect if content is only 1 line.
 <div class="row aln-cnt-center">Center</div>
 <div class="row aln-cnt-base">Base</div>
 <div class="row aln-cnt-stretch">Stretch</div>
+```
+
+## Align Self
+How a single item is aligned along the main axis.
+```html
+<div class="row aln-self-start">Start</div>
+<div class="row aln-self-end">End</div>
+<div class="row aln-self-between">Between</div>
+<div class="row aln-self-around">Around</div>
+<div class="row aln-self-center">Center</div>
+<div class="row aln-self-base">Base</div>
+<div class="row aln-self-stretch">Stretch</div>
 ```
 
 ## Wrap

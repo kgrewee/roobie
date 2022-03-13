@@ -55,6 +55,18 @@
         .col-spacer div {
             margin: var(--mrg1) 0;
         }
+        
+        .sidebar-nav p::before {
+            content: '\203A';
+            float: left;
+            transform: rotate(90deg);
+            font-size: var(--fnts5) !important;
+            margin-right: 5px;
+        }
+        
+        .rotate-section::before {
+            transform: rotate(0deg) !important;
+        }
     </style>
 </head>
 
@@ -75,12 +87,22 @@
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
     <script>
         ready(() => {
+            // Add subtitle
             let subtitle = document.createElement('div');
             subtitle.innerHTML = "Minimalistic CSS & JS framework";
             subtitle.classList.add("fnts2");
             subtitle.classList.add("mrgv");
             document.getElementsByClassName('app-name')[0].appendChild(subtitle);
         });
+    </script>
+    <script>
+        function toggleNextSibling(el) {
+            el.parentElement.nextSibling.classList.toggle("hide");
+        }
+
+        function toggleRotate(el) {
+            el.parentElement.classList.toggle("rotate-section");
+        }
     </script>
 </body>
 

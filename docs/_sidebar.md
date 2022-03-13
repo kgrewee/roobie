@@ -4,10 +4,44 @@
   * [Setup](getting-started/setup.md)
   * [Themes](getting-started/themes.md)
 
-* Core
-  * [Layout](core/layout.md)
-  * [Utilities](core/utilities.md)
-  * [Animations](core/animations.md)
+* Layout
+  * [Container](layout/container.md)
+  * [Height](layout/height.md)
+  * [Display](layout/display.md)
+  * [Justify Content](layout/justify-content.md)
+  * [Align Items](layout/align-items.md)
+  * [Align Content](layout/align-content.md)
+  * [Align Self](layout/align-self.md)
+  * [Wrap](layout/wrap.md)
+  * [Float](layout/float.md)
+  * [Position](layout/position.md)
+
+* Utilities
+  * [Background Color](utilities/background-color.md)
+  * [Border Radius](utilities/border-radius.md)
+  * [Border](utilities/border.md)
+  * [Box Shadow](utilities/box-shadow.md)
+  * [Color](utilities/color.md)
+  * [Font Size](utilities/font-size.md)
+  * [Font Weight](utilities/font-weight.md)
+  * [Line Height](utilities/line-height.md)
+  * [Margin](utilities/margin.md)
+  * [Opacity](utilities/opacity.md)
+  * [Overflow](utilities/overflow.md)
+  * [Padding](utilities/padding.md)
+  * [Text Align](utilities/text-align.md)
+  * [Text Decoration](utilities/text-decoration.md)
+  * [Visibility](utilities/visibility.md)
+  * [Z Index](utilities/z-index.md)
+
+* Animations
+  * [Back](animations/back.md)
+  * [Bounce](animations/bounce.md)
+  * [Fade](animations/fade.md)
+  * [Flip](animations/flip.md)
+  * [Misc](animations/misc.md)
+  * [Slide](animations/slide.md)
+  * [Zoom](animations/zoom.md)
 
 * Components
   * [Accordion](components/accordion.md)

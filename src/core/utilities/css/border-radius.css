@@ -26,3 +26,11 @@
 .br6 {
     border-radius: var(--br6);
 }
+
+.br25 {
+    border-radius: 25%;
+}
+
+.br50 {
+    border-radius: 50%;
+}

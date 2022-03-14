@@ -1,10 +1,10 @@
-* <span onclick="toggleNextSibling(this); toggleRotate(this);">Getting Started</span>
+* <span class="doc-heading" onclick="toggleNextSibling(this)">Getting Started</span>
   * [Intro](README.md)
   * [Install](getting-started/install.md)
   * [Setup](getting-started/setup.md)
   * [Themes](getting-started/themes.md)
 
-* <span onclick="toggleNextSibling(this); toggleRotate(this);">Layout</span>
+* <span class="doc-heading" onclick="toggleNextSibling(this)">Layout</span>
   * [Container](layout/container.md)
   * [Height](layout/height.md)
   * [Display](layout/display.md)
@@ -15,7 +15,7 @@
   * [Float](layout/float.md)
   * [Position](layout/position.md)
 
-* <span onclick="toggleNextSibling(this); toggleRotate(this);">Utilities</span>
+* <span class="doc-heading" onclick="toggleNextSibling(this)">Utilities</span>
   * [Background Color](utilities/background-color.md)
   * [Border Radius](utilities/border-radius.md)
   * [Border](utilities/border.md)
@@ -33,7 +33,7 @@
   * [Visibility](utilities/visibility.md)
   * [Z Index](utilities/z-index.md)
 
-* <span onclick="toggleNextSibling(this); toggleRotate(this);">Animations</span>
+* <span class="doc-heading" onclick="toggleNextSibling(this)">Animations</span>
   * [Back](animations/back.md)
   * [Bounce](animations/bounce.md)
   * [Fade](animations/fade.md)
@@ -42,7 +42,7 @@
   * [Slide](animations/slide.md)
   * [Zoom](animations/zoom.md)
 
-* <span onclick="toggleNextSibling(this); toggleRotate(this);">Components</span>
+* <span class="doc-heading" onclick="toggleNextSibling(this)">Components</span>
   * [Accordion](components/accordion.md)
   * [Alert](components/alert.md)
   * [Button](components/button.md)
@@ -56,3 +56,5 @@
   * [Path](components/path.md)
   * [Toggle](components/toggle.md)
   * [Tooltip](components/tooltip.md)
+
+<iframe class="hidden" onload="setHeadings()"></iframe>

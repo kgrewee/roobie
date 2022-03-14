@@ -98,14 +98,30 @@
             subtitle.classList.add("mrgv");
             document.getElementsByClassName('app-name')[0].appendChild(subtitle);
         });
-    </script>
-    <script>
+
         function toggleNextSibling(el) {
             el.parentElement.nextSibling.classList.toggle("hide");
+            el.parentElement.classList.toggle("rotate-section");
+            localStorage.setItem(el.innerHTML, el.parentElement.nextSibling.classList.contains("hide"));
         }
 
-        function toggleRotate(el) {
-            el.parentElement.classList.toggle("rotate-section");
+        function setHeadings() {
+            let headings = document.getElementsByClassName('doc-heading');
+            console.log(headings.length);
+            for (let el of headings) {
+                let collapse = localStorage.getItem(el.innerHTML);
+                if (collapse == 'true') {
+                    console.log("Collapse " + el.innerHTML);
+                    el.parentElement.classList.add("rotate-section");
+                    el.parentElement.nextSibling.classList.add("hide");
+                    localStorage.setItem(el.innerHTML, true);
+                } else {
+                    console.log("Expand " + el.innerHTML);
+                    el.parentElement.classList.remove("rotate-section");
+                    el.parentElement.nextSibling.classList.remove("hide");
+                    localStorage.setItem(el.innerHTML, false);
+                }
+            }
         }
     </script>
 </body>

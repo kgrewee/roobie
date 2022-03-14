@@ -1,11 +1,14 @@
 # Align Self
-How a single item is aligned along the main axis.
+Align a single item opposite of the main axis.
+
+## Classes
 ```html
-<div class="row aln-self-start">Start</div>
-<div class="row aln-self-end">End</div>
-<div class="row aln-self-between">Between</div>
-<div class="row aln-self-around">Around</div>
-<div class="row aln-self-center">Center</div>
-<div class="row aln-self-base">Base</div>
-<div class="row aln-self-stretch">Stretch</div>
+<div class="aln-self-start">Start</div>
+<div class="aln-self-end">End</div>
+<div class="aln-self-between">Between</div>
+<div class="aln-self-around">Around</div>
+<div class="aln-self-center">Center</div>
+<div class="aln-self-base">Base</div>
+<div class="aln-self-stretch">Stretch</div>
 ```
+## Usage

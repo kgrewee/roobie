@@ -348,7 +348,9 @@ You can add more themes alongside the base light and dark, just copy light.css o
 ```
 
 ## Activate Theme
-Activate a theme by setting local storage and body HTML attribute.  Replace `themeName` with the name of your theme.
+Activate a theme by setting local storage and body HTML attribute.  Replace `themeName` with the name of your theme. Roobie sets the default theme to `light` on load if the local storage variable is null, aka not set.  If the local storage `theme` variable is not null, the body HTML attribute theme is set to its value on load.
+
+
 ```js
 localStorage.setItem('theme', themeName);
 document.body.setAttribute('theme', themeName);
@@ -359,9 +361,13 @@ View active theme on body tag:
 <body theme="themeName">
 ```
 
+Get active theme from body attribute:
+```js
+document.body.getAttribute('theme')
+```
+
 Get active theme from local storage:
 ```js
 localStorage.getItem('theme');
 ```
 
-Roobie sets the default theme to `light` on load if the local storage variable is null aka not set.  If the local storage variable is not null, the body HTML attribute theme is set to its value on load.

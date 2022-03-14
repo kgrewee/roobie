@@ -14,7 +14,7 @@ Reusing CSS and JS results is less custom written code for each project.
 Reducing custom code results in less code that needs to be maintained.
 
 **Increase development speed**<br>
-Start your project from a template with multiple themes and toolkit, not a blank project.
+Start your project from a template with toolkit and multiple themes.
 
 **Reduce code cleanup**<br>
 When HTML content gets deleted, you don't have to clean up the CSS and JS.

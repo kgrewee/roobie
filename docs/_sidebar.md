@@ -11,7 +11,6 @@
   * [Justify Content](layout/justify-content.md)
   * [Align Items](layout/align-items.md)
   * [Align Content](layout/align-content.md)
-  * [Align Self](layout/align-self.md)
   * [Wrap](layout/wrap.md)
   * [Float](layout/float.md)
   * [Position](layout/position.md)

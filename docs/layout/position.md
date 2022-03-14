@@ -1,4 +1,6 @@
 # Position
+
+## Classes
 ```html
 <div class="absolute">Absolute</div>
 <div class="sticky">Sticky</div>

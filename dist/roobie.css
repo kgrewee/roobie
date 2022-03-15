@@ -79,10 +79,17 @@
 .aln-self-stretch {
     align-self: stretch;
 }.diva,
+.div10,
+.div20,
 .div25,
 .div33,
+.div40,
 .div50,
+.div60,
+.div66,
 .div75,
+.div80,
+.div90,
 .div100 {
     height: auto;
     padding: var(--pad2);
@@ -90,6 +97,14 @@
 
 .diva {
     width: auto;
+}
+
+.div10 {
+    width: 10%;
+}
+
+.div20 {
+    width: 20%;
 }
 
 .div25 {
@@ -100,12 +115,32 @@
     width: 33%;
 }
 
+.div40 {
+    width: 40%;
+}
+
 .div50 {
     width: 50%;
 }
 
+.div60 {
+    width: 60%;
+}
+
+.div66 {
+    width: 66%;
+}
+
 .div75 {
     width: 75%;
+}
+
+.div80 {
+    width: 80%;
+}
+
+.div90 {
+    width: 90%;
 }
 
 .div100 {
@@ -119,12 +154,19 @@
 
 @media screen and (max-width: 800px) {
     .diva,
+    .div10,
+    .div20,
     .div25,
     .div33,
+    .div40,
     .div50,
+    .div60,
+    .div66,
     .div75,
+    .div80,
+    .div90,
     .div100,
-    .div {
+    div {
         width: 100%;
         padding: 0;
     }
@@ -210,6 +252,57 @@
 
 .flti {
     float: inherit;
+}.hta {
+    height: auto !important;
+}
+
+.ht10 {
+    height: 10% !important;
+}
+
+.ht20 {
+    height: 20% !important;
+}
+
+.ht25 {
+    height: 25% !important;
+}
+
+.ht33 {
+    height: 33% !important;
+}
+
+.ht40 {
+    height: 40% !important;
+}
+
+.ht50 {
+    height: 50% !important;
+}
+
+.ht60 {
+    height: 60% !important;
+}
+
+.ht66 {
+    height: 66% !important;
+}
+
+.ht75 {
+    height: 75% !important;
+}
+
+.ht80 {
+    height: 80% !important;
+}
+
+.ht90 {
+    height: 90% !important;
+}
+
+.ht100,
+.ht {
+    height: 100% !important;
 }.jst-center {
     justify-content: center;
 }
@@ -3470,28 +3563,6 @@ select:focus {
 
 .fntw6 {
     font-weight: var(--fntw6);
-}.hta {
-    height: auto !important;
-}
-
-.ht25 {
-    height: 25% !important;
-}
-
-.ht33 {
-    height: 33% !important;
-}
-
-.ht50 {
-    height: 50% !important;
-}
-
-.ht75 {
-    height: 75% !important;
-}
-
-.ht {
-    height: 100% !important;
 }.lht1 {
     line-height: var(--lht1);
 }

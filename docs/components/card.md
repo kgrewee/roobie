@@ -3,7 +3,7 @@ A container of styled content.
 
 ## Basic
 <div class="div row">
-    <div class="card">
+    <div class="card" style="width: 250px; height: 250px;">
         <h2 class="card-title">Title</h2>
         <span class="card-subtitle">Subtitle</span>
         <div class="card-content">
@@ -43,7 +43,7 @@ A container of styled content.
 ```
 ## Actions
 <div class="div row">
-    <div class="card">
+    <div class="card" style="width: 350px; height: 250px;">
         <h2 class="card-title">Title</h2>
         <span class="card-subtitle">Subtitle</span>
         <div class="card-content">

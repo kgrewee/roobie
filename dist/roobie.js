@@ -70,7 +70,7 @@ class Accordion {
     }
 
     static toggleNextSibling() {
-        this.classList.toggle("active");
+        this.classList.toggle("accordion-active");
 
         /* Toggle panel */
         let panel = this.nextElementSibling;

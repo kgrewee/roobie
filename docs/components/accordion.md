@@ -110,3 +110,5 @@ Panels of expandable content.
     </div>
 </div>
 ```
+
+<iframe onload="Accordion.check()"></iframe>

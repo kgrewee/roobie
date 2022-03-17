@@ -2,7 +2,7 @@
 Interactive slider full of content.
 
 ## Basic
-<div id="carouselBasic" class="carousel">
+<div id="carouselBasic" class="carousel" style="height: 350px;">
     <div class="carousel-slide">
         <h1>Slide 1</h1>
     </div>
@@ -17,7 +17,7 @@ Interactive slider full of content.
 </div>
 
 ```html
-<div id="carouselBasic" class="carousel">
+<div id="carouselBasic" class="carousel" style="height: 350px;">
     <div class="carousel-slide">
         <h1>Slide 1</h1>
     </div>
@@ -33,7 +33,7 @@ Interactive slider full of content.
 ```
 
 ## Captions
-<div id="carouselBasic2" class="carousel" index="1">
+<div id="carouselBasic2" class="carousel" index="1" style="height: 350px;">
     <div class="carousel-slide">
         <h1>Slide 1</h1>
         <p>This is a caption.</p>
@@ -54,7 +54,7 @@ Interactive slider full of content.
 </div>
 
 ```html
-<div id="carouselBasic2" class="carousel" index="1">
+<div id="carouselBasic2" class="carousel" index="1" style="height: 350px;">
     <div class="carousel-slide">
         <h1>Slide 1</h1>
         <p>This is a caption.</p>
@@ -76,7 +76,7 @@ Interactive slider full of content.
 ```
 
 ## Indicators
-<div id="carouselIndicator" class="carousel" index="2">
+<div id="carouselIndicator" class="carousel" index="2" style="height: 350px;">
     <div class="carousel-slide">
         <h1>Slide 1</h1>
     </div>
@@ -96,7 +96,7 @@ Interactive slider full of content.
 </div>
 
 ```html
-<div id="carouselIndicator" class="carousel bdr" index="2">
+<div id="carouselIndicator" class="carousel bdr" index="2" style="height: 350px;">
     <div class="carousel-slide">
         <h1>Slide 1</h1>
     </div>

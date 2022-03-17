@@ -1,17 +1,18 @@
 .accordion {
     width: 100%;
+    background-color: var(--bg1);
 }
 
 
 /* Header that triggers hidden content */
 
 .accordion-header {
-    background-color: var(--bg2);
+    background-color: transparent;
     color: var(--t2);
     cursor: pointer;
     padding: var(--pad5);
     width: 100%;
-    border: none;
+    border: var(--bdr1);
     outline: none;
     text-align: left;
     font-size: var(--fnts3);
@@ -19,14 +20,14 @@
 }
 
 .accordion-header:hover {
-    background-color: var(--bg3);
+    background-color: rgba(114, 114, 114, 0.05);
 }
 
 
 /* Icon in header  */
 
 .accordion-header:after {
-    content: ">";
+    content: "\003E";
     float: right;
     font-family: var(--fntf1);
     font-size: var(--fnts4);
@@ -36,8 +37,13 @@
     transform: scale(1, 1.5);
 }
 
-.accordion-header.active:after {
-    content: ">";
+.accordion-header.accordion-active {
+    background-color: var(--bg1);
+    border: var(--bdr1);
+}
+
+.accordion-header.accordion-active:after {
+    content: "\003E";
     transform: rotate(90deg) scale(1, 1.5);
 }
 
@@ -45,10 +51,11 @@
 /* Hidden content */
 
 .accordion-panel {
-    background-color: var(--bg3);
+    background-color: var(--bg2);
     display: none;
     padding: var(--pad4);
     overflow: hidden;
     animation-name: fade;
     animation-duration: 0.3s;
+    box-shadow: var(--in1);
 }

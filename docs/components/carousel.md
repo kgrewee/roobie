@@ -115,3 +115,4 @@ Interactive slider full of content.
     </div>
 </div>
 ```
+<iframe onload="Carousel.check()"></iframe>

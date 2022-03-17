@@ -2105,6 +2105,12 @@
     background-color: var(--bg3);
     animation-name: fade;
     animation-duration: var(--animation-duration);
+    height: 100%;
+}
+
+.carousel-active {
+    background-color: var(--bg1) !important;
+    border: var(--bdr1);
 }
 
 .carousel-previous,
@@ -2160,9 +2166,10 @@
     height: 10px;
     width: 50px;
     margin: 0 2px;
-    background-color: var(--bg4);
+    background-color: var(--bg2);
     transition: background-color 0.6s ease;
     display: inline-block;
+    box-shadow: var(--in);
 }
 
 .carousel-indicators span:hover {

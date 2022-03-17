@@ -278,3 +278,4 @@ Navigation bars of all shapes and sizes.
     </div>
 </nav>
 ```
+<iframe onload="Navbar.check()"></iframe>

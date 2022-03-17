@@ -168,12 +168,12 @@ class Carousel {
             indicators = indicators.children;
             // Remove highlighted indicators
             for (let i = 0; i < indicators.length; i++) {
-                indicators[i].classList.remove("active");
+                indicators[i].classList.remove("carousel-active");
             }
 
             // Highlight active indicator
             if (indicators[index]) {
-                indicators[index].classList.add("active");
+                indicators[index].classList.add("carousel-active");
             }
         }
 

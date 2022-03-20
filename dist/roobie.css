@@ -3052,6 +3052,20 @@ select:focus {
 
 .br50 {
     border-radius: 50%;
+}.bdr-success {
+    border-color: var(--success) !important;
+}
+
+.bdr-warning {
+    border-color: var(--warning) !important;
+}
+
+.bdr-danger {
+    border-color: var(--danger) !important;
+}
+
+.bdr-info {
+    border-color: var(--info) !important;
 }.bdr0 {
     border: none !important;
 }
@@ -3079,25 +3093,6 @@ select:focus {
 
 .bdr6 {
     border: var(--bdr6) !important;
-}
-
-
-/* Status */
-
-.bdr-success {
-    border-color: var(--success) !important;
-}
-
-.bdr-warning {
-    border-color: var(--warning) !important;
-}
-
-.bdr-danger {
-    border-color: var(--danger) !important;
-}
-
-.bdr-info {
-    border-color: var(--info) !important;
 }
 
 
@@ -4076,7 +4071,7 @@ select:focus {
     margin: 0 var(--mrg1);
 }
 
-.row-spacer2,
+.row-spacer2>*,
 .row-spacer>* {
     margin: 0 var(--mrg2);
 }

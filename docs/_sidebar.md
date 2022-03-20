@@ -28,6 +28,8 @@
   * [Opacity](utilities/opacity.md)
   * [Overflow](utilities/overflow.md)
   * [Padding](utilities/padding.md)
+  * [Rotate](utilities/rotate.md)
+  * [Spacer](utilities/spacer.md)
   * [Text Align](utilities/text-align.md)
   * [Text Decoration](utilities/text-decoration.md)
   * [Visibility](utilities/visibility.md)

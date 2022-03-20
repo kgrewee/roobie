@@ -2,7 +2,7 @@
     margin: 0 var(--mrg1);
 }
 
-.row-spacer2,
+.row-spacer2>*,
 .row-spacer>* {
     margin: 0 var(--mrg2);
 }

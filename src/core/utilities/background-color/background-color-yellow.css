@@ -1,0 +1,12 @@
+.bg-yellow1 {
+    background-color: var(--yellow) !important;
+}
+
+.bg-yellow,
+.bg-yellow2 {
+    background-color: var(--yellow2) !important;
+}
+
+.bg-yellow3 {
+    background-color: var(--yellow3) !important;
+}

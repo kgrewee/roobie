@@ -1,0 +1,12 @@
+.bg-grey1 {
+    background-color: var(--grey) !important;
+}
+
+.bg-grey,
+.bg-grey2 {
+    background-color: var(--grey2) !important;
+}
+
+.bg-grey3 {
+    background-color: var(--grey3) !important;
+}

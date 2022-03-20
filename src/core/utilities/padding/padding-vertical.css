@@ -1,0 +1,32 @@
+.padva {
+    padding: inherit auto !important;
+}
+
+.padv0 {
+    padding: inherit 0 !important;
+}
+
+.padv1 {
+    padding: var(--pad1) 0 !important;
+}
+
+.padv2,
+.padv {
+    padding: var(--pad2) 0 !important;
+}
+
+.padv3 {
+    padding: var(--pad3) 0 !important;
+}
+
+.padv4 {
+    padding: var(--pad4) 0 !important;
+}
+
+.padv5 {
+    padding: var(--pad5) 0 !important;
+}
+
+.padv6 {
+    padding: var(--pad6) 0 !important;
+}

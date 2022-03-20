@@ -1,0 +1,12 @@
+.bg-indigo1 {
+    background-color: var(--indigo) !important;
+}
+
+.bg-indigo,
+.bg-indigo2 {
+    background-color: var(--indigo2) !important;
+}
+
+.bg-indigo3 {
+    background-color: var(--indigo3) !important;
+}

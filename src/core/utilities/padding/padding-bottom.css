@@ -1,0 +1,32 @@
+.padba {
+    padding-bottom: auto !important;
+}
+
+.padb0 {
+    padding-bottom: 0 !important;
+}
+
+.padb1 {
+    padding-bottom: var(--pad1) !important;
+}
+
+.padb2,
+.padb {
+    padding-bottom: var(--pad2) !important;
+}
+
+.padb3 {
+    padding-bottom: var(--pad3) !important;
+}
+
+.padb4 {
+    padding-bottom: var(--pad4) !important;
+}
+
+.padb5 {
+    padding-bottom: var(--pad5) !important;
+}
+
+.padb6 {
+    padding-bottom: var(--pad6) !important;
+}

@@ -1,0 +1,32 @@
+.padta {
+    padding-top: auto !important;
+}
+
+.padt0 {
+    padding-top: 0 !important;
+}
+
+.padt1 {
+    padding-top: var(--pad1) !important;
+}
+
+.padt2,
+.padt {
+    padding-top: var(--pad2) !important;
+}
+
+.padt3 {
+    padding-top: var(--pad3) !important;
+}
+
+.padt4 {
+    padding-top: var(--pad4) !important;
+}
+
+.padt5 {
+    padding-top: var(--pad5) !important;
+}
+
+.padt6 {
+    padding-top: var(--pad6) !important;
+}

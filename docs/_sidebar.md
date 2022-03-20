@@ -56,5 +56,4 @@
   * [Path](components/path.md)
   * [Toggle](components/toggle.md)
   * [Tooltip](components/tooltip.md)
-
 <iframe class="hidden" onload="setHeadings()"></iframe>

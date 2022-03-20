@@ -50,6 +50,10 @@
             margin: var(--mrg2) 0;
         }
         
+        .sidebar-nav {
+            display: none;
+        }
+        
         .sidebar-nav p span {
             cursor: pointer;
         }
@@ -78,7 +82,7 @@
                 '/.*/_sidebar.md': '/_sidebar.md'
             },
             repo: 'https://github.com/kgrewee/roobie',
-            subMaxLevel: 3
+            subMaxLevel: 2
         }
     </script>
     <!-- Docsify v4 -->
@@ -116,6 +120,7 @@
                     localStorage.setItem(el.innerHTML, false);
                 }
             }
+            document.querySelectorAll('.sidebar-nav')[0].style.display = 'inline';
         }
     </script>
 </body>

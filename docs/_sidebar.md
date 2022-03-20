@@ -56,4 +56,16 @@
   * [Path](components/path.md)
   * [Toggle](components/toggle.md)
   * [Tooltip](components/tooltip.md)
+
+* <span class="doc-heading" onclick="toggleNextSibling(this)">Manipulation</span>
+  * [Attribute](manipulation/attribute.md)
+  * [Class](manipulation/class.md)
+  * [Element](manipulation/element.md)
+  * [Hook](manipulation/hook.md)
+  * [Load](manipulation/load.md)
+  * [Rotate](manipulation/rotate.md)
+  * [Style](manipulation/style.md)
+  * [Theme](manipulation/theme.md)
+  * [Toggle](manipulation/toggle.md)
+
 <iframe class="hidden" onload="setHeadings()"></iframe>

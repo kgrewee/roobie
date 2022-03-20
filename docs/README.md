@@ -26,7 +26,7 @@ npm run docs:serve
 ```
 
 ## Package
-Package builds all aspects of Roobie. Runs on pre-commit using Husky.  Visit `package.json` for more details on each script.
+Package builds all aspects of Roobie.  Artifacts will be found in `dist/`.
 ```shell
 npm run package
 ```

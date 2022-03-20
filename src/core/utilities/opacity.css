@@ -18,6 +18,7 @@
     opacity: var(--op75);
 }
 
-.op {
+.op,
+.op100 {
     opacity: 100%;
 }

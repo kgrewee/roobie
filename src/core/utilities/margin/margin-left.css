@@ -1,0 +1,32 @@
+.mrgla {
+    margin-left: auto !important;
+}
+
+.mrgl0 {
+    margin-left: 0 !important;
+}
+
+.mrgl1 {
+    margin-left: var(--mrg1) !important;
+}
+
+.mrgl2,
+.mrgl {
+    margin-left: var(--mrg2) !important;
+}
+
+.mrgl3 {
+    margin-left: var(--mrg3) !important;
+}
+
+.mrgl4 {
+    margin-left: var(--mrg4) !important;
+}
+
+.mrgl5 {
+    margin-left: var(--mrg5) !important;
+}
+
+.mrgl6 {
+    margin-left: var(--mrg6) !important;
+}

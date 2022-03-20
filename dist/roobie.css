@@ -4049,6 +4049,52 @@ select:focus {
 
 .rotate360 {
     transform: rotate(360deg);
+}.col-spacer1>* {
+    margin: var(--mrg1) 0;
+}
+
+.col-spacer2>*,
+.col-spacer>* {
+    margin: var(--mrg2) 0;
+}
+
+.col-spacer3>* {
+    margin: var(--mrg3) 0;
+}
+
+.col-spacer4>* {
+    margin: var(--mrg4) 0;
+}
+
+.col-spacer5>* {
+    margin: var(--mrg5) 0;
+}
+
+.col-spacer6>* {
+    margin: var(--mrg6) 0;
+}.row-spacer1>* {
+    margin: 0 var(--mrg1);
+}
+
+.row-spacer2,
+.row-spacer>* {
+    margin: 0 var(--mrg2);
+}
+
+.row-spacer3>* {
+    margin: 0 var(--mrg3);
+}
+
+.row-spacer4>* {
+    margin: 0 var(--mrg4);
+}
+
+.row-spacer5>* {
+    margin: 0 var(--mrg5);
+}
+
+.row-spacer6>* {
+    margin: 0 var(--mrg6);
 }.txtc {
     text-align: center;
 }

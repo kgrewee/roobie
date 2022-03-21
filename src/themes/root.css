@@ -101,7 +101,7 @@ h4,
 h5,
 h6,
 p {
-    margin: var(--mrg1);
+    margin: var(--mrg2) 0 !important;
 }
 
 span,

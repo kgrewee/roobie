@@ -3,28 +3,28 @@
 }
 
 .bdr1 {
-    border: var(--bdr1) !important;
+    border: var(--bdr1);
 }
 
 .bdr2,
 .bdr {
-    border: var(--bdr2) !important;
+    border: var(--bdr2);
 }
 
 .bdr3 {
-    border: var(--bdr3) !important;
+    border: var(--bdr3);
 }
 
 .bdr4 {
-    border: var(--bdr4) !important;
+    border: var(--bdr4);
 }
 
 .bdr5 {
-    border: var(--bdr5) !important;
+    border: var(--bdr5);
 }
 
 .bdr6 {
-    border: var(--bdr6) !important;
+    border: var(--bdr6);
 }
 
 

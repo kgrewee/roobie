@@ -1,6 +1,6 @@
 {
     "name": "roobie",
-    "version": "0.3.7",
+    "version": "0.4.0",
     "description": "Minimalistic CSS and JavaScript framework.",
     "author": "Kyle Grewe",
     "repository": {
@@ -33,9 +33,9 @@
         "copy": "npm-run-all copy:themes copy:icons",
         "copy:themes": "cp -r src/themes/ dist/",
         "copy:icons": "cp -r src/icons/ dist/",
-        "docs": "npm-run-all docs:build docs:move",
-        "docs:build": "",
-        "docs:move": "",
+        "docs": "npm-run-all docs:move",
+        "docs:move": "cp dist/roobie.bundle.css docs/includes/ && cp dist/roobie.bundle.js docs/includes/ && cp -r src/icons/ docs/includes/",
+        "docs:serve": "cd docs && python3 -m http.server 3000",
         "prepare": "husky install"
     },
     "devDependencies": {

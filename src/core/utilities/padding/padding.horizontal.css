@@ -1,0 +1,32 @@
+.padha {
+    padding: auto inherit !important;
+}
+
+.padh0 {
+    padding: 0 inherit !important;
+}
+
+.padh1 {
+    padding: 0 var(--pad1) !important;
+}
+
+.padh2,
+.padh {
+    padding: 0 var(--pad2) !important;
+}
+
+.padh3 {
+    padding: 0 var(--pad3) !important;
+}
+
+.padh4 {
+    padding: 0 var(--pad4) !important;
+}
+
+.padh5 {
+    padding: 0 var(--pad5) !important;
+}
+
+.padh6 {
+    padding: 0 var(--pad6) !important;
+}

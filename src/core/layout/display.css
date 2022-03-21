@@ -38,6 +38,10 @@
     display: flex;
 }
 
+.grid {
+    display: grid;
+}
+
 .blk {
     display: block;
 }

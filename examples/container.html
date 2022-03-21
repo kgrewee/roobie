@@ -20,9 +20,8 @@
         
         .nested-div {
             height: 150px;
-            padding: var(--pad4);
             margin-right: var(--mrg4);
-            background-color: var(--bg3);
+            border: var(--bdr1);
         }
         
         .nested-div div {
@@ -47,7 +46,7 @@
     <main>
         <div class="div col aln-center">
             <div class="div75 col aln-start mrgv _fade">
-                <a class="btn btn-secondary mrgv" href="index.html"><i class="icon icon-left mrgr1"></i>Back</a>
+                <a class="btn btn-secondary" href="index.html"><i class="icon icon-left mrgr1"></i>Back</a>
                 <h2>Basic</h2>
                 <p>Proper use of contianers is crucial for clean, responsive styles. These are basic containers classes. All container classes have padding, <b>except for div</b>. This is so outer containers are flush, making styles look much cleaner.</p>
                 <div class="div div-demo col jst-center aln-start txtc">
@@ -61,7 +60,7 @@
                 <h2>Nested Containers</h2>
                 <p>Containers inside other containers, styled with flex. For more advanced container demos, see <a class="btn btn-primary" href='grid.html'>Grid</a>.</p>
                 <h2>Row</h2>
-                <div class="div col wrp jst-start">
+                <div class="div col wrp">
                     <div class="nested-div div row jst-around br mrgv">
                         <div class="div50 box br">div50</div>
                         <div class="div50 box br">div50</div>
@@ -73,12 +72,12 @@
                     </div>
                 </div>
                 <h2>Column</h2>
-                <div class="div col wrp jst-start">
-                    <div class="nested-div div col jst-center aln-center br mrgv">
+                <div class="div col wrp">
+                    <div class="nested-div div col aln-center br mrgv">
                         <div class="div ht50 box br">div ht50</div>
                         <div class="div ht50 box br">div ht50</div>
                     </div>
-                    <div class="nested-div div col jst-center aln-center br mrgv">
+                    <div class="nested-div div col aln-center br mrgv">
                         <div class="div ht33 box br">div ht33</div>
                         <div class="div ht33 box br">div ht33</div>
                         <div class="div ht33 box br">div ht33</div>

@@ -1,0 +1,12 @@
+.bg-black1 {
+    background-color: var(--black) !important;
+}
+
+.bg-black,
+.bg-black2 {
+    background-color: var(--black2) !important;
+}
+
+.bg-black3 {
+    background-color: var(--black3) !important;
+}

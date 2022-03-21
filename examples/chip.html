@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Roobie | Chip</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/roobie.bundle.css">
+    <script src="../dist/roobie.bundle.js"></script>
+    <style>
+        .chip,
+        .chiph {
+            background-color: var(--bg1);
+        }
+        
+        .desc {
+            color: var(--t5);
+        }
+        
+        .cat-active {
+            background-color: var(--bg6);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="div col aln-center bg6">
+        <div class="div75 _fade">
+            <h1>Chip</h1>
+            <p class="fnts4">Short blocks of content.</p>
+        </div>
+    </header>
+    <main class="div col aln-center">
+        <div class="div75 col aln-start jst-start txtl mrgv _fade">
+            <a class="btn btn-secondary" href="index.html"><i class="icon icon-left mrgr1"></i>Back</a>
+            <h2>Basic</h2>
+            <div class="div">
+                <div class="div row mrgv bdr br wrp">
+                    <div class="chip">Cheese</div>
+                    <div class="chiph">Eggs</div>
+                </div>
+            </div>
+            <h2>Descriptions</h2>
+            <div class="div">
+                <div class="div">
+                    <p>Chips used to describe.</p>
+                </div>
+                <div class="div row mrgv bdr br wrp">
+                    <div class="mrg2 card br box pad">
+                        <h4>Mama's Pumpkin Pie</h4>
+                        <div class="row">
+                            <div class="chip">30 min</div>
+                            <div class="chip">Pumpkin</div>
+                            <div class="chip">Gluten Free</div>
+                        </div>
+                        <div class="desc pad">
+                            The best recipe in the world! Delicious & easy to make.
+                        </div>
+                    </div>
+                    <div class="mrg2 card br box pad">
+                        <h4>Chocolate Chip Cookies</h4>
+                        <div class="row">
+                            <div class="chip">25 min</div>
+                            <div class="chip">Favorite</div>
+                            <div class="chip cat-active">New!</div>
+                        </div>
+                        <div class="desc pad">
+                            Cookies that will knock your socks off.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2>Categories</h2>
+            <div class="div">
+                <div class="div col">
+                    <p>Alike chips styled together in a container.</p>
+                </div>
+                <div class="div row mrgv bdr br wrp">
+                    <div class="mrg div33 card br box pad">
+                        <div class="col wrp category">
+                            <div class="row bg3 br pad wrp mrg">
+                                <div class="chip">Small</div>
+                                <div class="chip">Medium</div>
+                                <div class="chip">Large</div>
+                                <div class="chip">Extra Large</div>
+                            </div>
+                            <div class="row jst-center bg3 br wrp mrg">
+                                <div class="chip">Red</div>
+                                <div class="chip">Yellow</div>
+                                <div class="chip">Orange</div>
+                                <div class="chip">Purple</div>
+                                <div class="chip">Blue</div>
+                            </div>
+                            <div class="row jst-end bg3 br wrp mrg">
+                                <div class="chip">Update</div>
+                                <div class="chip">Shutdown</div>
+                                <div class="chip">Delete</div>
+                                <div class="chip">Install</div>
+                            </div>
+
+                            <div class="row jst-around bg3 br wrp mrg">
+                                <div class="chip">-1</div>
+                                <div class="chip">0</div>
+                                <div class="chip">+1</div>
+                            </div>
+
+                            <div class="row jst-between bg3 br wrp mrg">
+                                <div class="chip">Start</div>
+                                <div class="chip">End</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mrg card br box">
+                        <h2 class="txtc">Order</h2>
+                        <div class="div">
+                            <h4>Cheese</h4>
+                            <div class="row bg3 br pad wrp">
+                                <div class="chiph cheese" onclick="Class.removeByClass('cheese', 'cat-active'); Class.addByElement(this, 'cat-active');">Light</div>
+                                <div class="chiph cheese" onclick="Class.removeByClass('cheese', 'cat-active'); Class.addByElement(this, 'cat-active');">Normal</div>
+                                <div class="chiph cheese cat-active" onclick="Class.removeByClass('cheese', 'cat-active'); Class.addByElement(this, 'cat-active');">Extra</div>
+                                <div class="chiph cheese" onclick="Class.removeByClass('cheese', 'cat-active'); Class.addByElement(this, 'cat-active');">No Cheese</div>
+                            </div>
+                        </div>
+                        <div class="div">
+                            <h4>Meat</h4>
+                            <div class="row bg3 br pad wrp">
+                                <div class="chiph cat-active meat" onclick="Class.removeByClass('meat', 'cat-active'); Class.addByElement(this, 'cat-active');">Chicken</div>
+                                <div class="chiph meat" onclick="Class.removeByClass('meat', 'cat-active'); Class.addByElement(this, 'cat-active');">Beef</div>
+                                <div class="chiph meat" onclick="Class.removeByClass('meat', 'cat-active'); Class.addByElement(this, 'cat-active');">Pork</div>
+                                <div class="chiph meat" onclick="Class.removeByClass('meat', 'cat-active'); Class.addByElement(this, 'cat-active');">None</div>
+                            </div>
+                        </div>
+                        <div class="div">
+                            <h4>Vegetables</h4>
+                            <div class="row bg3 br pad wrp">
+                                <div class="chiph veggies" onclick="Class.removeByClass('veggies', 'cat-active'); Class.addByElement(this, 'cat-active');">Broccoli</div>
+                                <div class="chiph veggies" onclick="Class.removeByClass('veggies', 'cat-active'); Class.addByElement(this, 'cat-active');">Carrots</div>
+                                <div class="chiph cat-active veggies" onclick="Class.removeByClass('veggies', 'cat-active'); Class.addByElement(this, 'cat-active');">None</div>
+                            </div>
+                        </div>
+                        <div class="row mrgv jst-end">
+                            <a class="btn btn-success white">Submit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

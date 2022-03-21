@@ -1,0 +1,15 @@
+.bdr-success {
+    border-color: var(--success) !important;
+}
+
+.bdr-warning {
+    border-color: var(--warning) !important;
+}
+
+.bdr-danger {
+    border-color: var(--danger) !important;
+}
+
+.bdr-info {
+    border-color: var(--info) !important;
+}

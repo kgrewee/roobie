@@ -1,0 +1,12 @@
+.bg-violet1 {
+    background-color: var(--violet) !important;
+}
+
+.bg-violet,
+.bg-violet2 {
+    background-color: var(--violet2) !important;
+}
+
+.bg-violet3 {
+    background-color: var(--violet3) !important;
+}

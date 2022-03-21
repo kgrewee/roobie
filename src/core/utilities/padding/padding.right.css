@@ -1,0 +1,32 @@
+.padra {
+    padding-right: auto !important;
+}
+
+.padr0 {
+    padding-right: 0 !important;
+}
+
+.padr1 {
+    padding-right: var(--pad1) !important;
+}
+
+.padr2,
+.padr {
+    padding-right: var(--pad2) !important;
+}
+
+.padr3 {
+    padding-right: var(--pad3) !important;
+}
+
+.padr4 {
+    padding-right: var(--pad4) !important;
+}
+
+.padr5 {
+    padding-right: var(--pad5) !important;
+}
+
+.padr6 {
+    padding-right: var(--pad6) !important;
+}

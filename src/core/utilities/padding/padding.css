@@ -1,0 +1,32 @@
+.pada {
+    padding: auto !important;
+}
+
+.pad0 {
+    padding: 0 !important;
+}
+
+.pad1 {
+    padding: var(--pad1) !important;
+}
+
+.pad2,
+.pad {
+    padding: var(--pad2) !important;
+}
+
+.pad3 {
+    padding: var(--pad3) !important;
+}
+
+.pad4 {
+    padding: var(--pad4) !important;
+}
+
+.pad5 {
+    padding: var(--pad5) !important;
+}
+
+.pad6 {
+    padding: var(--pad6) !important;
+}

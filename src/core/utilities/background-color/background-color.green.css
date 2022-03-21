@@ -1,0 +1,12 @@
+.bg-green1 {
+    background-color: var(--green) !important;
+}
+
+.bg-green,
+.bg-green2 {
+    background-color: var(--green2) !important;
+}
+
+.bg-green3 {
+    background-color: var(--green3) !important;
+}

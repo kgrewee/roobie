@@ -70,16 +70,28 @@
         .docsify-copy-code-button {
             opacity: 1 !important;
             border-radius: var(--br2) !important;
-            padding: var(--pad2) !important;
+            padding: var(--pad1) !important;
             top: 5px !important;
             right: 5px !important;
             background-color: var(--bg1) !important;
             color: var(--t3) !important;
             border: var(--bdr1) !important;
+            font-weight: var(--fntw2);
         }
         
-        .docsify-copy-code-button:hover {
+        .docsify-copy-code-button:hover,
+        #main>div:first-child a:hover {
             background-color: var(--bg2) !important;
+        }
+        
+        #main>div:first-child a {
+            border: var(--bdr1);
+            text-decoration: none !important;
+            padding: var(--pad2);
+            border-radius: var(--br2);
+            background-color: var(--bg1) !important;
+            color: var(--t3);
+            font-weight: var(--fntw2);
         }
     </style>
 </head>

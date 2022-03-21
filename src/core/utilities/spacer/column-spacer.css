@@ -1,0 +1,24 @@
+.col-spacer1>* {
+    margin: var(--mrg1) 0;
+}
+
+.col-spacer2>*,
+.col-spacer>* {
+    margin: var(--mrg2) 0;
+}
+
+.col-spacer3>* {
+    margin: var(--mrg3) 0;
+}
+
+.col-spacer4>* {
+    margin: var(--mrg4) 0;
+}
+
+.col-spacer5>* {
+    margin: var(--mrg5) 0;
+}
+
+.col-spacer6>* {
+    margin: var(--mrg6) 0;
+}

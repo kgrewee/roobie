@@ -1,0 +1,52 @@
+.hta {
+    height: auto !important;
+}
+
+.ht10 {
+    height: 10% !important;
+}
+
+.ht20 {
+    height: 20% !important;
+}
+
+.ht25 {
+    height: 25% !important;
+}
+
+.ht33 {
+    height: 33% !important;
+}
+
+.ht40 {
+    height: 40% !important;
+}
+
+.ht50 {
+    height: 50% !important;
+}
+
+.ht60 {
+    height: 60% !important;
+}
+
+.ht66 {
+    height: 66% !important;
+}
+
+.ht75 {
+    height: 75% !important;
+}
+
+.ht80 {
+    height: 80% !important;
+}
+
+.ht90 {
+    height: 90% !important;
+}
+
+.ht100,
+.ht {
+    height: 100% !important;
+}

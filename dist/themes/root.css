@@ -55,7 +55,7 @@
     --lht2: 1em;
     --lht3: 1.5em;
     --lht4: 2em;
-    --lht5: 1.5em;
+    --lht5: 2.5em;
     --lht6: 3em;
     --drp-min-width: 160px;
 }
@@ -100,16 +100,11 @@ h3,
 h4,
 h5,
 h6,
-span,
 p {
-    margin: var(--mrg1) 0;
+    margin: var(--mrg2) 0 !important;
 }
 
 span,
 p {
     color: var(--t3);
-}
-
-.active {
-    background-color: var(--bg6) !important;
 }

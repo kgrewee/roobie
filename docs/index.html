@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Roobie - Minimalistic CSS and JavaScript framework</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+    <link rel="stylesheet" href="includes/roobie.bundle.css">
+    <script src="includes/roobie.bundle.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
+    <style>
+        .card h2 {
+            margin: var(--mrg1) 0 !important;
+        }
+        
+        ul.ul,
+        ul.ul-cnt {
+            padding-left: 0;
+            min-width: 300px;
+        }
+        
+        ul.path {
+            padding-left: 0;
+        }
+        
+        .nav-row {
+            margin-bottom: var(--mrg2);
+        }
+        
+        .nav-col {
+            height: 700px;
+            margin-right: var(--mrg2);
+        }
+        
+        [tooltip] {
+            padding: var(--pad2);
+        }
+        
+        .app-sub-sidebar li::before {
+            content: '' !important;
+        }
+        
+        .search input {
+            border-radius: var(--br3);
+        }
+        
+        .sidebar-nav {
+            display: none;
+        }
+        
+        .sidebar-nav p span {
+            cursor: pointer;
+        }
+        
+        .sidebar-nav p::before {
+            content: '\203A';
+            float: left;
+            transform: rotate(90deg);
+            font-size: var(--fnts5) !important;
+            margin-right: 5px;
+        }
+        
+        .rotate-section::before {
+            transform: rotate(0deg) !important;
+        }
+        
+        .docsify-copy-code-button {
+            opacity: 1 !important;
+            border-radius: var(--br2) !important;
+            padding: var(--pad1) !important;
+            top: 5px !important;
+            right: 5px !important;
+            background-color: var(--bg1) !important;
+            color: var(--t3) !important;
+            border: var(--bdr1) !important;
+            font-weight: var(--fntw2);
+        }
+        
+        .docsify-copy-code-button:hover,
+        #main>div:first-child a:hover {
+            background-color: var(--bg2) !important;
+        }
+        
+        #main>div:first-child a {
+            border: var(--bdr1);
+            text-decoration: none !important;
+            padding: var(--pad2);
+            border-radius: var(--br2);
+            background-color: var(--bg1) !important;
+            color: var(--t3);
+            font-weight: var(--fntw2);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script>
+        window.$docsify = {
+            name: 'Roobie',
+            coverpage: true,
+            loadSidebar: true,
+            alias: {
+                '/.*/_sidebar.md': '/_sidebar.md'
+            },
+            repo: 'https://github.com/kgrewee/roobie',
+            subMaxLevel: 3,
+            search: {
+                placeholder: 'Search docs',
+                noData: 'No Results'
+            },
+            copyCode: {
+                buttonText: 'Copy',
+                errorText: 'Error',
+                successText: 'Copied'
+            },
+            plugins: [
+                EditOnGithubPlugin.create(
+                    'https://github.com/kgrewee/roobie/tree/main/docs/',
+                    null,
+                    function(file) {
+                        return 'View on GitHub'
+                    }
+                )
+            ],
+            pagination: {
+                previousText: 'Previous',
+                nextText: 'Next',
+                crossChapter: true,
+                crossChapterText: true,
+            },
+        }
+    </script>
+    <!-- Docsify v4 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+    <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <script>
+        ready(() => {
+            // Add subtitle
+            let subtitle = document.createElement('div');
+            subtitle.innerHTML = "";
+            subtitle.classList.add("fnts2");
+            subtitle.classList.add("mrgv");
+            document.getElementsByClassName('app-name')[0].appendChild(subtitle);
+        });
+
+        function toggleNextSibling(el) {
+            el.parentElement.nextSibling.classList.toggle("hide");
+            el.parentElement.classList.toggle("rotate-section");
+            localStorage.setItem(el.innerHTML, el.parentElement.nextSibling.classList.contains("hide"));
+        }
+
+        function setHeadings() {
+            let headings = document.getElementsByClassName('doc-heading');
+            console.log(headings.length);
+            for (let el of headings) {
+                let collapse = localStorage.getItem(el.innerHTML);
+                if (collapse == 'true') {
+                    console.log("Collapse " + el.innerHTML);
+                    el.parentElement.classList.add("rotate-section");
+                    el.parentElement.nextSibling.classList.add("hide");
+                    localStorage.setItem(el.innerHTML, true);
+                } else {
+                    console.log("Expand " + el.innerHTML);
+                    el.parentElement.classList.remove("rotate-section");
+                    el.parentElement.nextSibling.classList.remove("hide");
+                    localStorage.setItem(el.innerHTML, false);
+                }
+            }
+            document.querySelectorAll('.sidebar-nav')[0].style.display = 'inline';
+        }
+    </script>
+</body>
+
+</html>

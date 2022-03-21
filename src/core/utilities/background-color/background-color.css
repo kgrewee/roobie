@@ -1,0 +1,27 @@
+.bg0 {
+    background-color: transparent !important;
+}
+
+.bg1 {
+    background-color: var(--bg1) !important;
+}
+
+.bg2 {
+    background-color: var(--bg2) !important;
+}
+
+.bg3 {
+    background-color: var(--bg3) !important;
+}
+
+.bg4 {
+    background-color: var(--bg4) !important;
+}
+
+.bg5 {
+    background-color: var(--bg5) !important;
+}
+
+.bg6 {
+    background-color: var(--bg6) !important;
+}

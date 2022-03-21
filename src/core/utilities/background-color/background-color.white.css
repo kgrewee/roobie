@@ -1,0 +1,12 @@
+.bg-white1 {
+    background-color: var(--white) !important;
+}
+
+.bg-white,
+.bg-white2 {
+    background-color: var(--white2) !important;
+}
+
+.bg-white3 {
+    background-color: var(--white3) !important;
+}

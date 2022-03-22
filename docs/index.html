@@ -152,25 +152,42 @@
         function toggleNextSibling(el) {
             el.parentElement.nextSibling.classList.toggle("hide");
             el.parentElement.classList.toggle("rotate-section");
-            localStorage.setItem(el.innerHTML, el.parentElement.nextSibling.classList.contains("hide"));
+            sessionStorage.setItem(el.innerHTML, el.parentElement.nextSibling.classList.contains("hide"));
         }
 
         function setHeadings() {
             let headings = document.getElementsByClassName('doc-heading');
             console.log(headings.length);
+            let i = 0;
             for (let el of headings) {
-                let collapse = localStorage.getItem(el.innerHTML);
-                if (collapse == 'true') {
-                    console.log("Collapse " + el.innerHTML);
-                    el.parentElement.classList.add("rotate-section");
-                    el.parentElement.nextSibling.classList.add("hide");
-                    localStorage.setItem(el.innerHTML, true);
+                let collapse = sessionStorage.getItem(el.innerHTML);
+                if (collapse == null) {
+                    if (i == 0) {
+                        console.log("Expand " + el.innerHTML);
+                        el.parentElement.classList.remove("rotate-section");
+                        el.parentElement.nextSibling.classList.remove("hide");
+                        sessionStorage.setItem(el.innerHTML, false);
+                    } else {
+                        console.log("Collapse " + el.innerHTML);
+                        el.parentElement.classList.add("rotate-section");
+                        el.parentElement.nextSibling.classList.add("hide");
+                        sessionStorage.setItem(el.innerHTML, true);
+                    }
                 } else {
-                    console.log("Expand " + el.innerHTML);
-                    el.parentElement.classList.remove("rotate-section");
-                    el.parentElement.nextSibling.classList.remove("hide");
-                    localStorage.setItem(el.innerHTML, false);
+                    if (collapse == 'true') {
+                        console.log("Collapse " + el.innerHTML);
+                        el.parentElement.classList.add("rotate-section");
+                        el.parentElement.nextSibling.classList.add("hide");
+                        sessionStorage.setItem(el.innerHTML, true);
+                    } else {
+                        console.log("Expand " + el.innerHTML);
+                        el.parentElement.classList.remove("rotate-section");
+                        el.parentElement.nextSibling.classList.remove("hide");
+                        sessionStorage.setItem(el.innerHTML, false);
+                    }
                 }
+
+                i++;
             }
             document.querySelectorAll('.sidebar-nav')[0].style.display = 'inline';
         }

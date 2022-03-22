@@ -2,21 +2,21 @@
 
 ## Classes
 ```html
-    <span class="_zoom">Zoom</span>
-    <span class="_zoomt">Zoom Top</span>
-    <span class="_zoomb">Zoom Bottom</span>
-    <span class="_zooml">Zoom Left</span>
-    <span class="_zoomr">Zoom Right</span>
-    <span class="_zoomout">Zoom Out</span>
-    <span class="_zoomoutt">Zoom Out Top</span>
-    <span class="_zoomoutb">Zoom Out Bottom</span>
-    <span class="_zoomoutl">Zoom Out Left</span>
-    <span class="_zoomoutr">Zoom Out Right</span>
+<span class="_zoom">Zoom</span>
+<span class="_zoomt">Zoom Top</span>
+<span class="_zoomb">Zoom Bottom</span>
+<span class="_zooml">Zoom Left</span>
+<span class="_zoomr">Zoom Right</span>
+<span class="_zoomout">Zoom Out</span>
+<span class="_zoomoutt">Zoom Out Top</span>
+<span class="_zoomoutb">Zoom Out Bottom</span>
+<span class="_zoomoutl">Zoom Out Left</span>
+<span class="_zoomoutr">Zoom Out Right</span>
 ```
 
 ## Usage
 <h2 id="animateMe" class="txtc _zoomt">Animate me</h2>
-<div class="div row jst-center _zoom">
+<div class="div row wrp jst-center _zoom">
     <span class="btn" onclick="Animation.animationById('animateMe', '_zoom')">Zoom</span>
     <span class="btn" onclick="Animation.animationById('animateMe', '_zoomt')">Zoom Top</span>
     <span class="btn" onclick="Animation.animationById('animateMe', '_zoomb')">Zoom Bottom</span>
@@ -31,7 +31,7 @@
 
 ```html
 <h2 id="animateMe" class="txtc _zoomt">Animate me</h2>
-<div class="div row jst-center _zoom">
+<div class="div row wrp jst-center _zoom">
     <span class="btn" onclick="Animation.animationById('animateMe', '_zoom')">Zoom</span>
     <span class="btn" onclick="Animation.animationById('animateMe', '_zoomt')">Zoom Top</span>
     <span class="btn" onclick="Animation.animationById('animateMe', '_zoomb')">Zoom Bottom</span>

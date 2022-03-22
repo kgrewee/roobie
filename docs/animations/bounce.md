@@ -1,28 +1,46 @@
 # Bounce
-<div class="div row">
-    <span class="btn _bounce" onclick="Animation.animationByClass('_bounce', '_bounce')">Bounce</span>
-    <span class="btn _bouncet" onclick="Animation.animationByClass('_bouncet', '_bouncet')">Bounce T</span>
-    <span class="btn _bounceb" onclick="Animation.animationByClass('_bounceb', '_bounceb')">Bounce B</span>
-    <span class="btn _bouncel" onclick="Animation.animationByClass('_bouncel', '_bouncel')">Bounce L</span>
-    <span class="btn _bouncer" onclick="Animation.animationByClass('_bouncer', '_bouncer')">Bounce R</span>
-    <span class="btn _bounceout" onclick="Animation.animationByClass('_bounceout', '_bounceout')">Bounce Out</span>
-    <span class="btn _bounceoutt" onclick="Animation.animationByClass('_bounceoutt', '_bounceoutt')">Bounce Out T</span>
-    <span class="btn _bounceoutb" onclick="Animation.animationByClass('_bounceoutb', '_bounceoutb')">Bounce Out B</span>
-    <span class="btn _bounceoutl" onclick="Animation.animationByClass('_bounceoutl', '_bounceoutl')">Bounce Out L</span>
-    <span class="btn _bounceoutr" onclick="Animation.animationByClass('_bounceoutr', '_bounceoutr')">Bounce Out R</span>
+
+## Classes
+```html 
+<span class="_bounce">Bounce</span>
+<span class="_bouncet">Bounce Top</span>
+<span class="_bounceb">Bounce Bottom</span>
+<span class="_bouncel">Bounce Left</span>
+<span class="_bouncer">Bounce Right</span>
+<span class="_bounceout">Bounce Out</span>
+<span class="_bounceoutt">Bounce Out Top</span>
+<span class="_bounceoutb">Bounce Out Bottom</span>
+<span class="_bounceoutl">Bounce Out Left</span>
+<span class="_bounceoutr">Bounce Out Right</span>
+```
+
+## Usage
+<h2 id="animateMe" class="txtc _bouncet">Animate me</h2>
+<div class="div row wrp jst-center _bounceb">
+    <span class="btn" onclick="Animation.animationById('animateMe', '_bounce')">Bounce</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_bouncet')">Bounce Top</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_bounceb')">Bounce Bottom</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_bouncel')">Bounce Left</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_bouncer')">Bounce Right</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_bounceout')">Bounce Out</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_bounceoutt')">Bounce Out Top</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_bounceoutb')">Bounce Out Bottom</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_bounceoutl')">Bounce Out Left</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_bounceoutr')">Bounce Out Right</span>
 </div>
 
 ```html
-<div class="div row">
-    <span class="btn _bounce" onclick="Animation.animationByClass('_bounce', '_bounce')">Bounce</span>
-    <span class="btn _bouncet" onclick="Animation.animationByClass('_bouncet', '_bouncet')">Bounce T</span>
-    <span class="btn _bounceb" onclick="Animation.animationByClass('_bounceb', '_bounceb')">Bounce B</span>
-    <span class="btn _bouncel" onclick="Animation.animationByClass('_bouncel', '_bouncel')">Bounce L</span>
-    <span class="btn _bouncer" onclick="Animation.animationByClass('_bouncer', '_bouncer')">Bounce R</span>
-    <span class="btn _bounceout" onclick="Animation.animationByClass('_bounceout', '_bounceout')">Bounce Out</span>
-    <span class="btn _bounceoutt" onclick="Animation.animationByClass('_bounceoutt', '_bounceoutt')">Bounce Out T</span>
-    <span class="btn _bounceoutb" onclick="Animation.animationByClass('_bounceoutb', '_bounceoutb')">Bounce Out B</span>
-    <span class="btn _bounceoutl" onclick="Animation.animationByClass('_bounceoutl', '_bounceoutl')">Bounce Out L</span>
-    <span class="btn _bounceoutr" onclick="Animation.animationByClass('_bounceoutr', '_bounceoutr')">Bounce Out R</span>
+<h2 id="animateMe" class="txtc _bouncet">Animate me</h2>
+<div class="div row wrp jst-center _bounceb">
+    <span class="btn" onclick="Animation.animationById('animateMe', '_bounce')">Bounce</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_bouncet')">Bounce Top</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_bounceb')">Bounce Bottom</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_bouncel')">Bounce Left</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_bouncer')">Bounce Right</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_bounceout')">Bounce Out</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_bounceoutt')">Bounce Out Top</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_bounceoutb')">Bounce Out Bottom</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_bounceoutl')">Bounce Out Left</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_bounceoutr')">Bounce Out Right</span>
 </div>
 ```

@@ -22,7 +22,7 @@
 
 ## Usage
 <h2 id="animateMe" class="txtc _jello">Animate me</h2>
-<div class="div row jst-center _stretch">
+<div class="div row wrp jst-center _stretch">
     <span class="btn" onclick="Animation.animationById('animateMe', '_flash')">Flash</span>
     <span class="btn" onclick="Animation.animationById('animateMe', '_glow')">Glow</span>
     <span class="btn" onclick="Animation.animationById('animateMe', '_heartbeat')">Heartbeat</span>
@@ -43,7 +43,7 @@
 
 ```html
 <h2 id="animateMe" class="txtc _jello">Animate me</h2>
-<div class="div row jst-center _stretch">
+<div class="div row wrp jst-center _stretch">
     <span class="btn" onclick="Animation.animationById('animateMe', '_flash')">Flash</span>
     <span class="btn" onclick="Animation.animationById('animateMe', '_glow')">Glow</span>
     <span class="btn" onclick="Animation.animationById('animateMe', '_heartbeat')">Heartbeat</span>

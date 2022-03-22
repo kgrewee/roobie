@@ -1,5 +1,8 @@
 # Roobie
-**A minimalistic approach to web development.**
+![Build](https://github.com/kgrewee/roobie/actions/workflows/npm.yml/badge.svg)
+[![npm version](https://badge.fury.io/js/roobie.svg)](https://badge.fury.io/js/roobie)
+
+**A minimalistic approach to web development.  Currently in beta testing.**
 
 Collection of CSS themes & utilities, JavaScript functions, animations and more.  Reduce boilerplate code with a lightweight and easy to use API.   Reuse core CSS classes and JavaScript functions instead of writing custom code.  Always build from a template.
 

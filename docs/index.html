@@ -84,6 +84,16 @@
             background-color: var(--bg2) !important;
         }
         
+        #main>div:first-child {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        
+        .markdown-section {
+            padding-top: var(--pad2);
+        }
+        
         #main>div:first-child a {
             border: var(--bdr1);
             text-decoration: none !important;
@@ -108,6 +118,7 @@
             },
             repo: 'https://github.com/kgrewee/roobie',
             subMaxLevel: 3,
+            auto2top: true,
             search: {
                 placeholder: 'Search docs',
                 noData: 'No Results'
@@ -131,7 +142,7 @@
                 nextText: 'Next',
                 crossChapter: true,
                 crossChapterText: true,
-            },
+            }
         }
     </script>
     <!-- Docsify v4 -->

@@ -1,9 +1,9 @@
 .padha {
-    padding: auto inherit !important;
+    padding: 0 auto !important;
 }
 
 .padh0 {
-    padding: 0 inherit !important;
+    padding: 0 0 !important;
 }
 
 .padh1 {

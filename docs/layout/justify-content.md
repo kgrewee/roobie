@@ -14,6 +14,7 @@ Justify content on the main axis.  Requires flex display.
 ## Usage
 
 ### Row
+#### Start
 <div class="row jst-start">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -28,6 +29,7 @@ Justify content on the main axis.  Requires flex display.
 </div>
 ```
 
+#### End
 <div class="row jst-end">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -42,6 +44,7 @@ Justify content on the main axis.  Requires flex display.
 </div>
 ```
 
+#### Between
 <div class="row jst-between">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -56,6 +59,7 @@ Justify content on the main axis.  Requires flex display.
 </div>
 ```
 
+#### Around
 <div class="row jst-around">  
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -70,6 +74,7 @@ Justify content on the main axis.  Requires flex display.
 </div>
 ```
 
+#### Center
 <div class="row jst-center">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -84,6 +89,7 @@ Justify content on the main axis.  Requires flex display.
 </div>
 ```
 
+#### Base
 <div class="row jst-base">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -98,6 +104,7 @@ Justify content on the main axis.  Requires flex display.
 </div>
 ```
 
+#### Stretch
 <div class="row jst-stretch"> 
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -113,6 +120,7 @@ Justify content on the main axis.  Requires flex display.
 ```
 
 ### Column
+#### Start
 <div class="col jst-start" style="height: 250px">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -127,6 +135,7 @@ Justify content on the main axis.  Requires flex display.
 </div>
 ```
 
+#### End
 <div class="col jst-end" style="height: 250px">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -141,6 +150,7 @@ Justify content on the main axis.  Requires flex display.
 </div>
 ```
 
+#### Between
 <div class="col jst-between" style="height: 250px">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -155,6 +165,7 @@ Justify content on the main axis.  Requires flex display.
 </div>
 ```
 
+#### Around
 <div class="col jst-around" style="height: 250px">  
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -169,6 +180,7 @@ Justify content on the main axis.  Requires flex display.
 </div>
 ```
 
+#### Center
 <div class="col jst-center" style="height: 250px">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -183,6 +195,7 @@ Justify content on the main axis.  Requires flex display.
 </div>
 ```
 
+#### Base
 <div class="col jst-base" style="height: 250px">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -197,6 +210,7 @@ Justify content on the main axis.  Requires flex display.
 </div>
 ```
 
+#### Stretch
 <div class="col jst-stretch" style="height: 250px"> 
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>

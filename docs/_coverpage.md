@@ -1,4 +1,4 @@
-# Roobie <small>beta</small>
+# Roobie <small>0.4.1</small>
 
 > Minimalistic CSS & JavaScript framework
 
@@ -7,4 +7,5 @@
 - Increase maintainability & development speed
 
 [GitHub](https://github.com/kgrewee/roobie)
+[Feedback](https://github.com/kgrewee/roobie/issues)
 [Get Started](README)

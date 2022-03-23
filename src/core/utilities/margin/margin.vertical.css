@@ -1,9 +1,9 @@
 .mrgva {
-    margin: inherit auto !important;
+    margin: auto 0 !important;
 }
 
 .mrgv0 {
-    margin: inherit 0 !important;
+    margin: 0 0 !important;
 }
 
 .mrgv1 {

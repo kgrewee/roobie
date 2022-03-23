@@ -20,7 +20,6 @@ Favor `row` and `col` classes.  If you don't use them, our layouts won't work co
 
 
 ### Row
-
 <div class="row">
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -34,7 +33,7 @@ Favor `row` and `col` classes.  If you don't use them, our layouts won't work co
     <button type="button" class="btn btn-outline">Button 3</button>
 </div>
 ```
-
+### Row Reverse
 <div class="rowr">
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -50,7 +49,6 @@ Favor `row` and `col` classes.  If you don't use them, our layouts won't work co
 ```
 
 ### Column
-
 <div class="col">
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -65,6 +63,7 @@ Favor `row` and `col` classes.  If you don't use them, our layouts won't work co
 </div>
 ```
 
+### Column Reverse
 <div class="colr">
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>

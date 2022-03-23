@@ -61,7 +61,7 @@ Themes are required for Roobie to function properly.  Create copies of `root.css
     --lht2: 1em;
     --lht3: 1.5em;
     --lht4: 2em;
-    --lht5: 1.5em;
+    --lht5: 2.5em;
     --lht6: 3em;
     --drp-min-width: 160px;
 }
@@ -107,7 +107,7 @@ h4,
 h5,
 h6,
 p {
-    margin: var(--mrg1);
+    margin: var(--mrg2) 0 !important;
 }
 
 span,
@@ -164,18 +164,18 @@ p {
     --violet3: rgba(184, 88, 184, .5);
     /*Text*/
     --t1: rgb(20, 20, 20);
-    --t2: rgb(30, 30, 30);
-    --t3: rgb(40, 40, 40);
-    --t4: rgb(50, 50, 50);
-    --t5: rgb(60, 60, 60);
-    --t6: rgb(70, 70, 70);
+    --t2: rgb(35, 35, 35);
+    --t3: rgb(50, 50, 50);
+    --t4: rgb(65, 65, 65);
+    --t5: rgb(80, 80, 80);
+    --t6: rgb(95, 95, 95);
     /*Background*/
     --bg1: rgb(240, 240, 240);
     --bg2: rgb(230, 230, 230);
     --bg3: rgb(220, 220, 220);
     --bg4: rgb(210, 210, 210);
     --bg5: rgb(200, 200, 200);
-    --bg6: var(--primary);
+    --bg6: rgb(190, 190, 190);
     /*Heading*/
     --h1: var(--t1);
     --h2: var(--t1);
@@ -267,18 +267,18 @@ p {
     --violet3: rgba(184, 88, 184, .5);
     /*Text*/
     --t1: rgb(240, 240, 240);
-    --t2: rgb(230, 230, 230);
-    --t3: rgb(220, 220, 220);
-    --t4: rgb(210, 210, 210);
-    --t5: rgb(200, 200, 200);
-    --t6: rgb(190, 190, 190);
+    --t2: rgb(225, 225, 225);
+    --t3: rgb(210, 210, 210);
+    --t4: rgb(195, 195, 195);
+    --t5: rgb(180, 180, 180);
+    --t6: rgb(165, 165, 165);
     /*Background*/
     --bg1: rgb(20, 20, 20);
-    --bg2: rgb(30, 30, 30);
-    --bg3: rgb(40, 40, 40);
-    --bg4: rgb(50, 50, 50);
-    --bg5: rgb(60, 60, 60);
-    --bg6: var(--blue2);
+    --bg2: rgb(35, 35, 35);
+    --bg3: rgb(50, 50, 50);
+    --bg4: rgb(65, 65, 65);
+    --bg5: rgb(80, 80, 80);
+    --bg6: rgb(95, 95, 95);
     /*Heading*/
     --h1: var(--t1);
     --h2: var(--t1);

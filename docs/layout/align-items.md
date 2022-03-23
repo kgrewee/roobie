@@ -15,6 +15,7 @@ Align items opposite of the main axis.  Requires flex display.
 ## Usage
 
 ### Row
+#### Start
 <div class="row aln-start" style="height: 250px">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -29,6 +30,7 @@ Align items opposite of the main axis.  Requires flex display.
 </div>
 ```
 
+#### End
 <div class="row aln-end" style="height: 250px">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -43,6 +45,7 @@ Align items opposite of the main axis.  Requires flex display.
 </div>
 ```
 
+#### Between
 <div class="row aln-between" style="height: 250px">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -57,6 +60,7 @@ Align items opposite of the main axis.  Requires flex display.
 </div>
 ```
 
+#### Around
 <div class="row aln-around" style="height: 250px">  
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -71,6 +75,7 @@ Align items opposite of the main axis.  Requires flex display.
 </div>
 ```
 
+#### Center
 <div class="row aln-center" style="height: 250px">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -85,6 +90,7 @@ Align items opposite of the main axis.  Requires flex display.
 </div>
 ```
 
+#### Base
 <div class="row aln-base" style="height: 250px">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -99,6 +105,7 @@ Align items opposite of the main axis.  Requires flex display.
 </div>
 ```
 
+#### Stretch
 <div class="row aln-stretch" style="height: 250px"> 
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -114,6 +121,7 @@ Align items opposite of the main axis.  Requires flex display.
 ```
 
 ### Column
+#### Start
 <div class="col aln-start">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -128,6 +136,7 @@ Align items opposite of the main axis.  Requires flex display.
 </div>
 ```
 
+#### End
 <div class="col aln-end">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -142,6 +151,7 @@ Align items opposite of the main axis.  Requires flex display.
 </div>
 ```
 
+#### Between
 <div class="col aln-between">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -156,6 +166,7 @@ Align items opposite of the main axis.  Requires flex display.
 </div>
 ```
 
+#### Around
 <div class="col aln-around">  
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -170,6 +181,7 @@ Align items opposite of the main axis.  Requires flex display.
 </div>
 ```
 
+#### Center
 <div class="col aln-center">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -184,6 +196,7 @@ Align items opposite of the main axis.  Requires flex display.
 </div>
 ```
 
+#### Base
 <div class="col aln-base">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -198,6 +211,7 @@ Align items opposite of the main axis.  Requires flex display.
 </div>
 ```
 
+#### Stretch
 <div class="col aln-stretch"> 
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>

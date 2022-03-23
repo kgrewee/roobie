@@ -2,15 +2,15 @@
 
 ## Classes
 ```html
-<div class="br0"></div>
-<div class="br1"></div>
-<div class="br2"></div>
-<div class="br3"></div>
-<div class="br4"></div>
-<div class="br5"></div>
-<div class="br6"></div>
-<div class="br25"></div>
-<div class="br50"></div>
+<div class="br0">None</div>
+<div class="br1">1</div>
+<div class="br2">2</div>
+<div class="br3">3</div>
+<div class="br4">4</div>
+<div class="br5">5</div>
+<div class="br6">6</div>
+<div class="br25">25%</div>
+<div class="br50">50%</div>
 ```
 
 ## Usage

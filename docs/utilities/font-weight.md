@@ -2,12 +2,12 @@
 
 ## Classes
 ```html
-<div class="fntw1">Font weight 1</div>
-<div class="fntw2">Font weight 2</div>
-<div class="fntw3">Font weight 3</div>
-<div class="fntw4">Font weight 4</div>
-<div class="fntw5">Font weight 5</div>
-<div class="fntw6">Font weight 6</div>
+<div class="fntw1">1</div>
+<div class="fntw2">2</div>
+<div class="fntw3">3</div>
+<div class="fntw4">4</div>
+<div class="fntw5">5</div>
+<div class="fntw6">6</div>
 ```
 
 ## Usage

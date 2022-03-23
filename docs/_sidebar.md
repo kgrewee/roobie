@@ -1,5 +1,5 @@
 * <span class="doc-heading" onclick="toggleNextSibling(this)">Getting Started</span>
-  * [Intro](README.md)
+  * [Introduction](README.md)
   * [Install](getting-started/install.md)
   * [Setup](getting-started/setup.md)
   * [Themes](getting-started/themes.md)

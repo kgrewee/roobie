@@ -3602,11 +3602,11 @@ select:focus {
 .mrg6 {
     margin: var(--mrg6) !important;
 }.mrgha {
-    margin: auto inherit !important;
+    margin: 0 auto !important;
 }
 
 .mrgh0 {
-    margin: 0 inherit !important;
+    margin: 0 0 !important;
 }
 
 .mrgh1 {
@@ -3726,11 +3726,11 @@ select:focus {
 .mrgt6 {
     margin-top: var(--mrg6) !important;
 }.mrgva {
-    margin: inherit auto !important;
+    margin: auto 0 !important;
 }
 
 .mrgv0 {
-    margin: inherit 0 !important;
+    margin: 0 0 !important;
 }
 
 .mrgv1 {
@@ -3756,29 +3756,57 @@ select:focus {
 
 .mrgv6 {
     margin: var(--mrg6) 0 !important;
-}.op0 {
-    opacity: 0 !important;
+}.opa {
+    opacity: auto !important;
+}
+
+.op10 {
+    opacity: 10% !important;
+}
+
+.op20 {
+    opacity: 20% !important;
 }
 
 .op25 {
-    opacity: var(--op25);
+    opacity: 25% !important;
 }
 
 .op33 {
-    opacity: var(--op33);
+    opacity: 33% !important;
+}
+
+.op40 {
+    opacity: 40% !important;
 }
 
 .op50 {
-    opacity: var(--op50);
+    opacity: 50% !important;
+}
+
+.op60 {
+    opacity: 60% !important;
+}
+
+.op66 {
+    opacity: 66% !important;
 }
 
 .op75 {
-    opacity: var(--op75);
+    opacity: 75% !important;
 }
 
-.op,
-.op100 {
-    opacity: 100%;
+.op80 {
+    opacity: 80% !important;
+}
+
+.op90 {
+    opacity: 90% !important;
+}
+
+.op100,
+.op {
+    opacity: 100% !important;
 }.ov {
     overflow: auto;
 }
@@ -3856,11 +3884,11 @@ select:focus {
 .pad6 {
     padding: var(--pad6) !important;
 }.padha {
-    padding: auto inherit !important;
+    padding: 0 auto !important;
 }
 
 .padh0 {
-    padding: 0 inherit !important;
+    padding: 0 0 !important;
 }
 
 .padh1 {
@@ -3980,11 +4008,11 @@ select:focus {
 .padt6 {
     padding-top: var(--pad6) !important;
 }.padva {
-    padding: inherit auto !important;
+    padding: auto 0 !important;
 }
 
 .padv0 {
-    padding: inherit 0 !important;
+    padding: 0 0 !important;
 }
 
 .padv1 {

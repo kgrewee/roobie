@@ -10,6 +10,7 @@ Determine what to do with items when there isn't enough space in the container. 
 
 ## Usage
 
+### Wrap
 <div class="row wrp" style="width: 250px">
      <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -28,6 +29,7 @@ Determine what to do with items when there isn't enough space in the container. 
 </div>
 ```
 
+### Wrap Reverse
 <div class="row wrpr" style="width: 250px">
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -46,6 +48,7 @@ Determine what to do with items when there isn't enough space in the container. 
 </div>
 ```
 
+### No Wrap
 <div class="row wrp0" style="width: 250px">
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -64,6 +67,7 @@ Determine what to do with items when there isn't enough space in the container. 
 </div>
 ```
 
+### Default No Wrap
 <div class="row" style="width: 250px">
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>

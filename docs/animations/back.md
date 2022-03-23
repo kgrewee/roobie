@@ -1,25 +1,40 @@
 # Back
-<div class="div row">
-    <span class="btn _backt" onclick="Animation.animationByClass('_backt', '_backt')">Back T</span>
-    <span class="btn _backb" onclick="Animation.animationByClass('_backb', '_backb')">Back B</span>
-    <span class="btn _backl" onclick="Animation.animationByClass('_backl', '_backl')">Back L</span>
-    <span class="btn _backr" onclick="Animation.animationByClass('_backr', '_backr')">Back R</span>
-    <span class="btn _backoutt" onclick="Animation.animationByClass('_backoutt', '_backoutt')">Back Out T</span>
-    <span class="btn _backoutb" onclick="Animation.animationByClass('_backoutb', '_backoutb')">Back Out B</span>
-    <span class="btn _backoutl" onclick="Animation.animationByClass('_backoutl', '_backoutl')">Back Out L</span>
-    <span class="btn _backoutr" onclick="Animation.animationByClass('_backoutr', '_backoutr')">Back Out R</span>
+
+## Classes
+```html 
+<span class="_backt">Back Top</span>
+<span class="_backb">Back Bottom</span>
+<span class="_backl">Back Left</span>
+<span class="_backr">Back Right</span>
+<span class="_backoutt">Back Out Top</span>
+<span class="_backoutb">Back Out Bottom</span>
+<span class="_backoutl">Back Out Left</span>
+<span class="_backoutr">Back Out Right</span>
+```
+
+## Usage
+<h2 id="animateMe" class="txtc _backt">Animate me</h2>
+<div class="div row wrp jst-center _backb">
+    <span class="btn" onclick="Animation.animationById('animateMe', '_backt')">Back Top</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_backb')">Back Bottom</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_backl')">Back Left</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_backr')">Back Right</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_backoutt')">Back Out Top</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_backoutb')">Back Out Bottom</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_backoutl')">Back Out Left</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_backoutr')">Back Out Right</span>
 </div>
 
-
 ```html
-<div class="div row">
-    <span class="btn _backt" onclick="Animation.animationByClass('_backt', '_backt')">Back T</span>
-    <span class="btn _backb" onclick="Animation.animationByClass('_backb', '_backb')">Back B</span>
-    <span class="btn _backl" onclick="Animation.animationByClass('_backl', '_backl')">Back L</span>
-    <span class="btn _backr" onclick="Animation.animationByClass('_backr', '_backr')">Back R</span>
-    <span class="btn _backoutt" onclick="Animation.animationByClass('_backoutt', '_backoutt')">Back Out T</span>
-    <span class="btn _backoutb" onclick="Animation.animationByClass('_backoutb', '_backoutb')">Back Out B</span>
-    <span class="btn _backoutl" onclick="Animation.animationByClass('_backoutl', '_backoutl')">Back Out L</span>
-    <span class="btn _backoutr" onclick="Animation.animationByClass('_backoutr', '_backoutr')">Back Out R</span>
+<h2 id="animateMe" class="txtc _backt">Animate me</h2>
+<div class="div row wrp jst-center _backb">
+    <span class="btn" onclick="Animation.animationById('animateMe', '_backt')">Back Top</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_backb')">Back Bottom</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_backl')">Back Left</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_backr')">Back Right</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_backoutt')">Back Out Top</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_backoutb')">Back Out Bottom</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_backoutl')">Back Out Left</span>
+    <span class="btn" onclick="Animation.animationById('animateMe', '_backoutr')">Back Out Right</span>
 </div>
 ```

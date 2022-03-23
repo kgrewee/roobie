@@ -15,6 +15,7 @@ How lines are spaced.  No effect if content is only 1 line.  Requires flex displ
 ## Usage
 
 ### Row
+#### Start
 <div class="div25 row wrp aln-cnt-start" style="height: 150px">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -33,6 +34,7 @@ How lines are spaced.  No effect if content is only 1 line.  Requires flex displ
 </div>
 ```
 
+#### End
 <div class="div25 row wrp aln-cnt-end" style="height: 150px">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -51,6 +53,7 @@ How lines are spaced.  No effect if content is only 1 line.  Requires flex displ
 </div>
 ```
 
+#### Between
 <div class="div25 row wrp aln-cnt-between" style="height: 150px">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -69,6 +72,7 @@ How lines are spaced.  No effect if content is only 1 line.  Requires flex displ
 </div>
 ```
 
+#### Around
 <div class="div25 row wrp aln-cnt-around" style="height: 150px">  
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -87,6 +91,7 @@ How lines are spaced.  No effect if content is only 1 line.  Requires flex displ
 </div>
 ```
 
+#### Center
 <div class="div25 row wrp aln-cnt-center" style="height: 150px">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -105,6 +110,7 @@ How lines are spaced.  No effect if content is only 1 line.  Requires flex displ
 </div>
 ```
 
+#### Base
 <div class="div25 row wrp aln-cnt-base" style="height: 150px">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -123,6 +129,7 @@ How lines are spaced.  No effect if content is only 1 line.  Requires flex displ
 </div>
 ```
 
+#### Stretch
 <div class="div25 row wrp aln-cnt-stretch" style="height: 150px"> 
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -142,6 +149,7 @@ How lines are spaced.  No effect if content is only 1 line.  Requires flex displ
 ```
 
 ### Column
+#### Start
 <div class="col wrp aln-cnt-start" style="height: 150px">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -160,6 +168,7 @@ How lines are spaced.  No effect if content is only 1 line.  Requires flex displ
 </div>
 ```
 
+#### End
 <div class="col wrp aln-cnt-end" style="height: 150px">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -178,6 +187,7 @@ How lines are spaced.  No effect if content is only 1 line.  Requires flex displ
 </div>
 ```
 
+#### Between
 <div class="col wrp aln-cnt-between" style="height: 150px">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -196,6 +206,7 @@ How lines are spaced.  No effect if content is only 1 line.  Requires flex displ
 </div>
 ```
 
+#### Around
 <div class="col wrp aln-cnt-around" style="height: 150px">  
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -214,6 +225,7 @@ How lines are spaced.  No effect if content is only 1 line.  Requires flex displ
 </div>
 ```
 
+#### Center
 <div class="col wrp aln-cnt-center" style="height: 150px">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -232,6 +244,7 @@ How lines are spaced.  No effect if content is only 1 line.  Requires flex displ
 </div>
 ```
 
+#### Base
 <div class="col wrp aln-cnt-base" style="height: 150px">   
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>
@@ -250,6 +263,7 @@ How lines are spaced.  No effect if content is only 1 line.  Requires flex displ
 </div>
 ```
 
+#### Stretch
 <div class="col wrp aln-cnt-stretch" style="height: 150px"> 
     <button type="button" class="btn btn-outline">Button 1</button>
     <button type="button" class="btn btn-outline">Button 2</button>

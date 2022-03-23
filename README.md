@@ -12,6 +12,12 @@ Documentation is hosted at https://roobie.net.  Or serve it locally using Python
 npm run docs:serve
 ```
 
+## Install
+Install all necessary npm dependencies to build locally.
+```shell
+npm install
+```
+
 ## Package
 Package builds all aspects of Roobie.  Artifacts will be found in `dist/`.
 ```shell

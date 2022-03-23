@@ -2,13 +2,13 @@
 
 ## Classes
 ```html
-<div class="bdr0"></div>
-<div class="bdr1"></div>
-<div class="bdr2"></div>
-<div class="bdr3"></div>
-<div class="bdr4"></div>
-<div class="bdr5"></div>
-<div class="bdr6"></div>
+<div class="bdr0">None</div>
+<div class="bdr1">1</div>
+<div class="bdr2">2</div>
+<div class="bdr3">3</div>
+<div class="bdr4">4</div>
+<div class="bdr5">5</div>
+<div class="bdr6">6</div>
 ```
 
 ## Usage

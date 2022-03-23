@@ -33,7 +33,6 @@ The default height for all containers is auto.
     <div class="ht75 bdr1">75%</div>
     <div class="ht80 bdr1">80%</div>
     <div class="ht90 bdr1">90%</div>
-    <div class="ht100 bdr1">100%</div>
     <div class="ht bdr1">100%</div>
 </div>
 
@@ -51,7 +50,6 @@ The default height for all containers is auto.
     <div class="ht75 bdr1">75%</div>
     <div class="ht80 bdr1">80%</div>
     <div class="ht90 bdr1">90%</div>
-    <div class="ht100 bdr1">100%</div>
     <div class="ht bdr1">100%</div>
 </div>
 ```

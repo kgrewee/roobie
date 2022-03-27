@@ -45,7 +45,7 @@
 /* Move and change color when checked */
 
 .toggle input:checked+.slider {
-    background-color: var(--bg6);
+    background-color: var(--primary);
     box-shadow: var(--in1);
 }
 

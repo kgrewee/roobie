@@ -2,12 +2,20 @@
 Display hidden content on hover.
 
 ## Basic
-<div class="drp">
-    <span class="drp-btn">Links</span>
-    <div class="drp-cnt">
-        <a>Link 1</a>
-        <a>Link 2</a>
-        <a>Link 3</a>
+<div class="row">
+    <div class="drp">
+        <span class="drp-btn">Links</span>
+        <div class="drp-cnt">
+            <a>Link 1</a>
+            <a>Link 2</a>
+            <a>Link 3</a>
+        </div>
+    </div>
+    <div class="drp">
+        <span class="drp-btn">Content</span>
+        <div class="drp-cnt pad3">
+            <p>Container that can hold any element</p>
+        </div>
     </div>
 </div>
 
@@ -18,6 +26,12 @@ Display hidden content on hover.
         <a>Link 1</a>
         <a>Link 2</a>
         <a>Link 3</a>
+    </div>
+</div>
+<div class="drp">
+    <span class="drp-btn">Content</span>
+    <div class="drp-cnt pad3">
+        <p>Container that can hold any element</p>
     </div>
 </div>
 ```

@@ -1,5 +1,23 @@
 # Navbar
-Navigation bars of all shapes and sizes.
+Navigation bars of all shapes and sizes.  Requires JS.
+
+## Check
+To check for Navbars and create dynamic content.  Useful in SPA frameworks.  Roobie checks for Navbars on initial load but if the Navbar is loaded after, you must explicitly check.
+```js
+Navbar.check();
+```
+
+### TypeScript
+To use the Navbar class you must first declare it.
+```ts
+declare var Navbar;
+```
+
+### HTML
+To use HTML to check for the Navbars, add an `iframe` to the bottom of your HTML where the Navbar resides.
+```html
+<iframe onload="Navbar.check()"></iframe>
+```
 
 ## Horizontal
 <nav class="nav-row jst-between aln-center bdr1">

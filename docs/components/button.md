@@ -1,7 +1,6 @@
 # Button
 Simple button styles that can be applied to most elements.
 
-
 ## Basic
 <button type="button" class="btn">Basic</button>
 <button type="button" class="btn btn-outline">Outline</button>

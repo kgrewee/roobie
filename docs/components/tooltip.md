@@ -1,5 +1,23 @@
 # Tooltip
-Show hidden text on hover.
+Show hidden text on hover.  Requires JS.
+
+## Check
+To check for Tooltips and create dynamic content.  Useful in SPA frameworks.  Roobie checks for Tooltips on initial load but if the Tooltip is loaded after, you must explicitly check.
+```js
+Tooltip.check();
+```
+
+### TypeScript
+To use the Tooltip class you must first declare it.
+```ts
+declare var Tooltip;
+```
+
+### HTML
+To use HTML to check for the Tooltips, add an `iframe` to the bottom of your HTML where the Tooltip resides.
+```html
+<iframe onload="Tooltip.check()"></iframe>
+```
 
 ## Basic
 <div class="row">

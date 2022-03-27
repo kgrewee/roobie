@@ -1,5 +1,23 @@
 # Accordion
-Panels of expandable content.
+Panels of expandable content.  Requires JS.
+
+## Check
+To check for Accordions and create dynamic content.  Useful in SPA frameworks.  Roobie checks for Accordions on initial load but if the Accordion is loaded after, you must explicitly check.
+```js
+Accordion.check();
+```
+
+### TypeScript
+To use the Accordion class you must first declare it.
+```ts
+declare var Accordion;
+```
+
+### HTML
+To use HTML to check for the Accordions, add an `iframe` to the bottom of your HTML where the Accordion resides.
+```html
+<iframe onload="Accordion.check()"></iframe>
+```
 
 ## Basic
 <div class="accordion">

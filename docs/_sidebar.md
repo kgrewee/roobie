@@ -56,6 +56,7 @@
   * [List](components/list.md)
   * [Navbar](components/navbar.md)
   * [Path](components/path.md)
+  * [Select](components/select.md)
   * [Toggle](components/toggle.md)
   * [Tooltip](components/tooltip.md)
 

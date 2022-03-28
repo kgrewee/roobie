@@ -2,7 +2,7 @@
 Navigation bars of all shapes and sizes.  Requires JS.
 
 ## TypeScript
-To use the Navbar class in TypeScript you must first declare it.
+To use the Navbar class in TypeScript you must declare it.
 ```ts
 declare var Navbar;
 ```

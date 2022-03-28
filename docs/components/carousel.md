@@ -2,7 +2,7 @@
 Interactive slider full of content.  Requires JS.
 
 ## TypeScript
-To use the Carousel class in TypeScript you must first declare it.
+To use the Carousel class in TypeScript you must declare it.
 ```ts
 declare var Carousel;
 ```

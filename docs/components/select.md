@@ -2,7 +2,7 @@
 Select from a list of items.  Requires JS.
 
 ## TypeScript
-To use the Select class in TypeScript you must first declare it.
+To use the Select class in TypeScript you must declare it.
 ```ts
 declare var Select;
 ```
@@ -40,4 +40,3 @@ To use HTML to check for the Selects, add an `iframe` to the bottom of your HTML
 </div>
 ```
 <iframe onload="Select.check()"></iframe>
-<iframe onload='document.addEventListener("click", Select.closeAll())'></iframe>

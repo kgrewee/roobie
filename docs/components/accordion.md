@@ -2,7 +2,7 @@
 Panels of expandable content.  Requires JS.
 
 ## TypeScript
-To use the Accordion class in TypeScript you must first declare it.
+To use the Accordion class in TypeScript you must declare it.
 ```ts
 declare var Accordion;
 ```

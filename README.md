@@ -16,12 +16,14 @@ A minimalistic approach to web development.  Build an entire website without lea
 - JavaScript DOM Manipulation (Coming Soon)
 - Website Templates (Coming Soon)
 - Layout Generator (Coming Soon)
+- Theme Editor (Coming Soon)
 
 ## Documentation
-Documentation is hosted at https://roobie.net.  Or pull this repo and serve it locally using Python. Visit http://localhost:3000.
+Documentation is hosted at https://roobie.net.  You can pull this repo and serve it locally using Python.
 ```shell
 npm run docs:serve
 ```
+Visit http://localhost:3000.
 
 ## Install
 Install all necessary npm dependencies to build locally.

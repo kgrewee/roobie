@@ -1,5 +1,9 @@
 # Themes
 Themes are required for Roobie to function properly.  Create copies of `root.css`, `light.css` and `dark.css` from your install directory. Include them in your project instead of using the defaults to persist your themes or use a bundle distribution that includes the themes.  Make sure to include the theme files in your project or **things won't work correctly**.  Every CSS class in Roobie is based on a theme variable.
+<div class="row">
+    <span class="btn btn-secondary" onclick="Theme.switchTheme('dark')">Dark</span>
+    <span class="btn btn-secondary" onclick="Theme.switchTheme('light')">Light</span>
+</div>
 
 ## Root
 `root.css` classes and variables in are theme independent.  Modify them to change all themes.  Themes will not function properly without these variables.
@@ -348,25 +352,43 @@ You can add more themes alongside the base light and dark, just copy light.css o
 ```
 
 ## Activate Theme
-Activate a theme by setting local storage and body HTML attribute.  Replace `themeName` with the name of your theme. Roobie sets the default theme to `light` on load if the local storage variable is null, aka not set.  If the local storage `theme` variable is not null, the body HTML attribute theme is set to its value on load.
+Activate a theme by setting local storage and body HTML attribute.  Roobie sets the default theme to `light` on load if the local storage variable is null, aka not set.  If the local storage `theme` variable is not null, the body HTML attribute theme is set to its value on load.
 
+### TypeScript
+To use the Theme class in TypeScript you must declare it.
+```ts
+declare var Theme;
+```
 
+### Switch Theme
+```js
+Theme.switchTheme('light');
+```
+
+### On Click
+```html
+ <span class="btn" onclick="Theme.switchTheme('dark')">Dark</span>
+```
+
+### Under The Hood
+Roobie switch theme is simply
 ```js
 localStorage.setItem('theme', themeName);
 document.body.setAttribute('theme', themeName);
 ```
 
-View active theme on body tag:
+### View Active Theme
+View active theme on body tag
 ```html
 <body theme="themeName">
 ```
 
-Get active theme from body attribute:
+Get active theme from body attribute
 ```js
 document.body.getAttribute('theme')
 ```
 
-Get active theme from local storage:
+Get active theme from local storage
 ```js
 localStorage.getItem('theme');
 ```

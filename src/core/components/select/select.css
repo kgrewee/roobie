@@ -15,12 +15,13 @@
 
 .select-selected {
     background-color: var(--primary);
+    border-radius: var(--br2);
 }
 
 .is-selected,
 .select-items div:hover {
     background-color: var(--primary);
-    filter: brightness(130%);
+    filter: brightness(120%);
 }
 
 
@@ -29,11 +30,11 @@
 .select-selected:after {
     position: absolute;
     content: "";
-    top: 14px;
+    top: 16px;
     right: 10px;
     width: 0;
     height: 0;
-    border: 6px solid transparent;
+    border: 5px solid transparent;
     border-color: var(--t1) transparent transparent transparent;
 }
 
@@ -42,7 +43,7 @@
 
 .select-selected.select-active:after {
     border-color: transparent transparent var(--t1) transparent;
-    top: 7px;
+    top: 10px;
 }
 
 
@@ -67,4 +68,5 @@
     left: 0;
     right: 0;
     z-index: var(--z6);
+    border-radius: var(--br2);
 }

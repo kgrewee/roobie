@@ -1,16 +1,16 @@
 # Navbar
 Navigation bars of all shapes and sizes.  Requires JS.
 
-## Check
-To check for Navbars and create dynamic content.  Useful in SPA frameworks.  Roobie checks for Navbars on initial load but if the Navbar is loaded after, you must explicitly check.
-```js
-Navbar.check();
-```
-
-### TypeScript
-To use the Navbar class you must first declare it.
+## TypeScript
+To use the Navbar class in TypeScript you must declare it.
 ```ts
 declare var Navbar;
+```
+
+## Check
+To check for Navbars and create dynamic content.  Useful in SPA frameworks, not required for MPA most of the time.  Roobie checks for Navbars on initial load but if the Navbar is loaded after, you must explicitly check.
+```js
+Navbar.check();
 ```
 
 ### HTML

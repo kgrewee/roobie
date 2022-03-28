@@ -2,7 +2,7 @@
 then close all select boxes: */
 ready(() => {
     Select.check();
-    document.addEventListener("click", Select.closeAllSelect());
+    document.addEventListener("click", Select.closeAll());
 });
 class Select {
     static check() {
@@ -67,7 +67,7 @@ class Select {
             and open/close the current select box: */
             selectedItem.addEventListener("click", function(e) {
                 e.stopPropagation();
-                Select.closeAllSelect(this);
+                Select.closeAll(this);
                 this.nextSibling.classList.toggle("hide");
                 this.classList.toggle("select-active");
             });
@@ -77,7 +77,7 @@ class Select {
 
     /* A function that will close all select boxes in the document,
     except the current select box: */
-    static closeAllSelect(elmnt) {
+    static closeAll(elmnt) {
         var elements, y, i, xl, yl, arrNo = [];
         elements = document.getElementsByClassName("select-items");
         y = document.getElementsByClassName("select-selected");

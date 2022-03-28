@@ -1,5 +1,5 @@
 # Input
-Improved input styles from browser defaults.
+Clean and resposive user input.
 
 ## Basic
 <input type="text" class="input" placeholder="Name"></input>

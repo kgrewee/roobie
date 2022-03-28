@@ -1,6 +1,6 @@
 [theme="light"] {
     /*Base*/
-    --primary: rgba(51, 192, 173, 0.7);
+    --primary: rgb(21, 206, 166);
     --secondary: var(--bg4);
     /*Status*/
     --success: rgba(81, 190, 73, 0.7);

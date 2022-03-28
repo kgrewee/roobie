@@ -12,8 +12,8 @@ A minimalistic approach to web development.  Build an entire website without lea
 - CSS Themes
 - CSS Utilities
 - CSS Animations
-- CSS & JavaScript Components
-- JavaScript DOM Manipulation
+- CSS + JavaScript Components
+- JavaScript DOM Manipulation (Coming Soon)
 - Website Templates (Coming Soon)
 - Layout Generator (Coming Soon)
 

@@ -1,32 +1,40 @@
 .mrgha {
-    margin: 0 auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 .mrgh0 {
-    margin: 0 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 
 .mrgh1 {
-    margin: 0 var(--mrg1) !important;
+    margin-left: var(--mrg1) !important;
+    margin-right: var(--mrg1) !important;
 }
 
 .mrgh2,
 .mrgh {
-    margin: 0 var(--mrg2) !important;
+    margin-left: var(--mrg2) !important;
+    margin-right: var(--mrg2) !important;
 }
 
 .mrgh3 {
-    margin: 0 var(--mrg3) !important;
+    margin-left: var(--mrg3) !important;
+    margin-right: var(--mrg3) !important;
 }
 
 .mrgh4 {
-    margin: 0 var(--mrg4) !important;
+    margin-left: var(--mrg4) !important;
+    margin-right: var(--mrg4) !important;
 }
 
 .mrgh5 {
-    margin: 0 var(--mrg5) !important;
+    margin-left: var(--mrg5) !important;
+    margin-right: var(--mrg5) !important;
 }
 
 .mrgh6 {
-    margin: 0 var(--mrg6) !important;
+    margin-left: var(--mrg6) !important;
+    margin-right: var(--mrg6) !important;
 }

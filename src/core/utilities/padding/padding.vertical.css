@@ -1,32 +1,40 @@
 .padva {
-    padding: auto 0 !important;
+    padding-top: auto !important;
+    padding-bottom: auto !important;
 }
 
 .padv0 {
-    padding: 0 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .padv1 {
-    padding: var(--pad1) 0 !important;
+    padding-top: var(--pad1) !important;
+    padding-bottom: var(--pad1) !important;
 }
 
 .padv2,
 .padv {
-    padding: var(--pad2) 0 !important;
+    padding-top: var(--pad2) !important;
+    padding-bottom: var(--pad2) !important;
 }
 
 .padv3 {
-    padding: var(--pad3) 0 !important;
+    padding-top: var(--pad3) !important;
+    padding-bottom: var(--pad3) !important;
 }
 
 .padv4 {
-    padding: var(--pad4) 0 !important;
+    padding-top: var(--pad4) !important;
+    padding-bottom: var(--pad4) !important;
 }
 
 .padv5 {
-    padding: var(--pad5) 0 !important;
+    padding-top: var(--pad5) !important;
+    padding-bottom: var(--pad5) !important;
 }
 
 .padv6 {
-    padding: var(--pad6) 0 !important;
+    padding-top: var(--pad6) !important;
+    padding-bottom: var(--pad6) !important;
 }

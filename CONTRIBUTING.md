@@ -4,23 +4,20 @@ Contributions are always welcome.  Contribute anything that will make web develo
 ## Guidelines
 
 ### Branch from Develop
-Branch from `develop`.  We will not accept Pull Requests that originated from any other branches.
+Branch from `develop`.  We will not accept pull requests that originated from any other branches.
 
-### No dependencies
+### No Dependencies
 No external dependencies allowed.  You must write **Pure CSS and JavaScript** to contribute to Roobie.
 
 ### Minimalistic
 The less typing the better.  Get the point across with an abbreviation instead of word.
 
-### Demo
-Provide an HTML demo of your feature for review.
-
 ### Document
-Document your feature in Markdown.  Checkout the README.md for a starting point.
+Document your feature in Markdown.  Follow the current flow of the documentation.  This is where you will demo your feature.
 
-### Merge with Develop branch
-Pull and merge the `develop` branch into your branch to pickup any changes since you create your branch.
+### Merge with Develop
+Merge the `develop` branch into your branch to pickup any changes since you create your branch.  Make sure to pull develop before you merge.
 
-### Pull Request
+### Pull Request to Develop
 Create a pull request to the `develop` branch when you have completed all the other guidelines.
 

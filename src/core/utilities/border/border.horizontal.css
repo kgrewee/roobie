@@ -1,0 +1,35 @@
+.bdrh0 {
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.bdrh1 {
+    border-left: var(--bdr1) !important;
+    border-right: var(--bdr1) !important;
+}
+
+.bdrh2,
+.bdrh {
+    border-left: var(--bdr2) !important;
+    border-right: var(--bdr2) !important;
+}
+
+.bdrh3 {
+    border-left: var(--bdr3) !important;
+    border-right: var(--bdr3) !important;
+}
+
+.bdrh4 {
+    border-left: var(--bdr4) !important;
+    border-right: var(--bdr4) !important;
+}
+
+.bdrh5 {
+    border-left: var(--bdr5) !important;
+    border-right: var(--bdr5) !important;
+}
+
+.bdrh6 {
+    border-left: var(--bdr6) !important;
+    border-right: var(--bdr6) !important;
+}

@@ -1,0 +1,28 @@
+.bdrt0 {
+    border-top: none !important;
+}
+
+.bdrt1 {
+    border-top: var(--bdr1);
+}
+
+.bdrt2,
+.bdrt {
+    border-top: var(--bdr2);
+}
+
+.bdrt3 {
+    border-top: var(--bdr3);
+}
+
+.bdrt4 {
+    border-top: var(--bdr4);
+}
+
+.bdrt5 {
+    border-top: var(--bdr5);
+}
+
+.bdrt6 {
+    border-top: var(--bdr6);
+}

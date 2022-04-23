@@ -1,0 +1,376 @@
+.aln-cnt-center {
+    align-content: center;
+}
+
+.aln-cnt-between {
+    align-content: space-between;
+}
+
+.aln-cnt-around {
+    align-content: space-around;
+}
+
+.aln-cnt-start {
+    align-content: flex-start;
+}
+
+.aln-cnt-end {
+    align-content: flex-end;
+}
+
+.aln-cnt-base {
+    align-content: baseline;
+}
+
+.aln-cnt-stretch {
+    align-content: stretch;
+}.aln-center {
+    align-items: center;
+}
+
+.aln-between {
+    align-items: space-between;
+}
+
+.aln-around {
+    align-items: space-around;
+}
+
+.aln-start {
+    align-items: flex-start;
+}
+
+.aln-end {
+    align-items: flex-end;
+}
+
+.aln-base {
+    align-items: baseline;
+}
+
+.aln-stretch {
+    align-items: stretch;
+}.aln-self-center {
+    align-self: center;
+}
+
+.aln-self-between {
+    align-self: space-between;
+}
+
+.aln-self-around {
+    align-self: space-around;
+}
+
+.aln-self-start {
+    align-self: flex-start;
+}
+
+.aln-self-end {
+    align-self: flex-end;
+}
+
+.aln-self-base {
+    align-self: baseline;
+}
+
+.aln-self-stretch {
+    align-self: stretch;
+}.diva,
+.div10,
+.div20,
+.div25,
+.div33,
+.div40,
+.div50,
+.div60,
+.div66,
+.div75,
+.div80,
+.div90,
+.div100 {
+    height: auto;
+    padding: var(--pad2);
+}
+
+.diva {
+    width: auto;
+}
+
+.div10 {
+    width: 10%;
+}
+
+.div20 {
+    width: 20%;
+}
+
+.div25 {
+    width: 25%;
+}
+
+.div33 {
+    width: 33%;
+}
+
+.div40 {
+    width: 40%;
+}
+
+.div50 {
+    width: 50%;
+}
+
+.div60 {
+    width: 60%;
+}
+
+.div66 {
+    width: 66%;
+}
+
+.div75 {
+    width: 75%;
+}
+
+.div80 {
+    width: 80%;
+}
+
+.div90 {
+    width: 90%;
+}
+
+.div100 {
+    width: 100%;
+}
+
+.div {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 800px) {
+    .diva,
+    .div10,
+    .div20,
+    .div25,
+    .div33,
+    .div40,
+    .div50,
+    .div60,
+    .div66,
+    .div75,
+    .div80,
+    .div90,
+    .div100,
+    div {
+        width: 100%;
+        padding: 0;
+    }
+}/* Column */
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.colr {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+/* Row */
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.rowr {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.show {
+    display: inline-flex;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* Base */
+
+.flx {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.blk {
+    display: block;
+}
+
+.inl {
+    display: inline;
+}
+
+.inl-blk {
+    display: inline-block;
+}
+
+.inl-flx {
+    display: inline-flex;
+}.wrp {
+    flex-wrap: wrap;
+}
+
+.wrpr {
+    flex-wrap: wrap-reverse;
+}
+
+.wrp0 {
+    flex-wrap: nowrap;
+}.fltl {
+    float: left;
+}
+
+.fltr {
+    float: right;
+}
+
+.flt0 {
+    float: none;
+}
+
+.flti {
+    float: inherit;
+}.hta {
+    height: auto !important;
+}
+
+.ht10 {
+    height: 10% !important;
+}
+
+.ht20 {
+    height: 20% !important;
+}
+
+.ht25 {
+    height: 25% !important;
+}
+
+.ht33 {
+    height: 33% !important;
+}
+
+.ht40 {
+    height: 40% !important;
+}
+
+.ht50 {
+    height: 50% !important;
+}
+
+.ht60 {
+    height: 60% !important;
+}
+
+.ht66 {
+    height: 66% !important;
+}
+
+.ht75 {
+    height: 75% !important;
+}
+
+.ht80 {
+    height: 80% !important;
+}
+
+.ht90 {
+    height: 90% !important;
+}
+
+.ht100,
+.ht {
+    height: 100% !important;
+}.jst-center {
+    justify-content: center;
+}
+
+.jst-between {
+    justify-content: space-between;
+}
+
+.jst-around {
+    justify-content: space-around;
+}
+
+.jst-start {
+    justify-content: flex-start;
+}
+
+.jst-end {
+    justify-content: flex-end;
+}
+
+.jst-base {
+    justify-content: baseline;
+}
+
+.jst-stretch {
+    justify-content: stretch;
+}.jst-self-center {
+    justify-self: center;
+}
+
+.jst-self-between {
+    justify-self: space-between;
+}
+
+.jst-self-around {
+    justify-self: space-around;
+}
+
+.jst-self-start {
+    justify-self: flex-start;
+}
+
+.jst-self-end {
+    justify-self: flex-end;
+}
+
+.jst-self-base {
+    justify-self: baseline;
+}
+
+.jst-self-stretch {
+    justify-self: stretch;
+}.order-first {
+    order: -1;
+}.sticky {
+    position: sticky;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.static {
+    position: static;
+}

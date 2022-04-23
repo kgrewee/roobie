@@ -1,23 +1,6 @@
 # Carousel
 Interactive slider full of content.  Requires JS.
 
-## TypeScript
-To use the Carousel class in TypeScript you must declare it.
-```ts
-declare var Carousel;
-```
-
-## Check
-To check for Carousels and create dynamic content.  Useful in SPA frameworks, not required for MPA most of the time.  Roobie checks for Carousels on initial load but if the Carousel is loaded after, you must explicitly check.
-```js
-Carousel.check();
-```
-
-### HTML
-To use HTML to check for the Carousels, add an `iframe` to the bottom of your HTML where the Carousel resides.
-```html
-<iframe onload="Carousel.check()"></iframe>
-```
 ## Basic
 <div id="carouselBasic" class="carousel" style="height: 350px;">
     <div class="carousel-slide">
@@ -131,5 +114,24 @@ To use HTML to check for the Carousels, add an `iframe` to the bottom of your HT
         <span index="2"></span>
     </div>
 </div>
+```
+## Check for Carousels
+To check for Carousels and create dynamic content.  Useful in SPA frameworks, not required for MPA most of the time.  Roobie checks for Carousels on initial page load, but if the Carousel is loaded after you must explicitly check for it be found and work properly.
+
+### TypeScript
+To use the Carousel class in TypeScript you must declare it.
+```ts
+declare var Carousel;
+```
+
+### Check Function
+```js
+Carousel.check();
+```
+
+### HTML
+To use HTML to check for Carousels, add an `iframe` to the bottom of your HTML where the Carousel resides.
+```html
+<iframe onload="Carousel.check()"></iframe>
 ```
 <iframe onload="Carousel.check()"></iframe>

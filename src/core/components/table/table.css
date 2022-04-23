@@ -1,11 +1,27 @@
 .table {
-    width: 100%;
+    width: auto !important;
+    border: var(--bdr1);
+}
+
+.table th,
+.table tr,
+.table td {
+    border: none;
 }
 
 .table th {
     color: var(--t1);
+    background-color: var(--bg4);
 }
 
 .table td {
     color: var(--t3);
+}
+
+.table tr:nth-child(even) {
+    background-color: var(--bg1);
+}
+
+.table tr:nth-child(odd) {
+    background-color: var(--bg2);
 }

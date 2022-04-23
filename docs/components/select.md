@@ -1,24 +1,6 @@
 # Select
 Select from a list of items.  Requires JS.
 
-## TypeScript
-To use the Select class in TypeScript you must declare it.
-```ts
-declare var Select;
-```
-
-## Check
-To check for Selects and create dynamic content.  Useful in SPA frameworks, not required for MPA most of the time.  Roobie checks for Selects on initial load but if the Select is loaded after, you must explicitly check.
-```js
-Select.check();
-```
-
-### HTML
-To use HTML to check for the Selects, add an `iframe` to the bottom of your HTML where the Select resides.
-```html
-<iframe onload="Select.check()"></iframe>
-```
-
 ## Basic
 <div class="select z3">
     <select>
@@ -39,4 +21,25 @@ To use HTML to check for the Selects, add an `iframe` to the bottom of your HTML
     </select>
 </div>
 ```
+
+## Check for Selects
+To check for Selects and create dynamic content.  Useful in SPA frameworks, not required for MPA most of the time.  Roobie checks for Selects on initial page load, but if the Select is loaded after you must explicitly check for it be found and work properly.
+
+### TypeScript
+To use the Select class in TypeScript you must declare it.
+```ts
+declare var Select;
+```
+
+### Check Function
+```js
+Select.check();
+```
+
+### HTML
+To use HTML to check for Selects, add an `iframe` to the bottom of your HTML where the Select resides.
+```html
 <iframe onload="Select.check()"></iframe>
+```
+<iframe onload="Select.check()"></iframe>
+

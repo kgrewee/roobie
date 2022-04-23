@@ -1,24 +1,6 @@
 # Navbar
 Navigation bars of all shapes and sizes.  Requires JS.
 
-## TypeScript
-To use the Navbar class in TypeScript you must declare it.
-```ts
-declare var Navbar;
-```
-
-## Check
-To check for Navbars and create dynamic content.  Useful in SPA frameworks, not required for MPA most of the time.  Roobie checks for Navbars on initial load but if the Navbar is loaded after, you must explicitly check.
-```js
-Navbar.check();
-```
-
-### HTML
-To use HTML to check for the Navbars, add an `iframe` to the bottom of your HTML where the Navbar resides.
-```html
-<iframe onload="Navbar.check()"></iframe>
-```
-
 ## Horizontal
 <nav class="nav-row jst-between aln-center bdr1">
     <div class="row aln-center">
@@ -296,4 +278,25 @@ To use HTML to check for the Navbars, add an `iframe` to the bottom of your HTML
     </div>
 </nav>
 ```
+
+## Check for Navbars
+To check for Navbars and create dynamic content.  Useful in SPA frameworks, not required for MPA most of the time.  Roobie checks for Navbars on initial page load, but if the Navbar is loaded after you must explicitly check for it be found and work properly.
+
+### TypeScript
+To use the Navbar class in TypeScript you must declare it.
+```ts
+declare var Navbar;
+```
+
+### Check Function
+```js
+Navbar.check();
+```
+
+### HTML
+To use HTML to check for Navbars, add an `iframe` to the bottom of your HTML where the Navbar resides.
+```html
 <iframe onload="Navbar.check()"></iframe>
+```
+<iframe onload="Navbar.check()"></iframe>
+

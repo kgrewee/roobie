@@ -22,7 +22,7 @@
     "main": "dist/roobie.min.js",
     "scripts": {
         "dry": "npm publish --dry-run",
-        "package": "npm-run-all build bundle minify copy docs layout components animations utilities themes",
+        "package": "npm-run-all build bundle copy docs layout components animations utilities themes minify",
         "build": "npm-run-all build:css build:js",
         "build:css": "cat src/core/**/*.css src/core/**/**/*.css  > dist/roobie.css",
         "build:js": "cat src/core/**/*.js src/core/**/**/*.js  > dist/roobie.js",

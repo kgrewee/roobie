@@ -32,6 +32,7 @@
   * [Spacer](utilities/spacer.md)
   * [Text Align](utilities/text-align.md)
   * [Text Decoration](utilities/text-decoration.md)
+  * [Text Shadow](utilities/text-shadow.md)
   * [Visibility](utilities/visibility.md)
   * [Z Index](utilities/z-index.md)
 

@@ -96,4 +96,11 @@
     --box4: 0 0 3px 3px rgb(17, 17, 17, .3);
     --box5: 0 0 4px 4px rgb(17, 17, 17, .3);
     --box6: 0 0 5px 5px rgb(17, 17, 17, .3);
+    /*Text Shadow*/
+    --txts1: 1px 1px rgb(17, 17, 17, .1);
+    --txts2: 2px 2px rgb(17, 17, 17, .2);
+    --txts3: 3px 3px rgb(17, 17, 17, .2);
+    --txts4: 3px 3px rgb(17, 17, 17, .3);
+    --txts5: 4px 4px rgb(17, 17, 17, .3);
+    --txts6: 5px 5px rgb(17, 17, 17, .3);
 }

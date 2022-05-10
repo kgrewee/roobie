@@ -4356,6 +4356,33 @@ select:focus {
     text-align: right;
 }.txtd0 {
     text-decoration: none;
+}.txts0 {
+    text-shadow: none !important;
+}
+
+.txts1 {
+    text-shadow: var(--txts1) !important;
+}
+
+.txts2,
+.txts {
+    text-shadow: var(--txts2) !important;
+}
+
+.txts3 {
+    text-shadow: var(--txts3) !important;
+}
+
+.txts4 {
+    text-shadow: var(--txts4) !important;
+}
+
+.txts5 {
+    text-shadow: var(--txts5) !important;
+}
+
+.txts6 {
+    text-shadow: var(--txts6) !important;
 }.visible {
     visibility: visible;
 }

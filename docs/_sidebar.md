@@ -32,6 +32,7 @@
   * [Spacer](utilities/spacer.md)
   * [Text Align](utilities/text-align.md)
   * [Text Decoration](utilities/text-decoration.md)
+  * [Text Shadow](utilities/text-shadow.md)
   * [Visibility](utilities/visibility.md)
   * [Z Index](utilities/z-index.md)
 
@@ -40,6 +41,7 @@
   * [Bounce](animations/bounce.md)
   * [Fade](animations/fade.md)
   * [Flip](animations/flip.md)
+  * [Infinite](animations/infinite.md)
   * [Misc](animations/misc.md)
   * [Slide](animations/slide.md)
   * [Zoom](animations/zoom.md)

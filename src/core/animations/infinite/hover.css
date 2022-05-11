@@ -1,0 +1,43 @@
+@keyframes hoverh {
+    0% {
+        transform: translateX(0)
+    }
+    25% {
+        transform: translateX(-100px)
+    }
+    50% {
+        transform: translateX(0)
+    }
+    75% {
+        transform: translateX(100px)
+    }
+    100% {
+        transform: translateX(0)
+    }
+}
+
+._hoverh {
+    animation: hoverh 30s linear infinite;
+}
+
+@keyframes hoverv {
+    0% {
+        transform: translateY(0)
+    }
+    25% {
+        transform: translateY(-100px)
+    }
+    50% {
+        transform: translateY(0)
+    }
+    75% {
+        transform: translateY(100px)
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+
+._hoverv {
+    animation: hoverv 30s linear infinite;
+}

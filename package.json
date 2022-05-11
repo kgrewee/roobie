@@ -1,6 +1,6 @@
 {
     "name": "roobie",
-    "version": "0.4.6",
+    "version": "0.4.7",
     "description": "Minimalistic CSS and JavaScript framework.",
     "author": "Kyle Grewe",
     "repository": {
@@ -22,13 +22,17 @@
     "main": "dist/roobie.min.js",
     "scripts": {
         "dry": "npm publish --dry-run",
-        "package": "npm-run-all build bundle copy docs layout components animations utilities themes minify",
+        "package": "npm-run-all build bundle copy layout components animations utilities themes minify docs:move",
         "build": "npm-run-all build:css build:js",
         "build:css": "cat src/core/**/*.css src/core/**/**/*.css  > dist/roobie.css",
         "build:js": "cat src/core/**/*.js src/core/**/**/*.js  > dist/roobie.js",
         "bundle": "npm-run-all bundle:css bundle:js",
         "bundle:css": "cat src/**/*.css src/**/**/*.css src/**/**/**/*.css  > dist/roobie.bundle.css",
         "bundle:js": "cat src/**/**/*.js src/**/**/**/*.js  > dist/roobie.bundle.js",
+        "copy": "npm-run-all copy:themes copy:icons copy:readme",
+        "copy:themes": "cp -r src/themes/ dist/",
+        "copy:icons": "cp -r src/icons/ dist/",
+        "copy:readme": "cp README.md docs/",
         "layout": "npm-run-all layout:css",
         "layout:css": "cat src/core/layout/*.css > dist/roobie.layout.css",
         "components": "npm-run-all components:css components:js",
@@ -42,12 +46,8 @@
         "themes": "npm-run-all themes:css",
         "themes:css": "cat src/themes/*.css > dist/roobie.themes.css",
         "minify": "node minify.js",
-        "copy": "npm-run-all copy:themes copy:icons",
-        "copy:themes": "cp -r src/themes/ dist/",
-        "copy:icons": "cp -r src/icons/ dist/",
-        "docs": "npm-run-all docs:move",
+        "docs": "cd docs && python3 -m http.server 3000",
         "docs:move": "cp dist/roobie.bundle.css docs/includes/ && cp dist/roobie.bundle.js docs/includes/ && cp -r src/icons/ docs/includes/",
-        "docs:serve": "cd docs && python3 -m http.server 3000",
         "prepare": "husky install"
     },
     "devDependencies": {

@@ -1,10 +1,10 @@
-# Roobie <small>0.4.6</small>
+# Roobie <small>0.4.7</small>
 
-> Minimalistic CSS & JavaScript framework
+> Easily build maintainable web & mobile applications
 
 - No external dependencies
-- Reduce custom code & code cleanup
-- Increase maintainability & development speed
+- 100s of CSS classes
+- Pre-built themes
 
 [GitHub](https://github.com/kgrewee/roobie)
 [Feedback](https://github.com/kgrewee/roobie/issues)

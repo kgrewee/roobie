@@ -1,4 +1,5 @@
 # Misc
+Animations that don't fit into any other category.
 
 ## Classes
 ```html

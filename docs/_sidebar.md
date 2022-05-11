@@ -41,6 +41,7 @@
   * [Bounce](animations/bounce.md)
   * [Fade](animations/fade.md)
   * [Flip](animations/flip.md)
+  * [Infinite](animations/infinite.md)
   * [Misc](animations/misc.md)
   * [Slide](animations/slide.md)
   * [Zoom](animations/zoom.md)

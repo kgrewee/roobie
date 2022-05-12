@@ -1152,94 +1152,6 @@
 ._fadeout {
     animation-name: fadeout;
     animation-duration: var(--animation-duration);
-}@keyframes flipoutx {
-    from {
-        transform: perspective(400px);
-    }
-    30% {
-        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-        opacity: 1;
-    }
-    to {
-        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-        opacity: 0;
-    }
-}
-
-._flipoutx {
-    animation-duration: calc(var(--animation-duration) * 0.75);
-    animation-name: flipoutx;
-    backface-visibility: visible !important;
-}@keyframes flipouty {
-    from {
-        transform: perspective(400px);
-    }
-    30% {
-        transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
-        opacity: 1;
-    }
-    to {
-        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-        opacity: 0;
-    }
-}
-
-._flipouty {
-    animation-duration: calc(var(--animation-duration) * 0.75);
-    backface-visibility: visible !important;
-    animation-name: flipouty;
-}@keyframes flipx {
-    from {
-        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-        animation-timing-function: ease-in;
-        opacity: 0;
-    }
-    40% {
-        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-        animation-timing-function: ease-in;
-    }
-    60% {
-        transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-        opacity: 1;
-    }
-    80% {
-        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-    }
-    to {
-        transform: perspective(400px);
-    }
-}
-
-._flipx {
-    backface-visibility: visible !important;
-    animation-name: flipx;
-    animation-duration: var(--animation-duration);
-}@keyframes flipy {
-    from {
-        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-        animation-timing-function: ease-in;
-        opacity: 0;
-    }
-    40% {
-        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
-        animation-timing-function: ease-in;
-    }
-    60% {
-        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
-        opacity: 1;
-    }
-    80% {
-        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
-    }
-    to {
-        transform: perspective(400px);
-    }
-}
-
-._flipy {
-    backface-visibility: visible !important;
-    animation-name: flipy;
-    animation-duration: var(--animation-duration);
 }@keyframes flip {
     from {
         transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
@@ -1267,6 +1179,98 @@
     backface-visibility: visible;
     animation-name: flip;
     animation-duration: var(--animation-duration);
+}@keyframes fliph {
+    from {
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    40% {
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        animation-timing-function: ease-in;
+    }
+    60% {
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;
+    }
+    80% {
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+    to {
+        transform: perspective(400px);
+    }
+}
+
+._fliph {
+    backface-visibility: visible !important;
+    animation-name: fliph;
+    animation-duration: var(--animation-duration);
+}
+
+@keyframes flipouth {
+    from {
+        transform: perspective(400px);
+    }
+    30% {
+        transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+        opacity: 1;
+    }
+    to {
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        opacity: 0;
+    }
+}
+
+._flipouth {
+    animation-duration: calc(var(--animation-duration) * 0.75);
+    backface-visibility: visible !important;
+    animation-name: flipouth;
+}@keyframes flipv {
+    from {
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    40% {
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        animation-timing-function: ease-in;
+    }
+    60% {
+        transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        opacity: 1;
+    }
+    80% {
+        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+    to {
+        transform: perspective(400px);
+    }
+}
+
+._flipv {
+    backface-visibility: visible !important;
+    animation-name: flipv;
+    animation-duration: var(--animation-duration);
+}
+
+@keyframes flipoutv {
+    from {
+        transform: perspective(400px);
+    }
+    30% {
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        opacity: 1;
+    }
+    to {
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        opacity: 0;
+    }
+}
+
+._flipoutv {
+    animation-duration: calc(var(--animation-duration) * 0.75);
+    animation-name: flipoutv;
+    backface-visibility: visible !important;
 }@keyframes hoverh {
     0% {
         transform: translateX(0)

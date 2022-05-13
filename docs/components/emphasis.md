@@ -64,3 +64,28 @@ Emphasize a block of content.
     </span>
 </div>
 ```
+
+## Build Your Own
+<div class="col col-spacer1">
+    <span class="bg2 br3 pad padl4 bdrl5 bdr-indigo">
+        <h3 class="indigo">Indigo</h3>
+        <p>Easily customize your own using utilities.</p>
+    </span>
+    <span class="bg2 br1 pad3 bdrl3 bdr-blue2">
+        <h3 class="blue2">Violet</h3>
+        <p>Easily customize your own using utilities.</p>
+    </span>
+</div>
+
+```html
+<div class="col col-spacer1">
+    <span class="bg2 br3 pad padl4 bdrl5 bdr-indigo">
+        <h3 class="indigo">Indigo</h3>
+        <p>Easily customize your own using utilities.</p>
+    </span>
+    <span class="bg2 br1 pad3 bdrl3 bdr-blue2">
+        <h3 class="blue2">Violet</h3>
+        <p>Easily customize your own using utilities.</p>
+    </span>
+</div>
+```

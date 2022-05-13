@@ -2021,10 +2021,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
     border-radius: var(--br3);
     padding: var(--pad4);
     margin: var(--mrg1);
+    background-color: var(--bg2);
 }
 
 .alert:after {
@@ -2321,6 +2321,40 @@
 .drp-cnt a:hover {
     background-color: var(--bg2);
     cursor: pointer;
+}.emphasis {
+    background-color: var(--bg2);
+    color: var(--t2);
+    border-radius: var(--br2);
+    padding: var(--pad4);
+    margin: var(--mrg1);
+    border-left: 5px solid var(--bg3);
+}
+
+
+/* Modifiers */
+
+.emphasis-primary {
+    border-color: var(--primary);
+}
+
+.emphasis-secondary {
+    border-color: var(--secondary);
+}
+
+.emphasis-success {
+    border-color: var(--success);
+}
+
+.emphasis-warning {
+    border-color: var(--warning);
+}
+
+.emphasis-danger {
+    border-color: var(--danger);
+}
+
+.emphasis-info {
+    border-color: var(--info);
 }.icon {
     width: 20px;
     height: 20px;

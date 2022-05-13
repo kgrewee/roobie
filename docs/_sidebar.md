@@ -54,6 +54,7 @@
   * [Carousel](components/carousel.md)
   * [Chip](components/chip.md)
   * [Dropdown](components/dropdown.md)
+  * [Emphasis](components/emphasis.md)
   * [Input](components/input.md)
   * [List](components/list.md)
   * [Navbar](components/navbar.md)

@@ -2325,7 +2325,7 @@
     background-color: var(--bg2);
     color: var(--t2);
     border-radius: var(--br2);
-    padding: var(--pad2) var(--pad4);
+    padding: var(--pad4);
     margin: var(--mrg1);
     border-left: 5px solid var(--bg3);
 }

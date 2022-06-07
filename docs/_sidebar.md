@@ -1,17 +1,15 @@
 * <span class="doc-heading" onclick="toggleNextSibling(this)">Getting Started</span>
   * [Welcome to Roobie](README.md)
-  * [Choose an install method](getting-started/install.md)
-  * [Minified distribution](getting-started/minified.md)
-  * [Bundle distribution](getting-started/bundle.md)
-  * [Modular distribution](getting-started/modular.md)
+  * [Installation](getting-started/install.md)
+  * [Distributions](getting-started/dist.md)
 
 * <span class="doc-heading" onclick="toggleNextSibling(this)">Themes</span>
   * [Intro to theming](themes/intro.md)
   * [Required root styles](themes/root.md)
   * [Light theme](themes/light.md)
   * [Dark theme](themes/dark.md)
-  * [Customize your theme](themes/custom.md)
   * [Switch themes](themes/switch.md)
+  * [Custom themes](themes/custom.md)
 
 * <span class="doc-heading" onclick="toggleNextSibling(this)">Layout</span>
   * [Container](layout/container.md)

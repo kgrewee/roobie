@@ -71,4 +71,4 @@
   * [Toggle](components/toggle.md)
   * [Tooltip](components/tooltip.md)
 
-<iframe class="hidden" onload="setHeadings()"></iframe>
+<iframe class="hide" onload="setHeadings()"></iframe>

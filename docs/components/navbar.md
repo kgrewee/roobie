@@ -296,7 +296,7 @@ Navbar.check();
 ### HTML
 To use HTML to check for Navbars, add an `iframe` to the bottom of your HTML where the Navbar resides.
 ```html
-<iframe onload="Navbar.check()"></iframe>
+<iframe class="hide" onload="Navbar.check()"></iframe>
 ```
-<iframe onload="Navbar.check()"></iframe>
+<iframe class="hide" onload="Navbar.check()"></iframe>
 

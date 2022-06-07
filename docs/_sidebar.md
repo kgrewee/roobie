@@ -1,8 +1,15 @@
 * <span class="doc-heading" onclick="toggleNextSibling(this)">Getting Started</span>
-  * [Introduction](README.md)
+  * [Intro to Roobie](README.md)
   * [Install](getting-started/install.md)
   * [Setup](getting-started/setup.md)
-  * [Themes](getting-started/themes.md)
+
+* <span class="doc-heading" onclick="toggleNextSibling(this)">Themes</span>
+  * [Intro to theming in Roobie](themes/intro.md)
+  * [Required root styles](themes/root.md)
+  * [Light theme](themes/light.md)
+  * [Dark theme](themes/dark.md)
+  * [Customize your theme](themes/custom.md)
+  * [Switch themes](themes/switch.md)
 
 * <span class="doc-heading" onclick="toggleNextSibling(this)">Layout</span>
   * [Container](layout/container.md)

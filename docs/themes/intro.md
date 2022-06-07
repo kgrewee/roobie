@@ -1,0 +1,2 @@
+# Themes
+Themes are required for Roobie to function properly.  Create copies of `root.css`, `light.css` and `dark.css` from your install directory. Include them in your project instead of using the defaults to persist your themes or use a bundle distribution that includes the themes.  Make sure to include the theme files in your project or **things won't work correctly**.  Every CSS class in Roobie is based on a theme variable.

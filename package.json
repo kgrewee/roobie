@@ -22,32 +22,64 @@
     "main": "dist/roobie.min.js",
     "scripts": {
         "dry": "npm publish --dry-run",
-        "package": "npm-run-all build bundle copy layout components animations utilities themes minify docs:move",
-        "build": "npm-run-all build:css build:js",
-        "build:css": "cat src/core/**/*.css src/core/**/**/*.css  > dist/roobie.css",
-        "build:js": "cat src/core/**/*.js src/core/**/**/*.js  > dist/roobie.js",
-        "bundle": "npm-run-all bundle:css bundle:js",
-        "bundle:css": "cat src/**/*.css src/**/**/*.css src/**/**/**/*.css  > dist/roobie.bundle.css",
-        "bundle:js": "cat src/**/**/*.js src/**/**/**/*.js  > dist/roobie.bundle.js",
-        "copy": "npm-run-all copy:themes copy:icons copy:readme",
+        "package": "npm-run-all build copy minify docs:move",
+
+        "copy": "npm-run-all copy:themes copy:icons",
         "copy:themes": "cp -r src/themes/ dist/",
         "copy:icons": "cp -r src/icons/ dist/",
-        "copy:readme": "cp README.md docs/",
-        "layout": "npm-run-all layout:css",
-        "layout:css": "cat src/core/layout/*.css > dist/roobie.layout.css",
-        "components": "npm-run-all components:css components:js",
-        "components:css": "cat src/core/components/**/*.css > dist/roobie.components.css",
-        "components:js": "cat src/core/components/**/*.js > dist/roobie.components.js",
-        "animations": "npm-run-all animations:css animations:js",
-        "animations:css": "cat src/core/animations/**/*.css > dist/roobie.animations.css",
-        "animations:js": "cat src/core/animations/*.js > dist/roobie.animations.js",
-        "utilities": "npm-run-all utilities:css",
-        "utilities:css": "cat src/core/utilities/**/*.css > dist/roobie.utilities.css",
-        "themes": "npm-run-all themes:css",
+
+        "build": "npm-run-all init layout components animations utilities themes manipulation logging",
+
+        "init": "npm-run-all init:css init:js",
+        "init:css": "> dist/roobie.css && > dist/roobie.bundle.css",
+        "init:js": "> dist/roobie.js && > dist/roobie.bundle.js",
+
+        "layout": "npm-run-all layout:css layout:min:css layout:bundle:css",
+        "layout:css": "cat src/layout/*.css > dist/roobie.layout.css",
+        "layout:min:css": "cat src/layout/*.css >> dist/roobie.css",
+        "layout:bundle:css": "cat src/layout/*.css >> dist/roobie.bundle.css",
+
+        "components": "npm-run-all components:css components:js components:min:css components:min:js components:bundle:css components:bundle:js",
+        "components:css": "cat src/components/**/*.css > dist/roobie.components.css",
+        "components:js": "cat src/components/**/*.js > dist/roobie.components.js",
+        "components:min:css": "cat src/components/**/*.css >> dist/roobie.css",
+        "components:min:js": "cat src/components/**/*.js >> dist/roobie.js",
+        "components:bundle:css": "cat src/components/**/*.css >> dist/roobie.bundle.css",
+        "components:bundle:js": "cat src/components/**/*.js >> dist/roobie.bundle.js",
+
+        "animations": "npm-run-all animations:css animations:js animations:min:css animations:min:js animations:bundle:css animations:bundle:js",
+        "animations:css": "cat src/animations/*.css src/animations/**/*.css  > dist/roobie.animations.css",
+        "animations:js": "cat src/animations/*.js > dist/roobie.animations.js",
+        "animations:min:css": "cat src/animations/*.css src/animations/**/*.css >> dist/roobie.css",
+        "animations:min:js": "cat src/animations/*.js >> dist/roobie.js",
+        "animations:bundle:css": "cat src/animations/*.css src/animations/**/*.css >> dist/roobie.bundle.css",
+        "animations:bundle:js": "cat src/animations/*.js >> dist/roobie.bundle.js",
+
+        "utilities": "npm-run-all utilities:css utilities:min:css utilities:bundle:css",
+        "utilities:css": "cat src/utilities/**/*.css > dist/roobie.utilities.css",
+        "utilities:min:css": "cat src/utilities/**/*.css >> dist/roobie.css",
+        "utilities:bundle:css": "cat src/utilities/**/*.css >> dist/roobie.bundle.css",
+
+        "themes": "npm-run-all themes:css themes:min:css themes:bundle:css",
         "themes:css": "cat src/themes/*.css > dist/roobie.themes.css",
+        "themes:min:css": "cat src/themes/*.css >> dist/roobie.css",
+        "themes:bundle:css": "cat src/themes/*.css >> dist/roobie.bundle.css",
+
+        "logging": "npm-run-all logging:js logging:min:js logging:bundle:js",
+        "logging:js": "cat src/logging/*.js > dist/roobie.logging.js",
+        "logging:min:js": "cat src/logging/*.js >> dist/roobie.js",
+        "logging:bundle:js": "cat src/logging/*.js >> dist/roobie.bundle.js",
+
+        "manipulation": "npm-run-all manipulation:js manipulation:min:js manipulation:bundle:js",
+        "manipulation:js": "cat src/manipulation/*.js > dist/roobie.manipulation.js",
+        "manipulation:min:js": "cat src/manipulation/*.js >> dist/roobie.js",
+        "manipulation:bundle:js": "cat src/manipulation/*.js >> dist/roobie.bundle.js",
+
         "minify": "node minify.js",
+
         "docs": "cd docs && python3 -m http.server 3000",
-        "docs:move": "cp dist/roobie.bundle.css docs/includes/ && cp dist/roobie.bundle.js docs/includes/ && cp -r src/icons/ docs/includes/",
+        "docs:move": "cp dist/roobie.bundle.css docs/includes/ && cp dist/roobie.bundle.js docs/includes/ && cp -r src/icons/ docs/includes/ && cp README.md docs/",
+
         "prepare": "husky install"
     },
     "devDependencies": {

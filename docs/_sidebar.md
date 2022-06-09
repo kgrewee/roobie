@@ -2,12 +2,10 @@
   * [Welcome to Roobie](README.md)
   * [Installation](getting-started/install.md)
   * [Distributions](getting-started/dist.md)
+  * [Angular](getting-started/angular.md)
 
 * <span class="doc-heading" onclick="toggleNextSibling(this)">Themes</span>
   * [Intro to theming](themes/intro.md)
-  * [Required root styles](themes/root.md)
-  * [Light theme](themes/light.md)
-  * [Dark theme](themes/dark.md)
   * [Switch themes](themes/switch.md)
   * [Custom themes](themes/custom.md)
 

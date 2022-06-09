@@ -1,10 +1,16 @@
 * <span class="doc-heading" onclick="toggleNextSibling(this)">Getting Started</span>
-  * [Introduction](README.md)
-  * [Install](getting-started/install.md)
-  * [Setup](getting-started/setup.md)
-  * [Themes](getting-started/themes.md)
+  * [Welcome to Roobie](README.md)
+  * [Installation](getting-started/install.md)
+  * [Distributions](getting-started/dist.md)
+  * [Angular](getting-started/angular.md)
+
+* <span class="doc-heading" onclick="toggleNextSibling(this)">Themes</span>
+  * [Intro to theming](themes/intro.md)
+  * [Switch themes](themes/switch.md)
+  * [Custom themes](themes/custom.md)
 
 * <span class="doc-heading" onclick="toggleNextSibling(this)">Layout</span>
+  * [Intro to layouts](layout/intro.md)
   * [Container](layout/container.md)
   * [Height](layout/height.md)
   * [Display](layout/display.md)
@@ -64,4 +70,4 @@
   * [Toggle](components/toggle.md)
   * [Tooltip](components/tooltip.md)
 
-<iframe class="hidden" onload="setHeadings()"></iframe>
+<iframe class="hide" onload="setHeadings()"></iframe>

@@ -39,7 +39,7 @@ Select.check();
 ### HTML
 To use HTML to check for Selects, add an `iframe` to the bottom of your HTML where the Select resides.
 ```html
-<iframe onload="Select.check()"></iframe>
+<iframe class="hide" onload="Select.check()"></iframe>
 ```
-<iframe onload="Select.check()"></iframe>
+<iframe class="hide" onload="Select.check()"></iframe>
 

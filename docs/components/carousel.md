@@ -132,6 +132,6 @@ Carousel.check();
 ### HTML
 To use HTML to check for Carousels, add an `iframe` to the bottom of your HTML where the Carousel resides.
 ```html
-<iframe onload="Carousel.check()"></iframe>
+<iframe class="hide" onload="Carousel.check()"></iframe>
 ```
-<iframe onload="Carousel.check()"></iframe>
+<iframe class="hide" onload="Carousel.check()"></iframe>

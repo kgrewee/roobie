@@ -1,0 +1,2 @@
+# Intro to layouts
+Roobie provides a number of CSS classes to help you create responsive layouts. Flexbox is used under the hood. If you are not familiar with flexbox, you will not be able to effectively style with Roobie. Visit [Flexbox Froggy](https://flexboxfroggy.com/) for practice. CSS classes are named closely to CSS properties to make them easier to remember.

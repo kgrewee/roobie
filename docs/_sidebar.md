@@ -10,6 +10,7 @@
   * [Custom themes](themes/custom.md)
 
 * <span class="doc-heading" onclick="toggleNextSibling(this)">Layout</span>
+  * [Intro to layouts](layout/intro.md)
   * [Container](layout/container.md)
   * [Height](layout/height.md)
   * [Display](layout/display.md)

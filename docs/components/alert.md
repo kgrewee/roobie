@@ -2,20 +2,26 @@
 Alert the user of an event that has occurred.
 
 ## Basic
-<span class="alert alert-primary">An event has occurred</span>
-<span class="alert alert-secondary">An event has occurred</span>
-<span class="alert alert-outline">An event has occurred</span>
-<span class="alert alert-success">An event has occurred</span>
-<span class="alert alert-warning">An event has occurred</span>
-<span class="alert alert-danger">An event has occurred</span>
-<span class="alert alert-info">An event has occurred</span>
+<div class="col">
+    <span class="alert">Base alert</span>
+    <span class="alert alert-primary">Primary alert</span>
+    <span class="alert alert-secondary">Secondary alert</span>
+    <span class="alert alert-outline">Outline alert</span>
+    <span class="alert alert-success">Success alert</span>
+    <span class="alert alert-warning">Warning alert</span>
+    <span class="alert alert-danger">Danger alert</span>
+    <span class="alert alert-info">Info alert</span>
+</div>
 
 ```html
-<span class="alert alert-primary">An event has occurred</span>
-<span class="alert alert-secondary">An event has occurred</span>
-<span class="alert alert-outline">An event has occurred</span>
-<span class="alert alert-success">An event has occurred</span>
-<span class="alert alert-warning">An event has occurred</span>
-<span class="alert alert-danger">An event has occurred</span>
-<span class="alert alert-info">An event has occurred</span>
+<div class="col">
+    <span class="alert">Base alert</span>
+    <span class="alert alert-primary">Primary alert</span>
+    <span class="alert alert-secondary">Secondary alert</span>
+    <span class="alert alert-outline">Outline alert</span>
+    <span class="alert alert-success">Success alert</span>
+    <span class="alert alert-warning">Warning alert</span>
+    <span class="alert alert-danger">Danger alert</span>
+    <span class="alert alert-info">Info alert</span>
+</div>
 ```

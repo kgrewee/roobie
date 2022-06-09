@@ -1,4 +1,4 @@
-@keyframes flipx {
+@keyframes flipv {
     from {
         transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
         animation-timing-function: ease-in;
@@ -20,8 +20,28 @@
     }
 }
 
-._flipx {
+._flipv {
     backface-visibility: visible !important;
-    animation-name: flipx;
+    animation-name: flipv;
     animation-duration: var(--animation-duration);
+}
+
+@keyframes flipoutv {
+    from {
+        transform: perspective(400px);
+    }
+    30% {
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        opacity: 1;
+    }
+    to {
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        opacity: 0;
+    }
+}
+
+._flipoutv {
+    animation-duration: calc(var(--animation-duration) * 0.75);
+    animation-name: flipoutv;
+    backface-visibility: visible !important;
 }

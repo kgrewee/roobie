@@ -128,7 +128,7 @@ Accordion.check();
 ### HTML
 To use HTML to check for Accordions, add an `iframe` to the bottom of your HTML where the Accordion resides.
 ```html
-<iframe onload="Accordion.check()"></iframe>
+<iframe class="hide" onload="Accordion.check()"></iframe>
 ```
-<iframe onload="Accordion.check()"></iframe>
+<iframe class="hide" onload="Accordion.check()"></iframe>
 

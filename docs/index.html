@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Roobie - Minimalistic CSS and JavaScript framework</title>
+    <title>Roobie - Easily build maintainable web & mobile applications with themes. 100s of pre-built CSS classes at your fingertips.</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
@@ -124,6 +124,10 @@
             color: var(--t5) !important;
         }
         
+        .sidebar-toggle {
+            width: auto !important;
+        }
+        
         li,
         em,
         strong,
@@ -171,13 +175,13 @@
     <script>
         window.$docsify = {
             name: 'Roobie',
-            coverpage: true,
+            coverpage: false,
             loadSidebar: true,
             alias: {
                 '/.*/_sidebar.md': '/_sidebar.md'
             },
             repo: 'https://github.com/kgrewee/roobie',
-            subMaxLevel: 4,
+            subMaxLevel: 2,
             auto2top: true,
             search: {
                 placeholder: 'Search docs',

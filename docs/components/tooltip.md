@@ -35,7 +35,7 @@ Tooltip.check();
 ### HTML
 To use HTML to check for Tooltips, add an `iframe` to the bottom of your HTML where the Tooltip resides.
 ```html
-<iframe onload="Tooltip.check()"></iframe>
+<iframe class="hide" onload="Tooltip.check()"></iframe>
 ```
-<iframe onload="Tooltip.check()"></iframe>
+<iframe class="hide" onload="Tooltip.check()"></iframe>
 

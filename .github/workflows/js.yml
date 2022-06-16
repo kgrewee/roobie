@@ -1,4 +1,4 @@
-name: JS Analysis
+name: JavaScript scan
 
 on:
   push:

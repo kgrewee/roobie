@@ -1,7 +1,7 @@
 name: Publish docs
 on:
   push:
-    branches: [main, develop]
+    branches: [main]
 jobs:
   ci:
     runs-on: ubuntu-latest

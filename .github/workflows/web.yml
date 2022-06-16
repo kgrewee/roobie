@@ -1,0 +1,19 @@
+name: Web Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          registry-url: https://registry.npmjs.org/
+      - run: sftp ${{secrets.hostgator_username}}@${{secrets.hostgator_ip}}
+      - run: ${{secrets.hostgator_password}}
+      - run: put -r docs/. public_html/
+      - run: exit

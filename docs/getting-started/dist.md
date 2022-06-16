@@ -20,7 +20,7 @@ It is recommended to copy the `roobie/dist/themes/` directory to your project to
 ```
 
 ## Bundle
-If you use internal themes, you will have to override Roobie default light and dark theme variables to change the default themes.  Sometimes this better than maintaining your own theme files.  Our theme variables may change in the future versions.  You can create your own themes alongside Roobie light and dark defaults.  See [Custom Themes](/getting-started/themes?id=custom-themes).
+If you use internal themes, you will have to override Roobie default light and dark theme variables to change the default themes.  Sometimes this better than maintaining your own theme files.  Our theme variables may change in the future versions.  You can create your own themes alongside Roobie light and dark defaults.  See [Custom Themes](/themes/custom).
 ```html
 <head>
     <title>Roobie</title>

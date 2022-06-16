@@ -1,13 +1,16 @@
-name: Docs
-
+name: Publish Docs
 on:
   push:
     branches: [main, develop]
-
 jobs:
-  web:
+  ci:
     runs-on: ubuntu-latest
     steps:
-      - run: sftp ${{secrets.web_user}}@${{secrets.web_ip}} | ${{secrets.web_pass}} | yes
-      - run: put -r docs/. public_html/
-      - run: exit
+      - uses: actions/checkout@v2
+      - name: Publish Docs
+        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        with:
+          ftp-server: ${{ secrets.web_ip }}
+          ftp-username: ${{ secrets.web_user }}
+          ftp-password: ${{ secrets.web_pass }}
+          local-dir: docs/*

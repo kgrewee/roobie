@@ -1,5 +1,5 @@
 # Custom Themes
-You can add more themes alongside the pre-built themes, just copy a theme CSS file as a starting point and change the CSS selector to reflect the name of your theme. You can more theme selectors inside one of the existing theme files. This can be useful for variations of a theme.  If your theme is in an external file, make sure to import it.
+You can add more themes alongside the pre-built themes, just copy a theme CSS file as a starting point and change the CSS selector to reflect the name of your theme. You can add more themes inside one of the existing theme files. This can be useful for variations of a theme.  If your theme is in an external file, make sure to import it.
 
 ## Adding more themes
 Example of adding 2 additional themes to `light.css`.

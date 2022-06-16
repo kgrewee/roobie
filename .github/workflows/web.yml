@@ -1,4 +1,4 @@
-name: Web Deploy
+name: Docs
 
 on:
   push:
@@ -8,7 +8,6 @@ jobs:
   web:
     runs-on: ubuntu-latest
     steps:
-      - run: sftp ${{secrets.web_user}}@${{secrets.web_ip}}
-      - run: ${{secrets.web_pass}}
+      - run: sftp ${{secrets.web_user}}@${{secrets.web_ip}} | ${{secrets.web_pass}}
       - run: put -r docs/. public_html/
       - run: exit

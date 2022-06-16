@@ -1,0 +1,14 @@
+name: Web Deploy
+
+on:
+  push:
+    branches: [main, develop]
+
+jobs:
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sftp ${{secrets.web_user}}@${{secrets.web_ip}}
+      - run: ${{secrets.web_pass}}
+      - run: put -r docs/. public_html/
+      - run: exit

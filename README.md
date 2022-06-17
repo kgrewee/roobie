@@ -2,7 +2,7 @@
 [![npm](https://badge.fury.io/js/roobie.svg)](https://badge.fury.io/js/roobie)
 ![publish npm](https://github.com/kgrewee/roobie/actions/workflows/npm.yml/badge.svg)
 ![publish docs](https://github.com/kgrewee/roobie/actions/workflows/docs.yml/badge.svg)
-![code scan](https://github.com/kgrewee/roobie/actions/workflows/js.yml/badge.svg)
+![js scan](https://github.com/kgrewee/roobie/actions/workflows/js.yml/badge.svg)
 
 Easily build maintainable web & mobile applications with themes. 100s of pre-built CSS classes at your fingertips. Tested, responsive & reusable. Reduce boilerplate code with a lightweight and easy to use API.  Reuse core CSS classes and JS functions instead of writing custom code.
 

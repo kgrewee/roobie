@@ -20,7 +20,7 @@ The default height for all containers is auto.
 ```
 
 ## Usage
-<div class="div row aln-start row-spacer" style="height: 350px">
+<div class="div row aln-start row-spacer" style="height: 350px !important">
     <div class="hta bdr1">Auto</div>
     <div class="ht10 bdr1">10%</div>
     <div class="ht20 bdr1">20%</div>
@@ -37,7 +37,7 @@ The default height for all containers is auto.
 </div>
 
 ```html
-<div class="div row aln-start row-spacer" style="height: 350px">
+<div class="div row aln-start row-spacer" style="height: 350px !important">
     <div class="hta bdr1">Auto</div>
     <div class="ht10 bdr1">10%</div>
     <div class="ht20 bdr1">20%</div>

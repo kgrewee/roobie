@@ -76,6 +76,9 @@
 
 .aln-self-stretch {
     align-self: stretch;
+}.center {
+    justify-content: center;
+    align-items: center;
 }.diva,
 .div10,
 .div20,
@@ -110,7 +113,7 @@
 }
 
 .div33 {
-    width: 33% !important;
+    width: 33.33% !important;
 }
 
 .div40 {
@@ -126,7 +129,7 @@
 }
 
 .div66 {
-    width: 66% !important;
+    width: 66.66% !important;
 }
 
 .div75 {
@@ -267,7 +270,7 @@
 }
 
 .ht33 {
-    height: 33% !important;
+    height: 33.33% !important;
 }
 
 .ht40 {
@@ -283,7 +286,7 @@
 }
 
 .ht66 {
-    height: 66% !important;
+    height: 66.66% !important;
 }
 
 .ht75 {
@@ -327,32 +330,6 @@
 
 .jst-stretch {
     justify-content: stretch;
-}.jst-self-center {
-    justify-self: center;
-}
-
-.jst-self-between {
-    justify-self: space-between;
-}
-
-.jst-self-around {
-    justify-self: space-around;
-}
-
-.jst-self-start {
-    justify-self: flex-start;
-}
-
-.jst-self-end {
-    justify-self: flex-end;
-}
-
-.jst-self-base {
-    justify-self: baseline;
-}
-
-.jst-self-stretch {
-    justify-self: stretch;
 }.order-first {
     order: -1;
 }.sticky {

@@ -1,8 +1,8 @@
 # Roobie
 [![npm](https://badge.fury.io/js/roobie.svg)](https://badge.fury.io/js/roobie)
-![Publish npm](https://github.com/kgrewee/roobie/actions/workflows/npm.yml/badge.svg)
-![Publish docs](https://github.com/kgrewee/roobie/actions/workflows/docs.yml/badge.svg)
-![JavaScript Scan](https://github.com/kgrewee/roobie/actions/workflows/js.yml/badge.svg)
+![publish npm](https://github.com/kgrewee/roobie/actions/workflows/npm.yml/badge.svg)
+![publish docs](https://github.com/kgrewee/roobie/actions/workflows/docs.yml/badge.svg)
+![js scan](https://github.com/kgrewee/roobie/actions/workflows/js.yml/badge.svg)
 
 Easily build maintainable web & mobile applications with themes. 100s of pre-built CSS classes at your fingertips. Tested, responsive & reusable. Reduce boilerplate code with a lightweight and easy to use API.  Reuse core CSS classes and JS functions instead of writing custom code.
 
@@ -16,8 +16,8 @@ Easily build maintainable web & mobile applications with themes. 100s of pre-bui
 
 > Modules
 
-- Layout: Create simple and responsive layouts with flexbox CSS helpers.
 - Themes: Use our pre-built themes or fork our template and create your own.
+- Layout: Create simple and responsive layouts with flexbox CSS helpers.
 - Utilities: CSS utilities to keep you where you belong, writing business logic in your HTML.
 - Animations: A variety of animations to deliver clean and dynamic content.
 - Components: Easy to use web components built with CSS & JavaScript.

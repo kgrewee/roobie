@@ -19,7 +19,7 @@ Example of adding 2 additional themes to `light.css`.
 //etc
 ```
 
-## Custom theme example
+## Custom themes example
 The following code creates 2 themes, commander and base. Not all the theme variables are shown. It is ideal to separate themes into different files under a common folder.
 ```css
 /* Ideally found in themes/commander.css */

@@ -5,12 +5,12 @@
   * [Angular](getting-started/angular.md)
 
 * <span class="doc-heading" onclick="toggleNextSibling(this)">Themes</span>
-  * [Intro to theming](themes/intro.md)
+  * [Themes intro](themes/intro.md)
   * [Switch themes](themes/switch.md)
   * [Custom themes](themes/custom.md)
 
 * <span class="doc-heading" onclick="toggleNextSibling(this)">Layout</span>
-  * [Intro to layouts](layout/intro.md)
+  * [Layout intro](layout/intro.md)
   * [Container](layout/container.md)
   * [Height](layout/height.md)
   * [Display](layout/display.md)
@@ -20,6 +20,7 @@
   * [Wrap](layout/wrap.md)
   * [Float](layout/float.md)
   * [Position](layout/position.md)
+  * [Combinations](layout/combos.md)
 
 * <span class="doc-heading" onclick="toggleNextSibling(this)">Utilities</span>
   * [Background Color](utilities/background-color.md)

@@ -20,6 +20,7 @@
   * [Wrap](layout/wrap.md)
   * [Float](layout/float.md)
   * [Position](layout/position.md)
+  * [Combinations](layout/combos.md)
 
 * <span class="doc-heading" onclick="toggleNextSibling(this)">Utilities</span>
   * [Background Color](utilities/background-color.md)

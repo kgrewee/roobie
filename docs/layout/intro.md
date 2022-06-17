@@ -76,7 +76,7 @@ Use containers everywhere. They provide conistent widths using percentages. Comb
 By default, Roobie flexbox helpers use nowrap. You must use the `wrp` class to wrap items to the next line.
 
 **Nowrap**
-<div class="div ht row jst-center" style="height: 100px">
+<div class="div ht row jst-center" style="height: 100px !important">
     <div class="div25 row jst-center aln-center bdr1 br txtc">25%</div>
     <div class="div25 row jst-center aln-center bdr1 br txtc">25%</div>
     <div class="div25 row jst-center aln-center bdr1 br txtc">25%</div>
@@ -86,7 +86,7 @@ By default, Roobie flexbox helpers use nowrap. You must use the `wrp` class to w
 </div>  
 
 ```html
-<div class="div ht row jst-center" style="height: 100px">
+<div class="div ht row jst-center" style="height: 100px !important">
     <div class="div25 row jst-center aln-center bdr1 br txtc">25%</div>
     <div class="div25 row jst-center aln-center bdr1 br txtc">25%</div>
     <div class="div25 row jst-center aln-center bdr1 br txtc">25%</div>
@@ -97,7 +97,7 @@ By default, Roobie flexbox helpers use nowrap. You must use the `wrp` class to w
 ```
 
 **Wrap**
-<div class="div ht row jst-center wrp" style="height: 100px">
+<div class="div ht row jst-center wrp" style="height: 100px !important">
     <div class="div25 row jst-center aln-center bdr1 br txtc">25%</div>
     <div class="div25 row jst-center aln-center bdr1 br txtc">25%</div>
     <div class="div25 row jst-center aln-center bdr1 br txtc">25%</div>
@@ -107,7 +107,7 @@ By default, Roobie flexbox helpers use nowrap. You must use the `wrp` class to w
 </div>
 
 ```html
-<div class="div ht row jst-center wrp" style="height: 100px">
+<div class="div ht row jst-center wrp" style="height: 100px !important">
     <div class="div25 row jst-center aln-center bdr1 br txtc">25%</div>
     <div class="div25 row jst-center aln-center bdr1 br txtc">25%</div>
     <div class="div25 row jst-center aln-center bdr1 br txtc">25%</div>

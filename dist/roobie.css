@@ -76,6 +76,9 @@
 
 .aln-self-stretch {
     align-self: stretch;
+}.center {
+    justify-content: center;
+    align-items: center;
 }.diva,
 .div10,
 .div20,
@@ -267,7 +270,7 @@
 }
 
 .ht33 {
-    height: 33% !important;
+    height: 33.33% !important;
 }
 
 .ht40 {
@@ -283,7 +286,7 @@
 }
 
 .ht66 {
-    height: 66% !important;
+    height: 66.66% !important;
 }
 
 .ht75 {

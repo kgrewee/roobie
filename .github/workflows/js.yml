@@ -1,4 +1,4 @@
-name: JavaScript scan
+name: js scan
 
 on:
   push:

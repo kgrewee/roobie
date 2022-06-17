@@ -1,13 +1,21 @@
 # Themes
-Roobie themes can be found in `dist/themes`. Themes are required for Roobie to function as expected. All classes in Roobie rely on theme variables. The main goal of Roobie is to reuse theme variables and CSS classes instead of writing custom code for each component. To effectively build with roobie, you should be aware of the CSS variables available and use them. You should never write custom colors or CSS variables in any component. Using theme variables gives you the power to customize your entire website by changing a theme.
+Roobie themes can be found in `dist/themes`. Themes are required for Roobie to function. The main goal of Roobie is to reuse theme variables and CSS classes instead of writing custom code for each component. To effectively build with Roobie, you should be aware of the CSS theme variables available and use them. Never write custom colors or CSS variables in any component. Using theme variables gives you the power to customize your entire website by changing a theme, or 1 line of code. Easily switch themes, and use as many themes as you want.
 
-## Theme files
-Create copies of `root.css`, `light.css` and `dark.css` from your install directory. Include them in your project instead of using the defaults to persist your themes. If you want to use the default themes, we recommend using the bundle distribution that includes the themes. You can use custom themes with any distribution.
+There are 2 required files:
+- **root.css**
+- **A roobie css theme**
 
-## Root Styles
-Root styles are always active. Most classes and variables in `root.css` are theme independent. You can use theme variables in root styles.  Modify them to change all themes.
+Roobie currently has 2 pre-built themes:
+- **Light theme (light.css)**
+- **Dark theme (dark.css)**
 
-* Root styles and the active theme have a bi-directional relationship. `root.css` and a `theme.css` file must be always be included. 
+Light theme is the default.
+
+## Copy themes to customize
+Create copies of `root.css`, `light.css` and `dark.css` from your install directory or [GitHub](https://github.com/kgrewee/roobie/tree/main/src/themes). Include them in your project instead of using the defaults to persist your themes. If you want to use the default themes, we recommend using the bundle distribution that includes themes. You can use custom themes with any distribution, discussed later.
+
+## Root styles are global
+Root styles are similar to a global stylesheet. Most classes and variables in `root.css` are theme independent. You can use theme variables in root styles because both a theme and root styles are required for Roobie to function.  Modify most variables to change all themes.
 ```css
 :root {
     --animation-duration: 1.5s;
@@ -122,7 +130,7 @@ p {
 ```
 
 ## Example theme
-Example of the Roobie light theme. You can edit these variables and make it your own. You can also create custom themes.
+Example of the Roobie light theme. You can edit these variables and make it your own. Add variables but **never** remove. Themes are the foundation of Roobie, the base variables are required.
 ```css
 [theme="light"] {
     /*Base*/

@@ -1,7 +1,7 @@
 {
     "name": "roobie",
-    "version": "0.4.10",
-    "description": "Minimalistic CSS and JavaScript framework.",
+    "version": "0.4.11",
+    "description": "A collection of CSS classes to keep you writing business logic in your HTML. Easily build maintainable web & mobile applications with 100s of pre-built CSS classes at your fingertips.",
     "author": "Kyle Grewe",
     "repository": {
         "type": "git",

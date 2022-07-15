@@ -71,23 +71,3 @@
     width: 100% !important;
     height: auto !important;
 }
-
-@media screen and (max-width: 800px) {
-    .diva,
-    .div10,
-    .div20,
-    .div25,
-    .div33,
-    .div40,
-    .div50,
-    .div60,
-    .div66,
-    .div75,
-    .div80,
-    .div90,
-    .div100,
-    div {
-        width: 100% !important;
-        padding: 0 !important;
-    }
-}

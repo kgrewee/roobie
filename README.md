@@ -4,10 +4,20 @@
 ![publish docs](https://github.com/kgrewee/roobie/actions/workflows/docs.yml/badge.svg)
 ![js scan](https://github.com/kgrewee/roobie/actions/workflows/js.yml/badge.svg)
 
-A collection of CSS classes to keep you writing business logic in your HTML. Easily build maintainable web & mobile applications with 100s of pre-built CSS classes at your fingertips. Never write boilerplate CSS classes with padding, margin, etc. ever again. Instead, favor utility CSS classes that are reusable. This makes HTML files bigger, but reduces code cleanup and stray code when removing content. Control all of your CSS variables from centralized themes for consistency throughout your web-apps and easily switch themes.
+A collection of CSS classes to keep you writing business logic in your HTML. Easily build maintainable web & mobile applications with 100s of pre-built CSS classes at your fingertips. Never write boilerplate CSS classes with padding, margin, etc. ever again. Instead, favor utility CSS classes that are reusable. This makes HTML files bigger, but reduces code cleanup and stray code when removing content. Control all of your CSS variables from centralized themes for consistency throughout your web-apps and easily switch themes. Increase maintainability and development speed.
 
-**A few examples to get you started:**
+## Modules
+- Themes: Use our pre-built themes or fork our template and create your own.
+- Layout: Create simple and responsive layouts with flexbox CSS helpers.
+- Utilities: CSS utilities to keep you where you belong, writing business logic in your HTML.
+- Animations: A variety of animations to deliver clean and dynamic content.
+- Components: Easy to use web components built with CSS & JavaScript.
+- Manipulation (Coming soon)
+- Icons (Coming soon)
 
+<br>
+
+## Examples
 100% width container with a centered row flexbox layout. The child elements each have a different font size.
 ```html
 <div class="div row center">
@@ -16,6 +26,8 @@ A collection of CSS classes to keep you writing business logic in your HTML. Eas
     <span class="fnts3">Roobie</span>
 </div>
 ```
+
+<br>
 
 100% width container with a row flexbox layout.  The child elements have a 2 intensity margin horizontally. The child elements each have 2 intensity padding.
 ```html
@@ -26,6 +38,8 @@ A collection of CSS classes to keep you writing business logic in your HTML. Eas
 </div>
 ```
 
+<br>
+
 33% width container.  The child elements each have a different vertical margin (top and bottom). The last child has a left border 2 intensity with blue 2 intensity.
 ```html
 <div class="div33">
@@ -34,6 +48,8 @@ A collection of CSS classes to keep you writing business logic in your HTML. Eas
     <span class="mrgv3 bdrl2 bdr-blue2">Roobie</span>
 </div>
 ```
+
+<br>
 
 50% width container with a vertically centered and horizontally end column flexbox layout. The child elements each have a different font weight.
 ```html
@@ -44,7 +60,9 @@ A collection of CSS classes to keep you writing business logic in your HTML. Eas
 </div>
 ```
 
-Theme variable snippet.
+<br>
+
+Theme variables snippet.
 ```css
 [theme="light"] {
     /*Base*/
@@ -89,36 +107,22 @@ Theme variable snippet.
 }
 ```
 
-## Benefits
-- Reduce file sizes
-- Reduce load times
-- Reduce custom code
-- Increase maintainability
-- Increase development speed
-
-## Modules
-- Themes: Use our pre-built themes or fork our template and create your own.
-- Layout: Create simple and responsive layouts with flexbox CSS helpers.
-- Utilities: CSS utilities to keep you where you belong, writing business logic in your HTML.
-- Animations: A variety of animations to deliver clean and dynamic content.
-- Components: Easy to use web components built with CSS & JavaScript.
-
-## Development
-### Feature Request
+## Feature Request
 Submit new feature requests [here](https://github.com/kgrewee/roobie/issues).
-### Install
+
+## Install
 Install all necessary npm dependencies to build locally.
 ```shell
 npm install
 ```
 
-### Package
+## Package
 Package builds all aspects of Roobie.  Artifacts will be found in `dist/`.
 ```shell
 npm run package
 ```
 
-### Serve Docs
+## Serve Docs
 Serve the docs with a simple Python HTTP server.
 ```shell
 npm run docs

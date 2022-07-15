@@ -78,7 +78,7 @@
         "minify": "node minify.js",
 
         "docs": "cd docs && python3 -m http.server 3000",
-        "docs:move": "cp dist/roobie.bundle.css docs/includes/ && cp dist/roobie.bundle.js docs/includes/ && cp -r src/icons/ docs/includes/",
+        "docs:move": "cp dist/roobie.bundle.css docs/includes/ && cp dist/roobie.bundle.js docs/includes/ && cp -r src/icons/ docs/includes/ && cp README.md docs/",
 
         "prepare": "husky install"
     },

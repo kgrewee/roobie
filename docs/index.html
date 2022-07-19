@@ -104,6 +104,10 @@
             font-weight: var(--fntw2);
         }
         
+        .sidebar {
+            padding-bottom: 50px !important;
+        }
+        
         .sidebar-nav p:hover,
         .sidebar-nav p:hover .doc-heading {
             color: var(--primary);
@@ -114,14 +118,24 @@
         code,
         aside,
         aside input,
-        aside a,
-        .sidebar-toggle {
+        aside a {
             background-color: var(--bg2) !important;
             color: var(--t5) !important;
         }
         
+        aside input:active,
+        aside input:focus {
+            border-color: var(--primary) !important;
+            box-shadow: 0 0 3px 1px var(--primary) !important;
+        }
+        
+        .sidebar-toggle span {
+            background-color: var(--primary) !important;
+        }
+        
         .sidebar-toggle {
             width: auto !important;
+            background-color: transparent;
         }
         
         li,

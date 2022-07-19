@@ -1,4 +1,4 @@
-# Themes
+# Themes Introduction
 Roobie themes can be found in `dist/themes`. Themes are required for Roobie to function. The main goal of Roobie is to reuse theme variables and CSS classes instead of writing custom code for each component. To effectively build with Roobie, you should be aware of the CSS theme variables available and use them. Never write custom colors or CSS variables in any component. Using theme variables gives you the power to customize your entire website by changing a theme, or 1 line of code. Easily switch themes, and use as many themes as you want.
 
 There are 2 required files:

@@ -4465,7 +4465,7 @@ select:focus {
     z-index: 100;
 }[theme="dark"] {
     /*Base*/
-    --primary: rgb(209, 161, 28);
+    --primary: rgb(194, 144, 5);
     --secondary: rgb(51, 49, 49);
     /*Status*/
     --success: rgba(81, 190, 73, 0.7);

@@ -104,28 +104,38 @@
             font-weight: var(--fntw2);
         }
         
-        .doc-heading {
-            border: .5px solid transparent;
-            border-radius: var(--br2);
-            padding: var(--pad2);
+        .sidebar {
+            padding-bottom: 50px !important;
         }
         
-        .doc-heading:hover {
-            border: var(--bdr1);
+        .sidebar-nav p:hover,
+        .sidebar-nav p:hover .doc-heading {
+            color: var(--primary);
+            cursor: pointer;
         }
         
         pre,
         code,
         aside,
         aside input,
-        aside a,
-        .sidebar-toggle {
+        aside a {
             background-color: var(--bg2) !important;
             color: var(--t5) !important;
         }
         
+        aside input:active,
+        aside input:focus {
+            border-color: var(--primary) !important;
+            box-shadow: 0 0 3px 1px var(--primary) !important;
+        }
+        
+        .sidebar-toggle span {
+            background-color: var(--primary) !important;
+        }
+        
         .sidebar-toggle {
             width: auto !important;
+            background-color: transparent;
         }
         
         li,
@@ -166,6 +176,15 @@
         
         .github-corner svg {
             fill: var(--bg2);
+        }
+        
+        .app-name-link {
+            background: linear-gradient(to right, var(--primary) 55%, var(--t3) 45%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: var(--fnts4);
+            font-weight: var(--fntw4);
         }
     </style>
 </head>
@@ -218,17 +237,11 @@
         ready(() => {
             // Add subtitle
             let subtitle = document.createElement('div');
-            subtitle.innerHTML = "";
+            subtitle.innerHTML = "Expand your web capabilities";
             subtitle.classList.add("fnts2");
             subtitle.classList.add("mrgv");
             document.getElementsByClassName('app-name')[0].appendChild(subtitle);
         });
-
-        function toggleNextSibling(el) {
-            el.parentElement.nextSibling.classList.toggle("hide");
-            el.parentElement.classList.toggle("rotate-section");
-            sessionStorage.setItem(el.innerHTML, el.parentElement.nextSibling.classList.contains("hide"));
-        }
 
         function setHeadings() {
             let headings = document.getElementsByClassName('doc-heading');
@@ -264,6 +277,18 @@
 
                 i++;
             }
+
+            // Add onclick to sidenav items
+            let sidenavItems = document.querySelectorAll(".sidebar li > p");
+            sidenavItems.forEach(el => {
+                console.log("Adding listener for " + el.innerHTML)
+                el.addEventListener("click", function() {
+                    this.nextSibling.classList.toggle("hide");
+                    this.classList.toggle("rotate-section");
+                    sessionStorage.setItem(this.querySelector(".doc-heading").innerHTML, this.nextSibling.classList.contains("hide"));
+                });
+            });
+
             document.querySelectorAll('.sidebar-nav')[0].style.display = 'inline';
         }
     </script>

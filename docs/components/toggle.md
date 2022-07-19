@@ -21,3 +21,26 @@ Toggle on or off.
         <span class="slider"></span>
 </label>
 ```
+
+## Custom styles
+Customize the styles of the toggle.
+```css
+/* Style slider that moves back and forth */
+
+.toggle .slider {
+    background-color: var(--bg5);
+    box-shadow: var(--in1);
+}
+
+.toggle .slider:before {
+    background-color: var(--t1);
+}
+
+
+/* Change color when checked */
+
+.toggle input:checked+.slider {
+    background-color: var(--primary);
+    box-shadow: var(--in1);
+}
+```

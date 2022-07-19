@@ -12,13 +12,12 @@ A collection of CSS classes to keep you writing business logic in your HTML. Eas
 - Utilities: CSS utilities to keep you where you belong, writing business logic in your HTML.
 - Animations: A variety of animations to deliver clean and dynamic content.
 - Components: Easy to use web components built with CSS & JavaScript.
+- Components (Beta): Components that are in active development and are being tested. Do NOT use these in production applications.
 - Manipulation (Coming soon)
 - Icons (Coming soon)
 
-<br>
-
 ## Examples
-100% width container with a centered row flexbox layout. The child elements each have a different font size.
+100% width container, center layout, children with different font sizes.
 ```html
 <div class="div row center">
     <span class="fnts1">Roobie</span>
@@ -29,7 +28,7 @@ A collection of CSS classes to keep you writing business logic in your HTML. Eas
 
 <br>
 
-100% width container with a row flexbox layout.  The child elements have a 2 intensity margin horizontally. The child elements each have 2 intensity padding.
+100% width container, row layout.  Children have horizontal margin 2, padding 2.
 ```html
 <div class="div row row-spacer2">
     <span class="pad2">Roobie</span>
@@ -40,7 +39,7 @@ A collection of CSS classes to keep you writing business logic in your HTML. Eas
 
 <br>
 
-33% width container.  The child elements each have a different vertical margin (top and bottom). The last child has a left border 2 intensity with blue 2 intensity.
+33% width container. Children have different vertical margin (top and bottom). The last child has border left 2 of color blue 2.
 ```html
 <div class="div33">
     <span class="mrgv1">Roobie</span>
@@ -51,7 +50,7 @@ A collection of CSS classes to keep you writing business logic in your HTML. Eas
 
 <br>
 
-50% width container with a vertically centered and horizontally end column flexbox layout. The child elements each have a different font weight.
+50% width container, vertically centered, horizontally end, column layout. Children with different font weights.
 ```html
 <div class="div50 col aln-center jst-end">
     <span class="fntw1">Roobie</span>
@@ -66,8 +65,8 @@ Theme variables snippet.
 ```css
 [theme="light"] {
     /*Base*/
-    --primary: rgb(21, 206, 166);
-    --secondary: var(--bg4);
+    --primary: rgb(107, 145, 226);
+    --secondary: rgb(233, 219, 219);
     /*Status*/
     --success: rgba(81, 190, 73, 0.7);
     --warning: rgba(235, 119, 42, .7);
@@ -84,7 +83,7 @@ Theme variables snippet.
     --blue: rgb(23, 23, 192);
     --indigo: rgb(117, 13, 117);
     --violet: rgb(184, 88, 184);
-    /*Shade 2*/
+    /* Shade 2*/
     --white2: rgba(240, 240, 240, .7);
     --black2: rgba(20, 20, 20, .7);
     --grey2: rgba(199, 199, 199, .7);
@@ -117,7 +116,7 @@ npm install
 ```
 
 ## Package
-Package builds all aspects of Roobie.  Artifacts will be found in `dist/`.
+Build Roobie.  Artifacts will be found in `dist/`.
 ```shell
 npm run package
 ```

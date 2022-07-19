@@ -1,8 +1,8 @@
 # Card
-Container of styled content.
+Container of styled content. Cards have no width or height by default, so they adapt to the content inside. We add width and height in some examples.
 
 ## Basic
-<div class="card" style="width: 250px; height: 250px;">
+<div class="card">
     <h2 class="card-title">Title</h2>
     <span class="card-subtitle">Subtitle</span>
     <div class="card-content">
@@ -11,7 +11,7 @@ Container of styled content.
 </div>
 
 ```html
-<div class="card" style="width: 250px; height: 250px;">
+<div class="card">
     <h2 class="card-title">Title</h2>
     <span class="card-subtitle">Subtitle</span>
     <div class="card-content">

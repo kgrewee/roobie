@@ -4465,8 +4465,8 @@ select:focus {
     z-index: 100;
 }[theme="dark"] {
     /*Base*/
-    --primary: var(--blue2);
-    --secondary: var(--bg4);
+    --primary: rgb(194, 144, 5);
+    --secondary: rgb(51, 49, 49);
     /*Status*/
     --success: rgba(81, 190, 73, 0.7);
     --warning: rgba(235, 119, 42, .7);
@@ -4570,8 +4570,9 @@ select:focus {
     --txts6: 5px 5px rgb(235, 235, 235, .3);
 }[theme="light"] {
     /*Base*/
-    --primary: rgb(21, 206, 166);
-    --secondary: var(--bg4);
+    --primary: rgb(107, 145, 226);
+    --secondary: rgb(233, 219, 219);
+    ;
     /*Status*/
     --success: rgba(81, 190, 73, 0.7);
     --warning: rgba(235, 119, 42, .7);

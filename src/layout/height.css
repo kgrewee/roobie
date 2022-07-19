@@ -2,6 +2,9 @@
     height: auto !important;
 }
 
+
+/* Percentages */
+
 .ht10 {
     height: 10% !important;
 }
@@ -12,6 +15,10 @@
 
 .ht25 {
     height: 25% !important;
+}
+
+.ht30 {
+    height: 30% !important;
 }
 
 .ht33 {
@@ -34,6 +41,10 @@
     height: 66.66% !important;
 }
 
+.ht70 {
+    height: 70% !important;
+}
+
 .ht75 {
     height: 75% !important;
 }
@@ -46,7 +57,45 @@
     height: 90% !important;
 }
 
-.ht100,
+.ht100 {
+    height: 100% !important;
+}
+
 .ht {
     height: 100% !important;
+}
+
+
+/* Static */
+
+.ht25px {
+    height: 25px !important;
+}
+
+.ht50px {
+    height: 50px !important;
+}
+
+.ht75px {
+    height: 75px !important;
+}
+
+.ht100px {
+    height: 100px !important;
+}
+
+.ht150px {
+    height: 150px !important;
+}
+
+.ht200px {
+    height: 200px !important;
+}
+
+.ht250px {
+    height: 250px !important;
+}
+
+.ht300px {
+    height: 300px !important;
 }

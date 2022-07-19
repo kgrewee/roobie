@@ -12,10 +12,9 @@ A collection of CSS classes to keep you writing business logic in your HTML. Eas
 - Utilities: CSS utilities to keep you where you belong, writing business logic in your HTML.
 - Animations: A variety of animations to deliver clean and dynamic content.
 - Components: Easy to use web components built with CSS & JavaScript.
+- Components (Beta): Components that are in active development and are being tested. Do NOT use these in production applications.
 - Manipulation (Coming soon)
 - Icons (Coming soon)
-
-<br>
 
 ## Examples
 100% width container with a centered row flexbox layout. The child elements each have a different font size.

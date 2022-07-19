@@ -1,7 +1,7 @@
 [theme="dark"] {
     /*Base*/
-    --primary: var(--blue2);
-    --secondary: var(--bg4);
+    --primary: rgb(209, 161, 28);
+    --secondary: rgb(51, 49, 49);
     /*Status*/
     --success: rgba(81, 190, 73, 0.7);
     --warning: rgba(235, 119, 42, .7);

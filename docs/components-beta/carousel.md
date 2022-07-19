@@ -49,6 +49,11 @@ Interactive slider full of content.  Requires JS.
         <p>This is a caption.</p>
         <div class="carousel-info">3/3</div>
     </div>
+    <div class="carousel-slide">
+        <h1>Slide 4</h1>
+        <p>This is a caption.</p>
+        <div class="carousel-info">3/3</div>
+    </div>
     <a class="carousel-previous">&#10094;</a>
     <a class="carousel-next">&#10095;</a>
 </div>
@@ -67,6 +72,11 @@ Interactive slider full of content.  Requires JS.
     </div>
     <div class="carousel-slide">
         <h1>Slide 3</h1>
+        <p>This is a caption.</p>
+        <div class="carousel-info">3/3</div>
+    </div>
+    <div class="carousel-slide">
+        <h1>Slide 4</h1>
         <p>This is a caption.</p>
         <div class="carousel-info">3/3</div>
     </div>

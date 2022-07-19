@@ -1,15 +1,15 @@
-* <span class="doc-heading" onclick="toggleNextSibling(this)">Getting Started</span>
+* <span class="doc-heading">Getting Started</span>
   * [Welcome](README.md)
   * [Installation](getting-started/install.md)
   * [Distributions](getting-started/dist.md)
   * [Angular](getting-started/angular.md)
 
-* <span class="doc-heading" onclick="toggleNextSibling(this)">Themes</span>
+* <span class="doc-heading">Themes</span>
   * [Themes intro](themes/intro.md)
   * [Switch themes](themes/switch.md)
   * [Custom themes](themes/custom.md)
 
-* <span class="doc-heading" onclick="toggleNextSibling(this)">Layout</span>
+* <span class="doc-heading">Layout</span>
   * [Layout intro](layout/intro.md)
   * [Container](layout/container.md)
   * [Height](layout/height.md)
@@ -22,7 +22,7 @@
   * [Position](layout/position.md)
   * [Combinations](layout/combos.md)
 
-* <span class="doc-heading" onclick="toggleNextSibling(this)">Utilities</span>
+* <span class="doc-heading">Utilities</span>
   * [Background Color](utilities/background-color.md)
   * [Border Radius](utilities/border-radius.md)
   * [Border](utilities/border.md)
@@ -43,7 +43,7 @@
   * [Visibility](utilities/visibility.md)
   * [Z Index](utilities/z-index.md)
 
-* <span class="doc-heading" onclick="toggleNextSibling(this)">Animations</span>
+* <span class="doc-heading">Animations</span>
   * [Back](animations/back.md)
   * [Bounce](animations/bounce.md)
   * [Fade](animations/fade.md)
@@ -53,22 +53,24 @@
   * [Slide](animations/slide.md)
   * [Zoom](animations/zoom.md)
 
-* <span class="doc-heading" onclick="toggleNextSibling(this)">Components</span>
-  * [Accordion](components/accordion.md)
+* <span class="doc-heading">Components</span>
   * [Alert](components/alert.md)
   * [Button](components/button.md)
   * [Card](components/card.md)
-  * [Carousel](components/carousel.md)
   * [Chip](components/chip.md)
-  * [Dropdown](components/dropdown.md)
   * [Emphasis](components/emphasis.md)
   * [Input](components/input.md)
   * [List](components/list.md)
   * [Navbar](components/navbar.md)
   * [Path](components/path.md)
-  * [Select](components/select.md)
-  * [Table](components/table.md)
   * [Toggle](components/toggle.md)
   * [Tooltip](components/tooltip.md)
+
+* <span class="doc-heading">Components (Beta)</span>
+  * [Accordion](components-beta/accordion.md)
+  * [Carousel](components-beta/carousel.md)
+  * [Dropdown](components-beta/dropdown.md)
+  * [Select](components-beta/select.md)
+  * [Table](components-beta/table.md)
 
 <iframe class="hide" onload="setHeadings()"></iframe>

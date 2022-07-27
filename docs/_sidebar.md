@@ -5,12 +5,12 @@
   * [Angular](getting-started/angular.md)
 
 * <span class="doc-heading">Themes</span>
-  * [Themes Introduction](themes/intro.md)
+  * [Introduction](themes/intro.md)
   * [Switch Themes](themes/switch.md)
   * [Custom Themes](themes/custom.md)
 
 * <span class="doc-heading">Layout</span>
-  * [Layout Introduction](layout/intro.md)
+  * [Introduction](layout/intro.md)
   * [Container](layout/container.md)
   * [Height](layout/height.md)
   * [Display](layout/display.md)
@@ -23,7 +23,7 @@
   * [Combinations](layout/combos.md)
 
 * <span class="doc-heading">Utilities</span>
-  * [Utilities Introduction](utilities/intro.md)
+  * [Introduction](utilities/intro.md)
   * [Background Color](utilities/background-color.md)
   * [Border Radius](utilities/border-radius.md)
   * [Border](utilities/border.md)

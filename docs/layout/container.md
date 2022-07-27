@@ -19,14 +19,14 @@ Containers are the basic building block.  Styled using width and padding.  Fluid
 <div class="div90">90%</div>
 <div class="div100">100%</div>
 <div class="div">Fluid 100%</div>
-<div class="div25px">25px</div>
-<div class="div50px">50px</div>
-<div class="div75px">75px</div>
-<div class="div100px">100px</div>
-<div class="div150px">150px</div>
-<div class="div200px">200px</div>
-<div class="div250px">250px</div>
-<div class="div300px">300px</div>
+<div class="divpx1">Pixels 1</div>
+<div class="divpx2">Pixels 2</div>
+<div class="divpx3">Pixels 3</div>
+<div class="divpx4">Pixels 4</div>
+<div class="divpx5">Pixels 5</div>
+<div class="divpx6">Pixels 6</div>
+<div class="divpx7">Pixels 7</div>
+<div class="divpx8">Pixels 8</div>
 ```
 
 ## Usage
@@ -47,14 +47,14 @@ Containers are the basic building block.  Styled using width and padding.  Fluid
     <div class="div90 bdr1">90%</div>
     <div class="div100 bdr1">100%</div>
     <div class="div bdr1">Fluid 100%</div>
-    <div class="div25px bdr1">25px</div>
-    <div class="div50px bdr1">50px</div>
-    <div class="div75px bdr1">75px</div>
-    <div class="div100px bdr1">100px</div>
-    <div class="div150px bdr1">150px</div>
-    <div class="div200px bdr1">200px</div>
-    <div class="div250px bdr1">250px</div>
-    <div class="div300px bdr1">300px</div>
+    <div class="divpx1 bdr1">Pixels 1</div>
+    <div class="divpx2 bdr1">Pixels 2</div>
+    <div class="divpx3 bdr1">Pixels 3</div>
+    <div class="divpx4 bdr1">Pixels 4</div>
+    <div class="divpx5 bdr1">Pixels 5</div>
+    <div class="divpx6 bdr1">Pixels 6</div>
+    <div class="divpx7 bdr1">Pixels 7</div>
+    <div class="divpx8 bdr1">Pixels 8</div>
 </div>
 
 ```html
@@ -75,13 +75,13 @@ Containers are the basic building block.  Styled using width and padding.  Fluid
     <div class="div90 bdr1">90%</div>
     <div class="div100 bdr1">100%</div>
     <div class="div bdr1">Fluid 100%</div>
-    <div class="div25px bdr1">25px</div>
-    <div class="div50px bdr1">50px</div>
-    <div class="div75px bdr1">75px</div>
-    <div class="div100px bdr1">100px</div>
-    <div class="div150px bdr1">150px</div>
-    <div class="div200px bdr1">200px</div>
-    <div class="div250px bdr1">250px</div>
-    <div class="div300px bdr1">300px</div>
+    <div class="divpx1 bdr1">Pixels 1</div>
+    <div class="divpx2 bdr1">Pixels 2</div>
+    <div class="divpx3 bdr1">Pixels 3</div>
+    <div class="divpx4 bdr1">Pixels 4</div>
+    <div class="divpx5 bdr1">Pixels 5</div>
+    <div class="divpx6 bdr1">Pixels 6</div>
+    <div class="divpx7 bdr1">Pixels 7</div>
+    <div class="divpx8 bdr1">Pixels 8</div>
 </div>
 ```

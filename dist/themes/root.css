@@ -58,6 +58,15 @@
     --lht5: 2.5em;
     --lht6: 3em;
     --drp-min-width: 160px;
+    /*Container widths pixels*/
+    --divpx1: 25px;
+    --divpx2: 50px;
+    --divpx3: 75px;
+    --divpx4: 100px;
+    --divpx5: 150px;
+    --divpx6: 200px;
+    --divpx7: 250px;
+    --divpx8: 300px;
 }
 
 html,

@@ -13,14 +13,14 @@
 .div80,
 .div90,
 .div100,
-.div25px,
-.div50px,
-.div75px,
-.div100px,
-.div150px,
-.div200px,
-.div250px,
-.div300px {
+.divpx1,
+.divpx2,
+.divpx3,
+.divpx4,
+.divpx5,
+.divpx6,
+.divpx7,
+.divpx8 {
     height: auto !important;
     padding: var(--pad2);
 }
@@ -94,36 +94,36 @@
 }
 
 
-/* Static */
+/* Static Pixels */
 
-.div25px {
-    width: 25px !important;
+.divpx1 {
+    width: var(--divpx1) !important;
 }
 
-.div50px {
-    width: 50px !important;
+.divpx2 {
+    width: var(--divpx2) !important;
 }
 
-.div75px {
-    width: 75px !important;
+.divpx3 {
+    width: var(--divpx3) !important;
 }
 
-.div100px {
-    width: 100px !important;
+.divpx4 {
+    width: var(--divpx4) !important;
 }
 
-.div150px {
-    width: 150px !important;
+.divpx5 {
+    width: var(--divpx5) !important;
 }
 
-.div200px {
-    width: 200px !important;
+.divpx6 {
+    width: var(--divpx6) !important;
 }
 
-.div250px {
-    width: 250px !important;
+.divpx7 {
+    width: var(--divpx7) !important;
 }
 
-.div300px {
-    width: 300px !important;
+.divpx8 {
+    width: var(--divpx8) !important;
 }
